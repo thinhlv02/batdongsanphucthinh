@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
-<title><?php echo isset($title) && $title ? $title : 'GAIA - Ứng dụng đặt Dịch vụ gia đình: điện nước, điện lạnh, giúp việc'?></title>
+<title><?php echo isset($title) && $title ? $title : 'Bất động sản phúc thịnh - mọi lúc mọi nơi trên 24h'?></title>
 <link rel="shortcut icon" type="image/png" href="<?php echo public_url('images/favicon.png')?>"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="<?php echo isset($description) && $description ? $description : 'GAIA là cầu nối giữa các gia đình và những Kỹ Thuật viên sửa chữa. Nhanh chóng, đảm bảo với đặt dịch vụ sửa chữa điện nước, điện lạnh, giúp việc'?>">
