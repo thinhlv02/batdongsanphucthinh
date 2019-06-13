@@ -1,5 +1,5 @@
 <?php
-echo 'test index';
+echo 'not working';
 die();
 /**
  * CodeIgniter
