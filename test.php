@@ -1,25 +1,3 @@
 <?php
 
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
-echo 'news';
+echo 'bang test ok';
