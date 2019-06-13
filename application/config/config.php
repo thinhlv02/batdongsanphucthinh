@@ -24,8 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //$config['base_url'] = 'http://115.84.178.154/';
-$config['base_url'] = 'http://localhost/gaia.net.vn/';
-//$config['base_url'] = 'http://gaia.net.vn/';
+//$config['base_url'] = 'http://localhost/gaia.net.vn/';
+$config['base_url'] = 'http://batdongsanphucthinh.vn/';
 
 /*
 |--------------------------------------------------------------------------
