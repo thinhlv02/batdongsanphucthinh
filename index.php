@@ -1,6 +1,6 @@
 <?php
-echo 'test index';
-die();
+//echo 'test index';
+//die();
 /**
  * CodeIgniter
  *
