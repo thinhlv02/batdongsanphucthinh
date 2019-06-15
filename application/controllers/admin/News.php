@@ -37,7 +37,7 @@ Class News extends MY_Controller {
                     'meta_description' => $this->input->post('txtMetaDescription'),
                     'meta_keywords' => $this->input->post('txtMetaKeywords'),
                     'canonical_url' => $this->input->post('txtCanonicalUrl'),
-                    'robots_meta' => implode(', ',$this->input->post('robots_meta')),
+//                    'robots_meta' => implode(', ',$this->input->post('robots_meta')),
                     'img' => $file_data['file_name'],
                 );
                 if($this->news_model->create($data)){
