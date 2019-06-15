@@ -1,6 +1,6 @@
 <?php
-echo 'not working';
-die();
+//echo 'not working';
+//die();
 /**
  * CodeIgniter
  *
