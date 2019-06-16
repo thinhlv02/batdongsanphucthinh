@@ -5,7 +5,7 @@
 <!--        <a href="--><?php //echo base_url()?><!--">Trao tiện ích, nhận tin yêu</a>-->
     </div>
     <ul class="ul-large">
-        <li class="<?php echo isset($li_1) ? 'menu-active' : ''?>" title="Trang chủ"><a href="<?php echo base_url()?>">Trang chủ12</a></li>
+        <li class="<?php echo isset($li_1) ? 'menu-active' : ''?>" title="Trang chủ"><a href="<?php echo base_url()?>">Trang chủ</a></li>
         <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="Giới thiệu dịch vụ"><a href="<?php echo base_url('gioi-thieu-dich-vu')?>">Giới thiệu dịch vụ</a></li>
         <li class="<?php echo isset($li_3) ? 'menu-active' : ''?>" title="Hỗ trợ"><a href="<?php echo base_url('ho-tro')?>">Hỗ trợ</a></li>
         <li class="<?php echo isset($li_6) ? 'menu-active' : ''?>" title="Tin tức"><a href="<?php echo base_url('tin-tuc')?>">Tin tức</a></li>
