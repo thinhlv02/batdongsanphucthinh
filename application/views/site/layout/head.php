@@ -27,3 +27,4 @@
 <script src="<?php echo public_url('js/jquery.min.js')?>"></script>
 <script src="<?php echo public_url('js/bootstrap.min.js')?>"></script>
 <script src="<?php echo base_url('public/js/page.js'); ?>"></script>
+<script src="<?php echo base_url('public/js_custom/jquery.bxslider.min.js'); ?>"></script>
