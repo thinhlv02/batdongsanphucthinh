@@ -194,3 +194,15 @@
     padding: 10px;
     border: 1px #b0aeae solid;
 }
+
+.form-select-search {
+    margin-top: 15px;
+}
+
+.form-select-search select {
+    line-height: 27px;
+    border: 1px solid #ccc;
+    width: 235px;
+    padding: 3px;
+    margin-left: 15px;
+}
