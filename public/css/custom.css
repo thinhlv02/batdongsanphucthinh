@@ -27,3 +27,17 @@
     width: 55px;
     text-transform: uppercase;
 }
+
+.bg-modul {
+    background: #15a1b1;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 6px 16px 6px 13px;
+    display: inline-block;
+    -ms-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -ms-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    text-align: center;
+}
