@@ -1,3 +1,8 @@
+<section class="intro_1">
+
+
+
+
 <div class="clearfix" style="margin-top:10px">
     <div id="center-body">
         <div class="text-center mt10"><input type="text" name="q" id="sTxt" size="50" class="search-tag"
@@ -1453,3 +1458,5 @@
     <div class="clearfix"></div>
     <div class="clearfix mt10"></div>
 </div>
+
+</section>
