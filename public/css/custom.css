@@ -1,3 +1,14 @@
 .mt10 {
     margin-top: 10px;
 }
+
+.box-module {
+    border-bottom: 2px #15a1b1 solid;
+}
+
+.item-re-list {
+    border: 1px #b0aeae solid;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+}
