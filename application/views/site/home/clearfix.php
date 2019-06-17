@@ -1,8 +1,6 @@
 <section class="intro_1">
     <div class="container">
         <div class="col-sm-12 col-md-12">
-
-
             <div class="clearfix" style="margin-top:10px">
                 <div id="center-body">
                     <div class="text-center mt10"><input type="text" name="q" id="sTxt" size="50" class="search-tag"

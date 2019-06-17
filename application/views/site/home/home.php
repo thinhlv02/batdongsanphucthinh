@@ -1,4 +1,4 @@
-<?php $this->load->view('site/home/home_content') ?>
+<?php $this->load->view('site/home/clearfix') ?>
 <?php $this->load->view('site/home/intro_1') ?>
 <?php $this->load->view('site/home/service') ?>
 <?php $this->load->view('site/home/intro_2') ?>
