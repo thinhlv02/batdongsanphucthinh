@@ -180,6 +180,10 @@
     list-style: none;
 }
 
+.box-links-right ul li {
+    padding: 5px 0;
+}
+
 .box-module {
     border-bottom: 2px #15a1b1 solid;
 }
