@@ -139,7 +139,7 @@
 }
 
 .home-search-box .contents {
-    background: url(images/ts_bg.jpg) no-repeat scroll center bottom transparent;
+    background: url(../images/ts_bg.jpg) no-repeat scroll center bottom transparent;
     border: 1px solid #b0aeae;
     border-top: none;
     width: 100%;
@@ -147,13 +147,13 @@
 }
 
 .home-search-box .tab {
-    background: url(images/ts_tab-bg-repeat.jpg) repeat-x scroll 0 0 transparent;
+    background: url(../images/ts_tab-bg-repeat.jpg) repeat-x scroll 0 0 transparent;
     height: 45px;
     width: 263px;
 }
 
 .tab-lines {
-    background: url(images/ts_line.jpg) no-repeat scroll 0 0 transparent;
+    background: url(../images/ts_line.jpg) no-repeat scroll 0 0 transparent;
     float: left;
     height: 42px;
     margin-left: 12px;
