@@ -1,5 +1,4 @@
-
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 Class Home extends MY_Controller
 {
@@ -16,7 +15,8 @@ Class Home extends MY_Controller
         $this->load->model('ads_model');
     }
 
-    function index(){
+    function index()
+    {
         $this->data['li_1'] = 1;
         $news = $this->news_model->get_list(array('limit' => array(5, 0)));
         $this->data['news'] = $news;
@@ -25,25 +25,25 @@ Class Home extends MY_Controller
         $this->data['ads'] = $ads;
 
         //ads mới cập nhật
-        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'),'limit' => array(100, 0)));
+        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(100, 0)));
         $this->data['ads_new'] = $ads_new;
 
         $this->data['temp'] = 'site/home/home';
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function service_info($slug = '', $id = 0){
+    function service_info($slug = '', $id = 0)
+    {
         $this->data['li_2'] = 1;
-        if(strlen($slug) > 0 && $id > 0){
+        if (strlen($slug) > 0 && $id > 0) {
             $product = $this->product_model->get_info($id);
-            if(!$product || create_slug($product->name) != $slug){
+            if (!$product || create_slug($product->name) != $slug) {
                 redirect(base_url('gioi-thieu-dich-vu.html'));
             }
             $this->data['product'] = $product;
-        }
-        else{
+        } else {
             $product = $this->product_model->get_list(array('order' => array('id', 'asc'), 'limit' => array(1, 0)));
-            if(sizeof($product)){
+            if (sizeof($product)) {
                 $this->data['product'] = $product[0];
             }
         }
@@ -52,16 +52,15 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function support($type = 1){
+    function support($type = 1)
+    {
         $this->data['li_3'] = 1;
 
-        if($type == "ky-thuat-vien" || $type == "ky-thuat-vien.html"){
+        if ($type == "ky-thuat-vien" || $type == "ky-thuat-vien.html") {
             $type = 2;
-        }
-        else if($type == "cong-tac-vien" || $type == "cong-tac-vien.html"){
+        } else if ($type == "cong-tac-vien" || $type == "cong-tac-vien.html") {
             $type = 3;
-        }
-        else if($type != 1){
+        } else if ($type != 1) {
             redirect(base_url('ho-tro.html'));
         }
         $categories = $this->questions_model->get_list(array('where' => array('parent_id' => 0, 'type' => $type), 'order' => array('id', 'asc')));
@@ -72,34 +71,34 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function detail_support($slug = "", $id = 0){
+    function detail_support($slug = "", $id = 0)
+    {
         $this->data['li_3'] = 1;
-        if(strlen($slug) > 0 && $id > 0){
+        if (strlen($slug) > 0 && $id > 0) {
             $question = $this->questions_model->get_info($id);
-            if(!$question || create_slug($question->name) != $slug){
+            if (!$question || create_slug($question->name) != $slug) {
                 redirect(base_url('ho-tro.html'));
             }
             $categories = $this->questions_model->get_list(array('where' => array('parent_id' => 0, 'type' => $question->type)));
             $this->data['categories'] = $categories;
             $this->data['type'] = $question->type;
 //            pre($question->type);
-            if($question->level == 1){
+            if ($question->level == 1) {
                 $questions = $this->questions_model->get_list(array('where' => array('parent_id' => $question->id), 'order' => array('id', 'asc')));
                 $this->data['questions'] = $questions;
                 $this->data['temp'] = 'site/pages/support_level_2';
-            }
-            else{
+            } else {
                 $this->data['question'] = $question;
                 $this->data['temp'] = 'site/pages/support_level_3';
             }
-        }
-        else{
+        } else {
             redirect(base_url('ho-tro.html'));
         }
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function policy(){
+    function policy()
+    {
         $this->data['li_4'] = 1;
         $policy = $this->contact_model->get_info(1)->policy;
         $this->data['title'] = "Điều khoản sử dụng";
@@ -108,7 +107,8 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function privacy(){
+    function privacy()
+    {
         $this->data['li_4'] = 1;
         $privacy = $this->contact_model->get_info(1)->privacy;
         $this->data['title'] = "Chính sách bảo mật";
@@ -117,20 +117,23 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function contact(){
+    function contact()
+    {
         $this->data['li_5'] = 1;
         $this->data['temp'] = 'site/pages/contact';
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function download(){
+    function download()
+    {
 //        $this->data['temp'] = 'site/pages/contact';
         $this->load->view('site/pages/download', $this->data);
     }
 
-    function news(){
+    function news()
+    {
         $per_page = 10;
-        $offset=$this->uri->segment(2);
+        $offset = $this->uri->segment(2);
         $offset = intval($offset);
         $input = array();
         $input['where'] = array('highlight' => 0);
@@ -139,7 +142,7 @@ Class Home extends MY_Controller
 
         if ($offset >= 1) {
             $offset -= 1;
-            $offset = $offset*$per_page;
+            $offset = $offset * $per_page;
         }
 
         $input['limit'] = array($per_page, $offset);
@@ -158,9 +161,10 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function news_detail($slug, $id){
+    function news_detail($slug, $id)
+    {
         $news = $this->news_model->get_info($id);
-        if(!$news || create_slug($news->name) != $slug){
+        if (!$news || create_slug($news->name) != $slug) {
             redirect(base_url('tin-tuc'));
         }
         $this->data['news'] = $news;
@@ -170,8 +174,8 @@ Class Home extends MY_Controller
 
         $this->data['title'] = $news->document_title;
         $this->data['description'] = $news->meta_description;
-        $this->data['image'] = public_url('images/news/'.$news->img);
-        $this->data['page_url'] = base_url('tin-tuc/'.create_slug($news->name).'-'.$news->id);
+        $this->data['image'] = public_url('images/news/' . $news->img);
+        $this->data['page_url'] = base_url('tin-tuc/' . create_slug($news->name) . '-' . $news->id);
         $this->data['robots'] = $news->robots_meta;
         $this->data['canonical'] = $news->canonical_url;
         $this->data['keywords'] = $news->meta_keywords;
@@ -181,9 +185,10 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function ads_detail($slug, $id){
+    function ads_detail($slug, $id)
+    {
         $ads = $this->ads_model->get_info($id);
-        if(!$ads || create_slug($ads->title) != $slug){
+        if (!$ads || create_slug($ads->title) != $slug) {
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $ads;
@@ -193,8 +198,8 @@ Class Home extends MY_Controller
 
         $this->data['title'] = $ads->document_title;
         $this->data['description'] = $ads->meta_description;
-        $this->data['image'] = public_url('images/adss/'.$ads->img);
-        $this->data['page_url'] = base_url('rao-vat/'.create_slug($ads->title).'-'.$ads->id);
+        $this->data['image'] = public_url('images/adss/' . $ads->img);
+        $this->data['page_url'] = base_url('rao-vat/' . create_slug($ads->title) . '-' . $ads->id);
         $this->data['robots'] = $ads->robots_meta;
         $this->data['canonical'] = $ads->canonical_url;
         $this->data['keywords'] = $ads->meta_keywords;
@@ -205,7 +210,8 @@ Class Home extends MY_Controller
     }
 
 
-    function product(){
+    function product()
+    {
         $product = $this->product_model->get_list();
         $this->data['li_product'] = 1;
         $this->data['product'] = $product;
@@ -213,34 +219,34 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function language(){
+    function language()
+    {
         $language = $this->uri->segment(1);
         $uri2 = $this->uri->segment(2);
         $uri3 = $this->uri->segment(3);
 //        pre($uri2.'-'.$uri3);
-        if($language == 'vn'){
+        if ($language == 'vn') {
             $this->session->set_userdata('language', 'vn');
-        }
-        else if($language == 'en'){
+        } else if ($language == 'en') {
             $this->session->set_userdata('language', 'en');
         }
-        if($uri3){
-            redirect(base_url($uri2.'/'.$uri3));
-        }
-        else if($uri2){
+        if ($uri3) {
+            redirect(base_url($uri2 . '/' . $uri3));
+        } else if ($uri2) {
             redirect(base_url($uri2));
-        }
-        else{
+        } else {
             redirect(base_url());
         }
     }
 
-    function agency(){
+    function agency()
+    {
         $this->data['temp'] = 'site/pages/agency';
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function sitemap(){
+    function sitemap()
+    {
 //        $data = $this->news_model->get_list(array('limit' => array(50, 0)));
 //        header("Content-Type: text/xml;charset=iso-8859-1");
 //        $data = array('news' => $news);

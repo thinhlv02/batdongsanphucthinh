@@ -1,6 +1,6 @@
 <section class="intro_1">
     <div class="container">
-<!--        --><?php //var_dump($ads_new); ?>
+
         <!--        <div class="col-sm-12 col-md-12">-->
         <div class="clearfix" style="margin-top:10px">
             <div class="col-sm-8 col-md-8">
@@ -247,37 +247,6 @@
 
                             <?php } ?>
 
-                            <div class="item-re-list clearfix" style="border-color: #f00">
-                                <div class="box-img-thumb">
-                                    <a href="/ban-dat-huyen-yen-lac/ban-manh-dat-tai-thon-1-xa-trung-kien-huyen-yen-lac-620054.html">
-                                        <img src="/Content/images/pic-default.jpg" alt="Không có ảnh">
-                                    </a>
-                                </div>
-                                <div class="box-info-list">
-                                    <div class="clearfix box-title-item">
-                                        <label class="label label-danger">ĐẶC BIỆT</label>
-                                        <h3 class="sieu-vip-title">
-                                            <a href="/ban-dat-huyen-yen-lac/ban-manh-dat-tai-thon-1-xa-trung-kien-huyen-yen-lac-620054.html">Bán
-                                                mảnh đất tại thôn 1 xã Trung Kiên, Huyện Yên Lạc </a>
-                                            <span style="color: #f00; font-weight: 400">(Chính chủ)</span></h3>
-                                    </div>
-                                    <p>Bán mảnh đất tại thôn 1 xã trung kiên Dt: 85 m2 mặt tiền 6m&nbsp; Đường rộng 15m
-                                        Hướn ...</p>
-                                    <div class="price-list">
-                                        <span>Diện tích</span>: <strong>85 m2</strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Giá</span>: <strong>12 Triệu/m2</strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Khu vực</span>: <strong> Xã Trung Kiên -
-                                            Huyện Yên Lạc - Vĩnh Phúc </strong>
-                                        <span class="pull-right time">
-05/04/2019                    </span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="pull-right mt10 viewall">
                                 <a href="/bat-dong-san-ban-tai-viet-nam-s32113"><i class="glyphicon glyphicon-th"></i>
                                     Xem tất
@@ -490,50 +459,31 @@
                     <div class="clearfix">
                         <?php foreach ($ads_new as $value) { ?>
 
-                        <div class="item-re-list clearfix">
-                            <div class="box-img-thumb"><a
-                                        href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
-                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
-                                         alt="<?php echo $value->title ?>">
-                                </a></div>
-                            <div class="box-info-list"><h3><a
-                                            href="/ban-bat-dong-san-khac-huyen-binh-chanh/can-ban-mieng-dat-vuon-chinh-chu-so-hong-rieng-tai-huyen-binh-chanh-948338.html">Cần
-                                        bán miếng đất vườn chính chủ, sổ hồng riêng tại huyện Bình Chánh </a></h3>
-                                <p>• Cần bán miếng đất vườn tại x.Bình Lợi, huyện Bình Chánh. Diện tích 1000m2 giá
-                                    ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong><?php echo $value->acreage ?> m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong><?php echo $value->price ?> Triệu</strong></div>
-                                <div class="price-list"><span>Khu vực</span>: <strong> Xã Bình Lợi - Huyện Bình Chánh -
-                                        TP.
-                                        HCM </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> Hôm nay, lúc 12 giờ 35 phút </span>
+                            <div class="item-re-list clearfix">
+                                <div class="box-img-thumb"><a
+                                            href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
+                                        <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                             alt="<?php echo $value->title ?>">
+                                    </a></div>
+                                <div class="box-info-list"><h3><a
+                                                href="/ban-bat-dong-san-khac-huyen-binh-chanh/can-ban-mieng-dat-vuon-chinh-chu-so-hong-rieng-tai-huyen-binh-chanh-948338.html">Cần
+                                            bán miếng đất vườn chính chủ, sổ hồng riêng tại huyện Bình Chánh </a></h3>
+                                    <p>• Cần bán miếng đất vườn tại x.Bình Lợi, huyện Bình Chánh. Diện tích 1000m2 giá
+                                        ...</p>
+                                    <div class="price-list"><span>Diện tích</span>:
+                                        <strong><?php echo $value->acreage ?> m2</strong></div>
+                                    <div class="price-list"><span>Giá</span>:
+                                        <strong><?php echo $value->price ?> Triệu</strong></div>
+                                    <div class="price-list"><span>Khu vực</span>:
+                                        <strong> Xã Bình Lợi - Huyện Bình Chánh -
+                                            TP.
+                                            HCM </strong> <span class="pull-right time"> <i
+                                                    class="glyphicon glyphicon-time"></i> Hôm nay, lúc 12 giờ 35 phút </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         <?php } ?>
 
-                        <div class="item-re-list clearfix">
-                            <div class="box-img-thumb"><a
-                                        href="/ban-dat-huyen-binh-chanh/can-ban-mieng-dat-vuon-gia-re-chinh-chu-so-hong-rieng-tai-huyen-binh-chanh-948669.html">
-                                    <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/06/132042600366094990.jpg"
-                                         alt="Cần bán miếng đất vườn giá rẻ chính chủ, sổ hồng riêng tại huyện Bình Chánh">
-                                </a>
-                            </div>
-                            <div class="box-info-list"><h3><a
-                                            href="/ban-dat-huyen-binh-chanh/can-ban-mieng-dat-vuon-gia-re-chinh-chu-so-hong-rieng-tai-huyen-binh-chanh-948669.html">Cần
-                                        bán miếng đất vườn giá rẻ chính chủ, sổ hồng riêng tại huyện Bình Chánh </a>
-                                </h3>
-                                <p>• Cần bán miếng đất vườn tại x.Bình Lợi, huyện Bình Chánh. Diện tích 1000m2 giá
-                                    ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong>1000 m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong>1.4 Tỷ</strong></div>
-                                <div class="price-list"><span>Khu vực</span>: <strong> Xã Bình Lợi - Huyện Bình Chánh -
-                                        TP.
-                                        HCM </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> Hôm nay, lúc 12 giờ 35 phút </span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
