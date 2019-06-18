@@ -22,7 +22,7 @@
                             <ul class="ulthumb">
                                 <li id="li_0"><a
                                             href="/tin-tuc/60-000-ty-do-vao-bds-nghi-duong-phan-thiet-trong-nam-2019-7898.html">
-                                        <img src="https://batdongsan24h.com.vn/images/private/2019/04/05/131989044683354005.jpg?w=350&amp;h=280&amp;mode=crop"
+                                        <img src="http://batdongsanphucthinh.vn/images/private/2019/04/05/131989044683354005.jpg?w=350&amp;h=280&amp;mode=crop"
                                              alt="60.000 tỷ đổ vào BĐS nghỉ dưỡng Phan Thiết trong năm 2019"> </a>
                                     <div class="clearfix"></div>
                                     <a href="/tin-tuc/60-000-ty-do-vao-bds-nghi-duong-phan-thiet-trong-nam-2019-7898.html"
@@ -36,7 +36,7 @@
                                 <li id="li_1" style="display: none;"><a
                                             href="/tin-tuc/nhung-sai-lam-khien-nha-ban-mua-khong-tang-gia-7897.html">
                                         <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/31/131984897077222611.jpg?w=350&amp;h=280&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/31/131984897077222611.jpg?w=350&amp;h=280&amp;mode=crop"
                                                 alt="Những sai lầm khiến nhà bạn mua không tăng giá"> </a>
                                     <div class="clearfix"></div>
                                     <a href="/tin-tuc/nhung-sai-lam-khien-nha-ban-mua-khong-tang-gia-7897.html"
@@ -48,7 +48,7 @@
                                         trong đầu tư.</p></li>
                                 <li id="li_2" style="display: none;"><a
                                             href="/tin-tuc/du-lich-khanh-hoa-dot-pha-vung-bien-bai-dai-7896.html"> <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/24/131978916079882218.jpg?w=350&amp;h=280&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/24/131978916079882218.jpg?w=350&amp;h=280&amp;mode=crop"
                                                 alt="Du lịch Khánh Hòa - Đột phá vùng biển Bãi Dài "> </a>
                                     <div class="clearfix"></div>
                                     <a href="/tin-tuc/du-lich-khanh-hoa-dot-pha-vung-bien-bai-dai-7896.html"
@@ -58,7 +58,7 @@
                                         trong tầm ngắm hàng loạt đại gia lớn về đây làm dự án.</p></li>
                                 <li id="li_3" style="display: block;"><a
                                             href="/tin-tuc/phan-thiet-nang-cong-chua-tinh-giac-7895.html"> <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/11/131967659986420951.jpg?w=350&amp;h=280&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/11/131967659986420951.jpg?w=350&amp;h=280&amp;mode=crop"
                                                 alt="Phan Thiết - “Nàng công chúa” tỉnh giấc"> </a>
                                     <div class="clearfix"></div>
                                     <a href="/tin-tuc/phan-thiet-nang-cong-chua-tinh-giac-7895.html"
@@ -71,7 +71,7 @@
                                 <li id="li_4" style="display: none;"><a
                                             href="/tin-tuc/bat-dong-san-phan-thiet-ky-vong-don-song-ha-tang-7894.html">
                                         <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/02/20/131951378081450292.jpg?w=350&amp;h=280&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/02/20/131951378081450292.jpg?w=350&amp;h=280&amp;mode=crop"
                                                 alt="Bất động sản Phan Thiết kỳ vọng đón sóng hạ tầng"> </a>
                                     <div class="clearfix"></div>
                                     <a href="/tin-tuc/bat-dong-san-phan-thiet-ky-vong-don-song-ha-tang-7894.html"
@@ -89,7 +89,7 @@
                                 <li class="clearfix" style="overflow: hidden; float: none; width: 365px; height: 75px;">
                                     <a
                                             href="/tin-tuc/60-000-ty-do-vao-bds-nghi-duong-phan-thiet-trong-nam-2019-7898.html">
-                                        <img src="https://batdongsan24h.com.vn/images/private/2019/04/05/131989044683354005.jpg?w=100&amp;h=75&amp;mode=crop"
+                                        <img src="http://batdongsanphucthinh.vn/images/private/2019/04/05/131989044683354005.jpg?w=100&amp;h=75&amp;mode=crop"
                                              alt="60.000 tỷ đổ vào BĐS nghỉ dưỡng Phan Thiết trong năm 2019"> 60.000 tỷ
                                         đổ vào BĐS
                                         nghỉ dưỡng Phan Thiết trong năm 2019 </a></li>
@@ -97,21 +97,21 @@
                                     <a
                                             href="/tin-tuc/nhung-sai-lam-khien-nha-ban-mua-khong-tang-gia-7897.html">
                                         <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/31/131984897077222611.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/31/131984897077222611.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Những sai lầm khiến nhà bạn mua không tăng giá"> Những sai lầm
                                         khiến nhà bạn
                                         mua không tăng giá </a></li>
                                 <li class="clearfix" style="overflow: hidden; float: none; width: 365px; height: 75px;">
                                     <a
                                             href="/tin-tuc/du-lich-khanh-hoa-dot-pha-vung-bien-bai-dai-7896.html"> <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/24/131978916079882218.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/24/131978916079882218.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Du lịch Khánh Hòa - Đột phá vùng biển Bãi Dài "> Du lịch Khánh Hòa
                                         - Đột phá
                                         vùng biển Bãi Dài </a></li>
                                 <li class="clearfix" style="overflow: hidden; float: none; width: 365px; height: 75px;">
                                     <a
                                             href="/tin-tuc/phan-thiet-nang-cong-chua-tinh-giac-7895.html"> <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/11/131967659986420951.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/11/131967659986420951.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Phan Thiết - “Nàng công chúa” tỉnh giấc"> Phan Thiết - “Nàng công
                                         chúa” tỉnh
                                         giấc </a></li>
@@ -119,14 +119,14 @@
                                     <a
                                             href="/tin-tuc/bat-dong-san-phan-thiet-ky-vong-don-song-ha-tang-7894.html">
                                         <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/02/20/131951378081450292.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/02/20/131951378081450292.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Bất động sản Phan Thiết kỳ vọng đón sóng hạ tầng"> Bất động sản
                                         Phan Thiết kỳ
                                         vọng đón sóng hạ tầng </a></li>
                                 <li class="clearfix" style="overflow: hidden; float: none; width: 365px; height: 75px;">
                                     <a
                                             href="/tin-tuc/60-000-ty-do-vao-bds-nghi-duong-phan-thiet-trong-nam-2019-7898.html">
-                                        <img src="https://batdongsan24h.com.vn/images/private/2019/04/05/131989044683354005.jpg?w=100&amp;h=75&amp;mode=crop"
+                                        <img src="http://batdongsanphucthinh.vn/images/private/2019/04/05/131989044683354005.jpg?w=100&amp;h=75&amp;mode=crop"
                                              alt="60.000 tỷ đổ vào BĐS nghỉ dưỡng Phan Thiết trong năm 2019"> 60.000 tỷ
                                         đổ vào BĐS
                                         nghỉ dưỡng Phan Thiết trong năm 2019 </a></li>
@@ -134,21 +134,21 @@
                                     <a
                                             href="/tin-tuc/nhung-sai-lam-khien-nha-ban-mua-khong-tang-gia-7897.html">
                                         <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/31/131984897077222611.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/31/131984897077222611.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Những sai lầm khiến nhà bạn mua không tăng giá"> Những sai lầm
                                         khiến nhà bạn
                                         mua không tăng giá </a></li>
                                 <li class="clearfix" style="overflow: hidden; float: none; width: 365px; height: 75px;">
                                     <a
                                             href="/tin-tuc/du-lich-khanh-hoa-dot-pha-vung-bien-bai-dai-7896.html"> <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/24/131978916079882218.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/24/131978916079882218.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Du lịch Khánh Hòa - Đột phá vùng biển Bãi Dài "> Du lịch Khánh Hòa
                                         - Đột phá
                                         vùng biển Bãi Dài </a></li>
                                 <li class="clearfix" style="overflow: hidden; float: none; width: 365px; height: 75px;">
                                     <a
                                             href="/tin-tuc/phan-thiet-nang-cong-chua-tinh-giac-7895.html"> <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/11/131967659986420951.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/11/131967659986420951.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Phan Thiết - “Nàng công chúa” tỉnh giấc"> Phan Thiết - “Nàng công
                                         chúa” tỉnh
                                         giấc </a></li>
@@ -156,14 +156,14 @@
                                     <a
                                             href="/tin-tuc/bat-dong-san-phan-thiet-ky-vong-don-song-ha-tang-7894.html">
                                         <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/02/20/131951378081450292.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/02/20/131951378081450292.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Bất động sản Phan Thiết kỳ vọng đón sóng hạ tầng"> Bất động sản
                                         Phan Thiết kỳ
                                         vọng đón sóng hạ tầng </a></li>
                                 <li class="clearfix" style="overflow: hidden; float: none; width: 365px; height: 75px;">
                                     <a
                                             href="/tin-tuc/60-000-ty-do-vao-bds-nghi-duong-phan-thiet-trong-nam-2019-7898.html">
-                                        <img src="https://batdongsan24h.com.vn/images/private/2019/04/05/131989044683354005.jpg?w=100&amp;h=75&amp;mode=crop"
+                                        <img src="http://batdongsanphucthinh.vn/images/private/2019/04/05/131989044683354005.jpg?w=100&amp;h=75&amp;mode=crop"
                                              alt="60.000 tỷ đổ vào BĐS nghỉ dưỡng Phan Thiết trong năm 2019"> 60.000 tỷ
                                         đổ vào BĐS
                                         nghỉ dưỡng Phan Thiết trong năm 2019 </a></li>
@@ -171,21 +171,21 @@
                                     <a
                                             href="/tin-tuc/nhung-sai-lam-khien-nha-ban-mua-khong-tang-gia-7897.html">
                                         <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/31/131984897077222611.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/31/131984897077222611.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Những sai lầm khiến nhà bạn mua không tăng giá"> Những sai lầm
                                         khiến nhà bạn
                                         mua không tăng giá </a></li>
                                 <li class="clearfix" style="overflow: hidden; float: none; width: 365px; height: 75px;">
                                     <a
                                             href="/tin-tuc/du-lich-khanh-hoa-dot-pha-vung-bien-bai-dai-7896.html"> <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/24/131978916079882218.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/24/131978916079882218.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Du lịch Khánh Hòa - Đột phá vùng biển Bãi Dài "> Du lịch Khánh Hòa
                                         - Đột phá
                                         vùng biển Bãi Dài </a></li>
                                 <li class="clearfix" style="overflow: hidden; float: none; width: 365px; height: 75px;">
                                     <a
                                             href="/tin-tuc/phan-thiet-nang-cong-chua-tinh-giac-7895.html"> <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/03/11/131967659986420951.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/03/11/131967659986420951.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Phan Thiết - “Nàng công chúa” tỉnh giấc"> Phan Thiết - “Nàng công
                                         chúa” tỉnh
                                         giấc </a></li>
@@ -193,7 +193,7 @@
                                     <a
                                             href="/tin-tuc/bat-dong-san-phan-thiet-ky-vong-don-song-ha-tang-7894.html">
                                         <img
-                                                src="https://batdongsan24h.com.vn/images/private/2019/02/20/131951378081450292.jpg?w=100&amp;h=75&amp;mode=crop"
+                                                src="http://batdongsanphucthinh.vn/images/private/2019/02/20/131951378081450292.jpg?w=100&amp;h=75&amp;mode=crop"
                                                 alt="Bất động sản Phan Thiết kỳ vọng đón sóng hạ tầng"> Bất động sản
                                         Phan Thiết kỳ
                                         vọng đón sóng hạ tầng </a></li>
@@ -203,7 +203,7 @@
                     <div class="clearfix">
                         <div style="width:725px;float:left"><a href="/Home/BannerClicked?bannerId=199" rel="nofollow"
                                                                target="_blank"><img
-                                        src="https://batdongsan24h.com.vn/images/banners/2016/09/17/131185794184316801.jpg?w=725"
+                                        src="http://batdongsanphucthinh.vn/images/banners/2016/09/17/131185794184316801.jpg?w=725"
                                         width="725" height="100" alt="Banner"></a></div>
                     </div>
                     <div id="raovat-nb">
@@ -229,7 +229,7 @@
                                                 </a>
                                                 <span style="color: #f00; font-weight: 400">(Chính chủ)</span></h3>
                                         </div>
-                                        <p><?php echo substr($value->content, 0, 100). '...'; ?> </p>
+                                        <p><?php echo substr($value->content, 0, 100) . '...'; ?> </p>
                                         <div class="price-list">
                                             <span>Diện tích</span>: <strong><?php echo $value->acreage ?> m2</strong>
                                         </div>
@@ -264,7 +264,7 @@
                                                 style="width: 1015%; position: relative; transition-duration: 0.5s; transform: translate3d(-2318.5px, 0px, 0px);">
                                                 <li style="float: left; list-style: none; position: relative; width: 325.5px;"
                                                     class="bx-clone"><a href="/du-an/opal-garden-271"> <img
-                                                                src="https://batdongsan24h.com.vn/images/private/2016/10/20/131214310105824608.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                src="http://batdongsanphucthinh.vn/images/private/2016/10/20/131214310105824608.jpg?w=325&amp;h=190&amp;mode=crop"
                                                                 alt="Opal Garden" title="Opal Garden"> </a> <a
                                                             href="/du-an/opal-garden-271">Opal Garden</a>
                                                     <p class="description text-muted">Opal Garden là khu phức hợp được
@@ -277,7 +277,7 @@
                                                 <li style="float: left; list-style: none; position: relative; width: 325.5px;">
                                                     <a
                                                             href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315"> <img
-                                                                src="https://batdongsan24h.com.vn/images/private/2016/12/01/131250386311955428.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                src="http://batdongsanphucthinh.vn/images/private/2016/12/01/131250386311955428.jpg?w=325&amp;h=190&amp;mode=crop"
                                                                 alt="A1- A2- A3 Vinhomes Gardenia Mỹ Đình"
                                                                 title="A1- A2- A3 Vinhomes Gardenia Mỹ Đình"> </a> <a
                                                             href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315">A1-
@@ -293,7 +293,7 @@
                                                 <li style="float: left; list-style: none; position: relative; width: 325.5px;">
                                                     <a
                                                             href="/du-an/the-panorama-427"> <img
-                                                                src="https://batdongsan24h.com.vn/images/private/2016/10/27/131220335448098789.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                src="http://batdongsanphucthinh.vn/images/private/2016/10/27/131220335448098789.jpg?w=325&amp;h=190&amp;mode=crop"
                                                                 alt="The Panorama" title="The Panorama"> </a> <a
                                                             href="/du-an/the-panorama-427">The Panorama</a>
                                                     <p class="description text-muted">The Panorama là khu căn hộ đẳng
@@ -304,7 +304,7 @@
                                                 <li style="float: left; list-style: none; position: relative; width: 325.5px;">
                                                     <a
                                                             href="/du-an/van-phuc-riverside-city-400"> <img
-                                                                src="https://batdongsan24h.com.vn/images/private/2016/10/25/131218850179006051.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                src="http://batdongsanphucthinh.vn/images/private/2016/10/25/131218850179006051.jpg?w=325&amp;h=190&amp;mode=crop"
                                                                 alt="Van Phuc Riverside City"
                                                                 title="Van Phuc Riverside City"> </a>
                                                     <a href="/du-an/van-phuc-riverside-city-400">Van Phuc Riverside
@@ -319,7 +319,7 @@
                                                 <li style="float: left; list-style: none; position: relative; width: 325.5px;">
                                                     <a
                                                             href="/du-an/citizen-ts-trung-son-289"> <img
-                                                                src="https://batdongsan24h.com.vn/images/private/2016/10/22/131215826916768746.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                src="http://batdongsanphucthinh.vn/images/private/2016/10/22/131215826916768746.jpg?w=325&amp;h=190&amp;mode=crop"
                                                                 alt="Citizen TS Trung Sơn" title="Citizen TS Trung Sơn">
                                                     </a> <a
                                                             href="/du-an/citizen-ts-trung-son-289">Citizen TS Trung
@@ -332,7 +332,7 @@
                                                 <li style="float: left; list-style: none; position: relative; width: 325.5px;">
                                                     <a
                                                             href="/du-an/skyway-residence-287"> <img
-                                                                src="https://batdongsan24h.com.vn/images/private/2016/10/22/131215817095771496.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                src="http://batdongsanphucthinh.vn/images/private/2016/10/22/131215817095771496.jpg?w=325&amp;h=190&amp;mode=crop"
                                                                 alt="Skyway Residence" title="Skyway Residence"> </a> <a
                                                             href="/du-an/skyway-residence-287">Skyway Residence</a>
                                                     <p class="description text-muted">Dự án căn hộ Skyway Residence nằm
@@ -343,7 +343,7 @@
                                                 <li style="float: left; list-style: none; position: relative; width: 325.5px;">
                                                     <a
                                                             href="/du-an/vincom-shophouse-tra-vinh-276"> <img
-                                                                src="https://batdongsan24h.com.vn/images/private/2016/10/21/131215124081870282.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                src="http://batdongsanphucthinh.vn/images/private/2016/10/21/131215124081870282.jpg?w=325&amp;h=190&amp;mode=crop"
                                                                 alt="Vincom Shophouse Trà Vinh"
                                                                 title="Vincom Shophouse Trà Vinh">
                                                     </a> <a href="/du-an/vincom-shophouse-tra-vinh-276">Vincom Shophouse
@@ -357,7 +357,7 @@
                                                 <li style="float: left; list-style: none; position: relative; width: 325.5px;">
                                                     <a
                                                             href="/du-an/the-navita-272"> <img
-                                                                src="https://batdongsan24h.com.vn/images/private/2016/10/20/131214326073544654.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                src="http://batdongsanphucthinh.vn/images/private/2016/10/20/131214326073544654.jpg?w=325&amp;h=190&amp;mode=crop"
                                                                 alt="The Navita" title="The Navita"> </a> <a
                                                             href="/du-an/the-navita-272">The Navita</a>
                                                     <p class="description text-muted">The Navita nằm trong Khu phức hợp
@@ -367,7 +367,7 @@
                                                 <li style="float: left; list-style: none; position: relative; width: 325.5px;">
                                                     <a
                                                             href="/du-an/opal-garden-271"> <img
-                                                                src="https://batdongsan24h.com.vn/images/private/2016/10/20/131214310105824608.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                src="http://batdongsanphucthinh.vn/images/private/2016/10/20/131214310105824608.jpg?w=325&amp;h=190&amp;mode=crop"
                                                                 alt="Opal Garden" title="Opal Garden"> </a> <a
                                                             href="/du-an/opal-garden-271">Opal Garden</a>
                                                     <p class="description text-muted">Opal Garden là khu phức hợp được
@@ -380,7 +380,7 @@
                                                 <li style="float: left; list-style: none; position: relative; width: 325.5px;"
                                                     class="bx-clone"><a
                                                             href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315"> <img
-                                                                src="https://batdongsan24h.com.vn/images/private/2016/12/01/131250386311955428.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                src="http://batdongsanphucthinh.vn/images/private/2016/12/01/131250386311955428.jpg?w=325&amp;h=190&amp;mode=crop"
                                                                 alt="A1- A2- A3 Vinhomes Gardenia Mỹ Đình"
                                                                 title="A1- A2- A3 Vinhomes Gardenia Mỹ Đình"> </a> <a
                                                             href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315">A1-
@@ -423,7 +423,7 @@
                             <div class="bg-modul"><h2>Không gian sống</h2></div>
                             <div class="border-box col-hom-news" style="height:415px"><a
                                         href="/tin-tuc/ha-noi-chu-nha-hoi-han-vi-sua-nha-qua-dep-7862.html"> <img
-                                            src="https://batdongsan24h.com.vn/images/private/2017/10/13/131523657644051181.jpg?w=325&amp;h=190&amp;mode=crop"
+                                            src="http://batdongsanphucthinh.vn/images/private/2017/10/13/131523657644051181.jpg?w=325&amp;h=190&amp;mode=crop"
                                             class="img-responsive center-block"
                                             alt="Hà Nội: Chủ nhà hối hận vì sửa nhà quá đẹp">
                                     <br> <span class="title-raovat">Hà Nội: Chủ nhà hối hận vì sửa nhà quá đẹp</span>
@@ -449,7 +449,7 @@
                         </div>
                     </div>
                     <div class="clearfix"><a href="/Home/BannerClicked?bannerId=209" rel="nofollow" target="_blank"><img
-                                    src="https://batdongsan24h.com.vn/images/banners/2018/04/21/131687986590700974.jpg?w=725"
+                                    src="http://batdongsanphucthinh.vn/images/banners/2018/04/21/131687986590700974.jpg?w=725"
                                     width="725" height="100" alt="Banner"></a></div>
                     <div class="box-module mt10">
                         <div class="bg-modul"><h1><i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
@@ -467,13 +467,14 @@
                                                 href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
                                             <?php echo $value->title ?>
                                         </a></h3>
-                                    <p><?php echo substr($value->content, 0, 100). '...'; ?></p>
+                                    <p><?php echo substr($value->content, 0, 100) . '...'; ?></p>
                                     <div class="price-list"><span>Diện tích</span>:
                                         <strong><?php echo $value->acreage ?> m2</strong></div>
                                     <div class="price-list"><span>Giá</span>:
                                         <strong><?php echo $value->price ?> Triệu</strong></div>
                                     <div class="price-list"><span>Khu vực</span>:
-                                        <strong> <?php echo $value->address ?></strong> <span class="pull-right time"> <i
+                                        <strong> <?php echo $value->address ?></strong>
+                                        <span class="pull-right time"> <i
                                                     class="glyphicon glyphicon-time"></i> Hôm nay, lúc 12 giờ 35 phút </span>
                                     </div>
                                 </div>
@@ -770,35 +771,35 @@
                         </p>
                         <ul>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-sun-grand-city-ancora-luong-yen-s1422162">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-sun-grand-city-ancora-luong-yen-s1422162">Chung
                                     cư&nbsp;Sun Grand City Ancora Residence</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-the-garden-hills-99-tran-binh-s260117">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-the-garden-hills-99-tran-binh-s260117">Chung
                                     cư The garden Hills - 99 Trần Bình&nbsp;</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-an-binh-city-s1172432">Chung
+                            <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-an-binh-city-s1172432">Chung
                                     cư An
                                     Bình City</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-goldmark-city-s578392">Chung
+                            <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-goldmark-city-s578392">Chung
                                     cư
                                     Goldmark City</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-tu-hiep-plaza-s1172600?page=12">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-tu-hiep-plaza-s1172600?page=12">Chung
                                     cư Tứ Hiệp Plaza</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-vinhomes-green-bay-me-tri-s1988923">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-vinhomes-green-bay-me-tri-s1988923">Chung
                                     cư&nbsp;Vinhomes Green Bay Mễ Trì</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-vinhomes-sky-lake-s1225279">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-vinhomes-sky-lake-s1225279">Chung
                                     cư
                                     Vinhomes Sky Lake</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/cho-thue-van-phong-mat-bang-kinh-doanh-tai-ha-noi-s49598">Văn
+                                <a href="http://batdongsanphucthinh.vn/cho-thue-van-phong-mat-bang-kinh-doanh-tai-ha-noi-s49598">Văn
                                     phòng - mặt bằng kinh doanh tại Hà Nội</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/nha-ban-tai-duong-pho-phao-dai-lang-s1419515">Nhà
+                            <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-duong-pho-phao-dai-lang-s1419515">Nhà
                                     bán tại
                                     phố Pháo Đài Láng</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-md-complex-my-dinh-s813995">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-md-complex-my-dinh-s813995">Chung
                                     cư
                                     Mdcomplex Mỹ Đình</a></li>
                         </ul>
@@ -806,30 +807,30 @@
                             <span style="font-size:12px"><span style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;TP.HCM</strong></span></span>
                         </p>
                         <ul>
-                            <li><a href="https://batdongsan24h.com.vn/cho-thue-can-ho-chung-cu-tai-quan-7-s37553">Cho
+                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-7-s37553">Cho
                                     thuê căn hộ
                                     chung cư Quận 7</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/cho-thue-can-ho-chung-cu-tai-quan-4-s37550">Cho
+                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-4-s37550">Cho
                                     thuê căn hộ
                                     chung cư Quận&nbsp;4</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/cho-thue-can-ho-chung-cu-tai-quan-5-s37551?page=1">Cho
+                                <a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-5-s37551?page=1">Cho
                                     thuê
                                     căn hộ chung cư Quận&nbsp;5</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-him-lam-phu-an-s1422099">Căn
+                            <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-him-lam-phu-an-s1422099">Căn
                                     hộ Him
                                     Lam Phú An</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/dat-ban-tai-quan-9-s1359687">Đất bán tại Quận
+                            <li><a href="http://batdongsanphucthinh.vn/dat-ban-tai-quan-9-s1359687">Đất bán tại Quận
                                     9</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/nha-ban-tai-quan-tan-binh-s1359045">Bán nhà quận
+                            <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-quan-tan-binh-s1359045">Bán nhà quận
                                     Tân&nbsp;<span style="font-size:13px">Bình</span></a></li>
-                            <li><a href="https://batdongsan24h.com.vn/nha-ban-tai-quan-10-s1358944"><span
+                            <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-quan-10-s1358944"><span
                                             style="font-size:13px">Bán nhà Quận 10</span></a>
                             </li>
-                            <li><a href="https://batdongsan24h.com.vn/cho-thue-nha-tai-tan-hung-quan-7-s110665">Cho thuê
+                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-tan-hung-quan-7-s110665">Cho thuê
                                     nhà tân
                                     hưng, quận 7</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/cho-thue-nha-tai-quan-1-s38310">Cho thuê nhà tại
+                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-quan-1-s38310">Cho thuê nhà tại
                                     quận 1</a>
                             </li>
                         </ul>
@@ -843,7 +844,7 @@
                         <li class="first"><a
                                     href="/tin-tuc/nghe-thay-chon-ngay-dong-tho-gia-dinh-toi-phai-o-nha-dot-3-nam-7891.html"
                                     rel="nofollow"> <img
-                                        src="https://batdongsan24h.com.vn/images/private/2018/09/30/131827865197044222.jpg?w=245"
+                                        src="http://batdongsanphucthinh.vn/images/private/2018/09/30/131827865197044222.jpg?w=245"
                                         class="img-responsive center-block"
                                         alt="Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm"> Nghe thầy
                                 chọn ngày
@@ -877,7 +878,7 @@
                     <ul class="news-list">
                         <li class="first"><a href="/tin-tuc/nhung-sai-lam-khien-nha-ban-mua-khong-tang-gia-7897.html"
                                              rel="nofollow"> <img
-                                        src="https://batdongsan24h.com.vn/images/private/2019/03/31/131984897077222611.jpg?w=245"
+                                        src="http://batdongsanphucthinh.vn/images/private/2019/03/31/131984897077222611.jpg?w=245"
                                         class="img-responsive center-block"
                                         alt="Những sai lầm khiến nhà bạn mua không tăng giá">
                                 Những sai lầm khiến nhà bạn mua không tăng giá </a></li>
