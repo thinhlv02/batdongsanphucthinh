@@ -15,8 +15,8 @@ Class Ads extends MY_Controller
 
         $input = array();
         $input['order'] = array('highlight', 'desc');
-        $news = $this->ads_model->get_list($input);
-        $this->data['news'] = $news;
+        $ads = $this->ads_model->get_list($input);
+        $this->data['ads'] = $ads;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/ads/index';
         $this->data['view'] = 'admin/ads/list';
@@ -65,8 +65,8 @@ Class Ads extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
-        $news = $this->ads_model->get_info($id);
-        if (!$news) {
+        $ads = $this->ads_model->get_info($id);
+        if (!$ads) {
             redirect(base_url('admin/ads'));
         }
 
@@ -88,7 +88,7 @@ Class Ads extends MY_Controller
             if ($this->upload->do_upload('img_news')) {
                 $file_data = $this->upload->data();
                 $data['img'] = $file_data['file_name'];
-                unlink('./public/images/ads/' . $news->img);
+                unlink('./public/images/ads/' . $ads->img);
             } else {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
@@ -100,7 +100,7 @@ Class Ads extends MY_Controller
             }
         }
         $this->data['tab'] = 3;
-        $this->data['news'] = $news;
+        $this->data['ads'] = $ads;
         $this->data['temp'] = 'admin/ads/index';
         $this->data['view'] = 'admin/ads/edit';
         $this->load->view('admin/layout', $this->data);
@@ -109,10 +109,10 @@ Class Ads extends MY_Controller
     function del()
     {
         $id = $this->uri->segment(4);
-        $news = $this->ads_model->get_info($id);
-        if ($news) {
+        $ads = $this->ads_model->get_info($id);
+        if ($ads) {
             $this->ads_model->delete($id);
-            unlink('./public/images/ads/' . $news->img);
+            unlink('./public/images/ads/' . $ads->img);
         }
         redirect(base_url('admin/ads'));
     }
@@ -120,12 +120,12 @@ Class Ads extends MY_Controller
     function highlight()
     {
         $id = $_POST['id'];
-        $news = $this->ads_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
-        if ($news) {
+        if ($ads) {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($news->highlight) {
+            if ($ads->highlight) {
                 $res['class'] = 'fa-toggle-off';
                 $dataSubmit['highlight'] = 0;
             } else {
