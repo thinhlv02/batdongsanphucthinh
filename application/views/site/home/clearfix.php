@@ -490,9 +490,9 @@
                     <div class="clearfix">
                         <?php foreach ($ads_new as $value) { ?>
 
-                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
-                                <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="Không có ảnh">
-                            </a>
+<!--                            <a href="--><?php //echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?><!--">-->
+<!--                                <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="Không có ảnh">-->
+<!--                            </a>-->
 
 
                         <div class="item-re-list clearfix">
@@ -514,7 +514,7 @@
                                                 class="glyphicon glyphicon-time"></i> Hôm nay, lúc 12 giờ 35 phút </span>
                                 </div>
                             </div>
-                        </div>
+                        </div>st
                         <?php } ?>
 
                         <div class="item-re-list clearfix">
