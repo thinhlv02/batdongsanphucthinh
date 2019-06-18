@@ -1,6 +1,6 @@
 <section class="intro_1">
     <div class="container">
-        <?php var_dump($ads_new); ?>
+<!--        --><?php //var_dump($ads_new); ?>
         <!--        <div class="col-sm-12 col-md-12">-->
         <div class="clearfix" style="margin-top:10px">
             <div class="col-sm-8 col-md-8">
@@ -488,75 +488,18 @@
                         <div class="bg-modul"><h1><i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
                     </div>
                     <div class="clearfix">
+                        <?php foreach ($ads_new as $value) { ?>
+
+                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
+                                <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="Không có ảnh">
+                            </a>
+
+
                         <div class="item-re-list clearfix">
                             <div class="box-img-thumb"><a
-                                        href="/ban-bat-dong-san-khac-huyen-binh-chanh/can-ban-mieng-dat-vuon-chinh-chu-so-hong-rieng-tai-huyen-binh-chanh-tp-hcm-948340.html">
-                                    <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/05/132042003791296680.jpg"
-                                         alt="Cần bán miếng đất vườn chính chủ, sổ hồng riêng tại huyện Bình Chánh, TP.HCM">
-                                </a>
-                            </div>
-                            <div class="box-info-list"><h3><a
-                                            href="/ban-bat-dong-san-khac-huyen-binh-chanh/can-ban-mieng-dat-vuon-chinh-chu-so-hong-rieng-tai-huyen-binh-chanh-tp-hcm-948340.html">Cần
-                                        bán miếng đất vườn chính chủ, sổ hồng riêng tại huyện Bình Chánh, TP.HCM </a>
-                                </h3>
-                                <p>• Cần bán miếng đất vườn tại x.Bình Lợi, huyện Bình Chánh. Diện tích 2000m2 giá
-                                    ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong>2000 m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong>3 Tỷ</strong></div>
-                                <div class="price-list"><span>Khu vực</span>: <strong> Xã Bình Lợi - Huyện Bình Chánh -
-                                        TP.
-                                        HCM </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> Hôm nay, lúc 12 giờ 35 phút </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-re-list clearfix">
-                            <div class="box-img-thumb"><a
-                                        href="/ban-dat-huyen-binh-chanh/mua-ban-dat-so-hong-rieng-gan-duong-truong-van-da-xa-binh-loi-huyen-binh-chanh-955687.html">
-                                    <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/13/132048892079879033.jpg"
-                                         alt="Mua Bán đất sổ hồng riêng gần đường Trương Văn Đa, Xã Bình Lợi, Huyện Bình Chánh">
-                                </a></div>
-                            <div class="box-info-list"><h3><a
-                                            href="/ban-dat-huyen-binh-chanh/mua-ban-dat-so-hong-rieng-gan-duong-truong-van-da-xa-binh-loi-huyen-binh-chanh-955687.html">Mua
-                                        Bán đất sổ hồng riêng gần đường Trương Văn Đa, Xã Bình Lợi, Huyện Bình
-                                        Chánh </a></h3>
-                                <p>• • Cần bán miếng đất tại x.Bình Lợi, huyện Bình Chánh. Diện tích 1602m2 giá 2,4
-                                    ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong>1602 m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong>2.4 Tỷ</strong></div>
-                                <div class="price-list"><span>Khu vực</span>: <strong> Xã Bình Lợi - Huyện Bình Chánh -
-                                        TP.
-                                        HCM </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> Hôm nay, lúc 12 giờ 35 phút </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-re-list clearfix">
-                            <div class="box-img-thumb"><a
-                                        href="/ban-dat-huyen-binh-chanh/can-ban-mieng-dat-vuon-gia-re-chinh-chu-so-hong-rieng-tai-h-binh-chanh-tp-hcm-957543.html">
-                                    <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/15/132050442993500015.jpg"
-                                         alt="Cần bán miếng đất vườn giá rẻ, chính chủ, sổ hồng riêng tại H.Bình Chánh, TP.HCM">
-                                </a></div>
-                            <div class="box-info-list"><h3><a
-                                            href="/ban-dat-huyen-binh-chanh/can-ban-mieng-dat-vuon-gia-re-chinh-chu-so-hong-rieng-tai-h-binh-chanh-tp-hcm-957543.html">Cần
-                                        bán miếng đất vườn giá rẻ, chính chủ, sổ hồng riêng tại H.Bình Chánh,
-                                        TP.HCM </a></h3>
-                                <p>• Cần bán miếng đất vườn tại x.Bình Lợi, huyện Bình Chánh. Diện tích 1602m2 giá
-                                    ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong>1602 m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong>2.4 Tỷ</strong></div>
-                                <div class="price-list"><span>Khu vực</span>: <strong> Xã Bình Lợi - Huyện Bình Chánh -
-                                        TP.
-                                        HCM </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> Hôm nay, lúc 12 giờ 35 phút </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-re-list clearfix">
-                            <div class="box-img-thumb"><a
-                                        href="/ban-bat-dong-san-khac-huyen-binh-chanh/can-ban-mieng-dat-vuon-chinh-chu-so-hong-rieng-tai-huyen-binh-chanh-948338.html">
-                                    <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/05/132042001395912472.jpg"
-                                         alt="Cần bán miếng đất vườn chính chủ, sổ hồng riêng tại huyện Bình Chánh">
+                                        href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
+                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                         alt="<?php echo $value->title ?>">
                                 </a></div>
                             <div class="box-info-list"><h3><a
                                             href="/ban-bat-dong-san-khac-huyen-binh-chanh/can-ban-mieng-dat-vuon-chinh-chu-so-hong-rieng-tai-huyen-binh-chanh-948338.html">Cần
@@ -572,6 +515,8 @@
                                 </div>
                             </div>
                         </div>
+                        <?php } ?>
+
                         <div class="item-re-list clearfix">
                             <div class="box-img-thumb"><a
                                         href="/ban-dat-huyen-binh-chanh/can-ban-mieng-dat-vuon-gia-re-chinh-chu-so-hong-rieng-tai-huyen-binh-chanh-948669.html">
