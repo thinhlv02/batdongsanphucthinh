@@ -43,7 +43,7 @@
                            style="color: green"
                         ></i></td>
                     <td>
-                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/news/edit/'.$row->id)?>">Sửa</a>
+                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
                         <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
                     </td>
                 </tr>
