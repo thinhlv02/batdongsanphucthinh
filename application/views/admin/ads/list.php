@@ -24,8 +24,10 @@
                 <th>Mã số</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
-                <th>Ngày đăng</th>
+                <th>Giá</th>
+                <th>Diện tích</th>
                 <th>Nổi bật</th>
+                <th>Ngày đăng</th>
                 <th>Hành động</th>
             </tr>
             </thead>
@@ -35,13 +37,15 @@
                     <td><?php echo $row->id?></td>
                     <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 150px"> </td>
                     <td><?php echo $row->title?></td>
-                    <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
+                    <td><?php echo $row->price?></td>
+                    <td><?php echo $row->acreage?></td>
                     <td>
                         <i id="highlight-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->highlight ? 'fa-toggle-on' : 'fa-toggle-off'?>"
                            onclick="highlight(<?php echo $row->id?>)"
                            style="color: green"
                         ></i></td>
+                    <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td>
                         <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
                         <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
