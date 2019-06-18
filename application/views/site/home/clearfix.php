@@ -214,6 +214,8 @@
 
                             <?php foreach ($ads as $value) { ?>
 
+
+
                                 <div class="item-re-list clearfix" style="border-color: #f00">
                                     <div class="box-img-thumb">
                                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
