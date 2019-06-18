@@ -1,6 +1,6 @@
 <section class="intro_1">
     <div class="container">
-        <?php var_dump($ads); ?>
+        <?php var_dump(ads_new); ?>
         <!--        <div class="col-sm-12 col-md-12">-->
         <div class="clearfix" style="margin-top:10px">
             <div class="col-sm-8 col-md-8">
