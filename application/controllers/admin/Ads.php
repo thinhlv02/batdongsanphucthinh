@@ -1,11 +1,11 @@
 <?php
-Class Ads extends MY_Controller {
-    function __construct() {
+
+Class Ads extends MY_Controller
+{
+    function __construct()
+    {
         parent::__construct();
         $this->load->model('ads_model');
-
-
-
     }
 
     function index()
@@ -14,7 +14,7 @@ Class Ads extends MY_Controller {
         $this->data['message'] = $message;
 
         $input = array();
-        $input['order'] = array('highlight','desc');
+        $input['order'] = array('highlight', 'desc');
         $news = $this->ads_model->get_list($input);
         $this->data['news'] = $news;
         $this->data['tab'] = 1;
@@ -23,10 +23,11 @@ Class Ads extends MY_Controller {
         $this->load->view('admin/layout', $this->data);
     }
 
-    function add(){
+    function add()
+    {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if($this->input->post('btnAdd')){
+        if ($this->input->post('btnAdd')) {
             $config['upload_path'] = './public/images/ads';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $this->load->library("upload", $config);
@@ -43,15 +44,13 @@ Class Ads extends MY_Controller {
 //                    'robots_meta' => implode(', ',$this->input->post('robots_meta')),
                     'img' => $file_data['file_name'],
                 );
-                if($this->ads_model->create($data)){
+                if ($this->ads_model->create($data)) {
                     $this->session->set_flashdata('message', 'Thêm rao bán thành công');
                     redirect(base_url('admin/ads'));
-                }
-                else{
+                } else {
                     $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
                 }
-            }
-            else{
+            } else {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
         }
@@ -61,16 +60,17 @@ Class Ads extends MY_Controller {
         $this->load->view('admin/layout', $this->data);
     }
 
-    function edit(){
+    function edit()
+    {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
         $news = $this->ads_model->get_info($id);
-        if(!$news){
+        if (!$news) {
             redirect(base_url('admin/ads'));
         }
 
-        if($this->input->post('btnEdit')){
+        if ($this->input->post('btnEdit')) {
             $data = array(
                 'title' => $this->input->post('txtName'),
                 'content' => $this->input->post('txtContent'),
@@ -88,16 +88,14 @@ Class Ads extends MY_Controller {
             if ($this->upload->do_upload('img_news')) {
                 $file_data = $this->upload->data();
                 $data['img'] = $file_data['file_name'];
-                unlink('./public/images/ads/'.$news->img);
-            }
-            else{
+                unlink('./public/images/ads/' . $news->img);
+            } else {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
-            if($this->ads_model->update($id, $data)){
+            if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật rao bán thành công');
                 redirect(base_url('admin/ads'));
-            }
-            else{
+            } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
@@ -108,28 +106,29 @@ Class Ads extends MY_Controller {
         $this->load->view('admin/layout', $this->data);
     }
 
-    function del(){
+    function del()
+    {
         $id = $this->uri->segment(4);
         $news = $this->ads_model->get_info($id);
-        if($news){
+        if ($news) {
             $this->ads_model->delete($id);
-            unlink('./public/images/ads/'.$news->img);
+            unlink('./public/images/ads/' . $news->img);
         }
         redirect(base_url('admin/ads'));
     }
 
-    function highlight(){
+    function highlight()
+    {
         $id = $_POST['id'];
         $news = $this->ads_model->get_info($id);
         $res = array("status" => 0);
-        if($news){
+        if ($news) {
             $res['status'] = 1;
             $dataSubmit = array();
-            if($news->highlight){
+            if ($news->highlight) {
                 $res['class'] = 'fa-toggle-off';
                 $dataSubmit['highlight'] = 0;
-            }
-            else{
+            } else {
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['highlight'] = 1;
             }
