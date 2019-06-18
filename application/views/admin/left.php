@@ -33,8 +33,8 @@
 
                     <li><a><i class="fa fa-tint"></i>Quản lý bài viết<span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="<?php echo admin_url('news') ?>">Tin tức</a></li>
                             <li><a href="<?php echo admin_url('ads') ?>">Rao bán nhà đất</a></li>
+                            <li><a href="<?php echo admin_url('news') ?>">Tin tức</a></li>
                         </ul>
                     </li>
 
