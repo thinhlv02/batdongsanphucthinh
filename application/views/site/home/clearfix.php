@@ -231,7 +231,7 @@
                                         </div>
                                         <p><?php echo substr($value->content, 0, 100). '...'; ?> </p>
                                         <div class="price-list">
-                                            <span>Diện tích</span>: <strong><?php echo $value->title ?> m2</strong>
+                                            <span>Diện tích</span>: <strong><?php echo $value->acreage ?> m2</strong>
                                         </div>
                                         <div class="price-list">
                                             <span>Giá</span>: <strong><?php echo $value->price ?> Triệu/m2</strong>
