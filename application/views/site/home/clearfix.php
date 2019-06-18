@@ -490,11 +490,6 @@
                     <div class="clearfix">
                         <?php foreach ($ads_new as $value) { ?>
 
-<!--                            <a href="--><?php //echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?><!--">-->
-<!--                                <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="Không có ảnh">-->
-<!--                            </a>-->
-
-
                         <div class="item-re-list clearfix">
                             <div class="box-img-thumb"><a
                                         href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
@@ -506,15 +501,15 @@
                                         bán miếng đất vườn chính chủ, sổ hồng riêng tại huyện Bình Chánh </a></h3>
                                 <p>• Cần bán miếng đất vườn tại x.Bình Lợi, huyện Bình Chánh. Diện tích 1000m2 giá
                                     ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong>1000 m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong>1400 Triệu</strong></div>
+                                <div class="price-list"><span>Diện tích</span>: <strong><?php echo $value->acreage ?> m2</strong></div>
+                                <div class="price-list"><span>Giá</span>: <strong><?php echo $value->price ?> Triệu</strong></div>
                                 <div class="price-list"><span>Khu vực</span>: <strong> Xã Bình Lợi - Huyện Bình Chánh -
                                         TP.
                                         HCM </strong> <span class="pull-right time"> <i
                                                 class="glyphicon glyphicon-time"></i> Hôm nay, lúc 12 giờ 35 phút </span>
                                 </div>
                             </div>
-                        </div>st
+                        </div>
                         <?php } ?>
 
                         <div class="item-re-list clearfix">
