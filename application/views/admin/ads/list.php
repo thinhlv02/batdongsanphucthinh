@@ -33,8 +33,8 @@
             <?php foreach ($news as $row){ ?>
                 <tr>
                     <td><?php echo $row->id?></td>
-                    <td><img src="<?php echo base_url('public/images/news/'.$row->img)?>" style="max-width: 150px"> </td>
-                    <td><?php echo $row->name?></td>
+                    <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 150px"> </td>
+                    <td><?php echo $row->title?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td>
                         <i id="highlight-<?php echo $row->id?>"

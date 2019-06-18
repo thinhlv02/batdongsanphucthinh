@@ -33,7 +33,7 @@ Class Ads extends MY_Controller {
             if ($this->upload->do_upload('img_news')) {
                 $file_data = $this->upload->data();
                 $data = array(
-                    'name' => $this->input->post('txtName'),
+                    'title' => $this->input->post('txtName'),
                     'content' => $this->input->post('txtContent'),
                     'intro' => $this->input->post('txtIntro'),
                     'document_title' => $this->input->post('txtDocumentTitle'),
@@ -72,7 +72,7 @@ Class Ads extends MY_Controller {
 
         if($this->input->post('btnEdit')){
             $data = array(
-                'name' => $this->input->post('txtName'),
+                'title' => $this->input->post('txtName'),
                 'content' => $this->input->post('txtContent'),
                 'intro' => nl2br($this->input->post('txtIntro')),
                 'document_title' => $this->input->post('txtDocumentTitle'),
