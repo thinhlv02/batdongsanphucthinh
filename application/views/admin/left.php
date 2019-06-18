@@ -30,6 +30,7 @@
                             Dịch vụ</a></li>
                     <li><a href="<?php echo admin_url('question') ?>"><i class="fa fa-question-circle" aria-hidden="true"></i>Hỗ trợ</a></li>
                     <li><a href="<?php echo admin_url('news') ?>"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Tin tức</a></li>
+                    <li><a href="<?php echo admin_url('ads') ?>"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Rao bán</a></li>
                     <li><a href="<?php echo admin_url('contact') ?>"><i class="fa fa-phone" aria-hidden="true"></i>Liên hệ</a></li>
                     <li><a href="<?php echo admin_url('content') ?>"><i class="fa fa-info-circle" aria-hidden="true"></i>Nội dung</a></li>
                     <li><a href="<?php echo admin_url('agency') ?>"><i class="fa fa-map-marker" aria-hidden="true"></i>Đại lý</a></li>
