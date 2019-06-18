@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="txtName" name="txtName" value="<?php echo $news->name?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tên bài viết">
+                        <input type="text" id="txtName" name="txtName" value="<?php echo $news->title?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tên bài viết">
                     </div>
                 </div>
                 <div class="form-group">
