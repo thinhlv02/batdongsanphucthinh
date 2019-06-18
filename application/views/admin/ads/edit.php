@@ -29,13 +29,13 @@
                         <input type="text" id="txtName" name="txtName" value="<?php echo $ads->title ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tên bài viết">
                     </div>
                 </div>
-<!--                <div class="form-group">-->
-<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn-->
-<!--                        <span class="required">*</span></label>-->
-<!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
-<!--                        <textarea name="txtIntro" class="form-control" style="height: 120px">--><?php //echo str_replace('<br />', '&#13;', $ads->intro) ?><!--</textarea>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="form-group">-->
+                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn-->
+                <!--                        <span class="required">*</span></label>-->
+                <!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+                <!--                        <textarea name="txtIntro" class="form-control" style="height: 120px">--><?php //echo str_replace('<br />', '&#13;', $ads->intro) ?><!--</textarea>-->
+                <!--                    </div>-->
+                <!--                </div>-->
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh minh họa (900x450)<span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
@@ -70,7 +70,7 @@
                         <span class="required">*</span></label>
                     <div class="col-md-3 col-sm-3 col-xs-12">
 
-                        <select class="form-control" data-val="true" data-val-number="The field TypePrice must be a number." data-val-required="Hãy chọn đơn vị giá" id="TypePrice" name="TypePrice"><option value="">Chọn đơn vị giá</option>
+                        <select class="form-control" name="unit">
                             <option value="0">Thỏa thuận</option>
                             <option value="1">Triệu</option>
                             <option value="2">Tỷ</option>
@@ -97,39 +97,39 @@
                     </div>
                 </div>
 
-<!--                <div class="form-group">-->
-<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Description-->
-<!--                        <span class="required">*</span></label>-->
-<!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
-<!--                        <input type="text" id="txtMetaDescription" name="txtMetaDescription" value="--><?php //echo $ads->meta_description ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Description">-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="form-group">-->
+                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Description-->
+                <!--                        <span class="required">*</span></label>-->
+                <!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+                <!--                        <input type="text" id="txtMetaDescription" name="txtMetaDescription" value="--><?php //echo $ads->meta_description ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Description">-->
+                <!--                    </div>-->
+                <!--                </div>-->
 
-<!--                <div class="form-group">-->
-<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Keywords-->
-<!--                        <span class="required">*</span></label>-->
-<!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
-<!--                        <input type="text" id="txtMetaKeywords" name="txtMetaKeywords" value="--><?php //echo $ads->meta_keywords ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Keywords">-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="form-group">-->
+                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Keywords-->
+                <!--                        <span class="required">*</span></label>-->
+                <!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+                <!--                        <input type="text" id="txtMetaKeywords" name="txtMetaKeywords" value="--><?php //echo $ads->meta_keywords ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Keywords">-->
+                <!--                    </div>-->
+                <!--                </div>-->
 
-<!--                <div class="form-group">-->
-<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Canonical URL-->
-<!--                        <span class="required">*</span></label>-->
-<!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
-<!--                        <input type="text" id="txtCanonicalUrl" name="txtCanonicalUrl" value="--><?php //echo $ads->canonical_url ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Canonical URL">-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="form-group">-->
+                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Canonical URL-->
+                <!--                        <span class="required">*</span></label>-->
+                <!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+                <!--                        <input type="text" id="txtCanonicalUrl" name="txtCanonicalUrl" value="--><?php //echo $ads->canonical_url ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Canonical URL">-->
+                <!--                    </div>-->
+                <!--                </div>-->
 
-<!--                <div class="form-group">-->
-<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Robots meta setting-->
-<!--                        <span class="required">*</span></label>-->
-<!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
-<!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noindex" --><?php //echo $ads->robots_meta && strpos($ads->robots_meta, 'noindex') > -1 ? 'checked' : '' ?><!-- > Apply noindex to this page</label><br>-->
-<!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="nofollow" --><?php //echo $ads->robots_meta && strpos($ads->robots_meta, 'nofollow') > -1 ? 'checked' : '' ?><!-- > Apply nofollow to this page</label><br>-->
-<!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noarchive" --><?php //echo $ads->robots_meta && strpos($ads->robots_meta, 'noarchive') > -1 ? 'checked' : '' ?><!-- > Apply noarchive to this page</label>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="form-group">-->
+                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Robots meta setting-->
+                <!--                        <span class="required">*</span></label>-->
+                <!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+                <!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noindex" --><?php //echo $ads->robots_meta && strpos($ads->robots_meta, 'noindex') > -1 ? 'checked' : '' ?><!-- > Apply noindex to this page</label><br>-->
+                <!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="nofollow" --><?php //echo $ads->robots_meta && strpos($ads->robots_meta, 'nofollow') > -1 ? 'checked' : '' ?><!-- > Apply nofollow to this page</label><br>-->
+                <!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noarchive" --><?php //echo $ads->robots_meta && strpos($ads->robots_meta, 'noarchive') > -1 ? 'checked' : '' ?><!-- > Apply noarchive to this page</label>-->
+                <!--                    </div>-->
+                <!--                </div>-->
 
 
                 <div class="form-group" style="margin-top: 30px">
