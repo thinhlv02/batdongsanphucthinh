@@ -15,8 +15,8 @@ Class Ads extends MY_Controller {
         $news = $this->ads_model->get_list($input);
         $this->data['news'] = $news;
         $this->data['tab'] = 1;
-        $this->data['temp'] = 'admin/news/index';
-        $this->data['view'] = 'admin/news/list';
+        $this->data['temp'] = 'admin/ads/index';
+        $this->data['view'] = 'admin/ads/list';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -41,8 +41,8 @@ Class Ads extends MY_Controller {
                     'img' => $file_data['file_name'],
                 );
                 if($this->ads_model->create($data)){
-                    $this->session->set_flashdata('message', 'Thêm tin tức thành công');
-                    redirect(base_url('admin/news'));
+                    $this->session->set_flashdata('message', 'Thêm rao bán thành công');
+                    redirect(base_url('admin/ads'));
                 }
                 else{
                     $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
@@ -53,8 +53,8 @@ Class Ads extends MY_Controller {
             }
         }
         $this->data['tab'] = 2;
-        $this->data['temp'] = 'admin/news/index';
-        $this->data['view'] = 'admin/news/add';
+        $this->data['temp'] = 'admin/ads/index';
+        $this->data['view'] = 'admin/ads/add';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -64,7 +64,7 @@ Class Ads extends MY_Controller {
         $id = $this->uri->segment(4);
         $news = $this->ads_model->get_info($id);
         if(!$news){
-            redirect(base_url('admin/news'));
+            redirect(base_url('admin/ads'));
         }
 
         if($this->input->post('btnEdit')){
@@ -91,8 +91,8 @@ Class Ads extends MY_Controller {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
             if($this->ads_model->update($id, $data)){
-                $this->session->set_flashdata('message', 'Cập nhật tin tức thành công');
-                redirect(base_url('admin/news'));
+                $this->session->set_flashdata('message', 'Cập nhật rao bán thành công');
+                redirect(base_url('admin/ads'));
             }
             else{
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
@@ -100,8 +100,8 @@ Class Ads extends MY_Controller {
         }
         $this->data['tab'] = 3;
         $this->data['news'] = $news;
-        $this->data['temp'] = 'admin/news/index';
-        $this->data['view'] = 'admin/news/edit';
+        $this->data['temp'] = 'admin/ads/index';
+        $this->data['view'] = 'admin/ads/edit';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -112,7 +112,7 @@ Class Ads extends MY_Controller {
             $this->ads_model->delete($id);
             unlink('./public/images/ads/'.$news->img);
         }
-        redirect(base_url('admin/news'));
+        redirect(base_url('admin/ads'));
     }
 
     function highlight(){
