@@ -224,17 +224,18 @@
                                         <div class="clearfix box-title-item">
                                             <label class="label label-danger">ĐẶC BIỆT</label>
                                             <h3 class="sieu-vip-title">
-                                                <a href="/ban-dat-huyen-yen-lac/ban-manh-dat-tai-thon-1-xa-trung-kien-huyen-yen-lac-620054.html">Bán
-                                                    mảnh đất tại thôn 1 xã Trung Kiên, Huyện Yên Lạc </a>
+                                                <a href="/ban-dat-huyen-yen-lac/ban-manh-dat-tai-thon-1-xa-trung-kien-huyen-yen-lac-620054.html">
+                                                <?php echo $product->title ?>
+                                                </a>
                                                 <span style="color: #f00; font-weight: 400">(Chính chủ)</span></h3>
                                         </div>
                                         <p>Bán mảnh đất tại thôn 1 xã trung kiên Dt: 85 m2 mặt tiền 6m&nbsp; Đường rộng 15m
                                             Hướn ...</p>
                                         <div class="price-list">
-                                            <span>Diện tích</span>: <strong>85 m2</strong>
+                                            <span>Diện tích</span>: <strong><?php echo $product->title ?> m2</strong>
                                         </div>
                                         <div class="price-list">
-                                            <span>Giá</span>: <strong>12 Triệu/m2</strong>
+                                            <span>Giá</span>: <strong><?php echo $product->price ?> Triệu/m2</strong>
                                         </div>
                                         <div class="price-list">
                                             <span>Khu vực</span>: <strong> Xã Trung Kiên -
