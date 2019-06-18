@@ -64,28 +64,28 @@
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Keywords <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="txtMetaKeywords" name="txtMetaKeywords" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Keywords">
-                    </div>
-                </div>
+<!--                <div class="form-group">-->
+<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Keywords <span class="required">*</span></label>-->
+<!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+<!--                        <input type="text" id="txtMetaKeywords" name="txtMetaKeywords" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Keywords">-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Canonical URL <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="txtCanonicalUrl" name="txtCanonicalUrl" required="required" class="form-control col-md-7 col-xs-12" placeholder="Canonical URL">
-                    </div>
-                </div>
+<!--                <div class="form-group">-->
+<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Canonical URL <span class="required">*</span></label>-->
+<!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+<!--                        <input type="text" id="txtCanonicalUrl" name="txtCanonicalUrl" required="required" class="form-control col-md-7 col-xs-12" placeholder="Canonical URL">-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Robots meta setting <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noindex" > Apply noindex to this page</label><br>
-                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="nofollow" > Apply nofollow to this page</label><br>
-                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noarchive" > Apply noarchive to this page</label>
-                    </div>
-                </div>
+<!--                <div class="form-group">-->
+<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Robots meta setting <span class="required">*</span></label>-->
+<!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+<!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noindex" > Apply noindex to this page</label><br>-->
+<!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="nofollow" > Apply nofollow to this page</label><br>-->
+<!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noarchive" > Apply noarchive to this page</label>-->
+<!--                    </div>-->
+<!--                </div>-->
 
                 <div class="form-group" style="margin-top: 30px">
                     <div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-2" style="width: 70px">
