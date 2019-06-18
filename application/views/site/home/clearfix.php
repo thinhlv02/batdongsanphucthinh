@@ -229,8 +229,7 @@
                                                 </a>
                                                 <span style="color: #f00; font-weight: 400">(Chính chủ)</span></h3>
                                         </div>
-                                        <p>Bán mảnh đất tại thôn 1 xã trung kiên Dt: 85 m2 mặt tiền 6m&nbsp; Đường rộng 15m
-                                            Hướn ...</p>
+                                        <p><?php echo substr($value->content, 0, 100); ?> ...</p>
                                         <div class="price-list">
                                             <span>Diện tích</span>: <strong><?php echo $value->title ?> m2</strong>
                                         </div>
@@ -238,8 +237,7 @@
                                             <span>Giá</span>: <strong><?php echo $value->price ?> Triệu/m2</strong>
                                         </div>
                                         <div class="price-list">
-                                            <span>Khu vực</span>: <strong> Xã Trung Kiên -
-                                                Huyện Yên Lạc - Vĩnh Phúc </strong>
+                                            <span>Khu vực</span>: <strong> <?php echo $value->address ?> </strong>
                                             <span class="pull-right time"><?php echo date('d-m-Y', strtotime($value->created_at)) ?> </span>
                                         </div>
                                     </div>
@@ -466,18 +464,17 @@
                                              alt="<?php echo $value->title ?>">
                                     </a></div>
                                 <div class="box-info-list"><h3><a
-                                                href="/ban-bat-dong-san-khac-huyen-binh-chanh/can-ban-mieng-dat-vuon-chinh-chu-so-hong-rieng-tai-huyen-binh-chanh-948338.html">Cần
-                                            bán miếng đất vườn chính chủ, sổ hồng riêng tại huyện Bình Chánh </a></h3>
-                                    <p>• Cần bán miếng đất vườn tại x.Bình Lợi, huyện Bình Chánh. Diện tích 1000m2 giá
+                                                href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
+                                            <?php echo $value->title ?>
+                                        </a></h3>
+                                    <p>• <?php echo substr($value->content, 0, 100); ?>
                                         ...</p>
                                     <div class="price-list"><span>Diện tích</span>:
                                         <strong><?php echo $value->acreage ?> m2</strong></div>
                                     <div class="price-list"><span>Giá</span>:
                                         <strong><?php echo $value->price ?> Triệu</strong></div>
                                     <div class="price-list"><span>Khu vực</span>:
-                                        <strong> Xã Bình Lợi - Huyện Bình Chánh -
-                                            TP.
-                                            HCM </strong> <span class="pull-right time"> <i
+                                        <strong> <?php echo $value->address ?></strong> <span class="pull-right time"> <i
                                                     class="glyphicon glyphicon-time"></i> Hôm nay, lúc 12 giờ 35 phút </span>
                                     </div>
                                 </div>
