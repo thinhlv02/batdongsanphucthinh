@@ -467,7 +467,7 @@
                                                 href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
                                             <?php echo $value->title ?>
                                         </a></h3>
-                                    <p>• <?php echo substr($value->content, 0, 100); ?>
+                                    <p><?php echo substr($value->content, 0, 100); ?>
                                         ...</p>
                                     <div class="price-list"><span>Diện tích</span>:
                                         <strong><?php echo $value->acreage ?> m2</strong></div>
