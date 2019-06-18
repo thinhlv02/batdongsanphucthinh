@@ -26,6 +26,7 @@
                 <th>Tiêu đề</th>
                 <th>Giá</th>
                 <th>Diện tích</th>
+                <th>Khu vực</th>
                 <th>Nổi bật</th>
                 <th>Ngày đăng</th>
                 <th>Hành động</th>
@@ -39,6 +40,7 @@
                     <td><?php echo $row->title?></td>
                     <td><?php echo $row->price?></td>
                     <td><?php echo $row->acreage?></td>
+                    <td><?php echo $row->address?></td>
                     <td>
                         <i id="highlight-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->highlight ? 'fa-toggle-on' : 'fa-toggle-off'?>"
