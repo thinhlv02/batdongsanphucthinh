@@ -19,6 +19,10 @@ Class Home extends MY_Controller
         $this->data['li_1'] = 1;
         $news = $this->news_model->get_list(array('limit' => array(5, 0)));
         $this->data['news'] = $news;
+
+        $ads = $this->ads_model->get_list(array('limit' => array(100, 0)));
+        $this->data['ads'] = $ads;
+
         $this->data['temp'] = 'site/home/home';
         $this->load->view('site/layout/layout', $this->data);
     }
