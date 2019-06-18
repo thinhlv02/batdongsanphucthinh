@@ -35,7 +35,7 @@ Class Ads extends MY_Controller {
                 $data = array(
                     'title' => $this->input->post('txtName'),
                     'content' => $this->input->post('txtContent'),
-                    'intro' => $this->input->post('txtIntro'),
+//                    'intro' => $this->input->post('txtIntro'),
                     'document_title' => $this->input->post('txtDocumentTitle'),
 //                    'meta_description' => $this->input->post('txtMetaDescription'),
 //                    'meta_keywords' => $this->input->post('txtMetaKeywords'),
@@ -74,7 +74,7 @@ Class Ads extends MY_Controller {
             $data = array(
                 'title' => $this->input->post('txtName'),
                 'content' => $this->input->post('txtContent'),
-                'intro' => nl2br($this->input->post('txtIntro')),
+//                'intro' => nl2br($this->input->post('txtIntro')),
                 'document_title' => $this->input->post('txtDocumentTitle'),
 //                'meta_description' => $this->input->post('txtMetaDescription'),
 //                'meta_keywords' => $this->input->post('txtMetaKeywords'),
