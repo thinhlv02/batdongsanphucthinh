@@ -229,7 +229,7 @@
                                                 </a>
                                                 <span style="color: #f00; font-weight: 400">(Chính chủ)</span></h3>
                                         </div>
-                                        <p><?php echo substr($value->content, 0, 100); ?> ...</p>
+                                        <p><?php echo substr($value->content, 0, 100). '...'; ?> </p>
                                         <div class="price-list">
                                             <span>Diện tích</span>: <strong><?php echo $value->title ?> m2</strong>
                                         </div>
@@ -467,8 +467,7 @@
                                                 href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
                                             <?php echo $value->title ?>
                                         </a></h3>
-                                    <p><?php echo substr($value->content, 0, 100); ?>
-                                        ...</p>
+                                    <p><?php echo substr($value->content, 0, 100). '...'; ?></p>
                                     <div class="price-list"><span>Diện tích</span>:
                                         <strong><?php echo $value->acreage ?> m2</strong></div>
                                     <div class="price-list"><span>Giá</span>:
