@@ -69,7 +69,7 @@
 
     function highlight(id) {
         $.ajax({
-            url: "<?php echo admin_url('news/highlight')?>",
+            url: "<?php echo admin_url('ads/highlight')?>",
             type: "post",
             data: {
                 id: id
