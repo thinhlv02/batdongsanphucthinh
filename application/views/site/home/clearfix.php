@@ -214,8 +214,6 @@
 
                             <?php foreach ($ads as $value) { ?>
 
-
-
                                 <div class="item-re-list clearfix" style="border-color: #f00">
                                     <div class="box-img-thumb">
                                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
@@ -247,17 +245,6 @@
                                     </div>
                                 </div>
 
-                                <!--                                <div>-->
-                                <!--                                    <a href="--><?php //echo base_url('gioi-thieu-dich-vu/'.create_slug($value->name).'-'.$value->id.'.html')?><!--">-->
-                                <!--                                        <div class="col-xs-12 col-sm-6 col-md-4">-->
-                                <!--                                            <div class="item-product">-->
-                                <!--                                                <div class="img-product">-->
-                                <!--                                                    <img src="--><?php //echo public_url('images/products/'.$value->img)?><!--">-->
-                                <!--                                                </div>-->
-                                <!--                                            </div>-->
-                                <!--                                        </div>-->
-                                <!--                                    </a>-->
-                                <!--                                </div>-->
                             <?php } ?>
 
                             <div class="item-re-list clearfix" style="border-color: #f00">
@@ -290,7 +277,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="pull-right mt10 viewall">
                                 <a href="/bat-dong-san-ban-tai-viet-nam-s32113"><i class="glyphicon glyphicon-th"></i>
