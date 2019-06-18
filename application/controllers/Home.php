@@ -13,6 +13,7 @@ Class Home extends MY_Controller
         $this->load->model('questions_model');
         $this->load->model('contact_model');
         $this->load->model('news_model');
+        $this->load->model('ads_model');
     }
 
     function index(){
