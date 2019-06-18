@@ -63,7 +63,7 @@
     function confirmDel(id) {
         if(confirm('Bạn có chắc chắn muốn xóa?')){
 //            console.log('delll');
-            window.location.href = '<?php echo base_url('admin/news/del/')?>' + id;
+            window.location.href = '<?php echo base_url('admin/ads/del/')?>' + id;
         }
     }
 
