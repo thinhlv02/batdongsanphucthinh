@@ -30,7 +30,7 @@
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($news as $row){ ?>
+            <?php foreach ($ads as $row){ ?>
                 <tr>
                     <td><?php echo $row->id?></td>
                     <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 150px"> </td>
