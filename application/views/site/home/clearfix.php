@@ -240,8 +240,7 @@
                                         <div class="price-list">
                                             <span>Khu vực</span>: <strong> Xã Trung Kiên -
                                                 Huyện Yên Lạc - Vĩnh Phúc </strong>
-                                            <span class="pull-right time">
-05/04/2019                    </span>
+                                            <span class="pull-right time"><?php echo date('d-m-Y H:i:s', strtotime($product->created_at))  ?> </span>
                                         </div>
                                     </div>
                                 </div>
