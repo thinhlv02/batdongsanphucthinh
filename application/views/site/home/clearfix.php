@@ -212,12 +212,12 @@
                         </div>
                         <div class="clearfix" id="box-home-svip">
 
-                            <?php foreach ($products as $product){ ?>
+                            <?php foreach ($ads as $product){ ?>
 
                                 <div class="item-re-list clearfix" style="border-color: #f00">
                                     <div class="box-img-thumb">
                                         <a href="/ban-dat-huyen-yen-lac/ban-manh-dat-tai-thon-1-xa-trung-kien-huyen-yen-lac-620054.html">
-                                            <img src="/Content/images/pic-default.jpg" alt="Không có ảnh">
+                                            <img src="<?php echo public_url('images/ads/'.$product->img)?>" alt="Không có ảnh">
                                         </a>
                                     </div>
                                     <div class="box-info-list">
