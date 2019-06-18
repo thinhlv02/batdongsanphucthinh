@@ -62,8 +62,30 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá
                         <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
                         <input type="text" id="" name="price" value="<?php echo $ads->price ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Document Title">
+                    </div>
+
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">đơn vị
+                        <span class="required">*</span></label>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+
+                        <select class="form-control" data-val="true" data-val-number="The field TypePrice must be a number." data-val-required="Hãy chọn đơn vị giá" id="TypePrice" name="TypePrice"><option value="">Chọn đơn vị giá</option>
+                            <option value="0">Thỏa thuận</option>
+                            <option value="1">Triệu</option>
+                            <option value="2">Tỷ</option>
+                            <option value="3">Ngàn/m2</option>
+                            <option value="4">Triệu/m2</option>
+                            <option value="5">Ngàn/tháng</option>
+                            <option value="6">Triệu/tháng</option>
+                            <option value="7">Ngàn/m2/tháng</option>
+                            <option value="8">Triệu/m2/tháng</option>
+                            <option value="10">Ngàn/chiếc</option>
+                            <option value="11">Triệu/chiếc</option>
+                            <option value="12">Ngàn/suất</option>
+                            <option value="13">Triệu/suất</option>
+                        </select>
+
                     </div>
                 </div>
 
