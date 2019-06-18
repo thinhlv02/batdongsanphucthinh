@@ -212,50 +212,50 @@
                         </div>
                         <div class="clearfix" id="box-home-svip">
 
-                            <?php foreach ($ads as $product){ ?>
+                            <?php foreach ($ads as $value) { ?>
 
                                 <div class="item-re-list clearfix" style="border-color: #f00">
                                     <div class="box-img-thumb">
-                                        <a href="/ban-dat-huyen-yen-lac/ban-manh-dat-tai-thon-1-xa-trung-kien-huyen-yen-lac-620054.html">
-                                            <img src="<?php echo public_url('images/ads/'.$product->img)?>" alt="Không có ảnh">
+                                        <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
+                                            <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="Không có ảnh">
                                         </a>
                                     </div>
                                     <div class="box-info-list">
                                         <div class="clearfix box-title-item">
                                             <label class="label label-danger">ĐẶC BIỆT</label>
                                             <h3 class="sieu-vip-title">
-                                                <a href="/ban-dat-huyen-yen-lac/ban-manh-dat-tai-thon-1-xa-trung-kien-huyen-yen-lac-620054.html">
-                                                <?php echo $product->title ?>
+                                                <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id . '.html') ?>">
+                                                    <?php echo $value->title ?>
                                                 </a>
                                                 <span style="color: #f00; font-weight: 400">(Chính chủ)</span></h3>
                                         </div>
                                         <p>Bán mảnh đất tại thôn 1 xã trung kiên Dt: 85 m2 mặt tiền 6m&nbsp; Đường rộng 15m
                                             Hướn ...</p>
                                         <div class="price-list">
-                                            <span>Diện tích</span>: <strong><?php echo $product->title ?> m2</strong>
+                                            <span>Diện tích</span>: <strong><?php echo $value->title ?> m2</strong>
                                         </div>
                                         <div class="price-list">
-                                            <span>Giá</span>: <strong><?php echo $product->price ?> Triệu/m2</strong>
+                                            <span>Giá</span>: <strong><?php echo $value->price ?> Triệu/m2</strong>
                                         </div>
                                         <div class="price-list">
                                             <span>Khu vực</span>: <strong> Xã Trung Kiên -
                                                 Huyện Yên Lạc - Vĩnh Phúc </strong>
-                                            <span class="pull-right time"><?php echo date('d-m-Y', strtotime($product->created_at))  ?> </span>
+                                            <span class="pull-right time"><?php echo date('d-m-Y', strtotime($value->created_at)) ?> </span>
                                         </div>
                                     </div>
                                 </div>
 
-<!--                                <div>-->
-<!--                                    <a href="--><?php //echo base_url('gioi-thieu-dich-vu/'.create_slug($product->name).'-'.$product->id.'.html')?><!--">-->
-<!--                                        <div class="col-xs-12 col-sm-6 col-md-4">-->
-<!--                                            <div class="item-product">-->
-<!--                                                <div class="img-product">-->
-<!--                                                    <img src="--><?php //echo public_url('images/products/'.$product->img)?><!--">-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </a>-->
-<!--                                </div>-->
+                                <!--                                <div>-->
+                                <!--                                    <a href="--><?php //echo base_url('gioi-thieu-dich-vu/'.create_slug($value->name).'-'.$value->id.'.html')?><!--">-->
+                                <!--                                        <div class="col-xs-12 col-sm-6 col-md-4">-->
+                                <!--                                            <div class="item-product">-->
+                                <!--                                                <div class="img-product">-->
+                                <!--                                                    <img src="--><?php //echo public_url('images/products/'.$value->img)?><!--">-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </a>-->
+                                <!--                                </div>-->
                             <?php } ?>
 
                             <div class="item-re-list clearfix" style="border-color: #f00">
@@ -288,7 +288,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
 
                             <div class="pull-right mt10 viewall">

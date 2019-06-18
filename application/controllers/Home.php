@@ -177,6 +177,29 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
+    function ads_detail($slug, $id){
+        $ads = $this->ads_model->get_info($id);
+        if(!$ads || create_slug($ads->title) != $slug){
+            redirect(base_url('tin-tuc'));
+        }
+        $this->data['ads'] = $ads;
+
+        $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
+        $this->data['highlight'] = $highlight;
+
+        $this->data['title'] = $ads->document_title;
+        $this->data['description'] = $ads->meta_description;
+        $this->data['image'] = public_url('images/adss/'.$ads->img);
+        $this->data['page_url'] = base_url('rao-vat/'.create_slug($ads->title).'-'.$ads->id);
+        $this->data['robots'] = $ads->robots_meta;
+        $this->data['canonical'] = $ads->canonical_url;
+        $this->data['keywords'] = $ads->meta_keywords;
+
+        $this->data['li_6'] = 1;
+        $this->data['temp'] = 'site/pages/ads_detail';
+        $this->load->view('site/layout/layout', $this->data);
+    }
+
 
     function product(){
         $product = $this->product_model->get_list();

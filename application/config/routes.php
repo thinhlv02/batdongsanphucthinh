@@ -73,6 +73,12 @@ $route['download(.html)?'] = 'home/download';
 $route['tin-tuc(.html)?'] = 'home/news';
 $route['tin-tuc/(:num)'] = 'home/news/$1';
 $route['tin-tuc/(:any)-(:num)(.html)?'] = 'home/news_detail/$1/$2';
+
+$route['rao-vat(.html)?'] = 'home/ads';
+$route['rao-vat/(:num)'] = 'home/ads/$1';
+$route['rao-vat/(:any)-(:num)(.html)?'] = 'home/ads_detail/$1/$2';
+
+
 $route['dai-ly(.html)?'] = 'home/agency';
 
 $route['hinh-thuc-vay/(:any)-(:num)(.html)?'] = 'home/hinh_thuc_vay/$1/$2';
