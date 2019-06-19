@@ -28,8 +28,11 @@
                     </ol>
 
                     <div class="carousel-inner">
-                        <?php foreach ($ads as $key=>$value){
-                            echo $key. '<br/>';
+                        <?php
+                        var_dump($ads);
+                        die();
+                        foreach ($ads as $key=>$value){
+                            echo var_dump($key). '<br/>';
                         } ?>
                         <div class="item active">
                             <img class="image" src="<?php echo public_url('images/intro/step1.png') ?>" alt="Bước 1">
