@@ -1,8 +1,8 @@
 <section class="news">
     <div class="container">
         <div class="col-sm-12 col-md-12">
-            <div class="title-section"><h2>Tin tức</h2></div>
-            <div class="sub-title-section">Khám phá GaiA tại đây</div>
+            <div class="title-section"><h2>Tin rao nổi bật</h2></div>
+            <div class="sub-title-section">Khám phá tại đây</div>
             <div class="row">
             <?php foreach ($ads as $key=>$value){ ?>
                 <?php if($key > 0){ ?>
@@ -47,7 +47,7 @@
             <?php } ?>
             </div>
             <div style="text-align: center">
-                <a href="<?php echo base_url('tin-tuc.html')?>" class="btn btn-primary" style="margin-top: 20px">Xem thêm</a>
+                <a href="<?php echo base_url('rao-vat.html')?>" class="btn btn-primary" style="margin-top: 20px">Xem thêm</a>
             </div>
         </div>
     </div>
