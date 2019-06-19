@@ -29,17 +29,7 @@
                     <li><a href="<?php echo admin_url('product') ?>"><i class="fa fa-product-hunt" aria-hidden="true"></i>
                             Dịch vụ</a></li>
                     <li><a href="<?php echo admin_url('question') ?>"><i class="fa fa-question-circle" aria-hidden="true"></i>Hỗ trợ</a></li>
-
-
-                    <li><a><i class="fa fa-tint"></i>Quản lý bài viết<span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                            <li><a href="<?php echo admin_url('ads') ?>">Rao bán nhà đất</a></li>
-                            <li><a href="<?php echo admin_url('news') ?>">Tin tức</a></li>
-                        </ul>
-                    </li>
-
-<!--                    <li><a href="--><?php //echo admin_url('news') ?><!--"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Tin tức</a></li>-->
-<!--                    <li><a href="--><?php //echo admin_url('ads') ?><!--"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Rao bán</a></li>-->
+                    <li><a href="<?php echo admin_url('news') ?>"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Tin tức</a></li>
                     <li><a href="<?php echo admin_url('contact') ?>"><i class="fa fa-phone" aria-hidden="true"></i>Liên hệ</a></li>
                     <li><a href="<?php echo admin_url('content') ?>"><i class="fa fa-info-circle" aria-hidden="true"></i>Nội dung</a></li>
                     <li><a href="<?php echo admin_url('agency') ?>"><i class="fa fa-map-marker" aria-hidden="true"></i>Đại lý</a></li>
