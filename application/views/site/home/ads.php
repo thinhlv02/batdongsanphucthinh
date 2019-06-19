@@ -4,7 +4,7 @@
             <div class="title-section"><h2>Tin tức</h2></div>
             <div class="sub-title-section">Khám phá GaiA tại đây</div>
             <div class="row">
-            <?php foreach ($news as $key=>$value){ ?>
+            <?php foreach ($ads as $key=>$value){ ?>
                 <?php if($key > 0){ ?>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <a href="<?php echo base_url('tin-tuc/'.create_slug($value->name).'-'.$value->id)?>">
