@@ -212,7 +212,7 @@ Class Home extends MY_Controller
         $this->data['li_6'] = 1;
 //        $news = $this->news_model->get_list();
         $this->data['news'] = $news;
-        $this->data['temp'] = 'site/pages/news';
+        $this->data['temp'] = 'site/pages/ads';
         $this->load->view('site/layout/layout', $this->data);
     }
 
