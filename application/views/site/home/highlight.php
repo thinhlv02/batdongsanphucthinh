@@ -81,7 +81,7 @@
                 <div class="intro-text">
                     <h2>Dịch vụ hoàn hảo:</h2>
                     <p>
-                        Mục tiêu của chúng tôi là: Mang lại cho người tiêu dùng sự tiện lợi khi sử dung. Minh bạch trong giá cả. Đa dạng về dịch vụ. Hạn chế được rủi ro trong khi thuê dịch vụ. Lý lịch của người lao động được kiểm tra rõ ràng,... Có GAIA mọi việc trở nên đơn giản và dẽ dàng hơn bao giờ hết!
+                        Mục tiêu của chúng tôi là: Mang lại cho người tiêu dùng sự tiện lợi khi sử dung. Minh bạch trong giá cả. Đa dạng về dịch vụ. Hạn chế được rủi ro trong khi thuê dịch vụ. Lý lịch của người lao động được kiểm tra rõ ràng,... Có PT mọi việc trở nên đơn giản và dẽ dàng hơn bao giờ hết!
                     </p>
                 </div>
             </div>
