@@ -1,7 +1,7 @@
 <script language="javascript" src="<?php echo base_url('public')?>/ckeditor/ckeditor.js" type="text/javascript"></script>
 <div class="x_panel">
     <div class="x_title">
-        <h2>Thêm rao bán mới232</h2>
+        <h2>Thêm rao bán mới</h2>
         <ul class="nav navbar-right panel_toolbox">
             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
             <li class="dropdown">
