@@ -47,7 +47,7 @@
             <?php } ?>
             </div>
             <div style="text-align: center">
-                <a href="<?php echo base_url('rao-vat1.html')?>" class="btn btn-primary" style="margin-top: 20px">Xem thêm</a>
+                <a href="<?php echo base_url('rao-vat.html')?>" class="btn btn-primary" style="margin-top: 20px">Xem thêm</a>
             </div>
         </div>
     </div>
