@@ -16,7 +16,7 @@ Class Login extends MY_Controller {
             {
                 $this->session->set_userdata('login', true);
                 
-                redirect(base_url('admin/product'));
+                redirect(base_url('admin/dashboard'));
             }
         }
         
