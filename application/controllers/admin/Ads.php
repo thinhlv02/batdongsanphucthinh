@@ -43,6 +43,8 @@ Class Ads extends MY_Controller
 //                    'canonical_url' => $this->input->post('txtCanonicalUrl'),
 //                    'robots_meta' => implode(', ',$this->input->post('robots_meta')),
                     'img' => $file_data['file_name'],
+                    'created_by' => $this->_uid,
+
                 );
                 if ($this->ads_model->create($data)) {
                     $this->session->set_flashdata('message', 'Thêm rao bán thành công');
