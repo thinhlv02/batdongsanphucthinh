@@ -36,6 +36,8 @@ Class Ads extends MY_Controller
                 $data = array(
                     'title' => $this->input->post('txtName'),
                     'content' => $this->input->post('txtContent'),
+                    'area' => $this->input->post('area'),
+                    'phone' => $this->input->post('phone'),
 //                    'intro' => $this->input->post('txtIntro'),
                     'document_title' => $this->input->post('txtDocumentTitle'),
 //                    'meta_description' => $this->input->post('txtMetaDescription'),
@@ -76,6 +78,8 @@ Class Ads extends MY_Controller
             $data = array(
                 'title' => $this->input->post('txtName'),
                 'content' => $this->input->post('txtContent'),
+                'area' => $this->input->post('area'),
+                'phone' => $this->input->post('phone'),
 //                'intro' => nl2br($this->input->post('txtIntro')),
                 'document_title' => $this->input->post('txtDocumentTitle'),
                 'price' => $this->input->post('price'),
