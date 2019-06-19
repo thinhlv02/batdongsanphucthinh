@@ -29,19 +29,18 @@
 
                     <div class="carousel-inner">
                         <?php
-                        var_dump($ads);
-                        die();
-                        foreach ($ads as $key=>$value){
-                            echo var_dump($key). '<br/>';
-                        } ?>
-                        <div class="item active">
-                            <img class="image" src="<?php echo public_url('images/intro/step1.png') ?>" alt="Bước 1">
-                            <div class="text">
-                                <span>Bước 1</span>
-                                <h2>Chọn dịch vụ cần làm</h2>
-                                <p>Bạn có thể chọn một trong các dịch vụ: Giúp việc theo giờ, sửa chữa điện nước, sửa chữa điện lạnh</p>
+//                        var_dump($ads);
+//                        die();
+                        foreach ($ads as $key=>$value){ ?>
+                            <div class="item <?php if ($key == 0) echo 'active' ?>">
+                                <img class="image" src="<?php echo public_url('images/intro/step1.png') ?>" alt="Bước 1">
+                                <div class="text">
+                                    <span><?php echo $value->title ?></span>
+                                    <h2>Chọn dịch vụ cần làm</h2>
+                                    <p>Bạn có thể chọn một trong các dịch vụ: Giúp việc theo giờ, sửa chữa điện nước, sửa chữa điện lạnh</p>
+                                </div>
                             </div>
-                        </div>
+                        <?php } ?>
 
                         <a class="right carousel-control" href="#myCarousel" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span>
