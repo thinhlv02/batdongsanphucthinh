@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="row col-sm-12 col-md-12 col-xs-12" style="margin-top: 30px">
-                Copyright 2019 © Adong Corp All Rights Reserved
+                Copyright 2019 © phucthinh corp All Rights Reserved
             </div>
         </div>
 
