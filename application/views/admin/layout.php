@@ -44,7 +44,7 @@
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-            Thiết kế bởi SGC
+            Thiết kế bởi Phucthinh corp
           </div>
           <div class="clearfix"></div>
         </footer>
