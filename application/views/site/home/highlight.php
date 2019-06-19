@@ -35,7 +35,7 @@
                             <div class="item <?php if ($key == 0) echo 'active' ?>">
                                 <img class="image" src="<?php echo public_url('images/intro/step1.png') ?>" alt="Bước 1">
                                 <div class="text">
-                                    <span>12</span>
+                                    <span><?php echo $value->title ?></span>
                                     <h2>Chọn dịch vụ cần làm</h2>
                                     <p>Bạn có thể chọn một trong các dịch vụ: Giúp việc theo giờ, sửa chữa điện nước, sửa chữa điện lạnh</p>
                                 </div>
