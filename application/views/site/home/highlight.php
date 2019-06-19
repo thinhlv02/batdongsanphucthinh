@@ -20,8 +20,11 @@
             <div class="intro-item">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <?php foreach ($ads as $key=>$value){ ?>
+                            <li data-target="#myCarousel" data-slide-to="<?php echo $key ?>" class="<?php if ($key == 0) echo 'active' ?>"></li>
+                        <?php } ?>
+<!--                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+<!--                        <li data-target="#myCarousel" data-slide-to="1"></li>-->
 <!--                        <li data-target="#myCarousel" data-slide-to="2"></li>-->
 <!--                        <li data-target="#myCarousel" data-slide-to="3"></li>-->
 <!--                        <li data-target="#myCarousel" data-slide-to="4"></li>-->
@@ -33,11 +36,12 @@
 //                        die();
                         foreach ($ads as $key=>$value){ ?>
                             <div class="item <?php if ($key == 0) echo 'active' ?>">
-                                <img class="image" src="<?php echo public_url('images/ads/'.$value->img)?>" alt="Bước 1">
+                                <img class="image" src="<?php echo public_url('images/intro/step1.png')?>" alt="Bước 1">
+<!--                                <img class="image" src="--><?php //echo public_url('images/ads/'.$value->img)?><!--" alt="Bước 1">-->
                                 <div class="text" style="background: white !important;">
                                     <span><?php echo $value->title ?></span>
-<!--                                    <h2>Chọn dịch vụ cần làm</h2>-->
-<!--                                    <p>Bạn có thể chọn một trong các dịch vụ: Giúp việc theo giờ, sửa chữa điện nước, sửa chữa điện lạnh</p>-->
+                                    <h2>Chọn dịch vụ cần làm</h2>
+                                    <p>Bạn có thể chọn một trong các dịch vụ: Giúp việc theo giờ, sửa chữa điện nước, sửa chữa điện lạnh</p>
                                 </div>
                             </div>
                         <?php } ?>
