@@ -7,11 +7,12 @@
                     <img src="<?php echo public_url('images/intro/2.png')?>">
                 </div>
                 <div class="intro-text">
-                    <h2>Dịch vụ GaiA:</h2>
+                    <h2>Dịch vụ :</h2>
                     <p>
-                        - Giúp việc theo giờ <br>
-                        - Vệ sinh văn phòng <br>
-                        - Sửa chữa, bảo dưỡng, tư vấn, lắp đặt các thiết bị điện lạnh, điện nước
+                        - Dịch vụ bán hàng bất động sản 1 <br>
+                        - Dịch vụ bán hàng bất động sản 1 <br>
+                        - Dịch vụ bán hàng bất động sản 1 <br>
+                        - Dịch vụ bán hàng bất động sản 1
                     </p>
                 </div>
             </div>
