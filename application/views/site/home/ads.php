@@ -1,7 +1,12 @@
 <section class="news">
     <div class="container">
         <div class="col-sm-12 col-md-12">
-            <div class="title-section"><h2>Tin rao nổi bật</h2></div>
+<!--            <div class="title-section"><h2>Tin rao nổi bật</h2></div>-->
+<!--            //test-->
+            <div class="box-module mt10">
+                <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật</div>
+            </div>
+<!--            //test-->
 <!--            <div class="sub-title-section">Khám phá tại đây</div>-->
             <div class="row">
                 <?php foreach ($ads as $key => $value) { ?>
