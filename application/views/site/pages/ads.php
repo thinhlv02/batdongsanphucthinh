@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-8 col-sm-12 col-xs-12">
             <div class="left-title">Tin mới</div>
-            <?php foreach ($news as $key => $value) { ?>
+            <?php foreach ($ads as $key => $value) { ?>
                 <?php if ($key > 0) { ?>
                     <a href="<?php echo base_url('tin-tuc/' . create_slug($value->title) . '-' . $value->id) ?>">
                         <div class="item-news-1">
