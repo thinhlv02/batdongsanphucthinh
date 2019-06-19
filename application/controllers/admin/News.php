@@ -34,9 +34,9 @@ Class News extends MY_Controller {
                     'content' => $this->input->post('txtContent'),
                     'intro' => $this->input->post('txtIntro'),
                     'document_title' => $this->input->post('txtDocumentTitle'),
-                    'meta_description' => $this->input->post('txtMetaDescription'),
-                    'meta_keywords' => $this->input->post('txtMetaKeywords'),
-                    'canonical_url' => $this->input->post('txtCanonicalUrl'),
+//                    'meta_description' => $this->input->post('txtMetaDescription'),
+//                    'meta_keywords' => $this->input->post('txtMetaKeywords'),
+//                    'canonical_url' => $this->input->post('txtCanonicalUrl'),
 //                    'robots_meta' => implode(', ',$this->input->post('robots_meta')),
                     'img' => $file_data['file_name'],
                 );
@@ -73,10 +73,10 @@ Class News extends MY_Controller {
                 'content' => $this->input->post('txtContent'),
                 'intro' => nl2br($this->input->post('txtIntro')),
                 'document_title' => $this->input->post('txtDocumentTitle'),
-                'meta_description' => $this->input->post('txtMetaDescription'),
-                'meta_keywords' => $this->input->post('txtMetaKeywords'),
-                'canonical_url' => $this->input->post('txtCanonicalUrl'),
-                'robots_meta' => implode(', ',$this->input->post('robots_meta')),
+//                'meta_description' => $this->input->post('txtMetaDescription'),
+//                'meta_keywords' => $this->input->post('txtMetaKeywords'),
+//                'canonical_url' => $this->input->post('txtCanonicalUrl'),
+//                'robots_meta' => implode(', ',$this->input->post('robots_meta')),
             );
 
             $config['upload_path'] = './public/images/news';

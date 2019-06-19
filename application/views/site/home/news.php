@@ -2,7 +2,7 @@
     <div class="container">
         <div class="col-sm-12 col-md-12">
             <div class="title-section"><h2>Tin tức</h2></div>
-            <div class="sub-title-section">Khám phá GaiA tại đây</div>
+            <div class="sub-title-section">Khám phá tại đây</div>
             <div class="row">
             <?php foreach ($news as $key=>$value){ ?>
                 <?php if($key > 0){ ?>
