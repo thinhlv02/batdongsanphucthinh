@@ -28,12 +28,12 @@
                         <input type="text" id="txtName" name="txtName" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề">
                     </div>
                 </div>
-<!--                <div class="form-group">-->
-<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn <span class="required">*</span></label>-->
-<!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
-<!--                        <textarea name="txtIntro" class="form-control" style="height: 120px"></textarea>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn <span class="required">*</span></label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <textarea name="txtIntro" class="form-control" style="height: 120px"></textarea>
+                    </div>
+                </div>
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh minh họa <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
