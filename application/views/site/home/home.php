@@ -1,4 +1,5 @@
 <?php //$this->load->view('site/home/intro_1') ?>
+<?php $this->load->view('site/home/ads')?>
 <?php $this->load->view('site/home/highlight') ?>
 <?php $this->load->view('site/home/service') ?>
 <?php $this->load->view('site/home/intro_2') ?>
