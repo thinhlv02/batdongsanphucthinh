@@ -60,7 +60,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Diện tích<span class="required">*</span></label>
                     <div class="col-md-4 col-sm-4 col-xs-12">
-                        <input type="number" id="" name="acreage" required="required" class="form-control col-md-7 col-xs-12" placeholder="Document acreage">
+                        <input type="number" id="" name="acreage" required="required" class="form-control col-md-7 col-xs-12" placeholder="ví dụ: 90">
                     </div>
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">m2<span class="required">*</span></label>
 
