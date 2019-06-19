@@ -60,15 +60,16 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Diện tích<span class="required">*</span></label>
                     <div class="col-md-4 col-sm-4 col-xs-12">
-                        <input type="number" id="" name="acreage" required="required" class="form-control col-md-7 col-xs-12" placeholder="Document acreage"> m2
+                        <input type="number" id="" name="acreage" required="required" class="form-control col-md-7 col-xs-12" placeholder="Document acreage">
                     </div>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">m2<span class="required">*</span></label>
 
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Document Title <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề tin trên web <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="txtDocumentTitle" name="txtDocumentTitle" required="required" class="form-control col-md-7 col-xs-12" placeholder="Document Title">
+                        <input type="text" id="txtDocumentTitle" name="txtDocumentTitle" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề tin trên web">
                     </div>
                 </div>
 
