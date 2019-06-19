@@ -1,6 +1,6 @@
 <section class="contact">
     <div class="container">
-        <div class="title-section"><h2>Tin tức BĐS Phúc Thịnh</h2></div>
+        <div class="title-section"><h2>Tin tức GaiA</h2></div>
         <div class="col-md-4 col-sm-12 col-xs-12">
             <div class="left-title">Nổi bật</div>
             <?php foreach ($highlight as $key=>$value){ ?>

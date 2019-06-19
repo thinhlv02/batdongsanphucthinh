@@ -1,6 +1,6 @@
 <section class="contact">
     <div class="container">
-        <div class="title-section"><h2>Tin tức BĐS Phúc Thịnh</h2></div>
+        <div class="title-section"><h2>Tin tức GaiA</h2></div>
         <div class="col-md-8 col-sm-12 col-xs-12" style="margin-top: 20px">
             <ol class="breadcrumb">
                 <li><a href="<?php echo base_url('tin-tuc')?>">Tin tức</a></li>
