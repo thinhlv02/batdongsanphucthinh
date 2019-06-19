@@ -33,7 +33,7 @@
 //                        die();
                         foreach ($ads as $key=>$value){ ?>
                             <div class="item <?php if ($key == 0) echo 'active' ?>">
-                                <img class="image" src="<?php echo public_url('images/intro/step1.png') ?>" alt="Bước 1">
+                                <img class="image" src="<?php echo public_url('images/ads/'.$value->img)?>" alt="Bước 1">
                                 <div class="text">
                                     <span><?php echo $value->title ?></span>
                                     <h2>Chọn dịch vụ cần làm</h2>
