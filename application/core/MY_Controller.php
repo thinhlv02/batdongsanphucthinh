@@ -69,7 +69,7 @@ Class MY_Controller extends CI_Controller
     protected function _session_uname()
     {
         if ($this->session->userdata('admin')) {
-            $_uid = trim($this->session->userdata('admin')->UserID);
+            $_uid = trim($this->session->userdata('admin')->username);
             return $_uid;
         }
     }
