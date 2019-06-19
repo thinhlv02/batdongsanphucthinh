@@ -192,8 +192,8 @@ Class Home extends MY_Controller
         $offset = intval($offset);
         $input = array();
         $input['where'] = array('highlight' => 0);
-        $total = $this->news_model->get_total($input);
-        $paginator = config_pagination($per_page, 2, $total, base_url('tin-tuc'));
+        $total = $this->ads_model->get_total($input);
+        $paginator = config_pagination($per_page, 2, $total, base_url('rao-vat'));
 
         if ($offset >= 1) {
             $offset -= 1;
@@ -201,16 +201,16 @@ Class Home extends MY_Controller
         }
 
         $input['limit'] = array($per_page, $offset);
-        $news = $this->news_model->get_list($input);
+        $news = $this->ads_model->get_list($input);
 
-        $highlight = $this->news_model->get_list(array('where' => array('highlight' => 1)));
+        $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
 
         $this->data['paginator'] = $paginator;
         $this->data['news'] = $news;
         $this->data['highlight'] = $highlight;
 
         $this->data['li_6'] = 1;
-//        $news = $this->news_model->get_list();
+//        $news = $this->ads_model->get_list();
         $this->data['news'] = $news;
         $this->data['temp'] = 'site/pages/ads';
         $this->load->view('site/layout/layout', $this->data);
