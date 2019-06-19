@@ -206,12 +206,12 @@ Class Home extends MY_Controller
         $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
 
         $this->data['paginator'] = $paginator;
-        $this->data['news'] = $news;
+        $this->data['ads'] = $news;
         $this->data['highlight'] = $highlight;
 
         $this->data['li_6'] = 1;
 //        $news = $this->ads_model->get_list();
-        $this->data['news'] = $news;
+        $this->data['ads'] = $news;
         $this->data['temp'] = 'site/pages/ads';
         $this->load->view('site/layout/layout', $this->data);
     }
