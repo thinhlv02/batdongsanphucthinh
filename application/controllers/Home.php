@@ -185,6 +185,37 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
+    function ads()
+    {
+        $per_page = 10;
+        $offset = $this->uri->segment(2);
+        $offset = intval($offset);
+        $input = array();
+        $input['where'] = array('highlight' => 0);
+        $total = $this->news_model->get_total($input);
+        $paginator = config_pagination($per_page, 2, $total, base_url('tin-tuc'));
+
+        if ($offset >= 1) {
+            $offset -= 1;
+            $offset = $offset * $per_page;
+        }
+
+        $input['limit'] = array($per_page, $offset);
+        $news = $this->news_model->get_list($input);
+
+        $highlight = $this->news_model->get_list(array('where' => array('highlight' => 1)));
+
+        $this->data['paginator'] = $paginator;
+        $this->data['news'] = $news;
+        $this->data['highlight'] = $highlight;
+
+        $this->data['li_6'] = 1;
+//        $news = $this->news_model->get_list();
+        $this->data['news'] = $news;
+        $this->data['temp'] = 'site/pages/news';
+        $this->load->view('site/layout/layout', $this->data);
+    }
+
     function ads_detail($slug, $id)
     {
         $ads = $this->ads_model->get_info($id);
