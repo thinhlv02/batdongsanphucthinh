@@ -50,7 +50,7 @@
                                 <div class="text" style="background: white !important;">
                                     <span><?php echo $value->title ?></span>
                                     <h2>Chọn dịch vụ cần làm</h2>
-                                    <p>Bạn có thể chọn một trong các dịch vụ: Giúp việc theo giờ, sửa chữa điện nước, sửa chữa điện lạnh</p>
+                                    <p>Bạn có thể chọn một trong các dịch vụ: Dịch vụ bán hàng bất động sản 1, Dịch vụ bán hàng bất động sản 1,Dịch vụ bán hàng bất động sản 1,Dịch vụ bán hàng bất động sản 1</p>
                                 </div>
                             </div>
                         <?php } ?>
