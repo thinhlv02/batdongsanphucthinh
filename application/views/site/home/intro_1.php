@@ -35,7 +35,7 @@
                             <div class="text">
                                 <span><?= $value->title ?></span>
                                 <h2><?= $value->title ?></h2>
-                                <p><?= $value->content ?></p>
+                                <p><?= $value->title ?></p>
                             </div>
                         </div>
                         <?php } ?>
