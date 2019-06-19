@@ -1,6 +1,12 @@
 <section class="news">
     <div class="container">
         <div class="col-sm-12 col-md-12">
+<!--            <div class="title-section"><h2>Dịch vụ</h2></div>-->
+
+            <div class="box-module">
+                <div class="bg-modul"><i class="glyphicon glyphicon-th"></i>Dịch vụ</div>
+            </div>
+
             <div class="title-section"><h2>Dịch vụ</h2></div>
             <div class="sub-title-section">Dịch vụ đa dạng, mọi lúc mọi nơi</div>
             <div class="row">
