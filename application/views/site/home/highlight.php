@@ -3,7 +3,7 @@
         <div class="col-sm-12 col-md-12">
 <!--            <div class="title-section"><h2>Dịch vụ đa dạng, mọi lúc mọi nơi</h2></div>-->
             <div class="box-module">
-                <div class="bg-modul"><i class="glyphicon glyphicon-th"></i>Dịch vụ đa dạng, mọi lúc mọi nơi</div>
+                <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Dịch vụ đa dạng, mọi lúc mọi nơi</div>
             </div>
             <div class="intro-item">
                 <div class="intro-img">
