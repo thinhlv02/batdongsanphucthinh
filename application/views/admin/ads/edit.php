@@ -74,7 +74,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề tin trên web <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="txtDocumentTitle" name="txtDocumentTitle" value="<?php echo $ads->txtDocumentTitle ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề tin trên web">
+                        <input type="text" id="txtDocumentTitle" name="txtDocumentTitle" value="<?php echo $ads->document_title ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề tin trên web">
                     </div>
                 </div>
 
