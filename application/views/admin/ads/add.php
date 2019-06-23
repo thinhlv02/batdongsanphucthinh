@@ -65,7 +65,7 @@
 
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Đơn vị<span class="required">*</span></label>
                     <div class="col-md-4 col-sm-4 col-xs-12">
-                        <input type="text" id="" name="acreage" required="required" value="m2" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                        <input type="text" id="" name="" required="required" value="m2" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
                     </div>
 
                 </div>

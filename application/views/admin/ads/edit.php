@@ -23,7 +23,7 @@
         <div class="row" style="margin-top: 40px">
             <form id="formAddCatalog" data-parsley-validate class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề
                         <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <input type="text" id="txtName" name="txtName" value="<?php echo $ads->title ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tên bài viết">
@@ -37,7 +37,7 @@
                 <!--                    </div>-->
                 <!--                </div>-->
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh minh họa (900x450)<span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh minh họa<span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <input type="file" class="form-control" name="img_news" id="img_news">
                     </div>
@@ -52,48 +52,43 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Document Title
-                        <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="txtDocumentTitle" name="txtDocumentTitle" value="<?php echo $ads->document_title ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Document Title">
+                        <input type="text" id="" name="price" value="<?php echo $ads->price ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="ví dụ : 1,2 tỷ / nền">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá
-                        <span class="required">*</span></label>
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <input type="text" id="" name="price" value="<?php echo $ads->price ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Document Title">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Diện tích<span class="required">*</span></label>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input type="number" id="" name="acreage" value="<?php echo $ads->acreage ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="ví dụ: 90">
                     </div>
 
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">đơn vị
-                        <span class="required">*</span></label>
-                    <div class="col-md-3 col-sm-3 col-xs-12">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Đơn vị<span class="required">*</span></label>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <input type="text" id="" name="" required="required" value="m2" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                    </div>
 
-                        <select class="form-control" name="unit">
-                            <option value="0">Thỏa thuận</option>
-                            <option value="1">Triệu</option>
-                            <option value="2">Tỷ</option>
-                            <option value="3">Ngàn/m2</option>
-                            <option value="4">Triệu/m2</option>
-                            <option value="5">Ngàn/tháng</option>
-                            <option value="6">Triệu/tháng</option>
-                            <option value="7">Ngàn/m2/tháng</option>
-                            <option value="8">Triệu/m2/tháng</option>
-                            <option value="10">Ngàn/chiếc</option>
-                            <option value="11">Triệu/chiếc</option>
-                            <option value="12">Ngàn/suất</option>
-                            <option value="13">Triệu/suất</option>
-                        </select>
+                </div>
 
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề tin trên web <span class="required">*</span></label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <input type="text" id="txtDocumentTitle" name="txtDocumentTitle" value="<?php echo $ads->txtDocumentTitle ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề tin trên web">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Diện tích
-                        <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Khu vực<span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="txtDocumentTitle" name="acreage" value="<?php echo $ads->acreage ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Document Title">
+                        <input type="text" id="" name="area" required="required" value="<?php echo $ads->area ?>" class="form-control col-md-7 col-xs-12" placeholder="Địa chỉ tin rao vặt">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">SĐT liên hệ<span class="required">*</span></label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <input type="text" id="" name="phone" required="required" value="<?php echo $ads->phone ?>" class="form-control col-md-7 col-xs-12" placeholder="sđt liên hệ">
                     </div>
                 </div>
 
