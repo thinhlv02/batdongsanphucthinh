@@ -31,16 +31,16 @@
                 </ul>
             </div>
             </div>
-            <div class="row col-md-12 col-sm-12 col-xs-12" style="margin-top: 30px">
-                <div class="footer-title"><strong>ĐẠI LÝ</strong></div>
-                <div class="row">
-                    <?php foreach ($agencies as $key=>$value){ ?>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                            <a href="<?php echo base_url('dai-ly#'.create_slug($value->name))?>"><?php echo $value->name?></a>
-                        </div>
-                    <?php }?>
-                </div>
-            </div>
+<!--            <div class="row col-md-12 col-sm-12 col-xs-12" style="margin-top: 30px">-->
+<!--                <div class="footer-title"><strong>ĐẠI LÝ</strong></div>-->
+<!--                <div class="row">-->
+<!--                    --><?php //foreach ($agencies as $key=>$value){ ?>
+<!--                        <div class="col-md-3 col-sm-4 col-xs-6">-->
+<!--                            <a href="--><?php //echo base_url('dai-ly#'.create_slug($value->name))?><!--">--><?php //echo $value->name?><!--</a>-->
+<!--                        </div>-->
+<!--                    --><?php //}?>
+<!--                </div>-->
+<!--            </div>-->
             <div class="row col-sm-12 col-md-12 col-xs-12" style="margin-top: 30px">
                 Copyright 2014 © phucthinh corp All Rights Reserved
             </div>
