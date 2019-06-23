@@ -41,7 +41,7 @@
 <!--                    --><?php //}?>
 <!--                </div>-->
 <!--            </div>-->
-            <div class="row col-sm-12 col-md-12 col-xs-12" style="margin-top: 30px">
+            <div class="row col-sm-12 col-md-12 col-xs-12 text-center" style="margin-top: 30px">
                 Copyright 2014 © phucthinh corp All Rights Reserved
             </div>
         </div>
