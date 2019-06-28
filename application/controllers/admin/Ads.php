@@ -70,6 +70,7 @@ Class Ads extends MY_Controller
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
         $ads = $this->ads_model->get_info($id);
+        var_dump($ads);
         if (!$ads) {
             redirect(base_url('admin/ads'));
         }
