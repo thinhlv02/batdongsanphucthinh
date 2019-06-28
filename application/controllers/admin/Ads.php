@@ -92,6 +92,9 @@ Class Ads extends MY_Controller
 //                'robots_meta' => implode(', ',$this->input->post('robots_meta')),
             );
 
+            var_dump($data);
+            die;
+
             $config['upload_path'] = './public/images/ads';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $this->load->library("upload", $config);
