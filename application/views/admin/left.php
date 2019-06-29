@@ -51,7 +51,7 @@
 <!--                    <li><a href="--><?php //echo admin_url('policy') ?><!--"><i class="fa fa-handshake-o" aria-hidden="true"></i>Điều khoản, chính sách</a></li>-->
 <!--                    //only admin view-->
                     <?php if($admin->id == 1) { ?>
-                        <li><a><i class="fa fa-tint"></i>Quản lý nhân sự<span class="fa fa-chevron-down"></span></a>
+                        <li><a><i class="fa fa-book"></i>Quản lý nhân sự<span class="fa fa-chevron-down"></span></a>
                             <ul class="nav child_menu">
                                 <li><a href="<?php echo admin_url('news') ?>">Tin Tức </a></li>
                                 <li><a href="<?php echo admin_url('ads') ?>">Tin bán nhà đất</a></li>
