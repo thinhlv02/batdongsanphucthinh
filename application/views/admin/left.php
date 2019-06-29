@@ -49,6 +49,16 @@
 <!--                    <li><a href="--><?php //echo admin_url('content') ?><!--"><i class="fa fa-info-circle" aria-hidden="true"></i>Nội dung</a></li>-->
 <!--                    <li><a href="--><?php //echo admin_url('agency') ?><!--"><i class="fa fa-map-marker" aria-hidden="true"></i>Đại lý</a></li>-->
 <!--                    <li><a href="--><?php //echo admin_url('policy') ?><!--"><i class="fa fa-handshake-o" aria-hidden="true"></i>Điều khoản, chính sách</a></li>-->
+<!--                    //only admin view-->
+                    <?php if($admin->id == 1) { ?>
+                        <li><a><i class="fa fa-tint"></i>Quản lý nhân sự<span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                <li><a href="<?php echo admin_url('news') ?>">Tin Tức </a></li>
+                                <li><a href="<?php echo admin_url('ads') ?>">Tin bán nhà đất</a></li>
+                            </ul>
+                        </li>
+                    <?php } ?>
+<!--                    //only admin view-->
                 </ul>
             </div>
 
