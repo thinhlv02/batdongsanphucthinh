@@ -77,6 +77,10 @@
                                 <tr role="row">
                                     <th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1"
                                         colspan="1" aria-sort="ascending"
+                                        aria-label="Name: activate to sort column descending" style="width: 157px;">#
+                                    </th>
+                                    <th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1"
+                                        colspan="1" aria-sort="ascending"
                                         aria-label="Name: activate to sort column descending" style="width: 157px;">Ngân hàng
                                     </th>
                                     <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1"
@@ -94,15 +98,16 @@
 
                                 <tbody>
 
-
                                 <tr role="row" class="odd">
-                                    <td class="sorting_1">VPbank</td>
+                                    <td class="sorting_1">1</td>
+                                    <td class="">VPbank</td>
                                     <td>LUU VAN THINH</td>
                                     <td>168271255</td>
                                 </tr>
 
                                 <tr role="row" class="odd">
-                                    <td class="sorting_1">TECH COM BANK</td>
+                                    <td class="">2</td>
+                                    <td class="">TECHCOMBANK</td>
                                     <td>LUU VAN THINH</td>
                                     <td>19029512206017</td>
                                 </tr>
