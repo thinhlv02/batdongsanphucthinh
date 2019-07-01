@@ -30,3 +30,9 @@
         <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
     </div>
 </div>
+<div>
+    <h1>thông tin ngân hàng chuyển tiền</h1>
+    1: ngân hàng vpbank </br>
+    chủ tài khoản: luu van thinh </br>
+    stk : 168271255
+</div>
