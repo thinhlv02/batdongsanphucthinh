@@ -30,18 +30,12 @@
         <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
     </div>
 </div>
-<div>
-    <h1>thông tin ngân hàng chuyển tiền</h1>
-    1: ngân hàng vpbank </br>
-    chủ tài khoản: luu van thinh </br>
-    stk : 168271255
-</div>
 
 <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
             <div class="x_title">
-                <h2>Default Example
+                <h2>Thông tin ngân hàng chuyển tiền
                     <small>Users</small>
                 </h2>
                 <ul class="nav navbar-right panel_toolbox">
