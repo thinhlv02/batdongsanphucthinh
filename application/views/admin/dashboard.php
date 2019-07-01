@@ -58,8 +58,7 @@
             </div>
             <div class="x_content">
                 <p class="text-muted font-13 m-b-30">
-                    DataTables has most features enabled by default, so all you need to do to use it with your own
-                    tables is to call the construction function: <code>$().DataTable();</code>
+                    Mọi người cần copy chính xác thông tin tài khoản ngân hàng để gửi cho khách hàng, mọi sai sót đều phải chịu trách nhiệm cao nhất
                 </p>
                 <div id="datatable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
 
