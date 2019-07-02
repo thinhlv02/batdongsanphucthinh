@@ -11,16 +11,12 @@
                 </div>
                 <div class="intro-text">
                     <h2>Dịch vụ :</h2>
-                    <p>
-                    Mua căn hộ chung cư<br>
-                    Mua nhà riêng<br>
-                    Mua nhà mặt phố<br>
-                    Mua nhà Liền Kề, biệt thự<br>
-                    Mua đất nền dự án<br>
-                    Mua đất riêng, Đất ở các loại<br>
-                    Mua nhà xưởng, kho bãi<br>
-                    Dịch vụ bán hàng bất động sản
-                    </p>
+                    <span class="label label-default">Mua căn hộ chung cư</span><br>
+                    <span class="label label-primary">Mua nhà riêng</span><br>
+                    <span class="label label-success">Mua nhà mặt phố</span><br>
+                    <span class="label label-info">Mua nhà mặt phố</span><br>
+                    <span class="label label-warning">Mua nhà Liền Kề, biệt thự</span><br>
+                    <span class="label label-danger">DDịch vụ bán hàng bất động sản</span>
                 </div>
             </div>
 
