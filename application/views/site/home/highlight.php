@@ -14,9 +14,9 @@
                     <span class="label label-default">Mua căn hộ chung cư</span><br><br>
                     <span class="label label-primary">Mua nhà riêng</span><br><br>
                     <span class="label label-success">Mua nhà mặt phố</span><br><br>
-                    <span class="label label-info">Mua nhà mặt phố</span><br><br>
+                    <span class="label label-info">Mua đất nền dự án</span><br><br>
                     <span class="label label-warning">Mua nhà Liền Kề, biệt thự</span><br><br>
-                    <span class="label label-danger">DDịch vụ bán hàng bất động sản</span>
+                    <span class="label label-danger">Dịch vụ bán hàng bất động sản</span>
                 </div>
             </div>
 
