@@ -1726,3 +1726,13 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
         </div>
     </div>
 </section>
+
+<style>
+
+    .item-re-list {
+        border: 1px #b0aeae solid;
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+</style>
