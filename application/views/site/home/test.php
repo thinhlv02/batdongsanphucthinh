@@ -1782,4 +1782,16 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
     }
 
 
+    .item-re-list img {
+        float: left;
+        width: 150px;
+        height: 120px;
+        margin-right: 10px;
+        border: 1px #eee solid;
+    }
+    img {
+        vertical-align: middle;
+    }
+
+
 </style>
