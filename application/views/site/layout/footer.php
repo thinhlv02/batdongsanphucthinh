@@ -1,5 +1,5 @@
 <section class="footer">
-    <div class="container">
+    <div class="container-fluid">
         <div style="min-height: 200px">
             <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12" style="margin-top: 40px">
