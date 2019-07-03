@@ -1735,4 +1735,18 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
         width: 100%;
         padding: 10px;
     }
+
+    .box-img-thumb {
+        width: 150px;
+        float: left;
+        margin-right: 15px;
+    }
+
+    #box-home-svip .box-info-list {
+        width: 521px;
+    }
+    .box-info-list {
+        float: left;
+        width: 538px;
+    }
 </style>
