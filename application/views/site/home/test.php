@@ -1225,9 +1225,7 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
                                         An ngang khách sạn 3 sao </a></p></div>
                         </div>
                     </div>
-                    <div class="clearfix"><a href="/Home/BannerClicked?bannerId=209" rel="nofollow" target="_blank"><img
-                                    src="https://batdongsan24h.com.vn/images/banners/2018/04/21/131687986590700974.jpg?w=725"
-                                    width="725" height="100" alt="Banner"></a></div>
+
                     <div class="box-module mt10">
                         <div class="bg-modul"><h1><i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
                     </div>
