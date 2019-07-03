@@ -154,12 +154,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="clearfix">
-                        <div style="width:725px;float:left"><a href="/Home/BannerClicked?bannerId=199" rel="nofollow"
-                                                               target="_blank"><img
-                                        src="https://batdongsan24h.com.vn/images/banners/2016/09/17/131185794184316801.jpg?w=725"
-                                        width="725" height="100" alt="Banner"></a></div>
-                    </div>
+
                     <div id="raovat-nb">
                         <div class="box-module mt10">
                             <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật</div>
