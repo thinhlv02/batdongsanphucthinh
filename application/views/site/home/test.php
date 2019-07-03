@@ -1766,6 +1766,13 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
         text-transform: uppercase;
     }
 
+    #box-home-svip {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        max-height: 1000px;
+        margin-bottom: 15px;
+    }
+
     .label-danger {
         background-color: #d9534f;
     }
