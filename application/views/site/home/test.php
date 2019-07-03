@@ -1813,6 +1813,23 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
         color: red;
         text-transform: uppercase;
     }
+    .bg-modul {
+        background: #15a1b1;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 6px 16px 6px 13px;
+        display: inline-block;
+        -ms-border-top-right-radius: 4px;
+        border-top-right-radius: 4px;
+        -ms-border-top-left-radius: 4px;
+        border-top-left-radius: 4px;
+        text-align: center;
+    }
 
+    .border-box {
+        border: 1px #ddd solid;
+        padding: 10px;
+    }
 
 </style>
