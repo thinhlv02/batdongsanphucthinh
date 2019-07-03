@@ -4,6 +4,7 @@
 
 
             <div class="col-sm-8 col-md-8">
+
                 <div id="center-body">
                     <div class="text-center mt10"><input type="text" name="q" id="sTxt" size="50" class="search-tag"
                                                          placeholder="Nhập từ khóa tìm kiếm" tabindex="1"> <select
@@ -1081,7 +1082,7 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
                                         <div class="bx-viewport"
                                              style="width: 100%; overflow: hidden; position: relative; height: 360px;">
                                             <ul class="project-hot"
-                                                style="width: 1015%; position: relative; transition-duration: 0.5s; transform: translate3d(-1342px, 0px, 0px);">
+                                                style="width: 1015%; position: relative; transition-duration: 0.5s; transform: translate3d(-1993px, 0px, 0px);">
                                                 <li style="float: left; list-style: none; position: relative; width: 325.5px;"
                                                     class="bx-clone"><a href="/du-an/opal-garden-271"> <img
                                                                 src="https://batdongsan24h.com.vn/images/private/2016/10/20/131214310105824608.jpg?w=325&amp;h=190&amp;mode=crop"
@@ -1192,11 +1193,11 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
                                                 <div class="bx-pager-item"><a href="" data-slide-index="2"
                                                                               class="bx-pager-link">3</a></div>
                                                 <div class="bx-pager-item"><a href="" data-slide-index="3"
-                                                                              class="bx-pager-link active">4</a></div>
+                                                                              class="bx-pager-link">4</a></div>
                                                 <div class="bx-pager-item"><a href="" data-slide-index="4"
                                                                               class="bx-pager-link">5</a></div>
                                                 <div class="bx-pager-item"><a href="" data-slide-index="5"
-                                                                              class="bx-pager-link">6</a></div>
+                                                                              class="bx-pager-link active">6</a></div>
                                                 <div class="bx-pager-item"><a href="" data-slide-index="6"
                                                                               class="bx-pager-link">7</a></div>
                                                 <div class="bx-pager-item"><a href="" data-slide-index="7"
@@ -1335,9 +1336,11 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <div class="col-sm-4 col-md-4">
+
 
                 <div id="right">
                     <div class="home-search-box">
@@ -1720,6 +1723,8 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
                                 nhà khi chỉ có 120 triệu</a></li>
                     </ul>
                 </div>
+
+
             </div>
 
 
