@@ -1761,10 +1761,25 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
         background-color: #d9534f;
     }
 
+    .label {
+        display: inline;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25em;
+    }
+
     .item-re-list h3 {
         margin: 0 0 10px;
         padding: 0;
         font-size: 13px;
         font-weight: 700;
     }
+
+
 </style>
