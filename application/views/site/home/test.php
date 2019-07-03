@@ -3,7 +3,7 @@
         <div class="row">
 
 
-            <div class="col-sm-8 col-md-8">
+            <div class="col-sm-9 col-md-9">
 
                 <div id="center-body">
                     <div class="text-center mt10"><input type="text" name="q" id="sTxt" size="50" class="search-tag"
@@ -1334,7 +1334,7 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
 
             </div>
 
-            <div class="col-sm-4 col-md-4">
+            <div class="col-sm-3 col-md-3">
 
 
                 <div id="right">
