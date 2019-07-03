@@ -1743,10 +1743,10 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
     }
 
     #box-home-svip .box-info-list {
-        width: 521px;
+        /*width: 521px;*/
     }
     .box-info-list {
         float: left;
-        width: 538px;
+        /*width: 538px;*/
     }
 </style>
