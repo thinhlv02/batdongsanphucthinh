@@ -1749,4 +1749,22 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
         float: left;
         /*width: 538px;*/
     }
+
+    .box-title-item label {
+        float: left;
+        margin-top: 5px;
+        margin-right: 5px;
+        width: 55px;
+        text-transform: uppercase;
+    }
+    .label-danger {
+        background-color: #d9534f;
+    }
+
+    .item-re-list h3 {
+        margin: 0 0 10px;
+        padding: 0;
+        font-size: 13px;
+        font-weight: 700;
+    }
 </style>
