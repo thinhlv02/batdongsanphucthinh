@@ -1827,6 +1827,14 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
         text-align: center;
     }
 
+    .bg-modul h2, .bg-modul h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        line-height: 18px;
+    }
+
     .border-box {
         border: 1px #ddd solid;
         padding: 10px;
