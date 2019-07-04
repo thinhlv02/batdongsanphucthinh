@@ -197,135 +197,6 @@
 
                             <?php } ?>
 
-
-
-
-
-                            <div class="item-re-list clearfix" style="border-color: #f00">
-                                <div class="box-img-thumb">
-                                    <a href="/ban-nha-mat-pho-quan-thanh-xuan/ban-nha-mat-pho-quan-nhan-thanh-xuan0-79m2-x-3-tang-lh-039754522-971630.html">
-                                        <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/29/132062944310151899.jpg"
-                                             alt="Bán Nhà Mặt Phố Quan Nhân , Thanh Xuân0 79m2 x 3 Tầng  .LH 039754522">
-                                    </a>
-                                </div>
-                                <div class="box-info-list">
-                                    <div class="clearfix box-title-item">
-                                        <label class="label label-danger">ĐẶC BIỆT</label>
-                                        <h3 class="sieu-vip-title">
-                                            <a href="/ban-nha-mat-pho-quan-thanh-xuan/ban-nha-mat-pho-quan-nhan-thanh-xuan0-79m2-x-3-tang-lh-039754522-971630.html">Bán
-                                                Nhà Mặt Phố Quan Nhân , Thanh Xuân0 79m2 x 3 Tầng .LH 039754522 </a>
-                                        </h3>
-                                    </div>
-                                    <p>BÁN NHÀ MẶT PHỐ QUAN NHÂN , THANH XUÂN ,HÀ NỘI 79M2 x3 TẦNG KINH DOANH TỐT .LH 0
-                                        ...</p>
-                                    <div class="price-list">
-                                        <span>Diện tích</span>: <strong>79 m2</strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Giá</span>: <strong>11.5 Tỷ</strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Khu vực</span>: <strong> Phường Nhân Chính -
-                                            Quận Thanh Xuân - Hà Nội </strong>
-                                        <span class="pull-right time">
-                            <i class="glyphicon glyphicon-time"></i>
-Hôm nay, lúc 11 giờ 1 phút                    </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-re-list clearfix" style="border-color: #f00">
-                                <div class="box-img-thumb">
-                                    <a href="/ban-nha-quan-go-vap/ban-nha-duong-quang-trung-phuong-10-quan-go-vap-958567.html">
-                                        <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/17/132052146539531444.jpg"
-                                             alt="Bán nhà Đường Quang Trung, Phường 10, Quận Gò Vấp">
-                                    </a>
-                                </div>
-                                <div class="box-info-list">
-                                    <div class="clearfix box-title-item">
-                                        <label class="label label-danger">ĐẶC BIỆT</label>
-                                        <h3 class="sieu-vip-title">
-                                            <a href="/ban-nha-quan-go-vap/ban-nha-duong-quang-trung-phuong-10-quan-go-vap-958567.html">Bán
-                                                nhà Đường Quang Trung, Phường 10, Quận Gò Vấp </a>
-                                            <span style="color: #f00; font-weight: 400">(Chính chủ)</span></h3>
-                                    </div>
-                                    <p>CHÍNH CHỦ CẦN BÁN GẤP NHÀ HẺM ĐƯỜNG QUANG TRUNG PHƯỜNG 10 QUẬN GÒ VẤP ➡️ DT đất:
-                                        ...</p>
-                                    <div class="price-list">
-                                        <span>Diện tích</span>: <strong>293 m2</strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Giá</span>: <strong>7.95 Tỷ</strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Khu vực</span>: <strong> Phường 10 -
-                                            Quận Gò Vấp - TP. HCM </strong>
-                                        <span class="pull-right time">
-01/07/2019                    </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-re-list clearfix" style="border-color: #f00">
-                                <div class="box-img-thumb">
-                                    <a href="/ban-dat-huyen-hoc-mon/ban-dat-duong-dang-thuc-vinh-xa-dong-thanh-huyen-hoc-mon-967369.html">
-                                        <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/25/132059460340238772.jpg"
-                                             alt="Bán đất Đường Đặng Thúc Vịnh, Xã Đông Thạnh, Huyện Hóc Môn">
-                                    </a>
-                                </div>
-                                <div class="box-info-list">
-                                    <div class="clearfix box-title-item">
-                                        <label class="label label-danger">ĐẶC BIỆT</label>
-                                        <h3 class="sieu-vip-title">
-                                            <a href="/ban-dat-huyen-hoc-mon/ban-dat-duong-dang-thuc-vinh-xa-dong-thanh-huyen-hoc-mon-967369.html">Bán
-                                                đất Đường Đặng Thúc Vịnh, Xã Đông Thạnh, Huyện Hóc Môn </a>
-                                            <span style="color: #f00; font-weight: 400">(Chính chủ)</span></h3>
-                                    </div>
-                                    <p>-Cần bán gấp lô đất 121m2(6-20,2)SHR chính chủ -Mặt tiền đường 8m ,gần chợ,trườn
-                                        ...</p>
-                                    <div class="price-list">
-                                        <span>Diện tích</span>: <strong>121 m2</strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Giá</span>: <strong>1.25 Tỷ</strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Khu vực</span>: <strong> Xã Đông Thạnh -
-                                            Huyện Hóc Môn - TP. HCM </strong>
-                                        <span class="pull-right time">
-30/06/2019                    </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-re-list clearfix" style="border-color: #f00">
-                                <div class="box-img-thumb">
-                                    <a href="/ban-can-ho-chung-cu-tp-cam-ranh/ban-can-ho-the-arena-cam-ranh-tang-11-view-bien-gia-goc-chenh-100tr-971421.html">
-                                        <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/29/132062693737363791.jpg"
-                                             alt="Bán căn hộ The Arena Cam Ranh, tầng 11 View biển, giá gốc + chênh 100tr">
-                                    </a>
-                                </div>
-                                <div class="box-info-list">
-                                    <div class="clearfix box-title-item">
-                                        <label class="label label-danger">ĐẶC BIỆT</label>
-                                        <h3 class="sieu-vip-title">
-                                            <a href="/ban-can-ho-chung-cu-tp-cam-ranh/ban-can-ho-the-arena-cam-ranh-tang-11-view-bien-gia-goc-chenh-100tr-971421.html">Bán
-                                                căn hộ The Arena Cam Ranh, tầng 11 View biển, giá gốc + chênh 100tr </a>
-                                        </h3>
-                                    </div>
-                                    <p>Chính chủ bán căn hộ The Arena TP Cam Ranh. Căn WIA09-11 tầng 11 DT 36m2 view bi
-                                        ...</p>
-                                    <div class="price-list">
-                                        <span>Diện tích</span>: <strong>36 m2</strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Giá</span>: <strong>Thỏa thuận</strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Khu vực</span>: <strong> TP Cam Ranh - Khánh Hòa </strong>
-                                        <span class="pull-right time">
-29/06/2019                    </span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="pull-right mt10 viewall">
                                 <a href="/bat-dong-san-ban-tai-viet-nam-s32113"><i class="glyphicon glyphicon-th"></i>
                                     Xem tất cả</a>
@@ -494,104 +365,33 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
                         <div class="bg-modul"><h1><i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
                     </div>
                     <div class="clearfix">
+
+                        <?php foreach ($ads as $key => $value) { ?>
                         <div class="item-re-list clearfix">
                             <div class="box-img-thumb"><a
-                                        href="/ban-nha-mat-pho-thi-xa-tu-son/chinh-chu-ban-gap-can-nha-pho-thuong-mai-2-mat-tien-tai-tu-son-l-h-0963207603-970765.html">
+                                        href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                     <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/28/132061885687174061.jpg"
                                          alt="Chính chủ bán gấp căn nhà phố thương mại 2 mặt tiền tại Từ Sơn.L/h 0963207603">
                                 </a></div>
                             <div class="box-info-list"><h3><a
-                                            href="/ban-nha-mat-pho-thi-xa-tu-son/chinh-chu-ban-gap-can-nha-pho-thuong-mai-2-mat-tien-tai-tu-son-l-h-0963207603-970765.html">Chính
-                                        chủ bán gấp căn nhà phố thương mại 2 mặt tiền tại Từ Sơn.L/h 0963207603 </a>
+                                            href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                        <?php echo  $value->title ?>
+                                    </a>
                                 </h3>
-                                <p>Nằm trong tổ hợp khu đô thị Centa city thuộc KĐT dịch vụ VSIP – Phù Chẩn – Từ Sơ
+                                <p><?php echo  $value->title ?>
                                     ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong>120 m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong>3.3 Tỷ</strong></div>
-                                <div class="price-list"><span>Khu vực</span>: <strong> Xã Phù Chẩn - Thị xã Từ Sơn - Bắc
-                                        Ninh </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> Hôm nay, lúc 21 giờ 0 phút </span>
+                                <div class="price-list"><span>Diện tích</span>: <strong><?php echo  $value->acreage ?> m2</strong></div>
+                                <div class="price-list"><span>Giá</span>: <strong><?php echo  $value->price ?></strong></div>
+                                <div class="price-list"><span>Khu vực</span>: <strong> <?php echo  $value->area ?> </strong> <span class="pull-right time"> <i
+                                                class="glyphicon glyphicon-time"></i> <?php echo date('Y-m-d', strtotime($value->title)) ?> </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="item-re-list clearfix">
-                            <div class="box-img-thumb"><a
-                                        href="/ban-nha-biet-thu-lien-ke-thi-xa-tu-son/chi-2-ty-so-huu-ngay-nha-3-tang-hoan-thien-mat-ngoai-tai-kdt-vsip-tu-son-971538.html">
-                                    <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/29/132062761982023657.jpg"
-                                         alt="Chỉ 2 tỷ sở hữu ngay nhà 3 tầng,hoàn thiện mặt ngoài tại KĐT Vsip Từ sơn.">
-                                </a></div>
-                            <div class="box-info-list"><h3><a
-                                            href="/ban-nha-biet-thu-lien-ke-thi-xa-tu-son/chi-2-ty-so-huu-ngay-nha-3-tang-hoan-thien-mat-ngoai-tai-kdt-vsip-tu-son-971538.html">Chỉ
-                                        2 tỷ sở hữu ngay nhà 3 tầng,hoàn thiện mặt ngoài tại KĐT Vsip Từ sơn. </a></h3>
-                                <p>-Vị trí: KĐT Belhomes - Vsip - Nằm trên mặt tiền trục đường Hữu Nghị và ĐT179, -
-                                    ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong>75 m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong>2.1 Tỷ</strong></div>
-                                <div class="price-list"><span>Khu vực</span>: <strong> Xã Phù Chẩn - Thị xã Từ Sơn - Bắc
-                                        Ninh </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> Hôm nay, lúc 20 giờ 59 phút </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-re-list clearfix">
-                            <div class="box-img-thumb"><a
-                                        href="/ban-nha-mat-pho-thi-xa-tu-son/chi-tu-3-7-ty-so-huu-ngay-can-nha-pho-thuong-mai-kinh-doanh-2-mat-tien-duong-56m-967100.html">
-                                    <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/25/132059264993731664.jpg"
-                                         alt="Chỉ từ 3,7 tỷ sở hữu ngay căn nhà phố thương mại kinh doanh 2 mặt tiền đường 56m">
-                                </a></div>
-                            <div class="box-info-list"><h3><a
-                                            href="/ban-nha-mat-pho-thi-xa-tu-son/chi-tu-3-7-ty-so-huu-ngay-can-nha-pho-thuong-mai-kinh-doanh-2-mat-tien-duong-56m-967100.html">Chỉ
-                                        từ 3,7 tỷ sở hữu ngay căn nhà phố thương mại kinh doanh 2 mặt tiền đường
-                                        56m </a></h3>
-                                <p>❌❌❌ .Belhomes tọa lạc tại vị trí đẹp nhất của Vsip Bắc Ninh, nằm ngay tại trung
-                                    ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong>90 m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong>3.7 Tỷ</strong></div>
-                                <div class="price-list"><span>Khu vực</span>: <strong> Xã Phù Chẩn - Thị xã Từ Sơn - Bắc
-                                        Ninh </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> Hôm nay, lúc 20 giờ 59 phút </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-re-list clearfix">
-                            <div class="box-img-thumb"><a
-                                        href="/ban-nha-biet-thu-lien-ke-thi-xa-tu-son/can-goc-2-mat-tien-tai-vi-tri-vo-cung-dac-dia-vsip-tu-son-re-hon-tt-100-trieu-970802.html">
-                                    <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/28/132061903895214042.jpg"
-                                         alt="Căn góc 2 mặt tiền tại vị trí vô cùng đắc địa Vsip Từ Sơn,rẻ hơn TT 100 triệu">
-                                </a></div>
-                            <div class="box-info-list"><h3><a
-                                            href="/ban-nha-biet-thu-lien-ke-thi-xa-tu-son/can-goc-2-mat-tien-tai-vi-tri-vo-cung-dac-dia-vsip-tu-son-re-hon-tt-100-trieu-970802.html">Căn
-                                        góc 2 mặt tiền tại vị trí vô cùng đắc địa Vsip Từ Sơn,rẻ hơn TT 100 triệu </a>
-                                </h3>
-                                <p>-Cần bán căn lô góc vị trí đẹp Belhomes - Vsip BN -Diện tích: 90m2 - 105m2- 120m
-                                    ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong>105 m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong>2.5 Tỷ</strong></div>
-                                <div class="price-list"><span>Khu vực</span>: <strong> Xã Phù Chẩn - Thị xã Từ Sơn - Bắc
-                                        Ninh </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> Hôm nay, lúc 20 giờ 59 phút </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-re-list clearfix">
-                            <div class="box-img-thumb"><a
-                                        href="/ban-nha-mat-pho-quan-cau-giay/ban-nha-phan-lo-mac-thai-to-vp-gia-13-ty-8-970989.html">
-                                    <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/29/132062403040681209.jpg"
-                                         alt="Bán nhà phân lô Mạc Thái Tổ, VP, Giá 13 tỷ 8."> </a></div>
-                            <div class="box-info-list"><h3><a
-                                            href="/ban-nha-mat-pho-quan-cau-giay/ban-nha-phan-lo-mac-thai-to-vp-gia-13-ty-8-970989.html">Bán
-                                        nhà phân lô Mạc Thái Tổ, VP, Giá 13 tỷ 8. </a></h3>
-                                <p>Chính chủ cần bán gấp căn nhà 6 tầng. Thông số : 55m, mặt tiền 4m5. +
-                                    ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong>55 m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong>13.8 Tỷ</strong></div>
-                                <div class="price-list"><span>Khu vực</span>: <strong> Phường Trung Hòa - Quận Cầu Giấy
-                                        - Hà Nội </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> Hôm nay, lúc 20 giờ 58 phút </span>
-                                </div>
-                            </div>
-                        </div>
+
+                        <?php } ?>
+
                     </div>
+
                 </div>
 
             </div>
