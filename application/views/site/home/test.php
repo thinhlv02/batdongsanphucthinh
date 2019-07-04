@@ -813,7 +813,7 @@
 
     .box-info-list {
         float: left;
-        width: 538px;
+        /*width: 538px;*/
     }
 
     /*.box-title-item label {*/
