@@ -1,6 +1,6 @@
 <section class="contact">
     <div class="container">
-        <div class="title-section"><h2>Tin tức Phúc thịnh</h2></div>
+        <div class="title-section"><h2>Tin tức</h2></div>
         <div class="col-md-8 col-sm-12 col-xs-12" style="margin-top: 20px">
             <ol class="breadcrumb">
                 <li><a href="<?php echo base_url('tin-tuc')?>">Tin tức</a></li>
@@ -8,7 +8,7 @@
             </ol>
             <div class="item-news-1" style="padding: 10px">
                 <span><?php echo date('d/m/Y', strtotime($news->created_at))?></span>
-                <h2 class="title-news-1"><?php echo $news->name?></h2>
+                <h3 class="title-news-1"><?php echo $news->name?></h3>
                 <p class="content-news-1"><?php echo $news->intro?></p>
                 <div class="img-news-1">
                     <img src="<?php echo public_url('images/news/'.$news->img)?>">
