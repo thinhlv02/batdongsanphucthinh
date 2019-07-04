@@ -1,7 +1,10 @@
 
 <div class="sub-nav">
     <div class="logo">
+        <a href="<?php echo base_url() ?>">
+
         <img src="<?php echo public_url('images/logo.png')?>" style="">
+        </a>
 <!--        <a href="--><?php //echo base_url()?><!--">Trao tiện ích, nhận tin yêu</a>-->
     </div>
     <ul class="ul-large">
