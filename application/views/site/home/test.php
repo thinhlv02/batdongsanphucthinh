@@ -164,13 +164,13 @@
                             <?php foreach ($ads as $key => $value) { ?>
 
                             <div class="item-re-list clearfix" style="border-color: #f00">
-                                <div class="box-img-thumb col-sm-4 col-md-4">
+                                <div class="box-img-thumb col-sm-2 col-md-2">
                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                         <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/07/02/132065299849132594.jpg"
                                              alt="Đất Hương An Viên - Huế giá chỉ từ 3.9tr/m2">
                                     </a>
                                 </div>
-                                <div class="box-info-list col-sm-8 col-md-8">
+                                <div class="box-info-list col-sm-10 col-md-10">
                                     <div class="clearfix box-title-item">
                                         <label class="label label-danger">ĐẶC BIỆT</label>
                                         <h3 class="sieu-vip-title">
