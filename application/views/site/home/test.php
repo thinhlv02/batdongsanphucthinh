@@ -802,7 +802,7 @@
     }
 
     .box-img-thumb {
-        width: 150px;
+        /*width: 150px;*/
         float: left;
         margin-right: 15px;
     }
