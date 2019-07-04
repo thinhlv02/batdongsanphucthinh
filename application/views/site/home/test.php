@@ -1013,7 +1013,7 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
 
     .box-info-list {
         float: left;
-        /*width: 538px;*/
+        width: 538px;
     }
 
     /*.box-title-item label {*/
