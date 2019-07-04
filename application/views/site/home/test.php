@@ -166,8 +166,8 @@
                             <div class="item-re-list clearfix" style="border-color: #f00">
                                 <div class="box-img-thumb col-sm-3 col-md-3">
                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                        <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/07/02/132065299849132594.jpg"
-                                             alt="Đất Hương An Viên - Huế giá chỉ từ 3.9tr/m2">
+                                        <img src="<?php echo public_url('images/ads/'.$value->img)?>"
+                                             alt="<?php echo $value ->title ?>">
                                     </a>
                                 </div>
                                 <div class="box-info-list col-sm-9 col-md-9">
@@ -370,8 +370,8 @@
                         <div class="item-re-list clearfix">
                             <div class="box-img-thumb"><a
                                         href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                    <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/06/28/132061885687174061.jpg"
-                                         alt="Chính chủ bán gấp căn nhà phố thương mại 2 mặt tiền tại Từ Sơn.L/h 0963207603">
+                                    <img src="<?php echo public_url('images/ads/'.$value->img)?>"
+                                         alt="<?php echo $value ->title ?>">
                                 </a></div>
                             <div class="box-info-list"><h3><a
                                             href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
