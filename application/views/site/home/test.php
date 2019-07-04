@@ -188,8 +188,9 @@
                                     <div class="price-list">
                                         <span>Khu vực</span>: <strong> <?php echo $value ->area ?> </strong>
                                         <span class="pull-right time">
-                            <i class="glyphicon glyphicon-time"></i>
-<?php echo date('Y-m-d', strtotime($value->created_at))  ?>                    </span>
+                                             <i class="glyphicon glyphicon-time"></i>
+                                            <?php echo date('Y-m-d', strtotime($value->created_at))  ?>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
