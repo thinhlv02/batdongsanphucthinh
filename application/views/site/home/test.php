@@ -366,7 +366,7 @@
                     </div>
                     <div class="clearfix">
 
-                        <?php foreach ($ads as $key => $value) { ?>
+                        <?php foreach ($ads_new as $key => $value) { ?>
                         <div class="item-re-list clearfix">
                             <div class="box-img-thumb"><a
                                         href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
