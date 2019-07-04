@@ -3,7 +3,7 @@
         <div class="row">
 
 
-            <div class="col-sm-9 col-md-9">
+            <div class="col-sm-8 col-md-8">
 
                 <div id="center-body">
                     <div class="text-center mt10"><input type="text" name="q" id="sTxt" size="50" class="search-tag"
@@ -587,7 +587,7 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
 
             </div>
 
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-4 col-md-4">
 
 
                 <div id="right">
@@ -895,7 +895,8 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
                                 <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-md-complex-my-dinh-s813995">Chung
                                     cư Mdcomplex Mỹ Đình</a></li>
                         </ul>
-                        <p><span style="font-size:12px"><span style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;TP.HCM</strong></span></span>
+                        <p>
+                            <span style="font-size:12px"><span style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;TP.HCM</strong></span></span>
                         </p>
                         <ul>
                             <li><a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-7-s37553">Cho
@@ -913,9 +914,11 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
                                     Tân&nbsp;<span style="font-size:13px">Bình</span></a></li>
                             <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-quan-10-s1358944"><span
                                             style="font-size:13px">Bán nhà Quận 10</span></a></li>
-                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-tan-hung-quan-7-s110665">Cho thuê
+                            <li>
+                                <a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-tan-hung-quan-7-s110665">Cho thuê
                                     nhà tân hưng, quận 7</a></li>
-                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-quan-1-s38310">Cho thuê nhà tại
+                            <li>
+                                <a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-quan-1-s38310">Cho thuê nhà tại
                                     quận 1</a></li>
                         </ul>
                     </div>
@@ -998,6 +1001,7 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
     #box-home-svip .box-info-list {
         /*width: 521px;*/
     }
+
     .box-info-list {
         float: left;
         /*width: 538px;*/
@@ -1058,6 +1062,7 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
         margin-right: 10px;
         border: 1px #eee solid;
     }
+
     img {
         vertical-align: middle;
     }
@@ -1066,6 +1071,7 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
         color: red;
         text-transform: uppercase;
     }
+
     .bg-modul {
         background: #15a1b1;
         color: #fff;
@@ -1097,17 +1103,20 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
         font-weight: 400;
         width: inherit;
     }
+
     .price-list span {
         font-weight: 700;
         /*width: 60px;*/
         display: inline-block;
     }
+
     .time {
         font-size: 11px;
         white-space: nowrap;
     }
+
     .pull-right {
-        float: right!important;
+        float: right !important;
     }
 
 </style>
