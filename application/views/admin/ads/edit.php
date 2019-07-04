@@ -1,4 +1,6 @@
-<script language="javascript" src="<?php echo base_url('public') ?>/ckeditor/ckeditor.js" type="text/javascript"></script>
+<!--<script language="javascript" src="--><?php //echo base_url('public') ?><!--/ckeditor/ckeditor.js" type="text/javascript"></script>-->
+<script type="text/javascript" src="<?php echo base_url();?>public/scripts/ckeditor/ckeditor.js"></script>
+
 <div class="x_panel">
     <div class="x_title">
         <h2>Chỉnh sửa rao vặt12</h2>
