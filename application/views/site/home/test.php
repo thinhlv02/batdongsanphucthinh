@@ -178,20 +178,18 @@
                                                 <?php echo $value ->title ?> </a>
                                         </h3>
                                     </div>
-                                    <p>Chỉ từ 150tr sở hữu ngay "Lô đôi" vị trí &amp; hướng đẹp tại Đại An 1. Công viên
-                                        ngh ...</p>
+                                    <p><?php echo $value ->title ?> ...</p>
                                     <div class="price-list">
-                                        <span>Diện tích</span>: <strong>16 m2</strong>
+                                        <span>Diện tích</span>: <strong>1<?php echo $value ->acreage ?></strong>
                                     </div>
                                     <div class="price-list">
-                                        <span>Giá</span>: <strong>3.9 Triệu/m2</strong>
+                                        <span>Giá</span>: <strong><?php echo $value ->price ?></strong>
                                     </div>
                                     <div class="price-list">
-                                        <span>Khu vực</span>: <strong> Phường Phú Nhuận -
-                                            Thành phố Huế - Thừa Thiên Huế </strong>
+                                        <span>Khu vực</span>: <strong> <?php echo $value ->area ?> </strong>
                                         <span class="pull-right time">
                             <i class="glyphicon glyphicon-time"></i>
-Hôm nay, lúc 12 giờ 0 phút                    </span>
+<?php echo date('Y-m-d', strtotime($value->created_at))  ?>                    </span>
                                     </div>
                                 </div>
                             </div>
