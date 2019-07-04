@@ -383,7 +383,7 @@
                                 <div class="price-list"><span>Diện tích</span>: <strong><?php echo  $value->acreage ?> m2</strong></div>
                                 <div class="price-list"><span>Giá</span>: <strong><?php echo  $value->price ?></strong></div>
                                 <div class="price-list"><span>Khu vực</span>: <strong> <?php echo  $value->area ?> </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> <?php echo date('Y-m-d', strtotime($value->title)) ?> </span>
+                                                class="glyphicon glyphicon-time"></i> <?php echo date('Y-m-d', strtotime($value->created_at)) ?> </span>
                                 </div>
                             </div>
                         </div>
