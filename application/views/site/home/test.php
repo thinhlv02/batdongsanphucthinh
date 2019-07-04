@@ -178,7 +178,7 @@
                                                 <?php echo $value ->title ?> </a>
                                         </h3>
                                     </div>
-                                    <p><?php echo $value ->title ?> ...</p>
+                                    <p><?php echo $value->intro ?> ...</p>
                                     <div class="price-list">
                                         <span>Diện tích</span>: <strong>1<?php echo $value ->acreage ?></strong>
                                     </div>
@@ -378,7 +378,7 @@
                                         <?php echo  $value->title ?>
                                     </a>
                                 </h3>
-                                <p><?php echo  $value->title ?>
+                                <p><?php echo  $value->intro ?>
                                     ...</p>
                                 <div class="price-list"><span>Diện tích</span>: <strong><?php echo  $value->acreage ?> m2</strong></div>
                                 <div class="price-list"><span>Giá</span>: <strong><?php echo  $value->price ?></strong></div>
