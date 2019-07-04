@@ -160,9 +160,12 @@
                             <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật</div>
                         </div>
                         <div class="clearfix" id="box-home-svip">
+
+                            <?php foreach ($ads as $key => $value) { ?>
+
                             <div class="item-re-list clearfix" style="border-color: #f00">
                                 <div class="box-img-thumb">
-                                    <a href="/ban-bat-dong-san-khac-thanh-pho-hue/dat-huong-an-vien-hue-gia-chi-tu-3-9tr-m2-973728.html">
+                                    <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                         <img src="https://batdongsan24h.com.vn/Buysell/thumb/2019/07/02/132065299849132594.jpg"
                                              alt="Đất Hương An Viên - Huế giá chỉ từ 3.9tr/m2">
                                     </a>
@@ -171,8 +174,8 @@
                                     <div class="clearfix box-title-item">
                                         <label class="label label-danger">ĐẶC BIỆT</label>
                                         <h3 class="sieu-vip-title">
-                                            <a href="/ban-bat-dong-san-khac-thanh-pho-hue/dat-huong-an-vien-hue-gia-chi-tu-3-9tr-m2-973728.html">Đất
-                                                Hương An Viên - Huế giá chỉ từ 3.9tr/m2 </a>
+                                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                                <?php echo $value ->title ?> </a>
                                         </h3>
                                     </div>
                                     <p>Chỉ từ 150tr sở hữu ngay "Lô đôi" vị trí &amp; hướng đẹp tại Đại An 1. Công viên
@@ -192,6 +195,13 @@ Hôm nay, lúc 12 giờ 0 phút                    </span>
                                     </div>
                                 </div>
                             </div>
+
+                            <?php } ?>
+
+
+
+
+
                             <div class="item-re-list clearfix" style="border-color: #f00">
                                 <div class="box-img-thumb">
                                     <a href="/ban-nha-mat-pho-quan-thanh-xuan/ban-nha-mat-pho-quan-nhan-thanh-xuan0-79m2-x-3-tang-lh-039754522-971630.html">
