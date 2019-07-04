@@ -804,7 +804,7 @@
     .box-img-thumb {
         /*width: 150px;*/
         float: left;
-        margin-right: 15px;
+        /*margin-right: 15px;*/
     }
 
     #box-home-svip .box-info-list {
