@@ -1613,54 +1613,54 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
                         </p>
                         <ul>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-sun-grand-city-ancora-luong-yen-s1422162">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-sun-grand-city-ancora-luong-yen-s1422162">Chung
                                     cư&nbsp;Sun Grand City Ancora Residence</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-the-garden-hills-99-tran-binh-s260117">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-the-garden-hills-99-tran-binh-s260117">Chung
                                     cư The garden Hills - 99 Trần Bình&nbsp;</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-an-binh-city-s1172432">Chung
+                            <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-an-binh-city-s1172432">Chung
                                     cư An Bình City</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-goldmark-city-s578392">Chung
+                            <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-goldmark-city-s578392">Chung
                                     cư Goldmark City</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-tu-hiep-plaza-s1172600?page=12">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-tu-hiep-plaza-s1172600?page=12">Chung
                                     cư Tứ Hiệp Plaza</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-vinhomes-green-bay-me-tri-s1988923">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-vinhomes-green-bay-me-tri-s1988923">Chung
                                     cư&nbsp;Vinhomes Green Bay Mễ Trì</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-vinhomes-sky-lake-s1225279">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-vinhomes-sky-lake-s1225279">Chung
                                     cư Vinhomes Sky Lake</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/cho-thue-van-phong-mat-bang-kinh-doanh-tai-ha-noi-s49598">Văn
+                                <a href="http://batdongsanphucthinh.vn/cho-thue-van-phong-mat-bang-kinh-doanh-tai-ha-noi-s49598">Văn
                                     phòng - mặt bằng kinh doanh tại Hà Nội</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/nha-ban-tai-duong-pho-phao-dai-lang-s1419515">Nhà
+                            <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-duong-pho-phao-dai-lang-s1419515">Nhà
                                     bán tại phố Pháo Đài Láng</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-md-complex-my-dinh-s813995">Chung
+                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-md-complex-my-dinh-s813995">Chung
                                     cư Mdcomplex Mỹ Đình</a></li>
                         </ul>
                         <p><span style="font-size:12px"><span style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;TP.HCM</strong></span></span>
                         </p>
                         <ul>
-                            <li><a href="https://batdongsan24h.com.vn/cho-thue-can-ho-chung-cu-tai-quan-7-s37553">Cho
+                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-7-s37553">Cho
                                     thuê căn hộ chung cư Quận 7</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/cho-thue-can-ho-chung-cu-tai-quan-4-s37550">Cho
+                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-4-s37550">Cho
                                     thuê căn hộ chung cư Quận&nbsp;4</a></li>
                             <li>
-                                <a href="https://batdongsan24h.com.vn/cho-thue-can-ho-chung-cu-tai-quan-5-s37551?page=1">Cho
+                                <a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-5-s37551?page=1">Cho
                                     thuê căn hộ chung cư Quận&nbsp;5</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/ban-can-ho-chung-cu-tai-him-lam-phu-an-s1422099">Căn
+                            <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-him-lam-phu-an-s1422099">Căn
                                     hộ Him Lam Phú An</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/dat-ban-tai-quan-9-s1359687">Đất bán tại Quận
+                            <li><a href="http://batdongsanphucthinh.vn/dat-ban-tai-quan-9-s1359687">Đất bán tại Quận
                                     9</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/nha-ban-tai-quan-tan-binh-s1359045">Bán nhà quận
+                            <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-quan-tan-binh-s1359045">Bán nhà quận
                                     Tân&nbsp;<span style="font-size:13px">Bình</span></a></li>
-                            <li><a href="https://batdongsan24h.com.vn/nha-ban-tai-quan-10-s1358944"><span
+                            <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-quan-10-s1358944"><span
                                             style="font-size:13px">Bán nhà Quận 10</span></a></li>
-                            <li><a href="https://batdongsan24h.com.vn/cho-thue-nha-tai-tan-hung-quan-7-s110665">Cho thuê
+                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-tan-hung-quan-7-s110665">Cho thuê
                                     nhà tân hưng, quận 7</a></li>
-                            <li><a href="https://batdongsan24h.com.vn/cho-thue-nha-tai-quan-1-s38310">Cho thuê nhà tại
+                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-quan-1-s38310">Cho thuê nhà tại
                                     quận 1</a></li>
                         </ul>
                     </div>
