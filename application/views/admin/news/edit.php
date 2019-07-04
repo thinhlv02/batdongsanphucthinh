@@ -33,7 +33,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <textarea name="txtIntro" class="form-control" style="height: 120px"><?php echo str_replace('<br />', '&#13;', $news->intro)?></textarea>
+                        <textarea name="txtIntro" rows="3" class="form-control" ><?php echo str_replace('<br />', '&#13;', $news->intro)?></textarea>
                     </div>
                 </div>
                 <div class="form-group">
