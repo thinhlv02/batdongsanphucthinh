@@ -1,6 +1,6 @@
 <section class="contact">
     <div class="container">
-        <div class="title-section"><h2>Tin tức Phúc thịnh</h2></div>
+        <div class="title-section"><h2>Tin tức bài viết</h2></div>
         <div class="col-md-4 col-sm-12 col-xs-12">
             <div class="left-title">Nổi bật</div>
             <?php foreach ($highlight as $key=>$value){ ?>
@@ -10,7 +10,7 @@
                             <img src="<?php echo public_url('images/news/'.$value->img)?>">
                         </div>
                         <div style="padding: 10px">
-                            <h2 class="title-news-1"><?php echo $value->name?></h2>
+                            <h3 class="title-news-1"><?php echo $value->name?></h3>
                             <p class="content-news-1"><?php echo $value->intro?></p>
                         </div>
                     </div>
