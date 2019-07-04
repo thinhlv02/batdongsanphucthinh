@@ -45,7 +45,7 @@
                                     <img src="<?php echo public_url('images/news/'.$value->img)?>">
                                 </div>
                                 <div style="padding: 10px">
-                                    <h2 class="title-news-1"><?php echo $value->name?></h2>
+                                    <h4 class="title-news-1"><?php echo $value->name?></h4>
                                     <p class="content-news-1"><?php echo $value->intro?></p>
                                 </div>
                             </div>
