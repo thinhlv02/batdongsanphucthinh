@@ -21,11 +21,11 @@ Class Home extends MY_Controller
         $news = $this->news_model->get_list(array('limit' => array(5, 0)));
         $this->data['news'] = $news;
         //ads nổi bật
-        $ads = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
+        $ads = $this->ads_model->get_list(array('where' => array('highlight' => 1), 'limit' => array(5, 0)));
         $this->data['ads'] = $ads;
 
         //ads new
-        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(8,0)));
+        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(8, 0)));
         $this->data['ads_new'] = $ads_new;
 
         //ads mới cập nhật
