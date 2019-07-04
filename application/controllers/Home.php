@@ -177,6 +177,7 @@ Class Home extends MY_Controller
         $this->data['highlight'] = $highlight;
 
         $this->data['title'] = $news->document_title;
+        $this->data['title'] = $news->title;
         $this->data['description'] = $news->meta_description;
         $this->data['image'] = public_url('images/news/' . $news->img);
         $this->data['page_url'] = base_url('tin-tuc/' . create_slug($news->name) . '-' . $news->id);
@@ -231,7 +232,8 @@ Class Home extends MY_Controller
         $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
         $this->data['highlight'] = $highlight;
 
-        $this->data['title'] = $ads->document_title;
+//        $this->data['title'] = $ads->document_title;
+        $this->data['title'] = $ads->title;
         $this->data['description'] = $ads->meta_description;
         $this->data['image'] = public_url('images/adss/' . $ads->img);
         $this->data['page_url'] = base_url('rao-vat/' . create_slug($ads->title) . '-' . $ads->id);
