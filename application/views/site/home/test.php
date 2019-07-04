@@ -1099,7 +1099,7 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
     }
     .price-list span {
         font-weight: 700;
-        width: 60px;
+        /*width: 60px;*/
         display: inline-block;
     }
     .time {
