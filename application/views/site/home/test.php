@@ -1093,4 +1093,21 @@ Hôm nay, lúc 11 giờ 1 phút                    </span>
         padding: 10px;
     }
 
+    .price-list span.time {
+        font-weight: 400;
+        width: inherit;
+    }
+    .price-list span {
+        font-weight: 700;
+        width: 60px;
+        display: inline-block;
+    }
+    .time {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+    .pull-right {
+        float: right!important;
+    }
+
 </style>
