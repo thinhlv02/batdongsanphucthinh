@@ -21,7 +21,7 @@ Class Devices extends MY_Controller
         $devices_end = [];
         $index = 0;
         foreach ($devices as $key => $val) {
-            $index ++;
+            $index++;
             $devices_end[$index] = new stdClass();
             $devices_end[$index]->id = $val->id;
             $devices_end[$index]->img = $val->img;
