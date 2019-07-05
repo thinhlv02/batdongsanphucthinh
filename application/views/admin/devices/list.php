@@ -35,7 +35,7 @@
             </thead>
             <tbody>
             <?php $sum = 0; foreach ($devices as $row){
-                $sum += $devices->price;
+                $sum += $row->price;
                 ?>
                 <tr>
                     <td><?php echo $row->id?></td>
