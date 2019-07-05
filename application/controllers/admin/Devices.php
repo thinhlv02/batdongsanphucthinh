@@ -17,7 +17,15 @@ Class Devices extends MY_Controller
         $input = array();
         $input['order'] = array('id', 'desc');
         $devices = $this->devices_model->get_list($input);
+
+        $devices_end = [];
+        echo '<pre>',print_r($devices),'</pre>';
+        foreach ($devices as $key => $val) {
+
+        }
+
         $this->data['devices'] = $devices;
+        $this->data['device_type'] = $this->_device_type;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/devices/index';
         $this->data['view'] = 'admin/devices/list';

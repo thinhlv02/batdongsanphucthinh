@@ -40,7 +40,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">IMEI <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="" name="imei" required="required" class="form-control col-md-7 col-xs-12" placeholder="mã imei">
+                        <input type="text" id="" name="imei" class="form-control col-md-7 col-xs-12" placeholder="mã imei">
                     </div>
                 </div>
                 <div class="form-group">
