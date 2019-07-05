@@ -90,6 +90,7 @@ Class Ads extends MY_Controller
                 'price' => $this->input->post('price'),
 //                'unit' => $this->input->post('unit'),
                 'acreage' => $this->input->post('acreage'),
+                'link' => $this->input->post('link'),
 //                'meta_description' => $this->input->post('txtMetaDescription'),
 //                'meta_keywords' => $this->input->post('txtMetaKeywords'),
 //                'canonical_url' => $this->input->post('txtCanonicalUrl'),

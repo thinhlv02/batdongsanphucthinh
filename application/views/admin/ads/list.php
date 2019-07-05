@@ -29,6 +29,7 @@
                 <th>Diện tích</th>
                 <th>Khu vực</th>
                 <th>Nổi bật</th>
+                <th>link bài viết</th>
                 <th>Ngày Tạo</th>
                 <th>Hành động</th>
             </tr>
@@ -48,7 +49,10 @@
                            class="fa fa-2x <?php echo $row->highlight ? 'fa-toggle-on' : 'fa-toggle-off'?>"
                            onclick="highlight(<?php echo $row->id?>)"
                            style="color: green"
-                        ></i></td>
+                        ></i>
+                    </td>
+                    <td><?php echo $row->link ?></td>
+
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td>
                         <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
