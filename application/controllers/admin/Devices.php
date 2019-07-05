@@ -36,6 +36,8 @@ Class Devices extends MY_Controller
                 $file_data = $this->upload->data();
                 $data = array(
                     'name' => $this->input->post('txtName'),
+                    'imei' => $this->input->post('imei'),
+                    'type' => $this->input->post('type'),
                     'created_by' => $this->_uid,
                     'img' => $file_data['file_name'],
                 );
@@ -50,7 +52,7 @@ Class Devices extends MY_Controller
             }
         }
         $this->data['tab'] = 2;
-        $this->data['devices'] = $this->_device_type;
+        $this->data['device_type'] = $this->_device_type;
         $this->data['temp'] = 'admin/devices/index';
         $this->data['view'] = 'admin/devices/add';
         $this->load->view('admin/layout', $this->data);
