@@ -51,10 +51,12 @@
 <!--                    <li><a href="--><?php //echo admin_url('policy') ?><!--"><i class="fa fa-handshake-o" aria-hidden="true"></i>Điều khoản, chính sách</a></li>-->
 <!--                    //only admin view-->
                     <?php if($admin->id == 1) { ?>
-                        <li><a><i class="fa fa-book"></i>Quản lý nhân sự<span class="fa fa-chevron-down"></span></a>
+                        <li><a><i class="fa fa-book"></i>Quản lý chung<span class="fa fa-chevron-down"></span></a>
                             <ul class="nav child_menu">
                                 <li><a href="<?php echo admin_url('employees') ?>">Nhân viên </a></li>
                                 <li><a href="<?php echo admin_url('customers') ?>">Khách hàng</a></li>
+                                <li><a href="<?php echo admin_url('documents') ?>">Tài liệu</a></li>
+                                <li><a href="<?php echo admin_url('devices') ?>">Thiết bị sử dụng</a></li>
                             </ul>
                         </li>
                     <?php } ?>
