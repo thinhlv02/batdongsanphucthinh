@@ -71,7 +71,10 @@ Class Devices extends MY_Controller
 
         if ($this->input->post('btnEdit')) {
             $data = array(
-                'name' => $this->input->post('txtName')
+                'name' => $this->input->post('txtName'),
+                'imei' => $this->input->post('imei'),
+                'type' => $this->input->post('type'),
+                'description' => $this->input->post('txtDes'),
             );
 
             $config['upload_path'] = './public/images/devices';
