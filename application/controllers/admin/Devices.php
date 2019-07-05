@@ -95,6 +95,7 @@ Class Devices extends MY_Controller
             }
         }
         $this->data['tab'] = 3;
+        $this->data['devices'] = $devices;
         $this->data['device_type'] = $this->_device_type;
         $this->data['temp'] = 'admin/devices/index';
         $this->data['view'] = 'admin/devices/edit';
