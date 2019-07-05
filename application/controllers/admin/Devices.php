@@ -28,7 +28,7 @@ Class Devices extends MY_Controller
             $devices_end[$index]->name = $val->name;
             $devices_end[$index]->imei = $val->imei;
             $devices_end[$index]->type = $val->type;
-            $devices_end[$index]->type_name = isset($this->_device_type[$val->type]) ? $this->_device_type: 'dcm';
+            $devices_end[$index]->type_name = isset($this->_device_type[$val->type]) ? $this->_device_type[$val->type]: 'dcm';
             $devices_end[$index]->price = $val->price;
             $devices_end[$index]->description = $val->description;
             $devices_end[$index]->created_by = $val->created_by;
