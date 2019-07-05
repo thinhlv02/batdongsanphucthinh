@@ -1,7 +1,7 @@
 
 <div class="page-title" style="height: auto">
     <div class="title_left">
-        <h3>Tin tức</h3>
+        <h3>Quản lý thiết bị</h3>
     </div>
     <div class="clearfix"></div>
     <div class="row">

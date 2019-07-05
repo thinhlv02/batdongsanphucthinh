@@ -24,9 +24,7 @@
                 <th>Mã số</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
-                <th>Giới thiệu</th>
                 <th>Ngày đăng</th>
-                <th>Nổi bật</th>
                 <th>Hành động</th>
             </tr>
             </thead>
@@ -36,14 +34,8 @@
                     <td><?php echo $row->id?></td>
                     <td><img src="<?php echo base_url('public/images/news/'.$row->img)?>" style="max-width: 150px"> </td>
                     <td><?php echo $row->name?></td>
-                    <td><?php echo $row->intro?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
-                    <td>
-                        <i id="highlight-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->highlight ? 'fa-toggle-on' : 'fa-toggle-off'?>"
-                           onclick="highlight(<?php echo $row->id?>)"
-                           style="color: green"
-                        ></i></td>
+
                     <td>
                         <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/news/edit/'.$row->id)?>">Sửa</a>
                         <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
