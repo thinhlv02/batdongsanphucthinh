@@ -29,7 +29,7 @@
                 <th>Diện tích</th>
                 <th>Khu vực</th>
                 <th>Nổi bật</th>
-                <th>Ngày đăng</th>
+                <th>Ngày Tạo</th>
                 <th>Hành động</th>
             </tr>
             </thead>

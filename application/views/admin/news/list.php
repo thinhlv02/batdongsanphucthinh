@@ -25,7 +25,7 @@
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
                 <th>Giới thiệu</th>
-                <th>Ngày đăng</th>
+                <th>Ngày Tạo</th>
                 <th>Nổi bật</th>
                 <th>Hành động</th>
             </tr>

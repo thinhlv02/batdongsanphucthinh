@@ -28,7 +28,7 @@
                 <th>Loại</th>
                 <th>Mô tả</th>
                 <th>Người tạo</th>
-                <th>Ngày đăng</th>
+                <th>Ngày Tạo</th>
                 <th>Hành động</th>
             </tr>
             </thead>
