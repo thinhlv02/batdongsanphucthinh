@@ -22,6 +22,7 @@ Class Devices extends MY_Controller
 
         foreach ($devices as $key => $val) {
             $devices_end = new stdClass();
+            $devices_end[$key] = 12;
 //            $devices_end[$key]->id = $val->id;
         }
         echo '<pre>',print_r($devices_end,1),'</pre>';
