@@ -32,7 +32,7 @@
             <?php foreach ($devices as $row){ ?>
                 <tr>
                     <td><?php echo $row->id?></td>
-                    <td><img src="<?php echo base_url('public/images/news/'.$row->img)?>" style="max-width: 150px"> </td>
+                    <td><img src="<?php echo base_url('public/images/devices/'.$row->img)?>" style="max-width: 150px"> </td>
                     <td><?php echo $row->name?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
 
