@@ -11,7 +11,7 @@ Class Devices extends MY_Controller {
         $this->data['message'] = $message;
 
         $input = array();
-        $input['order'] = array('highlight','desc');
+        $input['order'] = array('id','desc');
         $devices = $this->devices_model->get_list($input);
         $this->data['devices'] = $devices;
         $this->data['tab'] = 1;
@@ -115,23 +115,5 @@ Class Devices extends MY_Controller {
         redirect(base_url('admin/devices'));
     }
 
-    function highlight(){
-        $id = $_POST['id'];
-        $devices = $this->devices_model->get_info($id);
-        $res = array("status" => 0);
-        if($devices){
-            $res['status'] = 1;
-            $dataSubmit = array();
-            if($devices->highlight){
-                $res['class'] = 'fa-toggle-off';
-                $dataSubmit['highlight'] = 0;
-            }
-            else{
-                $res['class'] = 'fa-toggle-on';
-                $dataSubmit['highlight'] = 1;
-            }
-            $this->devices_model->update($id, $dataSubmit);
-        }
-        echo json_encode($res);
-    }
+
 }
