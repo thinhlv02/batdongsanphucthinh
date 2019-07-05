@@ -47,9 +47,13 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Loại <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <select name="type" id="" class="form-control col-md-12 col-xs-12">
+                            <?php foreach ($devices as $key => $value) { ?>
+                                <option value="<?= $key ?>" <?php if (isset($_POST['type']) && $_POST['type'] == $key) echo 'selected' ?>>
+                                    <?php echo $value ?>
+                                </option>
+                            <?php } ?>
 
-
-                            <option value="0">Tất cả</option>
+<!--                            <option value="0">Tất cả</option>-->
 
                         </select>
                     </div>
