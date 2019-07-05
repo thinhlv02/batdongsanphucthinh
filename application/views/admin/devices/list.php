@@ -27,6 +27,7 @@
                 <th>IMEI</th>
                 <th>Loại</th>
                 <th>Mô tả</th>
+                <th>Giá tiền</th>
                 <th>Người tạo</th>
                 <th>Ngày Tạo</th>
                 <th>Hành động</th>
@@ -41,6 +42,7 @@
                     <td><?php echo $row->imei?></td>
                     <td><?php echo $row->type?></td>
                     <td><?php echo $row->description?></td>
+                    <td><?php echo $row->price ? number_format($row->price): ''; ?></td>
                     <td><?php echo $row->created_by?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
 

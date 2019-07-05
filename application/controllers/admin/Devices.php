@@ -39,6 +39,7 @@ Class Devices extends MY_Controller
                     'imei' => $this->input->post('imei'),
                     'type' => $this->input->post('type'),
                     'description' => $this->input->post('txtDes'),
+                    'price' => $this->input->post('txtPrice'),
                     'created_by' => $this->_uid,
                     'img' => $file_data['file_name'],
                 );
@@ -74,6 +75,7 @@ Class Devices extends MY_Controller
                 'name' => $this->input->post('txtName'),
                 'imei' => $this->input->post('imei'),
                 'type' => $this->input->post('type'),
+                'price' => $this->input->post('txtPrice'),
                 'description' => $this->input->post('txtDes'),
             );
 
