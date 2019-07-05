@@ -34,7 +34,9 @@
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($devices as $row){ ?>
+            <?php $sum = 0; foreach ($devices as $row){
+                $sum += $devices->price;
+                ?>
                 <tr>
                     <td><?php echo $row->id?></td>
                     <td><img src="<?php echo base_url('public/images/devices/'.$row->img)?>" style="max-width: 150px"> </td>
@@ -53,6 +55,17 @@
                 </tr>
             <?php }?>
             </tbody>
+            <tfoot>
+            <tr>
+                <td>Tổng tiền</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><?php echo ($sum > 0 ? number_format($sum) : '') ?></td>
+            </tr>
+            </tfoot>
         </table>
         <!-- <a href="#" class="btn btn-danger">Xóa đã chọn </a> -->
     </div>
