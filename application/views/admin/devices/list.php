@@ -44,7 +44,7 @@
                     </td>
                     <td><?php echo $row->name ?></td>
                     <td><?php echo $row->imei ?></td>
-                    <td><?php echo $row->type ?></td>
+                    <td><?php echo $row->type_name ?></td>
                     <td><?php echo $row->description ?></td>
                     <td><?php echo $row->price ? number_format($row->price) : ''; ?></td>
                     <td><?php echo $row->created_by ?></td>
