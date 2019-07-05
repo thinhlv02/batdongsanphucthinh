@@ -40,6 +40,7 @@
                         <ul class="nav child_menu">
                             <li><a href="<?php echo admin_url('news') ?>">Tin Tức </a></li>
                             <li><a href="<?php echo admin_url('ads') ?>">Tin bán nhà đất</a></li>
+                            <li><a href="<?php echo admin_url('devices') ?>">Thiết bị sử dụng</a></li>
                         </ul>
                     </li>
 
@@ -56,7 +57,6 @@
                                 <li><a href="<?php echo admin_url('employees') ?>">Nhân viên </a></li>
                                 <li><a href="<?php echo admin_url('customers') ?>">Khách hàng</a></li>
                                 <li><a href="<?php echo admin_url('documents') ?>">Tài liệu</a></li>
-                                <li><a href="<?php echo admin_url('devices') ?>">Thiết bị sử dụng</a></li>
                             </ul>
                         </li>
                     <?php } ?>
