@@ -37,7 +37,7 @@
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
 
                     <td>
-                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/news/edit/'.$row->id)?>">Sửa</a>
+                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/devices/edit/'.$row->id)?>">Sửa</a>
                         <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
                     </td>
                 </tr>
@@ -56,28 +56,9 @@
 
     function confirmDel(id) {
         if(confirm('Bạn có chắc chắn muốn xóa?')){
-//            console.log('delll');
-            window.location.href = '<?php echo base_url('admin/news/del/')?>' + id;
+            window.location.href = '<?php echo base_url('admin/devices/del/')?>' + id;
         }
     }
 
-    function highlight(id) {
-        $.ajax({
-            url: "<?php echo admin_url('news/highlight')?>",
-            type: "post",
-            data: {
-                id: id
-            },
-            success: function (msg) {
-                msg = JSON.parse(msg);
-                console.log(msg);
-                if(msg.status){
-                    $('#highlight-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
-                }
-            },
-            error: function (err) {
-                console.log(err);
-            }
-        })
-    }
+
 </script>
