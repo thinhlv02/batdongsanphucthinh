@@ -1,4 +1,3 @@
-
 <div class="x_panel">
     <div class="x_title">
         <h2>Danh sách bài đăng</h2>
@@ -34,31 +33,34 @@
             </tr>
             </thead>
             <tbody>
-            <?php $sum = 0; foreach ($devices as $row){
+            <?php $sum = 0;
+            foreach ($devices as $row) {
                 $sum += $row->price;
                 ?>
                 <tr>
-                    <td><?php echo $row->id?></td>
-                    <td><img src="<?php echo base_url('public/images/devices/'.$row->img)?>" style="max-width: 150px"> </td>
-                    <td><?php echo $row->name?></td>
-                    <td><?php echo $row->imei?></td>
-                    <td><?php echo $row->type?></td>
-                    <td><?php echo $row->description?></td>
-                    <td><?php echo $row->price ? number_format($row->price): ''; ?></td>
-                    <td><?php echo $row->created_by?></td>
+                    <td><?php echo $row->id ?></td>
+                    <td>
+                        <img src="<?php echo base_url('public/images/devices/' . $row->img) ?>" style="max-width: 150px">
+                    </td>
+                    <td><?php echo $row->name ?></td>
+                    <td><?php echo $row->imei ?></td>
+                    <td><?php echo $row->type ?></td>
+                    <td><?php echo $row->description ?></td>
+                    <td><?php echo $row->price ? number_format($row->price) : ''; ?></td>
+                    <td><?php echo $row->created_by ?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
 
                     <td>
-                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/devices/edit/'.$row->id)?>">Sửa</a>
-                        <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
+                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/devices/edit/' . $row->id) ?>">Sửa</a>
+                        <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
                     </td>
                 </tr>
-            <?php }?>
+            <?php } ?>
             </tbody>
             <tfoot>
-            <tr class="bg-info">
+            <tr class="bg-primary">
                 <td colspan="6">Tổng tiền</td>
-                <td><?php echo ($sum > 0 ? number_format($sum) : '') ?></td>
+                <td><?php echo($sum > 0 ? number_format($sum) : '') ?></td>
                 <td colspan="3"></td>
             </tr>
             </tfoot>
@@ -74,7 +76,7 @@
     });
 
     function confirmDel(id) {
-        if(confirm('Bạn có chắc chắn muốn xóa?')){
+        if (confirm('Bạn có chắc chắn muốn xóa?')) {
             window.location.href = '<?php echo base_url('admin/devices/del/')?>' + id;
         }
     }
