@@ -58,10 +58,10 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Nội dung <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Mô tả<span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <textarea name="txtContent" class="form-control" style="height: 120px"></textarea>
-                        <script type="text/javascript">CKEDITOR.replace('txtContent',{height: '300px'}); </script>
+                        <textarea name="txtDes" class="form-control" style="height: 120px"></textarea>
+                        <script type="text/javascript">CKEDITOR.replace('txtDes',{height: '300px'}); </script>
                     </div>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                     </div>
