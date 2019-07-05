@@ -1,6 +1,9 @@
 <?php
-Class Devices extends MY_Controller {
-    function __construct() {
+
+Class Devices extends MY_Controller
+{
+    function __construct()
+    {
         parent::__construct();
         $this->load->model('devices_model');
     }
@@ -11,7 +14,7 @@ Class Devices extends MY_Controller {
         $this->data['message'] = $message;
 
         $input = array();
-        $input['order'] = array('id','desc');
+        $input['order'] = array('id', 'desc');
         $devices = $this->devices_model->get_list($input);
         $this->data['devices'] = $devices;
         $this->data['tab'] = 1;
@@ -20,10 +23,11 @@ Class Devices extends MY_Controller {
         $this->load->view('admin/layout', $this->data);
     }
 
-    function add(){
+    function add()
+    {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if($this->input->post('btnAdd')){
+        if ($this->input->post('btnAdd')) {
             $config['upload_path'] = './public/images/devices';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $this->load->library("upload", $config);
@@ -40,15 +44,13 @@ Class Devices extends MY_Controller {
 //                    'robots_meta' => implode(', ',$this->input->post('robots_meta')),
                     'img' => $file_data['file_name'],
                 );
-                if($this->devices_model->create($data)){
+                if ($this->devices_model->create($data)) {
                     $this->session->set_flashdata('message', 'Thêm tin tức thành công');
                     redirect(base_url('admin/devices'));
-                }
-                else{
+                } else {
                     $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
                 }
-            }
-            else{
+            } else {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
         }
@@ -58,16 +60,17 @@ Class Devices extends MY_Controller {
         $this->load->view('admin/layout', $this->data);
     }
 
-    function edit(){
+    function edit()
+    {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
         $devices = $this->devices_model->get_info($id);
-        if(!$devices){
+        if (!$devices) {
             redirect(base_url('admin/devices'));
         }
 
-        if($this->input->post('btnEdit')){
+        if ($this->input->post('btnEdit')) {
             $data = array(
                 'name' => $this->input->post('txtName'),
                 'content' => $this->input->post('txtContent'),
@@ -85,16 +88,14 @@ Class Devices extends MY_Controller {
             if ($this->upload->do_upload('img_news')) {
                 $file_data = $this->upload->data();
                 $data['img'] = $file_data['file_name'];
-                unlink('./public/images/devices/'.$devices->img);
-            }
-            else{
+                unlink('./public/images/devices/' . $devices->img);
+            } else {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
-            if($this->devices_model->update($id, $data)){
+            if ($this->devices_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật tin tức thành công');
                 redirect(base_url('admin/devices'));
-            }
-            else{
+            } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
@@ -105,12 +106,13 @@ Class Devices extends MY_Controller {
         $this->load->view('admin/layout', $this->data);
     }
 
-    function del(){
+    function del()
+    {
         $id = $this->uri->segment(4);
         $devices = $this->devices_model->get_info($id);
-        if($devices){
+        if ($devices) {
             $this->devices_model->delete($id);
-            unlink('./public/images/devices/'.$devices->img);
+            unlink('./public/images/devices/' . $devices->img);
         }
         redirect(base_url('admin/devices'));
     }
