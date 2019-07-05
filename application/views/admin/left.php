@@ -41,8 +41,6 @@
                             <li><a href="<?php echo admin_url('news') ?>">Tin Tức </a></li>
                             <li><a href="<?php echo admin_url('ads') ?>">Tin bán nhà đất</a></li>
                             <li><a href="<?php echo admin_url('devices') ?>">Thiết bị sử dụng</a></li>
-<!--                            <li><a href="--><?php //echo admin_url('devices') ?><!--">Thiết bị sử dụng</a></li>-->
-<!--                            <li><a href="--><?php //echo admin_url('devices') ?><!--">Thiết bị sử dụng</a></li>-->
                         </ul>
                     </li>
 
