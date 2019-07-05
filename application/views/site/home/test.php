@@ -195,7 +195,8 @@
                                         </span>
                                         </div>
                                         <div class="price-list">
-                                            <span>Link bài viết</span>: <strong><?php echo $value->link ?></strong>
+                                            <span>Link bài viết</span>: <a href="<?php echo $value->link ?>" target="_blank">
+                                                <?php echo $value->link ?></a>
                                         </div>
                                     </div>
                                 </div>
