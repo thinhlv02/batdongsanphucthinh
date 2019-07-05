@@ -35,7 +35,6 @@ Class Devices extends MY_Controller
                 $file_data = $this->upload->data();
                 $data = array(
                     'name' => $this->input->post('txtName'),
-                    'content' => $this->input->post('txtContent'),
                     'img' => $file_data['file_name'],
                 );
                 if ($this->devices_model->create($data)) {
@@ -66,8 +65,7 @@ Class Devices extends MY_Controller
 
         if ($this->input->post('btnEdit')) {
             $data = array(
-                'name' => $this->input->post('txtName'),
-                'content' => $this->input->post('txtContent'),
+                'name' => $this->input->post('txtName')
             );
 
             $config['upload_path'] = './public/images/devices';
