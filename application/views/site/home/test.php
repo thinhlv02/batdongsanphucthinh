@@ -802,18 +802,17 @@
     }
 
     .box-img-thumb {
-        /*width: 150px;*/
+        width: 150px;
         float: left;
-        /*margin-right: 15px;*/
+        margin-right: 15px;
     }
 
     #box-home-svip .box-info-list {
-        /*width: 521px;*/
+        width: 521px;
     }
-
     .box-info-list {
         float: left;
-        /*width: 538px;*/
+        width: 538px;
     }
 
     /*.box-title-item label {*/
