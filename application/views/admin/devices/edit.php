@@ -25,23 +25,45 @@
         <div class="row" style="margin-top: 40px">
             <form id="formAddCatalog" data-parsley-validate class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên thiết bị <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <input type="text" id="txtName" name="txtName" value="<?php echo $devices->name?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tên bài viết">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh minh họa (900x450)<span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh minh họa<span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <input type="file" class="form-control" name="img_news" id="img_news">
                     </div>
                 </div>
+
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Nội dung <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">IMEI <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <textarea name="txtContent" class="form-control" style="height: 120px"><?php echo $devices->content?></textarea>
-                        <script type="text/javascript">CKEDITOR.replace('txtContent',{height: '300px'}); </script>
+                        <input type="text" id="" name="imei" value="<?php echo $devices->imei ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="mã imei">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Loại <span class="required">*</span></label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <select name="type" id="" class="form-control col-md-12 col-xs-12">
+
+                            <?php foreach ($device_type as $key => $value) { ?>
+                                <option value="<?= $key ?>" <?php if ($devices->type == $key) echo 'selected' ?>>
+                                    <?php echo $value ?>
+                                </option>
+                            <?php } ?>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Mô tả <span class="required">*</span></label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <textarea name="txtDes" class="form-control" style="height: 120px"><?php echo $devices->description?></textarea>
+                        <script type="text/javascript">CKEDITOR.replace('txtDes',{height: '300px'}); </script>
                     </div>
                 </div>
 

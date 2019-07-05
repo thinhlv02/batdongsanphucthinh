@@ -43,7 +43,7 @@ Class Devices extends MY_Controller
                     'img' => $file_data['file_name'],
                 );
                 if ($this->devices_model->create($data)) {
-                    $this->session->set_flashdata('message', 'Thêm tin tức thành công');
+                    $this->session->set_flashdata('message', 'Thêmthành công');
                     redirect(base_url('admin/devices'));
                 } else {
                     $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
@@ -85,7 +85,7 @@ Class Devices extends MY_Controller
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
             if ($this->devices_model->update($id, $data)) {
-                $this->session->set_flashdata('message', 'Cập nhật tin tức thành công');
+                $this->session->set_flashdata('message', 'Cập nhật thành công');
                 redirect(base_url('admin/devices'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
