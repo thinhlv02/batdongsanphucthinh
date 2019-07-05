@@ -51,6 +51,7 @@ Class Ads extends MY_Controller
                     'created_by' => $this->_uid,
 
                 );
+                echo '<pre>',print_r($data,1),'</pre>';
                 if ($this->ads_model->create($data)) {
                     $this->session->set_flashdata('message', 'Thêm rao bán thành công');
                     redirect(base_url('admin/ads'));
