@@ -19,10 +19,11 @@ Class Devices extends MY_Controller
         $devices = $this->devices_model->get_list($input);
 
         $devices_end = [];
-
+        $index = 0;
         foreach ($devices as $key => $val) {
-            $devices_end[$val->id] = new stdClass();
-            $devices_end[$val->id]['id'] = $val->id;
+            $index ++;
+            $devices_end[$index] = new stdClass();
+            $devices_end[$index]['id'] = $val->id;
 //            $devices_end[$key]->id = $val->id;
         }
         echo '<pre>',print_r($devices_end,1),'</pre>';
