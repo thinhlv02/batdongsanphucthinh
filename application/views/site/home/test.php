@@ -810,7 +810,8 @@
     }
 
     #box-home-svip .box-info-list {
-        width: 521px;
+        /*width: 521px;*/
+        width: 721px;
     }
     .box-info-list {
         float: left;
