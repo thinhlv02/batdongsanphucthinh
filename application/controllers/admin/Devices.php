@@ -24,11 +24,19 @@ Class Devices extends MY_Controller
             $index ++;
             $devices_end[$index] = new stdClass();
             $devices_end[$index]->id = $val->id;
+            $devices_end[$index]->img = $val->img;
+            $devices_end[$index]->name = $val->name;
+            $devices_end[$index]->imei = $val->imei;
+            $devices_end[$index]->type = $val->type;
+            $devices_end[$index]->price = $val->price;
+            $devices_end[$index]->description = $val->description;
+            $devices_end[$index]->created_by = $val->created_by;
+            $devices_end[$index]->created_at = $val->created_at;
 //            $devices_end[$key]->id = $val->id;
         }
-        echo '<pre>',print_r($devices_end,1),'</pre>';
+//        echo '<pre>',print_r($devices_end,1),'</pre>';
 
-        $this->data['devices'] = $devices;
+        $this->data['devices'] = $devices_end;
         $this->data['device_type'] = $this->_device_type;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/devices/index';
