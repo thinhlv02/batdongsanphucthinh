@@ -34,7 +34,8 @@ $config['device_type'] = array(
     '1' => 'Laptop',
     '2' => 'PC',
     '3' => 'Mobile',
-    '4' => 'Khác'
+    '4' => 'Thẻ sim',
+    '5' => 'Khác'
 
 );
 //1: laptop: 2:pc; 3: mobile; 4: khác
