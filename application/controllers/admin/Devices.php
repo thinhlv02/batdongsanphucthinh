@@ -35,7 +35,7 @@ Class Devices extends MY_Controller
             $devices_end[$index]->created_at = $val->created_at;
 //            $devices_end[$key]->id = $val->id;
         }
-//        echo '<pre>',print_r($devices_end,1),'</pre>';
+        echo '<pre>',print_r($devices_end,1),'</pre>';
 
         $this->data['devices'] = $devices_end;
         $this->data['device_type'] = $this->_device_type;
