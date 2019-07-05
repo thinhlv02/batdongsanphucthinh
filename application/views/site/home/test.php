@@ -925,8 +925,5 @@
         white-space: nowrap;
     }
 
-    .pull-right {
-        float: right !important;
-    }
 
 </style>
