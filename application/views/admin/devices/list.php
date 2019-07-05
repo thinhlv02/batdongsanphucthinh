@@ -59,9 +59,7 @@
             <tr>
                 <td colspan="6">Tổng tiền</td>
                 <td><?php echo ($sum > 0 ? number_format($sum) : '') ?></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td colspan="3"></td>
             </tr>
             </tfoot>
         </table>
