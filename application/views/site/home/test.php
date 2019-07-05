@@ -411,7 +411,6 @@
 
             <div class="col-sm-3 col-md-3">
 
-
                 <div id="right">
                     <div class="home-search-box">
                         <div class="tops"><h2>Công cụ tìm kiếm</h2></div>
