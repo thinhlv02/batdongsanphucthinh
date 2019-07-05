@@ -6,6 +6,7 @@ Class MY_Controller extends CI_Controller
 
     var $_uid = '';
     var $_uname = '';
+    var $_device_type = '';
 
     function __construct()
     {
@@ -15,6 +16,8 @@ Class MY_Controller extends CI_Controller
 
         $this->_uid = $this->_session_uid();
         $this->_uname = $this->_session_uname();
+        $this->_device_type = $this->_func_device_type();
+
 //        var_dump($new_url);
         switch ($new_url) {
             case 'admin' :
@@ -72,5 +75,10 @@ Class MY_Controller extends CI_Controller
             $_uid = trim($this->session->userdata('admin')->username);
             return $_uid;
         }
+    }
+
+    protected function _func_device_type()
+    {
+        return $this->config->config["device_type"];
     }
 }

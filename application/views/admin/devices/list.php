@@ -23,7 +23,11 @@
             <tr>
                 <th>Mã số</th>
                 <th>Ảnh minh họa</th>
-                <th>Tiêu đề</th>
+                <th>Tên thiết bị</th>
+                <th>IMEI</th>
+                <th>Loại</th>
+                <th>Mô tả</th>
+                <th>Người tạo</th>
                 <th>Ngày đăng</th>
                 <th>Hành động</th>
             </tr>
@@ -34,6 +38,10 @@
                     <td><?php echo $row->id?></td>
                     <td><img src="<?php echo base_url('public/images/devices/'.$row->img)?>" style="max-width: 150px"> </td>
                     <td><?php echo $row->name?></td>
+                    <td><?php echo $row->imei?></td>
+                    <td><?php echo $row->type?></td>
+                    <td><?php echo $row->description?></td>
+                    <td><?php echo $row->created_by?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
 
                     <td>
