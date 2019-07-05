@@ -2,7 +2,6 @@
     <div class="container-fluid">
         <div class="row">
 
-
             <div class="col-sm-8 col-md-8">
 
                 <div id="center-body">
@@ -163,39 +162,39 @@
 
                             <?php foreach ($ads as $key => $value) { ?>
 
-                            <div class="item-re-list clearfix" style="border-color: #f00">
-<!--                                <div class="box-img-thumb col-sm-3 col-md-3">-->
-                                <div class="box-img-thumb">
-                                    <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                        <img src="<?php echo public_url('images/ads/'.$value->img)?>"
-                                             alt="<?php echo $value ->title ?>">
-                                    </a>
-                                </div>
-<!--                                <div class="box-info-list col-sm-9 col-md-9">-->
-                                <div class="box-info-list">
-                                    <div class="clearfix box-title-item">
-                                        <label class="label label-danger">ĐẶC BIỆT</label>
-                                        <h3 class="sieu-vip-title">
-                                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                                <?php echo $value ->title ?> </a>
-                                        </h3>
+                                <div class="item-re-list clearfix" style="border-color: #f00">
+                                    <!--                                <div class="box-img-thumb col-sm-3 col-md-3">-->
+                                    <div class="box-img-thumb">
+                                        <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                            <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                                 alt="<?php echo $value->title ?>">
+                                        </a>
                                     </div>
-                                    <p><?php echo $value->intro ?> ...</p>
-                                    <div class="price-list">
-                                        <span>Diện tích</span>: <strong>1<?php echo $value ->acreage ?></strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Giá</span>: <strong><?php echo $value ->price ?></strong>
-                                    </div>
-                                    <div class="price-list">
-                                        <span>Khu vực</span>: <strong> <?php echo $value ->area ?> </strong>
-                                        <span class="pull-right time">
+                                    <!--                                <div class="box-info-list col-sm-9 col-md-9">-->
+                                    <div class="box-info-list">
+                                        <div class="clearfix box-title-item">
+                                            <label class="label label-danger">ĐẶC BIỆT</label>
+                                            <h3 class="sieu-vip-title">
+                                                <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                                    <?php echo $value->title ?> </a>
+                                            </h3>
+                                        </div>
+                                        <p><?php echo $value->intro ?> ...</p>
+                                        <div class="price-list">
+                                            <span>Diện tích</span>: <strong>1<?php echo $value->acreage ?></strong>
+                                        </div>
+                                        <div class="price-list">
+                                            <span>Giá</span>: <strong><?php echo $value->price ?></strong>
+                                        </div>
+                                        <div class="price-list">
+                                            <span>Khu vực</span>: <strong> <?php echo $value->area ?> </strong>
+                                            <span class="pull-right time">
                                              <i class="glyphicon glyphicon-time"></i>
-                                            <?php echo date('Y-m-d', strtotime($value->created_at))  ?>
+                                            <?php echo date('Y-m-d', strtotime($value->created_at)) ?>
                                         </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
                             <?php } ?>
 
@@ -369,30 +368,33 @@
                     <div class="clearfix">
 
                         <?php foreach ($ads_new as $key => $value) { ?>
-                        <div class="item-re-list clearfix">
-<!--                            <div class="box-img-thumb col-sm-3 col-md-3">-->
-                            <div class="box-img-thumb">
-                                <a
-                                        href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                    <img src="<?php echo public_url('images/ads/'.$value->img)?>"
-                                         alt="<?php echo $value ->title ?>">
-                                </a></div>
-<!--                            <div class="box-info-list col-sm-9 col-md-9">-->
-                            <div class="box-info-list">
-                                <h3><a
+                            <div class="item-re-list clearfix">
+                                <!--                            <div class="box-img-thumb col-sm-3 col-md-3">-->
+                                <div class="box-img-thumb">
+                                    <a
                                             href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                        <?php echo  $value->title ?>
-                                    </a>
-                                </h3>
-                                <p><?php echo  $value->intro ?>
-                                    ...</p>
-                                <div class="price-list"><span>Diện tích</span>: <strong><?php echo  $value->acreage ?> m2</strong></div>
-                                <div class="price-list"><span>Giá</span>: <strong><?php echo  $value->price ?></strong></div>
-                                <div class="price-list"><span>Khu vực</span>: <strong> <?php echo  $value->area ?> </strong> <span class="pull-right time"> <i
-                                                class="glyphicon glyphicon-time"></i> <?php echo date('Y-m-d', strtotime($value->created_at)) ?> </span>
+                                        <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                             alt="<?php echo $value->title ?>">
+                                    </a></div>
+                                <!--                            <div class="box-info-list col-sm-9 col-md-9">-->
+                                <div class="box-info-list">
+                                    <h3><a
+                                                href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                            <?php echo $value->title ?>
+                                        </a>
+                                    </h3>
+                                    <p><?php echo $value->intro ?>
+                                        ...</p>
+                                    <div class="price-list"><span>Diện tích</span>:
+                                        <strong><?php echo $value->acreage ?> m2</strong></div>
+                                    <div class="price-list"><span>Giá</span>:
+                                        <strong><?php echo $value->price ?></strong></div>
+                                    <div class="price-list"><span>Khu vực</span>:
+                                        <strong> <?php echo $value->area ?> </strong> <span class="pull-right time"> <i
+                                                    class="glyphicon glyphicon-time"></i> <?php echo date('Y-m-d', strtotime($value->created_at)) ?> </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
                         <?php } ?>
 
@@ -817,6 +819,7 @@
         /*width: 521px;*/
         width: 721px;
     }
+
     .box-info-list {
         float: left;
         width: 538px;
