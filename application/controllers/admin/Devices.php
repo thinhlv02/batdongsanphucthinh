@@ -21,6 +21,8 @@ Class Devices extends MY_Controller
         $devices_end = [];
 
         foreach ($devices as $key => $val) {
+
+
             $devices_end[$val->id] = new stdClass();
             $devices_end[$val->id]['id'] = $val->id;
 //            $devices_end[$key]->id = $val->id;
