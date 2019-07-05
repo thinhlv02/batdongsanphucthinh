@@ -35,6 +35,7 @@ Class Devices extends MY_Controller
                 $file_data = $this->upload->data();
                 $data = array(
                     'name' => $this->input->post('txtName'),
+                    'created_by' => $this->_uid,
                     'img' => $file_data['file_name'],
                 );
                 if ($this->devices_model->create($data)) {
