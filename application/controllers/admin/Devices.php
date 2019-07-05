@@ -19,7 +19,7 @@ Class Devices extends MY_Controller
         $devices = $this->devices_model->get_list($input);
 
         $devices_end = [];
-        echo '<pre>',print_r($devices),'</pre>';
+        echo '<pre>',print_r($devices,1),'</pre>';
         foreach ($devices as $key => $val) {
 
         }
