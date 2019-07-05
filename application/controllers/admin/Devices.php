@@ -10,7 +10,7 @@ Class Devices extends MY_Controller
 
     function index()
     {
-        var_dump($this->_device_type);
+//        var_dump($this->_device_type);
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
