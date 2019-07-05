@@ -64,6 +64,9 @@
                 <td></td>
                 <td></td>
                 <td><?php echo ($sum > 0 ? number_format($sum) : '') ?></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             </tfoot>
         </table>
