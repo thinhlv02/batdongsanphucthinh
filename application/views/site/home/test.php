@@ -370,12 +370,16 @@
 
                         <?php foreach ($ads_new as $key => $value) { ?>
                         <div class="item-re-list clearfix">
-                            <div class="box-img-thumb col-sm-3 col-md-3"><a
+<!--                            <div class="box-img-thumb col-sm-3 col-md-3">-->
+                            <div class="box-img-thumb">
+                                <a
                                         href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                     <img src="<?php echo public_url('images/ads/'.$value->img)?>"
                                          alt="<?php echo $value ->title ?>">
                                 </a></div>
-                            <div class="box-info-list col-sm-9 col-md-9"><h3><a
+<!--                            <div class="box-info-list col-sm-9 col-md-9">-->
+                            <div class="box-info-list">
+                                <h3><a
                                             href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                         <?php echo  $value->title ?>
                                     </a>
