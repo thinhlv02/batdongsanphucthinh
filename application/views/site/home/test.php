@@ -181,7 +181,8 @@
                                         </div>
                                         <p><?php echo $value->intro ?> ...</p>
                                         <div class="price-list">
-                                            <span>Diện tích</span>: <strong><?php echo $value->acreage. ' m2' ?></strong>
+                                            <span>Diện tích</span>:
+                                            <strong><?php echo $value->acreage . ' m2' ?></strong>
                                         </div>
                                         <div class="price-list">
                                             <span>Giá</span>: <strong><?php echo $value->price ?></strong>
@@ -192,6 +193,9 @@
                                              <i class="glyphicon glyphicon-time"></i>
                                             <?php echo date('Y-m-d', strtotime($value->created_at)) ?>
                                         </span>
+                                        </div>
+                                        <div class="price-list">
+                                            <span>Link bài viết</span>: <strong><?php echo $value->link ?></strong>
                                         </div>
                                     </div>
                                 </div>
@@ -732,10 +736,12 @@
                             <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-quan-10-s1358944"><span
                                             style="font-size:13px">Bán nhà Quận 10</span></a></li>
                             <li>
-                                <a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-tan-hung-quan-7-s110665">Cho thuê
+                                <a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-tan-hung-quan-7-s110665">Cho
+                                    thuê
                                     nhà tân hưng, quận 7</a></li>
                             <li>
-                                <a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-quan-1-s38310">Cho thuê nhà tại
+                                <a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-quan-1-s38310">Cho thuê nhà
+                                    tại
                                     quận 1</a></li>
                         </ul>
                     </div>
