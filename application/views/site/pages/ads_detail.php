@@ -8,7 +8,8 @@
             </ol>
             <div class="item-news-1" style="padding: 10px">
 <!--                <span>--><?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
-                <h3 class="title-news-1 text-info"><?php echo $ads->title ?></h3>
+<!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
+                <h3 class="text-danger"><?php echo $ads->title ?></h3>
                 <div class="img-news-1">
                     <img src="<?php echo public_url('images/ads/' . $ads->img) ?>">
                 </div>
