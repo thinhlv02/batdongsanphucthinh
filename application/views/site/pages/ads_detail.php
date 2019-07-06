@@ -20,10 +20,44 @@
                 <div class="col-md8 col-sm-8">
 
 
-                    <div class="content-news-1" style="margin-top: 20px">
-                        <?php echo $ads->content ?>
+                    <div class="box-info" style="float: left; margin-left: 15px;">
+                        <div class="block">
+                            <div class="col-left">Mã tin</div>
+                            <div class="col-right"><b>90953</b></div>
+                        </div>
+                        <div class="block">
+                            <div class="col-left">Lượt xem</div>
+                            <div class="col-right"><b>52</b></div>
+                        </div>
+                        <div class="block">
+                            <div class="col-left">Hình thức</div>
+                            <div class="col-right"><b>Bán đất</b></div>
+                        </div>
+                        <div class="block">
+                            <div class="col-left">Địa chỉ:</div>
+                            <div class="col-right">Cần Giờ, Hồ Chí Minh</div>
+                        </div>
+                        <div class="block">
+                            <div class="col-left">Diện tích</div>
+                            <div class="col-right"><span>63000 m</span><sup>2</sup></div>
+                        </div>
+                        <div class="block">
+                            <div class="col-left">Giá</div>
+                            <div class="col-right">7,000,000 (VNĐ)</div>
+                        </div>
+                        <div class="block">
+                            <div class="col-left">Ngày đăng</div>
+                            <div class="col-right">06/07/2019</div>
+                        </div>
                     </div>
                 </div>
+
+                <style>
+                    #details-auto .box-info {
+                        float: right;
+                        width: 300px;
+                    }
+                </style>
 
                 <div class="content-news-1" style="margin-top: 20px">
                     <?php echo $ads->content ?>
