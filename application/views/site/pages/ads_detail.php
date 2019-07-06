@@ -1,15 +1,15 @@
 <section class="contact">
     <div class="container">
-<!--        <div class="title-section"><h2>Chi tiết bài rao</h2></div>-->
+        <!--        <div class="title-section"><h2>Chi tiết bài rao</h2></div>-->
         <div class="col-md-8 col-sm-12 col-xs-12" style="margin-top: 20px">
             <ol class="breadcrumb">
                 <li><a href="<?php echo base_url('rao-vat') ?>">Rao vặt</a></li>
                 <li class="active"><?php echo $ads->title ?></li>
             </ol>
             <div class="item-news-1" style="padding: 10px">
-<!--                <span>--><?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
-<!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
-<!--                <h4 class="text-danger">--><?php //echo $ads->title ?><!--</h4>-->
+                <!--                <span>--><?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
+                <!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
+                <!--                <h4 class="text-danger">--><?php //echo $ads->title ?><!--</h4>-->
                 <div class="col-md4 col-sm-4">
                     <div class="img-news-1">
                         <img src="<?php echo public_url('images/ads/' . $ads->img) ?>">
@@ -20,12 +20,15 @@
                 <div class="col-md8 col-sm-8">
 
 
-
+                    <div class="content-news-1" style="margin-top: 20px">
+                        <?php echo $ads->content ?>
+                    </div>
+                </div>
 
                 <div class="content-news-1" style="margin-top: 20px">
                     <?php echo $ads->content ?>
                 </div>
-                </div>
+
             </div>
         </div>
 
