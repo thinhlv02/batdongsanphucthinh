@@ -9,12 +9,22 @@
             <div class="item-news-1" style="padding: 10px">
 <!--                <span>--><?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
 <!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
-                <h3 class="text-danger"><?php echo $ads->title ?></h3>
-                <div class="img-news-1">
-                    <img src="<?php echo public_url('images/ads/' . $ads->img) ?>">
+<!--                <h4 class="text-danger">--><?php //echo $ads->title ?><!--</h4>-->
+                <div class="col-md4 col-sm-4">
+                    <div class="img-news-1">
+                        <img src="<?php echo public_url('images/ads/' . $ads->img) ?>">
+                    </div>
+
                 </div>
+
+                <div class="col-md8 col-sm-8">
+
+
+
+
                 <div class="content-news-1" style="margin-top: 20px">
                     <?php echo $ads->content ?>
+                </div>
                 </div>
             </div>
         </div>
