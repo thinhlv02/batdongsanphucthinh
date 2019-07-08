@@ -1,7 +1,7 @@
 <section class="contact">
     <div class="container-fluid">
         <!--        <div class="title-section"><h2>Chi tiết bài rao</h2></div>-->
-        <div class="col-md-8 col-sm-12 col-xs-12" style="margin-top: 20px">
+        <div class="col-md-8 col-sm-12 col-xs-12 mt-2" style="margin-top: 20px">
             <ol class="breadcrumb">
                 <li><a href="<?php echo base_url('rao-vat') ?>">Rao vặt</a></li>
                 <li class="" style="color: red;text-transform: uppercase;"><?php echo $ads->title ?></li>
