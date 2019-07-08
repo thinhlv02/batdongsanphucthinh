@@ -32,7 +32,7 @@
                                             </h3>
                                         </div>
                                         <p><?php echo $value->intro ?>
-                                            <?php echo public_url('images/hot-icon.gif/') ?>
+                                            <img src="<?php echo public_url('images/hot-icon.gif' ) ?>"
                                         </p>
                                         <div class="price-list mb-3">
                                             <span>Diện tích</span>:
