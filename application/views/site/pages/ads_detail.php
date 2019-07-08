@@ -109,7 +109,7 @@
         </div>
 
         <div class="col-md-4 col-sm-12 col-xs-12" style="margin-top: 20px">
-            <div class="left-title">Nổi bật</div>
+            <div class="left-title">Nổi bật cùng chuyên mục</div>
             <?php foreach ($highlight as $key => $value) { ?>
                 <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                     <div class="item-news-1">
