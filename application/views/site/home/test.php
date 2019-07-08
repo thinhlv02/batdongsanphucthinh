@@ -32,7 +32,7 @@
                                             </h3>
                                         </div>
                                         <p><?php echo $value->intro ?>
-                                            <img src="<?php echo public_url('images/hot-icon.gif' ) ?>"
+                                            <img style="width: 34px;height: 21px;float: left;display: inline;" src="<?php echo public_url('images/hot-icon.gif' ) ?>"
                                         </p>
                                         <div class="price-list mb-3">
                                             <span>Diện tích</span>:
