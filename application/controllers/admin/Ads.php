@@ -25,7 +25,7 @@ Class Ads extends MY_Controller
 
     function add()
     {
-        die('fuck');
+//        die('fuck');
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
