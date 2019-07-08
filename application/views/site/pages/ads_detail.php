@@ -106,11 +106,14 @@
 
                     .title-hd {
                         width: 100%;
-                        height: 28px;
+                        /* height: 28px; */
                         line-height: 28px;
                         color: white;
                         background: #0F66E7;
+                        /* padding-left: 25px; */
+                        padding: 1px;
                         padding-left: 5px;
+                        margin-bottom: 8px;
                     }
                     }
                 </style>
