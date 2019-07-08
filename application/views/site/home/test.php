@@ -25,13 +25,15 @@
                                     <!--                                <div class="box-info-list col-sm-9 col-md-9">-->
                                     <div class="box-info-list">
                                         <div class="clearfix box-title-item">
-                                            <label class="label label-danger">ĐẶC BIỆT</label>
+                                            <label class="label label-danger">NỔI BẬT</label>
                                             <h3 class="sieu-vip-title">
                                                 <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                     <?php echo $value->title ?> </a>
                                             </h3>
                                         </div>
-                                        <p><?php echo $value->intro ?> ...</p>
+                                        <p><?php echo $value->intro ?>
+                                            <?php echo public_url('images/hot-icon.gif/') ?>
+                                        </p>
                                         <div class="price-list mb-3">
                                             <span>Diện tích</span>:
                                             <strong><?php echo $value->acreage . ' m2' ?></strong>
@@ -809,16 +811,19 @@
     }
 
     .label {
-        display: inline;
-        padding: .2em .6em .3em;
-        font-size: 75%;
-        font-weight: 700;
-        line-height: 1;
+        height: 14px; */
+        /* display: inline; */
+        /* padding: .2em .6em .3em; */
+        /* font-size: 75%; */
+    font-weight: 700;
+        /* line-height: 1; */
         color: #fff;
         text-align: center;
         white-space: nowrap;
         vertical-align: baseline;
         border-radius: .25em;
+        padding: 4px;
+        line-height: 10px;
     }
 
     .item-re-list h3 {
