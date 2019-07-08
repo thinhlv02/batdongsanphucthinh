@@ -10,15 +10,15 @@
                 <!--                <span>--><?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
                 <!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
                 <!--                <h4 class="text-danger">--><?php //echo $ads->title ?><!--</h4>-->
-                <div class="col-md4 col-sm-4">
+                <div class="col-md-4 col-sm-4">
+
                     <div class="img-news-1 avatar-1">
                         <img src="<?php echo public_url('images/ads/' . $ads->img) ?>">
                     </div>
 
                 </div>
 
-                <div class="col-md8 col-sm-8">
-
+                <div class="col-md-8 col-sm-8">
 
                     <div class="box-info" style="float: left; margin-left: 15px;">
                         <div class="block">
@@ -50,6 +50,7 @@
                             <div class="col-right"><?php echo date('d-m-Y', strtotime($ads->created_at)) ?></div>
                         </div>
                     </div>
+
                 </div>
 
                 <style>
@@ -103,7 +104,7 @@
                     }
                 </style>
 
-                <div class="content-news-1" style="margin-top: 20px">
+                <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 20px">
                     <?php echo $ads->content ?>
                 </div>
 
@@ -119,7 +120,7 @@
                             <img src="<?php echo public_url('images/ads/' . $value->img) ?>">
                         </div>
                         <div style="padding: 10px">
-                            <h2 class="title-news-1"><?php echo $value->title ?></h2>
+                            <h4 class="title-news-1 text-info"><?php echo $value->title ?></h4>
                         </div>
                     </div>
                 </a>
