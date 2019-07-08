@@ -11,19 +11,19 @@
                 <!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
                 <!--                <h4 class="text-danger">--><?php //echo $ads->title ?><!--</h4>-->
                 <div class="col-md-4 col-sm-4">
-
-                    <div class="img-news-1 avatar-1">
-                        <img src="<?php echo public_url('images/ads/' . $ads->img) ?>">
-                    </div>
-
+                    <img src="<?php echo public_url('images/ads/' . $ads->img) ?>">
                 </div>
 
                 <div class="col-md-8 col-sm-8">
 
-                    <div class="box-info" style="float: left; margin-left: 15px;">
+                    <div class="box-info" style="">
                         <div class="block">
                             <div class="col-left">Mã tin</div>
-                            <div class="col-right"><b><?php echo $ads->code ?></b></div>
+                            <div class="col-right"><b><?php
+                                    if ($ads->code === 0) {
+                                        echo generateRandomString(6);
+                                    } else {
+                                    echo $ads->code;  }?></b></div>
                         </div>
                         <div class="block">
                             <div class="col-left">Lượt xem</div>
@@ -59,6 +59,7 @@
                         width: 100%;
                         width: 300px;
                     }
+
                     #details-auto .block {
                         /* width: 360px !important; */
                         float: left;
@@ -79,10 +80,12 @@
                         float: left;
                         width: 124px;
                     }
+
                     .block .col-left {
                         float: left;
                         width: 126px;
                     }
+
                     .col-left {
                         float: left;
                     }
@@ -91,6 +94,7 @@
                         float: left;
                         width: 176px;
                     }
+
                     .block .col-right {
                         float: left;
                         width: calc(100% - 200px);
@@ -101,18 +105,21 @@
                     }
 
                     .title-hd {
-                        width: 100%;
-                        height: 28px;
-                        line-height: 28px;
-                        color: white;
+                        width: 100%; */
+                        /* height: 0px; */
+                        /* line-height: 13px; */
+                    color: white;
                         background: #0F66E7;
-                        padding-left: 5px;
+                        /* padding-left: 5px; */
+                        padding: 1px;
+                        /* margin-left: 9px; */
+                        padding-left: 6px;
                     }
                 </style>
 
-                <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 20px">
+                <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 10px;font-weight: bold">
 
-                    <div class="title-hd"><h4>THÔNG TIN BÀI VIẾT</h4></div>
+                    <div class="title-hd"><h5>THÔNG TIN BÀI VIẾT</h5></div>
 
                     <?php echo $ads->content ?>
 
