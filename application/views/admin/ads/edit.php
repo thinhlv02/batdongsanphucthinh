@@ -118,6 +118,13 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Lượt xem<span class="required">*</span></label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <input type="text" id="" name="view" value="<?php echo $ads->view ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="nhập lượt xem">
+                    </div>
+                </div>
+
                 <!--                <div class="form-group">-->
                 <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Description-->
                 <!--                        <span class="required">*</span></label>-->
