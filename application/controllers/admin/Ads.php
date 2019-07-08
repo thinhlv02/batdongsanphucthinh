@@ -35,6 +35,7 @@ Class Ads extends MY_Controller
                 $file_data = $this->upload->data();
                 $data = array(
                     'title' => $this->input->post('txtName'),
+                    'code' => generateRandomString(6),
                     'content' => $this->input->post('txtContent'),
                     'area' => $this->input->post('area'),
                     'phone' => $this->input->post('phone'),
