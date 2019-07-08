@@ -5,17 +5,7 @@
             <div class="col-sm-9 col-md-9">
 
                 <div id="center-body">
-                    <div class="text-center mt10"><input type="text" name="q" id="sTxt" size="50" class="search-tag"
-                                                         placeholder="Nhập từ khóa tìm kiếm" tabindex="1"> <select
-                                id="TypeSearch" class="search-tag">
-                            <option value="1">Nhà đất bán</option>
-                            <option value="2">Nhà đất cho thuê</option>
-                            <option value="5">Rao vặt khác</option>
-                            <option value="6">Dự án</option>
-                            <option value="3">Tin tức</option>
-                        </select>
-                        <button type="button" tabindex="2" onclick="Redirect()">Tìm kiếm</button>
-                    </div>
+
                     <div class="clearfix mt10">
                         <div style="width:350px;height:400px;float:left;overflow:hidden">
                             <ul class="ulthumb">

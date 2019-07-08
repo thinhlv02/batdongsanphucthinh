@@ -129,7 +129,7 @@
             </div>
         </div>
 
-        <div class="col-md-4 col-sm-12 col-xs-12 mt-2" style="border: 1px solid #dedede;">
+        <div class="col-md-4 col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
             <div class="left-title">Nổi bật cùng chuyên mục</div>
             <?php foreach ($highlight as $key => $value) {
                 if ($ads->id != $value->id) {
