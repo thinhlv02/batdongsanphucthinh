@@ -5,7 +5,9 @@
 mt-2 {
     margin-top: 2px !important;
 }
-
+.mb-2 {
+    margin-bottom: 2px !important;
+}
 .box-module {
     border-bottom: 2px #15a1b1 solid;
 }
