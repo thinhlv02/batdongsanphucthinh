@@ -23,7 +23,7 @@
                     <div class="box-info" style="float: left; margin-left: 15px;">
                         <div class="block">
                             <div class="col-left">Mã tin</div>
-                            <div class="col-right float-right"><b><?php echo $ads->code ?></b></div>
+                            <div class="col-right"><b><?php echo $ads->code ?></b></div>
                         </div>
                         <div class="block">
                             <div class="col-left">Lượt xem</div>
@@ -54,10 +54,6 @@
                 </div>
 
                 <style>
-                    #details-auto .box-info {
-                        float: right;
-                        width: 300px;
-                    }
 
                     #details-auto .box-info .block {
                         width: 100%;
