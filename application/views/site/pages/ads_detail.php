@@ -70,12 +70,13 @@
                         margin-bottom: 0px !important;
                         padding-bottom: 0px !important;
                     }
+
                     .block {
                         border-bottom: 1px solid #e5e5e5;
                         width: 100%;
                         display: inline-block;
-                        padding-bottom: 10px;
-                        margin-top: 10px;
+                        padding-bottom: 0px;
+                        margin-top: 13px;
                     }
 
                     #details-auto .col-left {
