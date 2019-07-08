@@ -99,12 +99,19 @@
                     .col-right {
                         float: right;
                     }
+
+                    .title-hd {
+                        width: 100%;
+                        height: 28px;
+                        line-height: 28px;
+                        color: white;
+                        background: #0F66E7;
+                        padding-left: 5px;
+                    }
                 </style>
 
                 <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 20px">
-                    <div class="box-info1">
-                        <div class="title"><h1 style="color:#0F66E7; font-size: 15px; line-height: 20px;">Thông tin bài viết</h1></div>
-                    </div>
+                    <div class="title-hd"><h3>THÔNG TIN BẤT ĐỘNG SẢN</h3></div>
 <!--                    <div class="title-section"><h2>Thông tin bài viết</h2></div>-->
                     <?php echo $ads->content ?>
                 </div>
