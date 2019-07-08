@@ -117,7 +117,7 @@
                     }
                 </style>
 
-                <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 10px;font-weight: bold">
+                <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 10px">
 
                     <div class="title-hd"><h5>THÔNG TIN BÀI VIẾT</h5></div>
 
