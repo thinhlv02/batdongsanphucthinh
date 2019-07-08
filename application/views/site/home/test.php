@@ -444,6 +444,106 @@
                         </div>
                     </div>
 
+                    <style>
+                        #box-search {
+                            width: 180px;
+                            height: 300px;
+                            float: left;
+                        }
+
+                        .content-box-search {
+                            margin: auto;
+                            height: 39px;
+                            background-color: #fff;
+                        }
+
+                        .heading-search {
+                            height: 26px;
+                            background: #1C70EA;
+                            color: white;
+                            line-height: 26px;
+                            font-size: 12px;
+                        }
+
+                        .content-tab-search.active {
+                            display: block !important;
+                            padding: 5px 8px 8px 8px;
+                            border: 1px solid #dedede;
+                            height: 270px;
+                        }
+
+                        .column-1 {
+                            width: 100%;
+                            border: 1px solid #c5c5c5;
+                            position: relative;
+                            float: left;
+                            margin-top: 5px;
+                        }
+
+                        .column-2, .column-3, .column-4 {
+                            width: 100%;
+                            line-height: 25px;
+                            position: relative;
+                            float: left;
+                            padding-left: 10px;
+                            border: 1px solid #c5c5c5;
+                            margin-top: 5px;
+                        }
+                        .mg-top-5 {
+                            margin-top: 5px !important;
+                        }
+
+                        .column-2, .column-3, .column-4 {
+                            width: 100%;
+                            line-height: 25px;
+                            position: relative;
+                            float: left;
+                            padding-left: 10px;
+                            border: 1px solid #c5c5c5;
+                            margin-top: 5px;
+                        }
+
+                        .column-2, .column-3, .column-4 {
+                            width: 100%;
+                            line-height: 25px;
+                            position: relative;
+                            float: left;
+                            padding-left: 10px;
+                            border: 1px solid #c5c5c5;
+                            margin-top: 5px;
+                        }
+
+                        .column-2, .column-3, .column-4 {
+                            width: 100%;
+                            line-height: 25px;
+                            position: relative;
+                            float: left;
+                            padding-left: 10px;
+                            border: 1px solid #c5c5c5;
+                            margin-top: 5px;
+                        }
+
+                        .column-2, .column-3, .column-4 {
+                            width: 100%;
+                            line-height: 25px;
+                            position: relative;
+                            float: left;
+                            padding-left: 10px;
+                            border: 1px solid #c5c5c5;
+                            margin-top: 5px;
+                        }
+
+                        .column-2, .column-3, .column-4 {
+                            width: 100%;
+                            line-height: 25px;
+                            position: relative;
+                            float: left;
+                            padding-left: 10px;
+                            border: 1px solid #c5c5c5;
+                            margin-top: 5px;
+                        }
+                    </style>
+
 
                     <div class="box-module mt10">
                         <div class="bg-modul">Liên kết được quan tâm</div>
