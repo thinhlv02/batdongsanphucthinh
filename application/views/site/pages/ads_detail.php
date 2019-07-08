@@ -11,7 +11,7 @@
                 <!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
                 <!--                <h4 class="text-danger">--><?php //echo $ads->title ?><!--</h4>-->
                 <div class="col-md4 col-sm-4">
-                    <div class="img-news-1">
+                    <div class="img-news-1 avatar-1">
                         <img src="<?php echo public_url('images/ads/' . $ads->img) ?>">
                     </div>
 
@@ -56,6 +56,50 @@
                     #details-auto .box-info {
                         float: right;
                         width: 300px;
+                    }
+
+                    #details-auto .box-info .block {
+                        width: 100%;
+                        width: 300px;
+                    }
+                    #details-auto .block {
+                        /* width: 360px !important; */
+                        float: left;
+                        margin-top: 0px !important;
+                        margin-bottom: 0px !important;
+                        padding-bottom: 0px !important;
+                    }
+                    .block {
+                        border-bottom: 1px solid #e5e5e5;
+                        width: 100%;
+                        display: inline-block;
+                        padding-bottom: 10px;
+                        margin-top: 10px;
+                    }
+
+                    #details-auto .col-left {
+                        float: left;
+                        width: 124px;
+                    }
+                    .block .col-left {
+                        float: left;
+                        width: 200px;
+                    }
+                    .col-left {
+                        float: left;
+                    }
+
+                    #details-auto .col-right {
+                        float: left;
+                        width: 176px;
+                    }
+                    .block .col-right {
+                        float: left;
+                        width: calc(100% - 200px);
+                    }
+
+                    .col-right {
+                        float: right;
                     }
                 </style>
 
