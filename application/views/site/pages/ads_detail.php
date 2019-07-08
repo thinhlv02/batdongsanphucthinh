@@ -47,7 +47,7 @@
                         </div>
                         <div class="block">
                             <div class="col-left">Ngày đăng</div>
-                            <div class="col-right"><?php echo date('d-m-Y', strtotime($ads->code)) ?></div>
+                            <div class="col-right"><?php echo date('d-m-Y', strtotime($ads->created_at)) ?></div>
                         </div>
                     </div>
                 </div>
