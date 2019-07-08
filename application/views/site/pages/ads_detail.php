@@ -133,13 +133,13 @@
             <div class="left-title">Nổi bật cùng chuyên mục</div>
             <?php foreach ($highlight as $key => $value) { ?>
                 <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                    <div class="" style="border: 1px solid #dedede;float: left">
+                    <div class="mb-2" style="border: 1px solid #dedede;float: left">
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <img src="<?php echo public_url('images/ads/' . $value->img) ?>">
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 5px">
-                            <h4 class="title-news-1 text-info" style="color: red;text-transform: uppercase">
-                                <?php echo $value->title ?></h4>
+                            <h5 class="title-news-1 text-info" style="color: red;text-transform: uppercase">
+                                <?php echo $value->title ?></h5>
                         </div>
                     </div>
                 </a>
