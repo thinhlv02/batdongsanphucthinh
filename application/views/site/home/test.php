@@ -276,19 +276,14 @@
                             </div>
                             <div class="content-tab-search active" rel="1">
                                 <div class="column-1">
-                                    <input type="text" id="KeyWordSearch" class="home-search"
-                                           placeholder="Bạn cần tìm gì?">
+                                    <input type="text" id="KeyWordSearch" class="home-search" placeholder="Bạn cần tìm gì?">
                                 </div>
                                 <div class="column-2 mg-top-5">
-                                    <select class="chosen-select" id="CateSearchParent" name="CateSearchParent"
-                                            style="display: none;">
-                                        <option value="0">Loại BĐS</option>
+                                    <select class="chosen-select" id="CateSearchParent" name="CateSearchParent" style="display: none;"><option value="0">Loại BĐS</option>
                                         <option value="38">Nhà đất bán</option>
                                         <option value="49">Nhà đất cho thuê</option>
                                         <option value="22">Sang nhượng</option>
-                                    </select>
-                                    <div class="chosen-container chosen-container-single" title=""
-                                         id="CateSearchParent_chosen" style="width: 150px;"><a class="chosen-single">
+                                    </select><div class="chosen-container chosen-container-single" title="" id="CateSearchParent_chosen" style="width: 150px;"><a class="chosen-single">
                                             <span>Loại BĐS</span>
                                             <div><b></b></div>
                                         </a>
@@ -296,26 +291,12 @@
                                             <div class="chosen-search">
                                                 <input class="chosen-search-input" type="text" autocomplete="off">
                                             </div>
-                                            <ul class="chosen-results" tabindex="5000"
-                                                style="overflow: hidden; outline: none;"></ul>
-                                            <div id="ascrail2000" class="nicescroll-rails"
-                                                 style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;">
-                                                <div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                            <div id="ascrail2000-hr" class="nicescroll-rails"
-                                                 style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;">
-                                                <div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <ul class="chosen-results" tabindex="5000" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2000" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2000-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
                                 </div>
                                 <div class="column-4 mg-top-5" id="cateSearch">
-                                    <select class="chosen-select" id="CateSearch" name="CateSearch"
-                                            style="display: none;">
-                                        <option value="0">Danh mục BĐS</option>
-                                    </select>
-                                    <div class="chosen-container chosen-container-single" title=""
-                                         id="CateSearch_chosen" style="width: 150px;"><a class="chosen-single">
+                                    <select class="chosen-select" id="CateSearch" name="CateSearch" style="display: none;"><option value="0">Danh mục BĐS</option>
+                                    </select><div class="chosen-container chosen-container-single" title="" id="CateSearch_chosen" style="width: 150px;"><a class="chosen-single">
                                             <span>Danh mục BĐS</span>
                                             <div><b></b></div>
                                         </a>
@@ -323,26 +304,76 @@
                                             <div class="chosen-search">
                                                 <input class="chosen-search-input" type="text" autocomplete="off">
                                             </div>
-                                            <ul class="chosen-results" tabindex="5001"
-                                                style="overflow: hidden; outline: none;"></ul>
-                                            <div id="ascrail2001" class="nicescroll-rails"
-                                                 style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;">
-                                                <div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                            <div id="ascrail2001-hr" class="nicescroll-rails"
-                                                 style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;">
-                                                <div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <ul class="chosen-results" tabindex="5001" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2001" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2001-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
                                 </div>
                                 <div class="column-2 mg-top-5">
-                                    <select class="chosen-select" id="CitySearch" name="CitySearch"
-                                            style="display: none;">
-
-                                    </select>
-                                    <div class="chosen-container chosen-container-single" title=""
-                                         id="CitySearch_chosen" style="width: 150px;"><a class="chosen-single">
+                                    <select class="chosen-select" id="CitySearch" name="CitySearch" style="display: none;"><option value="">Toàn quốc</option>
+                                        <option value="SG">Hồ Chí Minh</option>
+                                        <option value="HN">Hà Nội</option>
+                                        <option value="BD">Bình Dương</option>
+                                        <option value="DDN">Đà Nẵng</option>
+                                        <option value="HP">Hải Phòng</option>
+                                        <option value="LA">Long An</option>
+                                        <option value="VT">Bà Rịa Vũng Tàu</option>
+                                        <option value="AG">An Giang</option>
+                                        <option value="BG">Bắc Giang</option>
+                                        <option value="BK">Bắc Kạn</option>
+                                        <option value="BL">Bạc Liêu</option>
+                                        <option value="BN">Bắc Ninh</option>
+                                        <option value="BTR">Bến Tre</option>
+                                        <option value="BDD">Bình Định</option>
+                                        <option value="BP">Bình Phước</option>
+                                        <option value="BTH">Bình Thuận  </option>
+                                        <option value="CM">Cà Mau</option>
+                                        <option value="CN">Cả Nước</option>
+                                        <option value="CT">Cần Thơ</option>
+                                        <option value="CB">Cao Bằng</option>
+                                        <option value="DDL">Đắk Lắk</option>
+                                        <option value="DNO">Đắk Nông</option>
+                                        <option value="DDB">Điện Biên</option>
+                                        <option value="DNA">Đồng Nai</option>
+                                        <option value="DDT">Đồng Tháp</option>
+                                        <option value="GL">Gia Lai</option>
+                                        <option value="HG">Hà Giang</option>
+                                        <option value="HNA">Hà Nam</option>
+                                        <option value="HT">Hà Tĩnh</option>
+                                        <option value="HD">Hải Dương</option>
+                                        <option value="HGI">Hậu Giang</option>
+                                        <option value="HB">Hòa Bình</option>
+                                        <option value="HY">Hưng Yên</option>
+                                        <option value="KH">Khánh Hòa</option>
+                                        <option value="KG">Kiên Giang</option>
+                                        <option value="KT">Kon Tum</option>
+                                        <option value="LCH">Lai Châu</option>
+                                        <option value="LDD">Lâm Đồng</option>
+                                        <option value="LS">Lạng Sơn</option>
+                                        <option value="LCA">Lào Cai</option>
+                                        <option value="NDD">Nam Định</option>
+                                        <option value="NA">Nghệ An</option>
+                                        <option value="NB">Ninh Bình</option>
+                                        <option value="NT">Ninh Thuận</option>
+                                        <option value="PT">Phú Thọ</option>
+                                        <option value="PY">Phú Yên</option>
+                                        <option value="QB">Quảng Bình</option>
+                                        <option value="QNA">Quảng Nam</option>
+                                        <option value="QNG">Quảng Ngãi</option>
+                                        <option value="QNI">Quảng Ninh</option>
+                                        <option value="QT">Quảng Trị</option>
+                                        <option value="ST">Sóc Trăng</option>
+                                        <option value="SL">Sơn La</option>
+                                        <option value="TNI">Tây Ninh</option>
+                                        <option value="TB">Thái Bình</option>
+                                        <option value="TN">Thái Nguyên</option>
+                                        <option value="TH">Thanh Hóa</option>
+                                        <option value="TTH">Thừa Thiên Huế</option>
+                                        <option value="TG">Tiền Giang</option>
+                                        <option value="TV">Trà Vinh</option>
+                                        <option value="TQ">Tuyên Quang</option>
+                                        <option value="VL">Vĩnh Long</option>
+                                        <option value="VP">Vĩnh Phúc</option>
+                                        <option value="YB">Yên Bái</option>
+                                    </select><div class="chosen-container chosen-container-single" title="" id="CitySearch_chosen" style="width: 150px;"><a class="chosen-single">
                                             <span>Toàn quốc</span>
                                             <div><b></b></div>
                                         </a>
@@ -350,28 +381,12 @@
                                             <div class="chosen-search">
                                                 <input class="chosen-search-input" type="text" autocomplete="off">
                                             </div>
-                                            <ul class="chosen-results" tabindex="5002"
-                                                style="overflow: hidden; outline: none;">
-
-                                            </ul>
-                                            <div id="ascrail2002" class="nicescroll-rails"
-                                                 style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 240px; opacity: 0;">
-                                                <div style="position: relative; top: 0px; float: right; width: 6px; height: 32px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                            <div id="ascrail2002-hr" class="nicescroll-rails"
-                                                 style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 268px; left: 1px; position: absolute; cursor: default; display: none; width: 150px; opacity: 0;">
-                                                <div style="position: relative; top: 0px; height: 6px; width: 156px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <ul class="chosen-results" tabindex="5002" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2002" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2002-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
                                 </div>
                                 <div class="column-3 mg-top-5" id="search-district">
-                                    <select class="chosen-select" id="DistrictSearch" name="DistrictSearch"
-                                            style="display: none;">
-                                        <option value="">Quận/Huyện</option>
-                                    </select>
-                                    <div class="chosen-container chosen-container-single" title=""
-                                         id="DistrictSearch_chosen" style="width: 150px;"><a class="chosen-single">
+                                    <select class="chosen-select" id="DistrictSearch" name="DistrictSearch" style="display: none;"><option value="">Quận/Huyện</option>
+                                    </select><div class="chosen-container chosen-container-single" title="" id="DistrictSearch_chosen" style="width: 150px;"><a class="chosen-single">
                                             <span>Quận/Huyện</span>
                                             <div><b></b></div>
                                         </a>
@@ -379,23 +394,11 @@
                                             <div class="chosen-search">
                                                 <input class="chosen-search-input" type="text" autocomplete="off">
                                             </div>
-                                            <ul class="chosen-results" tabindex="5003"
-                                                style="overflow: hidden; outline: none;"></ul>
-                                            <div id="ascrail2003" class="nicescroll-rails"
-                                                 style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;">
-                                                <div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                            <div id="ascrail2003-hr" class="nicescroll-rails"
-                                                 style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;">
-                                                <div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <ul class="chosen-results" tabindex="5003" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2003" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2003-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
                                 </div>
                                 <div class="column-4 mg-top-5">
-                                    <select class="chosen-select" id="PriceSearch" name="PriceSearch"
-                                            style="display: none;">
-                                        <option value="0">Giá</option>
+                                    <select class="chosen-select" id="PriceSearch" name="PriceSearch" style="display: none;"><option value="0">Giá</option>
                                         <option value="mlt2000000">Dưới 2 triệu</option>
                                         <option value="mbw2000000~5000000">2 - 5 triệu</option>
                                         <option value="mbw5000000~10000000">5 - 10 triệu</option>
@@ -407,9 +410,7 @@
                                         <option value="mbw10000000000~30000000000">10 - 30 tỷ</option>
                                         <option value="mgt30000000000">&gt; 30 tỷ</option>
                                         <option value="mt2">Thỏa thuận</option>
-                                    </select>
-                                    <div class="chosen-container chosen-container-single" title=""
-                                         id="PriceSearch_chosen" style="width: 150px;"><a class="chosen-single">
+                                    </select><div class="chosen-container chosen-container-single" title="" id="PriceSearch_chosen" style="width: 150px;"><a class="chosen-single">
                                             <span>Giá</span>
                                             <div><b></b></div>
                                         </a>
@@ -417,30 +418,16 @@
                                             <div class="chosen-search">
                                                 <input class="chosen-search-input" type="text" autocomplete="off">
                                             </div>
-                                            <ul class="chosen-results" tabindex="5004"
-                                                style="overflow: hidden; outline: none;"></ul>
-                                            <div id="ascrail2004" class="nicescroll-rails"
-                                                 style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;">
-                                                <div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                            <div id="ascrail2004-hr" class="nicescroll-rails"
-                                                 style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;">
-                                                <div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <ul class="chosen-results" tabindex="5004" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2004" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2004-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
                                 </div>
                                 <div class="column-4 mg-top-5">
-                                    <select class="chosen-select" id="AreaSearch" name="AreaSearch"
-                                            style="display: none;">
-                                        <option value="0">Diện tích</option>
+                                    <select class="chosen-select" id="AreaSearch" name="AreaSearch" style="display: none;"><option value="0">Diện tích</option>
                                         <option value="arlt30">&lt; 30 M2</option>
                                         <option value="arbw30~50">30 - 50 M2</option>
                                         <option value="arbw50~100">50 - 100 M2</option>
                                         <option value="argt100">&gt; 100 M2</option>
-                                    </select>
-                                    <div class="chosen-container chosen-container-single" title=""
-                                         id="AreaSearch_chosen" style="width: 150px;"><a class="chosen-single">
+                                    </select><div class="chosen-container chosen-container-single" title="" id="AreaSearch_chosen" style="width: 150px;"><a class="chosen-single">
                                             <span>Diện tích</span>
                                             <div><b></b></div>
                                         </a>
@@ -448,18 +435,8 @@
                                             <div class="chosen-search">
                                                 <input class="chosen-search-input" type="text" autocomplete="off">
                                             </div>
-                                            <ul class="chosen-results" tabindex="5005"
-                                                style="overflow: hidden; outline: none;"></ul>
-                                            <div id="ascrail2005" class="nicescroll-rails"
-                                                 style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;">
-                                                <div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                            <div id="ascrail2005-hr" class="nicescroll-rails"
-                                                 style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;">
-                                                <div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <ul class="chosen-results" tabindex="5005" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2005" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2005-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
                                 </div>
                                 <div>
                                     <button id="searchProduct"><i class="icon icon-search"></i> Tìm kiếm</button>
