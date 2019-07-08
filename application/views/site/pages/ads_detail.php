@@ -102,6 +102,7 @@
                 </style>
 
                 <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 20px">
+                    <div class="title-section"><h2>Thông tin bài viết</h2></div>
                     <?php echo $ads->content ?>
                 </div>
 
