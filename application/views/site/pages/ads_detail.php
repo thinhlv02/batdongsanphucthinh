@@ -27,7 +27,7 @@
                         </div>
                         <div class="block">
                             <div class="col-left">Lượt xem</div>
-                            <div class="col-right"><b><?php echo $ads->code ?></b></div>
+                            <div class="col-right"><b><?php echo $ads->view ?></b></div>
                         </div>
                         <div class="block">
                             <div class="col-left">Hình thức</div>
