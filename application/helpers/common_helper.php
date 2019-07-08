@@ -116,3 +116,7 @@ function generateRandomString($length) {
     }
     return $randomString;
 }
+
+function pre_arr($data) {
+    echo '<pre>',print_r($data,1),'</pre>';
+}
