@@ -36,6 +36,7 @@ Class Ads extends MY_Controller
                 $data = array(
                     'title' => $this->input->post('txtName'),
                     'code' => generateRandomString(6),
+                    'view' => generateRandomString(2),
                     'content' => $this->input->post('txtContent'),
                     'area' => $this->input->post('area'),
                     'phone' => $this->input->post('phone'),
