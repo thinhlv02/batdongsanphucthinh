@@ -30,6 +30,7 @@
                 <th>Khu vực</th>
                 <th>Nổi bật</th>
                 <th>link bài viết</th>
+                <th>Lượt xem</th>
                 <th>Ngày Tạo</th>
                 <th>Hành động</th>
             </tr>
@@ -37,7 +38,8 @@
             <tbody>
             <?php foreach ($ads as $row){ ?>
                 <tr>
-                    <td><?php echo $row->id?></td>
+<!--                    <td>--><?php //echo $row->id?><!--</td>-->
+                    <td><?php echo $row->code?></td>
                     <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 150px"> </td>
                     <td><?php echo $row->title?></td>
                     <td><?php echo $row->intro?></td>
@@ -52,6 +54,7 @@
                         ></i>
                     </td>
                     <td><?php echo $row->link ?></td>
+                    <td><?php echo $row->view ?></td>
 
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td>
