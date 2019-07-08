@@ -30,6 +30,7 @@ Class Ads extends MY_Controller
         if ($this->input->post('btnAdd')) {
             $config['upload_path'] = './public/images/ads';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
+            $config['max_size']    = '1024*10';
             $this->load->library("upload", $config);
             if ($this->upload->do_upload('img_news')) {
                 $file_data = $this->upload->data();
