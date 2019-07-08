@@ -20,7 +20,7 @@
                         <div class="block">
                             <div class="col-left">Mã tin</div>
                             <div class="col-right"><b><?php
-                                    if ($ads->code === 0) {
+                                    if ($ads->code == 0) {
                                         echo generateRandomString(6);
                                     } else {
                                     echo $ads->code;  }?></b></div>
