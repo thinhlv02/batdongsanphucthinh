@@ -4,7 +4,7 @@
         <div class="col-md-8 col-sm-12 col-xs-12" style="margin-top: 20px">
             <ol class="breadcrumb">
                 <li><a href="<?php echo base_url('rao-vat') ?>">Rao vặt</a></li>
-                <li class="active"><?php echo $ads->title ?></li>
+                <li class="" style="color: red;text-transform: uppercase;"><?php echo $ads->title ?></li>
             </ol>
             <div class="item-news-1" style="padding: 10px">
                 <!--                <span>--><?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
