@@ -264,275 +264,201 @@
             <div class="col-sm-3 col-md-3">
 
                 <div id="right">
-                    <div class="home-search-box">
-                        <div class="tops"><h2>Công cụ tìm kiếm</h2></div>
-                        <div class="contents">
-                            <div class="tab">
-                                <div onclick="showTab(0)" class="divSearchAct" id="Muaban"><a> Nhà đất bán </a></div>
-                                <div style="display:none" id="tab-line-1" class="tab-lines"></div>
-                                <div onclick="showTab(1)" class="divSearchInAct" id="Chothue"><a> Nhà đất cho thuê </a>
+
+                    <div id="box-search">
+                        <div class="content-box-search">
+                            <div class="heading-search">
+                                <h3>
+                                    <span class=""><i class="icon icon-search"></i></span>
+                                    <span>CÔNG CỤ TÌM KIẾM</span>
+                                </h3>
+                            </div>
+                            <div class="content-tab-search active" rel="1">
+                                <div class="column-1">
+                                    <input type="text" id="KeyWordSearch" class="home-search" placeholder="Bạn cần tìm gì?">
                                 </div>
-                                <div class="tab-lines" id="tab-line-2"></div>
-                                <div onclick="showTab(4)" class="divSearchInAct" id="RaovatKhac"><a> Rao vặt khác </a>
+                                <div class="column-2 mg-top-5">
+                                    <select class="chosen-select" id="CateSearchParent" name="CateSearchParent" style="display: none;"><option value="0">Loại BĐS</option>
+                                        <option value="38">Nhà đất bán</option>
+                                        <option value="49">Nhà đất cho thuê</option>
+                                        <option value="22">Sang nhượng</option>
+                                    </select><div class="chosen-container chosen-container-single" title="" id="CateSearchParent_chosen" style="width: 150px;"><a class="chosen-single">
+                                            <span>Loại BĐS</span>
+                                            <div><b></b></div>
+                                        </a>
+                                        <div class="chosen-drop">
+                                            <div class="chosen-search">
+                                                <input class="chosen-search-input" type="text" autocomplete="off">
+                                            </div>
+                                            <ul class="chosen-results" tabindex="5000" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2000" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2000-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
+                                </div>
+                                <div class="column-4 mg-top-5" id="cateSearch">
+                                    <select class="chosen-select" id="CateSearch" name="CateSearch" style="display: none;"><option value="0">Danh mục BĐS</option>
+                                        <option value="38">Nhà đất bán</option>
+                                        <option value="49">Nhà đất cho thuê</option>
+                                        <option value="22">Sang nhượng</option>
+                                    </select><div class="chosen-container chosen-container-single" title="" id="CateSearch_chosen" style="width: 150px;"><a class="chosen-single">
+                                            <span>Danh mục BĐS</span>
+                                            <div><b></b></div>
+                                        </a>
+                                        <div class="chosen-drop">
+                                            <div class="chosen-search">
+                                                <input class="chosen-search-input" type="text" autocomplete="off">
+                                            </div>
+                                            <ul class="chosen-results" tabindex="5001" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2001" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2001-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
+                                </div>
+                                <div class="column-2 mg-top-5">
+                                    <select class="chosen-select" id="CitySearch" name="CitySearch" style="display: none;"><option value="">Toàn quốc</option>
+                                        <option value="SG">Hồ Chí Minh</option>
+                                        <option value="HN">Hà Nội</option>
+                                        <option value="BD">Bình Dương</option>
+                                        <option value="DDN">Đà Nẵng</option>
+                                        <option value="HP">Hải Phòng</option>
+                                        <option value="LA">Long An</option>
+                                        <option value="VT">Bà Rịa Vũng Tàu</option>
+                                        <option value="AG">An Giang</option>
+                                        <option value="BG">Bắc Giang</option>
+                                        <option value="BK">Bắc Kạn</option>
+                                        <option value="BL">Bạc Liêu</option>
+                                        <option value="BN">Bắc Ninh</option>
+                                        <option value="BTR">Bến Tre</option>
+                                        <option value="BDD">Bình Định</option>
+                                        <option value="BP">Bình Phước</option>
+                                        <option value="BTH">Bình Thuận  </option>
+                                        <option value="CM">Cà Mau</option>
+                                        <option value="CN">Cả Nước</option>
+                                        <option value="CT">Cần Thơ</option>
+                                        <option value="CB">Cao Bằng</option>
+                                        <option value="DDL">Đắk Lắk</option>
+                                        <option value="DNO">Đắk Nông</option>
+                                        <option value="DDB">Điện Biên</option>
+                                        <option selected="selected" value="DNA">Đồng Nai</option>
+                                        <option value="DDT">Đồng Tháp</option>
+                                        <option value="GL">Gia Lai</option>
+                                        <option value="HG">Hà Giang</option>
+                                        <option value="HNA">Hà Nam</option>
+                                        <option value="HT">Hà Tĩnh</option>
+                                        <option value="HD">Hải Dương</option>
+                                        <option value="HGI">Hậu Giang</option>
+                                        <option value="HB">Hòa Bình</option>
+                                        <option value="HY">Hưng Yên</option>
+                                        <option value="KH">Khánh Hòa</option>
+                                        <option value="KG">Kiên Giang</option>
+                                        <option value="KT">Kon Tum</option>
+                                        <option value="LCH">Lai Châu</option>
+                                        <option value="LDD">Lâm Đồng</option>
+                                        <option value="LS">Lạng Sơn</option>
+                                        <option value="LCA">Lào Cai</option>
+                                        <option value="NDD">Nam Định</option>
+                                        <option value="NA">Nghệ An</option>
+                                        <option value="NB">Ninh Bình</option>
+                                        <option value="NT">Ninh Thuận</option>
+                                        <option value="PT">Phú Thọ</option>
+                                        <option value="PY">Phú Yên</option>
+                                        <option value="QB">Quảng Bình</option>
+                                        <option value="QNA">Quảng Nam</option>
+                                        <option value="QNG">Quảng Ngãi</option>
+                                        <option value="QNI">Quảng Ninh</option>
+                                        <option value="QT">Quảng Trị</option>
+                                        <option value="ST">Sóc Trăng</option>
+                                        <option value="SL">Sơn La</option>
+                                        <option value="TNI">Tây Ninh</option>
+                                        <option value="TB">Thái Bình</option>
+                                        <option value="TN">Thái Nguyên</option>
+                                        <option value="TH">Thanh Hóa</option>
+                                        <option value="TTH">Thừa Thiên Huế</option>
+                                        <option value="TG">Tiền Giang</option>
+                                        <option value="TV">Trà Vinh</option>
+                                        <option value="TQ">Tuyên Quang</option>
+                                        <option value="VL">Vĩnh Long</option>
+                                        <option value="VP">Vĩnh Phúc</option>
+                                        <option value="YB">Yên Bái</option>
+                                    </select><div class="chosen-container chosen-container-single" title="" id="CitySearch_chosen" style="width: 150px;"><a class="chosen-single">
+                                            <span>Đồng Nai</span>
+                                            <div><b></b></div>
+                                        </a>
+                                        <div class="chosen-drop">
+                                            <div class="chosen-search">
+                                                <input class="chosen-search-input" type="text" autocomplete="off">
+                                            </div>
+                                            <ul class="chosen-results" tabindex="5002" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2002" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2002-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
+                                </div>
+                                <div class="column-3 mg-top-5" id="search-district">
+                                    <select class="chosen-select" id="DistrictSearch" name="DistrictSearch" style="display: none;"><option value="">Quận/Huyện</option>
+                                        <option value="236">Cẩm Mỹ</option>
+                                        <option value="237">Định Quán</option>
+                                        <option value="238">Long Thành</option>
+                                        <option value="239">Nhơn Trạch</option>
+                                        <option value="240">Tân Phú</option>
+                                        <option value="241">Thống Nhất</option>
+                                        <option selected="selected" value="242">Trảng Bom</option>
+                                        <option value="243">Vĩnh Cửu</option>
+                                        <option value="244">Xuân Lộc</option>
+                                        <option value="245">Biên Hòa</option>
+                                        <option value="246">Long Khánh</option>
+                                    </select><div class="chosen-container chosen-container-single" title="" id="DistrictSearch_chosen" style="width: 150px;"><a class="chosen-single">
+                                            <span>Trảng Bom</span>
+                                            <div><b></b></div>
+                                        </a>
+                                        <div class="chosen-drop">
+                                            <div class="chosen-search">
+                                                <input class="chosen-search-input" type="text" autocomplete="off">
+                                            </div>
+                                            <ul class="chosen-results" tabindex="5003" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2003" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2003-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
+                                </div>
+                                <div class="column-4 mg-top-5">
+                                    <select class="chosen-select" id="PriceSearch" name="PriceSearch" style="display: none;"><option value="0">Giá</option>
+                                        <option value="mlt2000000">Dưới 2 triệu</option>
+                                        <option value="mbw2000000~5000000">2 - 5 triệu</option>
+                                        <option value="mbw5000000~10000000">5 - 10 triệu</option>
+                                        <option value="mgt10000000">&gt; 10 triệu</option>
+                                        <option value="mbw500000000~1000000000">500 triệu - 1 tỷ</option>
+                                        <option value="mbw1000000000~3000000000">1 - 3 tỷ</option>
+                                        <option value="mbw3000000000~5000000000">3 - 5 tỷ</option>
+                                        <option value="mbw5000000000~10000000000">5 - 10 tỷ</option>
+                                        <option value="mbw10000000000~30000000000">10 - 30 tỷ</option>
+                                        <option value="mgt30000000000">&gt; 30 tỷ</option>
+                                        <option value="mt2">Thỏa thuận</option>
+                                    </select><div class="chosen-container chosen-container-single" title="" id="PriceSearch_chosen" style="width: 150px;"><a class="chosen-single">
+                                            <span>Giá</span>
+                                            <div><b></b></div>
+                                        </a>
+                                        <div class="chosen-drop">
+                                            <div class="chosen-search">
+                                                <input class="chosen-search-input" type="text" autocomplete="off">
+                                            </div>
+                                            <ul class="chosen-results" tabindex="5004" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2004" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2004-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
+                                </div>
+                                <div class="column-4 mg-top-5">
+                                    <select class="chosen-select" id="AreaSearch" name="AreaSearch" style="display: none;"><option value="0">Diện tích</option>
+                                        <option value="arlt30">&lt; 30 M2</option>
+                                        <option value="arbw30~50">30 - 50 M2</option>
+                                        <option value="arbw50~100">50 - 100 M2</option>
+                                        <option value="argt100">&gt; 100 M2</option>
+                                    </select><div class="chosen-container chosen-container-single" title="" id="AreaSearch_chosen" style="width: 150px;"><a class="chosen-single">
+                                            <span>Diện tích</span>
+                                            <div><b></b></div>
+                                        </a>
+                                        <div class="chosen-drop">
+                                            <div class="chosen-search">
+                                                <input class="chosen-search-input" type="text" autocomplete="off">
+                                            </div>
+                                            <ul class="chosen-results" tabindex="5005" style="overflow: hidden; outline: none;"></ul>
+                                            <div id="ascrail2005" class="nicescroll-rails" style="width: 6px; z-index: 1010; background: rgb(244, 244, 244); cursor: default; position: absolute; top: 34px; left: 151px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div><div id="ascrail2005-hr" class="nicescroll-rails" style="height: 6px; z-index: 1010; background: rgb(244, 244, 244); top: 28px; left: 1px; position: absolute; cursor: default; display: none;"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(204, 204, 204); background-clip: padding-box; border-radius: 6px;"></div></div></div></div>
+                                </div>
+                                <div>
+                                    <button id="searchProduct"><i class="icon icon-search"></i> Tìm kiếm</button>
                                 </div>
                             </div>
-                            <form action="/Models/RedirectSearch.ashx" method="POST"><input data-val="true"
-                                                                                            data-val-number="The field TypeId must be a number."
-                                                                                            id="TypeId" name="TypeId"
-                                                                                            type="hidden" value="0">
-                                <div class="form-select-search"><select name="CategoryId" id="LoadCategoryId">
-                                        <option value=""> -- Chọn loại nhà đất --</option>
-                                        <option value="1"> - Bán căn hộ chung cư</option>
-                                        <option value="129"> - Nhà bán các loại</option>
-                                        <option value="108"> &nbsp; + Bán nhà</option>
-                                        <option value="9"> &nbsp; + Bán nhà mặt phố</option>
-                                        <option value="79"> &nbsp; + Bán nhà biệt thự liền kề</option>
-                                        <option value="130"> - Đất bán các loại</option>
-                                        <option value="112"> &nbsp; + Bán đất</option>
-                                        <option value="128"> &nbsp; + Bán đất mặt tiền</option>
-                                        <option value="3"> &nbsp; + Bán đất nền dự án</option>
-                                        <option value="126"> - Bán Villa, Condotel, resort</option>
-                                        <option value="131"> - Bán nhà vườn trang trại</option>
-                                        <option value="133"> - Bán cửa hàng, kho xưởng</option>
-                                        <option value="18"> - Bán Bất động sản khác</option>
-                                    </select></div>
-                                <div class="form-select-search"><select class="chosen" data-val="true"
-                                                                        data-val-number="The field CityId must be a number."
-                                                                        id="CityId" name="CityId"
-                                                                        onchange="loadDistrict(this.value)"
-                                                                        style="display: none;">
-                                        <option value=""> -- Chọn Tỉnh/Thành phố --</option>
-                                        <option value="1">Hà Nội</option>
-                                        <option value="20">TP. HCM</option>
-                                        <option value="68">Bình Dương</option>
-                                        <option value="75">Đà Nẵng</option>
-                                        <option value="77">Đồng Nai</option>
-                                        <option value="85">Thừa Thiên Huế</option>
-                                        <option value="83">Hải Phòng</option>
-                                        <option value="87">Khánh Hòa</option>
-                                        <option value="73">Cần Thơ</option>
-                                        <option value="91">Lâm Đồng</option>
-                                        <option value="71">BR Vũng Tàu</option>
-                                        <option value="94">Long An</option>
-                                        <option value="732">Đăk Lăk</option>
-                                        <option value="102">Quảng Nam</option>
-                                        <option value="22">Bắc Kạn</option>
-                                        <option value="25">Bến Tre</option>
-                                        <option value="24">Bạc Liêu</option>
-                                        <option value="47">Bắc Ninh</option>
-                                        <option value="69">Bình Phước</option>
-                                        <option value="67">Bình Định</option>
-                                        <option value="23">Bắc Giang</option>
-                                        <option value="70">Bình Thuận</option>
-                                        <option value="772">Đăk Nông</option>
-                                        <option value="842">Điện Biên</option>
-                                        <option value="748">Đồng Tháp</option>
-                                        <option value="72">Cà Mau</option>
-                                        <option value="74">Cao Bằng</option>
-                                        <option value="89">Kon Tum</option>
-                                        <option value="88">Kiên Giang</option>
-                                        <option value="82">Hải Dương</option>
-                                        <option value="81">Hà Tĩnh</option>
-                                        <option value="80">Hà Nam</option>
-                                        <option value="84">Hòa Bình</option>
-                                        <option value="79">Hà Giang</option>
-                                        <option value="763">Hậu Giang</option>
-                                        <option value="86">Hưng Yên</option>
-                                        <option value="111">Thanh Hóa</option>
-                                        <option value="108">Tây Ninh</option>
-                                        <option value="109">Thái Bình</option>
-                                        <option value="110">Thái Nguyên</option>
-                                        <option value="112">Tiền Giang</option>
-                                        <option value="113">Trà Vinh</option>
-                                        <option value="114">Tuyên Quang</option>
-                                        <option value="97">Ninh Bình</option>
-                                        <option value="98">Ninh Thuận</option>
-                                        <option value="96">Nghệ An</option>
-                                        <option value="95">Nam Định</option>
-                                        <option value="103">Quảng Ngãi</option>
-                                        <option value="104">Quảng Ninh</option>
-                                        <option value="101">Quảng Bình</option>
-                                        <option value="105">Quảng Trị</option>
-                                        <option value="115">Vĩnh Long</option>
-                                        <option value="116">Vĩnh Phúc</option>
-                                        <option value="93">Lào Cai</option>
-                                        <option value="90">Lai Châu</option>
-                                        <option value="92">Lạng Sơn</option>
-                                        <option value="106">Sóc Trăng</option>
-                                        <option value="107">Sơn La</option>
-                                        <option value="99">Phú Thọ</option>
-                                        <option value="100">Phú Yên</option>
-                                        <option value="21">An Giang</option>
-                                        <option value="78">Gia Lai</option>
-                                        <option value="117">Yên Bái</option>
-                                    </select>
-                                    <div class="chosen-container chosen-container-single" title="" id="CityId_chosen"
-                                         style="width: 235px;"><a class="chosen-single">
-                                            <input class="chosen-focus-input" type="text" autocomplete="off">
-                                            <span> -- Chọn Tỉnh/Thành phố --</span>
-                                            <div><b></b></div>
-                                        </a>
-                                        <div class="chosen-drop">
-                                            <div class="chosen-search">
-                                                <input class="chosen-search-input" type="text" autocomplete="off">
-                                            </div>
-                                            <ul class="chosen-results"></ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-select-search"><select class="chosen" data-val="true"
-                                                                        data-val-number="The field DistrictId must be a number."
-                                                                        id="LoadDistrictId" name="DistrictId"
-                                                                        onchange="changeDistrict(this.value)"
-                                                                        style="display: none;">
-                                        <option value=""> -- Chọn Quận/Huyện --</option>
-                                    </select>
-                                    <div class="chosen-container chosen-container-single" title=""
-                                         id="LoadDistrictId_chosen" style="width: 235px;"><a class="chosen-single">
-                                            <input class="chosen-focus-input" type="text" autocomplete="off">
-                                            <span> -- Chọn Quận/Huyện --</span>
-                                            <div><b></b></div>
-                                        </a>
-                                        <div class="chosen-drop">
-                                            <div class="chosen-search">
-                                                <input class="chosen-search-input" type="text" autocomplete="off">
-                                            </div>
-                                            <ul class="chosen-results"></ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-select-search"><select class="chosen" data-val="true"
-                                                                        data-val-number="The field WardId must be a number."
-                                                                        id="LoadWardId" name="WardId"
-                                                                        style="display: none;">
-                                        <option value=""> -- Chọn Phường/Xã --</option>
-                                    </select>
-                                    <div class="chosen-container chosen-container-single" title=""
-                                         id="LoadWardId_chosen" style="width: 235px;"><a class="chosen-single">
-                                            <input class="chosen-focus-input" type="text" autocomplete="off">
-                                            <span> -- Chọn Phường/Xã --</span>
-                                            <div><b></b></div>
-                                        </a>
-                                        <div class="chosen-drop">
-                                            <div class="chosen-search">
-                                                <input class="chosen-search-input" type="text" autocomplete="off">
-                                            </div>
-                                            <ul class="chosen-results"></ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-select-search"><select class="chosen" data-val="true"
-                                                                        data-val-number="The field StreetId must be a number."
-                                                                        id="LoadStreetId" name="StreetId"
-                                                                        style="display: none;">
-                                        <option value=""> -- Chọn Đường/Phố --</option>
-                                    </select>
-                                    <div class="chosen-container chosen-container-single" title=""
-                                         id="LoadStreetId_chosen" style="width: 235px;"><a class="chosen-single">
-                                            <input class="chosen-focus-input" type="text" autocomplete="off">
-                                            <span> -- Chọn Đường/Phố --</span>
-                                            <div><b></b></div>
-                                        </a>
-                                        <div class="chosen-drop">
-                                            <div class="chosen-search">
-                                                <input class="chosen-search-input" type="text" autocomplete="off">
-                                            </div>
-                                            <ul class="chosen-results"></ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-select-search"><select class="chosen" data-val="true"
-                                                                        data-val-number="The field ProjectId must be a number."
-                                                                        id="LoadProjectId" name="ProjectId"
-                                                                        style="display: none;">
-                                        <option value=""> -- Chọn Dự án --</option>
-                                    </select>
-                                    <div class="chosen-container chosen-container-single" title=""
-                                         id="LoadProjectId_chosen" style="width: 235px;"><a class="chosen-single">
-                                            <input class="chosen-focus-input" type="text" autocomplete="off">
-                                            <span> -- Chọn Dự án --</span>
-                                            <div><b></b></div>
-                                        </a>
-                                        <div class="chosen-drop">
-                                            <div class="chosen-search">
-                                                <input class="chosen-search-input" type="text" autocomplete="off">
-                                            </div>
-                                            <ul class="chosen-results"></ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-select-search"><select data-val="true"
-                                                                        data-val-number="The field PriceId must be a number."
-                                                                        id="PriceId" name="PriceId">
-                                        <option value=""> -- Chọn mức giá --</option>
-                                        <option value="0">Giá thỏa thuận</option>
-                                        <option value="1">&lt; 500 triệu</option>
-                                        <option value="2">500 triệu - 800 triệu</option>
-                                        <option value="3">800 triệu - 1 tỷ</option>
-                                        <option value="4">1 tỷ- 2 tỷ</option>
-                                        <option value="5">2 tỷ - 4 tỷ</option>
-                                        <option value="6">4 tỷ - 6 tỷ</option>
-                                        <option value="7">6 tỷ - 10 tỷ</option>
-                                        <option value="8">&gt; 10 tỷ</option>
-                                        <option value="9"> 1 triệu - 3 triệu</option>
-                                        <option value="10"> 3 triệu - 5 triệu</option>
-                                        <option value="11"> 5 triệu - 10 triệu</option>
-                                        <option value="12"> 10 triệu - 40 triệu</option>
-                                        <option value="13"> 40 triệu - 70 triệu</option>
-                                        <option value="14"> 70 triệu - 100 triệu</option>
-                                        <option value="15"> &gt; 100 triệu</option>
-                                    </select></div>
-                                <div class="form-select-search showmore"><select data-val="true"
-                                                                                 data-val-number="The field AreaId must be a number."
-                                                                                 id="AreaId" name="AreaId">
-                                        <option value=""> -- Chọn diện tích --</option>
-                                        <option value="1">&lt; 30m2</option>
-                                        <option value="2">30m2 - 50m2</option>
-                                        <option value="3">50m2 - 80m2</option>
-                                        <option value="4">80m2 - 100m2</option>
-                                        <option value="5">100m2 - 150m2</option>
-                                        <option value="6">150m2 - 200m2</option>
-                                        <option value="7">200m2 - 300m2</option>
-                                        <option value="8">300m2 - 500m2</option>
-                                        <option value="9"> &gt; 500m2</option>
-                                    </select></div>
-                                <div class="form-select-search showmore"><select data-val="true"
-                                                                                 data-val-number="The field SoPhong must be a number."
-                                                                                 id="SoPhong" name="SoPhong">
-                                        <option value=""> -- Chọn số phòng --</option>
-                                        <option value="0">Không xác định</option>
-                                        <option value="1">1+</option>
-                                        <option value="2">2+</option>
-                                        <option value="3">3+</option>
-                                        <option value="4">4+</option>
-                                        <option value="5">5+</option>
-                                    </select></div>
-                                <div class="form-select-search showmore"><select id="HuongNha" name="HuongNha">
-                                        <option value=""> -- Chọn hướng nhà --</option>
-                                        <option value="KNĐ">Không xác định</option>
-                                        <option value="Đông">Đông</option>
-                                        <option value="Tây">Tây</option>
-                                        <option value="Name">Nam</option>
-                                        <option value="Bắc">Bắc</option>
-                                        <option value="Đông Bắc">Đông Bắc</option>
-                                        <option value="Tây Bắc">Tây Bắc</option>
-                                        <option value="Đông Nam">Đông Nam</option>
-                                        <option value="Tây Nam">Tây Nam</option>
-                                    </select></div>
-                                <div class="form-select-search" onclick="$('.showmore').show();$(this).hide()"><select>
-                                        <option> -- Chọn thêm chi tiết --</option>
-                                    </select></div>
-                                <div class="timkiems"><input type="image" name="action" id="btnSearch"
-                                                             style="float:left" src="/content/Images/timkiem.jpg">
-                                    <button type="submit" style="float:right;font-size:1.2rem;padding:8px"
-                                            onclick="setChinhChu()" class="btn btn-danger"><i
-                                                class="glyphicon glyphicon-user"></i> Tin chính chủ
-                                    </button>
-                                    <input type="hidden" name="ChinhChu" id="ChinhChu"></div>
-                            </form>
                         </div>
                     </div>
-                    <p style="margin:31px 0 21px 0"><img src="/Content/images/bn/banner-hotline.gif" alt="Hotline"></p>
+
+
                     <div class="box-module mt10">
                         <div class="bg-modul">Liên kết được quan tâm</div>
                     </div>
