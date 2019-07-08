@@ -22,7 +22,7 @@
 
                     <div class="box-info" style="float: left; margin-left: 15px;">
                         <div class="block">
-                            <div class="col-left">Mã tin12</div>
+                            <div class="col-left">Mã tin</div>
                             <div class="col-right"><b><?php echo $ads->code ?></b></div>
                         </div>
                         <div class="block">
@@ -72,7 +72,7 @@
                         width: 100%;
                         display: inline-block;
                         padding-bottom: 0px;
-                        margin-top: 13px;
+                        margin-top: 2px;
                     }
 
                     #details-auto .col-left {
@@ -81,7 +81,7 @@
                     }
                     .block .col-left {
                         float: left;
-                        width: 200px;
+                        width: 126px;
                     }
                     .col-left {
                         float: left;
