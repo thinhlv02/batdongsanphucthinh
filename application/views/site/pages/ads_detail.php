@@ -1,7 +1,7 @@
 <section class="contact">
     <div class="container-fluid">
         <!--        <div class="title-section"><h2>Chi tiết bài rao</h2></div>-->
-        <div class="col-md-8 col-sm-12 col-xs-12 mt-2" style="margin-top: 20px">
+        <div class="col-md-8 col-sm-12 col-xs-12 mt-2" style="">
             <ol class="breadcrumb">
                 <li><a href="<?php echo base_url('rao-vat') ?>">Rao vặt</a></li>
                 <li class="" style="color: red;text-transform: uppercase;"><?php echo $ads->title ?></li>
@@ -129,7 +129,7 @@
             </div>
         </div>
 
-        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-top: 20px;border: 1px solid #dedede;">
+        <div class="col-md-4 col-sm-12 col-xs-12 mt-2" style="border: 1px solid #dedede;">
             <div class="left-title">Nổi bật cùng chuyên mục</div>
             <?php foreach ($highlight as $key => $value) { ?>
                 <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
@@ -137,8 +137,9 @@
                         <div class="img-news-1">
                             <img src="<?php echo public_url('images/ads/' . $value->img) ?>">
                         </div>
-                        <div style="padding: 10px">
-                            <h4 class="title-news-1 text-info"><?php echo $value->title ?></h4>
+                        <div style="padding: 5px">
+                            <h4 class="title-news-1 text-info" style="color: red;text-transform: uppercase">
+                                <?php echo $value->title ?></h4>
                         </div>
                     </div>
                 </a>
