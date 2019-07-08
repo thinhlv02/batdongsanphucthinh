@@ -35,7 +35,7 @@
                         </div>
                         <div class="block">
                             <div class="col-left">Địa chỉ:</div>
-                            <div class="col-right"><?php echo $ads->address ?></div>
+                            <div class="col-right"><?php echo $ads->area ?></div>
                         </div>
                         <div class="block">
                             <div class="col-left">Diện tích</div>
