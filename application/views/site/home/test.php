@@ -879,7 +879,7 @@
     }
 
     .price-list span {
-        font-weight: 700;
+        /*font-weight: 700;*/
         /*width: 60px;*/
         display: inline-block;
     }
