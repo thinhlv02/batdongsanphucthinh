@@ -51,7 +51,7 @@
                         <i id="vip-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->vip ? 'fa-toggle-on' : 'fa-toggle-off'?>"
                            onclick="vip(<?php echo $row->id?>)"
-                           style="color: green"
+                           style="color: red"
                         ></i>
                     </td>
                     <td>
