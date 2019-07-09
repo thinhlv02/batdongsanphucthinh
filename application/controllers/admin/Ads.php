@@ -140,6 +140,26 @@ Class Ads extends MY_Controller
         redirect(base_url('admin/ads'));
     }
 
+    function vip()
+    {
+        $id = $_POST['id'];
+        $ads = $this->ads_model->get_info($id);
+        $res = array("status" => 0);
+        if ($ads) {
+            $res['status'] = 1;
+            $dataSubmit = array();
+            if ($ads->vip) {
+                $res['class'] = 'fa-toggle-off';
+                $dataSubmit['vip'] = 0;
+            } else {
+                $res['class'] = 'fa-toggle-on';
+                $dataSubmit['vip'] = 1;
+            }
+            $this->ads_model->update($id, $dataSubmit);
+        }
+        echo json_encode($res);
+    }
+
     function highlight()
     {
         $id = $_POST['id'];
