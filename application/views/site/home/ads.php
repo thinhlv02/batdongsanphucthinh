@@ -11,7 +11,7 @@
             <div class="row">
                 <?php foreach ($ads as $key => $value) { ?>
 
-                    <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                             <div class="item-news">
                                 <div class="img-news" style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
