@@ -45,8 +45,8 @@ Class Service_money extends MY_Controller
                 'make_money_by' => $this->input->post('make_money_by'),
             );
 
-            var_dump($data);
-            die();
+//            var_dump($data);
+//            die();
 
             if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật  thành công');
