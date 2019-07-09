@@ -30,8 +30,6 @@
                 <th>Khu vực</th>
                 <th>VIP</th>
                 <th>Nổi bật</th>
-                <th>link bài viết</th>
-                <th>Lượt xem</th>
                 <th>Ngày Tạo</th>
                 <th>Hành động</th>
             </tr>
@@ -61,16 +59,9 @@
                            style="color: green"
                         ></i>
                     </td>
-                    <td><?php echo $row->link ?></td>
-                    <td><?php echo $row->view ?></td>
-
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td>
                         <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
-                        <?php if ($_uid == 1) { ?>
-                            <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
-                        <?php } ?>
-
                     </td>
 
                 </tr>
@@ -88,50 +79,4 @@
         });
     });
 
-    function confirmDel(id) {
-        if(confirm('Bạn có chắc chắn muốn xóa?')){
-//            console.log('delll');
-            window.location.href = '<?php echo base_url('admin/ads/del/')?>' + id;
-        }
-    }
-
-    function vip(id) {
-        $.ajax({
-            url: "<?php echo admin_url('ads/vip')?>",
-            type: "post",
-            data: {
-                id: id
-            },
-            success: function (msg) {
-                msg = JSON.parse(msg);
-                console.log(msg);
-                if(msg.status){
-                    $('#vip-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
-                }
-            },
-            error: function (err) {
-                console.log(err);
-            }
-        })
-    }
-
-    function highlight(id) {
-        $.ajax({
-            url: "<?php echo admin_url('ads/highlight')?>",
-            type: "post",
-            data: {
-                id: id
-            },
-            success: function (msg) {
-                msg = JSON.parse(msg);
-                console.log(msg);
-                if(msg.status){
-                    $('#highlight-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
-                }
-            },
-            error: function (err) {
-                console.log(err);
-            }
-        })
-    }
 </script>
