@@ -55,7 +55,7 @@
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <textarea name="txtContent" class="form-control"
                                   style="height: 120px"><?php echo $ads->content ?></textarea>
-                        <script type="text/javascript">CKEDITOR.replace('txtContent', {height: '300px'}); </script>
+                        <script type="text/javascript">CKEDITOR.replace('txtContent', {height: '500px'}); </script>
                     </div>
                 </div>
 
