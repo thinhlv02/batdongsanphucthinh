@@ -28,8 +28,6 @@
                 <th>Giá</th>
                 <th>Diện tích</th>
                 <th>Khu vực</th>
-                <th>VIP</th>
-                <th>Nổi bật</th>
                 <th>Ngày Tạo</th>
                 <th>Hành động</th>
             </tr>
@@ -45,23 +43,10 @@
                     <td><?php echo $row->price?></td>
                     <td><?php echo $row->acreage?></td>
                     <td><?php echo $row->area?></td>
-                    <td>
-                        <i id="vip-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->vip ? 'fa-toggle-on' : 'fa-toggle-off'?>"
-                           onclick="vip(<?php echo $row->id?>)"
-                           style="color: red"
-                        ></i>
-                    </td>
-                    <td>
-                        <i id="highlight-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->highlight ? 'fa-toggle-on' : 'fa-toggle-off'?>"
-                           onclick="highlight(<?php echo $row->id?>)"
-                           style="color: green"
-                        ></i>
-                    </td>
+
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td>
-                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
+                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/service_money/edit/'.$row->id)?>">Sửa</a>
                     </td>
 
                 </tr>
