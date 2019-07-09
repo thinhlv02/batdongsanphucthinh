@@ -27,7 +27,7 @@ Class Service_money extends MY_Controller
 
     function edit()
     {
-        die('aaaaa');
+//        die('aaaaa');
         $emps= $this->employees_model->get_list(array('where' => array('type' => 1)));
         $this->data['emps'] = $emps;
         $message = $this->session->flashdata('message');
@@ -41,9 +41,12 @@ Class Service_money extends MY_Controller
 
         if ($this->input->post('btnEdit')) {
             $data = array(
-                'service_money' => $this->input->post('txtName'),
-                'make_money_by' => $this->input->post('txtContent'),
+                'service_money' => $this->input->post('service_money'),
+                'make_money_by' => $this->input->post('make_money_by'),
             );
+
+            var_dump($data);
+            die();
 
             if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật  thành công');
