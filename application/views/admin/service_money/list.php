@@ -61,7 +61,7 @@
             <tr class="bg-primary">
                 <td colspan="7">Tổng tiền</td>
                 <td><?php echo($sum > 0 ? number_format($sum) : '') ?></td>
-                <td colspan="4"></td>
+                <td colspan="2"></td>
             </tr>
             </tfoot>
         </table>
