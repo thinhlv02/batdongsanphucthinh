@@ -3,9 +3,9 @@
         <div class="col-sm-12 col-md-12">
 <!--            <div class="title-section"><h2>Tin rao nổi bật</h2></div>-->
 <!--            test-->
-            <div class="box-module">
-                <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật</div>
-            </div>
+<!--            <div class="box-module">-->
+<!--                <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật</div>-->
+<!--            </div>-->
 <!--            test-->
 <!--            <div class="sub-title-section">Khám phá tại đây</div>-->
             <div class="row">
@@ -14,10 +14,10 @@
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                 <div class="item-news">
-                                    <div class="img-news" style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
+                                    <div class="img-ads" style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
                                         <div class="content-news">
                                             <div><strong style="color: #fff"><?php echo $value->title ?></strong></div>
-                                            <p style="color: #fff"><?php echo $value->intro ?></p>
+              s                              <p style="color: #fff"><?php echo $value->intro ?></p>
                                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>" class="btn btn-primary" style="margin-top: 10px">Xem thêm</a>
                                         </div>
                                         <div class="title-news">
@@ -33,7 +33,7 @@
                         <div class="col-md-8 col-sm-12 col-xs-12">
                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                 <div class="item-news">
-                                    <div class="img-news" style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
+                                    <div class="img-ads" style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
                                         <div class="content-news">
                                             <div><strong><?php echo $value->title ?></strong></div>
                                             <p><?php echo $value->intro ?></p>
