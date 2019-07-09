@@ -56,6 +56,7 @@
                         <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                        <select class="form-control" name="make_money_by">
+                           <option value="0">Không</option>
                            <?php foreach ($emps as $k => $val) {?>
 
                             <option value="<?php echo $val->id ?>" <?php echo $val->id == $ads->make_money_by ? 'selected="selected"' : ''; ?> ><?php echo $val->name ?></option>
