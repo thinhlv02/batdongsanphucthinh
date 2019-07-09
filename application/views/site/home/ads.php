@@ -14,10 +14,10 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                             <div class="item-news">
-                                <div class="img-ads" style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
+                                <div class="img-news" style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
                                     <div class="content-news">
                                         <div><strong style="color: #fff"><?php echo $value->title ?></strong></div>
-          s                              <p style="color: #fff"><?php echo $value->intro ?></p>
+                                        <p style="color: #fff"><?php echo $value->intro ?></p>
                                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>" class="btn btn-primary" style="margin-top: 10px">Xem thêm</a>
                                     </div>
                                     <div class="title-news">
