@@ -20,8 +20,8 @@ Class Service_money extends MY_Controller
         $this->data['ads'] = $ads;
         $this->data['_uid'] = $this->_uid;
         $this->data['tab'] = 1;
-        $this->data['temp'] = 'admin/ads/index';
-        $this->data['view'] = 'admin/ads/list';
+        $this->data['temp'] = 'admin/service_money/index';
+        $this->data['view'] = 'admin/service_money/list';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -35,7 +35,7 @@ Class Service_money extends MY_Controller
         $ads = $this->ads_model->get_info($id);
 //        var_dump($ads);
         if (!$ads) {
-            redirect(base_url('admin/ads'));
+            redirect(base_url('admin/service_money'));
         }
 
         if ($this->input->post('btnEdit')) {
@@ -46,15 +46,15 @@ Class Service_money extends MY_Controller
 
             if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật  thành công');
-                redirect(base_url('admin/ads'));
+                redirect(base_url('admin/service_money'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
         $this->data['tab'] = 3;
         $this->data['ads'] = $ads;
-        $this->data['temp'] = 'admin/ads/index';
-        $this->data['view'] = 'admin/ads/edit';
+        $this->data['temp'] = 'admin/service_money/index';
+        $this->data['view'] = 'admin/service_money/edit';
         $this->load->view('admin/layout', $this->data);
     }
 
