@@ -17,6 +17,7 @@ Class Ads extends MY_Controller
         $input['order'] = array('highlight', 'desc');
         $ads = $this->ads_model->get_list($input);
         $this->data['ads'] = $ads;
+        $this->data['_uid'] = $this->_uid;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/ads/index';
         $this->data['view'] = 'admin/ads/list';
