@@ -58,7 +58,7 @@
                        <select class="form-control" name="make_money_by">
                            <?php foreach ($emps as $k => $val) {?>
 
-                            <option value="<?php echo $val->id ?>" <?php if ($ads->id == $val->id) echo 'selected=selected' ;else echo ''; ?>><?php echo $val->name ?></option>
+                            <option value="<?php echo $val->id ?>" <?php echo $val->id == $ads->make_money_by ? 'selected="selected"' : ''; ?> ><?php echo $val->name ?></option>
                            <?php } ?>
                        </select>
                     </div>
