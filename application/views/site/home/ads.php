@@ -9,7 +9,7 @@
 <!--            test-->
 <!--            <div class="sub-title-section">Khám phá tại đây</div>-->
             <div class="row">
-                <?php foreach ($ads as $key => $value) { ?>
+                <?php foreach ($vip as $key => $value) { ?>
 
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">

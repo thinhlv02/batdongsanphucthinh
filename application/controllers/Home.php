@@ -20,6 +20,11 @@ Class Home extends MY_Controller
         $this->data['li_1'] = 1;
         $news = $this->news_model->get_list(array('limit' => array(5, 0)));
         $this->data['news'] = $news;
+
+        //ads vip
+        $ads = $this->ads_model->get_list(array('where' => array('vip' => 1), 'limit' => array(4, 0)));
+        $this->data['vip'] = $ads;
+
         //ads nổi bật
         $ads = $this->ads_model->get_list(array('where' => array('highlight' => 1), 'limit' => array(8, 0)));
         $this->data['ads'] = $ads;
