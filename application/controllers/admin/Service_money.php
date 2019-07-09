@@ -27,6 +27,7 @@ Class Service_money extends MY_Controller
 
     function edit()
     {
+        die('aaaaa');
         $emps= $this->employees_model->get_list(array('where' => array('type' => 1)));
         $this->data['emps'] = $emps;
         $message = $this->session->flashdata('message');
