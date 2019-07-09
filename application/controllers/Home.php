@@ -240,7 +240,7 @@ Class Home extends MY_Controller
 //        $this->data['title'] = $ads->document_title;
         $this->data['title'] = $ads->title;
         $this->data['description'] = $ads->meta_description;
-        $this->data['image'] = public_url('images/adss/' . $ads->img);
+        $this->data['image'] = public_url('images/ads/' . $ads->img);
         $this->data['page_url'] = base_url('rao-vat/' . create_slug($ads->title) . '-' . $ads->id);
 //        $this->data['robots'] = $ads->robots_meta;
 //        $this->data['canonical'] = $ads->canonical_url;
