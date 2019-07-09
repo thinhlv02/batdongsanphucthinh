@@ -34,7 +34,10 @@
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($ads as $row){ ?>
+            <?php $sum = 0;
+            foreach ($ads as $row){
+                $sum += $row->service_money;
+                ?>
                 <tr>
 <!--                    <td>--><?php //echo $row->id?><!--</td>-->
                     <td><?php echo $row->code?></td>
@@ -54,6 +57,13 @@
 
             <?php }?>
             </tbody>
+            <tfoot>
+            <tr class="bg-primary">
+                <td colspan="8">Tổng tiền</td>
+                <td><?php echo($sum > 0 ? number_format($sum) : '') ?></td>
+                <td colspan="3"></td>
+            </tr>
+            </tfoot>
         </table>
         <!-- <a href="#" class="btn btn-danger">Xóa đã chọn </a> -->
     </div>
