@@ -34,15 +34,6 @@ Class Ads extends MY_Controller
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $config['max_size']    = '10000';
             $this->load->library("upload", $config);
-//            var_dump($this->upload->do_upload('img_news'));
-
-//            die();
-//            $check_null = $this->upload->do_upload('img_news');
-
-            //if null
-//            if ($check_null === false) {
-//
-//            }
 
             $data = array(
                 'title' => $this->input->post('txtName'),
@@ -53,24 +44,13 @@ Class Ads extends MY_Controller
                 'phone' => $this->input->post('phone'),
                 'intro' => $this->input->post('txtIntro'),
                 'price' => $this->input->post('price'),
-//                    'unit' => $this->input->post('unit'),
                 'acreage' => $this->input->post('acreage'),
-//                    'document_title' => $this->input->post('txtDocumentTitle'),
-//                    'meta_description' => $this->input->post('txtMetaDescription'),
-//                    'meta_keywords' => $this->input->post('txtMetaKeywords'),
-//                    'canonical_url' => $this->input->post('txtCanonicalUrl'),
-//                    'robots_meta' => implode(', ',$this->input->post('robots_meta')),
-
                 'created_by' => $this->_uid,
-
             );
 
             if ($this->upload->do_upload('img_news')) {
                 $file_data = $this->upload->data();
-//                'img' => $file_data['file_name'],
                 $data['img'] = $file_data['file_name'];
-//                echo '<pre>',print_r($data,1),'</pre>';
-
             } else {
                 $data['img'] = 'default.png';
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
@@ -80,10 +60,8 @@ Class Ads extends MY_Controller
                 $this->session->set_flashdata('message', 'Thêm rao bán thành công');
                 redirect(base_url('admin/ads'));
             } else {
-//                    die('ảnh trống');
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
-
 
         }
         $this->data['tab'] = 2;
@@ -168,15 +146,8 @@ Class Ads extends MY_Controller
 //                'unit' => $this->input->post('unit'),
                 'acreage' => $this->input->post('acreage'),
                 'link' => $this->input->post('link'),
-                'view' => $this->input->post('view'),
-//                'meta_description' => $this->input->post('txtMetaDescription'),
-//                'meta_keywords' => $this->input->post('txtMetaKeywords'),
-//                'canonical_url' => $this->input->post('txtCanonicalUrl'),
-//                'robots_meta' => implode(', ',$this->input->post('robots_meta')),
+                'view' => $this->input->post('view')
             );
-
-//            var_dump($data);
-//            die;
 
             $config['upload_path'] = './public/images/ads';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
