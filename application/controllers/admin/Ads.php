@@ -44,39 +44,47 @@ Class Ads extends MY_Controller
 //
 //            }
 
-            if ($this->upload->do_upload('img_news')) {
-                $file_data = $this->upload->data();
-                $data = array(
-                    'title' => $this->input->post('txtName'),
-                    'code' => generateRandomString(6),
-                    'view' => generateRandomString(2),
-                    'content' => $this->input->post('txtContent'),
-                    'area' => $this->input->post('area'),
-                    'phone' => $this->input->post('phone'),
-                    'intro' => $this->input->post('txtIntro'),
-                    'price' => $this->input->post('price'),
+            $data = array(
+                'title' => $this->input->post('txtName'),
+                'code' => generateRandomString(6),
+                'view' => generateRandomString(2),
+                'content' => $this->input->post('txtContent'),
+                'area' => $this->input->post('area'),
+                'phone' => $this->input->post('phone'),
+                'intro' => $this->input->post('txtIntro'),
+                'price' => $this->input->post('price'),
 //                    'unit' => $this->input->post('unit'),
-                    'acreage' => $this->input->post('acreage'),
+                'acreage' => $this->input->post('acreage'),
 //                    'document_title' => $this->input->post('txtDocumentTitle'),
 //                    'meta_description' => $this->input->post('txtMetaDescription'),
 //                    'meta_keywords' => $this->input->post('txtMetaKeywords'),
 //                    'canonical_url' => $this->input->post('txtCanonicalUrl'),
 //                    'robots_meta' => implode(', ',$this->input->post('robots_meta')),
-                    'img' => $file_data['file_name'],
-                    'created_by' => $this->_uid,
 
-                );
+                'created_by' => $this->_uid,
+
+            );
+
+            if ($this->upload->do_upload('img_news')) {
+                $file_data = $this->upload->data();
+//                'img' => $file_data['file_name'],
+                $data['img'] = $file_data['file_name'];
 //                echo '<pre>',print_r($data,1),'</pre>';
-                if ($this->ads_model->create($data)) {
-                    $this->session->set_flashdata('message', 'Thêm rao bán thành công');
-                    redirect(base_url('admin/ads'));
-                } else {
-//                    die('ảnh trống');
-                    $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
-                }
+
             } else {
+                $data['img'] = 'default_img.png';
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
+
+            if ($this->ads_model->create($data)) {
+                $this->session->set_flashdata('message', 'Thêm rao bán thành công');
+                redirect(base_url('admin/ads'));
+            } else {
+//                    die('ảnh trống');
+                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
+            }
+
+
         }
         $this->data['tab'] = 2;
         $this->data['temp'] = 'admin/ads/index';
