@@ -310,7 +310,7 @@ Class Home extends MY_Controller
             $dataSubmit = array();
 
             $dataSubmit['view'] = $view_new;
-            var_dump($id);
+            var_dump($id. '-----');
 
             var_dump($dataSubmit);
 
