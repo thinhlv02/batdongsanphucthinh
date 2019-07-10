@@ -34,6 +34,9 @@ Class Ads extends MY_Controller
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $config['max_size']    = '10000';
             $this->load->library("upload", $config);
+            var_dump($this->upload->do_upload('img_news'));
+
+            die();
             if ($this->upload->do_upload('img_news')) {
                 $file_data = $this->upload->data();
                 $data = array(
