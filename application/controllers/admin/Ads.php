@@ -224,11 +224,4 @@ Class Ads extends MY_Controller
         echo json_encode($res);
     }
 
-    function update_view() {
-        echo 'dcm';
-        die();
-
-        $id = $this->input->get('id');
-        echo 'fun udpate view '.$id;
-    }
 }

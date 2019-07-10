@@ -63,7 +63,7 @@
             }
         };
 
-        getAjax('<?php echo base_url('ads/update_view'); ?>', 'id=' + UrlEncode.encode(id), '', 'GET', '', false, _onSuccess);
+        getAjax('<?php echo base_url('home/update_view'); ?>', 'id=' + UrlEncode.encode(id), '', 'GET', '', false, _onSuccess);
 
     }
 </script>

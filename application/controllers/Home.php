@@ -297,4 +297,12 @@ Class Home extends MY_Controller
         $this->load->view("site/layout/sitemap", $this->data);
     }
 
+    function update_view() {
+        echo 'dcm';
+        die();
+
+        $id = $this->input->get('id');
+        echo 'fun udpate view '.$id;
+    }
+
 }
