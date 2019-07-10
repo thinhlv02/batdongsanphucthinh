@@ -46,6 +46,7 @@
 
         var _onSuccess = function(data){
             var obj = jQuery.parseJSON(data);
+            console.log(data);
 
             if(obj.errMsg == 'ok')
             {
