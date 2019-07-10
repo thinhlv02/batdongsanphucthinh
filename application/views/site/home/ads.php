@@ -44,6 +44,46 @@
 <script>
     function updateView(id) {
 
+        var _onSuccess = function(data){
+            var obj = jQuery.parseJSON(data);
+
+            if(obj.errMsg == 'unlogin')
+            {
+                window.location.reload(true);
+                return;
+            }
+            else if(obj.errMsg == '' && obj.ok == 'ok')
+            {
+                alert('Thêm mới website thành công');
+                window.location.reload(true);
+                return;
+            }
+            else if(obj.errMsg == 'domain_not_real_exist')
+            {
+                alert('Domain website không tồn tại. Bạn vui lòng nhập domain website khác');
+                showLoading(false);
+                return;
+            }
+            else if(obj.errMsg == 'domain_exist')
+            {
+                alert('Website đã được add vào hệ thống. Bạn không thể thêm được website.');
+                showLoading(false);
+                return;
+            }
+            else if(obj.errMsg == 'domain_invalid')
+            {
+                alert('Domain không hợp lệ');
+                showLoading(false);
+                return;
+            }
+            else
+            {
+                alert(obj.errMsg);
+                showLoading(false);
+                return;
+            }
+        };
+
         getAjax('<?php echo site_url('ads/update_view'); ?>', 'id=' + UrlEncode.encode(id), '', 'GET', '', false, _onSuccess);
 
     }
