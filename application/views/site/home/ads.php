@@ -43,6 +43,8 @@
 
 <script>
     function updateView() {
-        console.log('hello update view');
+        getAjax('<?php echo site_url('ads/update_view'); ?>', '', '', 'GET', '', false, _onSuccess);
+
+        // console.log('hello update view');
     }
 </script>

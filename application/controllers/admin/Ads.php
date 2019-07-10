@@ -223,4 +223,8 @@ Class Ads extends MY_Controller
         }
         echo json_encode($res);
     }
+
+    function update_view() {
+        echo 'fun udpate view';
+    }
 }
