@@ -61,7 +61,7 @@ Class Ads extends MY_Controller
                     $this->session->set_flashdata('message', 'Thêm rao bán thành công');
                     redirect(base_url('admin/ads'));
                 } else {
-                    die('ảnh trống');
+//                    die('ảnh trống');
                     $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
                 }
             } else {
