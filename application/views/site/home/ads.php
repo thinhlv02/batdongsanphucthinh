@@ -45,22 +45,22 @@
     function updateView(id) {
 
         var _onSuccess = function(data){
-            var obj = jQuery.parseJSON(data);
+            // var obj = jQuery.parseJSON(data);
             console.log(data);
 
-            if(obj.errMsg == 'ok')
-            {
-                console.log(data);
-                // window.location.reload(true);
-                // return;
-            }
-
-            else
-            {
-                console.log('falseweeeeeeeee');
-
-                return;
-            }
+            // if(obj.errMsg == 'ok')
+            // {
+            //     console.log(data);
+            //     // window.location.reload(true);
+            //     // return;
+            // }
+            //
+            // else
+            // {
+            //     console.log('falseweeeeeeeee');
+            //
+            //     return;
+            // }
         };
 
         getAjax('<?php echo base_url('home/update_view'); ?>', 'id=' + UrlEncode.encode(id), '', 'GET', '', false, _onSuccess);

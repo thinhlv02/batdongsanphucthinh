@@ -302,7 +302,7 @@ Class Home extends MY_Controller
 //        die();
 
         $id = $this->input->get('id');
-        echo 'fun udpate view '.$id;
+        echo $id;
     }
 
 }
