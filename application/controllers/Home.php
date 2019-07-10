@@ -311,6 +311,8 @@ Class Home extends MY_Controller
 //            var_dump($dataSubmit);
             $this->ads_model->update($id, $dataSubmit);
             echo $id.'=>'.$view_new;
+        } else {
+            echo 'not update';
         }
 
 //        echo json_encode($res);
