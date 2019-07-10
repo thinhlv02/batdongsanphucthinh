@@ -72,7 +72,7 @@ Class Ads extends MY_Controller
 //                echo '<pre>',print_r($data,1),'</pre>';
 
             } else {
-                $data['img'] = 'default_img.png';
+                $data['img'] = 'default.png';
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
 
