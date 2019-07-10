@@ -71,7 +71,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Diện tích<span
                                 class="required">*</span></label>
-                    <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <input type="text" name="acreage" value="<?php echo $ads->acreage ?>"
                                required="required" class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">
                     </div>
