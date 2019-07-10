@@ -299,31 +299,21 @@ Class Home extends MY_Controller
 
     function update_view() {
 
-
         $id = $this->input->get('id');
         $ads = $this->ads_model->get_info($id);
         $view_old = $ads->view;
         $view_new = $view_old + 14;
 
         if ($ads) {
-
             $dataSubmit = array();
-
             $dataSubmit['view'] = $view_new;
-            var_dump($id. '-----');
-
-            var_dump($dataSubmit);
-
-//            $this->ads_model->update($id, $dataSubmit);
-//
-//            echo $view_new;
+//            var_dump($id. '-----');
+//            var_dump($dataSubmit);
+            $this->ads_model->update($id, $dataSubmit);
+            echo $id.'=>'.$view_new;
         }
 
-
 //        echo json_encode($res);
-
-
-
 
 //        echo 'dcm';
 //        die();
