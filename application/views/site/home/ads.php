@@ -13,7 +13,7 @@
 
                     <div class="col-md-3 col-sm-6 col-xs-12 card">
                         <div class="card-body mb-2">
-                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>" onclick="updateView();">
+                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>" onclick="updateView('<?php echo $value->id; ?>');">
                                 <div class="item-news">
                                     <div class="img-news" style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
                                         <div class="content-news">
@@ -42,9 +42,9 @@
 </section>
 
 <script>
-    function updateView() {
-        getAjax('<?php echo site_url('ads/update_view'); ?>', '', '', 'GET', '', false, _onSuccess);
+    function updateView(id) {
 
-        // console.log('hello update view');
+        getAjax('<?php echo site_url('ads/update_view'); ?>', 'id=' + UrlEncode.encode(id), '', 'GET', '', false, _onSuccess);
+
     }
 </script>

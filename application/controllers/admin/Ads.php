@@ -225,6 +225,8 @@ Class Ads extends MY_Controller
     }
 
     function update_view() {
-        echo 'fun udpate view';
+
+        $id = $this->input->get('id');
+        echo 'fun udpate view '.$id;
     }
 }
