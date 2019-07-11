@@ -57,15 +57,11 @@
                 <div class="clearfix"></div>
             </div>
             <div class="x_content">
-                <p class="text-muted font-13 m-b-30">
-                    Mọi người cần copy chính xác thông tin tài khoản ngân hàng để gửi cho khách hàng, mọi sai sót đều phải chịu trách nhiệm cao nhất
-                </p>
+
                 <div id="datatable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
 
                     <div class="row">
                         <div class="col-sm-12">
-<!--                            <table id="datatable" class="table table-striped table-bordered dataTable no-footer"-->
-<!--                                   role="grid" aria-describedby="datatable_info">-->
                                 <table class="table">
                                 <thead>
                                 <tr>

@@ -13,7 +13,7 @@ Class Dashboard extends MY_Controller
         $lstData= $this->gmail_model->get_list();
         $this->data['lstData'] = $lstData;
 
-        var_dump($lstData);
+//        var_dump($lstData);
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $this->data['temp'] = 'admin/dashboard';
