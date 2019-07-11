@@ -6,9 +6,6 @@ Class Dashboard extends MY_Controller
     {
         parent::__construct();
         $this->load->model('gmail_model');
-//        $this->load->model('Player_model');
-//        $this->load->model('Events_model');
-//        $this->load->model('Gopy_model');
     }
 
     function index()
