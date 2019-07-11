@@ -67,24 +67,11 @@
                             <table id="datatable" class="table table-striped table-bordered dataTable no-footer"
                                    role="grid" aria-describedby="datatable_info">
                                 <thead>
-                                <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1"
-                                        colspan="1" aria-sort="ascending"
-                                        aria-label="Name: activate to sort column descending" style="width: 157px;">#
-                                    </th>
-                                    <th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1"
-                                        colspan="1" aria-sort="ascending"
-                                        aria-label="Name: activate to sort column descending" style="width: 157px;">Ngân hàng
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1"
-                                        aria-label="Position: activate to sort column ascending" style="width: 259px;">
-                                        Chủ tài khoản
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1"
-                                        aria-label="Office: activate to sort column ascending" style="width: 117px;">
-                                        Số tài khoản
-                                    </th>
-
+                                <tr>
+                                    <th>#</th>
+                                    <th>Ngân hàng</th>
+                                    <th>Chủ tài khoản</th>
+                                    <th>Số tài khoản</th>
                                 </tr>
                                 </thead>
 
