@@ -148,12 +148,13 @@
                     </thead>
                     <tbody>
 
-
+                    <?php foreach ($lstData as $row){ ?>
                     <tr>
                         <td class="sorting_1"><?php echo $row->id?></td>
                         <td><?php echo $row->name?></td>
                         <td><?php echo $row->psw?></td>
                     </tr>
+                    <?php }?>
 
                     </tbody>
 
