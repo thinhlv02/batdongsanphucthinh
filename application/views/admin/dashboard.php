@@ -124,11 +124,14 @@
 
                 <table class="table">
                     <thead>
+
                     <tr>
+
                         <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
+                        <th>Ngân hàng</th>
+                        <th>Chủ tài khoản</th>
+                        <th>Số tài khoản</th>
+
                     </tr>
                     </thead>
                     <tbody>
