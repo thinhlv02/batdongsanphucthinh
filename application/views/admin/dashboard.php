@@ -115,18 +115,15 @@
         </div>
     </div>
 
-    <div class="col-md-6 col-sm-6 col-xs-6">
+    <div class="col-md-6 col-sm-6 col-xs-12">
         <div class="x_panel">
             <div class="x_title">
-                <h2>Thông tin tài khoản facebook
-                    <small>Users</small>
-                </h2>
+                <h2>Stripped table <small>Stripped table subtitle</small></h2>
                 <ul class="nav navbar-right panel_toolbox">
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                           aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Settings 1</a>
                             </li>
@@ -140,52 +137,31 @@
                 <div class="clearfix"></div>
             </div>
             <div class="x_content">
-                <p class="text-muted font-13 m-b-30">
-                    Mọi người cần copy chính xác thông tin tài khoản ngân hàng để gửi cho khách hàng, mọi sai sót đều phải chịu trách nhiệm cao nhất
-                </p>
-                <div id="datatable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
 
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <table id="datatable" class="table table-striped table-bordered dataTable no-footer"
-                                   role="grid" aria-describedby="datatable_info">
-                                <thead>
-                                <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1"
-                                        colspan="1" aria-sort="ascending"
-                                        aria-label="Name: activate to sort column descending" style="width: 157px;">#
-                                    </th>
-                                    <th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1"
-                                        colspan="1" aria-sort="ascending"
-                                        aria-label="Name: activate to sort column descending" style="width: 157px;">Gmail
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1"
-                                        aria-label="Position: activate to sort column ascending" style="width: 259px;">
-                                        Mật khẩu
-                                    </th>
-
-                                </tr>
-                                </thead>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                    </tr>
+                    </thead>
+                    <tbody>
 
 
-                                <tbody>
+                    <tr>
+                        <td class="sorting_1"><?php echo $row->id?></td>
+                        <td><?php echo $row->name?></td>
+                        <td><?php echo $row->psw?></td>
+                    </tr>
 
-                                <?php foreach ($lstData as $row){ ?>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1"><?php echo $row->id?></td>
-                                        <td><?php echo $row->name?></td>
-                                        <td><?php echo $row->psw?></td>
-                                    </tr>
-                                <?php }?>
+                    </tbody>
 
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                </table>
 
-                </div>
             </div>
         </div>
     </div>
+
 
 </div>
