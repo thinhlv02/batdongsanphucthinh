@@ -20,9 +20,4 @@ Class Dashboard extends MY_Controller
         $this->load->view('admin/layout', $this->data);
     }
 
-    function lst_player()
-    {
-
-
-    }
 }
