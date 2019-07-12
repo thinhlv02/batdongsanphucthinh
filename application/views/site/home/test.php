@@ -46,7 +46,7 @@
 
                                         </div>
                                         <div class="price-list mb-3">
-                                            <span>Link bài viết</span>: <a href="<?php echo $value->link ?>"
+                                            <span>Link bài viết1</span>: <a href="<?php echo $value->link ?>"
                                                                            target="_blank">
                                                 <?php echo $value->link ?></a>
 
