@@ -24,6 +24,10 @@ mt-2 {
     border-bottom: 2px #15a1b1 solid;
 }
 
+.p-5 {
+    padding: 5px !important;
+}
+
 .bg-modul {
     background: #15a1b1;
     color: #fff;
