@@ -70,7 +70,7 @@
                                 class="required"></span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <input type="text" id="txtFrom" name="date" required
-                               value=""
+                               value="<?php echo date('d-m-Y') ?>"
                                class="form-control col-md-7 col-xs-12"/>
                     </div>
                 </div>
