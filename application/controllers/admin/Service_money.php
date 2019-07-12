@@ -39,7 +39,7 @@ Class Service_money extends MY_Controller
             redirect(base_url('admin/service_money'));
         }
 
-        $date =  $this->input->post('date1');
+        $date =  $this->input->post('date');
         $date = date('Y-m-d', strtotime($date));
 
         if ($this->input->post('btnEdit')) {
