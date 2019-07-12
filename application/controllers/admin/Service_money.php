@@ -11,12 +11,34 @@ Class Service_money extends MY_Controller
 
     function index()
     {
+        $emps= $this->employees_model->get_list(array('where' => array('type' => 1)));
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
         $input = array();
         $input['order'] = array('highlight', 'desc');
         $ads = $this->ads_model->get_list($input);
+
+        $ads_end = [];
+        $index = 0;
+        foreach ($ads as $key => $val) {
+            $index++;
+            $ads_end[$index] = new stdClass();
+            $ads_end[$index]->id = $val->id;
+            $ads_end[$index]->code = $val->code;
+            $ads_end[$index]->img = $val->img;
+            $ads_end[$index]->title = $val->title;
+            $ads_end[$index]->price = $val->price;
+            $ads_end[$index]->acreage = $val->acreage;
+            $ads_end[$index]->area = $val->area;
+            $ads_end[$index]->service_money = $val->service_money;
+            $ads_end[$index]->make_money_by = $val->make_money_by;
+            $ads_end[$index]->pay_time = $val->pay_time;
+            $ads_end[$index]->name_emp = isset($emps[$val->make_money_by]) ? $emps->name: 'dcm';
+//            $devices_end[$key]->id = $val->id;
+        }
+
+
         $this->data['ads'] = $ads;
         $this->data['_uid'] = $this->_uid;
         $this->data['tab'] = 1;

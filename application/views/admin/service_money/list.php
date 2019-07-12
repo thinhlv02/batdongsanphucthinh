@@ -49,7 +49,7 @@
                     <td><?php echo $row->area?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td><?php echo $row->service_money > 0 ? number_format($row->service_money) : '' ?></td>
-                    <td><?php echo $row->make_money_by?></td>
+                    <td><?php echo $row->name_emp ?></td>
                     <td><?php echo $row->pay_time ?></td>
                     <td>
                         <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/service_money/edit/'.$row->id)?>">Sửa</a>
