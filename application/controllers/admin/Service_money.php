@@ -34,7 +34,13 @@ Class Service_money extends MY_Controller
             $ads_end[$index]->service_money = $val->service_money;
             $ads_end[$index]->make_money_by = $val->make_money_by;
             $ads_end[$index]->pay_time = $val->pay_time;
-            $ads_end[$index]->name_emp = isset($emps[$val->make_money_by]) ? $emps->name: 'dcm';
+
+            if ($val->make_money_by > 0) {
+                $ads_end[$index]->name_emp = isset($emps[$val->make_money_by]) ? $emps->name: 'dcm';
+            } else {
+                $ads_end[$index]->name_emp = '';
+            }
+
 //            $devices_end[$key]->id = $val->id;
         }
 
