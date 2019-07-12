@@ -39,14 +39,18 @@ Class Service_money extends MY_Controller
             redirect(base_url('admin/service_money'));
         }
 
+        $date =  $this->input->post('date1');
+        $date = date('Y-m-d', strtotime($date));
+
         if ($this->input->post('btnEdit')) {
             $data = array(
                 'service_money' => $this->input->post('service_money'),
                 'make_money_by' => $this->input->post('make_money_by'),
+                'pay_time' => $date,
             );
 
-//            var_dump($data);
-//            die();
+            var_dump($data);
+            die();
 
             if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật  thành công');

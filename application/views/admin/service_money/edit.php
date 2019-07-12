@@ -65,6 +65,16 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                    <label class="control-label col-md-1 col-sm-1 col-xs-12 text-left" for="first-name">TG nạp<span
+                                class="required"></span></label>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input type="text" id="txtFrom" name="date" required
+                               value="<?php echo date('d-m-Y H:i:s', strtotime($lstdata->time_open)) ?>"
+                               class="form-control col-md-7 col-xs-12"/>
+                    </div>
+                </div>
+
                 <div class="form-group" style="margin-top: 30px">
                     <div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-2" style="width: 70px">
                         <input type="submit" id="btnAddProduct" name="btnEdit" required="required"
