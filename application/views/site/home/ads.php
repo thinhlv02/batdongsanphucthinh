@@ -1,11 +1,12 @@
 <section class="news">
     <div class="container-fluid">
+        <div class="box-module">
+            <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Tin Vip</div>
+        </div>
         <div class="col-sm-12 col-md-12">
 <!--            <div class="title-section"><h2>Tin rao nổi bật</h2></div>-->
 <!--            test-->
-            <div class="box-module">
-                <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Tin Vip</div>
-            </div>
+
 <!--            test-->
 <!--            <div class="sub-title-section">Khám phá tại đây</div>-->
             <div class="row">
