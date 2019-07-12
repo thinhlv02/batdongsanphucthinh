@@ -45,7 +45,7 @@ Class Service_money extends MY_Controller
         }
 
 
-        $this->data['ads'] = $ads;
+        $this->data['ads'] = $ads_end;
         $this->data['_uid'] = $this->_uid;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/service_money/index';
