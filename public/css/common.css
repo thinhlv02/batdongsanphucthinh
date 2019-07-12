@@ -2,8 +2,17 @@
     margin-top: 10px;
 }
 
-mt-2 {
+.mt-2 {
     margin-top: 2px !important;
+}
+.mt-3 {
+    margin-top: 3px !important;
+}
+.mt-4 {
+    margin-top: 4px !important;
+}
+.mt-5 {
+    margin-top: 5px !important;
 }
 .mb-2 {
     margin-bottom: 2px !important;
