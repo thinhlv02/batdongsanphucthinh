@@ -34,7 +34,14 @@ Class Service_money extends MY_Controller
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
         $ads = $this->ads_model->get_info($id);
-        var_dump($ads);
+        $pay_time = $ads->pay_time;
+        if ($pay_time == '0000-00-00') {
+            $pay_time = date('d-m-Y');
+        }
+         else {
+             $pay_time = date('d-m-Y', strtotime($ads->pay_time));
+         }
+//        var_dump($ads);
         if (!$ads) {
             redirect(base_url('admin/service_money'));
         }
@@ -49,8 +56,8 @@ Class Service_money extends MY_Controller
                 'pay_time' => $date,
             );
 
-            var_dump($data);
-            die();
+//            var_dump($data);
+//            die();
 
             if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật  thành công');
@@ -60,6 +67,7 @@ Class Service_money extends MY_Controller
             }
         }
         $this->data['tab'] = 3;
+        $this->data['pay_time'] = $pay_time;
         $this->data['ads'] = $ads;
         $this->data['temp'] = 'admin/service_money/index';
         $this->data['view'] = 'admin/service_money/edit';
