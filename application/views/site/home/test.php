@@ -43,15 +43,17 @@
                                         </div>
                                         <div class="price-list mb-3">
                                             <span>Khu vực</span>: <strong> <?php echo $value->area ?> </strong>
-                                            <span class="pull-right time">
-                                             <i class="glyphicon glyphicon-time"></i>
-                                            <?php echo date('Y-m-d', strtotime($value->created_at)) ?>
-                                        </span>
+
                                         </div>
                                         <div class="price-list mb-3">
                                             <span>Link bài viết</span>: <a href="<?php echo $value->link ?>"
                                                                            target="_blank">
                                                 <?php echo $value->link ?></a>
+
+                                            <span class="pull-right time">
+                                             <i class="glyphicon glyphicon-time"></i>
+                                            <?php echo date('Y-m-d', strtotime($value->created_at)) ?>
+                                        </span>
                                         </div>
                                     </div>
                                 </div>
