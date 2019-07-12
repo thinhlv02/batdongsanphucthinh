@@ -30,6 +30,7 @@
                 <th>Ngày Tạo</th>
                 <th>service_money</th>
                 <th>make_money_by</th>
+                <th>pay time</th>
                 <th>Hành động</th>
             </tr>
             </thead>
@@ -49,6 +50,7 @@
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td><?php echo $row->service_money?></td>
                     <td><?php echo $row->make_money_by?></td>
+                    <td><?php echo $row->pay_time ?></td>
                     <td>
                         <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/service_money/edit/'.$row->id)?>">Sửa</a>
                     </td>
