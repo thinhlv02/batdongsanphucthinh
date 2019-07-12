@@ -48,7 +48,7 @@
                     <td><?php echo $row->acreage?></td>
                     <td><?php echo $row->area?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
-                    <td><?php echo $row->service_money?></td>
+                    <td><?php echo $row->service_money > 0 ? number_format($row->service_money) : '' ?></td>
                     <td><?php echo $row->make_money_by?></td>
                     <td><?php echo $row->pay_time ?></td>
                     <td>
