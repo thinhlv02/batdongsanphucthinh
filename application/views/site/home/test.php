@@ -46,7 +46,7 @@
 
                                         </div>
                                         <div class="price-list mb-3">
-                                            <span>Link bài viết1</span>: <a href="<?php echo $value->link ?>"
+                                            <span>Link bài viết</span>: <a href="<?php echo $value->link ?>"
                                                                            target="_blank">
                                                 <?php echo $value->link ?></a>
 
@@ -770,19 +770,21 @@
     }
 
     .box-img-thumb {
-        width: 150px;
+        /*width: 150px;*/
+        width: 16%;
         float: left;
         margin-right: 15px;
     }
 
     #box-home-svip .box-info-list {
         /*width: 521px;*/
-        width: 721px;
+        /*width: 721px;*/
     }
 
     .box-info-list {
         float: left;
-        width: 538px;
+        /*width: 538px;*/
+        width:82%;
     }
 
     /*.box-title-item label {*/
