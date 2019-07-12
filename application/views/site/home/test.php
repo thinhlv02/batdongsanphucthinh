@@ -7,7 +7,7 @@
                 <div id="center-body">
 
                     <div id="raovat-nb">
-                        <div class="box-module mt10">
+                        <div class="box-module mt-2">
                             <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật</div>
                         </div>
                         <div class="clearfix" id="box-home-svip">
@@ -58,13 +58,13 @@
 
                             <?php } ?>
 
-                            <div class="pull-right mt10 viewall">
+                            <div class="pull-right mt-10 viewall">
                                 <a href="/bat-dong-san-ban-tai-viet-nam-s32113"><i class="glyphicon glyphicon-th"></i>
                                     Xem tất cả</a>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt10">
+                    <div class="row mt-10">
                         <div class="col-sm-6">
                             <div class="bg-modul"><h2>Dự án nổi bật</h2></div>
                             <div class="border-box col-hom-news">
@@ -222,7 +222,7 @@
                         </div>
                     </div>
 
-                    <div class="box-module mt10">
+                    <div class="box-module mt-2">
                         <div class="bg-modul"><h1><i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
                     </div>
                     <div class="clearfix">
@@ -633,7 +633,7 @@
                     </style>
 
 
-                    <div class="box-module mt10">
+                    <div class="box-module mt-2">
                         <div class="bg-modul">Liên kết được quan tâm</div>
                     </div>
                     <div class="box-links-right"><p><span style="font-size:12px"><span
