@@ -50,7 +50,7 @@
             <?php } ?>
             </div>
             <div style="text-align: center">
-                <a href="<?php echo base_url('tin-tuc.html')?>" class="btn btn-primary" style="margin-top: 20px">Xem thêm</a>
+                <a href="<?php echo base_url('tin-tuc.html')?>" class="btn btn-primary" style="margin-top: 2px">Xem thêm</a>
             </div>
         </div>
     </div>
