@@ -295,13 +295,13 @@ section{
     background-color: #fff;
 }
 .icon-style {
-    font-size: 40px;
-    height: 80px;
-    width: 80px;
-    margin: 10px;
-    line-height: 80px;
+    font-size: 19px;
+    height: 43px;
+    width: 43px;
+    margin: 3px;
+    line-height: 49px;
     background-color: #fff;
-    /*color: #fff;*/
+    /* color: #fff; */
     color: #1B60A8;
     border: 1px solid #1B60A8;
     text-align: center;
