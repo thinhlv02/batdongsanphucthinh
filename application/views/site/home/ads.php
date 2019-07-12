@@ -19,7 +19,7 @@
                                         <div class="content-news">
                                             <div><strong style="color: #fff"><?php echo $value->title ?></strong></div>
                                             <p style="color: #fff"><?php echo $value->intro ?></p>
-                                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>" class="btn btn-primary mt-5">Chi tiết</a>
+                                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>" class="btn btn-primary mt-5">Xem thêm</a>
                                         </div>
                                         <div class="title-news">
                                             <span style="font-size: 13px"><?php echo date('d/m/Y', strtotime($value->created_at)) ?></span><br>

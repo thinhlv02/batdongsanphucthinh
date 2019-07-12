@@ -16,7 +16,7 @@
                                     <div class="content-news">
                                         <div><strong style="color: #fff"><?php echo $value->name?></strong></div>
                                         <p style="color: #fff"><?php echo $value->intro?></p>
-                                        <a href="<?php echo base_url('tin-tuc/'.create_slug($value->name).'-'.$value->id)?>" class="btn btn-primary mt-5">Chi tiết</a>
+                                        <a href="<?php echo base_url('tin-tuc/'.create_slug($value->name).'-'.$value->id)?>" class="btn btn-primary mt-5">Xem thêm</a>
                                     </div>
                                     <div class="title-news">
                                         <span style="font-size: 13px"><?php echo date('d/m/Y', strtotime($value->created_at))?></span><br>
@@ -35,7 +35,7 @@
                                     <div class="content-news">
                                         <div><strong><?php echo $value->name?></strong></div>
                                         <p><?php echo $value->intro?></p>
-                                        <a href="<?php echo base_url('tin-tuc/'.create_slug($value->name).'-'.$value->id)?>" class="btn btn-primary mt-5">Chi tiết</a>
+                                        <a href="<?php echo base_url('tin-tuc/'.create_slug($value->name).'-'.$value->id)?>" class="btn btn-primary mt-5">Xem thêm</a>
                                     </div>
                                     <div class="title-news">
                                         <span style="font-size: 13px"><?php echo date('d/m/Y', strtotime($value->created_at))?></span><br>
