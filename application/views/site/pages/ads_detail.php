@@ -39,15 +39,15 @@
                         </div>
                         <div class="block">
                             <div class="col-left">Diện tích</div>
-                            <div class="col-right"><span><?php echo $ads->acreage ?> m</span><sup>2</sup></div>
+                            <b class="col-right"><span><b><?php echo $ads->acreage ?> m</span><sup>2</sup></b></div>
                         </div>
                         <div class="block">
                             <div class="col-left">Giá</div>
-                            <div class="col-right"><?php echo $ads->price ?> (VNĐ)</div>
+                            <div class="col-right"><b><?php echo $ads->price ?> (VNĐ)</b></div>
                         </div>
                         <div class="block">
                             <div class="col-left">Ngày đăng</div>
-                            <div class="col-right"><?php echo date('d-m-Y', strtotime($ads->created_at)) ?></div>
+                            <div class="col-right"><b><?php echo date('d-m-Y', strtotime($ads->created_at)) ?></b></div>
                         </div>
                     </div>
 
