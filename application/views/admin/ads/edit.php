@@ -50,6 +50,12 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh Slide <span class="required">*</span></label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <input type="file" class="form-control" name="files[]" multiple>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Nội dung
                         <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">

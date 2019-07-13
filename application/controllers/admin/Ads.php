@@ -26,13 +26,87 @@ Class Ads extends MY_Controller
 
     function add()
     {
+        $message = $this->session->flashdata('message');
+        $this->data['message'] = $message;
+        if ($this->input->post('btnAdd')) {
+            $config['upload_path'] = './public/images/ads';
+            $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
+            $config['max_size'] = '10000';
+            $this->load->library("upload", $config);
+
+            $data = array(
+                'title' => $this->input->post('txtName'),
+                'code' => generateRandomString(6),
+                'view' => generateRandomString(2),
+                'content' => $this->input->post('txtContent'),
+                'area' => $this->input->post('area'),
+                'phone' => $this->input->post('phone'),
+                'intro' => $this->input->post('txtIntro'),
+                'price' => $this->input->post('price'),
+                'acreage' => $this->input->post('acreage'),
+                'created_by' => $this->_uid,
+            );
+
+            $filesCount = count($_FILES['files']['name']);
+            $path_name = '';
+            for ($i = 0; $i < $filesCount; $i++) {
+                $_FILES['file']['name'] = $_FILES['files']['name'][$i];
+                $_FILES['file']['type'] = $_FILES['files']['type'][$i];
+                $_FILES['file']['tmp_name'] = $_FILES['files']['tmp_name'][$i];
+                $_FILES['file']['error'] = $_FILES['files']['error'][$i];
+                $_FILES['file']['size'] = $_FILES['files']['size'][$i];
+
+                $this->upload->initialize($config);
+
+                // Upload file to server
+                if ($this->upload->do_upload('file')) {
+                    // Uploaded file data
+                    $fileData = $this->upload->data();
+                    $uploadData[$i]['file_name'] = $fileData['file_name'];
+                }
+
+                  $path_name .= $fileData['file_name']. '-';
+
+            }
+            $path_name = substr($path_name, 0, -1);
+            $data['lightSlider'] = $path_name != '' ? $path_name : 'default.png' ;
+
+//            echo pre_arr($path_name);
+//            echo pre_arr($uploadData);
+//            var_dump($uploadData);
+//            die('');
+
+            if ($this->upload->do_upload('img_news')) {
+                $file_data = $this->upload->data();
+                $data['img'] = $file_data['file_name'];
+            } else {
+                $data['img'] = 'default.png';
+                $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
+            }
+
+            if ($this->ads_model->create($data)) {
+                $this->session->set_flashdata('message', 'Thêm rao bán thành công');
+                redirect(base_url('admin/ads'));
+            } else {
+                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
+            }
+
+        }
+        $this->data['tab'] = 2;
+        $this->data['temp'] = 'admin/ads/index';
+        $this->data['view'] = 'admin/ads/add';
+        $this->load->view('admin/layout', $this->data);
+    }
+
+    function add12()
+    {
 //        die('fuck');
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
             $config['upload_path'] = './public/images/ads';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
-            $config['max_size']    = '10000';
+            $config['max_size'] = '10000';
             $this->load->library("upload", $config);
 
             $data = array(
@@ -78,7 +152,7 @@ Class Ads extends MY_Controller
         if ($this->input->post('btnAdd')) {
             $config['upload_path'] = './public/images/ads';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
-            $config['max_size']    = '10000';
+            $config['max_size'] = '10000';
             $this->load->library("upload", $config);
 //            var_dump($this->upload->do_upload('img_news'));
 
@@ -159,9 +233,39 @@ Class Ads extends MY_Controller
             } else {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
+
+
+
+            //img slide
+            $filesCount = count($_FILES['files']['name']);
+            $path_name = '';
+            for ($i = 0; $i < $filesCount; $i++) {
+                $_FILES['file']['name'] = $_FILES['files']['name'][$i];
+                $_FILES['file']['type'] = $_FILES['files']['type'][$i];
+                $_FILES['file']['tmp_name'] = $_FILES['files']['tmp_name'][$i];
+                $_FILES['file']['error'] = $_FILES['files']['error'][$i];
+                $_FILES['file']['size'] = $_FILES['files']['size'][$i];
+
+                $this->upload->initialize($config);
+
+                // Upload file to server
+                if ($this->upload->do_upload('file')) {
+                    // Uploaded file data
+                    $fileData = $this->upload->data();
+                    $uploadData[$i]['file_name'] = $fileData['file_name'];
+                }
+
+                $path_name .= $fileData['file_name']. '-';
+
+            }
+            $path_name = substr($path_name, 0, -1);
+            $data['lightSlider'] = $path_name != '' ? $path_name : 'default.png' ;
+            //img slide
+
+
             if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật rao bán thành công');
-                redirect(base_url('admin/ads/edit/'.$id));
+                redirect(base_url('admin/ads/edit/' . $id));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
