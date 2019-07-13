@@ -5,7 +5,7 @@
         <div class="clearfix" style="margin-top:10px">
             <div class="col-sm-8 col-md-8">
                 <div id="center-body">
-                    <div class="text-center mt10"><input type="text" name="q" id="sTxt" size="50" class="search-tag"
+                    <div class="text-center mt-10"><input type="text" name="q" id="sTxt" size="50" class="search-tag"
                                                          placeholder="Nhập từ khóa tìm kiếm" tabindex="1"> <select
                                 id="TypeSearch"
                                 class="search-tag">
@@ -17,7 +17,7 @@
                         </select>
                         <button type="button" tabindex="2" onclick="Redirect()">Tìm kiếm</button>
                     </div>
-                    <div class="clearfix mt10">
+                    <div class="clearfix mt-10">
                         <div style="width:350px;height:400px;float:left;overflow:hidden">
                             <ul class="ulthumb">
                                 <li id="li_0"><a
@@ -207,7 +207,7 @@
                                         width="725" height="100" alt="Banner"></a></div>
                     </div>
                     <div id="raovat-nb">
-                        <div class="box-module mt10">
+                        <div class="box-module mt-2">
                             <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật</div>
                         </div>
                         <div class="clearfix" id="box-home-svip">
@@ -245,14 +245,14 @@
 
                             <?php } ?>
 
-                            <div class="pull-right mt10 viewall">
+                            <div class="pull-right mt-10 viewall">
                                 <a href="/bat-dong-san-ban-tai-viet-nam-s32113"><i class="glyphicon glyphicon-th"></i>
                                     Xem tất
                                     cả</a>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt10">
+                    <div class="row mt-10">
                         <div class="col-sm-6">
                             <div class="bg-modul"><h2>Dự án nổi bật</h2></div>
                             <div class="border-box col-hom-news">
@@ -451,7 +451,7 @@
                     <div class="clearfix"><a href="/Home/BannerClicked?bannerId=209" rel="nofollow" target="_blank"><img
                                     src="http://batdongsanphucthinh.vn/images/banners/2018/04/21/131687986590700974.jpg?w=725"
                                     width="725" height="100" alt="Banner"></a></div>
-                    <div class="box-module mt10">
+                    <div class="box-module mt-2">
                         <div class="bg-modul"><h1><i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
                     </div>
                     <div class="clearfix">
@@ -763,7 +763,7 @@
                         </div>
                     </div>
                     <p style="margin:31px 0 21px 0"><img src="/Content/images/bn/banner-hotline.gif" alt="Hotline"></p>
-                    <div class="box-module mt10">
+                    <div class="box-module mt-2">
                         <div class="bg-modul">Liên kết được quan tâm</div>
                     </div>
                     <div class="box-links-right"><p><span style="font-size:12px"><span
@@ -909,7 +909,7 @@
 
 
             <div class="clearfix"></div>
-            <div class="clearfix mt10"></div>
+            <div class="clearfix mt-10"></div>
         </div>
         <!--        </div>-->
     </div>

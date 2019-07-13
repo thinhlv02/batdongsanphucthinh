@@ -7,7 +7,7 @@
                 <div id="center-body">
 
                     <div id="raovat-nb">
-                        <div class="box-module mt10">
+                        <div class="box-module mt-2">
                             <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật</div>
                         </div>
                         <div class="clearfix" id="box-home-svip">
@@ -43,28 +43,30 @@
                                         </div>
                                         <div class="price-list mb-3">
                                             <span>Khu vực</span>: <strong> <?php echo $value->area ?> </strong>
-                                            <span class="pull-right time">
-                                             <i class="glyphicon glyphicon-time"></i>
-                                            <?php echo date('Y-m-d', strtotime($value->created_at)) ?>
-                                        </span>
+
                                         </div>
                                         <div class="price-list mb-3">
                                             <span>Link bài viết</span>: <a href="<?php echo $value->link ?>"
                                                                            target="_blank">
                                                 <?php echo $value->link ?></a>
+
+                                            <span class="pull-right time">
+                                             <i class="glyphicon glyphicon-time"></i>
+                                            <?php echo date('Y-m-d', strtotime($value->created_at)) ?>
+                                        </span>
                                         </div>
                                     </div>
                                 </div>
 
                             <?php } ?>
 
-                            <div class="pull-right mt10 viewall">
+                            <div class="pull-right mt-10 viewall">
                                 <a href="/bat-dong-san-ban-tai-viet-nam-s32113"><i class="glyphicon glyphicon-th"></i>
                                     Xem tất cả</a>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt10">
+                    <div class="row mt-10">
                         <div class="col-sm-6">
                             <div class="bg-modul"><h2>Dự án nổi bật</h2></div>
                             <div class="border-box col-hom-news">
@@ -222,7 +224,7 @@
                         </div>
                     </div>
 
-                    <div class="box-module mt10">
+                    <div class="box-module mt-2">
                         <div class="bg-modul"><h1><i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
                     </div>
                     <div class="clearfix">
@@ -633,7 +635,7 @@
                     </style>
 
 
-                    <div class="box-module mt10">
+                    <div class="box-module mt-2">
                         <div class="bg-modul">Liên kết được quan tâm</div>
                     </div>
                     <div class="box-links-right"><p><span style="font-size:12px"><span
@@ -768,19 +770,21 @@
     }
 
     .box-img-thumb {
-        width: 150px;
+        /*width: 150px;*/
+        width: 16%;
         float: left;
         margin-right: 15px;
     }
 
     #box-home-svip .box-info-list {
         /*width: 521px;*/
-        width: 721px;
+        /*width: 721px;*/
     }
 
     .box-info-list {
         float: left;
-        width: 538px;
+        /*width: 538px;*/
+        width:82%;
     }
 
     /*.box-title-item label {*/
@@ -851,19 +855,19 @@
         text-transform: uppercase;
     }
 
-    .bg-modul {
-        background: #15a1b1;
-        color: #fff;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 6px 16px 6px 13px;
-        display: inline-block;
-        -ms-border-top-right-radius: 4px;
-        border-top-right-radius: 4px;
-        -ms-border-top-left-radius: 4px;
-        border-top-left-radius: 4px;
-        text-align: center;
-    }
+    /*.bg-modul {*/
+    /*    background: #15a1b1;*/
+    /*    color: #fff;*/
+    /*    font-weight: bold;*/
+    /*    text-transform: uppercase;*/
+    /*    padding: 6px 16px 6px 13px;*/
+    /*    display: inline-block;*/
+    /*    -ms-border-top-right-radius: 4px;*/
+    /*    border-top-right-radius: 4px;*/
+    /*    -ms-border-top-left-radius: 4px;*/
+    /*    border-top-left-radius: 4px;*/
+    /*    text-align: center;*/
+    /*}*/
 
     .bg-modul h2, .bg-modul h1 {
         font-size: 1.2rem;
