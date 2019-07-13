@@ -3,7 +3,7 @@
         <!--        <div class="title-section"><h2>Chi tiết bài rao</h2></div>-->
         <div class="col-md-8 col-sm-12 col-xs-12 mt-2" style="">
             <ol class="breadcrumb">
-                <li><a href="<?php echo base_url('rao-vat') ?>">Rao vặt</a></li>
+<!--                <li><a href="--><?php //echo base_url('rao-vat') ?><!--">Rao vặt</a></li>-->
                 <li class="" style="color: red;text-transform: uppercase;"><?php echo $ads->title ?></li>
             </ol>
             <div class="item-news-1" style="padding: 10px">
@@ -36,19 +36,19 @@
                         </div>
                         <div class="block">
                             <div class="col-left">Địa chỉ:</div>
-                            <div class="col-right"><?php echo $ads->area ?></div>
+                            <div class="col-right"><b><?php echo $ads->area ?></b></div>
                         </div>
                         <div class="block">
                             <div class="col-left">Diện tích</div>
-                            <div class="col-right"><span><?php echo $ads->acreage ?> m</span><sup>2</sup></div>
+                            <div class="col-right"><b><span><?php echo $ads->acreage ?> m</span><sup>2</sup></b></div>
                         </div>
                         <div class="block">
                             <div class="col-left">Giá</div>
-                            <div class="col-right"><?php echo $ads->price ?> (VNĐ)</div>
+                            <div class="col-right"><b><?php echo $ads->price ?> (VNĐ)</b></div>
                         </div>
                         <div class="block">
                             <div class="col-left">Ngày đăng</div>
-                            <div class="col-right"><?php echo date('d-m-Y', strtotime($ads->created_at)) ?></div>
+                            <div class="col-right"><b><?php echo date('d-m-Y', strtotime($ads->created_at)) ?></b></div>
                         </div>
                     </div>
 
@@ -56,14 +56,19 @@
 
                 <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 10px">
 
-                    <div class="title-hd"><h5>THÔNG TIN BÀI VIẾT</h5></div>
+                    <div class="title-hd text-uppercase"><h7>mô tả</h7></div>
 
                     <?php echo trim($ads->content) ?>
 
                 </div>
 
-                <div class="content-news-1 col-md-8 col-sm-12" style="">
-                    <div class="title-hd"><h5>THÔNG TIN HÌNH ẢNH</h5></div>
+                <?php if($ads->lightSlider != '') { ?>
+
+
+
+
+                <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: -127px; ">
+                    <div class="title-hd text-uppercase"><h7>ảnh bài viết</h7></div>
                     <?php if ($ads->lightSlider != NULL) { ?>
 
                         <div class="demo">
@@ -75,9 +80,6 @@
                                         <img src="<?php echo public_url('images/ads/' . $val) ?>"/>
                                     </li>
                                 <?php } ?>
-                                <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
-                                    <img src="http://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
-                                </li>
 
                             </ul>
                         </div>
@@ -85,6 +87,8 @@
                     <?php } ?>
 
                 </div>
+
+                <?php } ?>
 
             </div>
         </div>
@@ -168,7 +172,7 @@
         /* height: 28px; */
         line-height: 28px;
         color: white;
-        background: #0F66E7;
+        background: #15a1b1;
         /* padding-left: 25px; */
         padding: 1px;
         padding-left: 5px;
