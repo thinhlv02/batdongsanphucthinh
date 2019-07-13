@@ -24,13 +24,13 @@
                 <th>Mã số</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
-                <th>Giới thiệu</th>
+<!--                <th>Giới thiệu</th>-->
                 <th>Giá</th>
                 <th>Diện tích</th>
                 <th>Khu vực</th>
                 <th>VIP</th>
                 <th>Nổi bật</th>
-                <th>link bài viết</th>
+<!--                <th>link bài viết</th>-->
                 <th>Lượt xem</th>
                 <th>Ngày Tạo</th>
                 <th>Hành động</th>
@@ -43,7 +43,7 @@
                     <td><?php echo $row->code?></td>
                     <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 150px"> </td>
                     <td><?php echo $row->title?></td>
-                    <td><?php echo $row->intro?></td>
+<!--                    <td>--><?php //echo $row->intro?><!--</td>-->
                     <td><?php echo $row->price?></td>
                     <td><?php echo $row->acreage?></td>
                     <td><?php echo $row->area?></td>
@@ -61,7 +61,7 @@
                            style="color: green"
                         ></i>
                     </td>
-                    <td><?php echo $row->link ?></td>
+<!--                    <td>--><?php //echo $row->link ?><!--</td>-->
                     <td><?php echo $row->view ?></td>
 
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
