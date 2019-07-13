@@ -25,6 +25,7 @@
 <!--thinhlv add css-->
 
 <link rel="stylesheet" href="<?php echo base_url('public/css/common.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('public/css/lightslider.min.css'); ?>">
 <link rel="stylesheet" href="<?php echo base_url('public/css/lightslider.css'); ?>">
 
 <!--thinhlv add css-->
