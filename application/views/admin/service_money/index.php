@@ -1,17 +1,9 @@
 <div class="page-title" style="height: auto">
     <div class="title_left">
-        <h3>rao bán</h3>
+        <h3>Quản lý nạp tiền của khách hàng</h3>
     </div>
     <div class="clearfix"></div>
-    <div class="row">
-        <div>
-            <ul id="myTab" class="nav nav-tabs bar_tabs">
-                <li class="<?php echo $tab == 1 ? 'active' : '' ?>">
-                    <a href="<?php echo admin_url('ads') ?>" id="home-tab">Danh sách</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+
 </div>
 
 <?php if (isset($message)) {
