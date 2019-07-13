@@ -23,7 +23,8 @@
                                     if ($ads->code == 0) {
                                         echo generateRandomString(6);
                                     } else {
-                                    echo $ads->code;  }?></b></div>
+                                        echo $ads->code;
+                                    } ?></b></div>
                         </div>
                         <div class="block">
                             <div class="col-left">Lượt xem</div>
@@ -53,70 +54,27 @@
 
                 </div>
 
-                <style>
 
-                    #details-auto .box-info .block {
-                        width: 100%;
-                        width: 300px;
-                    }
+                <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 10px">
+                    <div class="title-hd"><h5>THÔNG TIN HÌNH ẢNH</h5></div>
+                    <?php if ($ads->lightSlider != NULL) { ?>
 
-                    #details-auto .block {
-                        /* width: 360px !important; */
-                        float: left;
-                        margin-top: 0px !important;
-                        margin-bottom: 0px !important;
-                        padding-bottom: 0px !important;
-                    }
+                        <div class="demo">
+                            <ul id="lightSlider">
+                                <?php
+                                $tags = explode('-', $ads->lightSlider);
+                                foreach ($tags as $k => $val) { ?>
+                                    <li data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
+                                        <img style="height: 90%" src="<?php echo public_url('images/ads/' . $val) ?>"/>
+                                    </li>
+                                <?php } ?>
 
-                    .block {
-                        border-bottom: 1px solid #e5e5e5;
-                        width: 100%;
-                        display: inline-block;
-                        padding-bottom: 0px;
-                        margin-top: 2px;
-                    }
+                            </ul>
+                        </div>
 
-                    #details-auto .col-left {
-                        float: left;
-                        width: 124px;
-                    }
+                    <?php } ?>
 
-                    .block .col-left {
-                        float: left;
-                        width: 126px;
-                    }
-
-                    .col-left {
-                        float: left;
-                    }
-
-                    #details-auto .col-right {
-                        float: left;
-                        width: 176px;
-                    }
-
-                    .block .col-right {
-                        float: left;
-                        width: calc(100% - 200px);
-                    }
-
-                    .col-right {
-                        float: right;
-                    }
-
-                    .title-hd {
-                        width: 100%;
-                        /* height: 28px; */
-                        line-height: 28px;
-                        color: white;
-                        background: #0F66E7;
-                        /* padding-left: 25px; */
-                        padding: 1px;
-                        padding-left: 5px;
-                        margin-bottom: 8px;
-                    }
-                    }
-                </style>
+                </div>
 
                 <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 10px">
 
@@ -133,19 +91,120 @@
             <div class="left-title">Nổi bật cùng chuyên mục</div>
             <?php foreach ($highlight as $key => $value) {
                 if ($ads->id != $value->id) {
-                ?>
-                <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                    <div class="mb-5" style="border: 1px solid #dedede;float: left">
-                        <div class="col-md-4 col-sm-4 col-xs-4">
-                            <img src="<?php echo public_url('images/ads/' . $value->img) ?>">
+                    ?>
+                    <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                        <div class="mb-5" style="border: 1px solid #dedede;float: left">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <img src="<?php echo public_url('images/ads/' . $value->img) ?>">
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8" style="padding: 5px">
+                                <h5 class="title-news-1 text-info" style="color: red;text-transform: uppercase">
+                                    <?php echo $value->title ?></h5>
+                            </div>
                         </div>
-                        <div class="col-md-8 col-sm-8 col-xs-8" style="padding: 5px">
-                            <h5 class="title-news-1 text-info" style="color: red;text-transform: uppercase">
-                                <?php echo $value->title ?></h5>
-                        </div>
-                    </div>
-                </a>
-            <?php } } ?>
+                    </a>
+                <?php }
+            } ?>
         </div>
     </div>
 </section>
+
+
+<style>
+
+    #details-auto .box-info .block {
+        width: 100%;
+        width: 300px;
+    }
+
+    #details-auto .block {
+        /* width: 360px !important; */
+        float: left;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .block {
+        border-bottom: 1px solid #e5e5e5;
+        width: 100%;
+        display: inline-block;
+        padding-bottom: 0px;
+        margin-top: 2px;
+    }
+
+    #details-auto .col-left {
+        float: left;
+        width: 124px;
+    }
+
+    .block .col-left {
+        float: left;
+        width: 126px;
+    }
+
+    .col-left {
+        float: left;
+    }
+
+    #details-auto .col-right {
+        float: left;
+        width: 176px;
+    }
+
+    .block .col-right {
+        float: left;
+        width: calc(100% - 200px);
+    }
+
+    .col-right {
+        float: right;
+    }
+
+    .title-hd {
+        width: 100%;
+        /* height: 28px; */
+        line-height: 28px;
+        color: white;
+        background: #0F66E7;
+        /* padding-left: 25px; */
+        padding: 1px;
+        padding-left: 5px;
+        margin-bottom: 8px;
+    }
+
+
+    /*//side*/
+
+    /*.demo {*/
+    /*    !*width:420px;*!*/
+    /*}*/
+    /*ul {*/
+    /*    list-style: none outside none;*/
+    /*    padding-left: 0;*/
+    /*    margin-bottom:0;*/
+    /*}*/
+    /*li {*/
+    /*    height: 80px;*/
+        /*display: block;*/
+        /*float: left;*/
+        /*margin-right: 6px;*/
+        /*cursor:pointer;*/
+    /*}*/
+    /*img {*/
+    /*    display: block;*/
+    /*    height: auto;*/
+    /*    max-width: 100%;*/
+    /*}*/
+</style>
+
+
+<script>
+    $('#lightSlider').lightSlider({
+        gallery: true,
+        item: 1,
+        loop: true,
+        slideMargin: 0,
+        thumbItem: 9
+    });
+</script>

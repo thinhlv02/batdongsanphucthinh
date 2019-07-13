@@ -58,6 +58,7 @@
                                 <li><a href="<?php echo admin_url('customers') ?>">Khách hàng</a></li>
                                 <li><a href="<?php echo admin_url('documents') ?>">Tài liệu</a></li>
                                 <li><a href="<?php echo admin_url('service_money') ?>">Tiền Kh nạp</a></li>
+                                <li><a href="<?php echo admin_url('Upload_Files') ?>">Upload_Files</a></li>
                             </ul>
                         </li>
                     <?php } ?>

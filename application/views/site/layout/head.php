@@ -25,6 +25,7 @@
 <!--thinhlv add css-->
 
 <link rel="stylesheet" href="<?php echo base_url('public/css/common.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('public/css/lightslider.css'); ?>">
 
 <!--thinhlv add css-->
 <link href="<?php echo base_url('public/css/responsive.css'); ?>" rel="stylesheet">
@@ -33,3 +34,4 @@
 <script src="<?php echo public_url('js/bootstrap.min.js')?>"></script>
 <script src="<?php echo base_url('public/js/page.js'); ?>"></script>
 <script src="<?php echo base_url('public/js/common.js'); ?>"></script>
+<script src="<?php echo base_url('public/js/lightslider.js'); ?>"></script>
