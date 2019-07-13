@@ -233,7 +233,6 @@ Class Home extends MY_Controller
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $ads;
-        var_dump($ads->lightSlider);
 
         $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
         $this->data['highlight'] = $highlight;
