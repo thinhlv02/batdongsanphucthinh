@@ -65,7 +65,7 @@
                                 $tags = explode('-', $ads->lightSlider);
                                 foreach ($tags as $k => $val) { ?>
                                     <li data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
-                                        <img style="height: 90%" src="<?php echo public_url('images/ads/' . $val) ?>"/>
+                                        <img style="height: 80%" src="<?php echo public_url('images/ads/' . $val) ?>"/>
                                     </li>
                                 <?php } ?>
 
