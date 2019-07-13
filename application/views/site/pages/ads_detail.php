@@ -54,8 +54,15 @@
 
                 </div>
 
-
                 <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 10px">
+
+                    <div class="title-hd"><h5>THÔNG TIN BÀI VIẾT</h5></div>
+
+                    <?php echo trim($ads->content) ?>
+
+                </div>
+
+                <div class="content-news-1 col-md-8 col-sm-12" style="">
                     <div class="title-hd"><h5>THÔNG TIN HÌNH ẢNH</h5></div>
                     <?php if ($ads->lightSlider != NULL) { ?>
 
@@ -68,19 +75,14 @@
                                         <img src="<?php echo public_url('images/ads/' . $val) ?>"/>
                                     </li>
                                 <?php } ?>
+                                <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
+                                    <img src="http://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
+                                </li>
 
                             </ul>
                         </div>
 
                     <?php } ?>
-
-                </div>
-
-                <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 10px">
-
-                    <div class="title-hd"><h5>THÔNG TIN BÀI VIẾT</h5></div>
-
-                    <?php echo $ads->content ?>
 
                 </div>
 
@@ -173,38 +175,41 @@
         margin-bottom: 8px;
     }
 
-
-    /*//side*/
-
-    /*.demo {*/
-    /*    !*width:420px;*!*/
-    /*}*/
-    /*ul {*/
-    /*    list-style: none outside none;*/
-    /*    padding-left: 0;*/
-    /*    margin-bottom:0;*/
-    /*}*/
-    /*li {*/
-    /*    height: 80px;*/
-        /*display: block;*/
-        /*float: left;*/
-        /*margin-right: 6px;*/
-        /*cursor:pointer;*/
-    /*}*/
-    /*img {*/
-    /*    display: block;*/
-    /*    height: auto;*/
-    /*    max-width: 100%;*/
-    /*}*/
 </style>
 
 
 <script>
     $('#lightSlider').lightSlider({
         gallery: true,
+        auto: true,
         item: 1,
         loop: true,
         slideMargin: 0,
         thumbItem: 9
     });
+
+
+
 </script>
+
+<style>
+    .demo {
+        width:420px;
+    }
+    ul {
+        list-style: none outside none;
+        padding-left: 0;
+        margin-bottom:0;
+    }
+    li {
+        display: block;
+        /*float: left;*/
+        margin-right: 6px;
+        cursor:pointer;
+    }
+    img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+</style>
