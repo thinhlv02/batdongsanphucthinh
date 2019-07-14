@@ -62,11 +62,11 @@
 
                 </div>
 
-                <?php if($ads->lightSlider != '') { ?>
+<!--                --><?php //if($ads->lightSlider != '') { ?>
 
                 <div class="content-news-1 col-md-12 col-sm-12">
                     <div class="title-hd text-uppercase"><h7>ảnh bài viết</h7></div>
-                    <?php if ($ads->lightSlider != NULL) {
+<!--                    --><?php //if ($ads->lightSlider != NULL) {
 
                         ?>
 
@@ -83,11 +83,11 @@
                             </ul>
                         </div>
 
-                    <?php } ?>
+<!--                    --><?php //} ?>
 
                 </div>
 
-                <?php } ?>
+<!--                --><?php //} ?>
 
             </div>
         </div>
