@@ -65,11 +65,11 @@ Class Ads extends MY_Controller
                     $uploadData[$i]['file_name'] = $fileData['file_name'];
                 }
 
-                  $path_name .= $fileData['file_name'].'#';
+                $path_name .= $fileData['file_name'] . '#';
 
             }
             $path_name = substr($path_name, 0, -1);
-            $data['lightSlider'] = $path_name ;
+            $data['lightSlider'] = $path_name;
 
 //            echo pre_arr($path_name);
 //            echo pre_arr($uploadData);
@@ -234,9 +234,6 @@ Class Ads extends MY_Controller
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
 
-
-
-//
 //            if(!empty($_FILES['files']['name'][0])) {
 ////                    $filesCount = count($_FILES['files']['name']);
 //
@@ -258,7 +255,7 @@ Class Ads extends MY_Controller
 
             //img slide
 //            if(!empty($_FILES['files']['name'])) {
-                if(!empty($_FILES['files']['name'][0])) {
+            if (!empty($_FILES['files']['name'][0])) {
                 $filesCount = count($_FILES['files']['name']);
                 $path_name = '';
                 for ($i = 0; $i < $filesCount; $i++) {
@@ -277,12 +274,27 @@ Class Ads extends MY_Controller
                         $uploadData[$i]['file_name'] = $fileData['file_name'];
                     }
 
-                    $path_name .= $fileData['file_name'] .'#';
+                    $path_name .= $fileData['file_name'] . '#';
 
                 }
                 $path_name = substr($path_name, 0, -1);
-                $data['lightSlider'] = $path_name != '' ? $path_name : 'default.png';
+//                $data['lightSlider'] = $path_name != '' ? $path_name : 'default.png';
+                $data['lightSlider'] = $path_name;
+
+                //delete image slide OLD
+
+                if ($path_name != '') {
+                    $tags = explode('#', $ads->lightSlider);
+                    foreach ($tags as $k => $val) {
+                        unlink('./public/images/ads/' . $val);
+                    }
+
+                }
+
+                //delete image slide OLD
             }
+
+
             //img slide
 
 
@@ -306,7 +318,19 @@ Class Ads extends MY_Controller
         $ads = $this->ads_model->get_info($id);
         if ($ads) {
             $this->ads_model->delete($id);
-            unlink('./public/images/ads/' . $ads->img);
+            if ($ads->img != 'default.png') {
+                unlink('./public/images/ads/' . $ads->img);
+            }
+
+            //delete image slide
+            if ($ads->lightSlider != '') {
+                $tags = explode('#', $ads->lightSlider);
+                foreach ($tags as $k => $val) {
+                    unlink('./public/images/ads/' . $val);
+                }
+
+            }
+            //delete image slide
         }
         redirect(base_url('admin/ads'));
     }

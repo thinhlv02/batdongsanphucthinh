@@ -138,8 +138,10 @@
     border-radius: 5px;
 }
 .lSSlideOuter .lSPager.lSGallery img {
+    width: 48px;
     display: block;
-    height: auto;
+    /*height: auto;*/
+    height: 34px;
     max-width: 100%;
 }
 .lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {
