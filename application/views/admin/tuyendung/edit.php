@@ -20,7 +20,7 @@
     <div class="x_content">
 
 
-        <div class="row" style="margin-top: 40px">
+        <div class="row" style="">
             <form id="formAddCatalog" data-parsley-validate class="form-horizontal form-label-left" method="post">
 
                 <div class="form-group">

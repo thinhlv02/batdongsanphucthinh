@@ -65,7 +65,7 @@ Class Ads extends MY_Controller
                     $uploadData[$i]['file_name'] = $fileData['file_name'];
                 }
 
-                  $path_name .= $fileData['file_name']. '-';
+                  $path_name .= $fileData['file_name'].'#';
 
             }
             $path_name = substr($path_name, 0, -1);
@@ -236,30 +236,53 @@ Class Ads extends MY_Controller
 
 
 
+//
+//            if(!empty($_FILES['files']['name'][0])) {
+////                    $filesCount = count($_FILES['files']['name']);
+//
+//                var_dump($_FILES['files']['name'][0]);
+////                var_dump($filesCount);
+//                echo "<pre>",print_r($_FILES['files']['name'],1),"</pre>";
+////                var_dump($_FILES['files']['name']);
+////                echo 1;
+//
+//            } else {
+////                $filesCount = count($_FILES['files']['name']);
+////                var_dump($filesCount);
+////                var_dump($_FILES['files']['name']);
+//                echo "<pre>",print_r($_FILES['files']['name'],1),"</pre>";
+//
+//
+//            }
+//            die();
+
             //img slide
-            $filesCount = count($_FILES['files']['name']);
-            $path_name = '';
-            for ($i = 0; $i < $filesCount; $i++) {
-                $_FILES['file']['name'] = $_FILES['files']['name'][$i];
-                $_FILES['file']['type'] = $_FILES['files']['type'][$i];
-                $_FILES['file']['tmp_name'] = $_FILES['files']['tmp_name'][$i];
-                $_FILES['file']['error'] = $_FILES['files']['error'][$i];
-                $_FILES['file']['size'] = $_FILES['files']['size'][$i];
+//            if(!empty($_FILES['files']['name'])) {
+                if(!empty($_FILES['files']['name'][0])) {
+                $filesCount = count($_FILES['files']['name']);
+                $path_name = '';
+                for ($i = 0; $i < $filesCount; $i++) {
+                    $_FILES['file']['name'] = $_FILES['files']['name'][$i];
+                    $_FILES['file']['type'] = $_FILES['files']['type'][$i];
+                    $_FILES['file']['tmp_name'] = $_FILES['files']['tmp_name'][$i];
+                    $_FILES['file']['error'] = $_FILES['files']['error'][$i];
+                    $_FILES['file']['size'] = $_FILES['files']['size'][$i];
 
-                $this->upload->initialize($config);
+                    $this->upload->initialize($config);
 
-                // Upload file to server
-                if ($this->upload->do_upload('file')) {
-                    // Uploaded file data
-                    $fileData = $this->upload->data();
-                    $uploadData[$i]['file_name'] = $fileData['file_name'];
+                    // Upload file to server
+                    if ($this->upload->do_upload('file')) {
+                        // Uploaded file data
+                        $fileData = $this->upload->data();
+                        $uploadData[$i]['file_name'] = $fileData['file_name'];
+                    }
+
+                    $path_name .= $fileData['file_name'] .'#';
+
                 }
-
-                $path_name .= $fileData['file_name']. '-';
-
+                $path_name = substr($path_name, 0, -1);
+                $data['lightSlider'] = $path_name != '' ? $path_name : 'default.png';
             }
-            $path_name = substr($path_name, 0, -1);
-            $data['lightSlider'] = $path_name != '' ? $path_name : 'default.png' ;
             //img slide
 
 

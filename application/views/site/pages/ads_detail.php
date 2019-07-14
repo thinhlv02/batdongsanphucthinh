@@ -73,7 +73,7 @@
                         <div class="demo">
                             <ul id="lightSlider">
                                 <?php
-                                $tags = explode('-', $ads->img.'-'.$ads->lightSlider);
+                                $tags = explode('#', $ads->img.'#'.$ads->lightSlider);
                                 foreach ($tags as $k => $val) { ?>
                                     <li style="width: 450px; height: 338px" data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
                                         <img style="width: 450px; height: 338px" src="<?php echo public_url('images/ads/' . $val) ?>"/>

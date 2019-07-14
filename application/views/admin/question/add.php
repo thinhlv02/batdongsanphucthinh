@@ -18,7 +18,7 @@
         <div class="clearfix"></div>
     </div>
     <div class="x_content">
-        <div class="row" style="margin-top: 40px">
+        <div class="row" style="">
             <form id="formAddCatalog" data-parsley-validate class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Phân loại <span class="required">*</span></label>
