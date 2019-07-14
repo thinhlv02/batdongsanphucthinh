@@ -8,6 +8,8 @@ Class Ads extends MY_Controller
         $this->load->model('ads_model');
         $this->load->model('Province_model');
         $this->load->model('District_model');
+        $this->load->model('Ward_model');
+        $this->load->model('Street_model');
     }
 
     function index()
@@ -37,6 +39,8 @@ Class Ads extends MY_Controller
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $config['max_size'] = '10000';
             $this->load->library("upload", $config);
+            $ward_str = $this->input->post('ward');
+            $ward = explode('|', $ward_str);
 
             $data = array(
                 'title' => $this->input->post('txtName'),
@@ -48,6 +52,10 @@ Class Ads extends MY_Controller
                 'intro' => $this->input->post('txtIntro'),
                 'price' => $this->input->post('price'),
                 'acreage' => $this->input->post('acreage'),
+                'province' => $this->input->post('province'),
+                'district' => $this->input->post('district'),
+                'ward' => $ward[0],
+                'street' => $this->input->post('street'),
                 'created_by' => $this->_uid,
             );
 
@@ -399,18 +407,63 @@ Class Ads extends MY_Controller
             $lst_district_end[$value->id]['_name'] = $value->_name;
         }
 //        pre_arr($lst_district_end);
-//        die();
-        //get list tbl_gift_item_info_by_type
-//        echo 'abc' . $type;
-        $lstdata = [];
 
-//        pre($input);
 //        pre($lst_district_end);
         $this->data['lstdata'] = $lst_district_end;
-//        $this->data['name_field'] = $name_field;
-        // $this->load->view('admin/layout', $this->data);
 
-        $this->load->view('admin/district/view_list_district', $this->data);
+        $this->load->view('admin/ads/view_list_district', $this->data);
+    }
+
+
+    function ajax_get_list_ward()
+    {
+        $id = $this->input->get('id');
+//        var_dump($id);
+//        $selected = $this->input->post('selected');
+
+        //get list tbl_gift_item_info_by_type
+
+        $lst_ward = $this->Ward_model->get_list(array('where' => array('_district_id' => $id)));
+//        $lst_ward = $this->District_model->get_list();
+//        var_dump($lst_ward);
+//        die;
+
+        $lst_ward_end = [];
+        foreach ($lst_ward as $k => $value) {
+            $lst_ward_end[$value->id]['id'] = $value->id.'|'.$value->_district_id;
+            $lst_ward_end[$value->id]['_name'] = $value->_name;
+        }
+//        pre_arr($lst_ward_end);
+
+//        pre($lst_ward_end);
+        $this->data['lstdata'] = $lst_ward_end;
+
+        $this->load->view('admin/ads/view_list_ward', $this->data);
+    }
+
+    function ajax_get_list_street()
+    {
+        $id = $this->input->get('id');
+        $street_id = explode('|', $id);
+        $street_id = $street_id[1];
+
+//        var_dump($id);
+        $lst_ward = $this->Street_model->get_list(array('where' => array('_district_id' => $street_id)));
+//        $lst_ward = $this->District_model->get_list();
+//        var_dump($lst_ward);
+//        die;
+
+        $lst_ward_end = [];
+        foreach ($lst_ward as $k => $value) {
+            $lst_ward_end[$value->id]['id'] = $value->id;
+            $lst_ward_end[$value->id]['_name'] = $value->_name;
+        }
+//        pre_arr($lst_ward_end);
+
+//        pre($lst_ward_end);
+        $this->data['lstdata'] = $lst_ward_end;
+
+        $this->load->view('admin/ads/view_list_street', $this->data);
     }
 
 
