@@ -69,7 +69,7 @@ Class Ads extends MY_Controller
 
             }
             $path_name = substr($path_name, 0, -1);
-            $data['lightSlider'] = $path_name != '' ? $path_name : 'default.png' ;
+            $data['lightSlider'] = $path_name ;
 
 //            echo pre_arr($path_name);
 //            echo pre_arr($uploadData);

@@ -3,7 +3,7 @@
         <!--        <div class="title-section"><h2>Chi tiết bài rao</h2></div>-->
         <div class="col-md-8 col-sm-12 col-xs-12 mt-2" style="">
             <ol class="breadcrumb">
-<!--                <li><a href="--><?php //echo base_url('rao-vat') ?><!--">Rao vặt</a></li>-->
+                <!--                <li><a href="--><?php //echo base_url('rao-vat') ?><!--">Rao vặt</a></li>-->
                 <li class="" style="color: red;text-transform: uppercase;"><?php echo $ads->title ?></li>
             </ol>
             <div class="item-news-1" style="padding: 10px">
@@ -56,40 +56,39 @@
 
                 <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 10px">
 
-                    <div class="title-hd text-uppercase"><h7>mô tả</h7></div>
+                    <div class="title-hd text-uppercase">
+                        <h7>mô tả</h7>
+                    </div>
 
                     <?php echo trim($ads->content) ?>
 
                 </div>
 
-<!--                --><?php //if($ads->lightSlider != '') { ?>
-
                 <div class="content-news-1 col-md-12 col-sm-12">
-                    <div class="title-hd text-uppercase"><h7>ảnh bài viết</h7></div>
-<!--                    --><?php //if ($ads->lightSlider != NULL) {
+                    <div class="title-hd text-uppercase">
+                        <h7>ảnh bài viết</h7>
+                    </div>
 
-                        ?>
+                    <div class="demo">
+                        <ul id="lightSlider">
+                            <?php
+                            $lightSlider_str = $ads->lightSlider != '' ? $ads->img . '#' . $ads->lightSlider : $ads->img;
+                            $tags = explode('#', $lightSlider_str);
+                            foreach ($tags as $k => $val) { ?>
+                                <li style="width: 450px; height: 338px"
+                                    data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
+                                    <img style="width: 450px; height: 338px" alt="<?= $val ?>"
+                                         src="<?php echo public_url('images/ads/' . $val) ?>"/>
+                                </li>
+                            <?php } ?>
 
-                        <div class="demo">
-                            <ul id="lightSlider">
-                                <?php
-                                $tags = explode('#', $ads->img.'#'.$ads->lightSlider);
-                                foreach ($tags as $k => $val) { ?>
-                                    <li style="width: 450px; height: 338px" data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
-                                        <img style="width: 450px; height: 338px" src="<?php echo public_url('images/ads/' . $val) ?>"/>
-                                    </li>
-                                <?php } ?>
-
-                            </ul>
-                        </div>
-
-<!--                    --><?php //} ?>
+                        </ul>
+                    </div>
 
                 </div>
 
-<!--                --><?php //} ?>
-
             </div>
+
         </div>
 
         <div class="col-md-4 col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
@@ -192,24 +191,26 @@
     });
 
 
-
 </script>
 
 <style>
     .demo {
-        width:420px;
+        width: 420px;
     }
+
     ul {
         list-style: none outside none;
         padding-left: 0;
-        margin-bottom:0;
+        margin-bottom: 0;
     }
+
     li {
         display: block;
         /*float: left;*/
         margin-right: 6px;
-        cursor:pointer;
+        cursor: pointer;
     }
+
     img {
         display: block;
         height: auto;
