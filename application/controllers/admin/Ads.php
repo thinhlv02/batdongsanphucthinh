@@ -6,6 +6,8 @@ Class Ads extends MY_Controller
     {
         parent::__construct();
         $this->load->model('ads_model');
+        $this->load->model('Province_model');
+        $this->load->model('District_model');
     }
 
     function index()
@@ -26,6 +28,8 @@ Class Ads extends MY_Controller
 
     function add()
     {
+        $lstProvince = $this->_province;
+//        pre_arr($lstProvince);
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
@@ -92,6 +96,7 @@ Class Ads extends MY_Controller
             }
 
         }
+        $this->data['lstProvince'] = $lstProvince;
         $this->data['tab'] = 2;
         $this->data['temp'] = 'admin/ads/index';
         $this->data['view'] = 'admin/ads/add';
@@ -374,5 +379,40 @@ Class Ads extends MY_Controller
         }
         echo json_encode($res);
     }
+
+    function ajax_get_list_district()
+    {
+        $id = $this->input->get('id');
+//        var_dump($id);
+//        $selected = $this->input->post('selected');
+
+        //get list tbl_gift_item_info_by_type
+
+        $lst_district = $this->District_model->get_list(array('where' => array('_province_id' => $id)));
+//        $lst_district = $this->District_model->get_list();
+//        var_dump($lst_district);
+//        die;
+
+        $lst_district_end = [];
+        foreach ($lst_district as $k => $value) {
+            $lst_district_end[$value->id]['id'] = $value->id;
+            $lst_district_end[$value->id]['_name'] = $value->_name;
+        }
+//        pre_arr($lst_district_end);
+//        die();
+        //get list tbl_gift_item_info_by_type
+//        echo 'abc' . $type;
+        $lstdata = [];
+
+//        pre($input);
+//        pre($lst_district_end);
+        $this->data['lstdata'] = $lst_district_end;
+//        $this->data['name_field'] = $name_field;
+        // $this->load->view('admin/layout', $this->data);
+
+        $this->load->view('admin/district/view_list_district', $this->data);
+    }
+
+
 
 }

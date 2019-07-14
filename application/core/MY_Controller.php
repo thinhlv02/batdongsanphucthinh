@@ -7,6 +7,7 @@ Class MY_Controller extends CI_Controller
     var $_uid = '';
     var $_uname = '';
     var $_device_type = '';
+    var $_province = '';
 
     function __construct()
     {
@@ -17,6 +18,7 @@ Class MY_Controller extends CI_Controller
         $this->_uid = $this->_session_uid();
         $this->_uname = $this->_session_uname();
         $this->_device_type = $this->_func_device_type();
+        $this->_province = $this->_func_province();
 
 //        var_dump($new_url);
         switch ($new_url) {
@@ -80,5 +82,12 @@ Class MY_Controller extends CI_Controller
     protected function _func_device_type()
     {
         return $this->config->config["device_type"];
+    }
+
+    protected function _func_province() {
+        $this->load->model('Province_model');
+        $lstData = $this->Province_model->get_list(array('order' => array('id','asc')));
+        return $lstData;
+
     }
 }
