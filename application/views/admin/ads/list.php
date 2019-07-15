@@ -52,25 +52,25 @@
 
                     <td>
                         <i id="ads_left-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->ads_left ? 'fa-toggle-on' : 'fa-toggle-off'?>"
+                           class="fa fa-2x <?php echo $row->ads_left ? 'fa-toggle-on' : 'fa-toggle-off'?> text-primary"
                            onclick="ads_left(<?php echo $row->id?>)"
-                           style="color: black"
+                           style=""
                         ></i>
                     </td>
 
                     <td>
                         <i id="ads_right-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off'?>"
+                           class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off'?> text-success"
                            onclick="ads_right(<?php echo $row->id?>)"
-                           style="color: black"
+                           style=""
                         ></i>
                     </td>
 
                     <td>
                         <i id="vip-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->vip ? 'fa-toggle-on' : 'fa-toggle-off'?>"
+                           class="fa fa-2x <?php echo $row->vip ? 'fa-toggle-on' : 'fa-toggle-off'?> text-default"
                            onclick="vip(<?php echo $row->id?>)"
-                           style="color: red"
+                           style=""
                         ></i>
                     </td>
 
