@@ -41,7 +41,7 @@
                 ?>
                 <tr>
 <!--                    <td>--><?php //echo $row->id?><!--</td>-->
-                    <td><?php echo $row->code?></td>
+                    <td><?php echo $row->id?></td>
                     <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 150px"> </td>
                     <td><?php echo $row->title?></td>
                     <td><?php echo $row->price?></td>
