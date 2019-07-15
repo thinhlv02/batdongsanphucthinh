@@ -28,6 +28,8 @@
                 <th>Giá</th>
                 <th>Diện tích</th>
                 <th>Khu vực</th>
+                <th>Trái</th>
+                <th>Phải</th>
                 <th>VIP</th>
                 <th>Nổi bật</th>
 <!--                <th>link bài viết</th>-->
@@ -47,6 +49,31 @@
                     <td><?php echo $row->price?></td>
                     <td><?php echo $row->acreage?></td>
                     <td><?php echo $row->area?></td>
+
+                    <td>
+                        <i id="ads_left-<?php echo $row->id?>"
+                           class="fa fa-2x <?php echo $row->ads_left ? 'fa-toggle-on' : 'fa-toggle-off'?>"
+                           onclick="ads_left(<?php echo $row->id?>)"
+                           style="color: black"
+                        ></i>
+                    </td>
+
+                    <td>
+                        <i id="ads_right-<?php echo $row->id?>"
+                           class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off'?>"
+                           onclick="ads_right(<?php echo $row->id?>)"
+                           style="color: black"
+                        ></i>
+                    </td>
+
+                    <td>
+                        <i id="vip-<?php echo $row->id?>"
+                           class="fa fa-2x <?php echo $row->vip ? 'fa-toggle-on' : 'fa-toggle-off'?>"
+                           onclick="vip(<?php echo $row->id?>)"
+                           style="color: red"
+                        ></i>
+                    </td>
+
                     <td>
                         <i id="vip-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->vip ? 'fa-toggle-on' : 'fa-toggle-off'?>"
@@ -94,6 +121,46 @@
 //            console.log('delll');
             window.location.href = '<?php echo base_url('admin/ads/del/')?>' + id;
         }
+    }
+
+    function ads_left(id) {
+        $.ajax({
+            url: "<?php echo admin_url('ads/ads_left')?>",
+            type: "post",
+            data: {
+                id: id
+            },
+            success: function (msg) {
+                msg = JSON.parse(msg);
+                console.log(msg);
+                if(msg.status){
+                    $('#ads_left-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
+    }
+
+    function ads_right(id) {
+        $.ajax({
+            url: "<?php echo admin_url('ads/ads_right')?>",
+            type: "post",
+            data: {
+                id: id
+            },
+            success: function (msg) {
+                msg = JSON.parse(msg);
+                console.log(msg);
+                if(msg.status){
+                    $('#ads_right-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
     }
 
     function vip(id) {
