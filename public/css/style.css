@@ -963,12 +963,12 @@ span.item-date {
     align-items: flex-start;
     justify-content: center;
     /*height: 400px;*/
-    height: 179px;
+    /*height: 122px;*/
 }
 
 .caption-banner{
     color: #fff;
-    font-size: 24px;
+    font-size: 19px ;
     font-weight: bold;
     /*text-align: center;*/
     animation-name: example;
