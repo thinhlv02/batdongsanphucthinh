@@ -26,25 +26,18 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Quận Huyện</label>
-                    <select class="form-control">
-                        <option value=""> -- Chọn Tỉnh thành --</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
                     <label for="email">Xã / Phường</label>
                     <select class="form-control">
                         <option value=""> -- Xã / Phường --</option>
                     </select>
                 </div>
 
-<!--                <div class="form-group">-->
-<!--                    <label for="email">Loại</label>-->
-<!--                    <select class="form-control">-->
-<!--                        <option value=""> -- Loại --</option>-->
-<!--                    </select>-->
-<!--                </div>-->
+                <div class="form-group">
+                    <label for="email">Loại</label>
+                    <select class="form-control">
+                        <option value=""> -- Loại --</option>
+                    </select>
+                </div>
 
                 <button type="submit" class="btn btn-default">Tìm kiếm</button>
 
@@ -53,9 +46,6 @@
         </div>
         <div class="col-sm-6 col-md-6">
 
-            <div class="box-module mb-5">
-                <div class="bg-modul"><i class="glyphicon glyphicon-star-empty"></i> Tin Đặc biệt</div>
-            </div>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
 
