@@ -272,65 +272,52 @@
                     <div class="box-module mt-2">
                         <div class="bg-modul">Liên kết được quan tâm</div>
                     </div>
+                    <div>
+<!--                        <div class="container">-->
+<!--                            <h2>Basic List Group</h2>-->
+                        <ul class="list-group">
+                            <?php foreach ($news as $key=>$value){ ?>
+                            <li class="list-group-item">
+
+                                <a href="<?php echo base_url('tin-tuc/'.create_slug($value->name).'-'.$value->id)?>">
+                                    <?php echo $value->name?>
+                                </a>
+                            </li>
+                                <?php } ?>
+                            <li class="list-group-item">Second item</li>
+                            <li class="list-group-item">Third item</li>
+                        </ul>
+<!--                        </div>-->
+                    </div>
                     <div class="box-links-right"><p><span style="font-size:12px"><span
                                         style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;HÀ NỘI</strong></span></span>
                         </p>
-                        <ul>
-                            <li>
-                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-sun-grand-city-ancora-luong-yen-s1422162">Chung
-                                    cư&nbsp;Sun Grand City Ancora Residence</a></li>
-                            <li>
-                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-the-garden-hills-99-tran-binh-s260117">Chung
-                                    cư The garden Hills - 99 Trần Bình&nbsp;</a></li>
-                            <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-an-binh-city-s1172432">Chung
-                                    cư An Bình City</a></li>
-                            <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-goldmark-city-s578392">Chung
-                                    cư Goldmark City</a></li>
-                            <li>
-                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-tu-hiep-plaza-s1172600?page=12">Chung
-                                    cư Tứ Hiệp Plaza</a></li>
-                            <li>
-                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-vinhomes-green-bay-me-tri-s1988923">Chung
-                                    cư&nbsp;Vinhomes Green Bay Mễ Trì</a></li>
-                            <li>
-                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-vinhomes-sky-lake-s1225279">Chung
-                                    cư Vinhomes Sky Lake</a></li>
-                            <li>
-                                <a href="http://batdongsanphucthinh.vn/cho-thue-van-phong-mat-bang-kinh-doanh-tai-ha-noi-s49598">Văn
-                                    phòng - mặt bằng kinh doanh tại Hà Nội</a></li>
-                            <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-duong-pho-phao-dai-lang-s1419515">Nhà
-                                    bán tại phố Pháo Đài Láng</a></li>
-                            <li>
-                                <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-md-complex-my-dinh-s813995">Chung
-                                    cư Mdcomplex Mỹ Đình</a></li>
+                        <ul class="list-group">
+                            <?php foreach ($news as $key=>$value){ ?>
+                                <li class="list-group-item">
+
+                                    <a href="<?php echo base_url('tin-tuc/'.create_slug($value->name).'-'.$value->id)?>">
+                                        <?php echo $value->name?>
+                                    </a>
+                                </li>
+                            <?php } ?>
+                            <li class="list-group-item">Second item</li>
+                            <li class="list-group-item">Third item</li>
                         </ul>
                         <p>
                             <span style="font-size:12px"><span style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;TP.HCM</strong></span></span>
                         </p>
-                        <ul>
-                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-7-s37553">Cho
-                                    thuê căn hộ chung cư Quận 7</a></li>
-                            <li><a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-4-s37550">Cho
-                                    thuê căn hộ chung cư Quận&nbsp;4</a></li>
-                            <li>
-                                <a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-5-s37551?page=1">Cho
-                                    thuê căn hộ chung cư Quận&nbsp;5</a></li>
-                            <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-him-lam-phu-an-s1422099">Căn
-                                    hộ Him Lam Phú An</a></li>
-                            <li><a href="http://batdongsanphucthinh.vn/dat-ban-tai-quan-9-s1359687">Đất bán tại Quận
-                                    9</a></li>
-                            <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-quan-tan-binh-s1359045">Bán nhà quận
-                                    Tân&nbsp;<span style="font-size:13px">Bình</span></a></li>
-                            <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-quan-10-s1358944"><span
-                                            style="font-size:13px">Bán nhà Quận 10</span></a></li>
-                            <li>
-                                <a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-tan-hung-quan-7-s110665">Cho
-                                    thuê
-                                    nhà tân hưng, quận 7</a></li>
-                            <li>
-                                <a href="http://batdongsanphucthinh.vn/cho-thue-nha-tai-quan-1-s38310">Cho thuê nhà
-                                    tại
-                                    quận 1</a></li>
+                        <ul class="list-group">
+                            <?php foreach ($news as $key=>$value){ ?>
+                                <li class="list-group-item">
+
+                                    <a href="<?php echo base_url('tin-tuc/'.create_slug($value->name).'-'.$value->id)?>">
+                                        <?php echo $value->name?>
+                                    </a>
+                                </li>
+                            <?php } ?>
+                            <li class="list-group-item">Second item</li>
+                            <li class="list-group-item">Third item</li>
                         </ul>
                     </div>
                     <div class="box-module">
@@ -338,51 +325,34 @@
                             thủy
                         </div>
                     </div>
-                    <ul class="news-list">
-                        <li class="first"><a
-                                    href="/tin-tuc/nghe-thay-chon-ngay-dong-tho-gia-dinh-toi-phai-o-nha-dot-3-nam-7891.html"
-                                    rel="nofollow"> <img
-                                        src="https://batdongsan24h.com.vn/images/private/2018/09/30/131827865197044222.jpg?w=245"
-                                        class="img-responsive center-block"
-                                        alt="Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm"> Nghe thầy
-                                chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm </a></li>
-                        <li><a href="/tin-tuc/phong-thuy-trong-nha-bep-nhung-dieu-dai-ky-nen-tranh-7864.html"
-                               rel="nofollow"><i class="glyphicon glyphicon-menu-right"></i> Phong thủy trong nhà bếp
-                                những điều đại kỵ nên tránh</a></li>
-                        <li><a href="/tin-tuc/top-con-giap-co-gia-san-do-so-khi-sang-tuoi-40-7858.html"
-                               rel="nofollow"><i class="glyphicon glyphicon-menu-right"></i> Top con giáp có gia sản đồ
-                                sộ khi sang tuổi 40</a></li>
-                        <li><a href="/tin-tuc/nhung-diem-bao-phong-thuy-bao-hieu-ban-sap-vuong-xui-xeo-7852.html"
-                               rel="nofollow"><i class="glyphicon glyphicon-menu-right"></i> Những điềm báo phong thủy
-                                báo hiệu bạn sắp vướng xui xẻo</a></li>
-                        <li><a href="/tin-tuc/dat-hu-gao-chuan-phong-thuy-ruoc-may-man-tai-loc-vao-nha-7845.html"
-                               rel="nofollow"><i class="glyphicon glyphicon-menu-right"></i> Đặt hũ gạo chuẩn phong thủy
-                                rước may mắn, tài lộc vào nhà</a></li>
+                    <ul class="list-group">
+                        <?php foreach ($news as $key=>$value){ ?>
+                            <li class="list-group-item">
+
+                                <a href="<?php echo base_url('tin-tuc/'.create_slug($value->name).'-'.$value->id)?>">
+                                    <?php echo $value->name?>
+                                </a>
+                            </li>
+                        <?php } ?>
+                        <li class="list-group-item">Second item</li>
+                        <li class="list-group-item">Third item</li>
                     </ul>
                     <div class="box-module">
                         <div class="bg-modul" style="margin-top:10px"><i class="glyphicon glyphicon-link"></i> Góc lắng
                             nghe
                         </div>
                     </div>
-                    <ul class="news-list">
-                        <li class="first"><a href="/tin-tuc/nhung-sai-lam-khien-nha-ban-mua-khong-tang-gia-7897.html"
-                                             rel="nofollow"> <img
-                                        src="https://batdongsan24h.com.vn/images/private/2019/03/31/131984897077222611.jpg?w=245"
-                                        class="img-responsive center-block"
-                                        alt="Những sai lầm khiến nhà bạn mua không tăng giá"> Những sai lầm khiến nhà
-                                bạn mua không tăng giá </a></li>
-                        <li><a href="/tin-tuc/toi-lo-mat-co-hoi-mua-mieng-dat-dep-vi-kieng-thang-co-hon-7888.html"
-                               rel="nofollow"><i class="glyphicon glyphicon-menu-right"></i> Tôi lỡ mất cơ hội mua miếng
-                                đất đẹp vì kiêng tháng cô hồn</a></li>
-                        <li><a href="/tin-tuc/ban-dat-coi-chung-dinh-bay-dat-coc-roi-pha-coc-7886.html"
-                               rel="nofollow"><i class="glyphicon glyphicon-menu-right"></i> Bán đất coi chừng dính bẫy
-                                "đặt cọc rồi... phá cọc"</a></li>
-                        <li><a href="/tin-tuc/doi-nha-to-o-ngoai-thanh-lay-chung-cu-nho-o-noi-thanh-7883.html"
-                               rel="nofollow"><i class="glyphicon glyphicon-menu-right"></i> Đổi nhà to ở ngoại thành
-                                lấy chung cư nhỏ ở nội thành </a></li>
-                        <li><a href="/tin-tuc/me-don-than-quyet-dinh-mua-nha-khi-chi-co-120-trieu-7880.html"
-                               rel="nofollow"><i class="glyphicon glyphicon-menu-right"></i> Mẹ đơn thân quyết định mua
-                                nhà khi chỉ có 120 triệu</a></li>
+                    <ul class="list-group">
+                        <?php foreach ($news as $key=>$value){ ?>
+                            <li class="list-group-item">
+
+                                <a href="<?php echo base_url('tin-tuc/'.create_slug($value->name).'-'.$value->id)?>">
+                                    <?php echo $value->name?>
+                                </a>
+                            </li>
+                        <?php } ?>
+                        <li class="list-group-item">Second item</li>
+                        <li class="list-group-item">Third item</li>
                     </ul>
                 </div>
 
