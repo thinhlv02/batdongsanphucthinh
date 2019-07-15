@@ -21,7 +21,7 @@
         <table id="datatable-news" class="table table-striped table-bordered bulk_action">
             <thead>
             <tr>
-                <th>Mã số</th>
+                <th>Mã tin</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
 <!--                <th>Giá</th>-->
@@ -42,7 +42,7 @@
                 <tr>
 <!--                    <td>--><?php //echo $row->id?><!--</td>-->
                     <td><?php echo $row->id?></td>
-                    <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 150px"> </td>
+                    <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 80px"> </td>
                     <td><?php echo $row->title?></td>
 <!--                    <td>--><?php //echo $row->price?><!--</td>-->
 <!--                    <td>--><?php //echo $row->acreage?><!--</td>-->
