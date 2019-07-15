@@ -36,6 +36,7 @@
                 <th>Lượt xem</th>
                 <th>Ngày Tạo</th>
                 <th>Hành động</th>
+                <th></th>
             </tr>
             </thead>
             <tbody>
