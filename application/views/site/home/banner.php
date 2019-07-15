@@ -74,7 +74,8 @@
 //                        echo $key;
                                 ?>
                                 <div class="item <?php if ($key == 0) echo 'active'; ?>">
-                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:100% ">
+<!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
+                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:590px; height: 295px"">
                                     <div class="carousel-caption">
                                         <h3><?php echo $value->title ?></h3>
                                         <p><?php echo $value->intro ?></p>
@@ -124,7 +125,7 @@
                                 ?>
                                 <div class="item <?php if ($key == 0) echo 'active'; ?>">
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
-                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:300px; height: 338px">
+                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:300px; height: 295px">
                                     <div class="carousel-caption">
                                         <h3><?php echo $value->title ?></h3>
                                         <p><?php echo $value->intro ?></p>
