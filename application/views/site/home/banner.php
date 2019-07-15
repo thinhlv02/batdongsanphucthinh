@@ -1,35 +1,66 @@
-<section class="news">
+<section class="news mt-3">
     <div class="container-fluid">
 <!--        <div class="box-module">-->
 <!--            <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Tin Vip</div>-->
 <!--        </div>-->
         <div class="col-sm-3 col-md-3">
-            <h2>Tìm kiếm</h2>
+            <div class="box-module">
+                <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>
+            </div>
             <form action="">
+<!--                <div class="form-group">-->
+<!--                    <label for="email">Mã tin:</label>-->
+<!--                    <input type="email" class="form-control" id="email" placeholder="Nhập mã tin" name="code">-->
+<!--                </div>-->
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <label for="email">Tỉnh thành</label>
+                    <select class="form-control">
+                        <option value=""> -- Chọn Tỉnh thành --</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                    <label for="email">Quận Huyện</label>
+                    <select class="form-control">
+                        <option value=""> -- Chọn Quận Huyện --</option>
+                    </select>
                 </div>
-                <div class="checkbox">
-                    <label><input type="checkbox" name="remember"> Remember me</label>
+
+                <div class="form-group">
+                    <label for="email">Quận Huyện</label>
+                    <select class="form-control">
+                        <option value=""> -- Chọn Tỉnh thành --</option>
+                    </select>
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+
+                <div class="form-group">
+                    <label for="email">Xã / Phường</label>
+                    <select class="form-control">
+                        <option value=""> -- Xã / Phường --</option>
+                    </select>
+                </div>
+
+<!--                <div class="form-group">-->
+<!--                    <label for="email">Loại</label>-->
+<!--                    <select class="form-control">-->
+<!--                        <option value=""> -- Loại --</option>-->
+<!--                    </select>-->
+<!--                </div>-->
+
+                <button type="submit" class="btn btn-default">Tìm kiếm</button>
+
             </form>
 
         </div>
         <div class="col-sm-6 col-md-6">
 
-
-<!--            <h2>Carousel Example</h2>-->
+            <div class="box-module mb-5">
+                <div class="bg-modul"><i class="glyphicon glyphicon-star-empty"></i> Tin Đặc biệt</div>
+            </div>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
 
                 <ol class="carousel-indicators">
-                    <?php foreach ($vip as $key => $value) {
+                    <?php foreach ($banner_center as $key => $value) {
 //                        echo $key;
                         ?>
                         <li data-target="#myCarousel" data-slide-to="<?php echo $key ?>" class="<?php if ($key ==0 ) echo 'active'; ?>"></li>
@@ -42,14 +73,15 @@
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                    <?php foreach ($vip as $key => $value) {
+                    <?php foreach ($banner_center as $key => $value) {
 //                        echo $key;
                         ?>
                     <div class="item <?php if ($key ==0 ) echo 'active'; ?>">
-                        <img src="<?php echo public_url('images/ads/'.$value->img)?>" alt="Los Angeles" style="width:100%;">
+                        <img src="<?php echo public_url('images/ads/'.$value->img)?>" alt="$value->img" style="width:100% ">
                         <div class="carousel-caption">
-                            <h3>Los Angeles</h3>
-                            <p>LA is always so much fun!</p>
+                            <h3><?php echo $value->title ?></h3>
+                            <p><?php echo $value->intro ?></p>
+<!--                            <p>LA is always so much fun!</p>-->
                         </div>
                     </div>
                     <?php } ?>
@@ -84,8 +116,63 @@
             </div>
 
 
-
         </div>
-        <div class="col-sm-3 col-md-3"></div>
+        <div class="col-sm-3 col-md-3">
+            <div class="box-module mt-2">
+                <div class="bg-modul"><i class="glyphicon glyphicon-file"></i>Liên kết được quan tâm</div>
+            </div>
+            <div class="box-links-right"><p><span style="font-size:12px"><span
+                                style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;HÀ NỘI</strong></span></span>
+                </p>
+                <ul>
+                    <li>
+                        <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-sun-grand-city-ancora-luong-yen-s1422162">Chung
+                            cư&nbsp;Sun Grand City Ancora Residence</a></li>
+                    <li>
+                        <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-the-garden-hills-99-tran-binh-s260117">Chung
+                            cư The garden Hills - 99 Trần Bình&nbsp;</a></li>
+                    <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-an-binh-city-s1172432">Chung
+                            cư An Bình City</a></li>
+                    <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-goldmark-city-s578392">Chung
+                            cư Goldmark City</a></li>
+                    <li>
+                        <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-tu-hiep-plaza-s1172600?page=12">Chung
+                            cư Tứ Hiệp Plaza</a></li>
+                    <li>
+                        <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-vinhomes-green-bay-me-tri-s1988923">Chung
+                            cư&nbsp;Vinhomes Green Bay Mễ Trì</a></li>
+                    <li>
+                        <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-vinhomes-sky-lake-s1225279">Chung
+                            cư Vinhomes Sky Lake</a></li>
+                    <li>
+                        <a href="http://batdongsanphucthinh.vn/cho-thue-van-phong-mat-bang-kinh-doanh-tai-ha-noi-s49598">Văn
+                            phòng - mặt bằng kinh doanh tại Hà Nội</a></li>
+                    <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-duong-pho-phao-dai-lang-s1419515">Nhà
+                            bán tại phố Pháo Đài Láng</a></li>
+                    <li>
+                        <a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-md-complex-my-dinh-s813995">Chung
+                            cư Mdcomplex Mỹ Đình</a></li>
+                </ul>
+                <p>
+                    <span style="font-size:12px"><span style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;TP.HCM</strong></span></span>
+                </p>
+                <ul>
+                    <li><a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-7-s37553">Cho
+                            thuê căn hộ chung cư Quận 7</a></li>
+                    <li><a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-4-s37550">Cho
+                            thuê căn hộ chung cư Quận&nbsp;4</a></li>
+                    <li>
+                        <a href="http://batdongsanphucthinh.vn/cho-thue-can-ho-chung-cu-tai-quan-5-s37551?page=1">Cho
+                            thuê căn hộ chung cư Quận&nbsp;5</a></li>
+                    <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-him-lam-phu-an-s1422099">Căn
+                            hộ Him Lam Phú An</a></li>
+                    <li><a href="http://batdongsanphucthinh.vn/dat-ban-tai-quan-9-s1359687">Đất bán tại Quận
+                            9</a></li>
+                    <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-quan-tan-binh-s1359045">Bán nhà quận
+                            Tân&nbsp;<span style="font-size:13px">Bình</span></a></li>
+
+                </ul>
+            </div>
+        </div>
     </div>
 </section>

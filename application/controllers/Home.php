@@ -22,6 +22,10 @@ Class Home extends MY_Controller
         $this->data['news'] = $news;
 
         //ads vip
+        $banner_center = $this->ads_model->get_list(array('where' => array('vip' => 1), 'limit' => array(2, 0)));
+        $this->data['banner_center'] = $banner_center;
+
+        //ads vip
         $ads = $this->ads_model->get_list(array('where' => array('vip' => 1), 'limit' => array(4, 0)));
         $this->data['vip'] = $ads;
 
