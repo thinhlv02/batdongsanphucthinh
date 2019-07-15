@@ -39,8 +39,29 @@ Class Ads extends MY_Controller
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $config['max_size'] = '10000';
             $this->load->library("upload", $config);
+
             $ward_str = $this->input->post('ward');
-            $ward = explode('|', $ward_str);
+            $ward = '';
+            if ($ward_str) {
+                $ward = explode('|', $ward_str);
+                $ward =$ward[0];
+            }
+
+
+
+//            $district = '';
+//
+//            if($this->input->post('district') != '') {
+//                $district = $this->input->post('district');
+//            }
+//
+//            if($this->input->post('ward') != '') {
+//                $ward = $this->input->post('ward');
+//            }
+//
+//            if($this->input->post('street') != '') {
+//                $street = $this->input->post('street');
+//            }
 
             $data = array(
                 'title' => $this->input->post('txtName'),
@@ -54,7 +75,7 @@ Class Ads extends MY_Controller
                 'acreage' => $this->input->post('acreage'),
                 'province_id' => $this->input->post('province'),
                 'district_id' => $this->input->post('district'),
-                'ward_id' => $ward[0],
+                'ward_id' => $ward,
                 'street_id' => $this->input->post('street'),
                 'created_by' => $this->_uid,
             );
