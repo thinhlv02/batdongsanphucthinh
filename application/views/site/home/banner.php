@@ -8,9 +8,13 @@
                 <div class="card-body">
 
 
-                    <div class="box-module">
-                        <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>
+<!--                    <div class="box-module">-->
+<!--                        <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>-->
+<!--                    </div>-->
+                    <div class="page-title text-center">
+                        <h4>Tìm kiếm</h4>
                     </div>
+
                     <form action="">
                         <!--                <div class="form-group">-->
                         <!--                    <label for="email">Mã tin:</label>-->
@@ -36,12 +40,12 @@
                             </select>
                         </div>
 
-                        <div class="form-group">
-                            <label for="email">Loại</label>
-                            <select class="form-control">
-                                <option value=""> -- Loại --</option>
-                            </select>
-                        </div>
+<!--                        <div class="form-group">-->
+<!--                            <label for="email">Loại</label>-->
+<!--                            <select class="form-control">-->
+<!--                                <option value=""> -- Loại --</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
 
                         <button type="submit" class="btn btn-primary">Tìm kiếm</button>
 
