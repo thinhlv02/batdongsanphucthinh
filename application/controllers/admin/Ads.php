@@ -337,7 +337,8 @@ Class Ads extends MY_Controller
 
             if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật rao bán thành công');
-                redirect(base_url('admin/ads/edit/' . $id));
+//                redirect(base_url('admin/ads/edit/' . $id));
+                redirect(base_url('admin/ads/edit'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
