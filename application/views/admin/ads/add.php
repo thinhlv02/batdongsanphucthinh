@@ -45,7 +45,6 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh minh họa <span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <!--                        <input type="file" class="form-control" name="img_news" id="img_news">-->
                         <input type="file" class="form-control" name="img_news">
                     </div>
                 </div>
@@ -93,13 +92,6 @@
 
                 </div>
 
-                <!--                <div class="form-group">-->
-                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề tin trên web <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
-                <!--                        <input type="text" id="txtDocumentTitle" name="txtDocumentTitle" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề tin trên web">-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Khu vực<span
                                 class="required">*</span></label>
@@ -132,15 +124,10 @@
                             <?php } ?>
 
                         </select>
-
-
                     </div>
-
 
                     <label class="control-label col-md-1 col-sm-1 col-xs-12 " for="first-name">Quận / Huyện<span
                                 class="required">*</span></label>
-
-
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divDistrict">
                         <select class="select2_group form-control" name="district" id="" onchange="">
                             <option value="0">Chọn Quận/Huyện</option>
@@ -169,36 +156,6 @@
 
                 </div>
 
-                <!--                <div class="form-group">-->
-                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Description <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
-                <!--                        <input type="text" id="txtMetaDescription" name="txtMetaDescription" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Description">-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
-                <!--                <div class="form-group">-->
-                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Keywords <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
-                <!--                        <input type="text" id="txtMetaKeywords" name="txtMetaKeywords" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Keywords">-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
-                <!--                <div class="form-group">-->
-                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Canonical URL <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
-                <!--                        <input type="text" id="txtCanonicalUrl" name="txtCanonicalUrl" required="required" class="form-control col-md-7 col-xs-12" placeholder="Canonical URL">-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
-                <!--                <div class="form-group">-->
-                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Robots meta setting <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
-                <!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noindex" > Apply noindex to this page</label><br>-->
-                <!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="nofollow" > Apply nofollow to this page</label><br>-->
-                <!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noarchive" > Apply noarchive to this page</label>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
                 <div class="form-group" style="margin-top: 30px">
                     <div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-2" style="width: 70px">
                         <input type="submit" id="btnAddProduct" name="btnAdd" required="required"
@@ -215,7 +172,6 @@
         var id = sel.value;
         console.log(id);
         if (id == 0) {
-            // $("#divDistrict").hide();
             $('#selectDistrict').empty();
             $('#selectWard').empty();
             $('#selectStreet').empty();
@@ -228,21 +184,17 @@
             // console.log(params);
             var _onSuccess = function (data) {
                 // console.log(data);
-                // $("#question").html('');
                 if (data == 'NOT_LOGIN') {
                     window.location.reload(true);
                 } else if (data === 'false') {
-                    alert('Danh mục "' + cat_name + '" không tồn tại!');
+
                 } else {
-                    console.log(data);
+                    // console.log(data);
                     $("#divDistrict").html(data);
                 }
             };//
 
             getAjax('<?php echo admin_url('ads/ajax_get_list_district'); ?>', params, '', 'GET', '', false, _onSuccess);
-
-
-            //getAjax('<?php //echo admin_url('Gift_item_info/ajax_get_list_gift_item_by_type') ?>//', params, 'POST', _onSuccess);
         }
     }
 
@@ -253,21 +205,17 @@
             $('#selectWard').empty();
             $('#selectStreet').empty();
         } else {
-            // ajax
             var params = {
                 'id': id
             };
 
-            // console.log(params);
             var _onSuccess = function (data) {
                 // console.log(data);
-                // $("#question").html('');
                 if (data == 'NOT_LOGIN') {
 
                 } else if (data === 'false') {
 
                 } else {
-                    // console.log(data);
                     $("#divWard").html(data);
                 }
             };
@@ -290,7 +238,6 @@
             // console.log(params);
             var _onSuccess = function (data) {
                 // console.log(data);
-                // $("#question").html('');
                 if (data == 'NOT_LOGIN') {
 
                 } else if (data === 'false') {
