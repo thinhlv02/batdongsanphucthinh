@@ -19,12 +19,15 @@
                     <div class="box-info" style="">
                         <div class="block">
                             <div class="col-left">Mã tin</div>
-                            <div class="col-right"><b><?php
-                                    if ($ads->code == 0) {
-                                        echo generateRandomString(6);
-                                    } else {
-                                        echo $ads->code;
-                                    } ?></b></div>
+                            <div class="col-right"><b>
+                                    <?php
+                                    echo $ads->id.'000';
+//                                    if ($ads->code == 0) {
+//                                        echo generateRandomString(6);
+//                                    } else {
+//                                        echo $ads->code;
+//                                    } ?>
+                                </b></div>
                         </div>
                         <div class="block">
                             <div class="col-left">Lượt xem</div>
