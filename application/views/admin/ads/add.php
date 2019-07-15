@@ -142,6 +142,9 @@
 
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divDistrict">
+                        <select class="select2_group form-control" name="district" id="" onchange="">
+                            <option value="0">Chọn Quận/Huyện</option>
+                        </select>
 
                     </div>
 
@@ -149,6 +152,9 @@
                                 class="required">*</span></label>
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divWard">
+                        <select class="select2_group form-control" name="ward" id="" onchange="">
+                            <option value="0">Chọn Xã/Phường</option>
+                        </select>
 
                     </div>
 
@@ -156,7 +162,9 @@
                                 class="required">*</span></label>
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divStreet">
-
+                        <select class="select2_group form-control" name="street" id="">
+                            <option value="0">-- Không có --</option>
+                        </select>
                     </div>
 
                 </div>
