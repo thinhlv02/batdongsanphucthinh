@@ -112,7 +112,7 @@
                     <div id="myCarouse2" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
-                            <?php foreach ($ads_left as $key => $value) {
+                            <?php foreach ($ads_right as $key => $value) {
                                 ?>
                                 <li data-target="#myCarouse2" data-slide-to="<?php echo $key ?>" class="<?php if ($key == 0) echo 'active'; ?>"></li>
                             <?php } ?>
@@ -120,7 +120,7 @@
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
-                            <?php foreach ($ads_left as $key => $value) {
+                            <?php foreach ($ads_right as $key => $value) {
 //                        echo $key;
                                 ?>
                                 <div class="item <?php if ($key == 0) echo 'active'; ?>">

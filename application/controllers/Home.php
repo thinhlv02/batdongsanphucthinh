@@ -27,7 +27,7 @@ Class Home extends MY_Controller
 
         //ads right
         $ads_right = $this->ads_model->get_list(array('where' => array('ads_right' => 1), 'limit' => array(3, 0)));
-        $this->data['ads_left'] = $ads_right;
+        $this->data['ads_right'] = $ads_right;
 
         //ads vip
         $ads = $this->ads_model->get_list(array('where' => array('vip' => 1), 'limit' => array(4, 0)));
