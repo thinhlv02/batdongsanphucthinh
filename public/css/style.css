@@ -1193,12 +1193,12 @@ span.item-date {
 }
 
 .carousel-control span{
-    background-color: green;
-    border-radius: 50%;
-    width: 50px !important;
-    height: 50px !important;
-    line-height: 50px;
-    right: 10px !important;
+    /*background-color: green;*/
+    /*border-radius: 50%;*/
+    /*width: 50px !important;*/
+    /*height: 50px !important;*/
+    /*line-height: 50px;*/
+    /*right: 10px !important;*/
 }
 
 .carousel-inner>.item.active, .carousel-inner>.item.next.left{
