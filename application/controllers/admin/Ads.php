@@ -52,10 +52,10 @@ Class Ads extends MY_Controller
                 'intro' => $this->input->post('txtIntro'),
                 'price' => $this->input->post('price'),
                 'acreage' => $this->input->post('acreage'),
-                'province' => $this->input->post('province'),
-                'district' => $this->input->post('district'),
-                'ward' => $ward[0],
-                'street' => $this->input->post('street'),
+                'province_id' => $this->input->post('province'),
+                'district_id' => $this->input->post('district'),
+                'ward_id' => $ward[0],
+                'street_id' => $this->input->post('street'),
                 'created_by' => $this->_uid,
             );
 
@@ -75,13 +75,16 @@ Class Ads extends MY_Controller
                     // Uploaded file data
                     $fileData = $this->upload->data();
                     $uploadData[$i]['file_name'] = $fileData['file_name'];
+                    $path_name .= $fileData['file_name'] . '#';
                 }
 
-                $path_name .= $fileData['file_name'] . '#';
+
 
             }
             $path_name = substr($path_name, 0, -1);
-            $data['lightSlider'] = $path_name;
+            if ($path_name != '') {
+             $data['lightSlider'] = $path_name;
+            }
 
 //            echo pre_arr($path_name);
 //            echo pre_arr($uploadData);
