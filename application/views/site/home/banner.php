@@ -108,12 +108,12 @@
                         <div class="bg-modul"><i class="glyphicon glyphicon-file"></i>Tin tức mới</div>
                     </div>
 
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div id="myCarouse2" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
                             <?php foreach ($banner_center as $key => $value) {
                                 ?>
-                                <li data-target="#myCarousel" data-slide-to="<?php echo $key ?>" class="<?php if ($key == 0) echo 'active'; ?>"></li>
+                                <li data-target="#myCarouse2" data-slide-to="<?php echo $key ?>" class="<?php if ($key == 0) echo 'active'; ?>"></li>
                             <?php } ?>
                         </ol>
 
@@ -123,7 +123,8 @@
 //                        echo $key;
                                 ?>
                                 <div class="item <?php if ($key == 0) echo 'active'; ?>">
-                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:100% ">
+<!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
+                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:300px; height: 400px">
                                     <div class="carousel-caption">
                                         <h3><?php echo $value->title ?></h3>
                                         <p><?php echo $value->intro ?></p>
@@ -134,11 +135,11 @@
                         </div>
 
                         <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <a class="left carousel-control" href="#myCarouse2" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <a class="right carousel-control" href="#myCarouse2" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                             <span class="sr-only">Next</span>
                         </a>
