@@ -39,7 +39,7 @@
                     </select>
                 </div>
 
-                <button type="submit" class="btn btn-default">Tìm kiếm</button>
+                <button type="submit" class="btn btn-primary">Tìm kiếm</button>
 
             </form>
 
@@ -156,10 +156,7 @@
                             thuê căn hộ chung cư Quận&nbsp;5</a></li>
                     <li><a href="http://batdongsanphucthinh.vn/ban-can-ho-chung-cu-tai-him-lam-phu-an-s1422099">Căn
                             hộ Him Lam Phú An</a></li>
-                    <li><a href="http://batdongsanphucthinh.vn/dat-ban-tai-quan-9-s1359687">Đất bán tại Quận
-                            9</a></li>
-                    <li><a href="http://batdongsanphucthinh.vn/nha-ban-tai-quan-tan-binh-s1359045">Bán nhà quận
-                            Tân&nbsp;<span style="font-size:13px">Bình</span></a></li>
+
 
                 </ul>
             </div>
