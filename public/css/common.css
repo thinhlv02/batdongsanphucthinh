@@ -37,6 +37,18 @@
     padding: 5px !important;
 }
 
+.pb-0 {
+    padding-bottom: 0px !important;
+}
+
+.pt-0 {
+    padding-top: 0px !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ccc !important;
+}
+
 .bg-modul {
     /*background: #15a1b1;*/
     /*color: #fff;*/

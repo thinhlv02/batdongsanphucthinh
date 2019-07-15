@@ -6,14 +6,14 @@
         <div class="row">
             <div class="col-sm-3 col-md-3">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body pt-0 ">
 
 
     <!--                    <div class="box-module">-->
     <!--                        <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>-->
     <!--                    </div>-->
                         <div class="page-title text-center">
-                            <h4>Tìm kiếm</h4>
+                            <h4 class="border-bottom">Tìm kiếm</h4>
                         </div>
 
                         <form action="">
@@ -78,10 +78,12 @@
     <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
                                         <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:590px; height: 295px"">
                                         <div class="carousel-caption">
-                                            <h3><a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                            <h4 class=""><a class="text-danger" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                     <?php echo $value->title ?>
-                                                </a></h3>
-                                            <p><?php echo $value->intro ?></p>
+                                                </a></h4>
+<!--                                            <p><a class="text-danger" href="">-->
+<!--                                                --><?php //echo $value->intro ?>
+<!--                                            </a></p>-->
                                         </div>
                                     </div>
                                 <?php } ?>
@@ -130,8 +132,8 @@
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
                                     <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:300px; height: 295px">
                                     <div class="carousel-caption">
-                                        <h3><a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a></h3>
-                                        <p><?php echo $value->intro ?></p>
+                                        <h4><a class="text-danger" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a></h4>
+<!--                                        <p>--><?php //echo $value->intro ?><!--</p>-->
                                     </div>
                                 </div>
                             <?php } ?>
