@@ -30,7 +30,7 @@
                 <th>Khu vực</th>
                 <th>Trái</th>
                 <th>Phải</th>
-                <th>VIP</th>
+                <th>Giữa</th>
                 <th>Nổi bật</th>
 <!--                <th>link bài viết</th>-->
                 <th>Lượt xem</th>
