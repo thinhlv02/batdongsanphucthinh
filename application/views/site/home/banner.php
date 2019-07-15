@@ -9,11 +9,12 @@
                     <div class="card-body pt-0 ">
 
 
-    <!--                    <div class="box-module">-->
-    <!--                        <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>-->
-    <!--                    </div>-->
-                        <div class="page-title text-center">
-                            <h4 class="border-bottom">Tìm kiếm</h4>
+<!--                        <div class="box-module">-->
+<!--                            <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>-->
+<!--                        </div>-->
+                        <div class="page-title text-center" style="">
+                            <h4 class="border-bottom">Chức năng tìm kiếm</h4>
+<!--                            <button type="button" class="btn btn-success">Thanh tìm kiếm <span class="badge"></span></button>-->
                         </div>
 
                         <form action="">
@@ -47,8 +48,10 @@
     <!--                                <option value=""> -- Loại --</option>-->
     <!--                            </select>-->
     <!--                        </div>-->
+                            <div class="text-center">
 
-                            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+                            <button type="submit" class="btn btn-default">Tìm</button>
+                            </div>
 
                         </form>
 

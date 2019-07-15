@@ -33,6 +33,10 @@
     border-bottom: 2px #15a1b1 solid;
 }
 
+.p-2 {
+    padding: 2px !important;
+}
+
 .p-5 {
     padding: 5px !important;
 }
