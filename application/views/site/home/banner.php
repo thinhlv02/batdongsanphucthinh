@@ -104,9 +104,9 @@
             <div class="card">
                 <div class="card-body">
 
-                    <div class="box-module mt-2">
-                        <div class="bg-modul"><i class="glyphicon glyphicon-file"></i>Tin tức mới</div>
-                    </div>
+<!--                    <div class="box-module mt-2">-->
+<!--                        <div class="bg-modul"><i class="glyphicon glyphicon-file"></i>Tin tức mới</div>-->
+<!--                    </div>-->
 
                     <div id="myCarouse2" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -124,7 +124,7 @@
                                 ?>
                                 <div class="item <?php if ($key == 0) echo 'active'; ?>">
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
-                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:300px; height: 400px">
+                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:300px; height: 338px">
                                     <div class="carousel-caption">
                                         <h3><?php echo $value->title ?></h3>
                                         <p><?php echo $value->intro ?></p>
