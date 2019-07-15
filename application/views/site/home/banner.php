@@ -77,7 +77,9 @@
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
                                     <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:590px; height: 295px"">
                                     <div class="carousel-caption">
-                                        <h3><?php echo $value->title ?></h3>
+                                        <h3><a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                                <?php echo $value->title ?>
+                                            </a></h3>
                                         <p><?php echo $value->intro ?></p>
                                     </div>
                                 </div>
