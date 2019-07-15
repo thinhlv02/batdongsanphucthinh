@@ -56,11 +56,11 @@
     </div>
 </div>
 <script>
-    $(document).ready(function () {
-        $('#datatable-news').dataTable({
-            "ordering": false
-        });
-    });
+    // $(document).ready(function () {
+    //     $('#datatable-news').dataTable({
+    //         "ordering": false
+    //     });
+    // });
 
     function confirmDel(id) {
         if(confirm('Bạn có chắc chắn muốn xóa?')){

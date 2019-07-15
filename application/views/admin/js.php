@@ -35,6 +35,11 @@
 	$(document).ready(function() {
 		$("#datatable-product").dataTable();
 		$("#datatable-service").dataTable();
+        $('#datatable-news').dataTable({
+            "ordering": false,
+            // dom: "Bfrtip",
+            "iDisplayLength": 30,
+        });
 
 		$('#txtFrom').daterangepicker({
           	singleDatePicker: true,

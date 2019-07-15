@@ -24,9 +24,9 @@
                 <th>Mã số</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
-                <th>Giá</th>
-                <th>Diện tích</th>
-                <th>Khu vực</th>
+<!--                <th>Giá</th>-->
+<!--                <th>Diện tích</th>-->
+<!--                <th>Khu vực</th>-->
                 <th>Ngày Tạo</th>
                 <th>service_money</th>
                 <th>make_money_by</th>
@@ -44,9 +44,9 @@
                     <td><?php echo $row->id?></td>
                     <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 150px"> </td>
                     <td><?php echo $row->title?></td>
-                    <td><?php echo $row->price?></td>
-                    <td><?php echo $row->acreage?></td>
-                    <td><?php echo $row->area?></td>
+<!--                    <td>--><?php //echo $row->price?><!--</td>-->
+<!--                    <td>--><?php //echo $row->acreage?><!--</td>-->
+<!--                    <td>--><?php //echo $row->area?><!--</td>-->
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td><?php echo $row->service_money > 0 ? number_format($row->service_money) : '' ?></td>
                     <td><?php echo $row->name_emp ?></td>
@@ -61,7 +61,7 @@
             </tbody>
             <tfoot>
             <tr class="bg-primary">
-                <td colspan="7">Tổng tiền</td>
+                <td colspan="4">Tổng tiền</td>
                 <td><?php echo($sum > 0 ? number_format($sum) : '') ?></td>
                 <td colspan="3"></td>
             </tr>
@@ -71,10 +71,10 @@
     </div>
 </div>
 <script>
-    $(document).ready(function () {
-        $('#datatable-news').dataTable({
-            "ordering": false
-        });
-    });
+    // $(document).ready(function () {
+    //     $('#datatable-news').dataTable({
+    //         "ordering": false
+    //     });
+    // });
 
 </script>

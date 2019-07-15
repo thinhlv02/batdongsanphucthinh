@@ -82,11 +82,12 @@
     </div>
 </div>
 <script>
-    $(document).ready(function () {
-        $('#datatable-news').dataTable({
-            "ordering": false
-        });
-    });
+    // $(document).ready(function () {
+    //     $('#datatable-news').dataTable({
+    //         "ordering": false,
+    //         "iDisplayLength": 30,
+    //     });
+    // });
 
     function confirmDel(id) {
         if(confirm('Bạn có chắc chắn muốn xóa?')){
