@@ -126,7 +126,7 @@
                         </select>
                     </div>
 
-                    <label class="control-label col-md-1 col-sm-1 col-xs-12 " for="first-name">Quận / Huyện<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Quận / Huyện<span
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divDistrict">
                         <select class="select2_group form-control" name="district" id="" onchange="">
@@ -135,7 +135,7 @@
 
                     </div>
 
-                    <label class="control-label col-md-1 col-sm-1 col-xs-12 " for="first-name">Xã / Phường<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Xã / Phường<span
                                 class="required">*</span></label>
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divWard">
@@ -145,7 +145,10 @@
 
                     </div>
 
-                    <label class="control-label col-md-1 col-sm-1 col-xs-12 " for="first-name">Đường phố<span
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Đường phố<span
                                 class="required">*</span></label>
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divStreet">
@@ -154,6 +157,13 @@
                         </select>
                     </div>
 
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ngày đăng<span
+                                class="required"></span></label>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input type="text" id="txtFrom" name="created_at" required
+                               value=""
+                               class="form-control col-md-7 col-xs-12"/>
+                    </div>
                 </div>
 
                 <div class="form-group" style="margin-top: 30px">

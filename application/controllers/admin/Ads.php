@@ -47,8 +47,6 @@ Class Ads extends MY_Controller
                 $ward =$ward[0];
             }
 
-
-
 //            $district = '';
 //
 //            if($this->input->post('district') != '') {
@@ -62,6 +60,9 @@ Class Ads extends MY_Controller
 //            if($this->input->post('street') != '') {
 //                $street = $this->input->post('street');
 //            }
+
+            $created_at =  $this->input->post('created_at');
+            $created_at = date('Y-m-d', strtotime($created_at));
 
             $data = array(
                 'title' => $this->input->post('txtName'),
@@ -77,8 +78,12 @@ Class Ads extends MY_Controller
                 'district_id' => $this->input->post('district'),
                 'ward_id' => $ward,
                 'street_id' => $this->input->post('street'),
+                'created_at' => $created_at,
                 'created_by' => $this->_uid,
             );
+
+//            pre_arr($data);
+//            die();
 
             $filesCount = count($_FILES['files']['name']);
             $path_name = '';
@@ -413,7 +418,7 @@ Class Ads extends MY_Controller
         echo json_encode($res);
     }
 
-    function vip()
+    function ads_center()
     {
         $id = $_POST['id'];
         $ads = $this->ads_model->get_info($id);
@@ -421,12 +426,12 @@ Class Ads extends MY_Controller
         if ($ads) {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($ads->vip) {
+            if ($ads->ads_center) {
                 $res['class'] = 'fa-toggle-off';
-                $dataSubmit['vip'] = 0;
+                $dataSubmit['ads_center'] = 0;
             } else {
                 $res['class'] = 'fa-toggle-on';
-                $dataSubmit['vip'] = 1;
+                $dataSubmit['ads_center'] = 1;
             }
             $this->ads_model->update($id, $dataSubmit);
         }

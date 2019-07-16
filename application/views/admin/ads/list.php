@@ -36,7 +36,6 @@
                 <th>Lượt xem</th>
                 <th>Ngày Tạo</th>
                 <th>Hành động</th>
-                <th></th>
             </tr>
             </thead>
             <tbody>
@@ -55,38 +54,28 @@
                         <i id="ads_left-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->ads_left ? 'fa-toggle-on' : 'fa-toggle-off'?> text-primary"
                            onclick="ads_left(<?php echo $row->id?>)"
-                           style=""
                         ></i>
                     </td>
 
                     <td>
                         <i id="ads_right-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off'?> text-success"
+                           class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off'?> text-danger"
                            onclick="ads_right(<?php echo $row->id?>)"
-                           style=""
                         ></i>
                     </td>
 
                     <td>
-                        <i id="vip-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->vip ? 'fa-toggle-on' : 'fa-toggle-off'?> text-default"
-                           onclick="vip(<?php echo $row->id?>)"
+                        <i id="ads_center-<?php echo $row->id?>"
+                           class="fa fa-2x <?php echo $row->ads_center ? 'fa-toggle-on' : 'fa-toggle-off'?> text-default"
+                           onclick="ads_center(<?php echo $row->id?>)"
                            style=""
                         ></i>
                     </td>
 
-                    <td>
-                        <i id="vip-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->vip ? 'fa-toggle-on' : 'fa-toggle-off'?>"
-                           onclick="vip(<?php echo $row->id?>)"
-                           style="color: red"
-                        ></i>
-                    </td>
                     <td>
                         <i id="highlight-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->highlight ? 'fa-toggle-on' : 'fa-toggle-off'?>"
+                           class="fa fa-2x <?php echo $row->highlight ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
                            onclick="highlight(<?php echo $row->id?>)"
-                           style="color: green"
                         ></i>
                     </td>
 <!--                    <td>--><?php //echo $row->link ?><!--</td>-->
@@ -164,9 +153,9 @@
         })
     }
 
-    function vip(id) {
+    function ads_center(id) {
         $.ajax({
-            url: "<?php echo admin_url('ads/vip')?>",
+            url: "<?php echo admin_url('ads/ads_center')?>",
             type: "post",
             data: {
                 id: id
@@ -175,7 +164,7 @@
                 msg = JSON.parse(msg);
                 console.log(msg);
                 if(msg.status){
-                    $('#vip-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                    $('#ads_center-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
             error: function (err) {
