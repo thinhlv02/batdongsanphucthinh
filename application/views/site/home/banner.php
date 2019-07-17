@@ -1,5 +1,5 @@
 <section class="news mt-3">
-    <div class="container-fluid">
+    <div class="container">
         <!--        <div class="box-module">-->
         <!--            <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Tin Vip</div>-->
         <!--        </div>-->

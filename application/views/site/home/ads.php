@@ -1,5 +1,5 @@
 <section class="news">
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="col-sm-12 col-md-12">
 <!--            <div class="title-section"><h2>Tin rao nổi bật</h2></div>-->
