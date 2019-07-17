@@ -61,7 +61,7 @@
                             <?php } ?>
 
                             <div class="pull-right mt-10 viewall">
-                                <a href="/bat-dong-san-ban-tai-viet-nam-s32113"><i class="glyphicon glyphicon-th"></i>
+                                <a href="javascript:void(0)"><i class="glyphicon glyphicon-th"></i>
                                     Xem tất cả</a>
                             </div>
                         </div>
@@ -380,24 +380,11 @@
         margin-right: 15px;
     }
 
-    #box-home-svip .box-info-list {
-        /*width: 521px;*/
-        /*width: 721px;*/
-    }
-
     .box-info-list {
         float: left;
         /*width: 538px;*/
         width:82%;
     }
-
-    /*.box-title-item label {*/
-    /*    float: left;*/
-    /*    margin-top: 5px;*/
-    /*    margin-right: 5px;*/
-    /*    width: 55px;*/
-    /*    text-transform: uppercase;*/
-    /*}*/
 
     .box-title-item label {
         float: left;
@@ -420,11 +407,7 @@
 
     .label {
         height: 14px; */
-        /* display: inline; */
-        /* padding: .2em .6em .3em; */
-        /* font-size: 75%; */
     font-weight: 700;
-        /* line-height: 1; */
         color: #fff;
         text-align: center;
         white-space: nowrap;
@@ -459,20 +442,6 @@
         text-transform: uppercase;
     }
 
-    /*.bg-modul {*/
-    /*    background: #15a1b1;*/
-    /*    color: #fff;*/
-    /*    font-weight: bold;*/
-    /*    text-transform: uppercase;*/
-    /*    padding: 6px 16px 6px 13px;*/
-    /*    display: inline-block;*/
-    /*    -ms-border-top-right-radius: 4px;*/
-    /*    border-top-right-radius: 4px;*/
-    /*    -ms-border-top-left-radius: 4px;*/
-    /*    border-top-left-radius: 4px;*/
-    /*    text-align: center;*/
-    /*}*/
-
     .bg-modul h2, .bg-modul h1 {
         font-size: 1.2rem;
         font-weight: 700;
@@ -492,8 +461,6 @@
     }
 
     .price-list span {
-        /*font-weight: 700;*/
-        /*width: 60px;*/
         display: inline-block;
     }
 

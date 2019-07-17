@@ -2,11 +2,7 @@
     <div class="container-fluid">
 
         <div class="col-sm-12 col-md-12">
-
 <!--            <div class="title-section"><h2>Tin rao nổi bật</h2></div>-->
-<!--            test-->
-
-<!--            test-->
 <!--            <div class="sub-title-section">Khám phá tại đây</div>-->
             <div class="row">
                 <div class="box-module">
