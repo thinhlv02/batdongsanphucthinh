@@ -1,5 +1,5 @@
 <section class="contact">
-    <div class="container-fluid">
+    <div class="container">
         <!--        <div class="title-section"><h2>Chi tiết bài rao</h2></div>-->
         <div class="col-md-8 col-sm-12 col-xs-12 mt-2" style="">
             <ol class="breadcrumb">
