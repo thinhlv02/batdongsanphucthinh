@@ -369,7 +369,9 @@ Class Ads extends MY_Controller
             if ($ads->lightSlider != '') {
                 $tags = explode('#', $ads->lightSlider);
                 foreach ($tags as $k => $val) {
-                    unlink('./public/images/ads/' . $val);
+                    if ($val != 'default.png') {
+                        unlink('./public/images/ads/' . $val);
+                    }
                 }
 
             }

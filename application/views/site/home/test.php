@@ -12,7 +12,7 @@
                         </div>
                         <div class="clearfix" id="box-home-svip">
 
-                            <?php foreach ($ads as $key => $value) { ?>
+                            <?php foreach ($ads_center as $key => $value) { ?>
 
                                 <div class="item-re-list clearfix" style="border-color: #f00" onclick="updateView('<?php echo $value->id; ?>');">
                                     <!--                                <div class="box-img-thumb col-sm-3 col-md-3">-->

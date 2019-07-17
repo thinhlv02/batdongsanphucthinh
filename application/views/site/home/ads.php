@@ -1,7 +1,7 @@
 <section class="news">
     <div class="container-fluid">
         <div class="box-module">
-            <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Tin Vip</div>
+            <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Tin Vip12</div>
         </div>
         <div class="col-sm-12 col-md-12">
 <!--            <div class="title-section"><h2>Tin rao nổi bật</h2></div>-->
@@ -10,9 +10,9 @@
 <!--            test-->
 <!--            <div class="sub-title-section">Khám phá tại đây</div>-->
             <div class="row">
-                <?php foreach ($vip as $key => $value) { ?>
+                <?php foreach ($ads_center as $key => $value) { ?>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12 card" onclick="updateView('<?php echo $value->id; ?>');">
+                    <div class="col-md-2 col-sm-6 col-xs-12 card" onclick="updateView('<?php echo $value->id; ?>');">
                         <div class="card-body mb-2">
                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                 <div class="item-news">
