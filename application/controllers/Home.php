@@ -38,7 +38,7 @@ Class Home extends MY_Controller
         $this->data['ads'] = $ads;
 
         //ads new
-        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(8, 0)));
+        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(5, 0)));
         $this->data['ads_new'] = $ads_new;
 
         //ads mới cập nhật
