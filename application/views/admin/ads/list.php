@@ -18,7 +18,8 @@
         <div class="clearfix"></div>
     </div>
     <div class="x_content">
-        <table id="datatable-news" class="table table-striped table-bordered bulk_action">
+<!--        <table id="datatable-news" class="table table-striped table-bordered bulk_action">-->
+            <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
             <thead>
             <tr>
                 <th>Mã tin</th>
@@ -74,7 +75,7 @@
 
                     <td>
                         <i id="highlight-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->highlight ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
+                           class="fa fa-2x <?php echo $row->highlight ? 'fa-toggle-on' : 'fa-toggle-off'?> text-warning"
                            onclick="highlight(<?php echo $row->id?>)"
                         ></i>
                     </td>

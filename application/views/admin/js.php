@@ -33,6 +33,7 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
+        $('#datatable-responsive').DataTable();
 		$("#datatable-product").dataTable();
 		$("#datatable-service").dataTable();
         $('#datatable-news').dataTable({

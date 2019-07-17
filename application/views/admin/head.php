@@ -11,6 +11,11 @@
 <!-- Font Awesome -->
 <link href="<?php echo admin_theme()?>vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
+<!--responsive-->
+<link href="<?php echo admin_theme()?>vendors/datatables.net-responsive-bs/css/responsive.bootstrap.css" rel="stylesheet">
+<link href="<?php echo admin_theme()?>vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+<!--responsive-->
+
 <!-- Custom Theme Style -->
 <link href="<?php echo admin_theme()?>build/css/custom.min.css" rel="stylesheet">
 
