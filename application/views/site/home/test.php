@@ -1,6 +1,6 @@
 <section class="news">
     <div class="container">
-        <div class="row">
+<!--        <div class="row">-->
 
             <div class="col-sm-9 col-md-9">
 
@@ -415,7 +415,7 @@
             </div>
 
 
-        </div>
+<!--        </div>-->
     </div>
 </section>
 
