@@ -5,15 +5,19 @@
 .mt-2 {
     margin-top: 2px !important;
 }
+
 .mt-3 {
     margin-top: 3px !important;
 }
+
 .mt-4 {
     margin-top: 4px !important;
 }
+
 .mt-5 {
     margin-top: 5px !important;
 }
+
 .mb-2 {
     margin-bottom: 2px !important;
 }
@@ -29,8 +33,9 @@
 .mb-5 {
     margin-bottom: 5px !important;
 }
+
 .box-module {
-    border-bottom: 2px #FF4961 solid;
+    border-bottom: 1px #FF4961 solid;
 }
 
 .p-2 {
@@ -44,6 +49,31 @@
 .pb-0 {
     padding-bottom: 0px !important;
 }
+
+.pb-1 {
+    padding-bottom: 1px !important;
+}
+
+
+.pb-2 {
+    padding-bottom: 2px !important;
+}
+
+
+.pb-3 {
+    padding-bottom: 3px !important;
+}
+
+
+.pb-4 {
+    padding-bottom: 4px !important;
+}
+
+
+.pb-5 {
+    padding-bottom: 5px !important;
+}
+
 
 .pt-0 {
     padding-top: 0px !important;
@@ -90,7 +120,6 @@
     border-top-left-radius: 4px;
     text-align: center;
 }
-
 
 
 .breadcrumb {
