@@ -345,8 +345,7 @@
                                             </a>
                                         </li>
                                     <?php } ?>
-                                    <li class="list-group-item">Second item</li>
-                                    <li class="list-group-item">Third item</li>
+
                                 </ul>
                                 <p>
                                     <span style="font-size:12px"><span style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;TP.HCM</strong></span></span>
