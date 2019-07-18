@@ -361,8 +361,7 @@
                                             </a>
                                         </li>
                                     <?php } ?>
-                                    <li class="list-group-item">Second item</li>
-                                    <li class="list-group-item">Third item</li>
+
                                 </ul>
                             </div>
                             <div class="box-module">
@@ -380,8 +379,7 @@
                                         </a>
                                     </li>
                                 <?php } ?>
-                                <li class="list-group-item">Second item</li>
-                                <li class="list-group-item">Third item</li>
+
                             </ul>
                             <div class="box-module">
                                 <div class="bg-modul" style="margin-top:10px">
@@ -398,8 +396,7 @@
                                         </a>
                                     </li>
                                 <?php } ?>
-                                <li class="list-group-item">Second item</li>
-                                <li class="list-group-item">Third item</li>
+
                             </ul>
                         </div>
 
