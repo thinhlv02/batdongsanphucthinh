@@ -49,7 +49,6 @@
 <!--                    <li><a href="--><?php //echo admin_url('contact') ?><!--"><i class="fa fa-phone" aria-hidden="true"></i>Liên hệ</a></li>-->
 <!--                    <li><a href="--><?php //echo admin_url('content') ?><!--"><i class="fa fa-info-circle" aria-hidden="true"></i>Nội dung</a></li>-->
 <!--                    <li><a href="--><?php //echo admin_url('agency') ?><!--"><i class="fa fa-map-marker" aria-hidden="true"></i>Đại lý</a></li>-->
-<!--                    <li><a href="--><?php //echo admin_url('policy') ?><!--"><i class="fa fa-handshake-o" aria-hidden="true"></i>Điều khoản, chính sách</a></li>-->
 <!--                    //only admin view-->
                     <?php if($admin->id == 1) { ?>
                         <li><a><i class="fa fa-book"></i>Quản lý chung<span class="fa fa-chevron-down"></span></a>
@@ -59,6 +58,8 @@
                                 <li><a href="<?php echo admin_url('documents') ?>">Tài liệu</a></li>
                                 <li><a href="<?php echo admin_url('service_money') ?>">Tiền Kh nạp</a></li>
                                 <li><a href="<?php echo admin_url('Upload_Files') ?>">Upload_Files</a></li>
+                                <li><a href="<?php echo admin_url('policy') ?>"><i class="fa fa-handshake-o" aria-hidden="true"></i>Điều khoản, chính sách</a></li>
+
                             </ul>
                         </li>
                     <?php } ?>
