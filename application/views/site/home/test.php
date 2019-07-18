@@ -1,12 +1,12 @@
 <section class="news">
     <div class="container">
-<!--        <div class="row">-->
+        <div class="row">
 
             <div class="col-sm-9 col-md-9">
 
                 <div id="center-body">
 
-                    <div id="raovat-nb" class="row">
+                    <div id="raovat-nb" class="">
                         <div class="col-sm-12 ">
                             <div class="card">
                                 <div class="card-body">
@@ -78,7 +78,7 @@
                     </div>
 
 
-                    <div class="row mt-10">
+                    <div class="row12">
 
 
                         <div class="col-sm-6">
@@ -264,14 +264,14 @@
 
                     </div>
 
-                    <div class="box-module mt-2">
-                        <div class="bg-modul"><h1><i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
-                    </div>
-                    <div class="clearfix row">
+
+                    <div class="clearfix row22222">
                         <div class="col-sm-12 ">
                             <div class="card">
                                 <div class="card-body">
-
+                                    <div class="box-module mt-2">
+                                        <div class="bg-modul"><h1><i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
+                                    </div>
                                     <?php foreach ($ads_new as $key => $value) { ?>
                                         <div class="item-re-list clearfix">
                                             <!--                            <div class="box-img-thumb col-sm-3 col-md-3">-->
@@ -415,7 +415,7 @@
             </div>
 
 
-<!--        </div>-->
+        </div>
     </div>
 </section>
 
