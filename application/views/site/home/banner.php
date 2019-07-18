@@ -26,12 +26,14 @@
                                 <label for="email">Tỉnh thành</label>
                                 <select class="form-control">
                                     <option value=""> -- Chọn Tỉnh thành --</option>
+                                    <option value=""> Hệ thống đang cập nhật tỉnh thành</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="email">Quận Huyện</label>
                                 <select class="form-control">
                                     <option value=""> -- Chọn Quận Huyện --</option>
+                                    <option value=""> Hệ thống đang cập nhật quận huyện</option>
                                 </select>
                             </div>
 
@@ -39,6 +41,7 @@
                                 <label for="email">Xã / Phường</label>
                                 <select class="form-control">
                                     <option value=""> -- Xã / Phường --</option>
+                                    <option value=""> Hệ thống đang cập nhật xã phường</option>
                                 </select>
                             </div>
 
