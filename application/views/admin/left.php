@@ -34,7 +34,6 @@
                 <h3>Menu</h3>
                 <ul class="nav side-menu">
 <!--                    <li><a href="--><?php //echo admin_url('product') ?><!--"><i class="fa fa-product-hunt" aria-hidden="true"></i>Dịch vụ</a></li>-->
-<!--                    <li><a href="--><?php //echo admin_url('question') ?><!--"><i class="fa fa-question-circle" aria-hidden="true"></i>Hỗ trợ</a></li>-->
 
                     <li><a><i class="fa fa-tint"></i>Quản lý bài viết<span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
@@ -59,6 +58,7 @@
                                 <li><a href="<?php echo admin_url('service_money') ?>">Tiền Kh nạp</a></li>
                                 <li><a href="<?php echo admin_url('Upload_Files') ?>">Upload_Files</a></li>
                                 <li><a href="<?php echo admin_url('policy') ?>"><i class="fa fa-handshake-o" aria-hidden="true"></i>Điều khoản, chính sách</a></li>
+                                <li><a href="<?php echo admin_url('question') ?>"><i class="fa fa-question-circle" aria-hidden="true"></i>Hỗ trợ</a></li>
 
                             </ul>
                         </li>
