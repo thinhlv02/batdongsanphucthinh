@@ -31,9 +31,9 @@ Class News extends MY_Controller {
                 $file_data = $this->upload->data();
                 $data = array(
                     'name' => $this->input->post('txtName'),
-                    'content' => $this->input->post('txtContent'),
                     'intro' => $this->input->post('txtIntro'),
-                    'document_title' => $this->input->post('txtDocumentTitle'),
+                    'content' => $this->input->post('txtContent'),
+                    'document_title' => $this->input->post('txtName'),
 //                    'meta_description' => $this->input->post('txtMetaDescription'),
 //                    'meta_keywords' => $this->input->post('txtMetaKeywords'),
 //                    'canonical_url' => $this->input->post('txtCanonicalUrl'),
@@ -72,7 +72,7 @@ Class News extends MY_Controller {
                 'name' => $this->input->post('txtName'),
                 'content' => $this->input->post('txtContent'),
                 'intro' => nl2br($this->input->post('txtIntro')),
-                'document_title' => $this->input->post('txtDocumentTitle'),
+                'document_title' => $this->input->post('txtName'),
 //                'meta_description' => $this->input->post('txtMetaDescription'),
 //                'meta_keywords' => $this->input->post('txtMetaKeywords'),
 //                'canonical_url' => $this->input->post('txtCanonicalUrl'),
