@@ -478,8 +478,6 @@
         float: left;
         width: 150px;
         height: 100px;
-        /*height: 100px;*/
-        /*height: 100px;*/
         margin-right: 10px;
         border: 1px #eee solid;
     }
