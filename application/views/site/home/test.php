@@ -6,8 +6,8 @@
 
                 <div id="center-body">
 
-                    <div id="raovat-nb" class="">
-                        <div class="col-sm-12 ">
+                    <div id="raovat-nb">
+                        <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="box-module mt-2">
@@ -78,148 +78,144 @@
                     </div>
 
 
-                    <div class="row12">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
 
-
-                        <div class="col-sm-6">
-                            <div class="card">
-                                <div class="card-body">
-
-                                    <div class="bg-modul"><h2>Dự án nổi bật</h2></div>
-                                    <div class="border-box col-hom-news">
-                                        <div style="width:100%;height:395px;overflow:hidden">
-                                            <div class="bx-wrapper" style="max-width: 100%;">
-                                                <div class="bx-viewport"
-                                                     style="width: 100%; overflow: hidden; position: relative; height: 360px;">
-                                                    <ul class="project-hot"
-                                                        style="width: 1015%; position: relative; transition-duration: 0.5s; transform: translate3d(-1993px, 0px, 0px);">
-                                                        <li style="float: left; list-style: none; position: relative; width: 325.5px;"
-                                                            class="bx-clone"><a href="/du-an/opal-garden-271"> <img
-                                                                        src="https://batdongsan24h.com.vn/images/private/2016/10/20/131214310105824608.jpg?w=325&amp;h=190&amp;mode=crop"
-                                                                        alt="Opal Garden" title="Opal Garden"> </a> <a
-                                                                    href="/du-an/opal-garden-271">Opal Garden</a>
-                                                            <p class="description text-muted">Opal Garden là khu phức hợp được
-                                                                đầu tư xây dựng bởi tập đoàn Đất Xanh. Chủ đầu tư mong muốn mang
-                                                                đến một không gian sống hiện đại, tiện nghi, hệ thống tiện ích
-                                                                đẳng cấp cùng hệ sinh thái cây xanh hài hòa.</p></li>
-                                                        <li style="float: left; list-style: none; position: relative; width: 325.5px;">
-                                                            <a href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315">
-                                                                <img
-                                                                        src="https://batdongsan24h.com.vn/images/private/2016/12/01/131250386311955428.jpg?w=325&amp;h=190&amp;mode=crop"
-                                                                        alt="A1- A2- A3 Vinhomes Gardenia Mỹ Đình"
-                                                                        title="A1- A2- A3 Vinhomes Gardenia Mỹ Đình">
-                                                            </a> <a
-                                                                    href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315">A1-
-                                                                A2- A3 Vinhomes Gardenia Mỹ Đình</a>
-                                                            <p class="description text-muted">Khu căn hộ chung cư cao tầng The
-                                                                Arcadia gồm 3 tòa tháp A1, A2, A3 cao từ 37 đến 39 tầng thuộc
-                                                                khu đô thị mới Vinhomes Gardenia Mỹ Đình Trong đó, A1, A2 nhìn
-                                                                nhau, cao 37 tầng và tòa trung tâm A3 cao 39 tầng hướng view
-                                                                đường Hàm Nghi</p></li>
-                                                        <li style="float: left; list-style: none; position: relative; width: 325.5px;">
-                                                            <a href="/du-an/the-panorama-427"> <img
-                                                                        src="https://batdongsan24h.com.vn/images/private/2016/10/27/131220335448098789.jpg?w=325&amp;h=190&amp;mode=crop"
-                                                                        alt="The Panorama" title="The Panorama"> </a> <a
-                                                                    href="/du-an/the-panorama-427">The Panorama</a>
-                                                            <p class="description text-muted">The Panorama là khu căn hộ đẳng
-                                                                cấp, sẽ thiết lập một tiêu chuẩn sống mới tại Tp.HCM bởi sự kết
-                                                                hợp hài hòa giữa vị trí hiếm có, quy hoạch và kiến trúc của Khu
-                                                                Kênh Đào.</p></li>
-                                                        <li style="float: left; list-style: none; position: relative; width: 325.5px;">
-                                                            <a href="/du-an/van-phuc-riverside-city-400"> <img
-                                                                        src="https://batdongsan24h.com.vn/images/private/2016/10/25/131218850179006051.jpg?w=325&amp;h=190&amp;mode=crop"
-                                                                        alt="Van Phuc Riverside City"
-                                                                        title="Van Phuc Riverside City"> </a> <a
-                                                                    href="/du-an/van-phuc-riverside-city-400">Van Phuc Riverside
-                                                                City</a>
-                                                            <p class="description text-muted">Được quy hoạch xây dựng trên khu
-                                                                đất có diện tích 198 ha, Khu đô thị Van Phuc Riverside City có
-                                                                diện tích đất ở là 50,43%, phần diện tích của khu đô thị sẽ được
-                                                                dành cho cây xanh, mặt nước, giao thông.</p></li>
-                                                        <li style="float: left; list-style: none; position: relative; width: 325.5px;">
-                                                            <a href="/du-an/citizen-ts-trung-son-289"> <img
-                                                                        src="https://batdongsan24h.com.vn/images/private/2016/10/22/131215826916768746.jpg?w=325&amp;h=190&amp;mode=crop"
-                                                                        alt="Citizen TS Trung Sơn" title="Citizen TS Trung Sơn">
-                                                            </a>
-                                                            <a href="/du-an/citizen-ts-trung-son-289">Citizen TS Trung
-                                                                Sơn</a>
-                                                            <p class="description text-muted">Căn hộ CitiZen TS (CitiZen Trung
-                                                                Sơn) là dự án thứ 3 của chủ đầu tư Hưng Thịnh tại khu vực Nam
-                                                                Sài Gòn, sau dự án Florita và SaiGon Mia.</p></li>
-                                                        <li style="float: left; list-style: none; position: relative; width: 325.5px;">
-                                                            <a href="/du-an/skyway-residence-287"> <img
-                                                                        src="https://batdongsan24h.com.vn/images/private/2016/10/22/131215817095771496.jpg?w=325&amp;h=190&amp;mode=crop"
-                                                                        alt="Skyway Residence" title="Skyway Residence">
-                                                            </a> <a
-                                                                    href="/du-an/skyway-residence-287">Skyway Residence</a>
-                                                            <p class="description text-muted">Dự án căn hộ Skyway Residence nằm
-                                                                trong khu dân cư Conic 29 ha, có quy mô gồm 2 block cao 20
-                                                                tầng, với 1 tầng hầm.</p></li>
-                                                        <li style="float: left; list-style: none; position: relative; width: 325.5px;">
-                                                            <a href="/du-an/vincom-shophouse-tra-vinh-276"> <img
-                                                                        src="https://batdongsan24h.com.vn/images/private/2016/10/21/131215124081870282.jpg?w=325&amp;h=190&amp;mode=crop"
-                                                                        alt="Vincom Shophouse Trà Vinh"
-                                                                        title="Vincom Shophouse Trà Vinh"> </a> <a
-                                                                    href="/du-an/vincom-shophouse-tra-vinh-276">Vincom Shophouse
-                                                                Trà Vinh</a>
-                                                            <p class="description text-muted">Nằm trong tổ hợp Trung tâm thương
-                                                                mại Shophose Vincom rộng hơn 9.100m2, khu nhà phố thương mại
-                                                                Vincom Shophouse Trà Vinh hứa hẹn đem đến cho bạn không gian
-                                                                sống tiện ích.</p></li>
-                                                        <li style="float: left; list-style: none; position: relative; width: 325.5px;">
-                                                            <a href="/du-an/the-navita-272"> <img
-                                                                        src="https://batdongsan24h.com.vn/images/private/2016/10/20/131214326073544654.jpg?w=325&amp;h=190&amp;mode=crop"
-                                                                        alt="The Navita" title="The Navita"> </a> <a
-                                                                    href="/du-an/the-navita-272">The Navita</a>
-                                                            <p class="description text-muted">The Navita nằm trong Khu phức hợp
-                                                                Lan Phương Garden rộng 8,4 ha, gồm 8 cao ốc, các TTTM và một số
-                                                                nền đất.</p></li>
-                                                        <li style="float: left; list-style: none; position: relative; width: 325.5px;">
-                                                            <a href="/du-an/opal-garden-271"> <img
-                                                                        src="https://batdongsan24h.com.vn/images/private/2016/10/20/131214310105824608.jpg?w=325&amp;h=190&amp;mode=crop"
-                                                                        alt="Opal Garden" title="Opal Garden"> </a> <a
-                                                                    href="/du-an/opal-garden-271">Opal Garden</a>
-                                                            <p class="description text-muted">Opal Garden là khu phức hợp được
-                                                                đầu tư xây dựng bởi tập đoàn Đất Xanh. Chủ đầu tư mong muốn mang
-                                                                đến một không gian sống hiện đại, tiện nghi, hệ thống tiện ích
-                                                                đẳng cấp cùng hệ sinh thái cây xanh hài hòa.</p></li>
-                                                        <li style="float: left; list-style: none; position: relative; width: 325.5px;"
-                                                            class="bx-clone"><a
-                                                                    href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315">
-                                                                <img
-                                                                        src="https://batdongsan24h.com.vn/images/private/2016/12/01/131250386311955428.jpg?w=325&amp;h=190&amp;mode=crop"
-                                                                        alt="A1- A2- A3 Vinhomes Gardenia Mỹ Đình"
-                                                                        title="A1- A2- A3 Vinhomes Gardenia Mỹ Đình">
-                                                            </a> <a
-                                                                    href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315">A1-
-                                                                A2- A3 Vinhomes Gardenia Mỹ Đình</a>
-                                                            <p class="description text-muted">Khu căn hộ chung cư cao tầng The
-                                                                Arcadia gồm 3 tòa tháp A1, A2, A3 cao từ 37 đến 39 tầng thuộc
-                                                                khu đô thị mới Vinhomes Gardenia Mỹ Đình Trong đó, A1, A2 nhìn
-                                                                nhau, cao 37 tầng và tòa trung tâm A3 cao 39 tầng hướng view
-                                                                đường Hàm Nghi</p></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="bx-controls bx-has-pager">
-                                                    <div class="bx-pager bx-default-pager">
-                                                        <div class="bx-pager-item"><a href="" data-slide-index="0"
-                                                                                      class="bx-pager-link">1</a></div>
-                                                        <div class="bx-pager-item"><a href="" data-slide-index="1"
-                                                                                      class="bx-pager-link">2</a></div>
-                                                        <div class="bx-pager-item"><a href="" data-slide-index="2"
-                                                                                      class="bx-pager-link">3</a></div>
-                                                        <div class="bx-pager-item"><a href="" data-slide-index="3"
-                                                                                      class="bx-pager-link">4</a></div>
-                                                        <div class="bx-pager-item"><a href="" data-slide-index="4"
-                                                                                      class="bx-pager-link">5</a></div>
-                                                        <div class="bx-pager-item"><a href="" data-slide-index="5"
-                                                                                      class="bx-pager-link active">6</a>
-                                                        </div>
-                                                        <div class="bx-pager-item"><a href="" data-slide-index="6"
-                                                                                      class="bx-pager-link">7</a></div>
-                                                        <div class="bx-pager-item"><a href="" data-slide-index="7"
-                                                                                      class="bx-pager-link">8</a></div>
+                                <div class="bg-modul"><h2>Dự án nổi bật</h2></div>
+                                <div class="border-box col-hom-news">
+                                    <div style="width:100%;height:395px;overflow:hidden">
+                                        <div class="bx-wrapper" style="max-width: 100%;">
+                                            <div class="bx-viewport"
+                                                 style="width: 100%; overflow: hidden; position: relative; height: 360px;">
+                                                <ul class="project-hot"
+                                                    style="width: 1015%; position: relative; transition-duration: 0.5s; transform: translate3d(-1993px, 0px, 0px);">
+                                                    <li style="float: left; list-style: none; position: relative; width: 325.5px;"
+                                                        class="bx-clone"><a href="/du-an/opal-garden-271"> <img
+                                                                    src="https://batdongsan24h.com.vn/images/private/2016/10/20/131214310105824608.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                    alt="Opal Garden" title="Opal Garden"> </a> <a
+                                                                href="/du-an/opal-garden-271">Opal Garden</a>
+                                                        <p class="description text-muted">Opal Garden là khu phức hợp được
+                                                            đầu tư xây dựng bởi tập đoàn Đất Xanh. Chủ đầu tư mong muốn mang
+                                                            đến một không gian sống hiện đại, tiện nghi, hệ thống tiện ích
+                                                            đẳng cấp cùng hệ sinh thái cây xanh hài hòa.</p></li>
+                                                    <li style="float: left; list-style: none; position: relative; width: 325.5px;">
+                                                        <a href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315">
+                                                            <img
+                                                                    src="https://batdongsan24h.com.vn/images/private/2016/12/01/131250386311955428.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                    alt="A1- A2- A3 Vinhomes Gardenia Mỹ Đình"
+                                                                    title="A1- A2- A3 Vinhomes Gardenia Mỹ Đình">
+                                                        </a> <a
+                                                                href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315">A1-
+                                                            A2- A3 Vinhomes Gardenia Mỹ Đình</a>
+                                                        <p class="description text-muted">Khu căn hộ chung cư cao tầng The
+                                                            Arcadia gồm 3 tòa tháp A1, A2, A3 cao từ 37 đến 39 tầng thuộc
+                                                            khu đô thị mới Vinhomes Gardenia Mỹ Đình Trong đó, A1, A2 nhìn
+                                                            nhau, cao 37 tầng và tòa trung tâm A3 cao 39 tầng hướng view
+                                                            đường Hàm Nghi</p></li>
+                                                    <li style="float: left; list-style: none; position: relative; width: 325.5px;">
+                                                        <a href="/du-an/the-panorama-427"> <img
+                                                                    src="https://batdongsan24h.com.vn/images/private/2016/10/27/131220335448098789.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                    alt="The Panorama" title="The Panorama"> </a> <a
+                                                                href="/du-an/the-panorama-427">The Panorama</a>
+                                                        <p class="description text-muted">The Panorama là khu căn hộ đẳng
+                                                            cấp, sẽ thiết lập một tiêu chuẩn sống mới tại Tp.HCM bởi sự kết
+                                                            hợp hài hòa giữa vị trí hiếm có, quy hoạch và kiến trúc của Khu
+                                                            Kênh Đào.</p></li>
+                                                    <li style="float: left; list-style: none; position: relative; width: 325.5px;">
+                                                        <a href="/du-an/van-phuc-riverside-city-400"> <img
+                                                                    src="https://batdongsan24h.com.vn/images/private/2016/10/25/131218850179006051.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                    alt="Van Phuc Riverside City"
+                                                                    title="Van Phuc Riverside City"> </a> <a
+                                                                href="/du-an/van-phuc-riverside-city-400">Van Phuc Riverside
+                                                            City</a>
+                                                        <p class="description text-muted">Được quy hoạch xây dựng trên khu
+                                                            đất có diện tích 198 ha, Khu đô thị Van Phuc Riverside City có
+                                                            diện tích đất ở là 50,43%, phần diện tích của khu đô thị sẽ được
+                                                            dành cho cây xanh, mặt nước, giao thông.</p></li>
+                                                    <li style="float: left; list-style: none; position: relative; width: 325.5px;">
+                                                        <a href="/du-an/citizen-ts-trung-son-289"> <img
+                                                                    src="https://batdongsan24h.com.vn/images/private/2016/10/22/131215826916768746.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                    alt="Citizen TS Trung Sơn" title="Citizen TS Trung Sơn">
+                                                        </a>
+                                                        <a href="/du-an/citizen-ts-trung-son-289">Citizen TS Trung
+                                                            Sơn</a>
+                                                        <p class="description text-muted">Căn hộ CitiZen TS (CitiZen Trung
+                                                            Sơn) là dự án thứ 3 của chủ đầu tư Hưng Thịnh tại khu vực Nam
+                                                            Sài Gòn, sau dự án Florita và SaiGon Mia.</p></li>
+                                                    <li style="float: left; list-style: none; position: relative; width: 325.5px;">
+                                                        <a href="/du-an/skyway-residence-287"> <img
+                                                                    src="https://batdongsan24h.com.vn/images/private/2016/10/22/131215817095771496.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                    alt="Skyway Residence" title="Skyway Residence">
+                                                        </a> <a
+                                                                href="/du-an/skyway-residence-287">Skyway Residence</a>
+                                                        <p class="description text-muted">Dự án căn hộ Skyway Residence nằm
+                                                            trong khu dân cư Conic 29 ha, có quy mô gồm 2 block cao 20
+                                                            tầng, với 1 tầng hầm.</p></li>
+                                                    <li style="float: left; list-style: none; position: relative; width: 325.5px;">
+                                                        <a href="/du-an/vincom-shophouse-tra-vinh-276"> <img
+                                                                    src="https://batdongsan24h.com.vn/images/private/2016/10/21/131215124081870282.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                    alt="Vincom Shophouse Trà Vinh"
+                                                                    title="Vincom Shophouse Trà Vinh"> </a> <a
+                                                                href="/du-an/vincom-shophouse-tra-vinh-276">Vincom Shophouse
+                                                            Trà Vinh</a>
+                                                        <p class="description text-muted">Nằm trong tổ hợp Trung tâm thương
+                                                            mại Shophose Vincom rộng hơn 9.100m2, khu nhà phố thương mại
+                                                            Vincom Shophouse Trà Vinh hứa hẹn đem đến cho bạn không gian
+                                                            sống tiện ích.</p></li>
+                                                    <li style="float: left; list-style: none; position: relative; width: 325.5px;">
+                                                        <a href="/du-an/the-navita-272"> <img
+                                                                    src="https://batdongsan24h.com.vn/images/private/2016/10/20/131214326073544654.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                    alt="The Navita" title="The Navita"> </a> <a
+                                                                href="/du-an/the-navita-272">The Navita</a>
+                                                        <p class="description text-muted">The Navita nằm trong Khu phức hợp
+                                                            Lan Phương Garden rộng 8,4 ha, gồm 8 cao ốc, các TTTM và một số
+                                                            nền đất.</p></li>
+                                                    <li style="float: left; list-style: none; position: relative; width: 325.5px;">
+                                                        <a href="/du-an/opal-garden-271"> <img
+                                                                    src="https://batdongsan24h.com.vn/images/private/2016/10/20/131214310105824608.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                    alt="Opal Garden" title="Opal Garden"> </a> <a
+                                                                href="/du-an/opal-garden-271">Opal Garden</a>
+                                                        <p class="description text-muted">Opal Garden là khu phức hợp được
+                                                            đầu tư xây dựng bởi tập đoàn Đất Xanh. Chủ đầu tư mong muốn mang
+                                                            đến một không gian sống hiện đại, tiện nghi, hệ thống tiện ích
+                                                            đẳng cấp cùng hệ sinh thái cây xanh hài hòa.</p></li>
+                                                    <li style="float: left; list-style: none; position: relative; width: 325.5px;"
+                                                        class="bx-clone"><a
+                                                                href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315">
+                                                            <img
+                                                                    src="https://batdongsan24h.com.vn/images/private/2016/12/01/131250386311955428.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                                    alt="A1- A2- A3 Vinhomes Gardenia Mỹ Đình"
+                                                                    title="A1- A2- A3 Vinhomes Gardenia Mỹ Đình">
+                                                        </a> <a
+                                                                href="/du-an/a1-a2-a3-vinhomes-gardenia-my-dinh-1315">A1-
+                                                            A2- A3 Vinhomes Gardenia Mỹ Đình</a>
+                                                        <p class="description text-muted">Khu căn hộ chung cư cao tầng The
+                                                            Arcadia gồm 3 tòa tháp A1, A2, A3 cao từ 37 đến 39 tầng thuộc
+                                                            khu đô thị mới Vinhomes Gardenia Mỹ Đình Trong đó, A1, A2 nhìn
+                                                            nhau, cao 37 tầng và tòa trung tâm A3 cao 39 tầng hướng view
+                                                            đường Hàm Nghi</p></li>
+                                                </ul>
+                                            </div>
+                                            <div class="bx-controls bx-has-pager">
+                                                <div class="bx-pager bx-default-pager">
+                                                    <div class="bx-pager-item"><a href="" data-slide-index="0"
+                                                                                  class="bx-pager-link">1</a></div>
+                                                    <div class="bx-pager-item"><a href="" data-slide-index="1"
+                                                                                  class="bx-pager-link">2</a></div>
+                                                    <div class="bx-pager-item"><a href="" data-slide-index="2"
+                                                                                  class="bx-pager-link">3</a></div>
+                                                    <div class="bx-pager-item"><a href="" data-slide-index="3"
+                                                                                  class="bx-pager-link">4</a></div>
+                                                    <div class="bx-pager-item"><a href="" data-slide-index="4"
+                                                                                  class="bx-pager-link">5</a></div>
+                                                    <div class="bx-pager-item"><a href="" data-slide-index="5"
+                                                                                  class="bx-pager-link active">6</a>
                                                     </div>
+                                                    <div class="bx-pager-item"><a href="" data-slide-index="6"
+                                                                                  class="bx-pager-link">7</a></div>
+                                                    <div class="bx-pager-item"><a href="" data-slide-index="7"
+                                                                                  class="bx-pager-link">8</a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -227,9 +223,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
 
-                        <div class="col-sm-6">
+                    <div class="col-sm-6">
                             <div class="card">
                                 <div class="card-body">
 
@@ -262,10 +259,7 @@
                         </div>
 
 
-                    </div>
-
-
-                    <div class="clearfix row22222">
+                    <div class="clearfix">
                         <div class="col-sm-12 ">
                             <div class="card">
                                 <div class="card-body">
