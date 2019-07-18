@@ -18,7 +18,7 @@
 
                                         <?php foreach ($ads_center as $key => $value) { ?>
 
-                                            <div class="item-re-list clearfix" style="border-color: #f00" onclick="updateView('<?php echo $value->id; ?>');">
+                                            <div class="item-re-list clearfix pt-5" onclick="updateView('<?php echo $value->id; ?>');">
                                                 <!--                                <div class="box-img-thumb col-sm-3 col-md-3">-->
                                                 <div class="box-img-thumb">
                                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
@@ -48,18 +48,22 @@
                                                     <div class="price-list mb-3">
                                                         <span>Khu vực</span>:
                                                         <strong> <?php echo $value->area ?> </strong>
-
-                                                    </div>
-                                                    <div class="price-list mb-3">
-                                                        <span>Link bài viết</span>: <a href="<?php echo $value->link ?>"
-                                                                                       target="_blank">
-                                                            <?php echo $value->link ?></a>
-
                                                         <span class="pull-right time">
                                              <i class="glyphicon glyphicon-time"></i>
                                             <?php echo date('Y-m-d', strtotime($value->created_at)) ?>
                                         </span>
+
                                                     </div>
+<!--                                                    <div class="price-list mb-3">-->
+<!--                                                        <span>Link bài viết</span>: <a href="--><?php //echo $value->link ?><!--"-->
+<!--                                                                                       target="_blank">-->
+<!--                                                            --><?php //echo $value->link ?><!--</a>-->
+<!---->
+<!--                                                        <span class="pull-right time">-->
+<!--                                             <i class="glyphicon glyphicon-time"></i>-->
+<!--                                            --><?php //echo date('Y-m-d', strtotime($value->created_at)) ?>
+<!--                                        </span>-->
+<!--                                                    </div>-->
                                                 </div>
                                             </div>
 
@@ -410,11 +414,12 @@
 
 <style>
 
+
     .item-re-list {
-        border: 1px #b0aeae solid;
-        margin-top: 10px;
+        border-bottom: 1px #b0aeae solid;
+        margin-top: 2px;
         width: 100%;
-        padding: 10px;
+        /*padding: 10px;*/
     }
 
     .box-img-thumb {
@@ -438,12 +443,12 @@
         text-transform: uppercase;
     }
 
-    #box-home-svip {
-        overflow-x: hidden;
-        overflow-y: scroll;
-        max-height: 1000px;
-        margin-bottom: 15px;
-    }
+    /*#box-home-svip {*/
+    /*    overflow-x: hidden;*/
+    /*    overflow-y: scroll;*/
+    /*    max-height: 1000px;*/
+    /*    margin-bottom: 15px;*/
+    /*}*/
 
     .label-danger {
         background-color: #d9534f;
@@ -472,7 +477,7 @@
     .item-re-list img {
         float: left;
         width: 150px;
-        height: 100px;
+        height: 90px;
         margin-right: 10px;
         border: 1px #eee solid;
     }

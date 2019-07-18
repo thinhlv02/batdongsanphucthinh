@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-sm-3 col-md-3">
                 <div class="card">
-                    <div class="card-body pt-0 " style="height: 315px">
+                    <div class="card-body pt-0 " style="height: 339px">
 
 
 <!--                        <div class="box-module">-->
@@ -82,7 +82,7 @@
                                     ?>
                                     <div class="item <?php if ($key == 0) echo 'active'; ?>">
     <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
-                                        <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width:100%; height: 295px"">
+                                        <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="<?php echo $value->img ?>" style="width:100%; height: 320px">
                                         <div class="carousel-caption">
                                             <h4 class=""><a class="text-danger" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                     <?php echo $value->title ?>
@@ -136,7 +136,7 @@
                                 ?>
                                 <div class="item <?php if ($key == 0) echo 'active'; ?>">
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
-                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width: 100%; height: 295px">
+                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width: 100%; height: 320px ">
                                     <div class="carousel-caption">
                                         <h4><a class="text-danger" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a></h4>
 <!--                                        <p>--><?php //echo $value->intro ?><!--</p>-->
