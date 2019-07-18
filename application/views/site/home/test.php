@@ -477,7 +477,7 @@
     .item-re-list img {
         float: left;
         width: 150px;
-        height: 120px;
+        height: 100px;
         margin-right: 10px;
         border: 1px #eee solid;
     }
