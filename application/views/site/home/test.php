@@ -38,14 +38,14 @@
                                                     <p><?php echo $value->intro ?>
                                                         <img style="width: 34px;height: 21px;float: left;display: inline;" src="<?php echo public_url('images/hot-icon.gif') ?>"
                                                     </p>
-                                                    <div class="price-list mb-3">
+                                                    <div class="price-list">
                                                         <span>Diện tích</span>:
                                                         <strong><?php echo $value->acreage . ' m2' ?></strong>
                                                     </div>
-                                                    <div class="price-list mb-3">
+                                                    <div class="price-list">
                                                         <span>Giá</span>: <strong><?php echo $value->price ?></strong>
                                                     </div>
-                                                    <div class="price-list mb-3">
+                                                    <div class="price-list">
                                                         <span>Khu vực</span>:
                                                         <strong> <?php echo $value->area ?> </strong>
                                                         <span class="pull-right time">
@@ -54,7 +54,7 @@
                                         </span>
 
                                                     </div>
-<!--                                                    <div class="price-list mb-3">-->
+<!--                                                    <div class="price-list">-->
 <!--                                                        <span>Link bài viết</span>: <a href="--><?php //echo $value->link ?><!--"-->
 <!--                                                                                       target="_blank">-->
 <!--                                                            --><?php //echo $value->link ?><!--</a>-->
@@ -288,11 +288,11 @@
                                                 </h3>
                                                 <p><?php echo $value->intro ?>
                                                     ...</p>
-                                                <div class="price-list mb-3"><span>Diện tích</span>:
+                                                <div class="price-list"><span>Diện tích</span>:
                                                     <strong><?php echo $value->acreage ?> m2</strong></div>
-                                                <div class="price-list mb-3"><span>Giá</span>:
+                                                <div class="price-list"><span>Giá</span>:
                                                     <strong><?php echo $value->price ?></strong></div>
-                                                <div class="price-list mb-3"><span>Khu vực</span>:
+                                                <div class="price-list"><span>Khu vực</span>:
                                                     <strong> <?php echo $value->area ?> </strong>
                                                     <span class="pull-right time"> <i
                                                                 class="glyphicon glyphicon-time"></i> <?php echo date('Y-m-d', strtotime($value->created_at)) ?> </span>
