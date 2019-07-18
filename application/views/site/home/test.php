@@ -329,8 +329,7 @@
                                             </a>
                                         </li>
                                     <?php } ?>
-                                    <li class="list-group-item">Second item</li>
-                                    <li class="list-group-item">Third item</li>
+
                                 </ul>
                                 <!--                        </div>-->
                             </div>
