@@ -36,9 +36,9 @@
                                                                 <?php echo $value->title ?> </a>
                                                         </h3>
                                                     </div>
-                                                    <p><?php echo $value->intro ?>
-                                                        <img style="width: 34px;height: 21px;float: left;display: inline;" src="<?php echo public_url('images/hot-icon.gif') ?>"
-                                                    </p>
+<!--                                                    <p>--><?php //echo $value->intro ?>
+<!--                                                        <img style="width: 34px;height: 21px;float: left;display: inline;" src="--><?php //echo public_url('images/hot-icon.gif') ?><!--"-->
+<!--                                                    </p>-->
                                                     <div class="price-list">
                                                         <span>Diện tích</span>:
                                                         <strong><?php echo $value->acreage . ' m2' ?></strong>
@@ -286,13 +286,13 @@
                                                 </a></div>
                                             <!--                            <div class="box-info-list col-sm-9 col-md-9">-->
                                             <div class="box-info-list">
-                                                <h3><a
+                                                <h3><a class="color-60"
                                                             href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                         <?php echo $value->title ?>
                                                     </a>
                                                 </h3>
-                                                <p><?php echo $value->intro ?>
-                                                    ...</p>
+<!--                                                <p>--><?php //echo $value->intro ?>
+<!--                                                    ...</p>-->
                                                 <div class="price-list"><span>Diện tích</span>:
                                                     <strong><?php echo $value->acreage ?> m2</strong></div>
                                                 <div class="price-list"><span>Giá</span>:
@@ -516,7 +516,7 @@
     }
 
     h3.sieu-vip-title a {
-        color: red;
+        color: #055699;
         text-transform: uppercase;
     }
 
