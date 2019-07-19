@@ -8,13 +8,14 @@
                     <li class="" style="color: red;text-transform: uppercase;"><?php echo $ads->title ?></li>
                 </ol>
                 <div class="item-news-1" style="">
-                    <!--                <span>--><?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
+                    <!--                <span>-->
+                    <?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
                     <!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
                     <!--                <h4 class="text-danger">--><?php //echo $ads->title ?><!--</h4>-->
                     <div class="col-md-12 col-sm-12">
-                        <img  id="myImg" src="<?php echo public_url('images/ads/' . $ads->img) ?> "  style="width:100%;">
+                        <img id="myImg" src="<?php echo public_url('images/ads/' . $ads->img) ?> " style="width:100%;">
 
-    <!--                    <img id="myImg" src="https://www.w3schools.com/howto/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">-->
+                        <!--                    <img id="myImg" src="https://www.w3schools.com/howto/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">-->
 
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
@@ -31,7 +32,7 @@
                             var img = document.getElementById("myImg");
                             var modalImg = document.getElementById("img01");
                             var captionText = document.getElementById("caption");
-                            img.onclick = function(){
+                            img.onclick = function () {
                                 modal.style.display = "block";
                                 modalImg.src = this.src;
                                 captionText.innerHTML = this.alt;
@@ -41,7 +42,7 @@
                             var span = document.getElementsByClassName("close")[0];
 
                             // When the user clicks on <span> (x), close the modal
-                            span.onclick = function() {
+                            span.onclick = function () {
                                 modal.style.display = "none";
                             }
                         </script>
@@ -54,12 +55,12 @@
                                 <div class="col-left">Mã tin</div>
                                 <div class="col-right"><b>
                                         <?php
-                                        echo $ads->id.'000';
-    //                                    if ($ads->code == 0) {
-    //                                        echo generateRandomString(6);
-    //                                    } else {
-    //                                        echo $ads->code;
-    //                                    } ?>
+                                        echo $ads->id . '000';
+                                        //                                    if ($ads->code == 0) {
+                                        //                                        echo generateRandomString(6);
+                                        //                                    } else {
+                                        //                                        echo $ads->code;
+                                        //                                    } ?>
                                     </b></div>
                             </div>
                             <div class="block">
@@ -76,7 +77,8 @@
                             </div>
                             <div class="block">
                                 <div class="col-left">Diện tích</div>
-                                <div class="col-right"><b><span><?php echo $ads->acreage ?> m</span><sup>2</sup></b></div>
+                                <div class="col-right"><b><span><?php echo $ads->acreage ?> m</span><sup>2</sup></b>
+                                </div>
                             </div>
                             <div class="block">
                                 <div class="col-left">Giá</div>
@@ -84,7 +86,8 @@
                             </div>
                             <div class="block">
                                 <div class="col-left">Ngày đăng</div>
-                                <div class="col-right"><b><?php echo date('d-m-Y', strtotime($ads->created_at)) ?></b></div>
+                                <div class="col-right"><b><?php echo date('d-m-Y', strtotime($ads->created_at)) ?></b>
+                                </div>
                             </div>
                         </div>
 
@@ -111,10 +114,11 @@
                                 $lightSlider_str = $ads->lightSlider != '' ? $ads->img . '#' . $ads->lightSlider : $ads->img;
                                 $tags = explode('#', $lightSlider_str);
                                 foreach ($tags as $k => $val) { ?>
-    <!--                                <li style="width: 450px; height: 338px"-->
+                                    <!--                                <li style="width: 450px; height: 338px"-->
                                     <li style=""
                                         data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
-    <!--                                    <img style="width: 450px; height: 338px" alt="--><?//= $val ?><!--"-->
+                                        <!--                                    <img style="width: 450px; height: 338px" alt="-->
+                                        <? //= $val ?><!--"-->
                                         <img style="" alt="<?= $val ?>"
                                              src="<?php echo public_url('images/ads/' . $val) ?>"/>
                                     </li>
@@ -131,75 +135,59 @@
 
 
             <div class="row">
-                            <div class="col-md-12  col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
-                                <div class="left-title">Nổi bật cùng chuyên mục</div>
-                <?php foreach ($highlight as $key => $value) {
-                if ($ads->id != $value->id) {
-                    ?>
-                    <?php if ($key > 0) { ?>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                <div class="item-news">
-                                    <div class="img-news" style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
-                                        <div class="content-news">
-                                            <div>
-                                                <strong style="color: #fff"><?php echo $value->title ?></strong>
+                <div class="col-md-12  col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
+                    <div class="left-title">Nổi bật cùng chuyên mục</div>
+                    <?php foreach ($highlight as $key => $value) {
+                        if ($ads->id != $value->id) {
+                            ?>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                    <div class="item-news">
+                                        <div class="img-news"
+                                             style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
+                                            <div class="content-news">
+                                                <div>
+                                                    <strong style="color: #fff"><?php echo $value->title ?></strong>
+                                                </div>
+                                                <p style="color: #fff"><?php echo $value->intro ?></p>
+                                                <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"
+                                                   class="btn btn-primary mt-5">Xem thêm</a>
                                             </div>
-                                            <p style="color: #fff"><?php echo $value->intro ?></p>
-                                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>" class="btn btn-primary mt-5">Xem thêm</a>
-                                        </div>
-                                        <div class="title-news">
-                                            <span style="font-size: 13px"><?php echo date('d/m/Y', strtotime($value->created_at)) ?></span><br>
-                                            <strong><?php echo $value->title ?></strong>
-                                        </div>
+                                            <div class="title-news">
+                                                <span style="font-size: 13px"><?php echo date('d/m/Y', strtotime($value->created_at)) ?></span><br>
+                                                <strong><?php echo $value->title ?></strong>
+                                            </div>
 
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    <?php } else { ?>
-                        <div class="col-md-8 col-sm-12 col-xs-12">
-                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                <div class="item-news">
-                                    <div class="img-news" style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
-                                        <div class="content-news">
-                                            <div><strong><?php echo $value->title ?></strong></div>
-                                            <p><?php echo $value->intro ?></p>
-                                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>" class="btn btn-primary mt-5">Xem thêm</a>
                                         </div>
-                                        <div class="title-news">
-                                            <span style="font-size: 13px"><?php echo date('d/m/Y', strtotime($value->created_at)) ?></span><br>
-                                            <strong><?php echo $value->title ?></strong>
-                                        </div>
-
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    <?php } ?>
-                <?php } } ?>
-            </div>
+                                </a>
+                            </div>
+                        <?php }
+                    } ?>
+                </div>
             </div>
 
-<!--            <div class="col-md-12  col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">-->
-<!--                <div class="left-title">Nổi bật cùng chuyên mục</div>-->
-<!--                --><?php //foreach ($highlight as $key => $value) {
-//                    if ($ads->id != $value->id) {
-//                        ?>
-<!--                        <a href="--><?php //echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?><!--">-->
-<!--                            <div class="mb-5" style="border: 1px solid #dedede;float: left">-->
-<!--                                <div class="col-md-4 col-sm-4 col-xs-4">-->
-<!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--">-->
-<!--                                </div>-->
-<!--                                <div class="col-md-8 col-sm-8 col-xs-8" style="padding: 5px">-->
-<!--                                    <h5 class="title-news-1 text-info" style="color: red;text-transform: uppercase">-->
-<!--                                        --><?php //echo $value->title ?><!--</h5>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </a>-->
-<!--                    --><?php //}
-//                } ?>
-<!--            </div>-->
+            <!--            <div class="col-md-12  col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">-->
+            <!--                <div class="left-title">Nổi bật cùng chuyên mục</div>-->
+            <!--                --><?php //foreach ($highlight as $key => $value) {
+            //                    if ($ads->id != $value->id) {
+            //                        ?>
+            <!--                        <a href="-->
+            <?php //echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?><!--">-->
+            <!--                            <div class="mb-5" style="border: 1px solid #dedede;float: left">-->
+            <!--                                <div class="col-md-4 col-sm-4 col-xs-4">-->
+            <!--                                    <img src="-->
+            <?php //echo public_url('images/ads/' . $value->img) ?><!--">-->
+            <!--                                </div>-->
+            <!--                                <div class="col-md-8 col-sm-8 col-xs-8" style="padding: 5px">-->
+            <!--                                    <h5 class="title-news-1 text-info" style="color: red;text-transform: uppercase">-->
+            <!--                                        --><?php //echo $value->title ?><!--</h5>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </a>-->
+            <!--                    --><?php //}
+            //                } ?>
+            <!--            </div>-->
         </div>
     </div>
 </section>
@@ -310,7 +298,9 @@
 </style>
 
 <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
     #myImg {
         border-radius: 5px;
@@ -318,7 +308,9 @@
         transition: 0.3s;
     }
 
-    #myImg:hover {opacity: 0.7;}
+    #myImg:hover {
+        opacity: 0.7;
+    }
 
     /* The Modal (background) */
     .modal {
@@ -331,8 +323,8 @@
         width: 100%; /* Full width */
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
     }
 
     /* Modal Content (image) */
@@ -366,19 +358,27 @@
     }
 
     @-webkit-keyframes zoom {
-        from {-webkit-transform:scale(0)}
-        to {-webkit-transform:scale(1)}
+        from {
+            -webkit-transform: scale(0)
+        }
+        to {
+            -webkit-transform: scale(1)
+        }
     }
 
     @keyframes zoom {
-        from {transform:scale(0)}
-        to {transform:scale(1)}
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
     }
 
     /* The Close Button */
     .close {
         position: absolute;
-        top: 100px ;
+        top: 100px;
         right: 35px;
         color: #f1f1f1;
         font-size: 40px;
@@ -394,7 +394,7 @@
     }
 
     /* 100% Image Width on Smaller Screens */
-    @media only screen and (max-width: 700px){
+    @media only screen and (max-width: 700px) {
         .modal-content {
             width: 100%;
         }
