@@ -133,7 +133,9 @@
             <div class="row">
                             <div class="col-md-12  col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
                                 <div class="left-title">Nổi bật cùng chuyên mục</div>
-                <?php foreach ($highlight as $key => $value) { ?>
+                <?php foreach ($highlight as $key => $value) {
+                if ($ads->id != $value->id) {
+                    ?>
                     <?php if ($key > 0) { ?>
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
@@ -175,7 +177,7 @@
                             </a>
                         </div>
                     <?php } ?>
-                <?php } ?>
+                <?php } } ?>
             </div>
             </div>
 
