@@ -87,7 +87,7 @@
                                     <div class="item <?php if ($key == 0) echo 'active'; ?>">
     <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
                                         <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="<?php echo $value->img ?>" style="width:100%; height: 320px">
-                                        <div class="carousel-caption">
+                                        <div class="carousel-caption" style="    background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0));">
                                             <h4 class=""><a class="text-danger" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                     <?php echo $value->title ?>
                                                 </a></h4>
