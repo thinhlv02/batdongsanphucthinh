@@ -11,7 +11,7 @@
                 <!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
                 <!--                <h4 class="text-danger">--><?php //echo $ads->title ?><!--</h4>-->
                 <div class="col-md-12 col-sm-12">
-                    <img  id="myImg" src="<?php echo public_url('images/ads/' . $ads->img) ?> "  style="width:100%;max-width:300px">
+                    <img  id="myImg" src="<?php echo public_url('images/ads/' . $ads->img) ?> "  style="width:100%;">
 
 <!--                    <img id="myImg" src="https://www.w3schools.com/howto/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">-->
 
