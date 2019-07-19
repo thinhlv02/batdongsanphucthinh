@@ -13,6 +13,8 @@ Class Home extends MY_Controller
         $this->load->model('contact_model');
         $this->load->model('news_model');
         $this->load->model('ads_model');
+        $this->load->model('district_model');
+        $this->load->model('Ward_model');
     }
 
     function index()
@@ -340,6 +342,60 @@ Class Home extends MY_Controller
 
 //        $id = $this->input->get('id');
 //        echo $id;
+    }
+
+    function ajax_get_list_district()
+    {
+        $id = $this->input->get('id');
+//        var_dump($id);
+//        $selected = $this->input->post('selected');
+
+        //get list tbl_gift_item_info_by_type
+
+
+
+        $lst_district = $this->district_model->get_list(array('where' => array('_province_id' => $id)));
+//        $lst_district = $this->district_model->get_list();
+//        var_dump($lst_district);
+//        die;
+
+        $lst_district_end = [];
+        foreach ($lst_district as $k => $value) {
+            $lst_district_end[$value->id]['id'] = $value->id;
+            $lst_district_end[$value->id]['_name'] = $value->_name;
+        }
+//        pre_arr($lst_district_end);
+
+//        pre($lst_district_end);
+        $this->data['lstdata'] = $lst_district_end;
+
+        $this->load->view('site/home/view_list_district', $this->data);
+    }
+
+    function ajax_get_list_ward()
+    {
+        $id = $this->input->get('id');
+//        var_dump($id);
+//        $selected = $this->input->post('selected');
+
+        //get list tbl_gift_item_info_by_type
+
+        $lst_ward = $this->Ward_model->get_list(array('where' => array('_district_id' => $id)));
+//        $lst_ward = $this->District_model->get_list();
+//        var_dump($lst_ward);
+//        die;
+
+        $lst_ward_end = [];
+        foreach ($lst_ward as $k => $value) {
+            $lst_ward_end[$value->id]['id'] = $value->id.'|'.$value->_district_id;
+            $lst_ward_end[$value->id]['_name'] = $value->_name;
+        }
+//        pre_arr($lst_ward_end);
+
+//        pre($lst_ward_end);
+        $this->data['lstdata'] = $lst_ward_end;
+
+        $this->load->view('site/home/view_list_ward', $this->data);
     }
 
 }
