@@ -6,6 +6,6 @@
 }
 
 .carousel-caption {
-    left: 0%;
-    right: 0%;
+    left: 0% !important;
+    right: 0% !important;
 }
