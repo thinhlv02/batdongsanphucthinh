@@ -271,7 +271,11 @@ Class Ads extends MY_Controller
             if ($this->upload->do_upload('img_news')) {
                 $file_data = $this->upload->data();
                 $data['img'] = $file_data['file_name'];
-                unlink('./public/images/ads/' . $ads->img);
+                if (isset($ads->img)) {
+
+
+                    unlink('./public/images/ads/' . $ads->img);
+                }
             } else {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
