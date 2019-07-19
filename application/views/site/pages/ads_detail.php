@@ -232,7 +232,7 @@
 
 <style>
     .demo {
-        width: 420px;
+        /*width: 420px;*/
     }
 
     ul {
