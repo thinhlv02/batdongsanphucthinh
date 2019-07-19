@@ -18,8 +18,18 @@ Class Home extends MY_Controller
     function index()
     {
         $this->data['li_1'] = 1;
+
+        $lstProvince = $this->_province;
+        $this->data['lstProvince'] = $lstProvince;
+
         $news = $this->news_model->get_list(array('limit' => array(5, 0)));
         $this->data['news'] = $news;
+
+        $news_mb = $this->news_model->get_list(array('limit' => array(5, 0)));
+        $this->data['news_mb'] = $news_mb;
+
+        $news_mn = $this->news_model->get_list(array('limit' => array(5, 0)));
+        $this->data['news_mn'] = $news_mn;
 
         //ads left
         $ads_left = $this->ads_model->get_list(array('where' => array('ads_left' => 1), 'limit' => array(3, 0)));

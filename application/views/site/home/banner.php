@@ -7,8 +7,6 @@
             <div class="col-sm-3 col-md-3">
                 <div class="card">
                     <div class="card-body pt-0 " style="height: 339px">
-
-
 <!--                        <div class="box-module">-->
 <!--                            <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>-->
 <!--                        </div>-->
@@ -24,25 +22,31 @@
                             <!--                </div>-->
                             <div class="form-group">
                                 <label for="email">Tỉnh thành</label>
-                                <select class="form-control">
+                                    <select class="form-control" name="province" onchange="get_district(this)">
                                     <option value=""> -- Chọn Tỉnh thành --</option>
-                                    <option value=""> Hệ thống đang cập nhật tỉnh thành</option>
+                                    <?php foreach ($lstProvince as $key => $value) { ?>
+                                        <option value="<?= $value->id ?>" <?php if (isset($_POST['type']) && $_POST['type'] == $key) echo 'selected' ?>>
+                                            <?php echo $value->_name ?>
+                                        </option>
+                                    <?php } ?>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="email">Quận Huyện</label>
-                                <select class="form-control">
-                                    <option value=""> -- Chọn Quận Huyện --</option>
-                                    <option value=""> Hệ thống đang cập nhật quận huyện</option>
-                                </select>
+                                <div class="" id="divDistrict">
+                                    <select class="form-control">
+                                        <option value="0"> -- Chọn Quận Huyện --</option>
+                                    </select>
+                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="email">Xã / Phường</label>
-                                <select class="form-control">
-                                    <option value=""> -- Xã / Phường --</option>
-                                    <option value=""> Hệ thống đang cập nhật xã phường</option>
-                                </select>
+                                <div class="" id="divWard">
+                                    <select class="form-control">
+                                        <option value="0"> -- Xã / Phường --</option>
+                                    </select>
+                                </div>
                             </div>
 
     <!--                        <div class="form-group">-->
@@ -186,3 +190,142 @@
     </div>
 
 </section>
+
+<script>
+    function get_district(sel) {
+        var id = sel.value;
+        console.log(id);
+        if (id == 0) {
+            $('#selectDistrict').empty();
+            $('#selectWard').empty();
+            $('#selectStreet').empty();
+        } else {
+            // ajax
+            var params = {
+                'id': id
+            };
+
+            // console.log(params);
+            var _onSuccess = function (data) {
+                // console.log(data);
+                if (data == 'NOT_LOGIN') {
+                    window.location.reload(true);
+                } else if (data === 'false') {
+
+                } else {
+                    // console.log(data);
+                    $("#divDistrict").html(data);
+                }
+            };//
+
+            getAjax('<?php echo admin_url('ads/ajax_get_list_district'); ?>', params, '', 'GET', '', false, _onSuccess);
+        }
+    }
+
+    function get_ward(sel) {
+        var id = sel.value;
+        console.log(id);
+        if (id == 0) {
+            $('#selectWard').empty();
+            $('#selectStreet').empty();
+        } else {
+            var params = {
+                'id': id
+            };
+
+            var _onSuccess = function (data) {
+                // console.log(data);
+                if (data == 'NOT_LOGIN') {
+
+                } else if (data === 'false') {
+
+                } else {
+                    $("#divWard").html(data);
+                }
+            };
+
+            getAjax('<?php echo admin_url('ads/ajax_get_list_ward'); ?>', params, '', 'GET', '', false, _onSuccess);
+        }
+    }
+
+    function get_street(sel) {
+        var id = sel.value;
+        console.log(id);
+        if (id == 0) {
+            $('#selectStreet').empty();
+        } else {
+            // ajax
+            var params = {
+                'id': id
+            };
+
+            // console.log(params);
+            var _onSuccess = function (data) {
+                // console.log(data);
+                if (data == 'NOT_LOGIN') {
+
+                } else if (data === 'false') {
+
+                } else {
+                    // console.log(data);
+                    $("#divStreet").html(data);
+                }
+            };
+
+            getAjax('<?php echo admin_url('ads/ajax_get_list_street'); ?>', params, '', 'GET', '', false, _onSuccess);
+        }
+    }
+
+
+    function getAjax(url, params, eID, method, dataType, showLoading, onSuccess, onError, onComplete) {
+        showLoading = (typeof (showLoading) === 'undefined' || showLoading === '') ? true : showLoading;
+        method = (typeof (method) == 'undefined' || method == '' || (method.toUpperCase() != 'POST' && method.toUpperCase() != 'GET')) ? 'GET' : method.toUpperCase();
+        dataType = (typeof (dataType) == 'undefined' || dataType == '') ? 'html' : dataType;
+
+        if (typeof (onSuccess) == 'undefined' || onSuccess == '') {
+            var _onSucess = function (data) {
+                if (dataType.toLocaleLowerCase() == 'json') {
+                    $(eID).html(data.form);
+                } else {
+                    $(eID).html(data);
+                }
+            };
+        } else {
+            var _onSucess = onSuccess;
+        }
+
+        if (typeof (onError) == 'undefined' || onError == '') {
+            var _onError = function (jqXHR, textStatus, errorThrown) {
+                try {
+                    $(eID).html("Sorry. There was an error.");
+                } catch (e) {
+                    alert("Sorry. There was an error.");
+                }
+            };
+        } else {
+            var _onError = onError;
+        }
+
+        if (typeof (onComplete) == 'undefined' || onComplete == '') {
+            var _onComplete = function (jqXHR, textStatus) {
+            };
+        } else {
+            var _onComplete = onComplete;
+        }
+
+        if (showLoading) {
+            //var h=parseInt($('#'+eID).offset().top);
+            //h=(h==0)?'auto':(h+"px");
+            $(eID).html('<span class="ajaxLoading">&nbsp;</span>');
+        }
+        $.ajax({
+            type: method,
+            url: url,
+            dataType: dataType,
+            data: params,
+            success: _onSucess,
+            error: _onError,
+            complete: _onComplete
+        });
+    }
+</script>

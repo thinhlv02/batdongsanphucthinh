@@ -21,6 +21,7 @@ Class News extends MY_Controller {
     }
 
     function add(){
+        $lstProvince = $this->_province;
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         if($this->input->post('btnAdd')){
@@ -33,6 +34,7 @@ Class News extends MY_Controller {
                     'name' => $this->input->post('txtName'),
                     'intro' => $this->input->post('txtIntro'),
                     'content' => $this->input->post('txtContent'),
+                    'province_id' => $this->input->post('province'),
                     'document_title' => $this->input->post('txtName'),
 //                    'meta_description' => $this->input->post('txtMetaDescription'),
 //                    'meta_keywords' => $this->input->post('txtMetaKeywords'),
@@ -52,6 +54,7 @@ Class News extends MY_Controller {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
         }
+        $this->data['lstProvince'] = $lstProvince;
         $this->data['tab'] = 2;
         $this->data['temp'] = 'admin/news/index';
         $this->data['view'] = 'admin/news/add';
@@ -59,6 +62,7 @@ Class News extends MY_Controller {
     }
 
     function edit(){
+        $lstProvince = $this->_province;
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
@@ -70,8 +74,9 @@ Class News extends MY_Controller {
         if($this->input->post('btnEdit')){
             $data = array(
                 'name' => $this->input->post('txtName'),
-                'content' => $this->input->post('txtContent'),
                 'intro' => nl2br($this->input->post('txtIntro')),
+                'content' => $this->input->post('txtContent'),
+                'province_id' => $this->input->post('province'),
                 'document_title' => $this->input->post('txtName'),
 //                'meta_description' => $this->input->post('txtMetaDescription'),
 //                'meta_keywords' => $this->input->post('txtMetaKeywords'),
@@ -98,6 +103,7 @@ Class News extends MY_Controller {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
+        $this->data['lstProvince'] = $lstProvince;
         $this->data['tab'] = 3;
         $this->data['news'] = $news;
         $this->data['temp'] = 'admin/news/index';

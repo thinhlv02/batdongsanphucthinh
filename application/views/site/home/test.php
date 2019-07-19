@@ -54,16 +54,16 @@
                                         </span>
 
                                                     </div>
-<!--                                                    <div class="price-list">-->
-<!--                                                        <span>Link bài viết</span>: <a href="--><?php //echo $value->link ?><!--"-->
-<!--                                                                                       target="_blank">-->
-<!--                                                            --><?php //echo $value->link ?><!--</a>-->
-<!---->
-<!--                                                        <span class="pull-right time">-->
-<!--                                             <i class="glyphicon glyphicon-time"></i>-->
-<!--                                            --><?php //echo date('Y-m-d', strtotime($value->created_at)) ?>
-<!--                                        </span>-->
-<!--                                                    </div>-->
+                                                    <!--                                                    <div class="price-list">-->
+                                                    <!--                                                        <span>Link bài viết</span>: <a href="--><?php //echo $value->link ?><!--"-->
+                                                    <!--                                                                                       target="_blank">-->
+                                                    <!--                                                            --><?php //echo $value->link ?><!--</a>-->
+                                                    <!---->
+                                                    <!--                                                        <span class="pull-right time">-->
+                                                    <!--                                             <i class="glyphicon glyphicon-time"></i>-->
+                                                    <!--                                            --><?php //echo date('Y-m-d', strtotime($value->created_at)) ?>
+                                                    <!--                                        </span>-->
+                                                    <!--                                                    </div>-->
                                                 </div>
                                             </div>
 
@@ -231,36 +231,36 @@
 
 
                     <div class="col-sm-6">
-                            <div class="card">
-                                <div class="card-body">
+                        <div class="card">
+                            <div class="card-body">
 
 
-                                    <div class="bg-modul"><h2>Không gian sống</h2></div>
-                                    <div class="border-box col-hom-news" style="height:415px"><a
-                                                href="/tin-tuc/ha-noi-chu-nha-hoi-han-vi-sua-nha-qua-dep-7862.html">
-                                            <img
-                                                    src="https://batdongsan24h.com.vn/images/private/2017/10/13/131523657644051181.jpg?w=325&amp;h=190&amp;mode=crop"
-                                                    class="img-responsive center-block"
-                                                    alt="Hà Nội: Chủ nhà hối hận vì sửa nhà quá đẹp"> <br> <span
-                                                    class="title-raovat">Hà Nội: Chủ nhà hối hận vì sửa nhà quá đẹp</span>
-                                        </a>
-                                        <p>
-                                            <a href="/tin-tuc/can-ho-72m2-dep-nhu-khach-san-cua-nu-chu-nha-doc-than-7853.html">
-                                                <i class="glyphicon glyphicon-triangle-right"></i> Căn hộ 72m2 đẹp như khách sạn
-                                                của nữ chủ nhà độc thân </a></p>
-                                        <p><a href="/tin-tuc/ngoi-nha-nho-cap-4-dien-tich-44m2-nhu-resort-5752.html"> <i
-                                                        class="glyphicon glyphicon-triangle-right"></i> Ngôi nhà nhỏ cấp 4 diện
-                                                tích 44m2 như 'resort' </a></p>
-                                        <p><a href="/tin-tuc/can-ho-8m2-dang-mo-uoc-danh-cho-hoi-doc-than-5747.html"> <i
-                                                        class="glyphicon glyphicon-triangle-right"></i> Căn hộ 8m2 đáng mơ
-                                                ước dành cho hội độc thân </a></p>
-                                        <p>
-                                            <a href="/tin-tuc/nha-cap-4-kieu-thai-tai-nghe-an-ngang-khach-san-3-sao-5714.html">
-                                                <i class="glyphicon glyphicon-triangle-right"></i> Nhà cấp 4 kiểu Thái tại Nghệ
-                                                An ngang khách sạn 3 sao </a></p></div>
-                                </div>
+                                <div class="bg-modul"><h2>Không gian sống</h2></div>
+                                <div class="border-box col-hom-news" style="height:415px"><a
+                                            href="/tin-tuc/ha-noi-chu-nha-hoi-han-vi-sua-nha-qua-dep-7862.html">
+                                        <img
+                                                src="https://batdongsan24h.com.vn/images/private/2017/10/13/131523657644051181.jpg?w=325&amp;h=190&amp;mode=crop"
+                                                class="img-responsive center-block"
+                                                alt="Hà Nội: Chủ nhà hối hận vì sửa nhà quá đẹp"> <br> <span
+                                                class="title-raovat">Hà Nội: Chủ nhà hối hận vì sửa nhà quá đẹp</span>
+                                    </a>
+                                    <p>
+                                        <a href="/tin-tuc/can-ho-72m2-dep-nhu-khach-san-cua-nu-chu-nha-doc-than-7853.html">
+                                            <i class="glyphicon glyphicon-triangle-right"></i> Căn hộ 72m2 đẹp như khách sạn
+                                            của nữ chủ nhà độc thân </a></p>
+                                    <p><a href="/tin-tuc/ngoi-nha-nho-cap-4-dien-tich-44m2-nhu-resort-5752.html"> <i
+                                                    class="glyphicon glyphicon-triangle-right"></i> Ngôi nhà nhỏ cấp 4 diện
+                                            tích 44m2 như 'resort' </a></p>
+                                    <p><a href="/tin-tuc/can-ho-8m2-dang-mo-uoc-danh-cho-hoi-doc-than-5747.html"> <i
+                                                    class="glyphicon glyphicon-triangle-right"></i> Căn hộ 8m2 đáng mơ
+                                            ước dành cho hội độc thân </a></p>
+                                    <p>
+                                        <a href="/tin-tuc/nha-cap-4-kieu-thai-tai-nghe-an-ngang-khach-san-3-sao-5714.html">
+                                            <i class="glyphicon glyphicon-triangle-right"></i> Nhà cấp 4 kiểu Thái tại Nghệ
+                                            An ngang khách sạn 3 sao </a></p></div>
                             </div>
                         </div>
+                    </div>
 
 
                     <div class="clearfix">
@@ -268,7 +268,8 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="box-module mt-2">
-                                        <div class="bg-modul"><h1><i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
+                                        <div class="bg-modul"><h1>
+                                                <i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
                                     </div>
                                     <?php foreach ($ads_new as $key => $value) { ?>
                                         <div class="item-re-list clearfix">
@@ -326,6 +327,16 @@
                                 <!--                            <h2>Basic List Group</h2>-->
                                 <ul class="list-group">
                                     <?php foreach ($news as $key => $value) { ?>
+
+                                        <?php if ($key == 0) { ?>
+                                            <li class="first list-group-item">
+                                                <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" rel="nofollow">
+                                                    <img src="<?php echo public_url('images/news/' . $value->img) ?>" class="img-responsive center-block" alt="<?php echo $value->name ?>">
+                                                    Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm
+                                                </a></li>
+                                        <?php } ?>
+
+
                                         <li class="list-group-item">
 
                                             <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
@@ -338,10 +349,20 @@
                                 <!--                        </div>-->
                             </div>
                             <div class="box-links-right"><p><span style="font-size:12px"><span
-                                                style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;HÀ NỘI</strong></span></span>
+                                                style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;MIỀN BẮC</strong></span></span>
                                 </p>
-                                <ul class="list-group">
-                                    <?php foreach ($news as $key => $value) { ?>
+                                <ul class="list-group list-group-item">
+
+                                    <?php foreach ($news_mb as $key => $value) { ?>
+
+                                        <?php if ($key == 0) { ?>
+                                            <li class="first list-group-item">
+                                                <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" rel="nofollow">
+                                                    <img src="<?php echo public_url('images/news/' . $value->img) ?>" class="img-responsive center-block" alt="<?php echo $value->name ?>">
+                                                    Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm
+                                                </a></li>
+                                        <?php } ?>
+
                                         <li class="list-group-item">
 
                                             <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
@@ -352,10 +373,19 @@
 
                                 </ul>
                                 <p>
-                                    <span style="font-size:12px"><span style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;TP.HCM</strong></span></span>
+                                    <span style="font-size:12px"><span style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;MIỀN NAM</strong></span></span>
                                 </p>
                                 <ul class="list-group">
-                                    <?php foreach ($news as $key => $value) { ?>
+                                    <?php foreach ($news_mb as $key => $value) { ?>
+
+                                        <?php if ($key == 0) { ?>
+                                            <li class="first list-group-item">
+                                                <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" rel="nofollow">
+                                                    <img src="<?php echo public_url('images/news/' . $value->img) ?>" class="img-responsive center-block" alt="<?php echo $value->name ?>">
+                                                    Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm
+                                                </a></li>
+                                        <?php } ?>
+
                                         <li class="list-group-item">
 
                                             <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">

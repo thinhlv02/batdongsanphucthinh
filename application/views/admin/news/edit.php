@@ -49,6 +49,21 @@
                         <script type="text/javascript">CKEDITOR.replace('txtContent',{height: '300px'}); </script>
                     </div>
                 </div>
+                <div class="form-group" style="">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tỉnh / TP<span
+                                class="required">*</span></label>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <select class="select2_group form-control" name="province">
+                            <?php foreach ($lstProvince as $key => $value) { ?>
+                                <option value="<?= $value->id ?>" <?php if ($news->province_id == $value->id) echo 'selected' ?>>
+                                    <?php echo $value->_name ?>
+                                </option>
+                            <?php } ?>
+
+                        </select>
+                    </div>
+
+                </div>
 
 <!--                <div class="form-group">-->
 <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Document Title <span class="required">*</span></label>-->
