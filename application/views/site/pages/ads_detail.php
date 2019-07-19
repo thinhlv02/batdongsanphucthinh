@@ -110,9 +110,11 @@
                             $lightSlider_str = $ads->lightSlider != '' ? $ads->img . '#' . $ads->lightSlider : $ads->img;
                             $tags = explode('#', $lightSlider_str);
                             foreach ($tags as $k => $val) { ?>
-                                <li style="width: 450px; height: 338px"
+<!--                                <li style="width: 450px; height: 338px"-->
+                                <li style=""
                                     data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
-                                    <img style="width: 450px; height: 338px" alt="<?= $val ?>"
+<!--                                    <img style="width: 450px; height: 338px" alt="--><?//= $val ?><!--"-->
+                                    <img style="" alt="<?= $val ?>"
                                          src="<?php echo public_url('images/ads/' . $val) ?>"/>
                                 </li>
                             <?php } ?>
