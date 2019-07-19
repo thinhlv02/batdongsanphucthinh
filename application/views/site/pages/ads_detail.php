@@ -7,7 +7,7 @@
                     <!--                <li><a href="--><?php //echo base_url('rao-vat') ?><!--">Rao vặt</a></li>-->
                     <li class="" style="color: red;text-transform: uppercase;"><?php echo $ads->title ?></li>
                 </ol>
-                <div class="item-news-1" style="padding: 10px">
+                <div class="item-news-1" style="">
                     <!--                <span>--><?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
                     <!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
                     <!--                <h4 class="text-danger">--><?php //echo $ads->title ?><!--</h4>-->
@@ -129,25 +129,72 @@
 
             </div>
 
-            <div class="col-md-12  col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
-                <div class="left-title">Nổi bật cùng chuyên mục</div>
-                <?php foreach ($highlight as $key => $value) {
-                    if ($ads->id != $value->id) {
-                        ?>
-                        <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                            <div class="mb-5" style="border: 1px solid #dedede;float: left">
-                                <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>">
+
+            <div class="row">
+                <?php foreach ($highlight as $key => $value) { ?>
+                    <?php if ($key > 0) { ?>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                <div class="item-news">
+                                    <div class="img-news" style="background-image: url(<?php echo public_url('images/news/' . $value->img) ?>)">
+                                        <div class="content-news">
+                                            <div>
+                                                <strong style="color: #fff"><?php echo $value->title ?></strong>
+                                            </div>
+                                            <p style="color: #fff"><?php echo $value->intro ?></p>
+                                            <a href="<?php echo base_url('tin-tuc/' . create_slug($value->title) . '-' . $value->id) ?>" class="btn btn-primary mt-5">Xem thêm</a>
+                                        </div>
+                                        <div class="title-news">
+                                            <span style="font-size: 13px"><?php echo date('d/m/Y', strtotime($value->created_at)) ?></span><br>
+                                            <strong><?php echo $value->title ?></strong>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <div class="col-md-8 col-sm-8 col-xs-8" style="padding: 5px">
-                                    <h5 class="title-news-1 text-info" style="color: red;text-transform: uppercase">
-                                        <?php echo $value->title ?></h5>
+                            </a>
+                        </div>
+                    <?php } else { ?>
+                        <div class="col-md-8 col-sm-12 col-xs-12">
+                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                <div class="item-news">
+                                    <div class="img-news" style="background-image: url(<?php echo public_url('images/news/' . $value->img) ?>)">
+                                        <div class="content-news">
+                                            <div><strong><?php echo $value->title ?></strong></div>
+                                            <p><?php echo $value->intro ?></p>
+                                            <a href="<?php echo base_url('tin-tuc/' . create_slug($value->title) . '-' . $value->id) ?>" class="btn btn-primary mt-5">Xem thêm</a>
+                                        </div>
+                                        <div class="title-news">
+                                            <span style="font-size: 13px"><?php echo date('d/m/Y', strtotime($value->created_at)) ?></span><br>
+                                            <strong><?php echo $value->title ?></strong>
+                                        </div>
+
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    <?php }
-                } ?>
+                            </a>
+                        </div>
+                    <?php } ?>
+                <?php } ?>
             </div>
+
+<!--            <div class="col-md-12  col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">-->
+<!--                <div class="left-title">Nổi bật cùng chuyên mục</div>-->
+<!--                --><?php //foreach ($highlight as $key => $value) {
+//                    if ($ads->id != $value->id) {
+//                        ?>
+<!--                        <a href="--><?php //echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?><!--">-->
+<!--                            <div class="mb-5" style="border: 1px solid #dedede;float: left">-->
+<!--                                <div class="col-md-4 col-sm-4 col-xs-4">-->
+<!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--">-->
+<!--                                </div>-->
+<!--                                <div class="col-md-8 col-sm-8 col-xs-8" style="padding: 5px">-->
+<!--                                    <h5 class="title-news-1 text-info" style="color: red;text-transform: uppercase">-->
+<!--                                        --><?php //echo $value->title ?><!--</h5>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </a>-->
+<!--                    --><?php //}
+//                } ?>
+<!--            </div>-->
         </div>
     </div>
 </section>
