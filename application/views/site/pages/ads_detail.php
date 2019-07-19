@@ -18,7 +18,8 @@
 
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
-                            <span class="close">&times;</span>
+<!--                            <span class="close">&times;</span>-->
+                            <span class="close">Đóng</span>
                             <img class="modal-content" id="img01">
                             <div id="caption"></div>
                         </div>
@@ -287,8 +288,10 @@
     .modal-content {
         margin: auto;
         display: block;
-        width: 80%;
-        max-width: 700px;
+        /*width: 80%;*/
+        width: 100%;
+        /*max-width: 700px;*/
+        max-width: 1170px;
     }
 
     /* Caption of Modal Image */
