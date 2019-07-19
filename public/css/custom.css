@@ -8,4 +8,9 @@
 .carousel-caption {
     left: 0% !important;
     right: 0% !important;
+    background: black !important;
+}
+
+.carousel-caption a {
+   color: white !important;
 }

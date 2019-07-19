@@ -87,8 +87,8 @@
                                     <div class="item <?php if ($key == 0) echo 'active'; ?>">
     <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
                                         <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="<?php echo $value->img ?>" style="width:100%; height: 320px">
-                                        <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.8);">
-                                            <h4 class=""><a class="" style="color: white !important;" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                        <div class="carousel-caption">
+                                            <h4><a style="color: white !important;" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                     <?php echo $value->title ?>
                                                 </a></h4>
 <!--                                            <p><a class="text-danger" href="">-->
@@ -142,7 +142,7 @@
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
                                     <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width: 100%; height: 320px ">
                                     <div class="carousel-caption">
-                                        <h4><a class="text-danger" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a></h4>
+                                        <h4><a class="" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a></h4>
 <!--                                        <p>--><?php //echo $value->intro ?><!--</p>-->
                                     </div>
                                 </div>
