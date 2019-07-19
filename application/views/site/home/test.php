@@ -7,13 +7,14 @@
                 <div id="center-body">
 
                     <div id="raovat-nb">
+                        <div class="box-module mt-2">
+                            <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật
+                            </div>
+                        </div>
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="box-module mt-2">
-                                        <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật
-                                        </div>
-                                    </div>
+
                                     <div class="clearfix" id="box-home-svip">
 
                                         <?php foreach ($ads_center as $key => $value) { ?>
@@ -83,10 +84,11 @@
 
 
                     <div class="col-sm-6">
+                        <div class="bg-modul"><h2>Dự án nổi bật</h2></div>
                         <div class="card">
                             <div class="card-body">
 
-                                <div class="bg-modul"><h2>Dự án nổi bật</h2></div>
+
                                 <div class="border-box col-hom-news">
                                     <div style="width:100%;height:395px;overflow:hidden">
                                         <div class="bx-wrapper" style="max-width: 100%;">
@@ -231,11 +233,12 @@
 
 
                     <div class="col-sm-6">
+                        <div class="bg-modul"><h2>Không gian sống</h2></div>
                         <div class="card">
                             <div class="card-body">
 
 
-                                <div class="bg-modul"><h2>Không gian sống</h2></div>
+
                                 <div class="border-box col-hom-news" style="height:415px"><a
                                             href="/tin-tuc/ha-noi-chu-nha-hoi-han-vi-sua-nha-qua-dep-7862.html">
                                         <img
@@ -263,14 +266,15 @@
                     </div>
 
 
-                    <div class="clearfix">
+
+                        <div class="box-module mt-2">
+                            <div class="bg-modul"><h1>
+                                    <i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
+                        </div>
                         <div class="col-sm-12 ">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="box-module mt-2">
-                                        <div class="bg-modul"><h1>
-                                                <i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
-                                    </div>
+
                                     <?php foreach ($ads_new as $key => $value) { ?>
                                         <div class="item-re-list clearfix">
                                             <!--                            <div class="box-img-thumb col-sm-3 col-md-3">-->
@@ -306,22 +310,19 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+
 
                 </div>
 
             </div>
 
             <div class="col-sm-3 col-md-3">
-
-                <div class="card">
-                    <div class="card-body">
-
+                <div class="box-module mt-2">
+                    <div class="bg-modul"><i class="glyphicon glyphicon-link"></i> Liên kết được quan tâm</div>
+                </div>
 
                         <div id="right">
-                            <div class="box-module mt-2">
-                                <div class="bg-modul">Liên kết được quan tâm</div>
-                            </div>
+
                             <div>
                                 <!--                        <div class="container">-->
                                 <!--                            <h2>Basic List Group</h2>-->
@@ -349,9 +350,9 @@
                                 <!--                        </div>-->
                             </div>
                             <div class="box-links-right"><p><span style="font-size:12px"><span
-                                                style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;MIỀN BẮC</strong></span></span>
+                                                style=""><strong>KHU VỰC MIỀN BẮC</strong></span></span>
                                 </p>
-                                <ul class="list-group list-group-item">
+                                <ul>
 
                                     <?php foreach ($news_mb as $key => $value) { ?>
 
@@ -433,8 +434,6 @@
                         </div>
 
 
-                    </div>
-                </div>
             </div>
 
 
@@ -529,10 +528,10 @@
         line-height: 18px;
     }
 
-    .border-box {
-        border: 1px #ddd solid;
-        padding: 10px;
-    }
+    /*.border-box {*/
+    /*    border: 1px #ddd solid;*/
+    /*    padding: 10px;*/
+    /*}*/
 
     .price-list span.time {
         font-weight: 400;

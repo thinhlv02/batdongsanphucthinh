@@ -6,7 +6,7 @@
 <!--            <div class="sub-title-section">Khám phá tại đây</div>-->
             <div class="row">
                 <div class="box-module">
-                    <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Tin Vip dành cho bạn</div>
+                    <div class="bg-modul"><i class="glyphicon glyphicon-tag"></i> Tin Vip dành cho bạn</div>
                 </div>
                 <?php foreach ($ads_center as $key => $value) { ?>
 
