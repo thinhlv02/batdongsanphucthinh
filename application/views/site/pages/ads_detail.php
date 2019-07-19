@@ -153,7 +153,7 @@
 
     #details-auto .box-info .block {
         width: 100%;
-        width: 300px;
+        /*width: 300px;*/
     }
 
     #details-auto .block {
