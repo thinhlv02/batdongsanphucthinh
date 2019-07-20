@@ -1,4 +1,4 @@
-<section class="news mt-3">
+<section class="news pt-0 ">
     <div class="container">
         <!--        <div class="box-module">-->
         <!--            <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Tin Vip</div>-->
