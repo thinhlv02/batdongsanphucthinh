@@ -378,12 +378,13 @@
     /* The Close Button */
     .close {
         position: absolute;
-        top: 15px;
+        top: 45px;
         right: 35px;
         color: #f1f1f1;
         font-size: 40px;
         font-weight: bold;
         transition: 0.3s;
+        opacity: inherit;
     }
 
     .close:hover,
