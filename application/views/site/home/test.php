@@ -221,23 +221,8 @@
                         <?php } ?>
 
                     </ul>
-                    <div class="box-module">
-                        <div class="bg-modul" style="margin-top:10px">
-                            <i class="glyphicon glyphicon-link"></i> Góc lắng
-                            nghe
-                        </div>
-                    </div>
-                    <ul class="list-group">
-                        <?php foreach ($news as $key => $value) { ?>
-                            <li class="list-group-item">
 
-                                <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
-                                    <?php echo $value->name ?>
-                                </a>
-                            </li>
-                        <?php } ?>
 
-                    </ul>
                 </div>
 
 
