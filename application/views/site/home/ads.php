@@ -10,8 +10,8 @@
                 </div>
                 <?php foreach ($ads_center as $key => $value) { ?>
 
-                    <div class="col-md-2 col-sm-6 col-xs-12 card" onclick="updateView('<?php echo $value->id; ?>');">
-                        <div class="card-body mb-2">
+                    <div class="col-md-2 col-sm-6 col-xs-12 card12" onclick="updateView('<?php echo $value->id; ?>');">
+                        <div class="card-body12 mb-2">
                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                 <div class="item-news">
                                     <div class="img-news" style="background-image: url(<?php echo public_url('images/ads/' . $value->img) ?>)">
