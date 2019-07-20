@@ -36,9 +36,9 @@
                                                                 <?php echo $value->title ?> </a>
                                                         </h3>
                                                     </div>
-<!--                                                    <p>--><?php //echo $value->intro ?>
-<!--                                                        <img style="width: 34px;height: 21px;float: left;display: inline;" src="--><?php //echo public_url('images/hot-icon.gif') ?><!--"-->
-<!--                                                    </p>-->
+                                                    <!--                                                    <p>--><?php //echo $value->intro ?>
+                                                    <!--                                                        <img style="width: 34px;height: 21px;float: left;display: inline;" src="--><?php //echo public_url('images/hot-icon.gif') ?><!--"-->
+                                                    <!--                                                    </p>-->
                                                     <div class="price-list">
                                                         <span>Diện tích</span>:
                                                         <strong><?php echo $value->acreage . ' m2' ?></strong>
@@ -55,17 +55,9 @@
                                         </span>
 
                                                     </div>
-                                                    <!--                                                    <div class="price-list">-->
-                                                    <!--                                                        <span>Link bài viết</span>: <a href="--><?php //echo $value->link ?><!--"-->
-                                                    <!--                                                                                       target="_blank">-->
-                                                    <!--                                                            --><?php //echo $value->link ?><!--</a>-->
-                                                    <!---->
-                                                    <!--                                                        <span class="pull-right time">-->
-                                                    <!--                                             <i class="glyphicon glyphicon-time"></i>-->
-                                                    <!--                                            --><?php //echo date('Y-m-d', strtotime($value->created_at)) ?>
-                                                    <!--                                        </span>-->
-                                                    <!--                                                    </div>-->
+
                                                 </div>
+
                                             </div>
 
                                         <?php } ?>
@@ -238,7 +230,6 @@
                             <div class="card-body">
 
 
-
                                 <div class="border-box col-hom-news" style="height:415px"><a
                                             href="/tin-tuc/ha-noi-chu-nha-hoi-han-vi-sua-nha-qua-dep-7862.html">
                                         <img
@@ -266,50 +257,49 @@
                     </div>
 
 
+                    <div class="box-module mt-2">
+                        <div class="bg-modul"><h1>
+                                <i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
+                    </div>
+                    <div class="col-sm-12 ">
+                        <div class="card">
+                            <div class="card-body">
 
-                        <div class="box-module mt-2">
-                            <div class="bg-modul"><h1>
-                                    <i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
-                        </div>
-                        <div class="col-sm-12 ">
-                            <div class="card">
-                                <div class="card-body">
-
-                                    <?php foreach ($ads_new as $key => $value) { ?>
-                                        <div class="item-re-list clearfix">
-                                            <!--                            <div class="box-img-thumb col-sm-3 col-md-3">-->
-                                            <div class="box-img-thumb">
-                                                <a
-                                                        href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
-                                                         alt="<?php echo $value->title ?>">
-                                                </a></div>
-                                            <!--                            <div class="box-info-list col-sm-9 col-md-9">-->
-                                            <div class="box-info-list">
-                                                <h3><a class="color-60"
-                                                            href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                                        <?php echo $value->title ?>
-                                                    </a>
-                                                </h3>
-<!--                                                <p>--><?php //echo $value->intro ?>
-<!--                                                    ...</p>-->
-                                                <div class="price-list"><span>Diện tích</span>:
-                                                    <strong><?php echo $value->acreage ?> m2</strong></div>
-                                                <div class="price-list"><span>Giá</span>:
-                                                    <strong><?php echo $value->price ?></strong></div>
-                                                <div class="price-list"><span>Khu vực</span>:
-                                                    <strong> <?php echo $value->area ?> </strong>
-                                                    <span class="pull-right time"> <i
-                                                                class="glyphicon glyphicon-time"></i> <?php echo date('Y-m-d', strtotime($value->created_at)) ?> </span>
-                                                </div>
+                                <?php foreach ($ads_new as $key => $value) { ?>
+                                    <div class="item-re-list clearfix">
+                                        <!--                            <div class="box-img-thumb col-sm-3 col-md-3">-->
+                                        <div class="box-img-thumb">
+                                            <a
+                                                    href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                                <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                                     alt="<?php echo $value->title ?>">
+                                            </a></div>
+                                        <!--                            <div class="box-info-list col-sm-9 col-md-9">-->
+                                        <div class="box-info-list">
+                                            <h3><a class="color-60"
+                                                   href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                                    <?php echo $value->title ?>
+                                                </a>
+                                            </h3>
+                                            <!--                                                <p>--><?php //echo $value->intro ?>
+                                            <!--                                                    ...</p>-->
+                                            <div class="price-list"><span>Diện tích</span>:
+                                                <strong><?php echo $value->acreage ?> m2</strong></div>
+                                            <div class="price-list"><span>Giá</span>:
+                                                <strong><?php echo $value->price ?></strong></div>
+                                            <div class="price-list"><span>Khu vực</span>:
+                                                <strong> <?php echo $value->area ?> </strong>
+                                                <span class="pull-right time"> <i
+                                                            class="glyphicon glyphicon-time"></i> <?php echo date('Y-m-d', strtotime($value->created_at)) ?> </span>
                                             </div>
                                         </div>
+                                    </div>
 
-                                    <?php } ?>
+                                <?php } ?>
 
-                                </div>
                             </div>
                         </div>
+                    </div>
 
 
                 </div>
@@ -321,117 +311,117 @@
                     <div class="bg-modul"><i class="glyphicon glyphicon-link"></i> Liên kết được quan tâm</div>
                 </div>
 
-                        <div id="right">
+                <div id="right">
 
-                            <div>
-                                <!--                        <div class="container">-->
-                                <!--                            <h2>Basic List Group</h2>-->
-                                <ul class="list-group">
-                                    <?php foreach ($news as $key => $value) { ?>
+                    <div>
+                        <!--                        <div class="container">-->
+                        <!--                            <h2>Basic List Group</h2>-->
+                        <ul class="list-group">
+                            <?php foreach ($news as $key => $value) { ?>
 
-                                        <?php if ($key == 0) { ?>
-                                            <li class="first list-group-item">
-                                                <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" rel="nofollow">
-                                                    <img src="<?php echo public_url('images/news/' . $value->img) ?>" class="img-responsive center-block" alt="<?php echo $value->name ?>">
-                                                    Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm
-                                                </a></li>
-                                        <?php } ?>
-
-
-                                        <li class="list-group-item">
-
-                                            <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
-                                                <?php echo $value->name ?>
-                                            </a>
-                                        </li>
-                                    <?php } ?>
-
-                                </ul>
-                                <!--                        </div>-->
-                            </div>
-                            <div class="box-links-right"><p><span style="font-size:12px"><span
-                                                style=""><strong>KHU VỰC MIỀN BẮC</strong></span></span>
-                                </p>
-                                <ul>
-
-                                    <?php foreach ($news_mb as $key => $value) { ?>
-
-                                        <?php if ($key == 0) { ?>
-                                            <li class="first list-group-item">
-                                                <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" rel="nofollow">
-                                                    <img src="<?php echo public_url('images/news/' . $value->img) ?>" class="img-responsive center-block" alt="<?php echo $value->name ?>">
-                                                    Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm
-                                                </a></li>
-                                        <?php } ?>
-
-                                        <li class="list-group-item">
-
-                                            <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
-                                                <?php echo $value->name ?>
-                                            </a>
-                                        </li>
-                                    <?php } ?>
-
-                                </ul>
-                                <p>
-                                    <span style="font-size:12px"><span style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;MIỀN NAM</strong></span></span>
-                                </p>
-                                <ul class="list-group">
-                                    <?php foreach ($news_mb as $key => $value) { ?>
-
-                                        <?php if ($key == 0) { ?>
-                                            <li class="first list-group-item">
-                                                <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" rel="nofollow">
-                                                    <img src="<?php echo public_url('images/news/' . $value->img) ?>" class="img-responsive center-block" alt="<?php echo $value->name ?>">
-                                                    Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm
-                                                </a></li>
-                                        <?php } ?>
-
-                                        <li class="list-group-item">
-
-                                            <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
-                                                <?php echo $value->name ?>
-                                            </a>
-                                        </li>
-                                    <?php } ?>
-
-                                </ul>
-                            </div>
-                            <div class="box-module">
-                                <div class="bg-modul" style="margin-top:10px">
-                                    <i class="glyphicon glyphicon-link"></i> Phong
-                                    thủy
-                                </div>
-                            </div>
-                            <ul class="list-group">
-                                <?php foreach ($news as $key => $value) { ?>
-                                    <li class="list-group-item">
-
-                                        <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
-                                            <?php echo $value->name ?>
-                                        </a>
-                                    </li>
+                                <?php if ($key == 0) { ?>
+                                    <li class="first list-group-item">
+                                        <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" rel="nofollow">
+                                            <img src="<?php echo public_url('images/news/' . $value->img) ?>" class="img-responsive center-block" alt="<?php echo $value->name ?>">
+                                            Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm
+                                        </a></li>
                                 <?php } ?>
 
-                            </ul>
-                            <div class="box-module">
-                                <div class="bg-modul" style="margin-top:10px">
-                                    <i class="glyphicon glyphicon-link"></i> Góc lắng
-                                    nghe
-                                </div>
-                            </div>
-                            <ul class="list-group">
-                                <?php foreach ($news as $key => $value) { ?>
-                                    <li class="list-group-item">
 
-                                        <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
-                                            <?php echo $value->name ?>
-                                        </a>
-                                    </li>
+                                <li class="list-group-item">
+
+                                    <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
+                                        <?php echo $value->name ?>
+                                    </a>
+                                </li>
+                            <?php } ?>
+
+                        </ul>
+                        <!--                        </div>-->
+                    </div>
+                    <div class="box-links-right"><p><span style="font-size:12px"><span
+                                        style=""><strong>KHU VỰC MIỀN BẮC</strong></span></span>
+                        </p>
+                        <ul>
+
+                            <?php foreach ($news_mb as $key => $value) { ?>
+
+                                <?php if ($key == 0) { ?>
+                                    <li class="first list-group-item">
+                                        <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" rel="nofollow">
+                                            <img src="<?php echo public_url('images/news/' . $value->img) ?>" class="img-responsive center-block" alt="<?php echo $value->name ?>">
+                                            Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm
+                                        </a></li>
                                 <?php } ?>
 
-                            </ul>
+                                <li class="list-group-item">
+
+                                    <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
+                                        <?php echo $value->name ?>
+                                    </a>
+                                </li>
+                            <?php } ?>
+
+                        </ul>
+                        <p>
+                            <span style="font-size:12px"><span style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;MIỀN NAM</strong></span></span>
+                        </p>
+                        <ul class="list-group">
+                            <?php foreach ($news_mb as $key => $value) { ?>
+
+                                <?php if ($key == 0) { ?>
+                                    <li class="first list-group-item">
+                                        <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" rel="nofollow">
+                                            <img src="<?php echo public_url('images/news/' . $value->img) ?>" class="img-responsive center-block" alt="<?php echo $value->name ?>">
+                                            Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm
+                                        </a></li>
+                                <?php } ?>
+
+                                <li class="list-group-item">
+
+                                    <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
+                                        <?php echo $value->name ?>
+                                    </a>
+                                </li>
+                            <?php } ?>
+
+                        </ul>
+                    </div>
+                    <div class="box-module">
+                        <div class="bg-modul" style="margin-top:10px">
+                            <i class="glyphicon glyphicon-link"></i> Phong
+                            thủy
                         </div>
+                    </div>
+                    <ul class="list-group">
+                        <?php foreach ($news as $key => $value) { ?>
+                            <li class="list-group-item">
+
+                                <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
+                                    <?php echo $value->name ?>
+                                </a>
+                            </li>
+                        <?php } ?>
+
+                    </ul>
+                    <div class="box-module">
+                        <div class="bg-modul" style="margin-top:10px">
+                            <i class="glyphicon glyphicon-link"></i> Góc lắng
+                            nghe
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <?php foreach ($news as $key => $value) { ?>
+                            <li class="list-group-item">
+
+                                <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
+                                    <?php echo $value->name ?>
+                                </a>
+                            </li>
+                        <?php } ?>
+
+                    </ul>
+                </div>
 
 
             </div>
@@ -442,8 +432,6 @@
 </section>
 
 <style>
-
-
     .item-re-list {
         border-bottom: 1px #b0aeae solid;
         margin-top: 2px;
@@ -470,29 +458,6 @@
         margin-right: 15px;
         /* width: 55px; */
         text-transform: uppercase;
-    }
-
-    /*#box-home-svip {*/
-    /*    overflow-x: hidden;*/
-    /*    overflow-y: scroll;*/
-    /*    max-height: 1000px;*/
-    /*    margin-bottom: 15px;*/
-    /*}*/
-
-    .label-danger {
-        background-color: #d9534f;
-    }
-
-    .label {
-        height: 14px;
-        */ font-weight: 700;
-        color: #fff;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: baseline;
-        border-radius: .25em;
-        padding: 4px;
-        line-height: 10px;
     }
 
     .item-re-list h3 {
@@ -528,11 +493,6 @@
         line-height: 18px;
     }
 
-    /*.border-box {*/
-    /*    border: 1px #ddd solid;*/
-    /*    padding: 10px;*/
-    /*}*/
-
     .price-list span.time {
         font-weight: 400;
         width: inherit;
@@ -546,6 +506,4 @@
         font-size: 11px;
         white-space: nowrap;
     }
-
-
 </style>
