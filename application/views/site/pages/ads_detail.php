@@ -12,7 +12,7 @@
                     <?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
                     <!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
                     <!--                <h4 class="text-danger">--><?php //echo $ads->title ?><!--</h4>-->
-                    <div class="col-md-12 col-sm-12">
+                    <div class="col-md-4 col-sm-4">
                         <img id="myImg" src="<?php echo public_url('images/ads/' . $ads->img) ?> " style="width:100%;">
 
                         <!--                    <img id="myImg" src="https://www.w3schools.com/howto/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">-->
@@ -48,7 +48,7 @@
                         </script>
                     </div>
 
-                    <div class="col-md-12 col-sm-12">
+                    <div class="col-md-8 col-sm-8">
 
                         <div class="box-info" style="">
                             <div class="block">
