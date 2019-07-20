@@ -112,7 +112,8 @@
 }
 
 .bg-modul {
-    background: #FF4961;
+    /*background: #FF4961;*/
+    background: #D10800;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
