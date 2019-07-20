@@ -29,7 +29,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề
                         <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="text" id="txtName" name="txtName" value="<?php echo $ads->title ?>"
                                required="required" class="form-control col-md-7 col-xs-12" placeholder="Tên bài viết">
                     </div>
@@ -37,7 +37,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn
                         <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
                         <textarea name="txtIntro" rows="4"
                                   class="form-control"><?php echo str_replace('<br />', '&#13;', $ads->intro) ?></textarea>
                     </div>
@@ -45,20 +45,20 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh minh họa<span
                                 class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="file" class="form-control" name="img_news" id="img_news">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh Slide <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="file" class="form-control" name="files[]" multiple>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Nội dung
                         <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
                         <textarea name="txtContent" class="form-control"
                                   style="height: 120px"><?php echo $ads->content ?></textarea>
                         <script type="text/javascript">CKEDITOR.replace('txtContent', {height: '500px'}); </script>
@@ -68,7 +68,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền <span
                                 class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="text" id="" name="price" value="<?php echo $ads->price ?>" required="required"
                                class="form-control col-md-7 col-xs-12" placeholder="ví dụ : 1,2 tỷ / nền">
                     </div>
@@ -93,7 +93,7 @@
 
                 <!--                <div class="form-group">-->
                 <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề tin trên web <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
                 <!--                        <input type="text" id="txtDocumentTitle" name="txtDocumentTitle" value="-->
                 <?php //echo $ads->document_title ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề tin trên web">-->
                 <!--                    </div>-->
@@ -102,7 +102,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Khu vực<span
                                 class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="text" id="" name="area" required="required" value="<?php echo $ads->area ?>"
                                class="form-control col-md-7 col-xs-12" placeholder="Địa chỉ tin rao vặt">
                     </div>
@@ -111,7 +111,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">SĐT liên hệ<span
                                 class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="text" id="" name="phone" required="required" value="<?php echo $ads->phone ?>"
                                class="form-control col-md-7 col-xs-12" placeholder="sđt liên hệ">
                     </div>
@@ -119,14 +119,14 @@
 
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Linh bài viết<span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="text" name="link" value="<?php echo $ads->link ?>" class="form-control col-md-7 col-xs-12" placeholder="nhập link bài viết">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Lượt xem<span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="number" name="view" value="<?php echo $ads->view ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="nhập lượt xem">
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                 <!--                <div class="form-group">-->
                 <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Description-->
                 <!--                        <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
                 <!--                        <input type="text" id="txtMetaDescription" name="txtMetaDescription" value="-->
                 <?php //echo $ads->meta_description ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Description">-->
                 <!--                    </div>-->
@@ -143,7 +143,7 @@
                 <!--                <div class="form-group">-->
                 <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Keywords-->
                 <!--                        <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
                 <!--                        <input type="text" id="txtMetaKeywords" name="txtMetaKeywords" value="-->
                 <?php //echo $ads->meta_keywords ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Keywords">-->
                 <!--                    </div>-->
@@ -152,7 +152,7 @@
                 <!--                <div class="form-group">-->
                 <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Canonical URL-->
                 <!--                        <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
                 <!--                        <input type="text" id="txtCanonicalUrl" name="txtCanonicalUrl" value="-->
                 <?php //echo $ads->canonical_url ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Canonical URL">-->
                 <!--                    </div>-->
@@ -161,7 +161,7 @@
                 <!--                <div class="form-group">-->
                 <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Robots meta setting-->
                 <!--                        <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
                 <!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noindex" -->
                 <?php //echo $ads->robots_meta && strpos($ads->robots_meta, 'noindex') > -1 ? 'checked' : '' ?><!-- > Apply noindex to this page</label><br>-->
                 <!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="nofollow" -->
