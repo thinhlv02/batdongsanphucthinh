@@ -39,7 +39,7 @@
 }
 
 .box-module {
-    /*border-bottom: 1px #FF4961 solid;*/
+    border-bottom: 1px #2199e8 solid;
 }
 
 .p-2 {
@@ -113,7 +113,7 @@
 
 .bg-modul {
     /*background: #FF4961;*/
-    background: #D10800;
+    background: #2199e8;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
