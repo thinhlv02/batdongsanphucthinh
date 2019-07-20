@@ -11,7 +11,7 @@
                             <i class="glyphicon glyphicon-search"></i> Công cụ tìm kiếm</h1></div>
                 </div>
                 <div class="card">
-                    <div class="card-body pt-0 " style="height: 319px">
+                    <div class="card-body pt-0 " style="height: 295px;background: #5caceb85;">
 <!--                        <div class="box-module">-->
 <!--                            <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>-->
 <!--                        </div>-->
