@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-sm-3 col-md-3">
                 <div class="card">
-                    <div class="card-body pt-0 " style="height: 339px">
+                    <div class="card-body pt-0 " style="height: 319px">
 <!--                        <div class="box-module">-->
 <!--                            <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>-->
 <!--                        </div>-->
