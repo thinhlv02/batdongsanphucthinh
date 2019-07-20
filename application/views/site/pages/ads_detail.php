@@ -378,7 +378,7 @@
     /* The Close Button */
     .close {
         position: absolute;
-        top: 60px;
+        top: 15px;
         right: 35px;
         color: #f1f1f1;
         font-size: 40px;
