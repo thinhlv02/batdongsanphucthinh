@@ -4,16 +4,21 @@
         <!--            <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Tin Vip</div>-->
         <!--        </div>-->
         <div class="row">
+
             <div class="col-sm-3 col-md-3">
+                <div class="box-module mt-2">
+                    <div class="bg-modul"><h1>
+                            <i class="glyphicon glyphicon-search"></i> Công cụ tìm kiếm</h1></div>
+                </div>
                 <div class="card">
                     <div class="card-body pt-0 " style="height: 319px">
 <!--                        <div class="box-module">-->
 <!--                            <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>-->
 <!--                        </div>-->
-                        <div class="page-title text-center" style="">
-                            <h4 class="border-bottom">Chức năng tìm kiếm</h4>
+<!--                        <div class="page-title text-center" style="">-->
+<!--                            <h4 class="border-bottom">Chức năng tìm kiếm</h4>-->
 <!--                            <button type="button" class="btn btn-success">Thanh tìm kiếm <span class="badge"></span></button>-->
-                        </div>
+<!--                        </div>-->
 
                         <form action="">
                             <!--                <div class="form-group">-->
