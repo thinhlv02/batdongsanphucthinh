@@ -87,9 +87,9 @@
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
                                 <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="<?php echo $value->img ?>" style="width:100%; height: 320px">
                                 <div class="carousel-caption">
-                                    <h3><a style="color: white !important;" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                    <h4><a style="color: white !important;" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                             <?php echo $value->intro ?>
-                                        </a></h3>
+                                        </a></h4>
 <!--                                            <p><a class="text-danger" href="">-->
 <!--                                                --><?php //echo $value->intro ?>
 <!--                                            </a></p>-->
