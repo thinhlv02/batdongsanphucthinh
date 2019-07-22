@@ -67,7 +67,7 @@
 </section>
 
 <button onclick="topFunction()" id="myPageup" title="Go to top">
-    <img src="<?php echo base_url('public/images/arrowPageup.png') ?> ?>" style="width: 40px !important;">
+    <img src="<?php echo base_url('public/images/arrowPageup.png') ?>" style="width: 40px !important;">
 </button>
 
 <script>
