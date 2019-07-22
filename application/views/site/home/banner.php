@@ -5,7 +5,7 @@
         <!--        </div>-->
         <div class="row">
 
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-2 col-md-2">
                 <div class="box-module mt-2">
                     <div class="bg-modul"><h1>
                             <i class="glyphicon glyphicon-search"></i> Công cụ tìm kiếm</h1></div>
@@ -119,7 +119,7 @@
 
             </div>
 
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-4 col-md-4">
 
 
 <!--                    <div class="box-module mt-2">-->
