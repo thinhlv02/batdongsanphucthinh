@@ -464,6 +464,46 @@ Class Ads extends MY_Controller
         echo json_encode($res);
     }
 
+    function layer_vip()
+    {
+        $id = $_POST['id'];
+        $ads = $this->ads_model->get_info($id);
+        $res = array("status" => 0);
+        if ($ads) {
+            $res['status'] = 1;
+            $dataSubmit = array();
+            if ($ads->layer_vip) {
+                $res['class'] = 'fa-toggle-off';
+                $dataSubmit['layer_vip'] = 0;
+            } else {
+                $res['class'] = 'fa-toggle-on';
+                $dataSubmit['layer_vip'] = 1;
+            }
+            $this->ads_model->update($id, $dataSubmit);
+        }
+        echo json_encode($res);
+    }
+
+    function layer_right()
+    {
+        $id = $_POST['id'];
+        $ads = $this->ads_model->get_info($id);
+        $res = array("status" => 0);
+        if ($ads) {
+            $res['status'] = 1;
+            $dataSubmit = array();
+            if ($ads->layer_right) {
+                $res['class'] = 'fa-toggle-off';
+                $dataSubmit['layer_right'] = 0;
+            } else {
+                $res['class'] = 'fa-toggle-on';
+                $dataSubmit['layer_right'] = 1;
+            }
+            $this->ads_model->update($id, $dataSubmit);
+        }
+        echo json_encode($res);
+    }
+
     function ajax_get_list_district()
     {
         $id = $this->input->get('id');

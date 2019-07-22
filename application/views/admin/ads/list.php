@@ -33,6 +33,8 @@
                 <th>Phải</th>
                 <th>Giữa</th>
                 <th>Layer trái</th>
+                <th>Layer vip</th>
+                <th>Layer phải</th>
 <!--                <th>link bài viết</th>-->
                 <th>Lượt xem</th>
                 <th>Ngày Tạo</th>
@@ -76,6 +78,20 @@
                         <i id="layer_left-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off'?> text-warning"
                            onclick="layer_left(<?php echo $row->id?>)"
+                        ></i>
+                    </td>
+
+                    <td>
+                        <i id="layer_vip-<?php echo $row->id?>"
+                           class="fa fa-2x <?php echo $row->layer_vip ? 'fa-toggle-on' : 'fa-toggle-off'?> text-warning"
+                           onclick="layer_vip(<?php echo $row->id?>)"
+                        ></i>
+                    </td>
+
+                    <td>
+                        <i id="layer_right-<?php echo $row->id?>"
+                           class="fa fa-2x <?php echo $row->layer_right ? 'fa-toggle-on' : 'fa-toggle-off'?> text-warning"
+                           onclick="layer_right(<?php echo $row->id?>)"
                         ></i>
                     </td>
 <!--                    <td>--><?php //echo $row->link ?><!--</td>-->
@@ -185,6 +201,46 @@
                 console.log(msg);
                 if(msg.status){
                     $('#layer_left-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
+    }
+
+    function layer_vip(id) {
+        $.ajax({
+            url: "<?php echo admin_url('ads/layer_vip')?>",
+            type: "post",
+            data: {
+                id: id
+            },
+            success: function (msg) {
+                msg = JSON.parse(msg);
+                console.log(msg);
+                if(msg.status){
+                    $('#layer_vip-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
+    }
+
+    function layer_right(id) {
+        $.ajax({
+            url: "<?php echo admin_url('ads/layer_right')?>",
+            type: "post",
+            data: {
+                id: id
+            },
+            success: function (msg) {
+                msg = JSON.parse(msg);
+                console.log(msg);
+                if(msg.status){
+                    $('#layer_right-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
             error: function (err) {
