@@ -192,7 +192,8 @@
                         </ul>
                         <!--                        </div>-->
                     </div>
-                    <div class="box-links-right"><p><span style="font-size:12px"><span
+                    <div class="box-links-right">
+                        <p><span style="font-size:12px"><span
                                         style=""><strong>KHU VỰC MIỀN BẮC</strong></span></span>
                         </p>
                         <ul>
@@ -240,24 +241,6 @@
 
                         </ul>
                     </div>
-                    <div class="box-module">
-                        <div class="bg-modul" style="margin-top:10px">
-                            <i class="glyphicon glyphicon-link"></i> Phong
-                            thủy
-                        </div>
-                    </div>
-                    <ul class="list-group">
-                        <?php foreach ($news as $key => $value) { ?>
-                            <li class="list-group-item">
-
-                                <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
-                                    <?php echo $value->name ?>
-                                </a>
-                            </li>
-                        <?php } ?>
-
-                    </ul>
-
 
                 </div>
 
