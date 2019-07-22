@@ -32,7 +32,7 @@
                 <th>Trái</th>
                 <th>Phải</th>
                 <th>Giữa</th>
-                <th>Nổi bật</th>
+                <th>Layer trái</th>
 <!--                <th>link bài viết</th>-->
                 <th>Lượt xem</th>
                 <th>Ngày Tạo</th>
@@ -74,7 +74,7 @@
 
                     <td>
                         <i id="highlight-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->highlight ? 'fa-toggle-on' : 'fa-toggle-off'?> text-warning"
+                           class="fa fa-2x <?php echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off'?> text-warning"
                            onclick="highlight(<?php echo $row->id?>)"
                         ></i>
                     </td>
