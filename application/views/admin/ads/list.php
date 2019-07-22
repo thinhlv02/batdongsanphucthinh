@@ -61,14 +61,14 @@
 
                     <td>
                         <i id="ads_right-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off'?> text-danger"
+                           class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off'?> text-secondary"
                            onclick="ads_right(<?php echo $row->id?>)"
                         ></i>
                     </td>
 
                     <td>
                         <i id="ads_center-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->ads_center ? 'fa-toggle-on' : 'fa-toggle-off'?> text-default"
+                           class="fa fa-2x <?php echo $row->ads_center ? 'fa-toggle-on' : 'fa-toggle-off'?> text-success"
                            onclick="ads_center(<?php echo $row->id?>)"
                            style=""
                         ></i>
@@ -76,7 +76,7 @@
 
                     <td>
                         <i id="layer_left-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off'?> text-warning"
+                           class="fa fa-2x <?php echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off'?> text-danger"
                            onclick="layer_left(<?php echo $row->id?>)"
                         ></i>
                     </td>
@@ -90,7 +90,7 @@
 
                     <td>
                         <i id="layer_right-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->layer_right ? 'fa-toggle-on' : 'fa-toggle-off'?> text-warning"
+                           class="fa fa-2x <?php echo $row->layer_right ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
                            onclick="layer_right(<?php echo $row->id?>)"
                         ></i>
                     </td>
