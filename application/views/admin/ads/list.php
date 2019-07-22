@@ -34,6 +34,13 @@
                 <th>Giữa</th>
                 <th>Layer trái</th>
 <!--                <th>Layer trái</th>    -->
+<!--                <th>Layer trái</th>    -->
+<!--                <th>Layer trái</th>    -->
+<!--                <th>Layer trái</th>    -->
+<!--                <th>Layer trái</th>    -->
+<!--                <th>Layer trái</th>    -->
+<!--                <th>Layer trái</th>    -->
+<!--                <th>Layer trái</th>    -->
                 <th>Layer vip</th>
                 <th>Layer phải</th>
 <!--                <th>link bài viết</th>-->
