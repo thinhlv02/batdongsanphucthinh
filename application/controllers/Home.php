@@ -54,7 +54,7 @@ Class Home extends MY_Controller
         $this->data['layer_vip'] = $layer_vip;
 
 //        layer right
-        $layer_right = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(5, 0)));
+        $layer_right = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(3, 0)));
         $this->data['layer_right'] = $layer_right;
 
 
