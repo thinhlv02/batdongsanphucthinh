@@ -59,8 +59,8 @@ Class Home extends MY_Controller
 
 
         //ads nổi bật
-        $ads = $this->ads_model->get_list(array('where' => array('highlight' => 1), 'limit' => array(8, 0)));
-        $this->data['ads'] = $ads;
+//        $ads = $this->ads_model->get_list(array('where' => array('highlight' => 1), 'limit' => array(8, 0)));
+//        $this->data['ads'] = $ads;
 
         //ads new
         $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(5, 0)));
