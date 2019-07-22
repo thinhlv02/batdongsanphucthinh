@@ -107,14 +107,14 @@
                                                     </h3>
                                                 </div>
 
-                                                <div class="box-img-thumb">
+                                                <div class="box-img-thumb" style="width: 16%">
                                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                         <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                                              alt="<?php echo $value->title ?>">
                                                     </a>
                                                 </div>
                                                 <!--                                <div class="box-info-list col-sm-9 col-md-9">-->
-                                                <div class="box-info-list">
+                                                <div class="box-info-list" style="width: 80%">
 
                                                     <!--                                                    <p>--><?php //echo $value->intro ?>
                                                     <!--                                                        <img style="width: 34px;height: 21px;float: left;display: inline;" src="--><?php //echo public_url('images/hot-icon.gif') ?><!--"-->
