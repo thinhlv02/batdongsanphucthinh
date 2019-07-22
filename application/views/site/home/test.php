@@ -21,11 +21,11 @@
 
                                             <div class="item-re-list clearfix pt-5" onclick="updateView('<?php echo $value->id; ?>');">
                                                 <!--                                <div class="box-img-thumb col-sm-3 col-md-3">-->
-                                                <div class="box-img-thumb" style="max-height: 90px;
-    width: 100%;">
+                                                <div class="box-img-thumb" >
                                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                         <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
-                                                             alt="<?php echo $value->title ?>">
+                                                             alt="<?php echo $value->title ?>" style="max-height: 90px;
+    width: 100%;">
                                                     </a>
                                                 </div>
                                                 <!--                                <div class="box-info-list col-sm-9 col-md-9">-->
