@@ -66,6 +66,10 @@
     <div id="result_test"></div>
 </section>
 
+<button onclick="topFunction()" id="myPageup" title="Go to top">
+    <img src="<?php echo base_url('public/images/arrowPageup.png') ?> ?>" style="width: 40px !important;">
+</button>
+
 <script>
     function updateView(id) {
         var _onSuccess = function (data) {
@@ -76,5 +80,24 @@
 
         getAjax('<?php echo base_url('home/update_view'); ?>', 'id=' + UrlEncode.encode(id), '', 'GET', '', false, _onSuccess);
     }
+
+    //page up top
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myPageup").style.display = "block";
+        } else {
+            document.getElementById("myPageup").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
 </script>
 
