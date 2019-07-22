@@ -142,14 +142,6 @@
 
                                             <div class="item-re-list clearfix pt-5" onclick="updateView('<?php echo $value->id; ?>');">
                                                 <!--                                <div class="box-img-thumb col-sm-3 col-md-3">-->
-                                                <div class="clearfix box-title-item">
-                                                    <label class="label label-danger">NỔI BẬT</label>
-                                                    <h3 class="sieu-vip-title">
-                                                        <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                                            <?php echo $value->title ?> </a>
-                                                    </h3>
-                                                </div>
-
                                                 <div class="box-img-thumb">
                                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                         <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
@@ -158,7 +150,13 @@
                                                 </div>
                                                 <!--                                <div class="box-info-list col-sm-9 col-md-9">-->
                                                 <div class="box-info-list">
-
+                                                    <div class="clearfix box-title-item">
+                                                        <label class="label label-danger">NỔI BẬT</label>
+                                                        <h3 class="sieu-vip-title">
+                                                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                                                <?php echo $value->title ?> </a>
+                                                        </h3>
+                                                    </div>
                                                     <!--                                                    <p>--><?php //echo $value->intro ?>
                                                     <!--                                                        <img style="width: 34px;height: 21px;float: left;display: inline;" src="--><?php //echo public_url('images/hot-icon.gif') ?><!--"-->
                                                     <!--                                                    </p>-->
