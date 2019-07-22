@@ -10,7 +10,7 @@
                     <div class="bg-modul"><h1>
                             <i class="glyphicon glyphicon-search"></i> Công cụ tìm kiếm</h1></div>
                 </div>
-                <div class="card">
+                <div class="card" style="background: #5caceb33 !important;">
                     <div class="card-body pt-0 " style="height: 295px;">
 <!--                        <div class="box-module">-->
 <!--                            <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>-->
