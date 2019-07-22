@@ -34,11 +34,11 @@ Class Home extends MY_Controller
         $this->data['news_mn'] = $news_mn;
 
         //ads left
-        $ads_left = $this->ads_model->get_list(array('where' => array('ads_left' => 1), 'limit' => array(3, 0)));
+        $ads_left = $this->ads_model->get_list(array('where' => array('ads_left' => 1), 'limit' => array(13, 0)));
         $this->data['ads_left'] = $ads_left;
 
         //ads right
-        $ads_right = $this->ads_model->get_list(array('where' => array('ads_right' => 1), 'limit' => array(9, 0)));
+        $ads_right = $this->ads_model->get_list(array('where' => array('ads_right' => 1), 'limit' => array(13, 0)));
         $this->data['ads_right'] = $ads_right;
 
         //ads center
