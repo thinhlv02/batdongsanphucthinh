@@ -8,7 +8,7 @@
             <div class="col-sm-2 col-md-2">
                 <div class="box-module mt-2">
                     <div class="bg-modul"><h1>
-                            <i class="glyphicon glyphicon-search"></i> Công cụ tìm kiếm</h1></div>
+                            <i class="glyphicon glyphicon-search"></i>tìm kiếm</h1></div>
                 </div>
                 <div class="card" style="background: #5caceb33 !important;">
                     <div class="card-body pt-0 " style="height: 295px;">
@@ -28,7 +28,7 @@
                             <div class="form-group">
                                 <label for="email">Tỉnh thành</label>
                                     <select class="form-control" name="province" onchange="get_district(this)">
-                                    <option value=""> -- Chọn Tỉnh thành --</option>
+                                    <option value=""> - Chọn Tỉnh thành -</option>
                                     <?php foreach ($lstProvince as $key => $value) { ?>
                                         <option value="<?= $value->id ?>" <?php if (isset($_POST['type']) && $_POST['type'] == $key) echo 'selected' ?>>
                                             <?php echo $value->_name ?>
@@ -40,7 +40,7 @@
                                 <label for="email">Quận Huyện</label>
                                 <div class="" id="divDistrict">
                                     <select class="form-control">
-                                        <option value="0"> -- Chọn Quận Huyện --</option>
+                                        <option value="0"> - Chọn Quận Huyện -</option>
                                     </select>
                                  </div>
                             </div>
@@ -49,7 +49,7 @@
                                 <label for="email">Xã / Phường</label>
                                 <div class="" id="divWard">
                                     <select class="form-control">
-                                        <option value="0"> -- Xã / Phường --</option>
+                                        <option value="0"> - Xã / Phường -</option>
                                     </select>
                                 </div>
                             </div>
@@ -72,7 +72,6 @@
 
             </div>
             <div class="col-sm-6 col-md-6">
-
 
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -120,7 +119,6 @@
             </div>
 
             <div class="col-sm-4 col-md-4">
-
 
 <!--                    <div class="box-module mt-2">-->
 <!--                        <div class="bg-modul"><i class="glyphicon glyphicon-file"></i>Tin tức mới</div>-->
