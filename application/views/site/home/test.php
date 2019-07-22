@@ -8,7 +8,7 @@
 
                     <div id="raovat-nb">
                         <div class="box-module mt-2">
-                            <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Layer left
+                            <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Cập nhật
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -86,7 +86,7 @@
 
                     <div id="raovat-nb">
                         <div class="box-module mt-2">
-                            <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật
+                            <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao vip dành cho bạn
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -232,7 +232,7 @@
 
                     <div id="raovat-nb">
                         <div class="box-module mt-2">
-                            <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> layer right
+                            <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> tin rao dành cho bạn
                             </div>
                         </div>
                         <div class="col-sm-12">
