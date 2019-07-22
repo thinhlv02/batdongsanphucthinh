@@ -1,4 +1,4 @@
-<section class="news">
+<section class="news pt-0">
     <div class="container">
         <div class="row">
 
@@ -13,7 +13,7 @@
                         </div>
                         <div class="col-sm-12">
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body pt-0">
 
                                     <div class="clearfix" id="box-home-svip">
 
