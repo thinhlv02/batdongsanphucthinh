@@ -1075,6 +1075,7 @@ span.item-date {
 }
 
 .banner-left {
+    line-height: 26px !important;
     padding: 15px 30px;
     background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0));
     /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0));*/
