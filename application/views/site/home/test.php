@@ -270,7 +270,7 @@
 
                     <div id="raovat-nb">
                         <div class="box-module mt-2">
-                            <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin rao nổi bật
+                            <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> layer right
                             </div>
                         </div>
                         <div class="col-sm-12">
