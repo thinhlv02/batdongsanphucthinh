@@ -57,7 +57,7 @@ a:hover {
     color: #FFFFFF;
     padding: 20px 5px;
     font-size: 14px;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
 }
 
 .ul-large li a:hover {
