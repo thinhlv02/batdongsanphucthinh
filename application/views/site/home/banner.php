@@ -142,7 +142,7 @@
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
                                     <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width: 100%; height: 320px ">
                                     <div class="carousel-caption">
-                                        <h4><a class="" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a></h4>
+                                        <h4><a class="" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->intro ?></a></h4>
 <!--                                        <p>--><?php //echo $value->intro ?><!--</p>-->
                                     </div>
                                 </div>
