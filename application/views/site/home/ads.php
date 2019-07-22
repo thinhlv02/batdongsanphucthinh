@@ -1,13 +1,13 @@
-<section class="news">
+<section class="news pt-0">
     <div class="container">
 
         <div class="col-sm-12 col-md-12">
 <!--            <div class="title-section"><h2>Tin rao nổi bật</h2></div>-->
 <!--            <div class="sub-title-section">Khám phá tại đây</div>-->
-            <div class="row">
-                <div class="box-module">
-                    <div class="bg-modul"><i class="glyphicon glyphicon-tag"></i> Tin Vip dành cho bạn</div>
-                </div>
+            <div class="row" style="border: 1px solid #dddddd">
+<!--                <div class="box-module">-->
+<!--                    <div class="bg-modul"><i class="glyphicon glyphicon-tag"></i> Tin Vip dành cho bạn</div>-->
+<!--                </div>-->
                 <?php foreach ($ads_center as $key => $value) { ?>
 
                     <div class="col-md-2 col-sm-6 col-xs-12 card12" onclick="updateView('<?php echo $value->id; ?>');">
