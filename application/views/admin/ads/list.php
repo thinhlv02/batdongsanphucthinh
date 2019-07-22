@@ -73,9 +73,9 @@
                     </td>
 
                     <td>
-                        <i id="highlight-<?php echo $row->id?>"
+                        <i id="layer_left-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off'?> text-warning"
-                           onclick="highlight(<?php echo $row->id?>)"
+                           onclick="layer_left(<?php echo $row->id?>)"
                         ></i>
                     </td>
 <!--                    <td>--><?php //echo $row->link ?><!--</td>-->
@@ -173,9 +173,9 @@
         })
     }
 
-    function highlight(id) {
+    function layer_left(id) {
         $.ajax({
-            url: "<?php echo admin_url('ads/highlight')?>",
+            url: "<?php echo admin_url('ads/layer_left')?>",
             type: "post",
             data: {
                 id: id
@@ -184,7 +184,7 @@
                 msg = JSON.parse(msg);
                 console.log(msg);
                 if(msg.status){
-                    $('#highlight-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                    $('#layer_left-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
             error: function (err) {

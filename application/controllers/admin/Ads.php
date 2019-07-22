@@ -444,7 +444,7 @@ Class Ads extends MY_Controller
         echo json_encode($res);
     }
 
-    function highlight()
+    function layer_left()
     {
         $id = $_POST['id'];
         $ads = $this->ads_model->get_info($id);
@@ -452,12 +452,12 @@ Class Ads extends MY_Controller
         if ($ads) {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($ads->highlight) {
+            if ($ads->layer_left) {
                 $res['class'] = 'fa-toggle-off';
-                $dataSubmit['highlight'] = 0;
+                $dataSubmit['layer_left'] = 0;
             } else {
                 $res['class'] = 'fa-toggle-on';
-                $dataSubmit['highlight'] = 1;
+                $dataSubmit['layer_left'] = 1;
             }
             $this->ads_model->update($id, $dataSubmit);
         }
