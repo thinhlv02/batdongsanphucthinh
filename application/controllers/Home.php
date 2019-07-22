@@ -45,6 +45,19 @@ Class Home extends MY_Controller
         $ads_center = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(12, 0)));
         $this->data['ads_center'] = $ads_center;
 
+//        layer left
+        $layer_left = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(5, 0)));
+        $this->data['layer_left'] = $layer_left;
+
+//        layer vip
+        $layer_vip = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(5, 0)));
+        $this->data['layer_vip'] = $layer_vip;
+
+//        layer right
+        $layer_right = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(5, 0)));
+        $this->data['layer_right'] = $layer_right;
+
+
         //ads nổi bật
         $ads = $this->ads_model->get_list(array('where' => array('highlight' => 1), 'limit' => array(8, 0)));
         $this->data['ads'] = $ads;

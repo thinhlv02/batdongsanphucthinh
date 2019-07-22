@@ -17,7 +17,7 @@
 
                                     <div class="clearfix" id="box-home-svip">
 
-                                        <?php foreach ($ads_center as $key => $value) { ?>
+                                        <?php foreach ($layer_left as $key => $value) { ?>
 
                                             <div class="item-re-list clearfix pt-5" onclick="updateView('<?php echo $value->id; ?>');">
                                                 <!--                                <div class="box-img-thumb col-sm-3 col-md-3">-->
@@ -94,7 +94,7 @@
 
                                     <div class="clearfix" id="box-home-svip">
 
-                                        <?php foreach ($ads_center as $key => $value) { ?>
+                                        <?php foreach ($layer_vip as $key => $value) { ?>
 
                                             <div class="item-re-list clearfix pt-5" onclick="updateView('<?php echo $value->id; ?>');">
                                                 <!--                                <div class="box-img-thumb col-sm-3 col-md-3">-->
@@ -279,7 +279,7 @@
 
                                     <div class="clearfix" id="box-home-svip">
 
-                                        <?php foreach ($ads_center as $key => $value) { ?>
+                                        <?php foreach ($layer_right as $key => $value) { ?>
 
                                             <div class="item-re-list clearfix pt-5" onclick="updateView('<?php echo $value->id; ?>');">
                                                 <!--                                <div class="box-img-thumb col-sm-3 col-md-3">-->
