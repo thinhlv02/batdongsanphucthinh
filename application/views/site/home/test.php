@@ -307,7 +307,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row" style="display: none">
             <div class="box-module mt-2">
                 <div class="bg-modul"><h1>
                         <i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
