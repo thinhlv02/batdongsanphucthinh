@@ -617,15 +617,15 @@ blockquote span{
 
 .title-news {
     font-size: 11px;
-    color: #fff;
+    color: red;
     /*font-weight: bold;*/
     /*display: -webkit-box;*/
     /*min-width: 200px;*/
     /*margin-left: 15px;*/
     position: absolute;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    /*background-color: #5caceb ;*/
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    background-color: #5caceb ;
     width: 100%;
     opacity: 1;
     padding: 2px;
@@ -637,7 +637,8 @@ blockquote span{
     /* color: #777; */
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.8);
+    /*background: rgba(0,0,0,0.8);*/
+    background: #5caceb;
     /* position: absolute; */
     /* top: 0; */
     /* left: 0; */

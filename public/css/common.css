@@ -22,6 +22,14 @@
     margin-top: 5px !important;
 }
 
+.mb-0 {
+    margin-bottom: 0px !important;
+}
+
+.mb-1 {
+    margin-bottom: 1px !important;
+}
+
 .mb-2 {
     margin-bottom: 2px !important;
 }
@@ -157,3 +165,18 @@
     /*padding: 1.25rem;*/
     padding: 1rem;
 }
+
+/*define class shadow outline*/
+.shadow5 {
+    text-shadow: 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF;
+}
+
+.shadow20 {
+    text-shadow: 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF;
+}
+
+.shadow40 {
+    text-shadow: 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF;
+}
+
+/*define class shadow outline*/
