@@ -394,7 +394,8 @@
                 <div class="bg-modul"><h1>
                         <i class="glyphicon glyphicon-th"></i> Tin rao mới cập nhật</h1></div>
             </div>
-            <div class="col-sm-12 ">
+<!--            <div class="col-sm-12 ">-->
+                <div class="col-sm-12 col-md-12">
                 <div class="card">
                     <div class="card-body">
 
