@@ -28,7 +28,7 @@
                                                     </a>
                                                 </div>
                                                 <!--                                <div class="box-info-list col-sm-9 col-md-9">-->
-                                                <div class="box-info-list">
+                                                <div class="box-info-list" style="display: none">
                                                     <div class="clearfix box-title-item">
                                                         <label class="label label-danger">NỔI BẬT</label>
                                                         <h3 class="sieu-vip-title">
