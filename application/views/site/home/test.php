@@ -202,11 +202,11 @@
                             <?php foreach ($news_mb as $key => $value) { ?>
 
                                 <?php if ($key == 0) { ?>
-                                    <li class="first list-group-item">
-                                        <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" rel="nofollow">
-                                            <img src="<?php echo public_url('images/news/' . $value->img) ?>" class="img-responsive center-block" alt="<?php echo $value->name ?>">
-                                            Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm
-                                        </a></li>
+<!--                                    <li class="first list-group-item">-->
+<!--                                        <a href="--><?php //echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?><!--" rel="nofollow">-->
+<!--                                            <img src="--><?php //echo public_url('images/news/' . $value->img) ?><!--" class="img-responsive center-block" alt="--><?php //echo $value->name ?><!--">-->
+<!--                                            Nghe thầy chọn ngày động thổ, gia đình tôi phải ở nhà dột 3 năm-->
+<!--                                        </a></li>-->
                                 <?php } ?>
 
                                 <li class="list-group-item">
