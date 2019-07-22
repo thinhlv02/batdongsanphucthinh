@@ -90,15 +90,17 @@
                             ?>
                             <div class="item <?php if ($key == 0) echo 'active'; ?>">
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
+                                <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                 <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="<?php echo $value->img ?>" style="width:100%; height: 320px">
-                                <div class="carousel-caption">
-                                    <h4><a style="color: white !important;" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                            <?php echo $value->intro ?>
-                                        </a></h4>
+                                </a>
+<!--                                <div class="carousel-caption">-->
+<!--                                    <h4><a style="color: white !important;" href="--><?php //echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?><!--">-->
+<!--                                            --><?php //echo $value->intro ?>
+<!--                                        </a></h4>-->
 <!--                                            <p><a class="text-danger" href="">-->
 <!--                                                --><?php //echo $value->intro ?>
 <!--                                            </a></p>-->
-                                </div>
+<!--                                </div>-->
                             </div>
                         <?php } ?>
 
@@ -140,11 +142,15 @@
                                 ?>
                                 <div class="item <?php if ($key == 0) echo 'active'; ?>">
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
-                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width: 100%; height: 320px ">
-                                    <div class="carousel-caption">
-                                        <h4><a class="" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->intro ?></a></h4>
+                                    <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                        <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width: 100%; height: 320px ">
+                                    </a>
+
+
+<!--                                    <div class="carousel-caption">-->
+<!--                                        <h4><a class="" href="--><?php //echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?><!--">--><?php //echo $value->intro ?><!--</a></h4>-->
 <!--                                        <p>--><?php //echo $value->intro ?><!--</p>-->
-                                    </div>
+<!--                                    </div>-->
                                 </div>
                             <?php } ?>
 
