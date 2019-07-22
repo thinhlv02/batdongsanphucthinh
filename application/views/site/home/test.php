@@ -349,7 +349,7 @@
 
             </div>
 
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-2 col-md-2">
 
                 <div id="center-body">
 
