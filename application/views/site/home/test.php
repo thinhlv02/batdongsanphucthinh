@@ -79,7 +79,7 @@
 
             </div>
 
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-4 col-md-4">
 
                 <div id="center-body">
 
@@ -161,7 +161,7 @@
 
             <div class="col-sm-2 col-md-2">
                 <div class="box-module mt-2">
-                    <div class="bg-modul"><i class="glyphicon glyphicon-link"></i> Liên kết được quan tâm</div>
+                    <div class="bg-modul"><i class="glyphicon glyphicon-link"></i> Liên kết</div>
                 </div>
 
                 <div id="right">
@@ -264,7 +264,7 @@
 
             </div>
 
-            <div class="col-sm-5 col-md-5">
+            <div class="col-sm-4 col-md-4">
 
                 <div id="center-body">
 
