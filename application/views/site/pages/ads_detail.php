@@ -293,6 +293,7 @@
     img {
         display: block;
         height: auto;
+        max-height: 920px;
         max-width: 100%;
     }
 </style>
