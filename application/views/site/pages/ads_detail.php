@@ -115,7 +115,7 @@
                                 $tags = explode('#', $lightSlider_str);
                                 foreach ($tags as $k => $val) { ?>
                                     <!--                                <li style="width: 450px; height: 338px"-->
-                                    <li style=""
+                                    <li style="max-height: 920px;"
                                         data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
                                         <!--                                    <img style="width: 450px; height: 338px" alt="-->
                                         <? //= $val ?><!--"-->
