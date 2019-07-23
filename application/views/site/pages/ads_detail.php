@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <!--        <div class="title-section"><h2>Chi tiết bài rao</h2></div>-->
-            <div class="col-md-8   col-sm-12 col-xs-12 mt-2" style="">
+            <div class="col-md-8 col-sm-12 col-xs-12 mt-2">
                 <ol class="breadcrumb">
                     <!--                <li><a href="--><?php //echo base_url('rao-vat') ?><!--">Rao vặt</a></li>-->
                     <li class="" style="color: red;text-transform: uppercase;"><?php echo $ads->title ?></li>
@@ -112,7 +112,7 @@
                             <ul id="lightSlider">
                                 <?php
                                 $lightSlider_str = $ads->lightSlider != '' ? $ads->img . '#' . $ads->lightSlider : $ads->img;
-//                                $lightSlider_str = $ads->lightSlider != '' ? $ads->lightSlider : $ads->img;
+                                //                                $lightSlider_str = $ads->lightSlider != '' ? $ads->lightSlider : $ads->img;
                                 $tags = explode('#', $lightSlider_str);
                                 foreach ($tags as $k => $val) { ?>
                                     <!--                                <li style="width: 450px; height: 338px"-->
@@ -133,7 +133,6 @@
                 </div>
 
             </div>
-
 
             <div class="row" style="display: none">
                 <div class="col-md-12  col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
@@ -168,27 +167,25 @@
                 </div>
             </div>
 
-                        <div class="col-md-4 col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
-                            <div class="left-title">Nổi bật cùng chuyên mục</div>
-                            <?php foreach ($highlight as $key => $value) {
-                                if ($ads->id != $value->id) {
-                                    ?>
-                                    <a href="
-            <?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                        <div class="mb-5" style="border: 1px solid #dedede;float: left">
-                                            <div class="col-md-4 col-sm-4 col-xs-4">
-                                                <img src="
-            <?php echo public_url('images/ads/' . $value->img) ?>">
-                                            </div>
-                                            <div class="col-md-8 col-sm-8 col-xs-8" style="padding: 5px">
-                                                <h5 class="title-news-1 text-info" style="color: red;text-transform: uppercase">
-                                                    <?php echo $value->title ?></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                <?php }
-                            } ?>
-                        </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
+                <div class="left-title">Nổi bật cùng chuyên mục</div>
+                <?php foreach ($highlight as $key => $value) {
+                    if ($ads->id != $value->id) {
+                        ?>
+                        <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                            <div class="mb-5" style="border: 1px solid #dedede;float: left">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8" style="padding: 5px">
+                                    <h5 class="title-news-1 text-info" style="color: red;text-transform: uppercase">
+                                        <?php echo $value->title ?></h5>
+                                </div>
+                            </div>
+                        </a>
+                    <?php }
+                } ?>
+            </div>
         </div>
     </div>
 </section>
