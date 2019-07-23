@@ -297,10 +297,6 @@
 </style>
 
 <style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
     #myImg {
         border-radius: 5px;
         cursor: pointer;
