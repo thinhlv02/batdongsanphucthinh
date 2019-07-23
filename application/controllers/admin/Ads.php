@@ -273,8 +273,10 @@ Class Ads extends MY_Controller
                 $data['img'] = $file_data['file_name'];
                 if (isset($ads->img)) {
 
+                    if ($ads->img != 'default.png') {
+                        unlink('./public/images/ads/' . $ads->img);
+                    }
 
-                    unlink('./public/images/ads/' . $ads->img);
                 }
             } else {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
