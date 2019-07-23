@@ -268,7 +268,7 @@ Class Home extends MY_Controller
         $this->data['ads'] = $ads;
 
 //        $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
-        $highlight = $this->ads_model->get_list(array('limit' => array('0','10')));
+        $highlight = $this->ads_model->get_list(array('limit' => array('10','0')));
         $this->data['highlight'] = $highlight;
 
 //        $this->data['title'] = $ads->document_title;
