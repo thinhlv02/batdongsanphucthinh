@@ -103,7 +103,7 @@
 
                     </div>
 
-                    <div class="content-news-1 col-md-12 col-sm-12">
+                    <div class="content-news-1 col-md-8 col-sm-8">
                         <div class="title-hd text-uppercase">
                             <h7>ảnh bài viết</h7>
                         </div>
