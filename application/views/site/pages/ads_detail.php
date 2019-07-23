@@ -245,8 +245,6 @@
     .title-hd {
         width: 100%;
         /* height: 28px; */
-        /* height: 28px; */
-        /* height: 28px; */
         line-height: 28px;
         color: white;
         background: #15a1b1;
