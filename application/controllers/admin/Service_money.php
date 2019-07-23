@@ -16,7 +16,8 @@ Class Service_money extends MY_Controller
         $this->data['message'] = $message;
 
         $input = array();
-        $input['order'] = array('highlight', 'desc');
+//        $input['order'] = array('highlight', 'desc');
+        $input['order'] = array('id', 'desc');
         $ads = $this->ads_model->get_list($input);
 
         $ads_end = [];
