@@ -56,14 +56,14 @@
                         <i id="ads_left-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->ads_left ? 'fa-toggle-on' : 'fa-toggle-off'?> text-primary"
                            onclick="ads_left(<?php echo $row->id?>)"
-                        ></i>
+                        ></i>banner trái
                     </td>
 
                     <td>
                         <i id="ads_right-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off'?> text-secondary"
                            onclick="ads_right(<?php echo $row->id?>)"
-                        ></i>
+                        ></i>banner phải
                     </td>
 
                     <td>
@@ -71,28 +71,28 @@
                            class="fa fa-2x <?php echo $row->ads_center ? 'fa-toggle-on' : 'fa-toggle-off'?> text-success"
                            onclick="ads_center(<?php echo $row->id?>)"
                            style=""
-                        ></i>
+                        ></i>banner giữa
                     </td>
 
                     <td>
                         <i id="layer_left-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off'?> text-danger"
                            onclick="layer_left(<?php echo $row->id?>)"
-                        ></i>
+                        ></i>layer trái
                     </td>
 
                     <td>
                         <i id="layer_vip-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->layer_vip ? 'fa-toggle-on' : 'fa-toggle-off'?> text-warning"
                            onclick="layer_vip(<?php echo $row->id?>)"
-                        ></i>
+                        ></i>layer vip
                     </td>
 
                     <td>
                         <i id="layer_right-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->layer_right ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
                            onclick="layer_right(<?php echo $row->id?>)"
-                        ></i>
+                        ></i>layer phải
                     </td>
 <!--                    <td>--><?php //echo $row->link ?><!--</td>-->
                     <td><?php echo $row->view ?></td>
