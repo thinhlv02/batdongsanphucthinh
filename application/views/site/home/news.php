@@ -1,15 +1,16 @@
 <section class="news">
     <div class="container">
         <div class="row">
+            <div class="box-module">
+                <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin tức</div>
+            </div>
             <div class="col-sm-12 col-md-12">
 
                 <div class="card">
                     <div class="card-body">
 
                         <!--            <div class="title-section"><h2>Tin tức</h2></div>-->
-                        <div class="box-module">
-                            <div class="bg-modul"><i class="glyphicon glyphicon-th"></i> Tin tức</div>
-                        </div>
+
                         <!--            <div class="sub-title-section">Khám phá tại đây</div>-->
                         <div class="row">
                             <?php foreach ($news as $key => $value) { ?>
