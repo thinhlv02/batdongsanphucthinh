@@ -111,8 +111,8 @@
                         <div class="demo">
                             <ul id="lightSlider">
                                 <?php
-//                                $lightSlider_str = $ads->lightSlider != '' ? $ads->img . '#' . $ads->lightSlider : $ads->img;
-                                $lightSlider_str = $ads->lightSlider != '' ? $ads->lightSlider : $ads->img;
+                                $lightSlider_str = $ads->lightSlider != '' ? $ads->img . '#' . $ads->lightSlider : $ads->img;
+//                                $lightSlider_str = $ads->lightSlider != '' ? $ads->lightSlider : $ads->img;
                                 $tags = explode('#', $lightSlider_str);
                                 foreach ($tags as $k => $val) { ?>
                                     <!--                                <li style="width: 450px; height: 338px"-->
