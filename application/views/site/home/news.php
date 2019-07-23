@@ -46,8 +46,8 @@
                                                         <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" class="btn btn-primary mt-5">Xem thêm</a>
                                                     </div>
                                                     <div class="title-news">
-                                                        <span style="font-size: 13px"><?php echo date('d/m/Y', strtotime($value->created_at)) ?></span><br>
-                                                        <strong><?php echo $value->name ?></strong>
+                                                        <span style="font-size: 13px" class="shadow5"><?php echo date('d/m/Y', strtotime($value->created_at)) ?></span><br>
+                                                        <strong class="shadow20"><?php echo $value->name ?></strong>
                                                     </div>
 
                                                 </div>
