@@ -104,13 +104,15 @@
                     </div>
 
                     <div class="col-md-12 col-sm-12">
-
-                    </div>
-                    <div class="col-md-1 col-sm-1"></div>
                         <div class="title-hd text-uppercase">
                             <h7>Xem ảnh</h7>
                         </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1"></div>
+
                     <div class="content-news-1 col-md-9 col-sm-9">
+
+
                         <div class="demo">
                             <ul id="lightSlider">
                                 <?php
