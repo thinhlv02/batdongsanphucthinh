@@ -55,7 +55,7 @@
                                 <div class="col-left">Mã tin</div>
                                 <div class="col-right"><b>
                                         <?php
-                                        echo $ads->id . '000';
+                                        echo $ads->id .substr($ads->code,0,3);
                                         //                                    if ($ads->code == 0) {
                                         //                                        echo generateRandomString(6);
                                         //                                    } else {
