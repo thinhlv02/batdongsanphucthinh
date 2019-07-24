@@ -457,7 +457,8 @@ Class Home extends MY_Controller
 //        }
 
         $this->data['lstdata'] = $lst_data;
-        $this->load->view($this->_template_f . 'tktaikhoan/view_book_table', $this->data);
+        $this->load->view('site/home/view_list_search', $this->data);
+//        $this->load->view($this->_template_f . 'tktaikhoan/view_book_table', $this->data);
 
     }
 
