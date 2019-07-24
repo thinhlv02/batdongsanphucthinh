@@ -20,7 +20,7 @@
 <!--                            <button type="button" class="btn btn-success">Thanh tìm kiếm <span class="badge"></span></button>-->
 <!--                        </div>-->
 
-                        <form action="">
+                        <form id="formAddProduct_book" method="post" enctype="multipart/form-data">
                             <!--                <div class="form-group">-->
                             <!--                    <label for="email">Mã tin:</label>-->
                             <!--                    <input type="email" class="form-control" id="email" placeholder="Nhập mã tin" name="code">-->
@@ -39,7 +39,7 @@
                             <div class="form-group">
                                 <label for="email">Quận Huyện</label>
                                 <div class="" id="divDistrict">
-                                    <select class="form-control">
+                                    <select class="form-control" name="district">
                                         <option value="0"> - Chọn Quận Huyện -</option>
                                     </select>
                                  </div>
@@ -48,7 +48,7 @@
                             <div class="form-group">
                                 <label for="email">Xã / Phường</label>
                                 <div class="" id="divWard">
-                                    <select class="form-control">
+                                    <select class="form-control" name="ward">
                                         <option value="0"> - Xã / Phường -</option>
                                     </select>
                                 </div>
@@ -278,5 +278,30 @@
             getAjax('<?php echo base_url('home/ajax_get_list_street'); ?>', params, '', 'GET', '', false, _onSuccess);
         }
     }
+
+    //search submit
+    $("#formAddProduct_book").submit(function (e) {
+        //prevent Default functionality
+        e.preventDefault();
+        // console.log('abc');
+        // var data = $("#formAddProduct_book").serialize() + '&userid=' + userid+ '&server='+server;
+        var data = $("#formAddProduct_book").serialize();
+        console.log('data silver ' + data);
+
+        var _onSuccess = function (data) {
+            // console.log(data);
+            if (data == 'NOT_LOGIN') {
+
+            } else if (data === 'false') {
+
+            } else {
+                console.log(data);
+                // $("#divStreet").html(data);
+            }
+        };
+
+        getAjax('<?php echo base_url('home/ajax_book') ?>', data, 'POST','',false, _onSuccess);
+
+    });
 
 </script>
