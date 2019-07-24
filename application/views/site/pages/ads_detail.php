@@ -290,8 +290,8 @@
 
     img {
         display: block;
-        height: 703px;
-        /*height: auto;*/
+        /*height: 703px;*/
+        height: auto;
         /*max-height: 920px;*/
         max-width: 100%;
     }
