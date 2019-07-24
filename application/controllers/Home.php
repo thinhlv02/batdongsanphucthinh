@@ -420,9 +420,9 @@ Class Home extends MY_Controller
 //        $server_name = $server_cf[$this->input->post('server')]['main'];
         $province = trim($this->input->post('province'));
 //        $district = trim($this->input->post('district', true));
-//        $ward = trim($this->input->post('ward', true));
-//var_dump($province);
-        echo $province;
+//        $ward = trim($this->input->post('ward', true));// province=2&district=0&ward=0
+var_dump($province);
+//        echo $province;
         die();
 
 

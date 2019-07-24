@@ -20,7 +20,10 @@
 <!--                            <button type="button" class="btn btn-success">Thanh tìm kiếm <span class="badge"></span></button>-->
 <!--                        </div>-->
 
-                        <form id="formAddProduct_book" method="post" enctype="multipart/form-data">
+<!--                        <form id="formAddProduct_book" method="post" enctype="multipart/form-data">-->
+
+                        <form id="formAddProduct_book" data-parsley-validate class="" method="post"
+                                  enctype="multipart/form-data">
                             <!--                <div class="form-group">-->
                             <!--                    <label for="email">Mã tin:</label>-->
                             <!--                    <input type="email" class="form-control" id="email" placeholder="Nhập mã tin" name="code">-->
