@@ -418,47 +418,45 @@ Class Home extends MY_Controller
 //        die;
 //        $server_cf = $this->_func_lst_server();
 //        $server_name = $server_cf[$this->input->post('server')]['main'];
-        $province = trim($this->input->post('province'));
-//        $district = trim($this->input->post('district', true));
-//        $ward = trim($this->input->post('ward', true));// province=2&district=0&ward=0
-var_dump($province);
+        $province = $this->input->get('province');
+        $district = trim($this->input->get('district', true));
+        $ward = trim($this->input->get('ward', true));// province=2&district=0&ward=0
+//var_dump($province);
+//var_dump($district);
+//var_dump($ward);
 //        echo $province;
-        die();
+//        die();
 
 
-
-
-
-
-        $txtFrom = date("Y-m-d", strtotime(trim($this->input->post('txtFrom', true))));;
-        $txtto = date("Y-m-d", strtotime(trim($this->input->post('txtTo', true))));;
+//        $txtFrom = date("Y-m-d", strtotime(trim($this->input->post('txtFrom', true))));;
+//        $txtto = date("Y-m-d", strtotime(trim($this->input->post('txtTo', true))));;
 //        $txtto = trim($this->input->post('txtTo', true));
 //        echo $txtFrom;
 //        echo $txtto;
 
         $input = '';
-        if ($type == 2) {
-            $input = "and date(time) between '" . $txtFrom . "' and '" . $txtto . "' ";
-        }
+//        if ($type == 2) {
+//            $input = "and date(time) between '" . $txtFrom . "' and '" . $txtto . "' ";
+//        }
 
-        $lst_data = $this->Tbl_book_logs_model->get_list_all($input, $userid);
-        $lst_player_by_server = $this->player_get_all_by_server($server_name);
+        $lst_data = $this->ads_model->get_list($input);
+//        $lst_player_by_server = $this->player_get_all_by_server($server_name);
 
-        $lst_data_arr = [];
+//        $lst_data_arr = [];
 
-        foreach ($lst_data as $k => $value) {
-            $lst_data_arr[$value->id]['id'] = $value->id;
-            $lst_data_arr[$value->id]['user_id'] = $value->user_id;
-            $lst_data_arr[$value->id]['nick'] = isset($lst_player_by_server[$value->user_id]) ? $lst_player_by_server[$value->user_id]['nick'] : 'dcm';
-            $lst_data_arr[$value->id]['info_id'] = $value->info_id;
-            $lst_data_arr[$value->id]['old_quantity'] = $value->old_quantity;
-            $lst_data_arr[$value->id]['new_quantity'] = $value->new_quantity;
-            $lst_data_arr[$value->id]['update_quantity'] = $value->update_quantity;
-            $lst_data_arr[$value->id]['description'] = $value->description;
-            $lst_data_arr[$value->id]['time'] = $value->time;
-        }
+//        foreach ($lst_data as $k => $value) {
+//            $lst_data_arr[$value->id]['id'] = $value->id;
+//            $lst_data_arr[$value->id]['user_id'] = $value->user_id;
+//            $lst_data_arr[$value->id]['nick'] = isset($lst_player_by_server[$value->user_id]) ? $lst_player_by_server[$value->user_id]['nick'] : 'dcm';
+//            $lst_data_arr[$value->id]['info_id'] = $value->info_id;
+//            $lst_data_arr[$value->id]['old_quantity'] = $value->old_quantity;
+//            $lst_data_arr[$value->id]['new_quantity'] = $value->new_quantity;
+//            $lst_data_arr[$value->id]['update_quantity'] = $value->update_quantity;
+//            $lst_data_arr[$value->id]['description'] = $value->description;
+//            $lst_data_arr[$value->id]['time'] = $value->time;
+//        }
 
-        $this->data['lstdata'] = $lst_data_arr;
+        $this->data['lstdata'] = $lst_data;
         $this->load->view($this->_template_f . 'tktaikhoan/view_book_table', $this->data);
 
     }

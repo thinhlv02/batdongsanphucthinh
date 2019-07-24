@@ -254,34 +254,6 @@
         }
     }
 
-    function get_street(sel) {
-        var id = sel.value;
-        console.log(id);
-        if (id == 0) {
-            $('#selectStreet').empty();
-        } else {
-            // ajax
-            var params = {
-                'id': id
-            };
-
-            // console.log(params);
-            var _onSuccess = function (data) {
-                // console.log(data);
-                if (data == 'NOT_LOGIN') {
-
-                } else if (data === 'false') {
-
-                } else {
-                    // console.log(data);
-                    $("#divStreet").html(data);
-                }
-            };
-
-            getAjax('<?php echo base_url('home/ajax_get_list_street'); ?>', params, '', 'GET', '', false, _onSuccess);
-        }
-    }
-
     //search submit
     $("#formAddProduct_book").submit(function (e) {
         //prevent Default functionality
@@ -289,7 +261,7 @@
         // console.log('abc');
         // var data = $("#formAddProduct_book").serialize() + '&userid=' + userid+ '&server='+server;
         var data = $("#formAddProduct_book").serialize();
-        console.log('data silver ' + data);
+        console.log('data submit ' + data);
 
         var _onSuccess = function (data) {
             // console.log(data);

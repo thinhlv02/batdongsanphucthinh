@@ -331,6 +331,7 @@
         width: 100%;
         /*max-width: 700px;*/
         max-width: 1170px;
+        max-height: 703px !important;
     }
 
     /* Caption of Modal Image */
