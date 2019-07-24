@@ -20,6 +20,7 @@
 <link href="<?php echo admin_theme()?>build/css/custom.min.css" rel="stylesheet">
 
 <script src="<?php echo admin_theme()?>vendors/jquery/dist/jquery.min.js"></script>
+<script src="<?php echo public_url('js/common.js')?>"></script>
 
 
     
