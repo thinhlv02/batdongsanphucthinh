@@ -103,9 +103,11 @@
 
                     </div>
 
+                    <div class="col-md-1 col-sm-1"></div>
+
                     <div class="content-news-1 col-md-9 col-sm-9">
                         <div class="title-hd text-uppercase">
-                            <h7>ảnh bài viết</h7>
+                            <h7>Xem ảnh</h7>
                         </div>
 
                         <div class="demo">
@@ -129,6 +131,8 @@
                         </div>
 
                     </div>
+
+                    <div class="col-md-2 col-sm-2"></div>
 
                 </div>
 
