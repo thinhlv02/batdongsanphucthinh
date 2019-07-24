@@ -421,8 +421,8 @@ Class Home extends MY_Controller
         $province = trim($this->input->post('province'));
 //        $district = trim($this->input->post('district', true));
 //        $ward = trim($this->input->post('ward', true));
-var_dump($province);
-//        echo $province;
+//var_dump($province);
+        echo $province;
         die();
 
 
