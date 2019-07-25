@@ -42,7 +42,6 @@
                         </div>
 
                         <div class="col-md-4 col-sm-12 col-xs-12 mt-2 text-center" style="">
-<!--                        <div class="col-md-4 col-sm-12 col-xs-12 mt-2 text-center" style="">-->
 
                             <a href="<?php echo base_url() ?>">
                                 <img src="<?php echo public_url('images/ads/default.png') ?>" style="max-width: 180px; margin-top: 30px">
