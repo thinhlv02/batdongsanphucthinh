@@ -57,8 +57,8 @@
                                 <li><a href="<?php echo admin_url('documents') ?>">Tài liệu</a></li>
                                 <li><a href="<?php echo admin_url('service_money') ?>">Tiền Kh nạp</a></li>
                                 <li><a href="<?php echo admin_url('Upload_Files') ?>">Upload_Files</a></li>
-                                <li><a href="<?php echo admin_url('policy') ?>"><i class="fa fa-handshake-o" aria-hidden="true"></i>Điều khoản, chính sách</a></li>
-                                <li><a href="<?php echo admin_url('question') ?>"><i class="fa fa-question-circle" aria-hidden="true"></i>Hỗ trợ</a></li>
+                                <li><a href="<?php echo admin_url('policy') ?>">Điều khoản, chính sách</a></li>
+                                <li><a href="<?php echo admin_url('question') ?>">>Hỗ trợ</a></li>
 
                             </ul>
                         </li>
