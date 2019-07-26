@@ -2,7 +2,7 @@
 <!--    <div class="container">-->
 
 
-<section class="">
+<section class="pb-0">
     <div class="container banner" style="background-image: url(<?php echo public_url('images/' . $content->banner) ?>);background-size: 100%;">
         <div class="banner-left">
             <p style="display: none" class="caption-banner animated slideInLeft">Đơn giản hoá việc bán hàng<br>vì chúng tôi luôn bên bạn
