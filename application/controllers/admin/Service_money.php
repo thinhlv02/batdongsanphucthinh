@@ -12,6 +12,16 @@ Class Service_money extends MY_Controller
     function index()
     {
         $emps= $this->employees_model->get_list(array('where' => array('type' => 1)));
+
+        $i = 0;
+            $emps_arr = [];
+        foreach ($emps as $key => $val) {
+            $i++;
+            $emps_arr[$val->id] = new stdClass();
+            $emps_arr[$val->id]->id = $val->id;
+            $emps_arr[$val->id]->name = $val->name;
+        }
+//        pre($emps_arr);
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
@@ -38,7 +48,7 @@ Class Service_money extends MY_Controller
             $ads_end[$index]->created_at = $val->created_at;
 
             if ($val->make_money_by > 0) {
-                $ads_end[$index]->name_emp = isset($emps[$val->make_money_by]) ? $emps->name: 'dcm';
+                $ads_end[$index]->name_emp = isset($emps_arr[$val->make_money_by]) ? $emps_arr[$val->make_money_by]->name: 'dcm111111111';
             } else {
                 $ads_end[$index]->name_emp = '';
             }
