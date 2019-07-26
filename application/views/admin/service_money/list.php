@@ -42,7 +42,7 @@
                 <tr>
 <!--                    <td>--><?php //echo $row->id?><!--</td>-->
                     <td><?php echo $row->id?></td>
-                    <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 80px"> </td>
+                    <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" alt="<?php echo $row->img ?>" style="max-width: 80px"> </td>
                     <td>
                         <a href="<?php echo base_url('rao-vat/' . create_slug($row->title) . '-' . $row->id) ?>" target="_blank">
                         <?php echo $row->title?></td>
