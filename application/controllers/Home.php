@@ -46,15 +46,15 @@ Class Home extends MY_Controller
         $this->data['ads_center'] = $ads_center;
 
 //        layer left
-        $layer_left = $this->ads_model->get_list(array('where' => array('layer_left' => 1), 'limit' => array(5, 0)));
+        $layer_left = $this->ads_model->get_list(array('where' => array('layer_left' => 1), 'limit' => array(8, 0)));
         $this->data['layer_left'] = $layer_left;
 
 //        layer vip
-        $layer_vip = $this->ads_model->get_list(array('where' => array('layer_vip' => 1), 'limit' => array(5, 0)));
+        $layer_vip = $this->ads_model->get_list(array('where' => array('layer_vip' => 1), 'limit' => array(8, 0)));
         $this->data['layer_vip'] = $layer_vip;
 
 //        layer right
-        $layer_right = $this->ads_model->get_list(array('where' => array('layer_right' => 1), 'limit' => array(3, 0)));
+        $layer_right = $this->ads_model->get_list(array('where' => array('layer_right' => 1), 'limit' => array(7, 0)));
         $this->data['layer_right'] = $layer_right;
 
 
@@ -63,7 +63,7 @@ Class Home extends MY_Controller
 //        $this->data['ads'] = $ads;
 
         //ads new
-        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(5, 0)));
+        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(7, 0)));
         $this->data['ads_new'] = $ads_new;
 
         //ads mới cập nhật
