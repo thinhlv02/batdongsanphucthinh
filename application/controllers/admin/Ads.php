@@ -36,7 +36,7 @@ Class Ads extends MY_Controller
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
             $config['upload_path'] = './public/images/ads';
-            $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
+            $config['allowed_types'] = 'jpg|png|jpeg|JPEG|jfif|JFIF';
             $config['max_size'] = '10000';
             $this->load->library("upload", $config);
 
@@ -147,7 +147,7 @@ Class Ads extends MY_Controller
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
             $config['upload_path'] = './public/images/ads';
-            $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
+            $config['allowed_types'] = 'jpg|png|jpeg|JPEG|jfif|JFIF';
             $config['max_size'] = '10000';
             $this->load->library("upload", $config);
 
@@ -193,7 +193,7 @@ Class Ads extends MY_Controller
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
             $config['upload_path'] = './public/images/ads';
-            $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
+            $config['allowed_types'] = 'jpg|png|jpeg|JPEG|jfif|JFIF';
             $config['max_size'] = '10000';
             $this->load->library("upload", $config);
 //            var_dump($this->upload->do_upload('img_news'));
@@ -267,7 +267,7 @@ Class Ads extends MY_Controller
             );
 
             $config['upload_path'] = './public/images/ads';
-            $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
+            $config['allowed_types'] = 'jpg|png|jpeg|JPEG|jfif|JFIF';
             $this->load->library("upload", $config);
             if ($this->upload->do_upload('img_news')) {
                 $file_data = $this->upload->data();
