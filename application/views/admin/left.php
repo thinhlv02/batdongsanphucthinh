@@ -45,8 +45,7 @@
 
 <!--                    <li><a href="--><?php //echo admin_url('news') ?><!--"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Tin tức</a></li>-->
 
-<!--                    <li><a href="--><?php //echo admin_url('contact') ?><!--"><i class="fa fa-phone" aria-hidden="true"></i>Liên hệ</a></li>-->
-<!--                    <li><a href="--><?php //echo admin_url('content') ?><!--"><i class="fa fa-info-circle" aria-hidden="true"></i>Nội dung</a></li>-->
+
 <!--                    <li><a href="--><?php //echo admin_url('agency') ?><!--"><i class="fa fa-map-marker" aria-hidden="true"></i>Đại lý</a></li>-->
 <!--                    //only admin view-->
                     <?php if($admin->id == 1) { ?>
@@ -59,6 +58,8 @@
 <!--                                <li><a href="--><?php //echo admin_url('Upload_Files') ?><!--">Upload_Files</a></li>-->
                                 <li><a href="<?php echo admin_url('policy') ?>">Điều khoản, chính sách</a></li>
                                 <li><a href="<?php echo admin_url('question') ?>">Hỗ trợ</a></li>
+                                <li><a href="<?php echo admin_url('contact') ?>">Liên hệ</a></li>
+                                <li><a href="<?php echo admin_url('content') ?>">Nội dung</a></li>
 
                             </ul>
                         </li>
