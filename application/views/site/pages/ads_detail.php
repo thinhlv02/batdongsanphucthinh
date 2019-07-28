@@ -103,6 +103,17 @@
 
                     </div>
 
+                    <div class="content-news-1 col-md-12 col-sm-12" style="margin-top: 10px">
+
+                        <div class="title-hd text-uppercase">
+                            <h7>Cập nhật website</h7>
+                        </div>
+
+                        <?php echo $ads->link_list ?>
+
+                    </div>
+
+
                     <div class="col-md-12 col-sm-12">
                         <div class="title-hd text-uppercase">
                             <h7>Xem ảnh</h7>
@@ -289,7 +300,8 @@
     }
 
     li {
-        display: block;
+        /*display: block;*/
+        display: list-item;
         /*float: left;*/
         margin-right: 6px;
         cursor: pointer;

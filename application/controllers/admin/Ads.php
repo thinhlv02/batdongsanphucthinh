@@ -262,6 +262,7 @@ Class Ads extends MY_Controller
 //                'unit' => $this->input->post('unit'),
                 'acreage' => $this->input->post('acreage'),
                 'link' => $this->input->post('link'),
+                'link_list' => $this->input->post('txtLinkSite'),
                 'view' => $this->input->post('view')
             );
 

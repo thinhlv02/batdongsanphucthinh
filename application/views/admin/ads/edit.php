@@ -67,6 +67,16 @@
                 </div>
 
                 <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Link site
+                        <span class="required">*</span></label>
+                    <div class="col-md-10 col-sm-10 col-xs-12">
+                        <textarea name="txtLinkSite" class="form-control"
+                                  style="height: 120px"><?php echo $ads->link_list ?></textarea>
+                        <script type="text/javascript">CKEDITOR.replace('txtLinkSite', {height: '500px'}); </script>
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền <span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
