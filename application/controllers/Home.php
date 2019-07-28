@@ -24,7 +24,7 @@ Class Home extends MY_Controller
         $lstProvince = $this->_province;
         $this->data['lstProvince'] = $lstProvince;
 
-        $news = $this->news_model->get_list(array('limit' => array(5, 0)));
+        $news = $this->news_model->get_list(array('limit' => array(11, 0)));
         $this->data['news'] = $news;
 
         $news_mb = $this->news_model->get_list(array('limit' => array(5, 0)));
