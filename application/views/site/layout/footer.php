@@ -3,13 +3,53 @@
         <div style="min-height: 200px">
             <div class="row">
                 <div class="card">
-                    <div class="card-body" style="background-color: #ddd">
-                        <div class="col-md-2 col-sm-12 col-xs-12 mt-2 text-center">
+                    <div class="card-body" style="background-color: #EDEDED">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <div class="footer-bottom-end-row1" style="padding-bottom: 10px; color: #000;">
+                                <strong style="font-size: 1.2em;">Công ty TNHH Thương Mại và Dịch Vụ Tân Bình</strong>
+                            </div>
+
+                            <div class="footer-bottom-end-row1" style="color: #555754">
+                                <strong>Tổng đài CSKH: 0796 43 22 11</strong>
+                            </div>
+
+                            <div class="footer-bottom-end-row1" style="color: #555754">
+                                Copyright © 2015 - 2019 Batdongsanphucthinh.vn.
+                            </div>
+
+                            <div class="footer-bottom-end-row1" style="color: #555754">
+                                Email: batdongsanphucthinh1411@gmail.com | phucthinhcorp1411@gmail.com
+
+                            </div>
+                            <div class="footer-bottom-end-row1" style="color: #555754">
+                                Giấy ĐKKD số: 0107708941 Do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày
+                                14/11/2015 <br>
+                                Giấy phép ICP số 3399/GP-STTTT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 14 tháng
+                                11
+                                năm 2015.
+                                <br>Chịu trách nhiệm nội dung: Ông Lưu Văn Thịnh - ® Ghi rõ nguồn
+                                "Batdongsanphucthinh.vn" khi phát hành lại thông tin từ website này.
+                                <br>Toàn bộ quy chế, quy định giao dịch chung được đăng tải trên website áp dụng từ ngày
+                                14/11/2015.
+                            </div>
+                            <div class="footer-bottom-end-row1" style="color: #555754; position: relative;">
+                                Phát triển bởi PhucthinhCorp <a style="color: #555754"
+                                                                href="javascript:void(0)" target="_blank">http:batdongsanphucthinh.vn</a>
+
+                            </div>
+                            <div class="footer-bottom-end-row1" style="padding: 10px 0 10px;">
+                                <img src="https://file4.batdongsan.com.vn/images/line-footer.png" alt=""
+                                     noloaderror="true">
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 text-center">
                             <!--                    <div class="row">-->
                             <!--                        <div class="col-md-12 col-sm-12 col-xs-12">-->
 
                             <a href="<?php echo base_url() ?>">
-                                <img src="<?php echo public_url('images/logo.png') ?>" style="max-width: 180px; margin-top: 30px">
+                                <img src="<?php echo public_url('images/logo.png') ?>"
+                                     style="max-width: 180px; margin-top: 30px">
                             </a>
 
                             <!--                        </div>-->
@@ -43,11 +83,14 @@
 
                         <div class="col-md-4 col-sm-12 col-xs-12 mt-2 text-center" style="">
 
-<!--                            <a href="--><?php //echo base_url() ?><!--">-->
-<!--                                <img src="--><?php //echo public_url('images/ads/default.png') ?><!--" style="">-->
-<!--                            </a>-->
+                            <!--                            <a href="--><?php //echo base_url() ?><!--">-->
+                            <!--                                <img src="-->
+                            <?php //echo public_url('images/ads/default.png') ?><!--" style="">-->
+                            <!--                            </a>-->
 
-                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbatdongsanphucthinhvn-1535407536595838%2F%3Fmodal%3Dadmin_todo_tour&tabs&width=340&height=214&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=166934463979079" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbatdongsanphucthinhvn-1535407536595838%2F%3Fmodal%3Dadmin_todo_tour&tabs&width=340&height=214&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=166934463979079"
+                                    width="340" height="214" style="border:none;overflow:hidden" scrolling="no"
+                                    frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
                         </div>
 
