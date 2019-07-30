@@ -23,11 +23,8 @@
                             </div>
                             <div class="footer-bottom-end-row1" style="color: #555754">
                                 Giấy ĐKKD số: 0107708941 Do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày
-                                14/11/2015 <br>
-                                Giấy phép ICP số 3399/GP-STTTT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 14 tháng
-                                11
-                                năm 2015.
-                                <br>Chịu trách nhiệm nội dung: Ông Lưu Văn Thịnh - ® Ghi rõ nguồn
+                                14/11/2015
+                                <br>Chịu trách nhiệm nội dung: Bà Nguyễn Hạ Vy - ® Ghi rõ nguồn
                                 "Batdongsanphucthinh.vn" khi phát hành lại thông tin từ website này.
                                 <br>Toàn bộ quy chế, quy định giao dịch chung được đăng tải trên website áp dụng từ ngày
                                 14/11/2015.
@@ -94,9 +91,9 @@
 
                         </div>
 
-                        <div class="col-sm-12 col-md-12 col-xs-12 mt-2 text-center">
-                            Copyright 2014 © phucthinh corp All Rights Reserved
-                        </div>
+<!--                        <div class="col-sm-12 col-md-12 col-xs-12 mt-2 text-center">-->
+<!--                            Copyright 2014 © phucthinh corp All Rights Reserved-->
+<!--                        </div>-->
 
 
                     </div>
