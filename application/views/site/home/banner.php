@@ -90,7 +90,7 @@
                         <?php foreach ($ads_left as $key => $value) {
 //                        echo $key;
                             ?>
-                            <div class="item <?php if ($key == 0) echo 'active'; ?>">
+                            <div class="item <?php if ($key == 0) echo 'active'; ?>" onclick="updateView('<?php echo $value->id; ?>');">
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
                                 <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                 <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="<?php echo $value->img ?>" style="width:100%; height: 320px">
@@ -141,7 +141,7 @@
                             <?php foreach ($ads_right as $key => $value) {
 //                        echo $key;
                                 ?>
-                                <div class="item <?php if ($key == 0) echo 'active'; ?>">
+                                <div class="item <?php if ($key == 0) echo 'active'; ?>" onclick="updateView('<?php echo $value->id; ?>');">
 <!--                                    <img src="--><?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                         <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img" style="width: 100%; height: 320px ">
