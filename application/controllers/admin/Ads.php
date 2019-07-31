@@ -507,6 +507,66 @@ Class Ads extends MY_Controller
         echo json_encode($res);
     }
 
+    function icon_new()
+    {
+        $id = $_POST['id'];
+        $ads = $this->ads_model->get_info($id);
+        $res = array("status" => 0);
+        if ($ads) {
+            $res['status'] = 1;
+            $dataSubmit = array();
+            if ($ads->icon_new) {
+                $res['class'] = 'fa-toggle-off';
+                $dataSubmit['icon_new'] = 0;
+            } else {
+                $res['class'] = 'fa-toggle-on';
+                $dataSubmit['icon_new'] = 1;
+            }
+            $this->ads_model->update($id, $dataSubmit);
+        }
+        echo json_encode($res);
+    }
+
+    function icon_vip()
+    {
+        $id = $_POST['id'];
+        $ads = $this->ads_model->get_info($id);
+        $res = array("status" => 0);
+        if ($ads) {
+            $res['status'] = 1;
+            $dataSubmit = array();
+            if ($ads->icon_vip) {
+                $res['class'] = 'fa-toggle-off';
+                $dataSubmit['icon_vip'] = 0;
+            } else {
+                $res['class'] = 'fa-toggle-on';
+                $dataSubmit['icon_vip'] = 1;
+            }
+            $this->ads_model->update($id, $dataSubmit);
+        }
+        echo json_encode($res);
+    }
+
+    function icon_hot()
+    {
+        $id = $_POST['id'];
+        $ads = $this->ads_model->get_info($id);
+        $res = array("status" => 0);
+        if ($ads) {
+            $res['status'] = 1;
+            $dataSubmit = array();
+            if ($ads->icon_hot) {
+                $res['class'] = 'fa-toggle-off';
+                $dataSubmit['icon_hot'] = 0;
+            } else {
+                $res['class'] = 'fa-toggle-on';
+                $dataSubmit['icon_hot'] = 1;
+            }
+            $this->ads_model->update($id, $dataSubmit);
+        }
+        echo json_encode($res);
+    }
+
     function ajax_get_list_district()
     {
         $id = $this->input->get('id');

@@ -35,6 +35,9 @@
                 <th>Layer trái</th>
                 <th>Layer vip</th>
                 <th>Layer phải</th>
+                <th>Mới</th>
+                <th>Vip</th>
+                <th>Hot</th>
 <!--                <th>link bài viết</th>-->
                 <th>Lượt xem</th>
                 <th>Ngày Tạo</th>
@@ -96,6 +99,27 @@
                            class="fa fa-2x <?php echo $row->layer_right ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
                            onclick="layer_right(<?php echo $row->id?>)"
                         ></i>layer phải
+                    </td>
+
+                    <td>
+                        <i id="icon_new-<?php echo $row->id?>"
+                           class="fa fa-2x <?php echo $row->icon_new ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
+                           onclick="icon_new(<?php echo $row->id?>)"
+                        ></i>Mới
+                    </td>
+
+                    <td>
+                        <i id="icon_vip-<?php echo $row->id?>"
+                           class="fa fa-2x <?php echo $row->icon_vip ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
+                           onclick="icon_vip(<?php echo $row->id?>)"
+                        ></i>Vip
+                    </td>
+
+                    <td>
+                        <i id="icon_hot-<?php echo $row->id?>"
+                           class="fa fa-2x <?php echo $row->icon_hot ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
+                           onclick="icon_hot(<?php echo $row->id?>)"
+                        ></i>Hot
                     </td>
 <!--                    <td>--><?php //echo $row->link ?><!--</td>-->
                     <td><?php echo $row->view ?></td>
@@ -244,6 +268,66 @@
                 console.log(msg);
                 if(msg.status){
                     $('#layer_right-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
+    }
+
+    function icon_new(id) {
+        $.ajax({
+            url: "<?php echo admin_url('ads/icon_new')?>",
+            type: "post",
+            data: {
+                id: id
+            },
+            success: function (msg) {
+                msg = JSON.parse(msg);
+                console.log(msg);
+                if(msg.status){
+                    $('#icon_new-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
+    }
+
+    function icon_vip(id) {
+        $.ajax({
+            url: "<?php echo admin_url('ads/icon_vip')?>",
+            type: "post",
+            data: {
+                id: id
+            },
+            success: function (msg) {
+                msg = JSON.parse(msg);
+                console.log(msg);
+                if(msg.status){
+                    $('#icon_vip-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
+    }
+
+    function icon_hot(id) {
+        $.ajax({
+            url: "<?php echo admin_url('ads/icon_hot')?>",
+            type: "post",
+            data: {
+                id: id
+            },
+            success: function (msg) {
+                msg = JSON.parse(msg);
+                console.log(msg);
+                if(msg.status){
+                    $('#icon_hot-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
             error: function (err) {

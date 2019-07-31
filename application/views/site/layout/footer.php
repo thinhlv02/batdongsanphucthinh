@@ -52,7 +52,7 @@
                             <!--                        </div>-->
                             <!--                    </div>-->
                         </div>
-                        <div class="col-md-3 col-sm-12 col-xs-12 mt-2">
+                        <div class="col-md-4 col-sm-12 col-xs-12 mt-2">
                             <div class="footer-title"><strong>THÔNG TIN LIÊN HỆ</strong></div>
                             <div>
                                 <i class="fa fa-building" aria-hidden="true"></i>
@@ -67,7 +67,7 @@
                                 <span><?php echo $contact->email ?></span>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-12 col-xs-12 mt-2">
+                        <div class="col-md-2  col-sm-12 col-xs-12 mt-2">
                             <div class="footer-title"><strong>LIÊN KẾT</strong></div>
                             <ul>
                                 <li><a href="<?php echo base_url('gioi-thieu-dich-vu') ?>">Giới thiệu dịch vụ</a></li>

@@ -30,6 +30,25 @@
                                     </div>
                                 </div>
                             </a>
+
+                            <div class="icon_viphot">
+                                <?php if ($value->icon_new == 1) { ?>
+                                    <img src="<?php echo public_url('images/icon_new.gif') ?>" alt="BÁN NHÀ MẶT ĐƯỜNG SỐ 101 HOÀNG NGỌC PHÁCH(THUỘC DỰ ÁN XD HÀ NỘI), LÊ CHÂN, HẢI PHÒNG">
+
+                                <?php } ?>
+
+                                <?php if ($value->icon_vip == 1) { ?>
+                                    <img src="<?php echo public_url('images/icon_vip.gif') ?>" alt="BÁN NHÀ MẶT ĐƯỜNG SỐ 101 HOÀNG NGỌC PHÁCH(THUỘC DỰ ÁN XD HÀ NỘI), LÊ CHÂN, HẢI PHÒNG">
+
+                                <?php } ?>
+
+                                <?php if ($value->icon_hot == 1) { ?>
+
+                                    <img src="<?php echo public_url('images/icon_hot.gif') ?>" alt="BÁN NHÀ MẶT ĐƯỜNG SỐ 101 HOÀNG NGỌC PHÁCH(THUỘC DỰ ÁN XD HÀ NỘI), LÊ CHÂN, HẢI PHÒNG">
+                                <?php } ?>
+                            </div>
+
+
                         </div>
                     </div>
 
