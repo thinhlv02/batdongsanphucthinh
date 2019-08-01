@@ -75,19 +75,19 @@
 
                                 <tbody>
 
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1">1</td>
-                                    <td class="">VPbank</td>
-                                    <td>LUU VAN THINH</td>
-                                    <td>168271255</td>
-                                </tr>
+<!--                                <tr role="row" class="odd">-->
+<!--                                    <td class="sorting_1">1</td>-->
+<!--                                    <td class="">VPbank</td>-->
+<!--                                    <td>LUU VAN THINH</td>-->
+<!--                                    <td>168271255</td>-->
+<!--                                </tr>-->
 
-                                <tr role="row" class="odd">
-                                    <td class="">2</td>
-                                    <td class="">TECHCOMBANK</td>
-                                    <td>LUU VAN THINH</td>
-                                    <td>19029512206017</td>
-                                </tr>
+<!--                                <tr role="row" class="odd">-->
+<!--                                    <td class="">2</td>-->
+<!--                                    <td class="">TECHCOMBANK</td>-->
+<!--                                    <td>LUU VAN THINH</td>-->
+<!--                                    <td>19029512206017</td>-->
+<!--                                </tr>-->
 
                                 <?php foreach ($lstBank as $k => $val) { ?>
                                     <tr role="row" class="odd">
