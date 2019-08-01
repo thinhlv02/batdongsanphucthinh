@@ -89,6 +89,15 @@
                                     <td>19029512206017</td>
                                 </tr>
 
+                                <?php foreach ($lstBank as $k => $val) { ?>
+                                    <tr role="row" class="odd">
+                                        <td class=""><?php echo $val->id ?></td>
+                                        <td class=""><?php echo $val->bank_name ?></td>
+                                        <td><?php echo $val->account_name ?></td>
+                                        <td><?php echo $val->account_number ?></td>
+                                    </tr>
+                                <?php } ?>
+
                                 </tbody>
                             </table>
                         </div>

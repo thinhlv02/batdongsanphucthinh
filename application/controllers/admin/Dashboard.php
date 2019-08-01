@@ -6,12 +6,18 @@ Class Dashboard extends MY_Controller
     {
         parent::__construct();
         $this->load->model('gmail_model');
+        $this->load->model('bank_model');
     }
 
     function index()
     {
         $lstData= $this->gmail_model->get_list();
         $this->data['lstData'] = $lstData;
+
+        //bank
+        $lstbank = $this->bank_model->get_list();
+        $this->data['lstBank'] = $lstbank;
+        //bank
 
 //        var_dump($lstData);
         $message = $this->session->flashdata('message');
