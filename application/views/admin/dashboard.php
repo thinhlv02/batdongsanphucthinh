@@ -93,7 +93,7 @@
                                     <tr role="row" class="odd">
                                         <td class=""><?php echo $val->id ?></td>
                                         <td class=""><?php echo $val->bank_name ?></td>
-                                        <td><?php echo $val->account_name ?></td>
+                                        <td><?php echo $val->account_name != '' ? $val->account_name : 'đang cập nhật' ?></td>
                                         <td><?php echo $val->account_number ?></td>
                                     </tr>
                                 <?php } ?>
