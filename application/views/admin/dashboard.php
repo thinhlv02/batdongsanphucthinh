@@ -89,9 +89,13 @@
 <!--                                    <td>19029512206017</td>-->
 <!--                                </tr>-->
 
-                                <?php foreach ($lstBank as $k => $val) { ?>
+                                <?php
+                                $i =0;
+                                foreach ($lstBank as $k => $val) {
+                                    $i++;
+                                    ?>
                                     <tr role="row" class="odd">
-                                        <td class=""><?php echo $val->id ?></td>
+                                        <td class=""><?php echo $i; ?></td>
                                         <td class=""><?php echo $val->bank_name ?></td>
                                         <td><?php echo $val->account_name != '' ? $val->account_name : '<span class="text-danger">Đang cập nhật</span>' ?></td>
                                         <td><?php echo $val->account_number != '' ? $val->account_number : '<span class="text-danger">Đang cập nhật</span>' ?></td>
