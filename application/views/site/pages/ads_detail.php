@@ -94,20 +94,20 @@
 
                     </div>
 
-                    <div class="content-news-1 col-md-12 col-sm-12 line-height-2" style="margin-top: 10px">
+                    <div class="content-news-1 col-md-12 col-sm-12 line-height-2" style="margin-top: 5px">
 
-                        <div class="title-hd text-uppercase">
-                            <h7>mô tả</h7>
+                        <div class="title-hd">
+                            <h5>Mô tả</h5>
                         </div>
 
                         <?php echo trim($ads->content) ?>
 
                     </div>
 
-                    <div class="content-news-1 col-md-12 col-sm-12 line-height-2" style="margin-top: 10px">
+                    <div class="content-news-1 col-md-12 col-sm-12 line-height-2" style="margin-top: 5px">
 
-                        <div class="title-hd text-uppercase">
-                            <h7>Cập nhật website</h7>
+                        <div class="title-hd">
+                            <h5>Cập nhật website</h5>
                         </div>
 
                         <?php echo $ads->link_list ?>
@@ -262,6 +262,8 @@
     }
 
     .title-hd {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         width: 100%;
         /* height: 28px; */
         line-height: 28px;
@@ -270,7 +272,7 @@
         /* padding-left: 25px; */
         padding: 1px;
         padding-left: 5px;
-        margin-bottom: 8px;
+        margin-bottom: 5px;
     }
 
 </style>
