@@ -13,7 +13,7 @@
 
                     <div class="col-md-2 col-sm-6 col-xs-12 item _hot">
                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                            <img style="width: 100%;" src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                            <img style="width: 100%;height: 150px" src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                  alt="<?php echo $value->title ?>"></a>
                         <div class="icon_viphot">
                             <?php if ($value->icon_new == 1) { ?>
