@@ -53,8 +53,8 @@
 
                         <div class="box-info" style="">
                             <div class="block">
-                                <div class="col-left">Mã tin</div>
-                                <div class="col-right"><b>
+                                <div class="col-left"><b> Mã tin</b></div>
+                                <div class="col-right">
                                         <?php
                                         echo $ads->id .substr($ads->code,0,3);
                                         //                                    if ($ads->code == 0) {
@@ -62,33 +62,32 @@
                                         //                                    } else {
                                         //                                        echo $ads->code;
                                         //                                    } ?>
-                                    </b></div>
+                                    </div>
                             </div>
                             <div class="block">
-                                <div class="col-left">Lượt xem</div>
-                                <div class="col-right"><b><?php echo $ads->view ?></b></div>
+                                <div class="col-left"><b> Lượt xem</b></div>
+                                <div class="col-right"><?php echo $ads->view ?></div>
                             </div>
                             <div class="block">
-                                <div class="col-left">Hình thức</div>
-                                <div class="col-right"><b>Bán đất</b></div>
+                                <div class="col-left"><b> Hình thức</b></div>
+                                <div class="col-right">Bán đất</div>
                             </div>
                             <div class="block">
-                                <div class="col-left">Địa chỉ:</div>
-                                <div class="col-right"><b><?php echo $ads->area ?></b></div>
+                                <div class="col-left"><b>Khu vực:</b></div>
+                                <div class="col-right"><?php echo $ads->area ?></div>
                             </div>
                             <div class="block">
-                                <div class="col-left">Diện tích</div>
-                                <div class="col-right"><b><span><?php echo $ads->acreage ?> m</span><sup>2</sup></b>
+                                <div class="col-left"><b> Diện tích</b></div>
+                                <div class="col-right gia-title"><strong><span><?php echo $ads->acreage ?> m</span><sup>2</sup></strong>
                                 </div>
                             </div>
                             <div class="block">
-                                <div class="col-left">Giá</div>
-                                <div class="col-right"><b><?php echo $ads->price ?> (VNĐ)</b></div>
+                                <div class="col-left"><b> Giá</b></div>
+                                <div class="col-right gia-title"><strong><?php echo $ads->price ?> (VNĐ)</strong></div>
                             </div>
                             <div class="block">
-                                <div class="col-left">Ngày đăng</div>
-                                <div class="col-right"><b><?php echo date('d-m-Y', strtotime($ads->created_at)) ?></b>
-                                </div>
+                                <div class="col-left"><b> Ngày đăng</b></div>
+                                <div class="col-right"><?php echo date('d-m-Y', strtotime($ads->created_at)) ?></div>
                             </div>
                         </div>
 
@@ -97,7 +96,7 @@
                     <div class="content-news-1 col-md-12 col-sm-12 line-height-2" style="margin-top: 5px">
 
                         <div class="detail-more-info">
-                            <h5>Mô tả</h5>
+                            <h5>Thông tin mô tả</h5>
                         </div>
 
                         <?php echo trim($ads->content) ?>
