@@ -15,7 +15,7 @@ Class Dashboard extends MY_Controller
         $this->data['lstData'] = $lstData;
 
         //bank
-        $lstbank = $this->bank_model->get_list(array('order' => array('id','asc')));
+        $lstbank = $this->bank_model->get_list(array('where' => array('id < ' => '5'),'order' => array('id','asc')));
         $this->data['lstBank'] = $lstbank;
         //bank
 
