@@ -132,8 +132,9 @@
             <?php if (isset($ads) && !empty($ads)) { ?>
                 <tfoot>
                 <tr class="bg-primary">
-                    <td colspan="4">Tổng tiền</td>
-                    <td><?php echo($sum > 0 ? number_format($sum) : '') ?></td>
+                    <td colspan="">Tổng tiền</td>
+                    <td colspan="3">Tiền doanh số(15%)</td>
+                    <td><?php echo($sum > 0 ? number_format($sum*0.15) : '') ?></td>
                     <td colspan="3"></td>
                 </tr>
                 </tfoot>

@@ -34,10 +34,11 @@ Class Service_money extends MY_Controller
                 'pay_time >=' => $from,
                 'pay_time <=' => $to
             );
+
             $input['order'] = array('id', 'desc');
 
             if ($make_money_by != 99) {
-                $input['where'] = array('make_money_by' => $make_money_by);
+                $input['where']['make_money_by'] =  $make_money_by;
             }
 
             $ads = $this->ads_model->get_list($input);
