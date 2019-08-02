@@ -11,10 +11,10 @@ Class Service_money extends MY_Controller
 
     function index()
     {
-        $emps= $this->employees_model->get_list(array('where' => array('type' => 1)));
+        $emps = $this->employees_model->get_list(array('where' => array('type' => 1)));
 
         $i = 0;
-            $emps_arr = [];
+        $emps_arr = [];
         foreach ($emps as $key => $val) {
             $i++;
             $emps_arr[$val->id] = new stdClass();
@@ -25,40 +25,60 @@ Class Service_money extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
-        $input = array();
-//        $input['order'] = array('highlight', 'desc');
-        $input['order'] = array('id', 'desc');
-        $ads = $this->ads_model->get_list($input);
+        if ($this->input->post('btnAddSearch')) {
+            $from = date('Y-m-d', strtotime($this->input->post('txtFrom')));
+            $to = date('Y-m-d', strtotime($this->input->post('txtTo')));
+            $make_money_by = $this->input->post('make_money_by');
+            $input = [];
+            $input['where'] = array(
+                'pay_time >=' => $from,
+                'pay_time <=' => $to
+            );
 
-        $ads_end = [];
-        $index = 0;
-        foreach ($ads as $key => $val) {
-            $index++;
-            $ads_end[$index] = new stdClass();
-            $ads_end[$index]->id = $val->id;
-            $ads_end[$index]->code = $val->code;
-            $ads_end[$index]->img = $val->img;
-            $ads_end[$index]->title = $val->title;
-            $ads_end[$index]->price = $val->price;
-            $ads_end[$index]->acreage = $val->acreage;
-            $ads_end[$index]->area = $val->area;
-            $ads_end[$index]->service_money = $val->service_money;
-            $ads_end[$index]->make_money_by = $val->make_money_by;
-            $ads_end[$index]->pay_time = $val->pay_time;
-            $ads_end[$index]->created_at = $val->created_at;
-
-            if ($val->make_money_by > 0) {
-                $ads_end[$index]->name_emp = isset($emps_arr[$val->make_money_by]) ? $emps_arr[$val->make_money_by]->name: 'dcm111111111';
-            } else {
-                $ads_end[$index]->name_emp = '';
+            if ($make_money_by != 99) {
+                $input['where'] = array('make_money_by' => $make_money_by);
             }
 
-//            $devices_end[$key]->id = $val->id;
+            $ads = $this->ads_model->get_list($input);
+//            pre($lstvip);
+//            die();
+//        }
+
+//        $input = array();
+//        $input['order'] = array('highlight', 'desc');
+//        $input['order'] = array('id', 'desc');
+//        $ads = $this->ads_model->get_list($input);
+
+            $ads_end = [];
+            $index = 0;
+            foreach ($ads as $key => $val) {
+                $index++;
+                $ads_end[$index] = new stdClass();
+                $ads_end[$index]->id = $val->id;
+                $ads_end[$index]->code = $val->code;
+                $ads_end[$index]->img = $val->img;
+                $ads_end[$index]->title = $val->title;
+                $ads_end[$index]->price = $val->price;
+                $ads_end[$index]->acreage = $val->acreage;
+                $ads_end[$index]->area = $val->area;
+                $ads_end[$index]->service_money = $val->service_money;
+                $ads_end[$index]->make_money_by = $val->make_money_by;
+                $ads_end[$index]->pay_time = $val->pay_time;
+                $ads_end[$index]->created_at = $val->created_at;
+
+                if ($val->make_money_by > 0) {
+                    $ads_end[$index]->name_emp = isset($emps_arr[$val->make_money_by]) ? $emps_arr[$val->make_money_by]->name : 'dcm111111111';
+                } else {
+                    $ads_end[$index]->name_emp = '';
+                }
+
+            }
+
+            $this->data['ads'] = $ads_end;
         }
 
-
-        $this->data['ads'] = $ads_end;
         $this->data['_uid'] = $this->_uid;
+        $this->data['emps'] = $emps;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/service_money/index';
         $this->data['view'] = 'admin/service_money/list';
@@ -67,8 +87,7 @@ Class Service_money extends MY_Controller
 
     function edit()
     {
-//        die('aaaaa');
-        $emps= $this->employees_model->get_list(array('where' => array('type' => 1)));
+        $emps = $this->employees_model->get_list(array('where' => array('type' => 1)));
         $this->data['emps'] = $emps;
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
@@ -77,16 +96,15 @@ Class Service_money extends MY_Controller
         $pay_time = $ads->pay_time;
         if ($pay_time == '0000-00-00') {
             $pay_time = date('d-m-Y');
+        } else {
+            $pay_time = date('d-m-Y', strtotime($ads->pay_time));
         }
-         else {
-             $pay_time = date('d-m-Y', strtotime($ads->pay_time));
-         }
 //        var_dump($ads);
         if (!$ads) {
             redirect(base_url('admin/service_money'));
         }
 
-        $date =  $this->input->post('date');
+        $date = $this->input->post('date');
         $date = date('Y-m-d', strtotime($date));
 
         if ($this->input->post('btnEdit')) {
@@ -95,9 +113,6 @@ Class Service_money extends MY_Controller
                 'make_money_by' => $this->input->post('make_money_by'),
                 'pay_time' => $date,
             );
-
-//            var_dump($data);
-//            die();
 
             if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật  thành công');
