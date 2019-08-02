@@ -116,7 +116,7 @@
 
                     <div class="col-md-12 col-sm-12">
                         <div class="detail-more-info">
-                            <h7>Xem ảnh</h7>
+                            <h5>Xem ảnh</h5>
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-2"></div>
