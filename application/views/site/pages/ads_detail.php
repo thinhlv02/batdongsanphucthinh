@@ -5,7 +5,8 @@
             <div class="col-md-9 col-sm-12 col-xs-12 mt-2">
                 <ol class="breadcrumb">
                     <!--                <li><a href="--><?php //echo base_url('rao-vat') ?><!--">Rao vặt</a></li>-->
-                    <li class="" style="color: red;text-transform: uppercase;"><?php echo $ads->title ?></li>
+                    <li class="font16" style="color: #055699;
+    text-transform: none;"><?php echo $ads->title ?></li>
                 </ol>
                 <div class="item-news-1" style="">
                     <!--                <span>-->
@@ -95,7 +96,7 @@
 
                     <div class="content-news-1 col-md-12 col-sm-12 line-height-2" style="margin-top: 10px">
 
-                        <div class="title-hd text-uppercase">
+                        <div class="title-hd12 text-uppercase d-none">
                             <h7>mô tả</h7>
                         </div>
 
@@ -105,7 +106,8 @@
 
                     <div class="content-news-1 col-md-12 col-sm-12 line-height-2" style="margin-top: 10px">
 
-                        <div class="title-hd text-uppercase">
+<!--                        <div class="title-hd12 text-uppercase">-->
+                        <div class="detail-more-info">
                             <h7>Cập nhật website</h7>
                         </div>
 
@@ -115,7 +117,8 @@
 
 
                     <div class="col-md-12 col-sm-12">
-                        <div class="title-hd text-uppercase">
+<!--                        <div class="title-hd12 text-uppercase">-->
+                        <div class="detail-more-info">
                             <h7>Xem ảnh</h7>
                         </div>
                     </div>
@@ -260,17 +263,17 @@
         float: right;
     }
 
-    .title-hd {
-        width: 100%;
-        /* height: 28px; */
-        line-height: 28px;
-        color: white;
-        background: #15a1b1;
-        /* padding-left: 25px; */
-        padding: 1px;
-        padding-left: 5px;
-        margin-bottom: 8px;
-    }
+    /*.title-hd12 {*/
+    /*    width: 100%;*/
+    /*    !* height: 28px; *!*/
+    /*    line-height: 28px;*/
+    /*    color: white;*/
+    /*    background: #15a1b1;*/
+    /*    !* padding-left: 25px; *!*/
+    /*    padding: 1px;*/
+    /*    padding-left: 5px;*/
+    /*    margin-bottom: 8px;*/
+    /*}*/
 
 </style>
 
