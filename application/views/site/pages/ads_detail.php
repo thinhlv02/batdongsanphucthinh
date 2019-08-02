@@ -96,7 +96,7 @@
 
                     <div class="content-news-1 col-md-12 col-sm-12 line-height-2" style="margin-top: 5px">
 
-                        <div class="title-hd">
+                        <div class="detail-more-info">
                             <h5>Mô tả</h5>
                         </div>
 
@@ -106,7 +106,7 @@
 
                     <div class="content-news-1 col-md-12 col-sm-12 line-height-2" style="margin-top: 5px">
 
-                        <div class="title-hd">
+                        <div class="detail-more-info">
                             <h5>Cập nhật website</h5>
                         </div>
 
@@ -116,7 +116,7 @@
 
 
                     <div class="col-md-12 col-sm-12">
-                        <div class="title-hd text-uppercase">
+                        <div class="detail-more-info">
                             <h7>Xem ảnh</h7>
                         </div>
                     </div>
@@ -261,7 +261,7 @@
         float: right;
     }
 
-    .title-hd {
+    .detail-more-info {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         width: 100%;
