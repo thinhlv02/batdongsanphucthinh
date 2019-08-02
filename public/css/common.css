@@ -180,3 +180,35 @@
 }
 
 /*define class shadow outline*/
+
+/* Keyword value */
+/*line-height: normal;*/
+
+/* Unitless values: use this number multiplied
+by the element's font size */
+.line-height-2 {
+    line-height: 2em;
+}
+
+.line-height-2-5 {
+    line-height: 2.5em;
+}
+
+.line-height-3 {
+    line-height: 3em;
+}
+
+.line-height-3-5 {
+    line-height: 3.5em;
+}
+
+/* <length> values */
+
+
+/* <percentage> values */
+
+
+/* Global values */
+/*line-height: inherit;*/
+/*line-height: initial;*/
+/*line-height: unset;*/
