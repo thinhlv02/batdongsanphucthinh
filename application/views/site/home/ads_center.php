@@ -9,11 +9,14 @@
                     <div class="bg-modul"><i class="glyphicon glyphicon-tag"></i> Bất động sản nổi bật</div>
                 </div>
 
+<!--                --><?php //pre_arr($lstProvince) ?>
+
                 <?php foreach ($ads_center as $key => $value) { ?>
 
-                    <div class="col-md-2 col-sm-6 col-xs-12 item _hot">
+                    <div class="col-md-2 col-sm-6 col-xs-12 item _hot" onclick="updateView('<?php echo $value->id; ?>');">
                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                            <img style="width: 100%;height: 150px" src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                            <img style="width: 100%;height: 150px"
+                                 src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                  alt="<?php echo $value->title ?>"></a>
                         <div class="icon_viphot">
                             <?php if ($value->icon_new == 1) { ?>
@@ -44,14 +47,16 @@
 
                         <p><?php echo $value->intro ?></p>
                         <div class="row area">
-                            <div class="col-xs-12  larea">DTMB:  <?php echo $value->acreage ?> m2</div>
+                            <div class="col-xs-12  larea">DTMB: <?php echo $value->acreage ?> m2</div>
                             <div style="clear: both"></div>
-                            <div class="col-xs-12  rarea">DTSD:  <?php echo $value->acreage ?> m2</div>
+                            <div class="col-xs-12  rarea">DTSD: <?php echo $value->acreage ?> m2</div>
                         </div>
                         <div class="price">
-                            <div class="col-xs-5 lprice"><i class="fa fa-map-marker"></i> Đà Nẵng</div>
+                            <div class="col-xs-5 lprice"><i class="fa fa-map-marker"></i>
+                            <?php echo isset($lstProvince[$value->province_id]) ? $lstProvince[$value->province_id]->_name : 'KXĐ'; ?>
+                            </div>
                             <div class="col-xs-7 rprice">
-                               <?php echo $value->price ?>
+                                <?php echo $value->price ?>
                             </div>
                         </div>
 
@@ -61,7 +66,8 @@
 
                 <?php foreach ($ads_center as $key => $value) { ?>
 
-                    <div class="col-md-2 col-sm-6 col-xs-12 card12 d-none" onclick="updateView('<?php echo $value->id; ?>');">
+                    <div class="col-md-2 col-sm-6 col-xs-12 card12 d-none"
+                         onclick="updateView('<?php echo $value->id; ?>');">
                         <div class="card-body12 mb-2">
                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                 <div class="item-news">
@@ -170,7 +176,7 @@
         /*margin-right: 1.25%;*/
         margin-bottom: 20px;
         position: relative;
-        border: 1px solid #eee ;
+        border: 1px solid #eee;
         padding: 5px;
     }
 
