@@ -103,7 +103,7 @@
 
                     </div>
 
-                    <div class="content-news-1 col-md-12 col-sm-12 line-height-3-5 font18" style="margin-top: 10px">
+                    <div class="content-news-1 col-md-12 col-sm-12 line-height-2 font18" style="margin-top: 10px">
 
                         <div class="title-hd text-uppercase">
                             <h7>Cập nhật website</h7>
