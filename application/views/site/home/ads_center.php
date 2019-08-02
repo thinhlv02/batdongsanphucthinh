@@ -186,10 +186,10 @@
     }
 
     .body_hotLand_home, .item h3 a {
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
         display: inline-block;
         line-height: 20px;
-        color: #e40b00;
+        color: #055699;
     }
 </style>
