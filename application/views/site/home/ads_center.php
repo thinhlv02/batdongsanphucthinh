@@ -44,8 +44,9 @@
 
                         <p><?php echo $value->intro ?></p>
                         <div class="row area">
-                            <div class="col-xs-6 larea">DTMB:  <?php echo $value->acreage ?> m2</div>
-                            <div class="col-xs-6 rarea">DTSD:  <?php echo $value->acreage ?> m2</div>
+                            <div class="col-xs-12  larea">DTMB:  <?php echo $value->acreage ?> m2</div>
+                            <div style="clear: both"></div>
+                            <div class="col-xs-12  rarea">DTSD:  <?php echo $value->acreage ?> m2</div>
                         </div>
                         <div class="price">
                             <div class="col-xs-5 lprice"><i class="fa fa-map-marker"></i> Đà Nẵng</div>
