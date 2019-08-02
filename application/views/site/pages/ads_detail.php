@@ -96,7 +96,7 @@
 
                     <div class="content-news-1 col-md-12 col-sm-12 line-height-2" style="margin-top: 10px">
 
-                        <div class="title-hd text-uppercase d-none">
+                        <div class="title-hd text-uppercase">
                             <h7>mô tả</h7>
                         </div>
 
