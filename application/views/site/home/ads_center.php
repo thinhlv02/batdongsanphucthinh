@@ -177,7 +177,7 @@
         /*margin-right: 1.25%;*/
         margin-bottom: 20px;
         position: relative;
-        border: 1px solid #eee;
+        border: 1px solid #f00;
         padding: 5px;
     }
 
