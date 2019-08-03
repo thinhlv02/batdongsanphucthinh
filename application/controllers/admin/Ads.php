@@ -64,6 +64,34 @@ Class Ads extends MY_Controller
             $created_at =  $this->input->post('created_at');
             $created_at = date('Y-m-d', strtotime($created_at));
 
+            $txtProvince = $this->input->post('province');
+            $txtDistrict = $this->input->post('district');
+            $txtStreet = $this->input->post('street');
+
+            $province_name = '';
+            $district_name = '';
+            $ward_name = '';
+            $street_name = '';
+            if ($txtProvince != '') {
+                $txProvince_info = $this->Province_model->get_info($txtProvince);
+                $province_name = $txProvince_info->_name;
+            }
+
+            if ($txtDistrict != '') {
+                $txtDistrict_info = $this->District_model->get_info($txtDistrict);
+                $district_name = $txtDistrict_info->_name;
+            }
+
+            if ($ward != '') {
+                $ward_info = $this->Ward_model->get_info($ward);
+                $ward_name = $ward_info->_name;
+            }
+
+            if ($txtStreet != '') {
+                $street_info = $this->Street_model->get_info($txtStreet);
+                $street_name = $street_info->_name;
+            }
+
             $data = array(
                 'title' => $this->input->post('txtName'),
                 'code' => generateRandomString(6),
@@ -74,10 +102,14 @@ Class Ads extends MY_Controller
                 'intro' => $this->input->post('txtIntro'),
                 'price' => $this->input->post('price'),
                 'acreage' => $this->input->post('acreage'),
-                'province_id' => $this->input->post('province'),
-                'district_id' => $this->input->post('district'),
+                'province_id' => $txtProvince,
+                'district_id' => $txtDistrict,
                 'ward_id' => $ward,
                 'street_id' => $this->input->post('street'),
+                'province_name' => $province_name,
+                'district_name' => $district_name,
+                'ward_name' => $ward_name,
+                'street_name' => $street_name,
                 'created_at' => $created_at,
                 'created_by' => $this->_uid,
             );
@@ -103,8 +135,6 @@ Class Ads extends MY_Controller
                     $uploadData[$i]['file_name'] = $fileData['file_name'];
                     $path_name .= $fileData['file_name'] . '#';
                 }
-
-
 
             }
             $path_name = substr($path_name, 0, -1);
@@ -294,9 +324,30 @@ Class Ads extends MY_Controller
 
             $txtProvince = $this->input->post('province');
             $txtDistrict = $this->input->post('district');
+            $txtStreet = $this->input->post('street');
 
+            $province_name = '';
+            $district_name = '';
+            $ward_name = '';
+            $street_name = '';
             if ($txtProvince != '') {
                 $txProvince_info = $this->Province_model->get_info($txtProvince);
+                $province_name = $txProvince_info->_name;
+            }
+
+            if ($txtDistrict != '') {
+                $txtDistrict_info = $this->District_model->get_info($txtDistrict);
+                $district_name = $txtDistrict_info->_name;
+            }
+
+            if ($ward != '') {
+                $ward_info = $this->Ward_model->get_info($ward);
+                $ward_name = $ward_info->_name;
+            }
+
+            if ($txtStreet != '') {
+                $street_info = $this->Street_model->get_info($txtStreet);
+                $street_name = $street_info->_name;
             }
 
             $data = array(
@@ -310,10 +361,13 @@ Class Ads extends MY_Controller
 //                'unit' => $this->input->post('unit'),
                 'acreage' => $this->input->post('acreage'),
                 'province_id' => $txtProvince,
-                'province_name' => $txProvince_info->_name,
                 'district_id' => $txtDistrict,
                 'ward_id' => $ward,
-                'street_id' => $this->input->post('street'),
+                'street_id' => $txtStreet,
+                'province_name' => $province_name,
+                'district_name' => $district_name,
+                'ward_name' => $ward_name,
+                'street_name' => $street_name,
                 'link' => $this->input->post('link'),
                 'link_list' => $this->input->post('txtLinkSite'),
                 'view' => $this->input->post('view')
