@@ -54,7 +54,7 @@
                         <div class="price">
                             <div class="col-xs-5 lprice">
 <!--                                <i class="fa fa-map-marker"></i>-->
-                            <?php echo $value->province_name != '' ? $value->province_name : 'Update'; ?>
+                            <?php echo $value->province_name != '' ? $value->province_name : 'update...'; ?>
                             </div>
                             <div class="col-xs-7 rprice">
                                 <?php echo $value->price ?>
