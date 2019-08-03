@@ -39,7 +39,7 @@
 
                         </div>
 
-                        <div class="code_row">PT-<?php echo $value->id ?></div>
+                        <div class="code_row">PT-<?php echo $value->id.substr($value->code,0,3) ?></div>
 
                         <h3 style="height: 44px;font-size: 13px; ">
                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a>
@@ -47,9 +47,9 @@
 
                         <p><?php echo $value->intro ?></p>
                         <div class="row area">
-                            <div class="col-xs-12  larea">DTMB: <?php echo $value->acreage ?> m2</div>
-                            <div style="clear: both"></div>
-                            <div class="col-xs-12  rarea">DTSD: <?php echo $value->acreage ?> m2</div>
+                            <div class="col-xs-12 larea">Diện Tích: <?php echo $value->acreage ?> m2</div>
+<!--                            <div style="clear: both"></div>-->
+<!--                            <div class="col-xs-12  rarea">DTSD: --><?php //echo $value->acreage ?><!-- m2</div>-->
                         </div>
                         <div class="price">
                             <div class="col-xs-5 lprice">
