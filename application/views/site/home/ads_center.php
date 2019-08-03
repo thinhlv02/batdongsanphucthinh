@@ -46,8 +46,8 @@
                         </h3>
 
                         <p><?php echo $value->intro ?></p>
-                        <div class="row area">
-                            <div class="col-xs-12 larea">Diện Tích: <?php echo $value->acreage ?> m2</div>
+                        <div class="row area gia-title">
+                            <div class="col-xs-12 larea">Diện Tích: <strong><?php echo $value->acreage ?> m<sup>2</sup></strong></div>
 <!--                            <div style="clear: both"></div>-->
 <!--                            <div class="col-xs-12  rarea">DTSD: --><?php //echo $value->acreage ?><!-- m2</div>-->
                         </div>
