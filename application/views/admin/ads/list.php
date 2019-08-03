@@ -28,16 +28,16 @@
 <!--                <th>Giới thiệu</th>-->
                 <th>Giá</th>
                 <th>Diện tích</th>
-                <th>Khu vực</th>
+<!--                <th>Khu vực</th>-->
                 <th>Trái</th>
                 <th>Phải</th>
                 <th>Giữa</th>
                 <th>Layer trái</th>
                 <th>Layer vip</th>
                 <th>Layer phải</th>
-                <th>Mới</th>
-                <th>Vip</th>
-                <th>Hot</th>
+                <th>Trạng thái</th>
+<!--                <th>Vip</th>-->
+<!--                <th>Hot</th>-->
 <!--                <th>link bài viết</th>-->
                 <th>Lượt xem</th>
                 <th>Ngày Tạo</th>
@@ -56,7 +56,7 @@
 <!--                    <td>--><?php //echo $row->intro?><!--</td>-->
                     <td><?php echo $row->price?></td>
                     <td><?php echo $row->acreage?></td>
-                    <td><?php echo $row->area?></td>
+<!--                    <td>--><?php //echo $row->area?><!--</td>-->
 
                     <td>
                         <i id="ads_left-<?php echo $row->id?>"
@@ -101,25 +101,25 @@
                         ></i>layer phải
                     </td>
 
-                    <td>
+                    <td style="display: flex">
                         <i id="icon_new-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->icon_new ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
+                           class="fa fa-2x <?php echo $row->icon_new ? 'fa-toggle-on' : 'fa-toggle-off'?> text-danger"
                            onclick="icon_new(<?php echo $row->id?>)"
-                        ></i>Mới
-                    </td>
-
-                    <td>
+                        ></i> Mới
+<!--                    </td>-->
+<!---->
+<!--                    <td>-->
                         <i id="icon_vip-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->icon_vip ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
                            onclick="icon_vip(<?php echo $row->id?>)"
-                        ></i>Vip
-                    </td>
+                        ></i> Vip
+<!--                    </td>-->
 
-                    <td>
+<!--                    <td>-->
                         <i id="icon_hot-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->icon_hot ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
+                           class="fa fa-2x <?php echo $row->icon_hot ? 'fa-toggle-on' : 'fa-toggle-off'?> text-success"
                            onclick="icon_hot(<?php echo $row->id?>)"
-                        ></i>Hot
+                        ></i> Hot
                     </td>
 <!--                    <td>--><?php //echo $row->link ?><!--</td>-->
                     <td><?php echo $row->view ?></td>
