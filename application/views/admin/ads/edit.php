@@ -130,16 +130,80 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Linh bài viết<span class="required">*</span></label>
-                    <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="link" value="<?php echo $ads->link ?>" class="form-control col-md-7 col-xs-12" placeholder="nhập link bài viết">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tỉnh / TP<span
+                                class="required">*</span></label>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <select class="select2_group form-control" name="province" onchange="get_district(this)">
+                            <option value="0">-- Chọn Tỉnh/TP --</option>
+
+                            <?php foreach ($lstProvince as $key => $value) { ?>
+<!--                                <option value="--><?//= $value->id ?><!--" --><?php //if (isset($_POST['type']) && $_POST['type'] == $key) echo 'selected' ?>
+                                <option value="<?= $value->id ?>" <?php if (isset($province_id) && $province_id == $value->id) echo 'selected' ?>>
+                                    <?php echo $value->_name ?>
+                                </option>
+                            <?php } ?>
+
+                        </select>
+                    </div>
+
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Quận / Huyện<span
+                                class="required">*</span></label>
+                    <div class="col-md-2 col-sm-2 col-xs-12" id="divDistrict">
+<!--                        <select class="select2_group form-control" name="district" id="" onchange="">-->
+                            <select class="select2_group form-control" name="district" id="selectDistrict" onchange="get_ward(this)">
+
+                            <option value="0">Chọn Quận/Huyện</option>
+                            <?php if (isset($district_arr) && !empty($district_arr)) {
+                                foreach ($district_arr as $k => $val) { ?>
+                                    <option value="<?php echo $val->id ?>" <?php if (isset($district_id) && $district_id == $val->id) echo 'selected' ?>>
+                                        <?php echo $val->_name ?>
+                                    </option>
+                                <?php }
+                            } ?>
+                        </select>
+
+                    </div>
+
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Xã / Phường<span
+                                class="required">*</span></label>
+
+                    <div class="col-md-2 col-sm-2 col-xs-12" id="divWard">
+<!--                        <select class="select2_group form-control" name="ward" id="" onchange="">-->
+                        <select class="select2_group form-control" name="ward" id="selectWard" onchange="get_street(this)">
+
+                        <option value="0">Chọn Xã/Phường</option>
+                            <?php if (isset($ward_arr) && !empty($ward_arr)) {
+                                foreach ($ward_arr as $k => $val) { ?>
+                                    <option value="<?php echo $val->id ?>" <?php if (isset($ward_id) && $ward_id == $val->id) echo 'selected' ?>>
+                                        <?php echo $val->_name ?>
+                                    </option>
+                                <?php }
+                            } ?>
+                        </select>
+
                     </div>
                 </div>
 
                 <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Đường phố<span
+                                class="required">*</span></label>
+
+                    <div class="col-md-2 col-sm-2 col-xs-12" id="divStreet">
+                        <select class="select2_group form-control" name="street" id="">
+                            <option value="0">-- Không có --</option>
+                        </select>
+                    </div>
+
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Lượt xem<span class="required">*</span></label>
-                    <div class="col-md-10 col-sm-10 col-xs-12">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
                         <input type="number" name="view" value="<?php echo $ads->view ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="nhập lượt xem">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Linh bài viết<span class="required">*</span></label>
+                    <div class="col-md-10 col-sm-10 col-xs-12">
+                        <input type="text" name="link" value="<?php echo $ads->link ?>" class="form-control col-md-7 col-xs-12" placeholder="nhập link bài viết">
                     </div>
                 </div>
 
@@ -194,3 +258,91 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    function get_district(sel) {
+        var id = sel.value;
+        console.log(id);
+        if (id == 0) {
+            $('#selectDistrict').empty();
+            $('#selectWard').empty();
+            $('#selectStreet').empty();
+        } else {
+            // ajax
+            var params = {
+                'id': id
+            };
+
+            // console.log(params);
+            var _onSuccess = function (data) {
+                // console.log(data);
+                if (data == 'NOT_LOGIN') {
+                    window.location.reload(true);
+                } else if (data === 'false') {
+
+                } else {
+                    // console.log(data);
+                    $("#divDistrict").html(data);
+                }
+            };//
+
+            getAjax('<?php echo admin_url('ads/ajax_get_list_district'); ?>', params, '', 'GET', '', false, _onSuccess);
+        }
+    }
+
+    function get_ward(sel) {
+        var id = sel.value;
+        console.log(id);
+        if (id == 0) {
+            $('#selectWard').empty();
+            $('#selectStreet').empty();
+        } else {
+            var params = {
+                'id': id
+            };
+
+            var _onSuccess = function (data) {
+                // console.log(data);
+                if (data == 'NOT_LOGIN') {
+
+                } else if (data === 'false') {
+
+                } else {
+                    $("#divWard").html(data);
+                }
+            };
+
+            getAjax('<?php echo admin_url('ads/ajax_get_list_ward'); ?>', params, '', 'GET', '', false, _onSuccess);
+        }
+    }
+
+    function get_street(sel) {
+        var id = sel.value;
+        console.log(id);
+        if (id == 0) {
+            $('#selectStreet').empty();
+        } else {
+            // ajax
+            var params = {
+                'id': id
+            };
+
+            // console.log(params);
+            var _onSuccess = function (data) {
+                // console.log(data);
+                if (data == 'NOT_LOGIN') {
+
+                } else if (data === 'false') {
+
+                } else {
+                    // console.log(data);
+                    $("#divStreet").html(data);
+                }
+            };
+
+            getAjax('<?php echo admin_url('ads/ajax_get_list_street'); ?>', params, '', 'GET', '', false, _onSuccess);
+        }
+    }
+
+</script>

@@ -241,14 +241,31 @@ Class Ads extends MY_Controller
 
     function edit()
     {
+        $lstProvince = $this->_province;
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
         $ads = $this->ads_model->get_info($id);
-//        var_dump($ads);
+//        pre($ads);
         if (!$ads) {
             redirect(base_url('admin/ads'));
         }
+
+        //get list district if isset province on table ads
+        $district_arr = '';
+        if ($ads->province_id != '' && $ads->district_id != '') {
+            $district_arr = $this->District_model->get_list(array('where' => array('_province_id' => $ads->province_id)));
+        }
+        $this->data['district_arr'] = $district_arr;
+//        pre($district_arr);
+
+        //get list ward if isset district on table ads
+        $ward_arr = '';
+        if ($ads->province_id != '' && $ads->district_id != '' && $ads->ward_id != '') {
+            $ward_arr = $this->Ward_model->get_list(array('where' => array('_district_id' => $ads->district_id)));
+        }
+        $this->data['ward_arr'] = $ward_arr;
+//        pre($district_arr);
 
         if ($this->input->post('btnEdit')) {
             $data = array(
@@ -357,6 +374,10 @@ Class Ads extends MY_Controller
         }
         $this->data['tab'] = 3;
         $this->data['ads'] = $ads;
+        $this->data['province_id'] = $ads->province_id;
+        $this->data['district_id'] = $ads->district_id;
+        $this->data['ward_id'] = $ads->ward_id;
+        $this->data['lstProvince'] = $lstProvince;
         $this->data['temp'] = 'admin/ads/index';
         $this->data['view'] = 'admin/ads/edit';
         $this->load->view('admin/layout', $this->data);

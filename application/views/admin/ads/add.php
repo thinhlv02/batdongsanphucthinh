@@ -110,7 +110,7 @@
                     </div>
                 </div>
 
-                <div class="form-group" style="">
+                <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tỉnh / TP<span
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
@@ -144,7 +144,6 @@
                         </select>
 
                     </div>
-
                 </div>
 
                 <div class="form-group">
