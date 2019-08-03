@@ -169,10 +169,6 @@
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divWard">
 <!--                        <select class="select2_group form-control" name="ward" id="" onchange="">-->
-<!--                        <select class="select2_group form-control" name="ward" id="" onchange="">-->
-<!--                        <select class="select2_group form-control" name="ward" id="" onchange="">-->
-<!--                        <select class="select2_group form-control" name="ward" id="" onchange="">-->
-<!--                        <select class="select2_group form-control" name="ward" id="" onchange="">-->
                         <select class="select2_group form-control" name="ward" id="selectWard" onchange="get_street(this)">
 
                         <option value="0">Chọn Xã/Phường</option>
