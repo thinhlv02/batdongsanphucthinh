@@ -1369,3 +1369,8 @@ button#myPageup {
     font-size: 14px;
     color: #319C00;
 }
+
+.body_hotLand_home .item .price, .lprice i {
+    color: #e40b00;
+    margin-right: 2px;
+}

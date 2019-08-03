@@ -52,11 +52,11 @@
 <!--                            <div class="col-xs-12  rarea">DTSD: --><?php //echo $value->acreage ?><!-- m2</div>-->
                         </div>
                         <div class="price">
-                            <div class="col-xs-5 lprice">
-<!--                                <i class="fa fa-map-marker"></i>-->
+                            <div class="col-xs-6 lprice">
+                                <i class="fa fa-map-marker"></i>
                             <?php echo $value->province_name != '' ? $value->province_name : 'update...'; ?>
                             </div>
-                            <div class="col-xs-7 rprice">
+                            <div class="col-xs-6 rprice">
                                 <?php echo $value->price ?>
                             </div>
                         </div>
