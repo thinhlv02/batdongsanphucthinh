@@ -54,7 +54,7 @@
                         <div class="price">
                             <div class="col-xs-5 lprice">
 <!--                                <i class="fa fa-map-marker"></i>-->
-                            <?php echo isset($lstProvince[$value->province_id]) ? $lstProvince[$value->province_id]->_name : 'KXĐ'; ?>
+                            <?php echo $value->province_name != '' ? $value->province_name : 'Update'; ?>
                             </div>
                             <div class="col-xs-7 rprice">
                                 <?php echo $value->price ?>

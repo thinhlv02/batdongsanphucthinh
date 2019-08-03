@@ -14,15 +14,15 @@ function admin_theme($url = '')
     return base_url('public/admin_temp/' . $url);
 }
 
-function pre($list, $exit = true)
-{
-    echo "<pre>";
-    print_r($list);
-
-    if ($exit) {
-        die();
-    }
-}
+//function pre($list, $exit = true)
+//{
+//    echo "<pre>";
+//    print_r($list);
+//
+//    if ($exit) {
+//        die();
+//    }
+//}
 
 function create_slug($string)
 {
@@ -117,6 +117,6 @@ function generateRandomString($length) {
     return $randomString;
 }
 
-function pre_arr($data) {
+function pre($data) {
     echo '<pre>',print_r($data,1),'</pre>';
 }

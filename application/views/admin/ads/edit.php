@@ -173,9 +173,12 @@
 
                         <option value="0">Chọn Xã/Phường</option>
                             <?php if (isset($ward_arr) && !empty($ward_arr)) {
-                                foreach ($ward_arr as $k => $val) { ?>
-                                    <option value="<?php echo $val->id ?>" <?php if (isset($ward_id) && $ward_id == $val->id) echo 'selected' ?>>
-                                        <?php echo $val->_name ?>
+                                foreach ($ward_arr as $k => $val) {
+                                    $first = explode('|', $val['id']);
+//                                    echo $first[0]. '<br/>';
+                                    ?>
+                                    <option value="<?php echo $val['id'] ?>" <?php if (isset($ward_id) && $ward_id == $first[0]) echo 'selected' ?>>
+                                        <?php echo $val['_name'] ?>
                                     </option>
                                 <?php }
                             } ?>
@@ -191,6 +194,17 @@
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divStreet">
                         <select class="select2_group form-control" name="street" id="">
                             <option value="0">-- Không có --</option>
+
+                            <?php
+//                            pre($street_id);
+                            if (isset($street_arr) && !empty($street_arr)) {
+                                foreach ($street_arr as $k => $val) { ?>
+                                    <option value="<?php echo $val->id ?>" <?php if (isset($street_id) && $street_id == $val->id) echo 'selected' ?>>
+                                        <?php echo $val->_name ?>
+                                    </option>
+                                <?php }
+                            } ?>
+
                         </select>
                     </div>
 

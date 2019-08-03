@@ -23,26 +23,26 @@ Class Home extends MY_Controller
 
         $lstProvince = $this->_province;
 
-        $lstProvince_end = [];
-        $index = 0;
-        foreach ($lstProvince as $k => $val) {
-            $index++;
-            $lstProvince_end[$index] = new stdClass();
-            $lstProvince_end[$index]->id = $val->id;
-            $lstProvince_end[$index]->_name = $val->_name;
-            $lstProvince_end[$index]->_code = $val->_code;
-            $lstProvince_end[$index]->_area = $val->_area;
+//        $lstProvince_end = [];
+//        $index = 0;
+//        foreach ($lstProvince as $k => $val) {
+//            $index++;
+//            $lstProvince_end[$index] = new stdClass();
+//            $lstProvince_end[$index]->id = $val->id;
+//            $lstProvince_end[$index]->_name = $val->_name;
+//            $lstProvince_end[$index]->_code = $val->_code;
+//            $lstProvince_end[$index]->_area = $val->_area;
 
 //
 //            [id] => 1
 //            [_name] => Hồ Chí Minh
 //            [_code] => SG
 //            [_area] => 3
-        }
+//        }
 
 //        pre_arr($lstProvince_end);
 
-        $this->data['lstProvince'] = $lstProvince_end;
+        $this->data['lstProvince'] = $lstProvince;
 
         $news = $this->news_model->get_list(array('limit' => array(11, 0)));
         $this->data['news'] = $news;

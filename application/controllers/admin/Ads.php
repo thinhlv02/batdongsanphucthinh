@@ -260,14 +260,45 @@ Class Ads extends MY_Controller
 //        pre($district_arr);
 
         //get list ward if isset district on table ads
-        $ward_arr = '';
+        $ward_arr_end = '';
         if ($ads->province_id != '' && $ads->district_id != '' && $ads->ward_id != '') {
             $ward_arr = $this->Ward_model->get_list(array('where' => array('_district_id' => $ads->district_id)));
+
+            $ward_arr_end = [];
+            foreach ($ward_arr as $k => $value) {
+                $ward_arr_end[$value->id]['id'] = $value->id.'|'.$value->_district_id;
+                $ward_arr_end[$value->id]['_name'] = $value->_name;
+            }
+
         }
-        $this->data['ward_arr'] = $ward_arr;
-//        pre($district_arr);
+        $this->data['ward_arr'] = $ward_arr_end;
+//        pre($ward_arr_end);
+
+        //get list street
+        $street_arr = '';
+        if ($ads->province_id != '' && $ads->district_id != '' && $ads->ward_id != '' && $ads->street_id != '') {
+
+            $street_arr = $this->Street_model->get_list(array('where' => array('_district_id' => $ads->district_id)));
+        }
+        $this->data['street_arr'] = $street_arr;
+//        pre($street_arr);
 
         if ($this->input->post('btnEdit')) {
+
+            $ward_str = $this->input->post('ward');
+            $ward = '';
+            if ($ward_str) {
+                $ward = explode('|', $ward_str);
+                $ward =$ward[0];
+            }
+
+            $txtProvince = $this->input->post('province');
+            $txtDistrict = $this->input->post('district');
+
+            if ($txtProvince != '') {
+                $txProvince_info = $this->Province_model->get_info($txtProvince);
+            }
+
             $data = array(
                 'title' => $this->input->post('txtName'),
                 'content' => $this->input->post('txtContent'),
@@ -278,6 +309,11 @@ Class Ads extends MY_Controller
                 'price' => $this->input->post('price'),
 //                'unit' => $this->input->post('unit'),
                 'acreage' => $this->input->post('acreage'),
+                'province_id' => $txtProvince,
+                'province_name' => $txProvince_info->_name,
+                'district_id' => $txtDistrict,
+                'ward_id' => $ward,
+                'street_id' => $this->input->post('street'),
                 'link' => $this->input->post('link'),
                 'link_list' => $this->input->post('txtLinkSite'),
                 'view' => $this->input->post('view')
@@ -377,6 +413,7 @@ Class Ads extends MY_Controller
         $this->data['province_id'] = $ads->province_id;
         $this->data['district_id'] = $ads->district_id;
         $this->data['ward_id'] = $ads->ward_id;
+        $this->data['street_id'] = $ads->street_id;
         $this->data['lstProvince'] = $lstProvince;
         $this->data['temp'] = 'admin/ads/index';
         $this->data['view'] = 'admin/ads/edit';
