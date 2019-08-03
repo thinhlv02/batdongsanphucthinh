@@ -13,7 +13,7 @@
 
                 <?php foreach ($ads_center as $key => $value) { ?>
 
-                    <div class="col-md-2 col-sm-6 col-xs-12 item _hot" onclick="updateView('<?php echo $value->id; ?>');">
+                    <div class="col-md-2 col-sm-6 col-xs-12 item_ads _hot" onclick="updateView('<?php echo $value->id; ?>');">
                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                             <img style="width: 100%;height: 150px"
                                  src="<?php echo public_url('images/ads/' . $value->img) ?>"
@@ -139,7 +139,7 @@
         font-weight: 600;
     }
 
-    /*.body_hotLand_home .item .area {*/
+    /*.body_hotLand_home .item_ads .area {*/
     .area {
         font-weight: 600;
         font-size: 12px;
@@ -150,29 +150,29 @@
         font-weight: 600;
     }
 
-    .body_hotLand_home .item .price, .lprice {
+    .body_hotLand_home .item_ads .price, .lprice {
         text-align: center;
         background: #eeeeee;
         line-height: 30px;
     }
 
-    .body_hotLand_home .item .price, .rprice {
+    .body_hotLand_home .item_ads .price, .rprice {
         text-align: center;
         background: #e40b00;
         line-height: 30px;
         color: #fff;
     }
 
-    .body_hotLand_home, .item, ._hot {
+    .body_hotLand_home, .item_ads, ._hot {
         border-color: #f00;
     }
 
-    .body_hotLand_home, .item, ._hot {
+    .body_hotLand_home, .item_ads, ._hot {
         border: 2px solid #f00;
         background: #fffce6;
     }
 
-    .body_hotLand_home, .item {
+    .body_hotLand_home, .item_ads {
         /*width: 19%;*/
         /*margin-right: 1.25%;*/
         margin-bottom: 20px;
@@ -181,19 +181,19 @@
         padding: 5px;
     }
 
-    .body_hotLand_home, .item h3 {
+    .body_hotLand_home, .item_ads h3 {
         height: 40px;
         overflow: hidden;
         margin: 10px 0;
     }
 
-    .body_hotLand_home, .item > p {
+    .body_hotLand_home, .item_ads > p {
         line-height: 18px;
         height: 72px;
         overflow: hidden;
     }
 
-    .body_hotLand_home, .item h3 a {
+    .body_hotLand_home, .item_ads h3 a {
         font-size: 13px;
         font-weight: 600;
         display: inline-block;
