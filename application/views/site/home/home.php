@@ -11,3 +11,5 @@
 <?php //$this->load->view('site/home/product')?>
 <?php //$this->load->view('site/partner/partner')?>
 <?php //$this->load->view('site/recruitment')?>
+<?php //$this->load->view('site/recruitment')?>
+<?php //$this->load->view('site/recruitment')?>
