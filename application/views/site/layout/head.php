@@ -27,12 +27,16 @@
 <link rel="stylesheet" href="<?php echo base_url('public/css/common.css'); ?>">
 <link rel="stylesheet" href="<?php echo base_url('public/css/custom.css'); ?>">
 <link rel="stylesheet" href="<?php echo base_url('public/css/lightslider.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('public/css/jquery.bxslider.css'); ?>">
 
 <!--thinhlv add css-->
 <link href="<?php echo base_url('public/css/responsive.css'); ?>" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-<script src="<?php echo public_url('js/jquery.min.js')?>"></script>
+<!--<script src="--><?php //echo public_url('js/jquery.min.js')?><!--"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 <script src="<?php echo public_url('js/bootstrap.min.js')?>"></script>
 <script src="<?php echo base_url('public/js/page.js'); ?>"></script>
 <script src="<?php echo base_url('public/js/common.js'); ?>"></script>
 <script src="<?php echo base_url('public/js/lightslider.js'); ?>"></script>
+<script src="<?php echo base_url('public/js/bxslider/jquery.bxslider.min.js'); ?>"></script>
+<script src="<?php echo base_url('public/js/bxslider/jquery.flexisel.js'); ?>"></script>
