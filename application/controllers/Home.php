@@ -507,16 +507,17 @@ Class Home extends MY_Controller
         }
 
         $input['limit'] = array($per_page, $offset);
-        $news = $this->ads_model->get_list($input);
+        $lstSearch = $this->ads_model->get_list();
+//        pre($news);
 
         $highlight = $this->news_model->get_list(array('where' => array('highlight' => 1)));
 
         $this->data['paginator'] = $paginator;
-        $this->data['news'] = $news;
+        $this->data['lstSearch'] = $lstSearch;
         $this->data['highlight'] = $highlight;
 
         $this->data['li_6'] = 1;
-        $this->data['news'] = $news;
+//        $this->data['news'] = $news;
         $this->data['temp'] = 'site/pages/search';
         $this->load->view('site/layout/layout', $this->data);
     }
