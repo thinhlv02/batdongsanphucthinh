@@ -65,7 +65,7 @@
     <!--                        </div>-->
                             <div class="text-center">
 
-                            <button style="background: #5caceb " type="submit" class="btn btn-default">Tìm kiếm</button>
+<!--                            <button style="background: #5caceb " type="submit" class="btn btn-default">Tìm kiếm</button>-->
                             </div>
 
                         </form>
