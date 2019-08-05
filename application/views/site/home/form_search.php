@@ -56,6 +56,8 @@
 <!--                                            <label for="email">Loại</label>-->
                     <select class="form-control">
                         <option value=""> -- Loại --</option>
+                        <option value="1"> Cần mua</option>
+                        <option value="2"> Cần bán</option>
                     </select>
                 </div>
                 <div class="text-center">
