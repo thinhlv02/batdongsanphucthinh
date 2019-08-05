@@ -66,6 +66,7 @@
             <!--Begin land_box-->
             <div class="_box">
                 <p class="title_box"><strong>Tìm kiếm nhà đất</strong></p>
+<!--                --><?php //echo $code; ?>
                 <div class="listland_box body_hotLand_home row12">
 
                     <?php foreach ($lstSearch as $key => $value) { ?>

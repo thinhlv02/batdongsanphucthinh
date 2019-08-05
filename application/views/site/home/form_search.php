@@ -21,7 +21,7 @@
                   enctype="multipart/form-data">
                 <div class="form-group">
 <!--                    <label for="email">Mã tin:</label>-->
-                    <input type="email" class="form-control" id="email" placeholder="mã tin, sđt" name="code">
+                    <input type="text" class="form-control" placeholder="mã tin, sđt" name="code">
                 </div>
                 <div class="form-group">
                     <!--                                <label for="email">Tỉnh thành</label>-->

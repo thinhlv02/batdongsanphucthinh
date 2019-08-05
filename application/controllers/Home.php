@@ -492,30 +492,35 @@ Class Home extends MY_Controller
         $province = $this->input->get('province');
         $district = $this->input->get('district');
         $ward = $this->input->get('ward');
+        $code = $this->input->get('code');
+        $this->data['code'] = $code;
+//        var_dump($code);
 //        echo $province;
 //        die;
         $per_page = 10;
-        $offset = $this->uri->segment(2);
-        $offset = intval($offset);
+//        $offset = $this->uri->segment(2);
+//        $offset = intval($offset);
         $input = array();
 //        $input['where'] = array('highlight' => 0);
-        $total = $this->news_model->get_total($input);
-        $paginator = config_pagination($per_page, 2, $total, base_url('tin-tuc'));
+//          $input['like'] = array('phone' => $code);
+//          pre($input);
+//        $total = $this->news_model->get_total($input);
+//        $paginator = config_pagination($per_page, 2, $total, base_url('tin-tuc'));
 
-        if ($offset >= 1) {
-            $offset -= 1;
-            $offset = $offset * $per_page;
-        }
+//        if ($offset >= 1) {
+//            $offset -= 1;
+//            $offset = $offset * $per_page;
+//        }
 
-        $input['limit'] = array($per_page, $offset);
-        $lstSearch = $this->ads_model->get_list();
+//        $input['limit'] = array($per_page, $offset);
+        $lstSearch = $this->ads_model->get_list($input);
 //        pre($news);
 
-        $highlight = $this->news_model->get_list(array('where' => array('highlight' => 1)));
+//        $highlight = $this->news_model->get_list(array('where' => array('highlight' => 1)));
 
-        $this->data['paginator'] = $paginator;
+//        $this->data['paginator'] = $paginator;
         $this->data['lstSearch'] = $lstSearch;
-        $this->data['highlight'] = $highlight;
+//        $this->data['highlight'] = $highlight;
 
         $this->data['li_6'] = 1;
         $this->data['lstProvince'] = $lstProvince;
