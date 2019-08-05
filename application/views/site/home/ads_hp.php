@@ -44,7 +44,6 @@
                                 </div>
 
                                 <div class="icon_viphot">
-
                                     <?php if ($value->icon_new == 1) { ?>
                                         <img src="<?php echo public_url('images/icon_new.gif') ?>"
                                              alt="<?php echo $value->title ?>">
@@ -62,7 +61,6 @@
                                         <img src="<?php echo public_url('images/icon_hot.gif') ?>"
                                              alt="<?php echo $value->title ?>">
                                     <?php } ?>
-
                                 </div>
                             </div>
 
@@ -187,34 +185,36 @@
                                     <ul class="vip_slider"
                                         style="width: auto; position: relative; transition-duration: 0s; transform: translate3d(0px, -2520px, 0px);">
 
-<!--                                        --><?php //foreach ($layer_right as $key => $value) { ?>
+                                        <?php
+//                                        var_dump($layer_right);
+                                        foreach ($layer_right as $key => $value) { ?>
 
                                         <li style="float: none; list-style: none; position: relative; width: 298px;"
                                             class="bx-clone">
                                             <dl class="">
                                                 <dt>
-                                                    <a href="/ban-nha-so-611418-mieu-hai-xa-le-chan-hai-phong-bds55367.htm"><img
-                                                                src="http://nhadathaiphong.vn/images/attachment/thumb/4949.jpg"
-                                                                alt="Bán nhà số 6/11/418 Miếu Hai Xã, Lê Chân, Hải Phòng"></a>
+                                                    <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
+                                                                src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                                                alt="<?php echo $value->title ?>"></a>
                                                     <div class="icon_viphot">
                                                         <img src="<?php echo public_url('images/icon_new.gif') ?>"
-                                                             alt="Bán nhà số 6/11/418 Miếu Hai Xã, Lê Chân, Hải Phòng">
+                                                             alt="<?php echo $value->title ?>">
                                                     </div>
                                                 </dt>
                                                 <dd>
                                                     <h3>
-                                                        <a href="/ban-nha-so-611418-mieu-hai-xa-le-chan-hai-phong-bds55367.htm">11Bán
-                                                            nhà số 6/11/418 Miếu Hai Xã, Lê Chân, Hải Phòng</a></h3>
-                                                    <p class="mt-0 mb-0"><strong>Diện tích:</strong> 48 m2</p>
-                                                    <p class="mt-0 mb-0"><strong>Giá:</strong> <span>1.89 tỷ</span></p>
-                                                    <p class="mt-0 mb-0"><strong>Hướng:</strong> Đông Bắc</p>
+                                                        <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                                            <?php echo $value->title ?></a></h3>
+                                                    <p class="mt-0 mb-0"><strong>Diện tích:</strong> <?php echo $value->acreage ?> m2</p>
+                                                    <p class="mt-0 mb-0"><strong>Giá:</strong> <span><?php echo $value->price ?> tỷ</span></p>
+                                                    <p class="mt-0 mb-0"><strong>Hướng:</strong> KXD</p>
                                                 </dd>
                                             </dl>
                                         </li>
 
-<!--                                        --><?php //} ?>
+                                        <?php } ?>
 
-                                        <li class="" style="float: none; list-style: none; position: relative; width: 298px;"
+                                        <li class="d-none" style="float: none; list-style: none; position: relative; width: 298px;"
                                             class="bx-clone">
                                             <dl class="">
                                                 <dt>
@@ -235,7 +235,7 @@
                                                 </dd>
                                             </dl>
                                         </li>
-                                        <li class=""  style="float: none; list-style: none; position: relative; width: 298px;"
+                                        <li class="d-none" style="float: none; list-style: none; position: relative; width: 298px;"
                                             class="bx-clone">
                                             <dl class=" _vip">
                                                 <dt>
@@ -257,7 +257,7 @@
                                                 </dd>
                                             </dl>
                                         </li>
-                                        <li class=""  style="float: none; list-style: none; position: relative; width: 298px;"
+                                        <li class="d-none" style="float: none; list-style: none; position: relative; width: 298px;"
                                             class="bx-clone">
                                             <dl class="">
                                                 <dt>
