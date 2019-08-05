@@ -181,7 +181,7 @@
                         <div>
                             <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
 <!--                                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 2520px;">-->
-                                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative;">
+<!--                                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative;">-->
                                     <ul class="vip_slider"
                                         style="width: auto; position: relative; transition-duration: 0s; transform: translate3d(0px, -2520px, 0px);">
 
@@ -278,14 +278,15 @@
                                                 </dd>
                                             </dl>
                                         </li>
+
                                     </ul>
-                                </div>
-                                <div class="bx-controls bx-has-controls-direction">
-                                    <div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a
-                                                class="bx-next"
-                                                href="">Next</a>
-                                    </div>
-                                </div>
+<!--                                </div>-->
+<!--                                <div class="bx-controls bx-has-controls-direction">-->
+<!--                                    <div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a-->
+<!--                                                class="bx-next"-->
+<!--                                                href="">Next</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -447,13 +448,23 @@
 <script type="text/javascript">
     $(document).ready(function() {
 
-        $('.vip_slider').bxSlider({
+        var slider= $('.vip_slider').bxSlider({
             mode: 'vertical',
             auto: true,
             minSlides: 30,
             maxSlides: 30,
             moveSlides: 1,
             pager: false
+        });
+
+        $('.bx-next').click(function(){
+            slider.goToNextSlide();
+            return false;
+        });
+
+        $('.bx-prev').click(function(){
+            slider.goToPrevSlide();
+            return false;
         });
 
     });
