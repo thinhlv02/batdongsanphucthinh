@@ -434,8 +434,8 @@ Class Home extends MY_Controller
 
     function ajax_book()
     {
-//        echo 'aaaaaaaaa';
-//        die;
+        echo 'aaaaaaaaa';
+        die;
 //        $server_cf = $this->_func_lst_server();
 //        $server_name = $server_cf[$this->input->post('server')]['main'];
         $province = $this->input->get('province');
@@ -480,6 +480,45 @@ Class Home extends MY_Controller
         $this->load->view('site/home/view_list_search', $this->data);
 //        $this->load->view($this->_template_f . 'tktaikhoan/view_book_table', $this->data);
 
+    }
+
+    // tìm kiếm
+    function search()
+    {
+        //province=9&district=0&ward=0
+//        echo 'search';
+//        die;
+        $province = $this->input->get('province');
+        $district = $this->input->get('district');
+        $ward = $this->input->get('ward');
+//        echo $province;
+//        die;
+        $per_page = 10;
+        $offset = $this->uri->segment(2);
+        $offset = intval($offset);
+        $input = array();
+//        $input['where'] = array('highlight' => 0);
+        $total = $this->news_model->get_total($input);
+        $paginator = config_pagination($per_page, 2, $total, base_url('tin-tuc'));
+
+        if ($offset >= 1) {
+            $offset -= 1;
+            $offset = $offset * $per_page;
+        }
+
+        $input['limit'] = array($per_page, $offset);
+        $news = $this->ads_model->get_list($input);
+
+        $highlight = $this->news_model->get_list(array('where' => array('highlight' => 1)));
+
+        $this->data['paginator'] = $paginator;
+        $this->data['news'] = $news;
+        $this->data['highlight'] = $highlight;
+
+        $this->data['li_6'] = 1;
+        $this->data['news'] = $news;
+        $this->data['temp'] = 'site/pages/search';
+        $this->load->view('site/layout/layout', $this->data);
     }
 
 }

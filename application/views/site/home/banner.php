@@ -22,7 +22,7 @@
 
 <!--                        <form id="formAddProduct_book" method="post" enctype="multipart/form-data">-->
 
-                        <form id="formAddProduct_book" data-parsley-validate class="" method="post"
+                        <form id="formAddProduct_book12" data-parsley-validate class="" method="get" action="<?php echo base_url('tim-kiem') ?>"
                                   enctype="multipart/form-data">
                             <!--                <div class="form-group">-->
                             <!--                    <label for="email">Mã tin:</label>-->
@@ -260,11 +260,11 @@
         e.preventDefault();
         // console.log('abc');
         // var data = $("#formAddProduct_book").serialize() + '&userid=' + userid+ '&server='+server;
-        var data = $("#formAddProduct_book").serialize();
-        console.log('data submit ' + data);
+        var params = $("#formAddProduct_book").serialize();
+        console.log('data submit11111111 ' + params);
 
         var _onSuccess = function (data) {
-            // console.log(data);
+            console.log(data);
             if (data == 'NOT_LOGIN') {
 
             } else if (data === 'false') {
@@ -275,7 +275,10 @@
             }
         };
 
-        getAjax('<?php echo base_url('home/ajax_book') ?>', data, 'POST','',false, _onSuccess);
+        getAjax('<?php echo base_url('home/ajax_book') ?>', params, 'POST','',false, _onSuccess);
+
+        //getAjax('<?php //echo admin_url('ads/ajax_get_list_ward'); ?>//', params, '', 'GET', '', false, _onSuccess);
+
 
     });
 

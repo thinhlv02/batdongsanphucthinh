@@ -71,6 +71,7 @@ $route['chinh-sach-bao-mat(.html)?'] = 'home/privacy';
 $route['lien-he(.html)?'] = 'home/contact';
 $route['download(.html)?'] = 'home/download';
 $route['tin-tuc(.html)?'] = 'home/news';
+$route['tim-kiem(.html)?'] = 'home/search';
 $route['tin-tuc/(:num)'] = 'home/news/$1';
 $route['tin-tuc/(:any)-(:num)(.html)?'] = 'home/news_detail/$1/$2';
 
