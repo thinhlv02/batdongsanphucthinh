@@ -147,62 +147,6 @@
 </section>
 
 <script>
-    function get_district(sel) {
-        var id = sel.value;
-        console.log(id);
-        if (id == 0) {
-            $('#selectDistrict').empty();
-            $('#selectWard').empty();
-            $('#selectStreet').empty();
-        } else {
-            // ajax
-            var params = {
-                'id': id
-            };
-
-            // console.log(params);
-            var _onSuccess = function (data) {
-                // console.log(data);
-                if (data == 'NOT_LOGIN') {
-                    window.location.reload(true);
-                } else if (data === 'false') {
-
-                } else {
-                    // console.log(data);
-                    $("#divDistrict").html(data);
-                }
-            };//
-
-            getAjax('<?php echo base_url('home/ajax_get_list_district'); ?>', params, '', 'GET', '', false, _onSuccess);
-        }
-    }
-
-    function get_ward(sel) {
-        var id = sel.value;
-        console.log(id);
-        if (id == 0) {
-            $('#selectWard').empty();
-            $('#selectStreet').empty();
-        } else {
-            var params = {
-                'id': id
-            };
-
-            var _onSuccess = function (data) {
-                // console.log(data);
-                if (data == 'NOT_LOGIN') {
-
-                } else if (data === 'false') {
-
-                } else {
-                    $("#divWard").html(data);
-                }
-            };
-
-            getAjax('<?php echo base_url('home/ajax_get_list_ward'); ?>', params, '', 'GET', '', false, _onSuccess);
-        }
-    }
-
     //search submit
     $("#formAddProduct_book").submit(function (e) {
         //prevent Default functionality

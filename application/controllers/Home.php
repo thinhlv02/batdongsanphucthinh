@@ -485,6 +485,7 @@ Class Home extends MY_Controller
     // tìm kiếm
     function search()
     {
+        $lstProvince = $this->_province;
         //province=9&district=0&ward=0
 //        echo 'search';
 //        die;
@@ -517,7 +518,7 @@ Class Home extends MY_Controller
         $this->data['highlight'] = $highlight;
 
         $this->data['li_6'] = 1;
-//        $this->data['news'] = $news;
+        $this->data['lstProvince'] = $lstProvince;
         $this->data['temp'] = 'site/pages/search';
         $this->load->view('site/layout/layout', $this->data);
     }
