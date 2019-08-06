@@ -17,7 +17,7 @@
         <div class="clearfix"></div>
     </div>
     <div class="x_content">
-        <table id="datatable-news" class="table table-striped table-bordered bulk_action">
+        <table id="datatable-product" class="table table-striped table-bordered bulk_action">
             <thead>
             <tr>
                 <th>Mã số</th>
