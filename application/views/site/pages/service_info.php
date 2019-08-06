@@ -2,7 +2,7 @@
     <div class="container">
         <div class="col-sm-4 col-md-3">
             <div class="left-menu">
-                <div class="left-title">Dịch vụ</div>
+                <div class="left-title">Giới thiệu Website</div>
                 <ul>
                     <?php foreach ($products as $p) { ?>
                         <li>
