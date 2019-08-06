@@ -6,8 +6,8 @@
                 <div class="left-title">Hỗ trợ</div>
                 <ul>
                     <li><a href="<?php echo base_url('ho-tro')?>">Khách hàng</a></li>
-                    <li><a href="<?php echo base_url('ho-tro/ky-thuat-vien')?>">Nhân viên thị trường</a></li>
-                    <li><a href="<?php echo base_url('ho-tro/cong-tac-vien')?>">Cộng tác viên kinh doanh</a></li>
+                    <li><a href="<?php echo base_url('ho-tro/ky-thuat-vien')?>">Kỹ thuật viên</a></li>
+                    <li><a href="<?php echo base_url('ho-tro/cong-tac-vien')?>">Cộng tác viên</a></li>
                 </ul>
             </div>
         </div>
