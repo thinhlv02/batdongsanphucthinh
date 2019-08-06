@@ -320,9 +320,14 @@ class MY_Model extends CI_Model
             $this->db->or_where($input['or_where']);
         }
         //tim kiem like
-        // $input['like'] = array('name' => 'abc');
+        // $input['like'] = array('name' , 'abc');
         if ((isset($input['like'])) && $input['like']) {
             $this->db->like($input['like'][0], $input['like'][1]);
+        }
+
+        // or like
+        if ((isset($input['or_like'])) && $input['or_like']) {
+            $this->db->or_like($input['or_like'][0], $input['or_like'][1]);
         }
 
         // Thêm sắp xếp dữ liệu thông qua biến $input['order']

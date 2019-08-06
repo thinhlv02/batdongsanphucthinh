@@ -288,7 +288,7 @@ Class Home extends MY_Controller
         $this->data['ads'] = $ads;
 
 //        $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
-        $highlight = $this->ads_model->get_list(array('limit' => array('10','0')));
+        $highlight = $this->ads_model->get_list(array('limit' => array('10', '0')));
         $this->data['highlight'] = $highlight;
 
 //        $this->data['title'] = $ads->document_title;
@@ -351,7 +351,8 @@ Class Home extends MY_Controller
         $this->load->view("site/layout/sitemap", $this->data);
     }
 
-    function update_view() {
+    function update_view()
+    {
 
         $id = $this->input->get('id');
         $ads = $this->ads_model->get_info($id);
@@ -364,7 +365,7 @@ Class Home extends MY_Controller
 //            var_dump($id. '-----');
 //            var_dump($dataSubmit);
             $this->ads_model->update($id, $dataSubmit);
-            echo $id.'=>'.$view_new;
+            echo $id . '=>' . $view_new;
         } else {
             echo 'not update';
         }
@@ -385,7 +386,6 @@ Class Home extends MY_Controller
 //        $selected = $this->input->post('selected');
 
         //get list tbl_gift_item_info_by_type
-
 
 
         $lst_district = $this->district_model->get_list(array('where' => array('_province_id' => $id)));
@@ -421,7 +421,7 @@ Class Home extends MY_Controller
 
         $lst_ward_end = [];
         foreach ($lst_ward as $k => $value) {
-            $lst_ward_end[$value->id]['id'] = $value->id.'|'.$value->_district_id;
+            $lst_ward_end[$value->id]['id'] = $value->id . '|' . $value->_district_id;
             $lst_ward_end[$value->id]['_name'] = $value->_name;
         }
 //        pre_arr($lst_ward_end);
@@ -502,7 +502,8 @@ Class Home extends MY_Controller
 //        $offset = intval($offset);
         $input = array();
 //        $input['where'] = array('highlight' => 0);
-//          $input['like'] = array('phone' => $code);
+        $input['like'] = array('code', $code);
+        $input['or_like'] = array('phone', $code);
 //          pre($input);
 //        $total = $this->news_model->get_total($input);
 //        $paginator = config_pagination($per_page, 2, $total, base_url('tin-tuc'));
