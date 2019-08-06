@@ -2,8 +2,8 @@
 <div class="row col-md-3 col-sm-6 col-xs-12">
     <select class="form-control" id="slType">
         <option value="1">Khách hàng</option>
-        <option value="2">Kỹ thuật viên</option>
-        <option value="3">Cộng tác viên</option>
+        <option value="2">Nhân viên thị trường</option>
+        <option value="3">Cộng tác viên kinh doanh</option>
     </select>
 </div>
 
