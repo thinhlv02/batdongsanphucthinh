@@ -15,9 +15,8 @@
             </div>
         </div>
         <div class="col-md-9 col-sm-8 detail-content">
-            <div class="card">
+            <div class="card line-height-2">
                 <div class="card-body">
-
 
                     <?php if (isset($product)) { ?>
                         <h2><?php echo $product->name ?></h2>
