@@ -14,27 +14,45 @@ Class Money_lost extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
-        $input = array();
-        $input['order'] = array('id', 'desc');
-        $money_lost = $this->money_lost_model->get_list($input);
+        if ($this->input->post('btnAddSearch')) {
+            $from = date('Y-m-d', strtotime($this->input->post('txtFrom')));
+            $to = date('Y-m-d', strtotime($this->input->post('txtTo')));
+            $input = [];
+            $input['where'] = array(
+                'created_at >=' => $from,
+                'created_at <=' => $to
+            );
 
-        $money_lost_end = [];
-        $index = 0;
-        foreach ($money_lost as $key => $val) {
-            $index++;
-            $money_lost_end[$index] = new stdClass();
-            $money_lost_end[$index]->id = $val->id;
-            $money_lost_end[$index]->name = $val->name;
-            $money_lost_end[$index]->price = $val->price;
-            $money_lost_end[$index]->description = $val->description;
-            $money_lost_end[$index]->created_by = $val->created_by;
-            $money_lost_end[$index]->created_at = $val->created_at;
-//            $money_lost_end[$key]->id = $val->id;
+            $input['order'] = array('id', 'desc');
+
+            $money_lost_end = $this->money_lost_model->get_list($input);
+//            pre($lstvip);
+//            die();
+//        }
+
+            $this->data['money_lost'] = $money_lost_end;
         }
+
+//        $input = array();
+//        $input['order'] = array('id', 'desc');
+//        $money_lost = $this->money_lost_model->get_list($input);
+
+//        $money_lost_end = [];
+//        $index = 0;
+//        foreach ($money_lost as $key => $val) {
+//            $index++;
+//            $money_lost_end[$index] = new stdClass();
+//            $money_lost_end[$index]->id = $val->id;
+//            $money_lost_end[$index]->name = $val->name;
+//            $money_lost_end[$index]->price = $val->price;
+//            $money_lost_end[$index]->description = $val->description;
+//            $money_lost_end[$index]->created_by = $val->created_by;
+//            $money_lost_end[$index]->created_at = $val->created_at;
+////            $money_lost_end[$key]->id = $val->id;
+//        }
 //        echo '<pre>',print_r($money_lost_end,1),'</pre>';
 
-        $this->data['money_lost'] = $money_lost_end;
-        $this->data['device_type'] = $this->_device_type;
+//        $this->data['money_lost'] = $money_lost_end;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/money_lost/index';
         $this->data['view'] = 'admin/money_lost/list';

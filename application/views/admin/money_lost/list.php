@@ -1,3 +1,51 @@
+<!--form-->
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_content">
+                <br/>
+                <form id="formAddProduct" data-parsley-validate class="form-horizontal form-label-left" method="post"
+                      enctype="multipart/form-data">
+                    <div class="form-group">
+
+                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Bắt đầu<span
+                                    class="required">*</span></label>
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <!--                <span style="float: left;margin-top: 7px">Từ ngày: </span>-->
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <input type="text" id="txtFrom" name="txtFrom" required
+                                       class="form-control col-md-7 col-xs-12"
+                                       value="<?php if (isset($_POST['txtFrom'])) echo $_POST['txtFrom'] ?>">
+                            </div>
+                        </div>
+
+                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">kết thúc<span
+                                    class="required">*</span></label>
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <!--                <span style="float: left;margin-top: 7px">Từ ngày: </span>-->
+
+                            <input type="text" id="txtTo" name="txtTo" required
+                                   class="form-control col-md-7 col-xs-12"
+                                   value="<?php if (isset($_POST['txtTo'])) echo $_POST['txtTo'] ?>">
+
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-0" style="width: 70px">
+                            <input type="submit" id="btnAddEvent" name="btnAddSearch" class="btn btn-success"
+                                   value="Tìm">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end form-->
+
 <div class="x_panel">
     <div class="x_title">
         <h2>Danh sách bài đăng</h2>
@@ -30,32 +78,39 @@
             </tr>
             </thead>
             <tbody>
-            <?php $sum = 0;
-            foreach ($money_lost as $row) {
-                $sum += $row->price;
-                ?>
-                <tr>
-                    <td><?php echo $row->id ?></td>
-                    <td><?php echo $row->name ?></td>
-                    <td><?php echo $row->description ?></td>
-                    <td><?php echo $row->price ? number_format($row->price) : ''; ?></td>
-                    <td><?php echo $row->created_by ?></td>
-                    <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
+            <?php
+            if (!empty($money_lost)) {
+                $sum = 0;
+                foreach ($money_lost as $row) {
+                    $sum += $row->price;
+                    ?>
+                    <tr>
+                        <td><?php echo $row->id ?></td>
+                        <td><?php echo $row->name ?></td>
+                        <td><?php echo $row->description ?></td>
+                        <td><?php echo $row->price ? number_format($row->price) : ''; ?></td>
+                        <td><?php echo $row->created_by ?></td>
+                        <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
 
-                    <td>
-                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/money_lost/edit/' . $row->id) ?>">Sửa</a>
-                        <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
-                    </td>
-                </tr>
-            <?php } ?>
+                        <td>
+                            <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/money_lost/edit/' . $row->id) ?>">Sửa</a>
+                            <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
+                        </td>
+                    </tr>
+                <?php }
+            } ?>
             </tbody>
-            <tfoot>
-            <tr class="bg-primary">
-                <td colspan="3">Tổng tiền</td>
-                <td><?php echo($sum > 0 ? number_format($sum) : '') ?></td>
-                <td colspan="3"></td>
-            </tr>
-            </tfoot>
+            <?php if (isset($money_lost)) { ?>
+
+                <tfoot>
+                <tr class="bg-primary">
+                    <td colspan="3">Tổng tiền</td>
+                    <td><?php echo($sum > 0 ? number_format($sum) : '') ?></td>
+                    <td colspan="3"></td>
+                </tr>
+                </tfoot>
+
+            <?php } ?>
         </table>
         <!-- <a href="#" class="btn btn-danger">Xóa đã chọn </a> -->
     </div>
