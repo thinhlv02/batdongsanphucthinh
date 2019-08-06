@@ -7,6 +7,8 @@ CKEDITOR.editorConfig = function (config) {
     // Define changes to default configuration here. For example:
     // config.language = 'fr';
     // config.uiColor = '#AADC6E';
+    // config.uiColor = '#AADC6E';
+    // config.uiColor = '#AADC6E';
 
     var duong_dan = '/public/scripts/';
     // var duong_dan = <?php echo $content->link?>;
