@@ -46,11 +46,14 @@ Class Money_lost extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
+            $created_at =  $this->input->post('created_at');
+            $created_at = date('Y-m-d', strtotime($created_at));
 
                 $data = array(
                     'name' => $this->input->post('txtName'),
                     'description' => $this->input->post('txtDes'),
                     'price' => $this->input->post('txtPrice'),
+                    'created_at' => $created_at,
                     'created_by' => $this->_uid
                 );
                 if ($this->money_lost_model->create($data)) {
@@ -79,9 +82,12 @@ Class Money_lost extends MY_Controller
         }
 
         if ($this->input->post('btnEdit')) {
+            $created_at =  $this->input->post('created_at');
+            $created_at = date('Y-m-d', strtotime($created_at));
             $data = array(
                 'name' => $this->input->post('txtName'),
                 'price' => $this->input->post('txtPrice'),
+                'created_at' => $created_at,
                 'description' => $this->input->post('txtDes'),
             );
 
