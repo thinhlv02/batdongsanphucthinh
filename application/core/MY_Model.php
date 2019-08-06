@@ -326,9 +326,9 @@ class MY_Model extends CI_Model
         }
 
         // or like
-        if ((isset($input['or_like'])) && $input['or_like']) {
-            $this->db->or_like($input['or_like'][0], $input['or_like'][1]);
-        }
+//        if ((isset($input['or_like'])) && $input['or_like']) {
+//            $this->db->or_like($input['or_like'][0], $input['or_like'][1]);
+//        }
 
         // Thêm sắp xếp dữ liệu thông qua biến $input['order']
         //(ví dụ $input['order'] = array('id','DESC'))
