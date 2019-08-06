@@ -502,8 +502,8 @@ Class Home extends MY_Controller
 //        $offset = intval($offset);
         $input = array();
 //        $input['where'] = array('highlight' => 0);
-        $input['like'] = array('code', $code);
-        $input['or_like'] = array('phone', $code);
+        $input['like'] = array('phone', $code);
+//        $input['or_like'] = array('phone', $code);
 //          pre($input);
 //        $total = $this->news_model->get_total($input);
 //        $paginator = config_pagination($per_page, 2, $total, base_url('tin-tuc'));
