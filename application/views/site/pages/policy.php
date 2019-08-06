@@ -11,7 +11,7 @@
         </div>
         <div class="col-md-9 col-sm-8 detail-content">
             <h2><?php echo $title ?></h2>
-            <div class="card">
+            <div class="card line-height-2">
                 <div class="card-body">
                     <?php echo $page_content ?>
                 </div>
