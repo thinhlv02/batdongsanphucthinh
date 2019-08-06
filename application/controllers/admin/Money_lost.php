@@ -10,7 +10,6 @@ Class Money_lost extends MY_Controller
 
     function index()
     {
-//        var_dump($this->_device_type);
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
@@ -26,33 +25,10 @@ Class Money_lost extends MY_Controller
             $input['order'] = array('id', 'desc');
 
             $money_lost_end = $this->money_lost_model->get_list($input);
-//            pre($lstvip);
-//            die();
-//        }
 
             $this->data['money_lost'] = $money_lost_end;
         }
 
-//        $input = array();
-//        $input['order'] = array('id', 'desc');
-//        $money_lost = $this->money_lost_model->get_list($input);
-
-//        $money_lost_end = [];
-//        $index = 0;
-//        foreach ($money_lost as $key => $val) {
-//            $index++;
-//            $money_lost_end[$index] = new stdClass();
-//            $money_lost_end[$index]->id = $val->id;
-//            $money_lost_end[$index]->name = $val->name;
-//            $money_lost_end[$index]->price = $val->price;
-//            $money_lost_end[$index]->description = $val->description;
-//            $money_lost_end[$index]->created_by = $val->created_by;
-//            $money_lost_end[$index]->created_at = $val->created_at;
-////            $money_lost_end[$key]->id = $val->id;
-//        }
-//        echo '<pre>',print_r($money_lost_end,1),'</pre>';
-
-//        $this->data['money_lost'] = $money_lost_end;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/money_lost/index';
         $this->data['view'] = 'admin/money_lost/list';
@@ -64,22 +40,22 @@ Class Money_lost extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
-            $created_at =  $this->input->post('created_at');
+            $created_at = $this->input->post('created_at');
             $created_at = date('Y-m-d', strtotime($created_at));
 
-                $data = array(
-                    'name' => $this->input->post('txtName'),
-                    'description' => $this->input->post('txtDes'),
-                    'price' => $this->input->post('txtPrice'),
-                    'created_at' => $created_at,
-                    'created_by' => $this->_uid
-                );
-                if ($this->money_lost_model->create($data)) {
-                    $this->session->set_flashdata('message', 'Thêmthành công');
-                    redirect(base_url('admin/money_lost'));
-                } else {
-                    $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
-                }
+            $data = array(
+                'name' => $this->input->post('txtName'),
+                'description' => $this->input->post('txtDes'),
+                'price' => $this->input->post('txtPrice'),
+                'created_at' => $created_at,
+                'created_by' => $this->_uid
+            );
+            if ($this->money_lost_model->create($data)) {
+                $this->session->set_flashdata('message', 'Thêmthành công');
+                redirect(base_url('admin/money_lost'));
+            } else {
+                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
+            }
 
         }
         $this->data['tab'] = 2;
@@ -100,7 +76,7 @@ Class Money_lost extends MY_Controller
         }
 
         if ($this->input->post('btnEdit')) {
-            $created_at =  $this->input->post('created_at');
+            $created_at = $this->input->post('created_at');
             $created_at = date('Y-m-d', strtotime($created_at));
             $data = array(
                 'name' => $this->input->post('txtName'),
@@ -134,6 +110,5 @@ Class Money_lost extends MY_Controller
         }
         redirect(base_url('admin/money_lost'));
     }
-
 
 }
