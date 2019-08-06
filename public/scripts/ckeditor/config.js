@@ -9,6 +9,9 @@ CKEDITOR.editorConfig = function (config) {
     // config.uiColor = '#AADC6E';
     // config.uiColor = '#AADC6E';
     // config.uiColor = '#AADC6E';
+    // config.uiColor = '#AADC6E';
+    // config.uiColor = '#AADC6E';
+    // config.uiColor = '#AADC6E';
 
     var duong_dan = '/public/scripts/';
     // var duong_dan = <?php echo $content->link?>;
