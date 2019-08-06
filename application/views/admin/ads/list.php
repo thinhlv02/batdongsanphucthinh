@@ -23,6 +23,7 @@
             <thead>
             <tr>
                 <th>Mã tin</th>
+                <th>SĐT</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
 <!--                <th>Giới thiệu</th>-->
@@ -47,7 +48,8 @@
             <tbody>
             <?php foreach ($ads as $row){ ?>
                 <tr>
-                    <td><?php echo $row->id?></td>
+                    <td><?php echo $row->id ?></td>
+                    <td><?php echo $row->phone; ?></td>
                     <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 80px"> </td>
                     <td>
                         <a href="<?php echo base_url('rao-vat/' . create_slug($row->title) . '-' . $row->id) ?>" target="_blank">
