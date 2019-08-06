@@ -100,7 +100,7 @@
                 <?php }
             } ?>
             </tbody>
-            <?php if (isset($money_lost)) { ?>
+            <?php if (!empty($money_lost)) { ?>
 
                 <tfoot>
                 <tr class="bg-primary">
