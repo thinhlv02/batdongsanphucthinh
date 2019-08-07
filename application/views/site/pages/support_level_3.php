@@ -28,9 +28,11 @@
                 </ul>
             </div>
         </div>
-        <div class="pl-5 col-md-9 col-sm-8 detail-content line-height-2">
-            <h2><?php echo $question->name?></h2>
-            <p><?php echo $question->content?></p>
+        <div class="col-md-9 col-sm-8 detail-content">
+            <div class="line-height-2 pl-5">
+                <h2><?php echo $question->name?></h2>
+                <p><?php echo $question->content?></p>
+            </div>
         </div>
     </div>
 </section>

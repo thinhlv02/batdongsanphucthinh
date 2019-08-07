@@ -11,16 +11,18 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9 col-sm-8 detail-content line-height-2 pl-5">
-            <ul>
-                <?php foreach ($categories as $p){ ?>
-                    <li style="margin: 15px 0">
-                        <a href="<?php echo base_url('ho-tro/'.create_slug($p->name).'-'.$p->id)?>">
-                            <?php echo $p->name?>
-                        </a>
-                    </li>
-                <?php }?>
-            </ul>
+        <div class="col-md-9 col-sm-8 detail-content">
+            <div class="line-height-2 pl-5">
+                <ul>
+                    <?php foreach ($categories as $p){ ?>
+                        <li style="margin: 15px 0">
+                            <a href="<?php echo base_url('ho-tro/'.create_slug($p->name).'-'.$p->id)?>">
+                                <?php echo $p->name?>
+                            </a>
+                        </li>
+                    <?php }?>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
