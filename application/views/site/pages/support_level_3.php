@@ -2,8 +2,8 @@
 <?php function getTextType($type){
     switch ($type){
         case 1: return "Khách hàng";
-        case 2: return "Kỹ thuật viên";
-        case 3: return "Cộng tác viên";
+        case 2: return "Nhân viên thị trường";
+        case 3: return "Cộng tác viên kinh doanh";
     }
 }?>
 
