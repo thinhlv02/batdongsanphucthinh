@@ -136,6 +136,7 @@ Class Home extends MY_Controller
 
     function detail_support($slug = "", $id = 0)
     {
+        $this->data['active'] = $id;
         $this->data['li_3'] = 1;
         if (strlen($slug) > 0 && $id > 0) {
             $question = $this->questions_model->get_info($id);
@@ -146,7 +147,7 @@ Class Home extends MY_Controller
             $this->data['categories'] = $categories;
             $this->data['type'] = $question->type;
 //            pre($question->type);
-            $this->data['active'] = $id;
+
             if ($question->level == 1) {
                 $questions = $this->questions_model->get_list(array('where' => array('parent_id' => $question->id), 'order' => array('id', 'asc')));
                 $this->data['questions'] = $questions;
