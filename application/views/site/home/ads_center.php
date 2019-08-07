@@ -16,12 +16,7 @@
                     <div class="col-md-2 col-sm-6 col-xs-12 item_ads _hot" onclick="updateView('<?php echo $value->id; ?>');">
                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                             <img style="width: 100%;height: 150px"
-                                 src="<?php
-                                 if(file_exists(public_url('images/ads/' . $value->img)) === FALSE || $value->img == null){
-                                     echo public_url('images/ads/' . 'default.png');
-                                 } else {
-                                     echo public_url('images/ads/' . $value->img);
-                                 } ?>"
+                                 src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                  alt="<?php echo $value->title ?>"></a>
                         <div class="icon_viphot">
                             <?php if ($value->icon_new == 1) { ?>

@@ -18,14 +18,7 @@
                                     <div class="col-md-4 col-sm-6 col-xs-12">
                                         <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>">
                                             <div class="item-news">
-                                                <div class="img-news" style="background-image: url(<?php
-                                                if(file_exists(public_url('images/ads/' . $value->img)) === FALSE || $value->img == null){
-                                                    echo public_url('images/ads/' . 'default.png');
-                                                } else {
-                                                    echo public_url('images/news/' . $value->img) ;
-                                                }
-
-                                                ?>)">
+                                                <div class="img-news" style="background-image: url(<?php echo public_url('images/news/' . $value->img) ?>)">
                                                     <div class="content-news">
                                                         <div>
                                                             <strong style="color: #fff"><?php echo $value->name ?></strong>
