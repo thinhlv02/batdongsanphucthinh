@@ -149,16 +149,18 @@ Class Home extends MY_Controller
             if ($question->level == 1) {
                 $questions = $this->questions_model->get_list(array('where' => array('parent_id' => $question->id), 'order' => array('id', 'asc')));
                 $this->data['questions'] = $questions;
-                $this->data['active'] = $id;
+//                $this->data['active'] = $id;
                 $this->data['temp'] = 'site/pages/support_level_2';
             } else {
                 $this->data['question'] = $question;
-                $this->data['active'] = $id;
+//                $this->data['active'] = $id;
                 $this->data['temp'] = 'site/pages/support_level_3';
             }
         } else {
             redirect(base_url('ho-tro.html'));
         }
+
+        $this->data['active'] = $id;
         $this->load->view('site/layout/layout', $this->data);
     }
 
