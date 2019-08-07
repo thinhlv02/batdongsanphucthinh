@@ -23,13 +23,18 @@
                                                 <!--                                <div class="box-img-thumb col-sm-3 col-md-3">-->
                                                 <div class="box-img-thumb" >
                                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                                        <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                                        <img src="<?php
+                                                        if(file_exists(public_url('images/ads/' . $value->img)) === FALSE || $value->img == null){
+                                                            echo public_url('images/ads/' . 'default.png');
+                                                        } else {
+                                                            echo public_url('images/ads/' . $value->img);
+                                                        } ?>"
                                                              alt="<?php echo $value->title ?>" style="max-height: 200px;
     width: 100%;">
                                                     </a>
                                                 </div>
                                                 <!--                                <div class="box-info-list col-sm-9 col-md-9">-->
-                                                <div class="box-info-list" style="display: none">
+                                                <div class="box-info-list d-none">
                                                     <div class="clearfix box-title-item">
                                                         <label class="label label-danger">NỔI BẬT</label>
                                                         <h3 class="sieu-vip-title">
@@ -110,7 +115,12 @@
 
                                                 <div class="box-img-thumb" style="width: 30%">
                                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                                        <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                                        <img src="<?php
+                                                        if(file_exists(public_url('images/ads/' . $value->img)) === FALSE || $value->img == null){
+                                                            echo public_url('images/ads/' . 'default.png');
+                                                        } else {
+                                                            echo public_url('images/ads/' . $value->img);
+                                                        } ?>"
                                                              alt="<?php echo $value->title ?>">
                                                     </a>
                                                 </div>
@@ -247,7 +257,12 @@
                                                 <!--                                <div class="box-img-thumb col-sm-3 col-md-3">-->
                                                 <div class="box-img-thumb" style="max-height: 175px">
                                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                                        <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                                        <img src="<?php
+                                                        if(file_exists(public_url('images/ads/' . $value->img)) === FALSE || $value->img == null){
+                                                            echo public_url('images/ads/' . 'default.png');
+                                                        } else {
+                                                        echo public_url('images/ads/' . $value->img);
+                                                        } ?>"
                                                              alt="<?php echo $value->title ?>">
                                                     </a>
                                                 </div>

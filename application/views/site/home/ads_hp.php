@@ -20,7 +20,12 @@
                                     <div class="row12 _vip_hot">
                                         <div class="col-xs-5 ltop2">
                                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
-                                                        src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                                        src="<?php
+                                                        if(file_exists(public_url('images/ads/' . $value->img)) === FALSE || $value->img == null){
+                                                            echo public_url('images/ads/' . 'default.png');
+                                                        } else {
+                                                            echo public_url('images/ads/' . $value->img) ;
+                                                        } ?>"
                                                         alt="<?php echo $value->title ?>"></a>
                                             <div class="code_row">PT-<?php echo $value->id . substr($value->code, 0, 3) ?></div>
                                         </div>
