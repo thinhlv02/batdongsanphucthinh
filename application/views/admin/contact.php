@@ -1,4 +1,6 @@
-<?php if (isset($message)){$this->load->view('admin/message',$this->data); }?>
+<?php if (isset($message)) {
+    $this->load->view('admin/message', $this->data);
+} ?>
 
 <div class="x_panel">
     <div class="x_title">
@@ -22,21 +24,23 @@
         <div class="row" style="margin-top: 10px">
             <form id="formAddCatalog" data-parsley-validate class="form-horizontal form-label-left" method="post">
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Số điện thoại <span class="required">*</span></label>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <input type="text" id="txtPhone" name="txtPhone" value="<?php echo $contact->phone?>" required="required" class="form-control col-md-7 col-xs-12">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Số điện thoại
+                        <span class="required">*</span></label>
+                    <div class="col-md-10 col-sm-10 col-xs-12">
+                        <input type="text" id="txtPhone" name="txtPhone" value="<?php echo $contact->phone ?>" required="required" class="form-control col-md-7 col-xs-12">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Email<span class="required">*</span></label>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <input type="text" id="txtEmail" name="txtEmail" value="<?php echo $contact->email?>" required="required" class="form-control col-md-7 col-xs-12">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
+                        <input type="text" id="txtEmail" name="txtEmail" value="<?php echo $contact->email ?>" required="required" class="form-control col-md-7 col-xs-12">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Địa chỉ <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="txtAddress" name="txtAddress" value="<?php echo $contact->address?>" required="required" class="form-control col-md-12 col-xs-12">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Địa chỉ
+                        <span class="required">*</span></label>
+                    <div class="col-md-10 col-sm-10 col-xs-12">
+                        <input type="text" id="txtAddress" name="txtAddress" value="<?php echo $contact->address ?>" required="required" class="form-control col-md-12 col-xs-12">
                     </div>
                 </div>
                 <div class="form-group" style="margin-top: 30px">

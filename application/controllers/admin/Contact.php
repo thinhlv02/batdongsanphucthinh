@@ -1,6 +1,9 @@
 <?php
-Class Contact extends MY_Controller {
-    function __construct() {
+
+Class Contact extends MY_Controller
+{
+    function __construct()
+    {
         parent::__construct();
         $this->load->model('contact_model');
     }
@@ -9,16 +12,16 @@ Class Contact extends MY_Controller {
     {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if($this->input->post('btnUpdateContact')){
+        if ($this->input->post('btnUpdateContact')) {
             $phone = $this->input->post('txtPhone');
             $address = $this->input->post('txtAddress');
 //            $zalo = $this->input->post('txtZalo');
             $email = $this->input->post('txtEmail');
-            if($phone && $address){
+            if ($phone && $address) {
                 $contact_submit = array(
                     'phone' => $phone,
-                    'address'=> $address,
-                    'email'=> $email,
+                    'address' => $address,
+                    'email' => $email,
                 );
                 $this->contact_model->update(1, $contact_submit);
                 $this->session->set_flashdata('message', 'Cập nhật thông tin thành công!');
