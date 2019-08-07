@@ -146,6 +146,7 @@ Class Home extends MY_Controller
             $this->data['categories'] = $categories;
             $this->data['type'] = $question->type;
 //            pre($question->type);
+            $this->data['active'] = $id;
             if ($question->level == 1) {
                 $questions = $this->questions_model->get_list(array('where' => array('parent_id' => $question->id), 'order' => array('id', 'asc')));
                 $this->data['questions'] = $questions;
@@ -160,7 +161,7 @@ Class Home extends MY_Controller
             redirect(base_url('ho-tro.html'));
         }
 
-        $this->data['active'] = $id;
+
         $this->load->view('site/layout/layout', $this->data);
     }
 
