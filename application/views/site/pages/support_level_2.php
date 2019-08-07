@@ -9,7 +9,7 @@
 <section class="detail">
     <div class="container">
         <ol class="breadcrumb">
-            <li><a href="<?php echo base_url('ho-tro')?>">Hỗ trợ</a></li>
+            <li><a href="<?php echo base_url('ho-tro')?>">Hỗ trợ2</a></li>
             <li class="active"><?php echo getTextType($type)?></li>
         </ol>
         <div class="col-sm-4 col-md-3">
@@ -17,7 +17,7 @@
                 <div class="left-title"><?php echo getTextType($type)?></div>
                 <ul>
                     <?php foreach ($categories as $p){ ?>
-                        <li style="margin: 15px 0">
+                        <li  class="<?php if ($p->id == $active) echo 'active'; ?>" style="margin: 15px 0">
                             <a href="<?php echo base_url('ho-tro/'.create_slug($p->name).'-'.$p->id)?>">
                                 <?php echo $p->name?>
                             </a>
