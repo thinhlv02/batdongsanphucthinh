@@ -129,7 +129,7 @@ Class Home extends MY_Controller
         $categories = $this->questions_model->get_list(array('where' => array('parent_id' => 0, 'type' => $type), 'order' => array('id', 'asc')));
 
         $this->data['categories'] = $categories;
-//        $this->data['type'] = $type;
+        $this->data['type'] = $type;
         $this->data['temp'] = 'site/pages/support_level_1';
         $this->load->view('site/layout/layout', $this->data);
     }
