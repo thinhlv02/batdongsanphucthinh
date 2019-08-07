@@ -1012,16 +1012,14 @@ span.item-date {
     /*transition: ease all 300ms;*/
 }
 
-.left-menu li:hover {
+.left-menu li:hover, .left-menu .active {
     padding-left: 10px;
     border-left: 5px solid #ccc;
 }
 
-.left-menu li:hover a {
+.left-menu li:hover a, .left-menu .active a {
     color: #5cb85c;
     text-decoration: none;
-    /*border-left: 5px solid #ccc;*/
-    /*padding-left: 10px;*/
 }
 
 .detail-content li {

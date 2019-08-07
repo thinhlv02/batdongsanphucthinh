@@ -110,6 +110,7 @@ Class Home extends MY_Controller
             }
         }
 
+        $this->data['active'] = $id;
         $this->data['temp'] = 'site/pages/service_info';
         $this->load->view('site/layout/layout', $this->data);
     }
