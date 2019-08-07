@@ -39,7 +39,6 @@
                             <li><a href="<?php echo admin_url('news') ?>">Tin Tức </a></li>
                             <li><a href="<?php echo admin_url('ads') ?>">Tin bán nhà đất</a></li>
                             <li><a href="<?php echo admin_url('devices') ?>">Thiết bị sử dụng</a></li>
-                            <li><a href="<?php echo admin_url('money_lost') ?>">Tiền tiêu hao</a></li>
                         </ul>
                     </li>
 
@@ -52,9 +51,10 @@
                         <li><a><i class="fa fa-book"></i>Quản lý chung<span class="fa fa-chevron-down"></span></a>
                             <ul class="nav child_menu">
                                 <li><a href="<?php echo admin_url('employees') ?>">Nhân viên </a></li>
-                                <li><a href="<?php echo admin_url('customers') ?>">Khách hàng</a></li>
+                                <li><a href="<?php echo admin_url('customers') ?>">Khách hàng việc làm</a></li>
                                 <li><a href="<?php echo admin_url('documents') ?>">Tài liệu</a></li>
                                 <li><a href="<?php echo admin_url('service_money') ?>">Tiền Kh nạp</a></li>
+                                <li><a href="<?php echo admin_url('money_lost') ?>">Tiền tiêu hao</a></li>
 <!--                                <li><a href="--><?php //echo admin_url('Upload_Files') ?><!--">Upload_Files</a></li>-->
 
                                 <li><a href="<?php echo admin_url('product') ?>">Giới thiệu dịch vụ</a></li>
