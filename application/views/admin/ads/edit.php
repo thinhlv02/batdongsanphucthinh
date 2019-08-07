@@ -149,7 +149,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Quận / Huyện<span
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divDistrict">
-<!--                        <select class="select2_group form-control" name="district" onchange="">-->
+<!--                        <select class="select2_group form-control" name="district">-->
                             <select class="select2_group form-control" name="district" id="selectDistrict" onchange="get_ward(this)">
 
                             <option value="0">Chọn Quận/Huyện</option>
@@ -168,7 +168,7 @@
                                 class="required">*</span></label>
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divWard">
-<!--                        <select class="select2_group form-control" name="ward" onchange="">-->
+<!--                        <select class="select2_group form-control" name="ward">-->
                         <select class="select2_group form-control" name="ward" id="selectWard" onchange="get_street(this)">
 
                         <option value="0">Chọn Xã/Phường</option>
