@@ -41,31 +41,25 @@
                                         <?php if ($value->icon_new == 1) { ?>
                                             <img src="<?php echo public_url('images/icon_new.gif') ?>"
                                                  alt="<?php echo $value->title ?>">
-
                                         <?php } ?>
 
                                         <?php if ($value->icon_vip == 1) { ?>
                                             <img src="<?php echo public_url('images/icon_vip.gif') ?>"
                                                  alt="<?php echo $value->title ?>">
-
                                         <?php } ?>
 
                                         <?php if ($value->icon_hot == 1) { ?>
-
                                             <img src="<?php echo public_url('images/icon_hot.gif') ?>"
                                                  alt="<?php echo $value->title ?>">
                                         <?php } ?>
                                     </div>
                                 </div>
-
                             <?php } ?>
-
                         </div>
 
                     </div>
                     <!--End two_cols-->
                 </div>
-
 
                 <div class="col-xs-3 right">
                     <!--Begin two_cols-->
@@ -73,14 +67,9 @@
                         <p class="title_box"><a href="/tin-vip.htm"><strong>TIN VIP</strong></a></p>
                         <div>
                             <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
-                                <!--                                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 2520px;">-->
-                                <!--                                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative;">-->
                                 <ul class="vip_slider"
                                     style="width: auto; position: relative; transition-duration: 0s; transform: translate3d(0px, -2520px, 0px);">
-
-                                    <?php
-                                    foreach ($layer_right as $key => $value) { ?>
-
+                                    <?php foreach ($layer_right as $key => $value) { ?>
                                         <li style="float: none; list-style: none; position: relative; width: 298px;"
                                             class="bx-clone">
                                             <dl class="">
@@ -109,7 +98,6 @@
                                     <?php } ?>
 
                                 </ul>
-                                <!--                                </div>-->
 
                             </div>
                             <div class="clearfix"></div>
@@ -128,7 +116,6 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-
         $('.vip_slider').bxSlider({
             mode: 'vertical',
             auto: true,
@@ -137,6 +124,5 @@
             moveSlides: 1,
             pager: false
         });
-
     });
 </script>
