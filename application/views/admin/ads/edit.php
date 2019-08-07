@@ -81,7 +81,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền <span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" id="" name="price" value="<?php echo $ads->price ?>" required="required"
+                        <input type="text" name="price" value="<?php echo $ads->price ?>" required="required"
                                class="form-control col-md-7 col-xs-12" placeholder="ví dụ : 1,2 tỷ / nền">
                     </div>
                 </div>
@@ -97,7 +97,7 @@
 <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Đơn vị<span-->
 <!--                                class="required">*</span></label>-->
                     <div class="col-md-2 col-sm-2 col-xs-12">
-                        <input type="text" id="" name="" required="required" value="m2"
+                        <input type="text" name="" required="required" value="m2"
                                class="form-control col-md-7 col-xs-12" placeholder="" readonly>
                     </div>
 
@@ -115,7 +115,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Khu vực<span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" id="" name="area" required="required" value="<?php echo $ads->area ?>"
+                        <input type="text" name="area" required="required" value="<?php echo $ads->area ?>"
                                class="form-control col-md-7 col-xs-12" placeholder="Địa chỉ tin rao vặt">
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">SĐT liên hệ<span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" id="" name="phone" required="required" value="<?php echo $ads->phone ?>"
+                        <input type="text" name="phone" required="required" value="<?php echo $ads->phone ?>"
                                class="form-control col-md-7 col-xs-12" placeholder="sđt liên hệ">
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Quận / Huyện<span
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divDistrict">
-<!--                        <select class="select2_group form-control" name="district" id="" onchange="">-->
+<!--                        <select class="select2_group form-control" name="district" onchange="">-->
                             <select class="select2_group form-control" name="district" id="selectDistrict" onchange="get_ward(this)">
 
                             <option value="0">Chọn Quận/Huyện</option>
@@ -168,7 +168,7 @@
                                 class="required">*</span></label>
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divWard">
-<!--                        <select class="select2_group form-control" name="ward" id="" onchange="">-->
+<!--                        <select class="select2_group form-control" name="ward" onchange="">-->
                         <select class="select2_group form-control" name="ward" id="selectWard" onchange="get_street(this)">
 
                         <option value="0">Chọn Xã/Phường</option>
@@ -192,7 +192,7 @@
                                 class="required">*</span></label>
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divStreet">
-                        <select class="select2_group form-control" name="street" id="">
+                        <select class="select2_group form-control" name="street">
                             <option value="0">-- Không có --</option>
 
                             <?php

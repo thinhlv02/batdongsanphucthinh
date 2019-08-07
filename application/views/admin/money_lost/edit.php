@@ -42,7 +42,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="number" id="" name="txtPrice" value="<?php echo $money_lost->price ?>" class="form-control col-md-7 col-xs-12" placeholder="Giá tiền">
+                        <input type="number" name="txtPrice" value="<?php echo $money_lost->price ?>" class="form-control col-md-7 col-xs-12" placeholder="Giá tiền">
                     </div>
                 </div>
 

@@ -18,7 +18,7 @@
 	</div>
 	<div class="x_content">
 		<?php if ($message){$this->load->view('admin/message',$this->data); }?>
-		<form id="" data-parsley-validate class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
+		<form data-parsley-validate class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
 			<div class="form-group">
 	        	<label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên hiển thị <span class="required">*</span></label>
 	        	<div class="col-md-4 col-sm-4 col-xs-12">

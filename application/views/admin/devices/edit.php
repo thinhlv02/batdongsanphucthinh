@@ -41,13 +41,13 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">IMEI <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="" name="imei" value="<?php echo $devices->imei ?>" class="form-control col-md-7 col-xs-12" placeholder="mã imei">
+                        <input type="text" name="imei" value="<?php echo $devices->imei ?>" class="form-control col-md-7 col-xs-12" placeholder="mã imei">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Loại <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <select name="type" id="" class="form-control col-md-12 col-xs-12">
+                        <select name="type" class="form-control col-md-12 col-xs-12">
 
                             <?php foreach ($device_type as $key => $value) { ?>
                                 <option value="<?= $key ?>" <?php if ($devices->type == $key) echo 'selected' ?>>
@@ -70,7 +70,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="number" id="" name="txtPrice" value="<?php echo $devices->price ?>" class="form-control col-md-7 col-xs-12" placeholder="Giá tiền">
+                        <input type="number" name="txtPrice" value="<?php echo $devices->price ?>" class="form-control col-md-7 col-xs-12" placeholder="Giá tiền">
                     </div>
                 </div>
 

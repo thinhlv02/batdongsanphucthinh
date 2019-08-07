@@ -35,14 +35,14 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">SĐT <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="" name="txtPhone" value="<?php echo $devices->phone ?>" class="form-control col-md-7 col-xs-12" placeholder="mã imei">
+                        <input type="text" name="txtPhone" value="<?php echo $devices->phone ?>" class="form-control col-md-7 col-xs-12" placeholder="mã imei">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Địa chỉ <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="" name="txtAddress" value="<?php echo $devices->address ?>" class="form-control col-md-7 col-xs-12"
+                        <input type="text" name="txtAddress" value="<?php echo $devices->address ?>" class="form-control col-md-7 col-xs-12"
                                placeholder="Địa chỉ">
                     </div>
                 </div>
