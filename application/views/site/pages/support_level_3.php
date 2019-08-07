@@ -28,7 +28,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9 col-sm-8 detail-content line-height-2 pl-5" style="border: none">
+        <div class="col-md-9 col-sm-8 detail-content line-height-2 pl-5">
             <h2><?php echo $question->name?></h2>
             <p><?php echo $question->content?></p>
         </div>
