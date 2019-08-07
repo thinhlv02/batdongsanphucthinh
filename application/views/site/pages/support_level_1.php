@@ -11,7 +11,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9 col-sm-8 detail-content">
+        <div class="col-md-9 col-sm-8 detail-content line-height-2 pl-5">
             <ul>
                 <?php foreach ($categories as $p){ ?>
                     <li style="margin: 15px 0">
