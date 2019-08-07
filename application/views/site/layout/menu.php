@@ -3,7 +3,7 @@
     <div class="logo">
         <a href="<?php echo base_url() ?>">
 
-        <img src="<?php echo public_url('images/logo.png')?>" style="">
+        <img src="<?php echo public_url('images/logo.png')?>">
         </a>
 <!--        <a href="--><?php //echo base_url()?><!--">Trao tiện ích, nhận tin yêu</a>-->
     </div>

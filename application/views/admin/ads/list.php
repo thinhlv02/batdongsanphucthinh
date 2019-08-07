@@ -78,7 +78,7 @@
                         <i id="ads_center-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->ads_center ? 'fa-toggle-on' : 'fa-toggle-off'?> text-success"
                            onclick="ads_center(<?php echo $row->id?>)"
-                           style=""
+
                         ></i>banner giữa
                     </td>
 

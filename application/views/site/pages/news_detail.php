@@ -2,7 +2,7 @@
     <div class="container">
         <!--        <div class="title-section"><h2>Tin tức</h2></div>-->
         <div class="row">
-            <div class="col-md-8 col-sm-12 col-xs-12" style="">
+            <div class="col-md-8 col-sm-12 col-xs-12">
                 <ol class="breadcrumb">
                     <li><a href="<?php echo base_url('tin-tuc') ?>">Tin tức</a></li>
                     <li class="active"><?php echo $news->name ?></li>

@@ -195,7 +195,7 @@
                     </div>
                     <div class="box-links-right">
                         <p><span style="font-size:12px"><span
-                                        style=""><strong>KHU VỰC MIỀN BẮC</strong></span></span>
+                                       ><strong>KHU VỰC MIỀN BẮC</strong></span></span>
                         </p>
                         <ul>
 

@@ -9,7 +9,7 @@
             <!--                        <div class="box-module">-->
             <!--                            <div class="bg-modul"><i class="glyphicon glyphicon-search"></i> Tìm kiếm</div>-->
             <!--                        </div>-->
-            <!--                        <div class="page-title text-center" style="">-->
+            <!--                        <div class="page-title text-center">-->
             <!--                            <h4 class="border-bottom">Chức năng tìm kiếm</h4>-->
             <!--                            <button type="button" class="btn btn-success">Thanh tìm kiếm <span class="badge"></span></button>-->
             <!--                        </div>-->

@@ -8,7 +8,7 @@
                     <li class="font16" style="color: #055699;
     text-transform: none;"><?php echo $ads->title ?></li>
                 </ol>
-                <div class="item-news-1" style="">
+                <div class="item-news-1">
                     <!--                <span>-->
                     <?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
                     <!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
@@ -51,7 +51,7 @@
 
                     <div class="col-md-8 col-sm-8">
 
-                        <div class="box-info" style="">
+                        <div class="box-info">
                             <div class="block">
                                 <div class="col-left"><b> Mã tin</b></div>
                                 <div class="col-right">
