@@ -1356,19 +1356,3 @@ button#myPageup {
 }
 
 /*page up top*/
-
-.icon_viphot {
-    position: absolute;
-    top: 1px;
-    left: 4px;
-}
-
-.gia-title strong {
-    font-size: 14px;
-    color: #319C00;
-}
-
-.body_hotLand_home .item .price, .lprice i {
-    color: #e40b00;
-    margin-right: 2px;
-}
