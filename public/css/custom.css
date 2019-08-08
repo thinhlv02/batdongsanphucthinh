@@ -24,6 +24,9 @@
    color: white !important;
 }
 
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
+
 .color-60 {
     color: #f60 !important;
 }
