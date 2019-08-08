@@ -13,10 +13,6 @@
 
                             <?php foreach ($ads_center as $key => $value) { ?>
                                 <div class="col-xs-6 top2 top2_up">
-                                    <div class="card overlay-warning">
-                                    <div class="card-body border-danger">
-
-
                                     <div class="row12 _vip_hot">
                                         <div class="col-xs-5 ltop2">
                                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
@@ -26,12 +22,12 @@
                                         </div>
 
                                         <div class="col-xs-7 rtop2">
-                                            <h4 class="card-title mt-0">
+                                            <h3>
                                                 <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                     <?php echo $value->title ?> </a>
                                                 <span></span>
-                                            </h4>
-                                            <div class="text-white"><?php echo $value->intro ?>
+                                            </h3>
+                                            <div><?php echo $value->intro ?>
                                             </div>
                                             <p>
                                                 <strong>DTMB:</strong> <?php echo $value->acreage ?> m2 -
@@ -57,8 +53,6 @@
                                                  alt="<?php echo $value->title ?>">
                                         <?php } ?>
                                     </div>
-                                </div>
-                                </div>
                                 </div>
                             <?php } ?>
                         </div>
