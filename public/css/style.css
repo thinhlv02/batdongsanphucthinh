@@ -1349,8 +1349,8 @@ span.item-date {
     color: white !important;
 }
 
-/*.carousel .carousel-control { visibility: hidden; }*/
-/*.carousel:hover .carousel-control { visibility: visible; }*/
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
 
 /*custom conntent glyphicon left and right*/
 .glyphicon-chevron-left:before {
