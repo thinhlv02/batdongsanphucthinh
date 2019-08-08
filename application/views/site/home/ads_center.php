@@ -3,8 +3,7 @@
 
         <div class="col-sm-12 col-md-12">
 
-<!--            <div class="row" style="border: 1px solid #dddddd">-->
-            <div class="row">
+            <div class="row" style="border: 1px solid #dddddd">
                 <div class="box-module">
                     <div class="bg-modul"><i class="glyphicon glyphicon-tag"></i> Bất động sản nổi bật</div>
                 </div>
