@@ -10,7 +10,7 @@
 
                 <?php foreach ($ads_center as $key => $value) { ?>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12 item_ads _hot" onclick="updateView('<?php echo $value->id; ?>');">
+                    <div class="col-md-3 col-sm-6 col-xs-12 item_ads _hot p-5" onclick="updateView('<?php echo $value->id; ?>');">
                         <div class="card">
                             <div class="card-body border-primary">
 
@@ -51,7 +51,7 @@
                                 <i class="fa fa-map-marker"></i>
                             <?php echo $value->province_name != '' ? $value->province_name : 'update...'; ?>
                             </div>
-                            <div class="col-xs-6 rprice">
+                            <div class="col-xs-6 rprice btn btn-primary">
                                 <?php echo $value->price ?>
                             </div>
                         </div>
