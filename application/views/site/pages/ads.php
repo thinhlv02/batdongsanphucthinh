@@ -7,7 +7,7 @@
                 <a href="<?php echo base_url('tin-tuc/' . create_slug($value->title) . '-' . $value->id) ?>">
                     <div class="item-news-1">
                         <div class="img-news-1">
-                            <img src="<?php echo public_url('images/news/' . $value->img) ?>">
+                            <img src="<?php echo public_url('images/ads/' . $value->img) ?>">
                         </div>
                         <div style="padding: 10px">
                             <h2 class="title-news-1"><?php echo $value->title ?></h2>
@@ -25,7 +25,7 @@
                         <div class="item-news-1">
                             <div class="row">
                                 <div class="img-news-1 col-md-6 col-sm-6 col-xs-12">
-                                    <img src="<?php echo public_url('images/news/' . $value->img) ?>">
+                                    <img src="<?php echo public_url('images/ads/' . $value->img) ?>">
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <div style="margin: 10px">
@@ -42,7 +42,7 @@
                     <a href="<?php echo base_url('tin-tuc/' . create_slug($value->title) . '-' . $value->id) ?>">
                         <div class="item-news-1">
                             <div class="img-news-1">
-                                <img src="<?php echo public_url('images/news/' . $value->img) ?>">
+                                <img src="<?php echo public_url('images/ads/' . $value->img) ?>">
                             </div>
                             <div style="padding: 10px">
                                 <h2 class="title-news-1"><?php echo $value->title ?></h2>
