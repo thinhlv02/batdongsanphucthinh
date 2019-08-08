@@ -50,7 +50,7 @@
                     </div>
 
                     <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <a class="left carousel-control mt-0" href="#myCarousel" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                         <span class="sr-only">Previous</span>
                     </a>
@@ -106,7 +106,7 @@
                     </div>
 
                     <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarouse2" data-slide="prev">
+                    <a class="left carousel-control mt-0" href="#myCarouse2" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                         <span class="sr-only">Previous</span>
                     </a>

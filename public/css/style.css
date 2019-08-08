@@ -1304,10 +1304,14 @@ span.item-date {
 
 .carousel-control span {
     /*background-color: green;*/
+    background-color: rgba(0,0,0,.3);
     /*border-radius: 50%;*/
-    /*width: 50px !important;*/
-    /*height: 50px !important;*/
-    /*line-height: 50px;*/
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 50px !important;
+    height: 50px !important;
+    line-height: 50px;
     /*right: 10px !important;*/
 }
 
@@ -1323,6 +1327,29 @@ span.item-date {
 .carousel-indicators .active {
     background-color: #159C40;
 }
+
+
+.carousel-caption {
+    /*left: 0% !important;*/
+    /*right: 0% !important;*/
+    /*background: black !important;*/
+
+    left: 0% !important;
+    right: 0% !important;
+    background: #5caceb !important;
+    bottom: 0%;
+    text-align: left;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-left: 2% !important;
+}
+
+.carousel-caption a {
+    color: white !important;
+}
+
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
 
 .item-agency {
     margin-bottom: 20px;
