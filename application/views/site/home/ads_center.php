@@ -42,7 +42,7 @@
                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a>
                         </h3>
 
-                        <p><?php echo $value->intro ?></p>
+                        <p style="height: 72px !important;"><?php echo $value->intro ?></p>
                         <div class="row area gia-title">
                             <div class="col-xs-12 larea">Diện Tích: <strong><?php echo $value->acreage ?> m<sup>2</sup></strong></div>
                         </div>
