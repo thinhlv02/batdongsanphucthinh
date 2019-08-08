@@ -85,7 +85,7 @@
                                 <div class="col-right">Bán đất</div>
                             </div>
                             <div class="block">
-                                <div class="col-left"><b>Khu vực:</b></div>
+                                <div class="col-left"><b>Địa chỉ:</b></div>
                                 <div class="col-right"><?php echo $ads->area ?></div>
                             </div>
                             <div class="block">
@@ -168,7 +168,7 @@
 
             <div class="row" style="display: none">
                 <div class="col-md-12  col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
-                    <div class="left-title">Nổi bật cùng chuyên mục</div>
+                    <div class="left-title">Các tin liên quan</div>
                     <?php foreach ($highlight as $key => $value) {
                         if ($ads->id != $value->id) {
                             ?>
@@ -200,7 +200,7 @@
             </div>
 
             <div class="col-md-3 col-sm-12 col-xs-12 mt-2" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
-                <div class="left-title">Nổi bật cùng chuyên mục</div>
+                <div class="left-title">Các tin liên quan</div>
                 <?php foreach ($highlight as $key => $value) {
                     if ($ads->id != $value->id) {
                         ?>
