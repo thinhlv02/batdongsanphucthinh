@@ -17,3 +17,11 @@
 .card-title a {
     color: #464855 !important;
 }
+
+.breadcrumb {
+    padding: 5px 4px !important;
+    margin-bottom: 5px !important;
+    /* list-style: none !important; */
+    /* background-color: #f5f5f5 !important; */
+    /* border-radius: 4px !important; */
+}

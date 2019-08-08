@@ -261,7 +261,7 @@ Class Home extends MY_Controller
         $offset = $this->uri->segment(2);
         $offset = intval($offset);
         $input = array();
-        $input['where'] = array('highlight' => 0);
+//        $input['where'] = array('highlight' => 0);
         $total = $this->ads_model->get_total($input);
         $paginator = config_pagination($per_page, 2, $total, base_url('rao-vat'));
 
@@ -273,7 +273,7 @@ Class Home extends MY_Controller
         $input['limit'] = array($per_page, $offset);
         $news = $this->ads_model->get_list($input);
 
-        $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
+        $highlight = $this->ads_model->get_list();
 
         $this->data['paginator'] = $paginator;
         $this->data['ads'] = $news;

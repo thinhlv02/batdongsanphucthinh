@@ -1,14 +1,26 @@
 <section class="contact">
     <div class="container">
         <div class="row">
-            <!--        <div class="title-section"><h2>Chi tiết bài rao</h2></div>-->
             <div class="col-md-9 col-sm-12 col-xs-12 mt-2">
-                <ol class="breadcrumb">
-                    <!--                <li><a href="--><?php //echo base_url('rao-vat') ?><!--">Rao vặt</a></li>-->
-                    <li class="font16" style="color: #055699;
-    text-transform: none;"><?php echo $ads->title ?></li>
-                </ol>
-                <div class="item-news-1">
+            <div class="card">
+            <div class="card-body pt-0 ">
+<!--                <ol class="breadcrumb">-->
+<!--                    <li class="font16" style="color: #055699;-->
+<!--    text-transform: none;">--><?php //echo $ads->title ?><!--</li>-->
+<!--                </ol>-->
+
+                <div class="breadcrumb-wrapper col-12">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="<?php echo base_url() ?>">Trang chủ</a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="<?php echo base_url('rao-vat') ?>">Rao vặt</a>
+                        </li>
+                        <li class="breadcrumb-item active"><?php echo $ads->title ?>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="">
                     <!--                <span>-->
                     <?php //echo date('d/m/Y', strtotime($ads->created_at)) ?><!--</span>-->
                     <!--                <h3 class="title-news-1 text-info">--><?php //echo $ads->title ?><!--</h3>-->
@@ -55,14 +67,14 @@
                             <div class="block">
                                 <div class="col-left"><b> Mã tin</b></div>
                                 <div class="col-right">
-                                        <?php
-                                        echo $ads->id .substr($ads->code,0,3);
-                                        //                                    if ($ads->code == 0) {
-                                        //                                        echo generateRandomString(6);
-                                        //                                    } else {
-                                        //                                        echo $ads->code;
-                                        //                                    } ?>
-                                    </div>
+                                    <?php
+                                    echo $ads->id . substr($ads->code, 0, 3);
+                                    //                                    if ($ads->code == 0) {
+                                    //                                        echo generateRandomString(6);
+                                    //                                    } else {
+                                    //                                        echo $ads->code;
+                                    //                                    } ?>
+                                </div>
                             </div>
                             <div class="block">
                                 <div class="col-left"><b> Lượt xem</b></div>
@@ -150,6 +162,8 @@
 
                 </div>
 
+            </div>
+            </div>
             </div>
 
             <div class="row" style="display: none">
