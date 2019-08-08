@@ -58,7 +58,13 @@
     margin: 10px 0;
 }
 
-.body_hotLand_home, .item_ads > p {
+.body_hotLand_home, .item_ads>p {
+    line-height: 18px;
+    height: 72px;
+    overflow: hidden;
+}
+
+.item_ads>p {
     line-height: 18px;
     height: 72px;
     overflow: hidden;
