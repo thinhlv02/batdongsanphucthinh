@@ -28,10 +28,10 @@
 }
 
 .body_hotLand_home .item_ads .price, .rprice {
-    text-align: center;
-    background: #e40b00;
-    line-height: 30px;
-    color: #fff;
+    /*text-align: center;*/
+    /*background: #e40b00;*/
+    /*line-height: 30px;*/
+    /*color: #fff;*/
 }
 
 .body_hotLand_home, .item_ads, ._hot {
