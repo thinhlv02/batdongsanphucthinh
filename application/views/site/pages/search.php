@@ -72,8 +72,6 @@
                     <?php foreach ($lstSearch as $key => $value) { ?>
 
                     <div class="col-xs-4 item">
-                    <div class="card">
-                    <div class="card-body border-primary">
                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
                                     src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                     alt="<?php echo $value->title ?>"></a>
@@ -99,8 +97,6 @@
                             </div>
                         </div>
 
-                    </div>
-                    </div>
                     </div>
 
                     <?php } ?>
