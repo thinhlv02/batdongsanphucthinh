@@ -11,7 +11,7 @@
                 <?php foreach ($ads_center as $key => $value) { ?>
 
                     <div class="col-md-3 col-sm-6 col-xs-12 item_ads _hot p-5" onclick="updateView('<?php echo $value->id; ?>');">
-                        <div class="card">
+                        <div class="card mb-1">
                             <div class="card-body border-primary">
 
 
