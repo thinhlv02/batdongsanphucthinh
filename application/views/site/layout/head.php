@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="<?php echo base_url('public/css/jquery.bxslider.css'); ?>">
 <link rel="stylesheet" href="<?php echo base_url('public/css/hp.css'); ?>">
 <link rel="stylesheet" href="<?php echo base_url('public/css/colors.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('public/css/bootstrap-extended.css'); ?>">
 
 <!--thinhlv add css-->
 <link href="<?php echo base_url('public/css/responsive.css'); ?>" rel="stylesheet">
