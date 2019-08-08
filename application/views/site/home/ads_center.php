@@ -3,7 +3,8 @@
 
         <div class="col-sm-12 col-md-12">
 
-            <div class="row" style="border: 1px solid #dddddd">
+<!--            <div class="row" style="border: 1px solid #dddddd">-->
+            <div class="row">
                 <div class="box-module">
                     <div class="bg-modul"><i class="glyphicon glyphicon-tag"></i> Bất động sản nổi bật</div>
                 </div>
@@ -11,7 +12,7 @@
                 <?php foreach ($ads_center as $key => $value) { ?>
 
                     <div class="col-md-3 col-sm-6 col-xs-12 item_ads _hot p-5" onclick="updateView('<?php echo $value->id; ?>');">
-                        <div class="card mb-1">
+                        <div class="card mb-0">
                             <div class="card-body border-primary">
 
 
