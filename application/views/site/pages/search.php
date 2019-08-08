@@ -100,8 +100,8 @@
                         <p><?php echo $value->intro ?></p>
 
                         <div class="row area">
-                            <div class="col-xs-6 larea">DTMB: 43 m2</div>
-                            <div class="col-xs-6 rarea">DTSD: 43 m2</div>
+                            <div class="col-xs-6 larea">Diện Tích: <?php echo $value->acreage ?> m2</div>
+
                         </div>
 
                         <div class="row12 price">
