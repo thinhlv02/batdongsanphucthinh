@@ -12,7 +12,7 @@
                         <div class="row12 body_top2_box">
 
                             <?php foreach ($ads_center as $key => $value) { ?>
-                                <div class="col-xs-6 top2 top2_up pb-2">
+                                <div class="col-xs-6 top2 top2_up">
                                     <div class="row12 _vip_hot border-danger p-2">
                                         <div class="col-xs-5 ltop2">
                                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
