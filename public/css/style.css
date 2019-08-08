@@ -212,6 +212,7 @@ a:hover {
     color: #fff;
     display: block;
     font-size: 18px;
+    left: 16px !important;
 }
 
 .right-1 {
@@ -1309,10 +1310,10 @@ span.item-date {
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    width: 50px !important;
-    height: 50px !important;
-    line-height: 50px;
-    /*right: 10px !important;*/
+    width: 46px !important;
+    height: 40px !important;
+    line-height: 40px;
+    right: 16px !important;
 }
 
 .carousel-inner > .item.active, .carousel-inner > .item.next.left {
@@ -1348,9 +1349,17 @@ span.item-date {
     color: white !important;
 }
 
-.carousel .carousel-control { visibility: hidden; }
-.carousel:hover .carousel-control { visibility: visible; }
+/*.carousel .carousel-control { visibility: hidden; }*/
+/*.carousel:hover .carousel-control { visibility: visible; }*/
 
+/*custom conntent glyphicon left and right*/
+.glyphicon-chevron-left:before {
+    content: "\e257";
+}
+
+.glyphicon-chevron-right:before {
+    content: "\e258";
+}
 .item-agency {
     margin-bottom: 20px;
     padding-top: 70px;
