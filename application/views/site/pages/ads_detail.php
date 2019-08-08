@@ -13,8 +13,8 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="<?php echo base_url() ?>">Trang chủ</a>
                         </li>
-                        <li class="breadcrumb-item"><a href="<?php echo base_url('rao-vat') ?>">Rao vặt</a>
-                        </li>
+<!--                        <li class="breadcrumb-item"><a href="--><?php //echo base_url('rao-vat') ?><!--">Rao vặt</a>-->
+<!--                        </li>-->
                         <li class="breadcrumb-item active"><?php echo $ads->title ?>
                         </li>
                     </ol>
