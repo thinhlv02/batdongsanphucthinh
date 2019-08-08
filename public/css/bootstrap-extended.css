@@ -1250,11 +1250,12 @@ select.form-control {
     .heading-elements-toggle {
         display: none; } }
 
-.breadcrumb {
-    font-size: 1rem;
-    font-family: "Quicksand", Georgia, "Times New Roman", Times, serif;
-    background-color: transparent;
-    padding: 0 0 0.75rem 0rem; }
+/*.breadcrumb {*/
+/*    font-size: 1rem;*/
+/*    font-family: "Quicksand", Georgia, "Times New Roman", Times, serif;*/
+/*    background-color: transparent;*/
+/*    padding: 0 0 0.75rem 0rem; */
+/*}*/
 .breadcrumb > li + li::before {
     padding-right: .6rem;
     padding-left: .6rem; }
