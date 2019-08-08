@@ -23,6 +23,7 @@
             <thead>
             <tr>
                 <th>Mã tin</th>
+<!--                <th>Hành động</th>-->
                 <th>SĐT</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
@@ -42,13 +43,19 @@
 <!--                <th>link bài viết</th>-->
                 <th>Lượt xem</th>
                 <th>Ngày Tạo</th>
-                <th>Hành động</th>
+
             </tr>
             </thead>
             <tbody>
             <?php foreach ($ads as $row){ ?>
                 <tr>
-                    <td><?php echo $row->id ?></td>
+                    <td><?php echo $row->id ?>
+                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
+                        <?php if ($_uid == 1) { ?>
+                            <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
+                        <?php } ?>
+
+                    </td>
                     <td><?php echo $row->phone; ?></td>
                     <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 80px"> </td>
                     <td>
@@ -127,13 +134,10 @@
                     <td><?php echo $row->view ?></td>
 
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
-                    <td>
-                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
-                        <?php if ($_uid == 1) { ?>
-                            <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
-                        <?php } ?>
-
-                    </td>
+<!--                    <td>-->
+<!--                       -->
+<!---->
+<!--                    </td>-->
 
                 </tr>
 
