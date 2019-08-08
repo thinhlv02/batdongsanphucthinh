@@ -57,8 +57,8 @@
                                 <?php } ?>
                             <?php } ?>
                         </div>
-                        <div style="text-align: center">
-                            <a href="<?php echo base_url('tin-tuc.html') ?>" class="btn btn-info" style="margin-top: 2px">
+                        <div class="text-center">
+                            <a href="<?php echo base_url('tin-tuc.html') ?>" class="btn btn-info mt-2">
                                 Đọc thêm <i class="glyphicon glyphicon-chevron-right"></i></a>
                         </div>
                     </div>
