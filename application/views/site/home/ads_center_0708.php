@@ -76,7 +76,7 @@
                                             <!--                                            <p style="color: #fff">-->
                                             <?php //echo $value->intro ?><!--</p>-->
                                             <!--                                            <a href="-->
-                                            <?php //echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?><!--" class="btn btn-primary mt-5">Xem thêm</a>-->
+                                            <?php //echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?><!--" class="btn btn-primary mt-5">Đọc thêm</a>-->
                                         </div>
                                         <div class="title-news shadow20">
                                             <!--                                            <span style="font-size: 13px">-->
@@ -116,7 +116,7 @@
             </div>
             <!--            <div style="text-align: center">-->
             <!--                <a href="-->
-            <?php //echo base_url('rao-vat.html') ?><!--" class="btn btn-primary" style="margin-top: 2px">Xem thêm</a>-->
+            <?php //echo base_url('rao-vat.html') ?><!--" class="btn btn-primary" style="margin-top: 2px">Đọc thêm</a>-->
             <!--            </div>-->
         </div>
     </div>

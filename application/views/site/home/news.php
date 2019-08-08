@@ -24,7 +24,7 @@
                                                             <strong style="color: #fff"><?php echo $value->name ?></strong>
                                                         </div>
                                                         <p style="color: #fff"><?php echo $value->intro ?></p>
-                                                        <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" class="btn btn-primary mt-5">Xem thêm</a>
+                                                        <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" class="btn btn-primary mt-5">Đọc thêm</a>
                                                     </div>
                                                     <div class="title-news">
                                                         <span style="font-size: 13px" class="shadow5"><?php echo date('d/m/Y', strtotime($value->created_at)) ?></span><br>
@@ -43,7 +43,7 @@
                                                     <div class="content-news">
                                                         <div><strong><?php echo $value->name ?></strong></div>
                                                         <p><?php echo $value->intro ?></p>
-                                                        <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" class="btn btn-primary mt-5">Xem thêm</a>
+                                                        <a href="<?php echo base_url('tin-tuc/' . create_slug($value->name) . '-' . $value->id) ?>" class="btn btn-primary mt-5">Đọc thêm</a>
                                                     </div>
                                                     <div class="title-news">
                                                         <span style="font-size: 13px" class="shadow5"><?php echo date('d/m/Y', strtotime($value->created_at)) ?></span><br>
@@ -58,7 +58,8 @@
                             <?php } ?>
                         </div>
                         <div style="text-align: center">
-                            <a href="<?php echo base_url('tin-tuc.html') ?>" class="btn btn-info" style="margin-top: 2px">Xem thêm</a>
+                            <a href="<?php echo base_url('tin-tuc.html') ?>" class="btn btn-info" style="margin-top: 2px">
+                                Đọc thêm <i class="glyphicon glyphicon-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
