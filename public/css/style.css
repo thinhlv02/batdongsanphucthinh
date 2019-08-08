@@ -1295,10 +1295,6 @@ span.item-date {
     justify-content: center;
 }
 
-.carousel-control {
-    /*width: 50px;*/
-}
-
 .carousel-control.right {
     background-image: none !important;
 }
