@@ -10,7 +10,7 @@
 
                 <?php foreach ($ads_center as $key => $value) { ?>
 
-                    <div class="col-md-2 col-sm-6 col-xs-12 item_ads _hot" onclick="updateView('<?php echo $value->id; ?>');">
+                    <div class="col-md-3 col-sm-6 col-xs-12 item_ads _hot" onclick="updateView('<?php echo $value->id; ?>');">
                         <div class="card">
                             <div class="card-body border-primary">
 
