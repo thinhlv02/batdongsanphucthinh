@@ -312,6 +312,7 @@ Class Home extends MY_Controller
 
         $this->data['li_6'] = 1;
         $this->data['temp'] = 'site/pages/ads_detail';
+//        $this->data['temp'] = 'site/pages/ads_detail_hp';
         $this->load->view('site/layout/layout', $this->data);
     }
 
