@@ -23,14 +23,10 @@
             <thead>
             <tr>
                 <th>Mã tin</th>
-<!--                <th>Hành động</th>-->
                 <th>SĐT</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
-<!--                <th>Giới thiệu</th>-->
                 <th>Giá / Diện tích</th>
-<!--                <th>Diện tích</th>-->
-<!--                <th>Khu vực</th>-->
                 <th>Trái</th>
                 <th>Phải</th>
                 <th>Giữa</th>
@@ -38,12 +34,8 @@
                 <th>Layer vip</th>
                 <th>Layer phải</th>
                 <th>Trạng thái</th>
-<!--                <th>Vip</th>-->
-<!--                <th>Hot</th>-->
-<!--                <th>link bài viết</th>-->
                 <th>Lượt xem</th>
                 <th>Ngày Tạo</th>
-
             </tr>
             </thead>
             <tbody>
@@ -64,14 +56,11 @@
                         <a href="<?php echo base_url('rao-vat/' . create_slug($row->title) . '-' . $row->id) ?>" target="_blank">
                             <?php echo $row->title?></td>
                         </a>
-<!--                    <td>--><?php //echo $row->intro?><!--</td>-->
                     <td>
                         <p class="btn btn-outline-info"><?php echo $row->price?> </p><br/>
                         <p class="btn btn-outline-cyan"><?php echo $row->acreage?> m<sup>2</sup> </p>
 
                     </td>
-<!--                    <td>--><?php //echo $row->acreage?><!--</td>-->
-<!--                    <td>--><?php //echo $row->area?><!--</td>-->
 
                     <td>
                         <i id="ads_left-<?php echo $row->id?>"
@@ -121,36 +110,23 @@
                            class="fa fa-2x <?php echo $row->icon_new ? 'fa-toggle-on' : 'fa-toggle-off'?> primary"
                            onclick="icon_new(<?php echo $row->id?>)"
                         ></i> Mới
-<!--                    </td>-->
-<!---->
-<!--                    <td>-->
                         <i id="icon_vip-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->icon_vip ? 'fa-toggle-on' : 'fa-toggle-off'?> info"
                            onclick="icon_vip(<?php echo $row->id?>)"
                         ></i> Vip
-<!--                    </td>-->
 
-<!--                    <td>-->
                         <i id="icon_hot-<?php echo $row->id?>"
                            class="fa fa-2x <?php echo $row->icon_hot ? 'fa-toggle-on' : 'fa-toggle-off'?> success"
                            onclick="icon_hot(<?php echo $row->id?>)"
                         ></i> Hot
                     </td>
-<!--                    <td>--><?php //echo $row->link ?><!--</td>-->
                     <td><?php echo $row->view ?></td>
-
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
-<!--                    <td>-->
-<!--                       -->
-<!---->
-<!--                    </td>-->
-
                 </tr>
 
             <?php }?>
             </tbody>
         </table>
-        <!-- <a href="#" class="btn btn-danger">Xóa đã chọn </a> -->
     </div>
 </div>
 <script>
