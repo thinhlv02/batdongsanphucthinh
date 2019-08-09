@@ -213,7 +213,7 @@
 
                                     <div class="col-xs-7 rtop2">
                                         <h3>
-                                            <a href="/ban-nha-lo-16-duong-le-hong-phong-dang-lam-hai-an-hai-phong-bds59041.htm">Bán
+                                            <a href="javascript:void(0)">Bán
                                                 nhà lô 16 đường Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng </a>
                                             <span></span>
                                         </h3>
@@ -236,7 +236,7 @@
                             <div class="col-xs-6 top2 top2_up">
                                 <div class="row _vip _hot _vip_hot">
                                     <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-so-50-lo-16mr-le-hong-phong-dang-lam-hai-an-hai-phong-bds58265.htm"><img
+                                        <a href="javascript:void(0)"><img
                                                     src="http://nhadathaiphong.vn/images/attachment/thumb/43611.jpg"
                                                     alt="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng"></a>
                                         <div class="code_row">HP-58265</div>
@@ -244,7 +244,7 @@
 
                                     <div class="col-xs-7 rtop2">
                                         <h3>
-                                            <a href="/ban-nha-so-50-lo-16mr-le-hong-phong-dang-lam-hai-an-hai-phong-bds58265.htm">Bán
+                                            <a href="javascript:void(0)">Bán
                                                 nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng
                                                 <em>[ĐÃ XEM]</em> </a>
                                             <span></span>
@@ -270,7 +270,7 @@
                             <div class="col-xs-6 top2 top2_up">
                                 <div class="row">
                                     <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-4-tang-doc-lap-khu-phan-lo-cao-cap-duong-le-hong-phong-ket-hop-vua-o-vua-lam-van-phong-bds57746.htm"><img
+                                        <a href="javascript:void(0)"><img
                                                     src="http://nhadathaiphong.vn/images/attachment/thumb/9554b1eac7a164d1818fd8c0.jpg"
                                                     alt="Bán nhà 4 tầng độc lập khu phân lô cao cấp đường Lê Hồng Phong, kết hợp vừa ở vừa làm văn phòng"></a>
                                         <div class="code_row">HP-57746</div>
@@ -278,7 +278,7 @@
 
                                     <div class="col-xs-7 rtop2">
                                         <h3>
-                                            <a href="/ban-nha-4-tang-doc-lap-khu-phan-lo-cao-cap-duong-le-hong-phong-ket-hop-vua-o-vua-lam-van-phong-bds57746.htm">Bán
+                                            <a href="javascript:void(0)">Bán
                                                 nhà 4 tầng độc lập khu phân lô cao cấp đường Lê Hồng Phong, kết hợp vừa
                                                 ở vừa làm văn phòng </a>
                                             <span></span>
@@ -301,7 +301,7 @@
                             <div class="col-xs-6 top2 top2_up">
                                 <div class="row">
                                     <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-4-tang-noi-that-cao-cap-khu-333-van-cao-co-hoi-dau-tu-cho-thue-lau-dai-rat-tot-bds51520.htm"><img
+                                        <a href="javascript:void(0)"><img
                                                     src="http://nhadathaiphong.vn/images/attachment/thumb/31922.jpg"
                                                     alt="Bán nhà 4 tầng nội thất cao cấp khu 333 Văn Cao, cơ hội đầu tư cho thuê lâu dài rất tốt"></a>
                                         <div class="code_row">HP-51520</div>
@@ -309,7 +309,7 @@
 
                                     <div class="col-xs-7 rtop2">
                                         <h3>
-                                            <a href="/ban-nha-4-tang-noi-that-cao-cap-khu-333-van-cao-co-hoi-dau-tu-cho-thue-lau-dai-rat-tot-bds51520.htm">Bán
+                                            <a href="javascript:void(0)">Bán
                                                 nhà 4 tầng nội thất cao cấp khu 333 Văn Cao, cơ hội đầu tư cho thuê lâu
                                                 dài rất tốt </a>
                                             <span></span>
@@ -343,7 +343,7 @@
                             <div class="col-xs-6 top2 top2_up">
                                 <div class="row">
                                     <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-lo-17-le-hong-phong-canh-nha-hang-amakong-hai-an-hai-phong-bds52909.htm"><img
+                                        <a href="javascript:void(0)"><img
                                                     src="http://nhadathaiphong.vn/images/attachment/thumb/77210.jpg"
                                                     alt="Bán nhà lô 17 Lê Hồng Phong (cạnh nhà hàng Amakong), Hải An, Hải Phòng"></a>
                                         <div class="code_row">HP-52909</div>
@@ -351,7 +351,7 @@
 
                                     <div class="col-xs-7 rtop2">
                                         <h3>
-                                            <a href="/ban-nha-lo-17-le-hong-phong-canh-nha-hang-amakong-hai-an-hai-phong-bds52909.htm">Bán
+                                            <a href="javascript:void(0)">Bán
                                                 nhà lô 17 Lê Hồng Phong (cạnh nhà hàng Amakong), Hải An, Hải Phòng </a>
                                             <span></span>
                                         </h3>
@@ -374,7 +374,7 @@
                             <div class="col-xs-6 top2 top2_up">
                                 <div class="row">
                                     <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-4-tang-doc-lap-thiet-ke-tuyet-mi-khu-phan-lo-duong-van-cao-hai-an-hai-phong-bds51430.htm"><img
+                                        <a href="javascript:void(0)"><img
                                                     src="http://nhadathaiphong.vn/images/attachment/thumb/8941.jpg"
                                                     alt="Bán nhà 4 tầng độc lập thiết kế tuyệt mĩ khu phân lô đường Văn Cao, Hải An, Hải Phòng."></a>
                                         <div class="code_row">HP-51430</div>
@@ -382,7 +382,7 @@
 
                                     <div class="col-xs-7 rtop2">
                                         <h3>
-                                            <a href="/ban-nha-4-tang-doc-lap-thiet-ke-tuyet-mi-khu-phan-lo-duong-van-cao-hai-an-hai-phong-bds51430.htm">Bán
+                                            <a href="javascript:void(0)">Bán
                                                 nhà 4 tầng độc lập thiết kế tuyệt mĩ khu phân lô đường Văn Cao, Hải An,
                                                 Hải Phòng. </a>
                                             <span></span>
@@ -404,7 +404,7 @@
                             <div class="col-xs-6 top2 top2_up">
                                 <div class="row">
                                     <div class="col-xs-5 ltop2">
-                                        <a href="/ban-thua-dat-57m2-mat-duong-21m-khu-tdc-dong-giap-hai-an-hai-phong-bds60619.htm"><img
+                                        <a href="javascript:void(0)"><img
                                                     src="http://nhadathaiphong.vn/images/attachment/thumb/8196f7cd80a66169843as7dd78.jpg"
                                                     alt="Bán thửa đất 57m2 mặt đường 21m khu TĐC Đồng Giáp, Hải An, Hải Phòng"></a>
                                         <div class="code_row">HP-60619</div>
@@ -412,7 +412,7 @@
 
                                     <div class="col-xs-7 rtop2">
                                         <h3>
-                                            <a href="/ban-thua-dat-57m2-mat-duong-21m-khu-tdc-dong-giap-hai-an-hai-phong-bds60619.htm">Bán
+                                            <a href="javascript:void(0)">Bán
                                                 thửa đất 57m2 mặt đường 21m khu TĐC Đồng Giáp, Hải An, Hải Phòng </a>
                                             <span></span>
                                         </h3>
@@ -434,7 +434,7 @@
                             <div class="col-xs-6 top2 top2_up">
                                 <div class="row _vip_hot">
                                     <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-so-201-lo-16-mo-rong-le-hong-phong-dang-lam-hai-an-hai-phong-bds52239.htm"><img
+                                        <a href="javascript:void(0)"><img
                                                     src="http://nhadathaiphong.vn/images/attachment/thumb/23589.jpg"
                                                     alt="Bán nhà số 201 lô 16 mở rộng Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng"></a>
                                         <div class="code_row">HP-52239</div>
@@ -442,7 +442,7 @@
 
                                     <div class="col-xs-7 rtop2">
                                         <h3>
-                                            <a href="/ban-nha-so-201-lo-16-mo-rong-le-hong-phong-dang-lam-hai-an-hai-phong-bds52239.htm">Bán
+                                            <a href="javascript:void(0)">Bán
                                                 nhà số 201 lô 16 mở rộng Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng </a>
                                             <span></span>
                                         </h3>
@@ -475,7 +475,7 @@
             <div class="col-xs-3 right">
                 <!--Begin two_cols-->
                 <div class="right_box vip_box">
-                    <p class="title_box"><a href="/tin-vip.htm"><strong>TIN VIP</strong></a></p>
+                    <p class="title_box"><a href="javascript:void(0)"><strong>TIN VIP</strong></a></p>
                     <div>
                         <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
                             <div class="bx-viewport"
@@ -486,7 +486,7 @@
                                         class="bx-clone">
                                         <dl class=" _vip _hot">
                                             <dt>
-                                                <a href="/ban-nha-mat-duong-nguyen-van-linh-le-chan-hai-phong-gan-cho-hang-bds58740.htm"><img
+                                                <a href="javascript:void(0)"><img
                                                             src="http://nhadathaiphong.vn/images/attachment/thumb/93961.jpg"
                                                             alt="Bán nhà mặt đường Nguyễn Văn Linh, Lê Chân, Hải Phòng (gần chợ Hàng)"></a>
                                                 <div class="icon_viphot">
@@ -496,7 +496,7 @@
                                             </dt>
                                             <dd>
                                                 <h3>
-                                                    <a href="/ban-nha-mat-duong-nguyen-van-linh-le-chan-hai-phong-gan-cho-hang-bds58740.htm">Bán
+                                                    <a href="javascript:void(0)">Bán
                                                         nhà mặt đường Nguyễn Văn Linh, Lê Chân, Hải Phòng (gần chợ
                                                         Hàng)</a>
                                                 </h3>
@@ -510,7 +510,7 @@
                                         class="bx-clone">
                                         <dl class=" _vip _hot">
                                             <dt>
-                                                <a href="/ban-nha-so-50-lo-16mr-le-hong-phong-dang-lam-hai-an-hai-phong-bds58265.htm"><img
+                                                <a href="javascript:void(0)"><img
                                                             src="http://nhadathaiphong.vn/images/attachment/thumb/43611.jpg"
                                                             alt="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng"></a>
                                                 <div class="icon_viphot">
@@ -520,7 +520,7 @@
                                             </dt>
                                             <dd>
                                                 <h3>
-                                                    <a href="/ban-nha-so-50-lo-16mr-le-hong-phong-dang-lam-hai-an-hai-phong-bds58265.htm">Bán
+                                                    <a href="javascript:void(0)">Bán
                                                         nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng</a>
                                                 </h3>
                                                 <p><strong>Diện tích:</strong> 60 m2</p>
@@ -533,7 +533,7 @@
                                         class="bx-clone">
                                         <dl class=" _hot">
                                             <dt>
-                                                <a href="/ban-can-shophouse-2-mat-tien-so-10-khu-cho-dau-moi-hoa-quatai-dinh-cu-xi-mang-so-dau-hong-bang-hai-phong-bds46569.htm"><img
+                                                <a href="javascript:void(0)"><img
                                                             src="http://nhadathaiphong.vn/images/attachment/thumb/2376viber image.jpg"
                                                             alt="BÁN CĂN SHOPHOUSE 2 MẶT TIỀN SỐ 10 KHU CHỢ ĐẦU MỐI HOA QUẢ,TÁI ĐỊNH CƯ XI MĂNG, SỞ DẦU, HỒNG BÀNG, HẢI PHÒNG."></a>
                                                 <div class="icon_viphot">
@@ -543,7 +543,7 @@
                                             </dt>
                                             <dd>
                                                 <h3>
-                                                    <a href="/ban-can-shophouse-2-mat-tien-so-10-khu-cho-dau-moi-hoa-quatai-dinh-cu-xi-mang-so-dau-hong-bang-hai-phong-bds46569.htm">BÁN
+                                                    <a href="javascript:void(0)">BÁN
                                                         CĂN SHOPHOUSE 2 MẶT TIỀN SỐ 10 KHU CHỢ ĐẦU MỐI HOA QUẢ,TÁI ĐỊNH
                                                         CƯ XI MĂNG, SỞ DẦU, HỒNG BÀNG, HẢI PHÒNG.</a>
                                                 </h3>
@@ -557,7 +557,7 @@
                                         class="bx-clone">
                                         <dl class=" _hot">
                                             <dt>
-                                                <a href="/ban-dat-cat-ba-vi-tri-dep---gia-canh-tranh-bds22738.htm"><img
+                                                <a href="javascript:void(0)"><img
                                                             src="http://nhadathaiphong.vn/images/attachment/thumb/852ban_dat_cat_ba_1.jpg"
                                                             alt="BÁN ĐẤT CÁT BÀ VỊ TRÍ ĐẸP - GIÁ CẠNH TRANH"></a>
                                                 <div class="icon_viphot">
@@ -567,7 +567,7 @@
                                             </dt>
                                             <dd>
                                                 <h3>
-                                                    <a href="/ban-dat-cat-ba-vi-tri-dep---gia-canh-tranh-bds22738.htm">BÁN
+                                                    <a href="javascript:void(0)">BÁN
                                                         ĐẤT CÁT BÀ VỊ TRÍ ĐẸP - GIÁ CẠNH TRANH</a>
                                                 </h3>
                                                 <p><strong>Diện tích:</strong> 300 m2</p>
@@ -580,7 +580,7 @@
                                         class="bx-clone">
                                         <dl class="">
                                             <dt>
-                                                <a href="/ban-nha-so-212-trung-hanh-hai-an-hai-phong-bds58634.htm"><img
+                                                <a href="javascript:void(0)"><img
                                                             src="http://nhadathaiphong.vn/images/attachment/thumb/43651.jpg"
                                                             alt="Bán nhà số 212 Trung Hành, Hải An, Hải Phòng"></a>
                                                 <div class="icon_viphot">
@@ -592,7 +592,7 @@
                                             </dt>
                                             <dd>
                                                 <h3>
-                                                    <a href="/ban-nha-so-212-trung-hanh-hai-an-hai-phong-bds58634.htm">Bán
+                                                    <a href="javascript:void(0)">Bán
                                                         nhà số 212 Trung Hành, Hải An, Hải Phòng</a>
                                                 </h3>
                                                 <p><strong>Diện tích:</strong> 40 m2</p>
