@@ -50,11 +50,11 @@
             <?php foreach ($ads as $row){ ?>
                 <tr>
                     <td class="text-center">
-                        <button class="btn btn-warning mr-1 btn-sm"><?php echo $row->id ?></button>
+                        <button class="btn btn-default btn-sm"><?php echo $row->id ?></button>
 
-                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
+                        <a class="btn btn-xs btn-primary btn-sm" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
                         <?php if ($_uid == 1) { ?>
-                            <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
+                            <a class="btn btn-xs btn-danger btn-sm" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
                         <?php } ?>
 
                     </td>
@@ -66,7 +66,7 @@
                         </a>
 <!--                    <td>--><?php //echo $row->intro?><!--</td>-->
                     <td>
-                        <p class="btn btn-outline-danger"><?php echo $row->price?> </p><br/>
+                        <p class="btn btn-outline-info"><?php echo $row->price?> </p><br/>
                         <p class="btn btn-outline-cyan"><?php echo $row->acreage?> m<sup>2</sup> </p>
 
                     </td>
