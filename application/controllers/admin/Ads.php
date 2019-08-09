@@ -10,6 +10,7 @@ Class Ads extends MY_Controller
         $this->load->model('District_model');
         $this->load->model('Ward_model');
         $this->load->model('Street_model');
+        $this->load->model('admin_model');
     }
 
     function index()
@@ -20,7 +21,50 @@ Class Ads extends MY_Controller
         $input = array();
         $input['order'] = array('id', 'desc');
         $ads = $this->ads_model->get_list($input);
-        $this->data['ads'] = $ads;
+
+        $emps = $this->admin_model->get_list();
+
+        $i = 0;
+        $admin_arr = [];
+        foreach ($emps as $key => $val) {
+            $i++;
+            $admin_arr[$val->id] = new stdClass();
+            $admin_arr[$val->id]->id = $val->id;
+            $admin_arr[$val->id]->name = $val->fullname;
+        }
+
+        $ads_end = [];
+        $index = 0;
+        foreach ($ads as $key => $val) {
+            $index++;
+            $ads_end[$index] = new stdClass();
+            $ads_end[$index]->id = $val->id;
+            $ads_end[$index]->code = $val->code;
+            $ads_end[$index]->img = $val->img;
+            $ads_end[$index]->title = $val->title;
+            $ads_end[$index]->phone = $val->phone;
+            $ads_end[$index]->price = $val->price;
+            $ads_end[$index]->acreage = $val->acreage;
+            $ads_end[$index]->area = $val->area;
+            $ads_end[$index]->service_money = $val->service_money;
+            $ads_end[$index]->make_money_by = $val->make_money_by;
+            $ads_end[$index]->pay_time = $val->pay_time;
+            $ads_end[$index]->created_at = $val->created_at;
+            $ads_end[$index]->ads_left= $val->ads_left;
+            $ads_end[$index]->ads_right= $val->ads_right;
+            $ads_end[$index]->ads_center= $val->ads_center;
+            $ads_end[$index]->layer_left= $val->layer_left;
+            $ads_end[$index]->layer_vip= $val->layer_vip;
+            $ads_end[$index]->layer_right= $val->layer_right;
+            $ads_end[$index]->icon_new= $val->icon_new;
+            $ads_end[$index]->icon_vip= $val->icon_vip;
+            $ads_end[$index]->icon_hot= $val->icon_hot;
+            $ads_end[$index]->view= $val->view;
+            $ads_end[$index]->created_name = isset($admin_arr[$val->created_by]) ? $admin_arr[$val->created_by]->name : 'dcm111111111';
+        }
+
+
+        $this->data['ads'] = $ads_end;
         $this->data['_uid'] = $this->_uid;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/ads/index';

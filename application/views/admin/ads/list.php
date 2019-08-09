@@ -23,6 +23,7 @@
             <thead>
             <tr>
                 <th>Mã tin</th>
+                <th>Tạo bởi</th>
                 <th>SĐT</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
@@ -50,6 +51,7 @@
                         <?php } ?>
 
                     </td>
+                    <td><?php echo $row->created_name; ?></td>
                     <td><?php echo $row->phone; ?></td>
                     <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 80px"> </td>
                     <td>
