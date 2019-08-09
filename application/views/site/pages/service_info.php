@@ -4,9 +4,9 @@
             <div class="left-menu">
                 <div class="left-title">Giới thiệu Website</div>
                 <ul>
-                    <?php foreach ($products as $p) { ?>
-                        <li class="<?php if ($p->id == $active) echo 'active'; ?>">
-                            <a href="<?php echo base_url('gioi-thieu-dich-vu/' . create_slug($p->name) . '-' . $p->id . '.html#'.$p->id) ?>">
+                    <?php foreach ($products as $k => $p) { ?>
+                        <li class="<?php if ($p->id == $active || ($k == 0 && $active == 0)) echo 'active'; ?>">
+                            <a href="<?php echo base_url('gioi-thieu-dich-vu/' . create_slug($p->name) . '-' . $p->id . '.html#' . $p->id) ?>">
                                 <?php echo $p->name ?>
                             </a>
                         </li>
@@ -31,12 +31,3 @@
     </div>
 
 </section>
-
-<style>
-    .li_active{
-        border-left: 2px solid !important;
-    }
-    .li_active a {
-        color: #00b3ee !important;
-    }
-</style>
