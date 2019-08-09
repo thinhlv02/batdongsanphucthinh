@@ -1024,7 +1024,7 @@ span.item-date {
 }
 
 .detail-content li {
-    /*list-style: none;*/
+    list-style: none;
 }
 
 .detail-content li a {
