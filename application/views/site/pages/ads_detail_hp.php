@@ -205,7 +205,7 @@
                             <div class="col-xs-6 top2 top2_up">
                                 <div class="row _vip_hot">
                                     <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-lo-16-duong-le-hong-phong-dang-lam-hai-an-hai-phong-bds59041.htm"><img
+                                        <a href="javascript:void(0)"><img
                                                     src="http://nhadathaiphong.vn/images/attachment/thumb/2970so-do-va-so-hong_2605083022.jpg"
                                                     alt="Bán nhà lô 16 đường Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng"></a>
                                         <div class="code_row">HP-59041</div>
