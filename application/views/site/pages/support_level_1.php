@@ -12,12 +12,12 @@
             </div>
         </div>
         <div class="col-md-9 col-sm-8 detail-content">
-            <div class="line-height-2 pl-5">
+            <div class="line-height-2">
                 <ul>
-                    <?php foreach ($categories as $p){ ?>
-                        <li style="margin: 15px 0">
+                    <?php $i=0; foreach ($categories as $p){ $i++; ?>
+                        <li style="margin: 15px ;list-style-type: none;">
                             <a href="<?php echo base_url('ho-tro/'.create_slug($p->name).'-'.$p->id)?>">
-                                <?php echo $p->name?>
+                                <?php echo $i. '. ' . $p->name?>
                             </a>
                         </li>
                     <?php }?>
