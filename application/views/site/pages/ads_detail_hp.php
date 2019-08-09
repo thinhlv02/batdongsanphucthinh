@@ -8,11 +8,11 @@
                 <!--Begin land_box-->
                 <div class="_box">
                     <p class="title_box"><strong>Cần bán
-                            <i class="fa fa-angle-right"></i> Nhà trong khu Dự án phân lô - Tái định cư (370)</strong>
+                            <i class="fa fa-angle-right"></i> <?php echo $ads->title ?></strong>
                     </p>
                     <div class="land_box">
 
-                        <h1 class="mt-0">Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng</h1>
+                        <h1 class="mt-0"><?php echo $ads->title ?></h1>
 
                         <!--Begin imgs_land_box-->
                         <div class="content-news-1 col-md-12 col-sm-12">
@@ -43,37 +43,46 @@
 
                         <div style="clear: both"></div>
 
-                        <h2>Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng</h2>
+                        <h2><?php echo $ads->title ?></h2>
 
                         <!--Begin brief_land_box-->
                         <div class="brief_land_box row12">
                             <div class="col-xs-8">
                                 <div class="row">
-                                    <div class="col-xs-6 ibrief"><strong>- Mã số tin:</strong> HP-58265</div>
-                                    <div class="col-xs-6 ibrief"><strong>- Ngày cập nhật:</strong> 25/07/2019</div>
+                                    <div class="col-xs-6 ibrief"><strong>- Mã số tin:</strong>
+                                        PT-<?php echo $ads->id . substr($ads->code, 0, 3) ?></div>
+                                    <div class="col-xs-6 ibrief"><strong>- Ngày cập nhật:</strong>
+                                        <?php echo date('d-m-Y', strtotime($ads->created_at)) ?>
+                                    </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-xs-6 ibrief"><strong>- Lượt xem:</strong> 153</div>
+                                    <div class="col-xs-6 ibrief"><strong>- Lượt xem:</strong> <?php echo $ads->view ?>
+                                    </div>
                                     <div class="col-xs-6 ibrief"><strong>- Ngày hết hạn:</strong>
-                                        <span style="color: #eb3d00;">31/12/2019</span></div>
+                                        <span class="danger">
+                                            <?php echo date('d-m-Y',strtotime('+30 days',strtotime($ads->created_at))) . PHP_EOL; ?></span></div>
+
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-xs-6 ibrief"><strong>- DTMB:</strong> 60m2</div>
-                                    <div class="col-xs-6 ibrief"><strong>- DTSD:</strong> 270m2</div>
+                                    <div class="col-xs-6 ibrief"><strong>- DTMB:</strong> <?php echo $ads->acreage ?>
+                                        m<sup>2</sup></div>
+                                    <div class="col-xs-6 ibrief"><strong>- DTSD:</strong> <?php echo $ads->acreage ?>
+                                        m<sup>2</sup></div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-xs-6 ibrief"><strong>- Danh mục:</strong>
-                                        <a href="/can-ban-c1.htm">Cần bán</a></div>
+                                        <a href="javascript:void(0)">Cần bán</a></div>
                                     <div class="col-xs-6 ibrief"><strong>- Loại BĐS:</strong>
-                                        <a href="#">Nhà trong khu Dự án phân lô - Tái định cư</a></div>
+                                        <a href="javascript:void(0)">
+                                            <?php echo $ads->productcat !='' ? $ads->productcat: 'KXD' ?></a></div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-xs-12 ibrief">
-                                        <strong>- Địa chỉ:</strong> Số 50 lô 16MR, Đằng Lâm, Hải An, Hải Phòng
+                                        <strong>- Địa chỉ:</strong> <?php echo $ads->area ?>
                                     </div>
                                 </div>
                             </div>
@@ -81,37 +90,9 @@
                             <div class="col-xs-4">
                                 <div class="row">
                                     <div class="col-xs-12 ibrief text_right price_ibrief">
-                                        <strong>Giá:</strong> 4.6 tỷ VND <p>(Có thỏa thuận)</p>
+                                        <strong>Giá:</strong> <?php echo $ads->price ?> VND <p>(Có thỏa thuận)</p>
                                     </div>
-                                    <div class="col-xs-12 ibrief text_right">
-                                        <script src="https://apis.google.com/js/plusone.js"
-                                                gapi_processed="true"></script>
-                                        <div id="___plus_0" style="position: absolute; width: 450px; left: -10000px;">
-                                            <iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0"
-                                                    marginwidth="0" scrolling="no"
-                                                    style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none"
-                                                    tabindex="0" vspace="0" width="100%" id="I0_1565340396211"
-                                                    name="I0_1565340396211"
-                                                    src="https://apis.google.com/u/0/se/0/_/+1/sharebutton?plusShare=true&amp;usegapi=1&amp;action=share&amp;annotation=bubble&amp;origin=http%3A%2F%2Fnhadathaiphong.vn&amp;url=http%3A%2F%2Fnhadathaiphong.vn%2Fban-nha-so-50-lo-16mr-le-hong-phong-dang-lam-hai-an-hai-phong-bds58265.htm&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.y5hhWjOdu80.O%2Fam%3DwQE%2Fd%3D1%2Frs%3DAGLTcCNsKzxWFhezE2KkFP7auTmVDBiNEQ%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1565340396211&amp;_gfid=I0_1565340396211&amp;parent=http%3A%2F%2Fnhadathaiphong.vn&amp;pfname=&amp;rpctoken=19401752"
-                                                    data-gapiattached="true"></iframe>
-                                        </div>
-                                        <g:plus action="share" annotation="bubble" data-gapiscan="true"
-                                                data-onload="true" data-gapistub="true"></g:plus>
-                                        <div class="fb-like fb_iframe_widget"
-                                             data-href="http://nhadathaiphong.vn/ban-nha-so-50-lo-16mr-le-hong-phong-dang-lam-hai-an-hai-phong-bds58265.htm"
-                                             data-layout="button" data-action="like" data-size="small"
-                                             data-show-faces="true" data-share="true" fb-xfbml-state="rendered"
-                                             fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=284&amp;href=http%3A%2F%2Fnhadathaiphong.vn%2Fban-nha-so-50-lo-16mr-le-hong-phong-dang-lam-hai-an-hai-phong-bds58265.htm&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small">
-                                            <span style="vertical-align: bottom; width: 96px; height: 20px;"><iframe
-                                                        name="f22c99e2ab3346c" width="1000px" height="1000px"
-                                                        title="fb:like Facebook Social Plugin" frameborder="0"
-                                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
-                                                        allow="encrypted-media"
-                                                        src="https://www.facebook.com/v2.4/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df351b0532ce218c%26domain%3Dnhadathaiphong.vn%26origin%3Dhttp%253A%252F%252Fnhadathaiphong.vn%252Ff194f5531ebb824%26relation%3Dparent.parent&amp;container_width=284&amp;href=http%3A%2F%2Fnhadathaiphong.vn%2Fban-nha-so-50-lo-16mr-le-hong-phong-dang-lam-hai-an-hai-phong-bds58265.htm&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small"
-                                                        style="border: none; visibility: visible; width: 96px; height: 20px;"
-                                                        class=""></iframe></span>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
 
@@ -122,59 +103,62 @@
                         <div class="title_land_box">Mô tả chi tiết:</div>
 
                         <div class="pack_land_box">
-                            <div class="row">
-                                <div class="col-xs-4 pland"><strong>Chiều rộng:</strong> 4m</div>
-                                <div class="col-xs-4 pland"><strong>Chiều dài:</strong> 15m</div>
+                            <div class="row12">
+                                <div class="col-xs-4 pland"><strong>Chiều rộng:</strong>
+                                    <?php echo $ads->width !='' ? $ads->width: 0 ?>m</div>
+                                <div class="col-xs-4 pland"><strong>Chiều dài:</strong>
+                                    <?php echo $ads->landwidth !='' ? $ads->landwidth: 0 ?>m</div>
                                 <div class="col-xs-4 pland"><strong>Giấy tờ:</strong> Sổ đỏ Chính Chủ</div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-xs-4 pland"><strong>Diện tích MB:</strong> 60m2</div>
-                                <div class="col-xs-4 pland"><strong>Diện tích SD:</strong> 270m2</div>
-                                <div class="col-xs-4 pland"><strong>Hướng:</strong> Tây Nam</div>
+                            <div class="row12">
+                                <div class="col-xs-4 pland"><strong>Diện tích MB:</strong> <?php echo $ads->acreage ?> m<sup>2</sup>
+                                </div>
+                                <div class="col-xs-4 pland"><strong>Diện tích SD:</strong> <?php echo $ads->acreage ?> m<sup>2</sup>
+                                </div>
+                                <div class="col-xs-4 pland"><strong>Hướng:</strong>
+                                    <?php echo $ads->homedirection !='' ? $ads->homedirection: 'KXD' ?></div>
                             </div>
 
-                            <div class="row">
+                            <div class="row12">
                                 <div class="col-xs-12 pland">
-                                    <strong>Tên dự án:</strong> Dự án khu đô thị mới Ngã năm - Sân bay Cát Bi (đường Lê
-                                    Hồng Phong)
+                                    <strong>Tên dự án:</strong>
+                                    <?php echo $ads->project !='' ? $ads->project: 'KXD' ?>
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <div class="row12">
                                 <div class="col-xs-12 pland">
                                     <h3 class="title_detail_pland">Thông tin chi tiết:</h3>
-                                    <div class="body_detail_pland">
-                                        <p>- Ưu điểm thiết kế nhà ở kết hợp làm văn phòng, nhà để được 2 ô tô, điện hệ
-                                            thống điều hoà chạy riêng biệt, hút mùi các phòng thông 4 tầng.</p>
-
-                                        <p>-&nbsp;Gara 2 ô tô, 2 phòng làm việc, 3 phòng ngủ, 1 bếp, 1 sân phơi, 1 phòng
-                                            thờ, nhà 3 mặt thoáng, có sân cạnh và sau nhà có mái che chắc chắn, cửa khoá
-                                            an ninh.</p>
-
-                                        <p>-&nbsp;Mặt đường đôi 30m để được nhiều&nbsp;ô tô xe máy phù hợp làm VP, dân
-                                            trí an ninh đồng bộ.</p>
+                                    <div class="body_detail_pland line-height-2">
+                                        <?php echo $ads->content ?>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
 
+                        <div style="clear: both"></div>
+
                         <div class="title_land_box">Thông tin liên hệ:</div>
                         <div class="pack_land_box">
-                            <div class="row">
-                                <div class="col-xs-12 pland"><strong>Người liên hệ :</strong> Qua điện thoại</div>
+                            <div class="row12">
+                                <div class="col-xs-12 pland"><strong>Người liên hệ :</strong>
+                                    <?php echo $ads->brname !='' ? $ads->brname: 'Qua điện thoại' ?>
+                                    </div>
                             </div>
-                            <div class="row">
+                            <div class="row12">
                                 <div class="col-xs-12 pland">
-                                    <strong>Địa chỉ :</strong> Số 50 lô 16MR, Đằng Lâm, Hải An, Hải Phòng
+                                    <strong>Địa chỉ :</strong> <?php echo $ads->area ?>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row12">
                                 <div class="col-xs-12 pland"><strong>Điện thoại :</strong>
-                                    <a href="tel:0989.186.179">0989.186.179</a></div>
+                                    <a href="tel:0989.186.179"><?php echo $ads->phone ?></a></div>
                             </div>
                         </div>
+
+                        <div style="clear: both"></div>
 
                         <div class="title_land_box">Bản đồ vị trí:</div>
                         <div class="pack_land_box" style="border: 0;">
@@ -183,25 +167,27 @@
                                 </div>
                             </div>
                         </div>
+                        
+<!--                        <div style="clear: both;"></div>-->
 
                         <div class="title1_land_box"><strong>Thông tin người đăng</strong></div>
                         <!--Begin brief_land_box-->
-                        <div class="row pack_land_box poster_land_box" style="border: 0;">
-                            <div class="col-xs-3 pic_poster_land_box">
-                                <p><img src="http://nhadathaiphong.vn/css/images/noimage.jpg" alt="Nhà Đất Hải Phòng">
+                        <div class="row pack_land_box poster_land_box" style="border: 0;padding-left:10px;">
+                            <div class="col-xs-3 pic_poster_land_box" style="padding-right: 30px !important;">
+                                <p style="padding: 4px;"><img src="<?php echo public_url('/images/ads/default.png') ?>"
+                                        alt="Bất động sản Phúc Thịnh">
                                 </p>
                             </div>
 
                             <div class="col-xs-9 detail_poster_land_box">
-                                <p><strong>Công ty/cá nhân</strong>: Nhà Đất Hải Phòng</p>
-                                <p><strong>Địa chỉ email</strong>: dothigroup.vn@gmail.com</p>
-                                <p><strong>Số điện thoại</strong>: 02253.68.67.68 - 02253.68.67.69 - 0986.186.179</p>
+                                <p><strong>Công ty/cá nhân</strong>: Bất động sản Phúc Thịnh</p>
+                                <p><strong>Địa chỉ email</strong>: <?php echo $contact->email ?></p>
+                                <p><strong>Số điện thoại</strong>: <?php echo $contact->phone ?></p>
                                 <p>
-                                    <strong>Địa chỉ liên lạc</strong>: Trụ sở: Số 50 lô 16 MR, Lê Hồng Phong, Hải An,
-                                    Hải Phòng
+                                    <strong>Địa chỉ liên lạc</strong>: Trụ sở: <?php echo $contact->address ?>
                                 </p>
                                 <p><strong>Website</strong>:
-                                    <a href="www.nhadathaiphong.vn" target="_blank">www.nhadathaiphong.vn</a></p>
+                                    <a href="<?php echo base_url() ?>" target="_blank"><?php echo base_url() ?></a></p>
                             </div>
                         </div>
                         <!--End brief_land_box-->
@@ -211,10 +197,11 @@
 
 
                 <!--Begin two_cols-->
+
                 <div class="left_box top3_box">
                     <p class="title_box1"><strong>CÁC TIN CÙNG TIÊU CHÍ TÌM KIẾM</strong></p>
                     <div>
-                        <div class="row body_top2_box">
+                        <div class="row12 body_top2_box">
                             <div class="col-xs-6 top2 top2_up">
                                 <div class="row _vip_hot">
                                     <div class="col-xs-5 ltop2">
@@ -348,10 +335,11 @@
                 </div>
                 <!--End two_cols-->
                 <!--Begin two_cols-->
+                <div style="clear: both"></div>
                 <div class="left_box top3_box">
                     <p class="title_box1"><strong>CÁC TIN LIÊN QUAN</strong></p>
                     <div>
-                        <div class="row body_top2_box">
+                        <div class="row12 body_top2_box">
                             <div class="col-xs-6 top2 top2_up">
                                 <div class="row">
                                     <div class="col-xs-5 ltop2">
@@ -2322,5 +2310,16 @@
     .land_page .land_box {
         border: 1px solid #ddd;
         padding: 15px;
+    }
+
+    .land_page .poster_land_box .pic_poster_land_box p {
+        border: 1px solid #ddd;
+        padding: 4px;
+        margin-top: 5px;
+    }
+
+    p.title_box1 {
+        background: #efefef;
+        border-bottom: 1px solid #ddd;
     }
 </style>
