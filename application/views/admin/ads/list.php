@@ -28,8 +28,8 @@
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
 <!--                <th>Giới thiệu</th>-->
-                <th>Giá</th>
-                <th>Diện tích</th>
+                <th>Giá / Diện tích</th>
+<!--                <th>Diện tích</th>-->
 <!--                <th>Khu vực</th>-->
                 <th>Trái</th>
                 <th>Phải</th>
@@ -49,7 +49,9 @@
             <tbody>
             <?php foreach ($ads as $row){ ?>
                 <tr>
-                    <td><?php echo $row->id ?>
+                    <td class="text-center">
+                        <button class="btn btn-warning mr-1 btn-sm"><?php echo $row->id ?></button>
+
                         <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
                         <?php if ($_uid == 1) { ?>
                             <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
@@ -63,8 +65,12 @@
                             <?php echo $row->title?></td>
                         </a>
 <!--                    <td>--><?php //echo $row->intro?><!--</td>-->
-                    <td><?php echo $row->price?></td>
-                    <td><?php echo $row->acreage?></td>
+                    <td>
+                        <p class="btn btn-outline-danger"><?php echo $row->price?> </p><br/>
+                        <p class="btn btn-outline-cyan"><?php echo $row->acreage?> m<sup>2</sup> </p>
+
+                    </td>
+<!--                    <td>--><?php //echo $row->acreage?><!--</td>-->
 <!--                    <td>--><?php //echo $row->area?><!--</td>-->
 
                     <td>
@@ -110,23 +116,23 @@
                         ></i>layer phải
                     </td>
 
-                    <td style="display: flex">
+                    <td style="display: grid ">
                         <i id="icon_new-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->icon_new ? 'fa-toggle-on' : 'fa-toggle-off'?> text-danger"
+                           class="fa fa-2x <?php echo $row->icon_new ? 'fa-toggle-on' : 'fa-toggle-off'?> primary"
                            onclick="icon_new(<?php echo $row->id?>)"
                         ></i> Mới
 <!--                    </td>-->
 <!---->
 <!--                    <td>-->
                         <i id="icon_vip-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->icon_vip ? 'fa-toggle-on' : 'fa-toggle-off'?> text-info"
+                           class="fa fa-2x <?php echo $row->icon_vip ? 'fa-toggle-on' : 'fa-toggle-off'?> info"
                            onclick="icon_vip(<?php echo $row->id?>)"
                         ></i> Vip
 <!--                    </td>-->
 
 <!--                    <td>-->
                         <i id="icon_hot-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->icon_hot ? 'fa-toggle-on' : 'fa-toggle-off'?> text-success"
+                           class="fa fa-2x <?php echo $row->icon_hot ? 'fa-toggle-on' : 'fa-toggle-off'?> success"
                            onclick="icon_hot(<?php echo $row->id?>)"
                         ></i> Hot
                     </td>

@@ -10,6 +10,7 @@
 <link href="<?php echo admin_theme()?>vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Font Awesome -->
 <link href="<?php echo admin_theme()?>vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="<?php echo public_url()?>css/colors.css" rel="stylesheet">
 
 <!--responsive-->
 <link href="<?php echo admin_theme()?>vendors/datatables.net-responsive-bs/css/responsive.bootstrap.css" rel="stylesheet">
