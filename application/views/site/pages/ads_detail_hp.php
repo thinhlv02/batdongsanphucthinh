@@ -15,58 +15,38 @@
                         <h1>Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng</h1>
 
                         <!--Begin imgs_land_box-->
-                        <div class="imgs_land_box row">
-                            <div class="col-xs-10 left_iland">
-                                <div class="bx-wrapper" style="max-width: 100%;">
-                                    <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 400px;">
-                                        <ul class="land_slider" style="width: 515%; position: relative; transition-duration: 0s; transform: translate3d(-1422px, 0px, 0px);">
-                                            <li style="float: left; list-style: none; position: relative; width: 711px;" class="bx-clone">
-                                                <div>
-                                                    <img src="http://nhadathaiphong.vn/images/attachment/81772.jpg" title="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng" alt="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng">
-                                                </div>
-                                            </li>
-                                            <li style="float: left; list-style: none; position: relative; width: 711px;">
-                                                <div>
-                                                    <img src="http://nhadathaiphong.vn/images/attachment/43611.jpg" title="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng" alt="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng">
-                                                </div>
-                                            </li>
-                                            <li style="float: left; list-style: none; position: relative; width: 711px;">
-                                                <div>
-                                                    <img src="http://nhadathaiphong.vn/images/attachment/8914.jpg" title="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng" alt="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng">
-                                                </div>
-                                            </li>
-                                            <li style="float: left; list-style: none; position: relative; width: 711px;">
-                                                <div>
-                                                    <img src="http://nhadathaiphong.vn/images/attachment/81772.jpg" title="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng" alt="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng">
-                                                </div>
-                                            </li>
-                                            <li style="float: left; list-style: none; position: relative; width: 711px;" class="bx-clone">
-                                                <div>
-                                                    <img src="http://nhadathaiphong.vn/images/attachment/43611.jpg" title="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng" alt="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng">
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bx-controls bx-has-controls-direction">
-                                        <div class="bx-controls-direction">
-                                            <a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div>
-                                    </div>
-                                </div>
+                        <div class="content-news-1 col-md-12 col-sm-12">
+
+
+                            <div class="demo">
+                                <ul id="lightSlider">
+                                    <?php
+                                    $lightSlider_str = $ads->lightSlider != '' ? $ads->img . '#' . $ads->lightSlider : $ads->img;
+                                    //                                $lightSlider_str = $ads->lightSlider != '' ? $ads->lightSlider : $ads->img;
+                                    $tags = explode('#', $lightSlider_str);
+                                    foreach ($tags as $k => $val) { ?>
+                                        <!--                                <li style="width: 450px; height: 338px"-->
+                                        <li style="max-height: 703px !important;"
+                                            data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
+                                            <!--                                    <img style="width: 450px; height: 338px" alt="-->
+                                            <? //= $val ?><!--"-->
+                                            <img style="max-height: 703px !important;" alt="<?= $val ?>"
+                                                 src="<?php echo public_url('images/ads/' . $val) ?>"/>
+                                        </li>
+                                    <?php } ?>
+
+                                </ul>
                             </div>
 
-                            <div class="col-xs-2 right_iland">
-                                <div id="land_slider_pager">
-                                    <a data-slide-index="0" href="" class=""><span><em style="display: block; line-height: 70px; width: 75px; text-align: center; font-weight: bold; font-size: 16px; color: #000;">VIDEO</em></span></a>
-                                    <a data-slide-index="1" href="" class="active"><span><img src="http://nhadathaiphong.vn/images/attachment/thumb/43611.jpg"></span></a><a data-slide-index="2" href=""><span><img src="http://nhadathaiphong.vn/images/attachment/thumb/8914.jpg"></span></a><a data-slide-index="3" href=""><span><img src="http://nhadathaiphong.vn/images/attachment/thumb/81772.jpg"></span></a>
-                                </div>
-                            </div>
                         </div>
                         <!--End imgs_land_box-->
+
+                        <div style="clear: both"></div>
 
                         <h2>Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng</h2>
 
                         <!--Begin brief_land_box-->
-                        <div class="brief_land_box row">
+                        <div class="brief_land_box row12">
                             <div class="col-xs-8">
                                 <div class="row">
                                     <div class="col-xs-6 ibrief"><strong>- Mã số tin:</strong> HP-58265</div>
@@ -2530,5 +2510,73 @@
 
     .land_page .poster_land_box .pic_poster_land_box {
         padding-right: 30px;
+    }
+
+    .land_page .poster_land_box .detail_poster_land_box p:first-child {
+        border-top: 0;
+    }
+
+    .land_page .poster_land_box .detail_poster_land_box p {
+        padding: 5px 0;
+        border-top: 1px dotted #ddd;
+    }
+
+    .land_page .land_box {
+        border: 1px solid #ddd;
+        padding: 15px;
+    }
+
+    .land_page .title1_land_box strong {
+        background: #fff;
+        display: inline-block;
+        position: relative;
+        margin-bottom: -10px;
+        font-weight: 600;
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .land_page .title1_land_box {
+        border-bottom: 1px solid #ddd;
+        margin: 10px 0 20px 0;
+    }
+
+    p.title_box1 strong {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 50px;
+        font-weight: 600;
+        padding-left: 15px;
+        border-left: 15px solid #e40b00;
+    }
+
+    .body_top2_box {
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-top: 0;
+    }
+
+    .title_box strong, .title_boxM strong {
+        border-bottom: 2px solid #e40b00;
+        display: inline-block;
+        font-size: 20px;
+        line-height: 32px;
+        position: relative;
+        margin-bottom: -1px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .land_page .land_box h1, .land_page .land_box h2 {
+        color: #e40b00;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .land_page .land_box {
+        border: 1px solid #ddd;
+        padding: 15px;
     }
 </style>
