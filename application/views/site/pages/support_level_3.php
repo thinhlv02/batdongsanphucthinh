@@ -10,7 +10,7 @@
 <section class="detail">
     <div class="container">
         <ol class="breadcrumb">
-            <li><a href="<?php echo base_url('ho-tro')?>">Hỗ trợ3</a></li>
+            <li><a href="<?php echo base_url('ho-tro')?>">Hỗ trợ(3)</a></li>
             <li><a href="<?php echo base_url('ho-tro/'.create_slug(getTextType($type)))?>"><?php echo getTextType($type)?></a></li>
             <li class="active"><?php echo $question->name?></li>
         </ol>

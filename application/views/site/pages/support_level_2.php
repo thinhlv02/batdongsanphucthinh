@@ -9,7 +9,7 @@
 <section class="detail">
     <div class="container">
         <ol class="breadcrumb">
-            <li><a href="<?php echo base_url('ho-tro')?>">Hỗ trợ2</a></li>
+            <li><a href="<?php echo base_url('ho-tro')?>">Hỗ trợ(2)</a></li>
             <li class="active"><?php echo getTextType($type)?></li>
         </ol>
         <div class="col-sm-4 col-md-3">
