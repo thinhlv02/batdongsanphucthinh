@@ -16,10 +16,10 @@
             <div class="left-menu">
                 <div class="left-title"><?php echo getTextType($type)?></div>
                 <ul>
-                    <?php $i=0; foreach ($categories as $p){ $i++; ?>
-                        <li  class="<?php if ($p->id == $active) echo 'active'; ?>" style="margin: 15px 0; list-style-type: none ">
+                    <?php foreach ($categories as $p){ ?>
+                        <li  class="<?php if ($p->id == $active) echo 'active'; ?>" style="margin: 15px 0">
                             <a href="<?php echo base_url('ho-tro/'.create_slug($p->name).'-'.$p->id)?>">
-                                <?php  echo $i. '. ' .$p->name?>
+                                <?php  echo $p->name?>
                             </a>
                         </li>
                     <?php }?>
@@ -29,10 +29,10 @@
         <div class="col-md-9 col-sm-8 detail-content">
             <div class="line-height-2 pl-5">
                 <ul>
-                    <?php foreach ($questions as $p){ ?>
-                        <li style="margin: 15px 0">
+                    <?php $i=0; foreach ($questions as $p){ $i++; ?>
+                        <li style="margin: 15px 0; list-style-type: none">
                             <a href="<?php echo base_url('ho-tro/'.create_slug($p->name).'-'.$p->id)?>">
-                                <?php echo $p->name?>
+                                <?php echo $i. '. ' . $p->name?>
                             </a>
                         </li>
                     <?php }?>
