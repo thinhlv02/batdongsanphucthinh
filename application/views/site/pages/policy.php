@@ -4,8 +4,8 @@
             <div class="left-menu">
                 <div class="left-title">Chính sách và điều khoản</div>
                 <ul>
-                    <li><a href="<?php echo base_url('dieu-khoan-su-dung.html') ?>">Điều khoản sử dụng</a></li>
-                    <li><a href="<?php echo base_url('chinh-sach-bao-mat.html') ?>">Chính sách bảo mật</a></li>
+                    <li class="<?php if ($active == 99) echo 'active' ?>"><a href="<?php echo base_url('dieu-khoan-su-dung.html') ?>">Điều khoản sử dụng</a></li>
+                    <li class="<?php if ($active == 100) echo 'active' ?>"><a href="<?php echo base_url('chinh-sach-bao-mat.html') ?>">Chính sách bảo mật</a></li>
                 </ul>
             </div>
         </div>

@@ -169,6 +169,8 @@ Class Home extends MY_Controller
     function policy()
     {
         $this->data['li_4'] = 1;
+        $this->data['active'] = 99;
+
         $policy = $this->contact_model->get_info(1)->policy;
         $this->data['title'] = "Điều khoản sử dụng";
         $this->data['page_content'] = $policy;
@@ -178,6 +180,7 @@ Class Home extends MY_Controller
 
     function privacy()
     {
+        $this->data['active'] = 100;
         $this->data['li_4'] = 1;
         $privacy = $this->contact_model->get_info(1)->privacy;
         $this->data['title'] = "Chính sách bảo mật";
