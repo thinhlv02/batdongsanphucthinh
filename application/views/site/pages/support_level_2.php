@@ -17,7 +17,7 @@
                 <div class="left-title"><?php echo getTextType($type)?></div>
                 <ul>
                     <?php $i=0; foreach ($categories as $p){ $i++; ?>
-                        <li  class="<?php if ($p->id == $active) echo 'active'; ?>" style="margin: 15px 0">
+                        <li  class="<?php if ($p->id == $active) echo 'active'; ?>" style="margin: 15px 0; list-style-type: none">
                             <a href="<?php echo base_url('ho-tro/'.create_slug($p->name).'-'.$p->id)?>">
                                 <?php  echo $i. '. ' .$p->name?>
                             </a>
