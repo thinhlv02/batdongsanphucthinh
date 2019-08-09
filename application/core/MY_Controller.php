@@ -59,7 +59,7 @@ Class MY_Controller extends CI_Controller
         }
         //neu ma admin da dang nhap thi khong cho phep vao trang login nua.
         if ($login && $controller == 'login') {
-            redirect(base_url('admin/product'));
+            redirect(base_url('admin/ads'));
         }
     }
 
