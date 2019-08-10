@@ -570,4 +570,9 @@
         background: #efefef;
         border-bottom: 1px solid #ddd;
     }
+
+    .land_page .price_ibrief {
+        font-size: 20px;
+        color: #e40b00;
+    }
 </style>
