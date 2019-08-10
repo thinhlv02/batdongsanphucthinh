@@ -69,7 +69,7 @@
                                 <div class="row">
                                     <div class="col-xs-6 ibrief"><strong>- DTMB:</strong> <?php echo $ads->acreage ?>
                                         m<sup>2</sup></div>
-                                    <div class="col-xs-6 ibrief"><strong>- DTSD:</strong> <?php echo $ads->acreage ?>
+                                    <div class="col-xs-6 ibrief"><strong>- DTSD:</strong> <?php echo $ads->landacreage ?>
                                         m<sup>2</sup></div>
                                 </div>
 
