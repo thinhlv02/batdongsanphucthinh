@@ -72,7 +72,7 @@
                                     <?php foreach ($layer_right as $key => $value) { ?>
                                         <li style="float: none; list-style: none; position: relative; width: 298px;"
                                             class="bx-clone">
-                                            <dl class="">
+                                            <dl class=" _vip _hot">
                                                 <dt>
                                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
                                                                 src="<?php echo public_url('images/ads/' . $value->img) ?>"
