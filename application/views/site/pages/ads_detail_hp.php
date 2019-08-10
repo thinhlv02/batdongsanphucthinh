@@ -336,7 +336,7 @@
                                         class="bx-clone">
                                         <dl class=" _vip _hot">
                                             <dt>
-                                                <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img style="width: 100%;height: 100%;"
+                                                <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
                                                             src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                                             alt="<?php echo $value->title ?>"></a>
                                                 <div class="icon_viphot">
