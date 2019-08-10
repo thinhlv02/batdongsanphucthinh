@@ -331,7 +331,7 @@
 
                             <ul class="vip_slider"
                                 style="width: auto; position: relative; transition-duration: 0.5s; transform: translate3d(0px, -3402px, 0px);">
-                                <?php foreach ($ads_right as $key => $value) { ?>
+                                <?php foreach ($ads_center as $key => $value) { ?>
                                     <li style="float: none; list-style: none; position: relative; width: 298px;"
                                         class="bx-clone">
                                         <dl class=" _vip _hot">
