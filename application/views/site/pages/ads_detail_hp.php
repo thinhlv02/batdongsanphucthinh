@@ -61,7 +61,8 @@
                                     </div>
                                     <div class="col-xs-6 ibrief"><strong>- Ngày hết hạn:</strong>
                                         <span class="danger">
-                                            <?php echo date('d-m-Y',strtotime('+30 days',strtotime($ads->created_at))) . PHP_EOL; ?></span></div>
+                                            <?php echo date('d-m-Y', strtotime('+30 days', strtotime($ads->created_at))) . PHP_EOL; ?></span>
+                                    </div>
 
                                 </div>
 
@@ -77,7 +78,7 @@
                                         <a href="javascript:void(0)">Cần bán</a></div>
                                     <div class="col-xs-6 ibrief"><strong>- Loại BĐS:</strong>
                                         <a href="javascript:void(0)">
-                                            <?php echo $ads->productcat !='' ? $ads->productcat: 'KXD' ?></a></div>
+                                            <?php echo $ads->productcat != '' ? $ads->productcat : 'KXD' ?></a></div>
                                 </div>
 
                                 <div class="row">
@@ -105,9 +106,11 @@
                         <div class="pack_land_box">
                             <div class="row12">
                                 <div class="col-xs-4 pland"><strong>Chiều rộng:</strong>
-                                    <?php echo $ads->width !='' ? $ads->width: 0 ?>m</div>
+                                    <?php echo $ads->width != '' ? $ads->width : 0 ?>m
+                                </div>
                                 <div class="col-xs-4 pland"><strong>Chiều dài:</strong>
-                                    <?php echo $ads->landwidth !='' ? $ads->landwidth: 0 ?>m</div>
+                                    <?php echo $ads->landwidth != '' ? $ads->landwidth : 0 ?>m
+                                </div>
                                 <div class="col-xs-4 pland"><strong>Giấy tờ:</strong> Sổ đỏ Chính Chủ</div>
                             </div>
 
@@ -117,13 +120,13 @@
                                 <div class="col-xs-4 pland"><strong>Diện tích SD:</strong> <?php echo $ads->acreage ?> m<sup>2</sup>
                                 </div>
                                 <div class="col-xs-4 pland"><strong>Hướng:</strong>
-                                    <?php echo $ads->homedirection !='' ? $ads->homedirection: 'KXD' ?></div>
+                                    <?php echo $ads->homedirection != '' ? $ads->homedirection : 'KXD' ?></div>
                             </div>
 
                             <div class="row12">
                                 <div class="col-xs-12 pland">
                                     <strong>Tên dự án:</strong>
-                                    <?php echo $ads->project !='' ? $ads->project: 'KXD' ?>
+                                    <?php echo $ads->project != '' ? $ads->project : 'KXD' ?>
                                 </div>
                             </div>
 
@@ -144,8 +147,8 @@
                         <div class="pack_land_box">
                             <div class="row12">
                                 <div class="col-xs-12 pland"><strong>Người liên hệ :</strong>
-                                    <?php echo $ads->brname !='' ? $ads->brname: 'Qua điện thoại' ?>
-                                    </div>
+                                    <?php echo $ads->brname != '' ? $ads->brname : 'Qua điện thoại' ?>
+                                </div>
                             </div>
                             <div class="row12">
                                 <div class="col-xs-12 pland">
@@ -167,15 +170,15 @@
                                 </div>
                             </div>
                         </div>
-                        
-<!--                        <div style="clear: both;"></div>-->
+
+                        <!--                        <div style="clear: both;"></div>-->
 
                         <div class="title1_land_box"><strong>Thông tin người đăng</strong></div>
                         <!--Begin brief_land_box-->
                         <div class="row pack_land_box poster_land_box" style="border: 0;padding-left:10px;">
                             <div class="col-xs-3 pic_poster_land_box" style="padding-right: 30px !important;">
                                 <p style="padding: 4px;"><img src="<?php echo public_url('/images/ads/default.png') ?>"
-                                        alt="Bất động sản Phúc Thịnh">
+                                                              alt="Bất động sản Phúc Thịnh">
                                 </p>
                             </div>
 
@@ -202,132 +205,54 @@
                     <p class="title_box1"><strong>CÁC TIN CÙNG TIÊU CHÍ TÌM KIẾM</strong></p>
                     <div>
                         <div class="row12 body_top2_box">
-                            <div class="col-xs-6 top2 top2_up">
-                                <div class="row _vip_hot">
-                                    <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-lo-16-duong-le-hong-phong-dang-lam-hai-an-hai-phong-bds59041.htm"><img
-                                                    src="http://nhadathaiphong.vn/images/attachment/thumb/2970so-do-va-so-hong_2605083022.jpg"
-                                                    alt="Bán nhà lô 16 đường Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng"></a>
-                                        <div class="code_row">HP-59041</div>
-                                    </div>
+                            <?php foreach ($highlight as $key => $value) {
+                                if ($ads->id != $value->id) { ?>
+                                    <div class="col-xs-6 top2 top2_up">
+                                        <div class="row _vip_hot">
+                                            <div class="col-xs-5 ltop2">
+                                                <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
+                                                            src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                                            alt="<?php echo $value->title ?>"></a>
+                                                <div class="code_row">PT-<?php echo $value->id.substr($value->code,0,3) ?></div>
+                                            </div>
 
-                                    <div class="col-xs-7 rtop2">
-                                        <h3>
-                                            <a href="/ban-nha-lo-16-duong-le-hong-phong-dang-lam-hai-an-hai-phong-bds59041.htm">Bán
-                                                nhà lô 16 đường Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng </a>
-                                            <span></span>
-                                        </h3>
-                                        <div>Ưu điểm thiết kế nhà ở kết hợp làm văn phòng, nhà để được 2 ô tô, điện hệ
-                                            thống điều hoà chạy riêng biệt, hút mùi các phòng thông 4 tầng
+                                            <div class="col-xs-7 rtop2">
+                                                <h3>
+                                                    <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                                        <?php echo $value->title ?>
+                                                    </a>
+                                                    <span></span>
+                                                </h3>
+                                                <div><?php echo $value->intro ?>
+                                                </div>
+                                                <p>
+                                                    <strong>DTMB:</strong> <?php echo $value->acreage ?> m2 - <strong>Giá:</strong>
+                                                    <span>
+												<?php echo $value->price ?>												</span>
+                                                </p>
+                                            </div>
                                         </div>
-                                        <p>
-                                            <strong>DTMB:</strong> 60 m2 - <strong>Giá:</strong>
-                                            <span>
-												Thỏa thuận												</span>
-                                        </p>
-                                    </div>
-                                </div>
 
-                                <div class="icon_viphot">
-                                    <img src="http://nhadathaiphong.vn/css/images/vip2.gif"
-                                         alt="Bán nhà lô 16 đường Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng">
-                                </div>
-                            </div>
-                            <div class="col-xs-6 top2 top2_up">
-                                <div class="row _vip _hot _vip_hot">
-                                    <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-so-50-lo-16mr-le-hong-phong-dang-lam-hai-an-hai-phong-bds58265.htm"><img
-                                                    src="http://nhadathaiphong.vn/images/attachment/thumb/43611.jpg"
-                                                    alt="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng"></a>
-                                        <div class="code_row">HP-58265</div>
-                                    </div>
+                                        <div class="icon_viphot">
+                                            <?php if ($value->icon_new == 1) { ?>
+                                                <img src="<?php echo public_url('images/icon_new.gif') ?>"
+                                                     alt="<?php echo $value->title ?>">
+                                            <?php } ?>
 
-                                    <div class="col-xs-7 rtop2">
-                                        <h3>
-                                            <a href="/ban-nha-so-50-lo-16mr-le-hong-phong-dang-lam-hai-an-hai-phong-bds58265.htm">Bán
-                                                nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng
-                                                <em>[ĐÃ XEM]</em> </a>
-                                            <span></span>
-                                        </h3>
-                                        <div>Căn nhà nằm trên mặt đường đôi 30m, để lại nội thất toàn bộ, nhà ở kết hợp
-                                            văn phòng, hướng Tây Nam chính và bên cạnh có mặt thoáng Đông Nam
+                                            <?php if ($value->icon_vip == 1) { ?>
+                                                <img src="<?php echo public_url('images/icon_vip.gif') ?>"
+                                                     alt="<?php echo $value->title ?>">
+                                            <?php } ?>
+
+                                            <?php if ($value->icon_hot == 1) { ?>
+                                                <img src="<?php echo public_url('images/icon_hot.gif') ?>"
+                                                     alt="<?php echo $value->title ?>">
+                                            <?php } ?>
                                         </div>
-                                        <p>
-                                            <strong>DTMB:</strong> 60 m2 - <strong>Giá:</strong>
-                                            <span>
-												4.6 tỷ VND												</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="icon_viphot">
-                                    <img src="http://nhadathaiphong.vn/css/images/vip2.gif"
-                                         alt="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng"><img
-                                            src="http://nhadathaiphong.vn/css/images/vip1.gif"
-                                            alt="Bán nhà số 50 lô 16MR Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng">
-                                </div>
-                            </div>
-                            <div class="col-xs-6 top2 top2_up">
-                                <div class="row">
-                                    <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-4-tang-doc-lap-khu-phan-lo-cao-cap-duong-le-hong-phong-ket-hop-vua-o-vua-lam-van-phong-bds57746.htm"><img
-                                                    src="http://nhadathaiphong.vn/images/attachment/thumb/9554b1eac7a164d1818fd8c0.jpg"
-                                                    alt="Bán nhà 4 tầng độc lập khu phân lô cao cấp đường Lê Hồng Phong, kết hợp vừa ở vừa làm văn phòng"></a>
-                                        <div class="code_row">HP-57746</div>
                                     </div>
 
-                                    <div class="col-xs-7 rtop2">
-                                        <h3>
-                                            <a href="/ban-nha-4-tang-doc-lap-khu-phan-lo-cao-cap-duong-le-hong-phong-ket-hop-vua-o-vua-lam-van-phong-bds57746.htm">Bán
-                                                nhà 4 tầng độc lập khu phân lô cao cấp đường Lê Hồng Phong, kết hợp vừa
-                                                ở vừa làm văn phòng </a>
-                                            <span></span>
-                                        </h3>
-                                        <div> Vị trí siêu đẹp, vừa ở vừa làm văn phòng mà gara vẫn để được 2 xe ô tô,
-                                            nằm trên tuyến đường đôi 30m phía trước để được rất rất nhiều xe ô tô, xe
-                                            máy
-                                        </div>
-                                        <p>
-                                            <strong>DTMB:</strong> 60 m2 - <strong>Giá:</strong>
-                                            <span>
-												4.8 tỷ VND												</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="icon_viphot">
-                                </div>
-                            </div>
-                            <div class="col-xs-6 top2 top2_up">
-                                <div class="row">
-                                    <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-4-tang-noi-that-cao-cap-khu-333-van-cao-co-hoi-dau-tu-cho-thue-lau-dai-rat-tot-bds51520.htm"><img
-                                                    src="http://nhadathaiphong.vn/images/attachment/thumb/31922.jpg"
-                                                    alt="Bán nhà 4 tầng nội thất cao cấp khu 333 Văn Cao, cơ hội đầu tư cho thuê lâu dài rất tốt"></a>
-                                        <div class="code_row">HP-51520</div>
-                                    </div>
-
-                                    <div class="col-xs-7 rtop2">
-                                        <h3>
-                                            <a href="/ban-nha-4-tang-noi-that-cao-cap-khu-333-van-cao-co-hoi-dau-tu-cho-thue-lau-dai-rat-tot-bds51520.htm">Bán
-                                                nhà 4 tầng nội thất cao cấp khu 333 Văn Cao, cơ hội đầu tư cho thuê lâu
-                                                dài rất tốt </a>
-                                            <span></span>
-                                        </h3>
-                                        <div>- Nhà 4 tầng xây độc lập, kiên cố, khung cột chắc chắn, thiết kế hiện đại,
-                                            đường nội bộ rộng 12m, khu dân cư dân trí cao xung quanh có nhiều tiện ích
-                                        </div>
-                                        <p>
-                                            <strong>DTMB:</strong> 85 m2 - <strong>Giá:</strong>
-                                            <span>
-												5 tỷ VND												</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="icon_viphot">
-                                </div>
-                            </div>
+                                <?php }
+                            } ?>
 
                         </div>
 
@@ -340,128 +265,51 @@
                     <p class="title_box1"><strong>CÁC TIN LIÊN QUAN</strong></p>
                     <div>
                         <div class="row12 body_top2_box">
+                             <?php foreach ($ads_left as $key => $value) { ?>
                             <div class="col-xs-6 top2 top2_up">
                                 <div class="row">
                                     <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-lo-17-le-hong-phong-canh-nha-hang-amakong-hai-an-hai-phong-bds52909.htm"><img
-                                                    src="http://nhadathaiphong.vn/images/attachment/thumb/77210.jpg"
-                                                    alt="Bán nhà lô 17 Lê Hồng Phong (cạnh nhà hàng Amakong), Hải An, Hải Phòng"></a>
-                                        <div class="code_row">HP-52909</div>
+                                        <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
+                                                    src="<?php echo public_url('images/ads/' . $value->img) ?>"
+                                                    alt="<?php echo $value->title ?>"></a>
+                                        <div class="code_row">PT-<?php echo $value->id.substr($value->code,0,3) ?></div>
                                     </div>
 
                                     <div class="col-xs-7 rtop2">
                                         <h3>
-                                            <a href="/ban-nha-lo-17-le-hong-phong-canh-nha-hang-amakong-hai-an-hai-phong-bds52909.htm">Bán
-                                                nhà lô 17 Lê Hồng Phong (cạnh nhà hàng Amakong), Hải An, Hải Phòng </a>
+                                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                                <?php echo $value->title ?>
+                                            </a>
                                             <span></span>
                                         </h3>
-                                        <div>Nhà xây 4 tầng độc lập, kiên cố, thiết kế hiện đại, nội thất cao cấp, gần
-                                            trường, chợ, siêu thị, an ninh tốt, hướng Đông Bắc, sổ đỏ chính chủ
+                                        <div><?php echo $value->intro ?>
                                         </div>
                                         <p>
-                                            <strong>DTMB:</strong> 60 m2 - <strong>Giá:</strong>
+                                            <strong>DTMB:</strong> <?php echo $value->acreage ?> m2 - <strong>Giá:</strong>
                                             <span>
-												4.5 tỷ VND												</span>
+												<?php echo $value->price ?> VND												</span>
                                         </p>
                                     </div>
                                 </div>
 
                                 <div class="icon_viphot">
-                                    <img src="http://nhadathaiphong.vn/css/images/new.gif"
-                                         alt="Bán nhà lô 17 Lê Hồng Phong (cạnh nhà hàng Amakong), Hải An, Hải Phòng">
+                                    <?php if ($value->icon_new == 1) { ?>
+                                        <img src="<?php echo public_url('images/icon_new.gif') ?>"
+                                             alt="<?php echo $value->title ?>">
+                                    <?php } ?>
+
+                                    <?php if ($value->icon_vip == 1) { ?>
+                                        <img src="<?php echo public_url('images/icon_vip.gif') ?>"
+                                             alt="<?php echo $value->title ?>">
+                                    <?php } ?>
+
+                                    <?php if ($value->icon_hot == 1) { ?>
+                                        <img src="<?php echo public_url('images/icon_hot.gif') ?>"
+                                             alt="<?php echo $value->title ?>">
+                                    <?php } ?>
                                 </div>
                             </div>
-                            <div class="col-xs-6 top2 top2_up">
-                                <div class="row">
-                                    <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-4-tang-doc-lap-thiet-ke-tuyet-mi-khu-phan-lo-duong-van-cao-hai-an-hai-phong-bds51430.htm"><img
-                                                    src="http://nhadathaiphong.vn/images/attachment/thumb/8941.jpg"
-                                                    alt="Bán nhà 4 tầng độc lập thiết kế tuyệt mĩ khu phân lô đường Văn Cao, Hải An, Hải Phòng."></a>
-                                        <div class="code_row">HP-51430</div>
-                                    </div>
-
-                                    <div class="col-xs-7 rtop2">
-                                        <h3>
-                                            <a href="/ban-nha-4-tang-doc-lap-thiet-ke-tuyet-mi-khu-phan-lo-duong-van-cao-hai-an-hai-phong-bds51430.htm">Bán
-                                                nhà 4 tầng độc lập thiết kế tuyệt mĩ khu phân lô đường Văn Cao, Hải An,
-                                                Hải Phòng. </a>
-                                            <span></span>
-                                        </h3>
-                                        <div>- Nhà xây 4 tầng độc lập, vừa hoàn thiện được 2 năm với thiết kế hiện đại
-                                            kiểu dáng Tân cổ điển tỉ mỉ đến từng chi tiết nhỏ trong ngôi nhà
-                                        </div>
-                                        <p>
-                                            <strong>DTMB:</strong> 83 m2 - <strong>Giá:</strong>
-                                            <span>
-												5.3 tỷ VND												</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="icon_viphot">
-                                </div>
-                            </div>
-                            <div class="col-xs-6 top2 top2_up">
-                                <div class="row">
-                                    <div class="col-xs-5 ltop2">
-                                        <a href="/ban-thua-dat-57m2-mat-duong-21m-khu-tdc-dong-giap-hai-an-hai-phong-bds60619.htm"><img
-                                                    src="http://nhadathaiphong.vn/images/attachment/thumb/8196f7cd80a66169843as7dd78.jpg"
-                                                    alt="Bán thửa đất 57m2 mặt đường 21m khu TĐC Đồng Giáp, Hải An, Hải Phòng"></a>
-                                        <div class="code_row">HP-60619</div>
-                                    </div>
-
-                                    <div class="col-xs-7 rtop2">
-                                        <h3>
-                                            <a href="/ban-thua-dat-57m2-mat-duong-21m-khu-tdc-dong-giap-hai-an-hai-phong-bds60619.htm">Bán
-                                                thửa đất 57m2 mặt đường 21m khu TĐC Đồng Giáp, Hải An, Hải Phòng </a>
-                                            <span></span>
-                                        </h3>
-                                        <div> Thửa đất nằm trên mặt đường nội bộ rộng 21m vỉa hè 2 bên, với tổng diện
-                                            tích 57m2, mặt tiền 4m, vị trí đắc địa. - Sắp tới đường 40m ngoài sẽ mở
-                                            thông
-                                        </div>
-                                        <p>
-                                            <strong>DTMB:</strong> 57.2 m2 - <strong>Giá:</strong>
-                                            <span>
-												26.5 triệu VND/M2												</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="icon_viphot">
-                                </div>
-                            </div>
-                            <div class="col-xs-6 top2 top2_up">
-                                <div class="row _vip_hot">
-                                    <div class="col-xs-5 ltop2">
-                                        <a href="/ban-nha-so-201-lo-16-mo-rong-le-hong-phong-dang-lam-hai-an-hai-phong-bds52239.htm"><img
-                                                    src="http://nhadathaiphong.vn/images/attachment/thumb/23589.jpg"
-                                                    alt="Bán nhà số 201 lô 16 mở rộng Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng"></a>
-                                        <div class="code_row">HP-52239</div>
-                                    </div>
-
-                                    <div class="col-xs-7 rtop2">
-                                        <h3>
-                                            <a href="/ban-nha-so-201-lo-16-mo-rong-le-hong-phong-dang-lam-hai-an-hai-phong-bds52239.htm">Bán
-                                                nhà số 201 lô 16 mở rộng Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng </a>
-                                            <span></span>
-                                        </h3>
-                                        <div>Nhà xây 4 tầng kiên cố, thiết kế hiện đại, đường rộng, vỉa hè 2 bên, dân cư
-                                            văn minh, gần trường, chợ, hướng Tây Bắc, sổ đỏ chính chủ
-                                        </div>
-                                        <p>
-                                            <strong>DTMB:</strong> 0 m2 - <strong>Giá:</strong>
-                                            <span>
-												4 tỷ VND												</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="icon_viphot">
-                                    <img src="http://nhadathaiphong.vn/css/images/vip2.gif"
-                                         alt="Bán nhà số 201 lô 16 mở rộng Lê Hồng Phong, Đằng Lâm, Hải An, Hải Phòng">
-                                </div>
-                            </div>
+                            <?php } ?>
                         </div>
 
                     </div>
@@ -2323,3 +2171,16 @@
         border-bottom: 1px solid #ddd;
     }
 </style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.vip_slider').bxSlider({
+            mode: 'vertical',
+            auto: true,
+            minSlides: 30,
+            maxSlides: 30,
+            moveSlides: 1,
+            pager: false
+        });
+    });
+</script>
