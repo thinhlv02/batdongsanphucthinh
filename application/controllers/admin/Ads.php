@@ -404,6 +404,7 @@ Class Ads extends MY_Controller
                 'price' => $this->input->post('price'),
 //                'unit' => $this->input->post('unit'),
                 'acreage' => $this->input->post('acreage'),
+                'useacreage' => $this->input->post('useacreage'),
                 'province_id' => $txtProvince,
                 'district_id' => $txtDistrict,
                 'ward_id' => $ward,
