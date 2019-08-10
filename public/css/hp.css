@@ -237,7 +237,7 @@
     text-align: center;
 }
 
-.vip_slider>div dl dt a img {
+.vip_slider dl dt a img {
     width: 100%;
     height: 100%;
 }
