@@ -31,8 +31,10 @@ Class Service_money extends MY_Controller
             $make_money_by = $this->input->post('make_money_by');
             $input = [];
             $input['where'] = array(
-                'pay_time >=' => $from,
-                'pay_time <=' => $to
+                'created_at >=' => $from,
+                'created_at <=' => $to
+//                'pay_time >=' => $from,
+//                'pay_time <=' => $to
             );
 
             $input['order'] = array('id', 'desc');
