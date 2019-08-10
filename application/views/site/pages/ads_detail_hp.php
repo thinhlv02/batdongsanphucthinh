@@ -325,7 +325,7 @@
             <div class="col-xs-3 right">
                 <!--Begin two_cols-->
                 <div class="right_box vip_box">
-                    <p class="title_box"><a href="/tin-vip.htm"><strong>TIN VIP</strong></a></p>
+                    <p class="title_box"><a href="javascript:void(0)"><strong>TIN VIP</strong></a></p>
                     <div>
                         <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
 
@@ -364,7 +364,9 @@
                                                     </a>
                                                 </h3>
                                                 <p><strong>Diện tích:</strong> <?php echo $value->acreage ?> m2</p>
-                                                <p><strong>Giá:</strong> <span class="danger font-weight-600"><?php echo $value->price ?></span></p>
+                                                <p><strong>Giá:</strong>
+                                                    <span class="danger font-weight-600"><?php echo $value->price ?></span>
+                                                </p>
                                                 <p>
                                                     <strong>Hướng:</strong> <?php echo $ads->homedirection != '' ? $ads->homedirection : 'KXD' ?>
                                                 </p>
@@ -373,31 +375,6 @@
                                     </li>
                                 <?php } ?>
 
-                                <li class="d-none" style="float: none; list-style: none; position: relative; width: 298px;"
-                                    class="bx-clone">
-                                    <dl class="">
-                                        <dt>
-                                            <a href="/ban-nha-so-6688-thien-loi-le-chan-hai-phong-bds29782.htm"><img
-                                                        src="http://nhadathaiphong.vn/images/attachment/thumb/99120.jpg"
-                                                        alt="Bán nhà số 6/688 Thiên Lôi, Lê Chân, Hải Phòng"></a>
-                                            <div class="icon_viphot">
-                                                <img src="http://nhadathaiphong.vn/css/images/new.gif"
-                                                     alt="Bán nhà số 6/688 Thiên Lôi, Lê Chân, Hải Phòng"><img
-                                                        src="http://nhadathaiphong.vn/css/images/vip2.gif"
-                                                        alt="Bán nhà số 6/688 Thiên Lôi, Lê Chân, Hải Phòng">
-                                            </div>
-                                        </dt>
-                                        <dd>
-                                            <h3>
-                                                <a href="/ban-nha-so-6688-thien-loi-le-chan-hai-phong-bds29782.htm">Bán
-                                                    nhà số 6/688 Thiên Lôi, Lê Chân, Hải Phòng</a>
-                                            </h3>
-                                            <p><strong>Diện tích:</strong> 56 m2</p>
-                                            <p><strong>Giá:</strong> <span>1.82 tỷ</span></p>
-                                            <p><strong>Hướng:</strong> Đông Bắc</p>
-                                        </dd>
-                                    </dl>
-                                </li>
                             </ul>
 
                         </div>
@@ -414,75 +391,6 @@
     </div>
 </section>
 
-
-<style>
-
-    #details-auto .box-info .block {
-        width: 100%;
-        /*width: 300px;*/
-    }
-
-    #details-auto .block {
-        /* width: 360px !important; */
-        float: left;
-        margin-top: 0px !important;
-        margin-bottom: 0px !important;
-        padding-bottom: 0px !important;
-    }
-
-    .block {
-        border-bottom: 1px solid #e5e5e5;
-        width: 100%;
-        display: inline-block;
-        padding-bottom: 0px;
-        margin-top: 2px;
-    }
-
-    #details-auto .col-left {
-        float: left;
-        width: 124px;
-    }
-
-    .block .col-left {
-        float: left;
-        width: 126px;
-    }
-
-    .col-left {
-        float: left;
-    }
-
-    #details-auto .col-right {
-        float: left;
-        width: 176px;
-    }
-
-    .block .col-right {
-        float: left;
-        width: calc(100% - 200px);
-    }
-
-    .col-right {
-        float: right;
-    }
-
-    .detail-more-info {
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        width: 100%;
-        /* height: 28px; */
-        line-height: 28px;
-        color: white;
-        background: #15a1b1;
-        /* padding-left: 25px; */
-        padding: 1px;
-        padding-left: 5px;
-        margin-bottom: 5px;
-    }
-
-</style>
-
-
 <script>
     $('#lightSlider').lightSlider({
         gallery: true,
@@ -493,14 +401,21 @@
         thumbItem: 9
     });
 
+    $(document).ready(function () {
+        $('.vip_slider').bxSlider({
+            mode: 'vertical',
+            auto: true,
+            minSlides: 30,
+            maxSlides: 30,
+            moveSlides: 1,
+            pager: false
+        });
+    });
 
 </script>
 
 <style>
-    .demo {
-        /*width: 420px;*/
-    }
-
+    /*old slider*/
     ul {
         list-style: none outside none;
         padding-left: 0;
@@ -522,111 +437,9 @@
         /*max-height: 920px;*/
         max-width: 100%;
     }
-</style>
 
-<style>
-    #myImg {
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
+    /*old slider*/
 
-    #myImg:hover {
-        opacity: 0.7;
-    }
-
-    /* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0); /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-    }
-
-    /* Modal Content (image) */
-    .modal-content {
-        margin: auto;
-        display: block;
-        /*width: 80%;*/
-        width: 100%;
-        /*max-width: 700px;*/
-        max-width: 1170px;
-        max-height: 703px !important;
-    }
-
-    /* Caption of Modal Image */
-    #caption {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-        text-align: center;
-        color: #ccc;
-        padding: 10px 0;
-        height: 150px;
-    }
-
-    /* Add Animation */
-    .modal-content, #caption {
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-    }
-
-    @-webkit-keyframes zoom {
-        from {
-            -webkit-transform: scale(0)
-        }
-        to {
-            -webkit-transform: scale(1)
-        }
-    }
-
-    @keyframes zoom {
-        from {
-            transform: scale(0)
-        }
-        to {
-            transform: scale(1)
-        }
-    }
-
-    /* The Close Button */
-    .close {
-        position: absolute;
-        top: 45px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 40px;
-        font-weight: bold;
-        transition: 0.3s;
-        opacity: inherit;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    /* 100% Image Width on Smaller Screens */
-    @media only screen and (max-width: 700px) {
-        .modal-content {
-            width: 100%;
-        }
-    }
-</style>
-
-<style>
     .brief_land_box .ibrief {
         line-height: 24px;
     }
@@ -757,23 +570,4 @@
         background: #efefef;
         border-bottom: 1px solid #ddd;
     }
-
-    /*.vip_box>div dl dd h3 {*/
-    /*    margin-bottom: 5px;*/
-    /*    height: 36px;*/
-    /*    overflow: hidden;*/
-    /*}*/
 </style>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.vip_slider').bxSlider({
-            mode: 'vertical',
-            auto: true,
-            minSlides: 30,
-            maxSlides: 30,
-            moveSlides: 1,
-            pager: false
-        });
-    });
-</script>
