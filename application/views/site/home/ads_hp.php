@@ -74,7 +74,7 @@
                                             class="bx-clone">
                                             <dl class="">
                                                 <dt>
-                                                    <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
+                                                    <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img style="width: 100%;height: 100%"
                                                                 src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                                                 alt="<?php echo $value->title ?>"></a>
                                                     <div class="icon_viphot">
