@@ -69,7 +69,7 @@
                                 <div class="row">
                                     <div class="col-xs-6 ibrief"><strong>- DTMB:</strong> <?php echo $ads->acreage ?>
                                         m<sup>2</sup></div>
-                                    <div class="col-xs-6 ibrief"><strong>- DTSD:</strong> <?php echo $ads->landacreage ?>
+                                    <div class="col-xs-6 ibrief"><strong>- DTSD:</strong> <?php echo $ads->useacreage ?>
                                         m<sup>2</sup></div>
                                 </div>
 
@@ -117,7 +117,7 @@
                             <div class="row12">
                                 <div class="col-xs-4 pland"><strong>Diện tích MB:</strong> <?php echo $ads->acreage ?> m<sup>2</sup>
                                 </div>
-                                <div class="col-xs-4 pland"><strong>Diện tích SD:</strong> <?php echo $ads->landacreage ?> m<sup>2</sup>
+                                <div class="col-xs-4 pland"><strong>Diện tích SD:</strong> <?php echo $ads->useacreage ?> m<sup>2</sup>
                                 </div>
                                 <div class="col-xs-4 pland"><strong>Hướng:</strong>
                                     <?php echo $ads->homedirection != '' ? $ads->homedirection : 'KXD' ?></div>
