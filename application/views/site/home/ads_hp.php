@@ -78,8 +78,20 @@
                                                                 src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                                                 alt="<?php echo $value->title ?>"></a>
                                                     <div class="icon_viphot">
-                                                        <img src="<?php echo public_url('images/icon_new.gif') ?>"
-                                                             alt="<?php echo $value->title ?>">
+                                                        <?php if ($value->icon_new == 1) { ?>
+                                                            <img src="<?php echo public_url('images/icon_new.gif') ?>"
+                                                                 alt="<?php echo $value->title ?>">
+                                                        <?php } ?>
+
+                                                        <?php if ($value->icon_vip == 1) { ?>
+                                                            <img src="<?php echo public_url('images/icon_vip.gif') ?>"
+                                                                 alt="<?php echo $value->title ?>">
+                                                        <?php } ?>
+
+                                                        <?php if ($value->icon_hot == 1) { ?>
+                                                            <img src="<?php echo public_url('images/icon_hot.gif') ?>"
+                                                                 alt="<?php echo $value->title ?>">
+                                                        <?php } ?>
                                                     </div>
                                                 </dt>
                                                 <dd>
