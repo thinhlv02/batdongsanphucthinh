@@ -3,7 +3,7 @@
         <div style="min-height: 200px">
             <div class="row">
                 <div class="card">
-                    <div class="card-body" style="background-color: #EDEDED">
+                    <div class="card-body line-height-2" style="background-color: #EDEDED">
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                             <div class="footer-bottom-end-row1" style="padding-bottom: 10px; color: #000;">
                                 <strong style="font-size: 1.2em;">Công ty TNHH Thương Mại và Dịch Vụ Tân Bình</strong>
