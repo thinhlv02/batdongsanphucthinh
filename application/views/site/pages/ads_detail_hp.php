@@ -340,8 +340,20 @@
                                                             src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                                             alt="<?php echo $value->title ?>"></a>
                                                 <div class="icon_viphot">
-                                                    <img src="http://nhadathaiphong.vn/css/images/vip2.gif"
-                                                         alt="<?php echo $value->title ?>">
+                                                    <?php if ($value->icon_new == 1) { ?>
+                                                        <img src="<?php echo public_url('images/icon_new.gif') ?>"
+                                                             alt="<?php echo $value->title ?>">
+                                                    <?php } ?>
+
+                                                    <?php if ($value->icon_vip == 1) { ?>
+                                                        <img src="<?php echo public_url('images/icon_vip.gif') ?>"
+                                                             alt="<?php echo $value->title ?>">
+                                                    <?php } ?>
+
+                                                    <?php if ($value->icon_hot == 1) { ?>
+                                                        <img src="<?php echo public_url('images/icon_hot.gif') ?>"
+                                                             alt="<?php echo $value->title ?>">
+                                                    <?php } ?>
                                                 </div>
                                             </dt>
                                             <dd>
@@ -352,7 +364,7 @@
                                                     </a>
                                                 </h3>
                                                 <p><strong>Diện tích:</strong> <?php echo $value->acreage ?> m2</p>
-                                                <p><strong>Giá:</strong> <span><?php echo $value->price ?></span></p>
+                                                <p><strong>Giá:</strong> <span class="danger font-weight-600"><?php echo $value->price ?></span></p>
                                                 <p>
                                                     <strong>Hướng:</strong> <?php echo $ads->homedirection != '' ? $ads->homedirection : 'KXD' ?>
                                                 </p>
@@ -745,6 +757,12 @@
         background: #efefef;
         border-bottom: 1px solid #ddd;
     }
+
+    /*.vip_box>div dl dd h3 {*/
+    /*    margin-bottom: 5px;*/
+    /*    height: 36px;*/
+    /*    overflow: hidden;*/
+    /*}*/
 </style>
 
 <script type="text/javascript">
