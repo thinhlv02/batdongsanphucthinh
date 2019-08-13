@@ -528,17 +528,6 @@
         border-top: 0;
     }
 
-    .title_box strong, .title_boxM strong {
-        border-bottom: 2px solid #e40b00;
-        display: inline-block;
-        font-size: 20px;
-        line-height: 32px;
-        position: relative;
-        margin-bottom: -1px;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-
     .land_page .land_box h1, .land_page .land_box h2 {
         color: #e40b00;
         font-size: 20px;
