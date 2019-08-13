@@ -40,8 +40,6 @@
                             <div class="title_land_box">Ảnh đại diện(click để phóng to):</div>
                             <img id="myImg" src="<?php echo public_url('images/ads/' . $ads->img) ?> " style="width:100%;">
 
-                            <!--                    <img id="myImg" src="https://www.w3schools.com/howto/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">-->
-
                             <!-- The Modal -->
                             <div id="myModal" class="modal">
                                 <span class="close">&times;</span>
