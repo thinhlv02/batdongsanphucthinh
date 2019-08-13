@@ -12,11 +12,8 @@
                     </p>
                     <div class="land_box">
 
-                        <h1 class="mt-0"><?php echo $ads->title ?></h1>
-
                         <!--Begin imgs_land_box-->
                         <div class="content-news-1 col-md-12 col-sm-12">
-
 
                             <div class="demo">
                                 <ul id="lightSlider">
@@ -41,7 +38,7 @@
                         </div>
                         <!--End imgs_land_box-->
 
-                        <div style="clear: both"></div>
+                        <div class="clearfix"></div>
 
                         <h2><?php echo $ads->title ?></h2>
 
@@ -117,7 +114,8 @@
                             <div class="row12">
                                 <div class="col-xs-4 pland"><strong>Diện tích MB:</strong> <?php echo $ads->acreage ?> m<sup>2</sup>
                                 </div>
-                                <div class="col-xs-4 pland"><strong>Diện tích SD:</strong> <?php echo $ads->useacreage ?> m<sup>2</sup>
+                                <div class="col-xs-4 pland">
+                                    <strong>Diện tích SD:</strong> <?php echo $ads->useacreage ?> m<sup>2</sup>
                                 </div>
                                 <div class="col-xs-4 pland"><strong>Hướng:</strong>
                                     <?php echo $ads->homedirection != '' ? $ads->homedirection : 'KXD' ?></div>
@@ -141,7 +139,7 @@
 
                         </div>
 
-                        <div style="clear: both"></div>
+                        <div class="clearfix"></div>
 
                         <div class="title_land_box">Thông tin liên hệ:</div>
                         <div class="pack_land_box">
@@ -157,11 +155,11 @@
                             </div>
                             <div class="row12">
                                 <div class="col-xs-12 pland"><strong>Điện thoại :</strong>
-                                    <a href="tel:0989.186.179"><?php echo $ads->phone ?></a></div>
+                                    <a href="tel:<?php echo $ads->phone ?>"><?php echo $ads->phone ?></a></div>
                             </div>
                         </div>
 
-                        <div style="clear: both"></div>
+                        <div class="clearfix"></div>
 
                         <div class="title_land_box">Bản đồ vị trí:</div>
                         <div class="pack_land_box" style="border: 0;">
@@ -261,7 +259,7 @@
                 </div>
                 <!--End two_cols-->
                 <!--Begin two_cols-->
-                <div style="clear: both"></div>
+                <div class="clearfix"></div>
                 <div class="left_box top3_box">
                     <p class="title_box1"><strong>CÁC TIN LIÊN QUAN</strong></p>
                     <div>
