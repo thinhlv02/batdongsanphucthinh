@@ -526,8 +526,8 @@
         font-size: 16px;
         line-height: 50px;
         font-weight: 600;
-        padding-left: 15px;
-        border-left: 15px solid #e40b00;
+        padding-left: 10px;
+        border-left: 5px solid #4dbb6d;
     }
 
     .body_top2_box {
