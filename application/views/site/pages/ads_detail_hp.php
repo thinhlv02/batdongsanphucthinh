@@ -88,7 +88,7 @@
                             <div class="col-xs-4">
                                 <div class="row">
                                     <div class="col-xs-12 ibrief text_right price_ibrief">
-                                        <strong>Giá:</strong> <?php echo $ads->price ?> VND <p>(Có thỏa thuận)</p>
+                                        <strong>Giá:</strong> <?php echo $ads->price ?> VND <p>(Có thương lượng)</p>
                                     </div>
 
                                 </div>
