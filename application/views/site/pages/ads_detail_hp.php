@@ -472,12 +472,6 @@
         border-right: 1px solid #e0e0e0;
     }
 
-    .land_page .pack_land_box .pland {
-        border-bottom: 1px solid #e0e0e0;
-        border-left: 1px solid #e0e0e0;
-        color: #333;
-    }
-
     .land_page .pack_land_box .pland > strong {
         line-height: 32px;
         font-weight: 600;
