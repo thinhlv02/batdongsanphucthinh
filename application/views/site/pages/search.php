@@ -105,8 +105,8 @@
                         </div>
 
                         <div class="row12 price">
-                            <div class="col-xs-5 lprice"><i class="fa fa-map-marker"></i> <?php echo $value->province_name ?></div>
-                            <div class="col-xs-7 rprice btn btn-primary">Giá:
+                            <div class="col-xs-5"><i class="fa fa-map-marker"></i> <?php echo $value->province_name ?></div>
+                            <div class="col-xs-7 btn btn-primary">Giá:
                                 <?php echo $value->price ?> VND
                             </div>
                         </div>
@@ -175,19 +175,6 @@
         font-weight: 600;
         font-size: 12px;
         margin: 10px 0;
-    }
-
-    .body_hotLand_home .item .price .lprice {
-        text-align: center;
-        background: #eeeeee;
-        line-height: 30px;
-    }
-
-    .body_hotLand_home .item .price .rprice {
-        /*text-align: center;*/
-        /*background: #e40b00;*/
-        /*line-height: 30px;*/
-        /*color: #fff;*/
     }
 
     .body_hotLand_home .item {

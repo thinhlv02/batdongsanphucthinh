@@ -49,11 +49,11 @@
                             <div class="col-xs-6 larea">DTSD: <strong><?php echo $value->useacreage != '' ? $value->useacreage: 0 ?> m<sup>2</sup></strong></div>
                         </div>
                         <div class="price">
-                            <div class="col-xs-6 lprice">
+                            <div class="col-xs-6 btn btn-sm btn-outline-warning">
                                 <i class="fa fa-map-marker"></i>
                             <?php echo $value->province_name != '' ? $value->province_name : 'update...'; ?>
                             </div>
-                            <div class="col-xs-6 rprice btn btn-primary">
+                            <div class="col-xs-6 btn-sm btn btn-primary">
                                 <?php echo $value->price ?>
                             </div>
                         </div>
