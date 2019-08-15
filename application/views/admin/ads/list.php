@@ -23,7 +23,7 @@
             <thead>
             <tr>
                 <th>Mã tin</th>
-                <th>Tạo bởi</th>
+<!--                <th>Tạo bởi</th>-->
                 <th>SĐT</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
@@ -43,15 +43,17 @@
             <?php foreach ($ads as $row){ ?>
                 <tr>
                     <td class="text-center">
-                        <button class="btn btn-default btn-sm"><?php echo $row->id ?></button>
+                        <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
 
-                        <a class="btn btn-xs btn-primary btn-sm" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
+                        <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
                         <?php if ($_uid == 1) { ?>
-                            <a class="btn btn-xs btn-danger btn-sm" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
+                            <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
                         <?php } ?>
 
+                        <p><?php echo $row->created_name; ?></p>
+
                     </td>
-                    <td><?php echo $row->created_name; ?></td>
+
                     <td><?php echo $row->phone; ?></td>
                     <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 80px"> </td>
                     <td>
@@ -59,8 +61,8 @@
                             <?php echo $row->title?></td>
                         </a>
                     <td>
-                        <p class="btn btn-outline-info"><?php echo $row->price?> </p><br/>
-                        <p class="btn btn-outline-cyan"><?php echo $row->acreage?> m<sup>2</sup> </p>
+                        <p class="btn btn-outline-danger btn-xs"><?php echo $row->price?> </p><br/>
+                        <p class="btn btn-outline-cyan btx-xs"><?php echo $row->acreage?> m<sup>2</sup> </p>
 
                     </td>
 
