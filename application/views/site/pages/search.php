@@ -67,7 +67,7 @@
             <div class="_box">
                 <p class="title_box"><strong>Tìm kiếm nhà đất</strong></p>
 
-                <div class="listland_box body_hotLand_home row12">
+                <div class="listland_box pt_hotLand_home row12">
 
                     <?php foreach ($lstSearch as $key => $value) { ?>
 
@@ -140,24 +140,24 @@
         font-weight: 600;
     }
 
-    .body_hotLand_home .item > a {
+    .pt_hotLand_home .item > a {
         display: block;
         height: 170px;
         background: #ddd;
     }
 
-    .body_hotLand_home .item > a img {
+    .pt_hotLand_home .item > a img {
         width: 100%;
         height: 100%;
     }
 
-    .body_hotLand_home .item h3 {
+    .pt_hotLand_home .item h3 {
         height: 40px;
         overflow: hidden;
         margin: 10px 0;
     }
 
-    .body_hotLand_home .item h3 a {
+    .pt_hotLand_home .item h3 a {
         font-size: 14px;
         font-weight: 600;
         display: inline-block;
@@ -165,19 +165,19 @@
         color: #000;
     }
 
-    .body_hotLand_home .item > p {
+    .pt_hotLand_home .item > p {
         line-height: 18px;
         height: 72px;
         overflow: hidden;
     }
 
-    .body_hotLand_home .item .area {
+    .pt_hotLand_home .item .area {
         font-weight: 600;
         font-size: 12px;
         margin: 10px 0;
     }
 
-    .body_hotLand_home .item {
+    .pt_hotLand_home .item {
         /*width: 19%;*/
         /*margin-right: 1.25%;*/
         margin-bottom: 20px;

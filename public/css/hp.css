@@ -10,7 +10,7 @@
     font-weight: 600;
 }
 
-/*.body_hotLand_home .item_ads .area {*/
+/*.pt_hotLand_home .item_ads .area {*/
 .area {
     font-weight: 600;
     font-size: 12px;
@@ -21,17 +21,17 @@
     font-weight: 600;
 }
 
-.body_hotLand_home, .item_ads, ._hot {
+.pt_hotLand_home, .item_ads, ._hot {
     background: #fffce6;
 }
 
-.body_hotLand_home, .item_ads h3 {
+.pt_hotLand_home, .item_ads h3 {
     height: 40px;
     overflow: hidden;
     margin: 10px 0;
 }
 
-.body_hotLand_home, .item_ads>p {
+.pt_hotLand_home, .item_ads>p {
     line-height: 18px;
     height: 72px;
     overflow: hidden;
@@ -43,7 +43,7 @@
     overflow: hidden;
 }
 
-.body_hotLand_home, .item_ads h3 a {
+.pt_hotLand_home, .item_ads h3 a {
     font-size: 13px;
     font-weight: 600;
     display: inline-block;
