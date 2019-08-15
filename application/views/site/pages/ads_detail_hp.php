@@ -240,7 +240,7 @@
                             <?php foreach ($highlight as $key => $value) {
                                 if ($ads->id != $value->id) { ?>
                                     <div class="col-xs-6 top2 top2_up">
-                                        <div class="row _vip_hot">
+                                        <div class="row _pt_vip_hot">
                                             <div class="col-xs-5 ltop2">
                                                 <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
                                                             src="<?php echo public_url('images/ads/' . $value->img) ?>"
@@ -266,7 +266,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="icon_viphot">
+                                        <div class="pt_icon_viphot">
                                             <?php if ($value->icon_new == 1) { ?>
                                                 <img src="<?php echo public_url('images/icon_new.gif') ?>"
                                                      alt="<?php echo $value->title ?>">
@@ -326,7 +326,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="icon_viphot">
+                                    <div class="pt_icon_viphot">
                                         <?php if ($value->icon_new == 1) { ?>
                                             <img src="<?php echo public_url('images/icon_new.gif') ?>"
                                                  alt="<?php echo $value->title ?>">
@@ -361,7 +361,7 @@
                     <div>
                         <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
 
-                            <ul class="vip_slider"
+                            <ul class="pt_slider"
                                 style="width: auto; position: relative; transition-duration: 0.5s; transform: translate3d(0px, -3402px, 0px);">
                                 <?php foreach ($ads_center as $key => $value) { ?>
                                     <li style="float: none; list-style: none; position: relative; width: 298px;"
@@ -371,7 +371,7 @@
                                                 <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
                                                             src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                                             alt="<?php echo $value->title ?>"></a>
-                                                <div class="icon_viphot" style="margin-top: 4px!important;text-align: center!important;position: unset; ">
+                                                <div class="pt_icon_viphot" style="margin-top: 4px!important;text-align: center!important;position: unset; ">
                                                     <?php if ($value->icon_new == 1) { ?>
                                                         <img src="<?php echo public_url('images/icon_new.gif') ?>"
                                                              alt="<?php echo $value->title ?>">
@@ -434,7 +434,7 @@
     });
 
     $(document).ready(function () {
-        $('.vip_slider').bxSlider({
+        $('.pt_slider').bxSlider({
             mode: 'vertical',
             auto: true,
             minSlides: 30,

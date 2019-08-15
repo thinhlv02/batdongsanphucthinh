@@ -75,7 +75,7 @@
                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
                                     src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                     alt="<?php echo $value->title ?>"></a>
-                        <div class="icon_viphot" style="position: absolute;top: 1px;left: 4px;">
+                        <div class="pt_icon_viphot" style="position: absolute;top: 1px;left: 4px;">
                             <?php if ($value->icon_new == 1) { ?>
                                 <img src="<?php echo public_url('images/icon_new.gif') ?>"
                                      alt="<?php echo $value->title ?>">

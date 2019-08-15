@@ -66,7 +66,7 @@
     text-transform: uppercase;
 }
 
-.body_top2_box ._vip_hot, .body_top2_box ._vip {
+.body_top2_box ._pt_vip_hot, .body_top2_box ._vip {
     background: -webkit-linear-gradient(#f6e97f, #fff);
     background: -o-linear-gradient(#f6e97f, #fff);
     background: -moz-linear-gradient(#f6e97f, #fff);
@@ -80,7 +80,7 @@
     position: relative;
 }
 
-.body_top2_box .top2 > div._vip_hot {
+.body_top2_box .top2 > div._pt_vip_hot {
     /*border: 2px solid #f00;*/
     height: 136px;
 }
@@ -184,12 +184,12 @@
     text-align: center;
 }
 
-.vip_slider dl dt a img {
+.pt_slider dl dt a img {
     width: 100%;
     height: 100%;
 }
 
-.top2 .icon_viphot {
+.top2 .pt_icon_viphot {
     position: absolute;
     top: 11px;
     left: 12px;

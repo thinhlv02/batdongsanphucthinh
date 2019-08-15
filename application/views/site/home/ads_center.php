@@ -20,7 +20,7 @@
                             <img style="width: 100%;height: 150px"
                                  src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                  alt="<?php echo $value->title ?>"></a>
-                        <div class="icon_viphot">
+                        <div class="pt_icon_viphot">
                             <?php if ($value->icon_new == 1) { ?>
                                 <img src="<?php echo public_url('images/icon_new.gif') ?>"
                                      alt="<?php echo $value->title ?>">
