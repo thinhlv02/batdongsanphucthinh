@@ -45,8 +45,8 @@
 
                         <p style="height: 72px !important;"><?php echo $value->intro ?></p>
                         <div class="row area gia-title">
-                            <div class="col-xs-6 larea">DTMB: <strong><?php echo $value->acreage ?> m<sup>2</sup></strong></div>
-                            <div class="col-xs-6 larea">DTSD: <strong><?php echo $value->useacreage != '' ? $value->useacreage: 0 ?> m<sup>2</sup></strong></div>
+                            <div class="col-xs-12 larea">DTMB: <strong><?php echo $value->acreage ?> m<sup>2</sup></strong></div>
+                            <div class="col-xs-12 larea">DTSD: <strong><?php echo $value->useacreage != '' ? $value->useacreage: 0 ?> m<sup>2</sup></strong></div>
                         </div>
                         <div class="price">
                             <div class="col-xs-6 btn btn-sm btn-outline-warning">
