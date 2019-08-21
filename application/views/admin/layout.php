@@ -20,7 +20,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="<?php echo admin_theme()?>production/images/img.jpg" alt=""><?php echo $admin->fullname ?>
+                    <img src="<?php echo public_url()?>images/favicon.png" alt=""><?php echo $admin->fullname ?>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">

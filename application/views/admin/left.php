@@ -16,7 +16,7 @@
         <!-- menu profile quick info -->
         <div class="profile clearfix">
             <div class="profile_pic">
-                <img src="<?php echo admin_theme() ?>production/images/img.jpg" alt="..."
+                <img src="<?php echo public_url() ?>images/favicon.png" alt="..."
                      class="img-circle profile_img">
             </div>
             <div class="profile_info">
