@@ -69,6 +69,7 @@
                                     <th>Ngân hàng</th>
                                     <th>Chủ tài khoản</th>
                                     <th>Số tài khoản</th>
+                                    <th>Chi nhánh</th>
                                 </tr>
                                 </thead>
 
@@ -99,7 +100,7 @@
                                         <td class=""><?php echo $val->bank_name ?></td>
                                         <td><?php echo $val->account_name != '' ? $val->account_name : '<span class="text-danger">Đang cập nhật</span>' ?></td>
                                         <td><?php echo $val->account_number != '' ? $val->account_number : '<span class="text-danger">Đang cập nhật</span>' ?></td>
-
+                                        <td><?php echo $val->branch ?></td>
                                     </tr>
                                 <?php } ?>
 
