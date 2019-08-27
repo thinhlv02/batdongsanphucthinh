@@ -62,7 +62,7 @@
                 </div>
 
                 <div class="col-xs-3 right">
-                    <!--Begin two_cols-->
+                    <!--Begin slide top-->
                     <div class="right_box vip_box">
                         <p class="title_box"><a href="/tin-vip.htm"><strong>TIN VIP</strong></a></p>
                         <div>
@@ -115,7 +115,12 @@
                             <div class="clearfix"></div>
                         </div>
                     </div>
-                    <!--Begin two_cols-->
+                    <!--Begin slider top-->
+
+
+<!--                    slide 300-->
+
+<!--                    slide 300-->
 
                 </div>
             </div>
