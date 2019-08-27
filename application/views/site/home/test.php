@@ -13,7 +13,7 @@
                         </div>
                         <div class="col-sm-12">
                             <div class="card">
-                                <div class="card-body pt-0">
+                                <div class="card-body12 pt-0">
 
                                     <div class="clearfix" id="box-home-svip">
 
@@ -237,7 +237,7 @@
                         </div>
                         <div class="col-sm-12">
                             <div class="card">
-                                <div class="card-body pt-0">
+                                <div class="card-body12 pt-0">
 
                                     <div class="clearfix" id="box-home-svip">
 
