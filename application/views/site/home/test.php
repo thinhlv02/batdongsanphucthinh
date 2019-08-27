@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-2 col-md-2">
+            <div class="col-sm-4 col-md-4">
 
                 <div id="center-body">
 
@@ -160,7 +160,7 @@
 
             </div>
 
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-3 col-md-3" style="display: none">
                 <div class="box-module mt-2">
                     <div class="bg-modul"><i class="glyphicon glyphicon-link"></i> Liên kết</div>
                 </div>
@@ -226,7 +226,7 @@
 
             </div>
 
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-4 col-md-4">
 
                 <div id="center-body">
 
