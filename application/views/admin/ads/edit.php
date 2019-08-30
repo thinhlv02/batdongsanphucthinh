@@ -110,6 +110,23 @@
 
                 </div>
 
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Mặt tiền<span
+                                class="required">*</span></label>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input type="text" name="width" required="required" value="<?php echo $ads->width ?>"
+                               class="form-control col-md-7 col-xs-12" placeholder="ví dụ: 10">
+                    </div>
+
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Đường vào<span
+                                class="required">*</span></label>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <input type="text" name="landwidth" value="<?php echo $ads->landwidth ?>"
+                               required="required" class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 20">
+                    </div>
+
+                </div>
+
                 <!--                <div class="form-group">-->
                 <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề tin trên web <span class="required">*</span></label>-->
                 <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
