@@ -37,7 +37,7 @@
                             <?php } ?>
                         </div>
 
-                        <div class="code_row">PT-<?php echo $value->id.substr($value->code,0,3) ?></div>
+                        <div class="code_row">PT-<?php echo $value->id.substr($value->code,0,2) ?></div>
 
                         <h3 style="height: 44px;font-size: 13px; ">
                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a>
@@ -48,12 +48,12 @@
                             <div class="col-xs-12 larea">DTMB: <strong><?php echo $value->acreage ?> m<sup>2</sup></strong></div>
                             <div class="col-xs-12 larea">DTSD: <strong><?php echo $value->useacreage != '' ? $value->useacreage: 0 ?> m<sup>2</sup></strong></div>
                         </div>
-                        <div class="price">
-                            <div class="col-xs-6 btn btn-sm btn-outline-warning">
-                                <i class="fa fa-map-marker"></i>
-                            <?php echo $value->province_name != '' ? $value->province_name : 'update...'; ?>
+                        <div class="">
+                            <div class="col-xs-6 btn btn-sm" style="background: #eeeeee;">
+                                <i class="fa fa-location-arrow" style="color: #e40b00"></i>
+                                <?php echo $value->province_name != '' ? $value->province_name : 'update...'; ?>
                             </div>
-                            <div class="col-xs-6 btn-sm btn btn-primary">
+                            <div class="col-xs-6 btn-sm btn btn-primary font-weight-600">
                                 <?php echo $value->price ?>
                             </div>
                         </div>

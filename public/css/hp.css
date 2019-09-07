@@ -17,10 +17,6 @@
     margin: 10px 0;
 }
 
-.price {
-    font-weight: 600;
-}
-
 .pt_hotLand_home, .item_ads, ._hot {
     background: #fffce6;
 }
@@ -191,8 +187,8 @@
 
 .top2 .pt_icon_viphot {
     position: absolute;
-    top: 11px;
-    left: 12px;
+    top: 7px;
+    left: 8px;
 }
 
 .vip_box>div dl dt div {
