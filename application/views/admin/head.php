@@ -22,6 +22,7 @@
 
 <script src="<?php echo admin_theme()?>vendors/jquery/dist/jquery.min.js"></script>
 <script src="<?php echo public_url('js/common.js')?>"></script>
+<script src="<?php echo public_url('js/meiomask.js')?>"></script>
 
 
     

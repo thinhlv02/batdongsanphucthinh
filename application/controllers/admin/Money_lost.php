@@ -43,10 +43,13 @@ Class Money_lost extends MY_Controller
             $created_at = $this->input->post('created_at');
             $created_at = date('Y-m-d', strtotime($created_at));
 
+            $price = str_replace(',', '', $this->input->post('txtPrice'));
+            $price = (is_numeric($price) && $price > 0) ? $price : 0;
+
             $data = array(
                 'name' => $this->input->post('txtName'),
                 'description' => $this->input->post('txtDes'),
-                'price' => $this->input->post('txtPrice'),
+                'price' => $price,
                 'created_at' => $created_at,
                 'created_by' => $this->_uid
             );
@@ -78,9 +81,11 @@ Class Money_lost extends MY_Controller
         if ($this->input->post('btnEdit')) {
             $created_at = $this->input->post('created_at');
             $created_at = date('Y-m-d', strtotime($created_at));
+            $price = str_replace(',', '', $this->input->post('txtPrice'));
+            $price = (is_numeric($price) && $price > 0) ? $price : 0;
             $data = array(
                 'name' => $this->input->post('txtName'),
-                'price' => $this->input->post('txtPrice'),
+                'price' => $price,
                 'created_at' => $created_at,
                 'description' => $this->input->post('txtDes'),
             );
