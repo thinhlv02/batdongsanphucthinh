@@ -91,22 +91,23 @@ function getCurrentURL()
     $currentURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
     $currentURL .= $_SERVER["SERVER_NAME"];
 
-    if($_SERVER["SERVER_PORT"] != "80" && $_SERVER["SERVER_PORT"] != "443")
-    {
-        $currentURL .= ":".$_SERVER["SERVER_PORT"];
+    if ($_SERVER["SERVER_PORT"] != "80" && $_SERVER["SERVER_PORT"] != "443") {
+        $currentURL .= ":" . $_SERVER["SERVER_PORT"];
     }
 
     $currentURL .= $_SERVER["REQUEST_URI"];
     return $currentURL;
 }
 
-function getLastUri(){
+function getLastUri()
+{
     $url = getCurrentURL();
     $url = str_replace(base_url(), '', $url);
     return $url;
 }
 
-function generateRandomString($length) {
+function generateRandomString($length)
+{
 //    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $characters = '0123456789';
     $charactersLength = strlen($characters);
@@ -117,6 +118,27 @@ function generateRandomString($length) {
     return $randomString;
 }
 
-function pre($data) {
-    echo '<pre>',print_r($data,1),'</pre>';
+function getFirstLastMonth($type)
+{
+    $query_date = date('Y-m-d');
+
+// First day of the month.
+    $first = date('Y-m-01', strtotime($query_date));
+
+// Last day of the month.
+    $last = date('Y-m-t', strtotime($query_date));
+
+    if ($type == 1) {
+
+        return $first;
+
+    } else if ($type == 2) {
+
+        return $last;
+    }
+}
+
+function pre($data)
+{
+    echo '<pre>', print_r($data, 1), '</pre>';
 }
