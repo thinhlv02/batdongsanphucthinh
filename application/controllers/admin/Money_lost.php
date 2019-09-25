@@ -5,8 +5,6 @@ Class Money_lost extends MY_Controller
     function __construct()
     {
         parent::__construct();
-//        $this->load->model('money_lost_model');
-//        $this->load->model('money_lost_model');
         $this->load->model('money_lost_model');
     }
 
