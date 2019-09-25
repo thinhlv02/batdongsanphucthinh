@@ -17,7 +17,7 @@
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <input type="text" id="txtFrom" name="txtFrom" required
                                        class="form-control col-md-7 col-xs-12"
-                                       value="<?php if (isset($_POST['txtFrom'])) echo $_POST['txtFrom'] ?>">
+                                       value="<?php if (isset($_POST['txtFrom'])) echo $_POST['txtFrom'];else echo $first; ?>">
                             </div>
                         </div>
 
@@ -28,7 +28,7 @@
 
                             <input type="text" id="txtTo" name="txtTo" required
                                    class="form-control col-md-7 col-xs-12"
-                                   value="<?php if (isset($_POST['txtTo'])) echo $_POST['txtTo'] ?>">
+                                   value="<?php if (isset($_POST['txtTo'])) echo $_POST['txtTo'];else echo $last; ?>">
 
                         </div>
 
