@@ -1,7 +1,7 @@
 
 <div class="x_panel">
     <div class="x_title">
-        <h2>Danh sách bài đăng</h2>
+        <h2>Danh sách bài đăng(<?php echo $count> 0 ? number_format($count) : $count ?>)</h2>
         <ul class="nav navbar-right panel_toolbox">
             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
             <li class="dropdown">

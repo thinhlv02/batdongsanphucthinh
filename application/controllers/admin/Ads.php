@@ -21,6 +21,8 @@ Class Ads extends MY_Controller
         $input = array();
         $input['order'] = array('id', 'desc');
         $ads = $this->ads_model->get_list($input);
+        $count = count($ads);
+        $count = $count > 0 ? $count: 0;
 
         $emps = $this->admin_model->get_list();
 
@@ -64,6 +66,7 @@ Class Ads extends MY_Controller
         }
 
 
+        $this->data['count'] = $count;
         $this->data['ads'] = $ads_end;
         $this->data['_uid'] = $this->_uid;
         $this->data['tab'] = 1;
