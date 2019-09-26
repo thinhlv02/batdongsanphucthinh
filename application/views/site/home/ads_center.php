@@ -17,7 +17,7 @@
 
 
                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                            <img style="width: 100%;height: 150px"
+                            <img style="width: 100%;height: 180px"
                                  src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                  alt="<?php echo $value->title ?>"></a>
                         <div class="pt_icon_viphot">
