@@ -504,9 +504,14 @@ Class Home extends MY_Controller
     // tìm kiếm
     function search()
     {
+//        pre($_GET['province']);
+//        die;
         $lstProvince = $this->_province;
 
         $province = $this->input->get('province');
+        $province = $province != '' ? $province : '';
+//        echo $province;
+//        die;
         $district = $this->input->get('district');
         $ward = $this->input->get('ward');
         $code = $this->input->get('code');
@@ -522,6 +527,7 @@ Class Home extends MY_Controller
         $this->data['lstSearch'] = $lstSearch;
 
         $this->data['li_6'] = 1;
+        $this->data['province'] = $province;
         $this->data['lstProvince'] = $lstProvince;
         $this->data['temp'] = 'site/pages/search';
         $this->load->view('site/layout/layout', $this->data);

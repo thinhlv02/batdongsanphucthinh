@@ -27,8 +27,9 @@
                     <!--                                <label for="email">Tỉnh thành</label>-->
                     <select class="form-control" name="province" onchange="get_district(this)">
                         <option value=""> Tỉnh / Thành phố </option>
+                        <?php echo $_GET['province'] ?>
                         <?php foreach ($lstProvince as $key => $value) { ?>
-                            <option value="<?= $value->id ?>" <?php if (isset($_POST['type']) && $_POST['type'] == $key) echo 'selected' ?>>
+                            <option value="<?= $value->id ?>" <?php if (isset($_GET['province']) && $_GET['province'] == $value->id) echo 'selected' ?>>
                                 <?php echo $value->_name ?>
                             </option>
                         <?php } ?>
