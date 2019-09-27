@@ -86,7 +86,7 @@ Class MY_Controller extends CI_Controller
 
     protected function _func_province() {
         $this->load->model('Province_model');
-        $lstData = $this->Province_model->get_list(array('order' => array('id','asc')));
+        $lstData = $this->Province_model->get_list(array('order' => array('_name','asc')));
         return $lstData;
 
     }

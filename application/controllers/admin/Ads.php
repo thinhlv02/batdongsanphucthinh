@@ -740,10 +740,8 @@ Class Ads extends MY_Controller
 
         //get list tbl_gift_item_info_by_type
 
-        $lst_district = $this->District_model->get_list(array('where' => array('_province_id' => $id)));
-//        $lst_district = $this->District_model->get_list();
-//        var_dump($lst_district);
-//        die;
+//        $lst_district = $this->District_model->get_list(array('where' => array('_province_id' => $id)));
+        $lst_district = $this->District_model->get_list(array('where' => array('_province_id' => $id), 'order' => array('_name', 'asc')));
 
         $lst_district_end = [];
         foreach ($lst_district as $k => $value) {
@@ -767,10 +765,8 @@ Class Ads extends MY_Controller
 
         //get list tbl_gift_item_info_by_type
 
-        $lst_ward = $this->Ward_model->get_list(array('where' => array('_district_id' => $id)));
-//        $lst_ward = $this->District_model->get_list();
-//        var_dump($lst_ward);
-//        die;
+//        $lst_ward = $this->Ward_model->get_list(array('where' => array('_district_id' => $id)));
+        $lst_ward = $this->Ward_model->get_list(array('where' => array('_district_id' => $id), 'order' => array('_name', 'asc')));
 
         $lst_ward_end = [];
         foreach ($lst_ward as $k => $value) {
@@ -792,10 +788,8 @@ Class Ads extends MY_Controller
         $street_id = $street_id[1];
 
 //        var_dump($id);
-        $lst_ward = $this->Street_model->get_list(array('where' => array('_district_id' => $street_id)));
-//        $lst_ward = $this->District_model->get_list();
-//        var_dump($lst_ward);
-//        die;
+//        $lst_ward = $this->Street_model->get_list(array('where' => array('_district_id' => $street_id)));
+        $lst_ward = $this->Street_model->get_list(array('where' => array('_district_id' => $street_id), 'order' => array('_name', 'asc')));
 
         $lst_ward_end = [];
         foreach ($lst_ward as $k => $value) {
