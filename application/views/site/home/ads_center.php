@@ -43,7 +43,7 @@
                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a>
                         </h3>
 
-                        <p style="height: 72px !important;"><?php echo $value->intro ?></p>
+                        <p style="height: 72px !important;overflow: hidden;"><?php echo $value->intro ?></p>
                         <div class="row area gia-title">
                             <div class="col-xs-12 larea">DTMB: <strong><?php echo $value->acreage ?> m<sup>2</sup></strong></div>
                             <div class="col-xs-12 larea">DTSD: <strong><?php echo $value->useacreage != '' ? $value->useacreage: 0 ?> m<sup>2</sup></strong></div>
