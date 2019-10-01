@@ -41,7 +41,7 @@
             </thead>
             <tbody>
             <?php foreach ($ads as $row){ ?>
-                <tr title="<?php echo $row->note; ?>">
+                <tr title="<?php echo $row->note; ?>" class="<?php echo $row->note != '' ? 'bg-warning-pt' : ''; ?>">
                     <td class="text-center">
                         <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
 
