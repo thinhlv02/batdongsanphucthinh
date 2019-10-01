@@ -22,7 +22,10 @@
 
 <script src="<?php echo admin_theme()?>vendors/jquery/dist/jquery.min.js"></script>
 <script src="<?php echo public_url('js/common.js')?>"></script>
+
+<!--lib format number when input reltime-->
 <script src="<?php echo public_url('js/meiomask.js')?>"></script>
 
-
+<!--custom css by thinhlv-->
+<link href="<?php echo public_url('css/custom.css')?>" rel="stylesheet">
     

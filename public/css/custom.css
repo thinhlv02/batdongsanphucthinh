@@ -25,3 +25,9 @@
     /* background-color: #f5f5f5 !important; */
     /* border-radius: 4px !important; */
 }
+
+/*background hover tr table*/
+.table>tbody>tr:hover
+{
+    background-color:#ffffe3;
+}
