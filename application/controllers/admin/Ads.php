@@ -62,6 +62,7 @@ Class Ads extends MY_Controller
             $ads_end[$index]->icon_vip= $val->icon_vip;
             $ads_end[$index]->icon_hot= $val->icon_hot;
             $ads_end[$index]->view= $val->view;
+            $ads_end[$index]->note= $val->note;
             $ads_end[$index]->created_name = isset($admin_arr[$val->created_by]) ? $admin_arr[$val->created_by]->name : 'dcm111111111';
         }
 

@@ -41,7 +41,7 @@
             </thead>
             <tbody>
             <?php foreach ($ads as $row){ ?>
-                <tr>
+                <tr title="<?php echo $row->note; ?>">
                     <td class="text-center">
                         <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
 
