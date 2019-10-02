@@ -8,6 +8,23 @@
         </a>
 <!--        <a href="--><?php //echo base_url()?><!--">Trao tiện ích, nhận tin yêu</a>-->
     </div>
+    <div class="language" style="float: right; line-height: 45px; margin-right: 20px">
+        <?php
+
+        if ($language == 'en')
+        {
+            ?>
+            <a href="<?php echo base_url('vn/'.getLastUri())?>"><img src="<?php echo public_url('images/flag_vn.png')?>"> Vietnamese</a>
+
+
+        <?php } else { ?>
+
+            <a href="<?php echo base_url('en/'.getLastUri())?>"><img src="<?php echo public_url('images/flag_us.png')?>"> English</a>
+
+        <?php }
+
+        ?>
+    </div>
     <ul class="ul-large">
         <li class="<?php echo isset($li_1) ? 'menu-active' : ''?>" title="Trang chủ"><a href="<?php echo base_url()?>"><i class="fa fa-home"></i> Trang chủ</a></li>
         <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="Giới thiệu dịch vụ"><a href="<?php echo base_url('gioi-thieu-dich-vu')?>"><i class="fa fa-window-restore"></i> Giới thiệu dịch vụ</a></li>

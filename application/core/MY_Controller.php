@@ -43,6 +43,16 @@ Class MY_Controller extends CI_Controller
                     $this->data['content'] = $this->content_model->get_info(1);
                     $this->data['agencies'] = $this->agency_model->get_list(array('order' => array('id', 'asc')));
 //                pre($this->data['content']);
+                    //fix sgc
+
+                $language = $this->session->userdata('language');
+                if(!$language){
+                    $this->session->set_userdata('language', 'vn');
+                    $language = 'vn';
+                }
+                $this->data['language'] = $language;
+                $this->lang->load($language, 'language');
+                    //fix sgc
                 }
         }
     }
