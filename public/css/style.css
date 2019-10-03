@@ -38,6 +38,18 @@ a:hover {
     box-shadow: 3px 0 2px rgba(0, 0, 0, 0.5);
 }
 
+.ul-large span {
+    display: block;
+    /*display: none;*/
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid #fff;
+}
 .ul-large {
     margin: 0;
     padding: 0;
@@ -50,7 +62,7 @@ a:hover {
     cursor: pointer;
     margin: 0;
     display: inline-block;
-    padding: 12px 14px;
+    padding: 10px 10px;
 }
 
 .ul-large li a {
@@ -70,9 +82,11 @@ a:hover {
 }
 
 .menu-active {
+    position: relative;
     /*background-color: #f90;*/
     /*background-color: #ff7e39;*/
     /*border-bottom: 5px solid #4dbb6d;*/
+    border-bottom: 3px solid #fff;
 }
 
 .banner {
