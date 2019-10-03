@@ -1362,7 +1362,7 @@ span.item-date {
 
 /*page up top*/
 button#myPageup {
-    padding: 19px !important;
+    padding: 13px !important;
 }
 
 #myPageup {
@@ -1410,6 +1410,7 @@ button#myPageup {
 
 #language img {
     display: inline !important;
-    width: 33px;
-    height: 22px
+    width: 24px;
+    height: 16px;
+    margin-right: 5px;
 }
