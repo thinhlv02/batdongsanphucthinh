@@ -80,13 +80,13 @@
 
                         <div class="col-md-4 col-sm-12 col-xs-12 mt-2 text-center">
 
-                            <a href="<?php echo base_url() ?>">
-                                <img src=" <?php echo public_url('images/ads/default.png') ?>">
-                            </a>
+<!--                            <a href="--><?php //echo base_url() ?><!--">-->
+<!--                                <img src=" --><?php //echo public_url('images/ads/default.png') ?><!--">-->
+<!--                            </a>-->
 
-<!--                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbatdongsanphucthinhvn-1535407536595838%2F%3Fmodal%3Dadmin_todo_tour&tabs&width=340&height=214&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=166934463979079"-->
-<!--                                    width="340" height="214" style="border:none;overflow:hidden" scrolling="no"-->
-<!--                                    frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>-->
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbatdongsanphucthinhvn-1535407536595838%2F%3Fmodal%3Dadmin_todo_tour&tabs&width=340&height=214&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=166934463979079"
+                                    width="340" height="214" style="border:none;overflow:hidden" scrolling="no"
+                                    frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
                         </div>
 
@@ -118,6 +118,35 @@
     <div id="result_test"></div>
 </section>
 
+<!--test full footer-->
+<section class="intro_home">
+    <div class="caption">
+        <div class="container">
+            <div class="text-intro">
+                <div class="title-section"><h3 style="color: #fff; font-size:30px"><strong>TẢI VÀ TRẢI NGHIỆM ỨNG DỤNG TẠI ĐÂY</strong></h3></div>
+                <div style="display: flex; justify-content: center;">
+                    <div>
+                        <span>SCAN QR CODE</span>
+                        <img class="img-responsive" style="width: 156px; margin-top: 10px" src="https://gaia.net.vn/public/images/GaiA_QR.png">
+                    </div>
+                    <div style="margin-left: 30px">
+                        <span>HOẶC</span>
+                        <div style="margin-top: 10px">
+                            <a href="javascript:void(0)">
+                                <img class="img-responsive" style="width: 250px" src="https://gaia.net.vn/public/images/download_android.png">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img class="img-responsive" style="width: 250px; margin-top: 8px" src="https://gaia.net.vn/public/images/download_ios.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--test full footer-->
+
 <button onclick="topFunction()" id="myPageup" title="Go to top">
     <img src="<?php echo base_url('public/images/arrowPageUp.png'); ?>" style="width: 40px !important;">
 </button>
@@ -126,10 +155,7 @@
     function updateView(id) {
         var _onSuccess = function (data) {
 
-            console.log(data);
-
         };
-
         getAjax('<?php echo base_url('home/update_view'); ?>', 'id=' + UrlEncode.encode(id), '', 'GET', '', false, _onSuccess);
     }
 
@@ -185,7 +211,7 @@
 
     function get_ward(sel) {
         var id = sel.value;
-        console.log(id);
+        // console.log(id);
         if (id == 0) {
             $('#selectWard').empty();
             $('#selectStreet').empty();

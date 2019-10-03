@@ -290,9 +290,9 @@ section {
 }
 
 .caption {
-    margin-top: -30px;
-    margin-bottom: -30px;
-    background-color: rgba(0, 0, 0, 0.5);
+    /*margin-top: -30px;*/
+    /*margin-bottom: -30px;*/
+    background-color: #313131;
 }
 
 .text-intro {
