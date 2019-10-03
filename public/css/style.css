@@ -1397,12 +1397,18 @@ button#myPageup {
     font-size: 20px;
 }
 
-.language a {
+/*language */
+#language {
+    float: right;
+    line-height: 45px;
+    margin-right: 20px
+}
+#language a {
     color: #fff !important;
     font-weight: bold;
 }
 
-.language img {
+#language img {
     display: inline !important;
     width: 33px;
     height: 22px

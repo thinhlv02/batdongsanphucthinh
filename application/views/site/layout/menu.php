@@ -8,23 +8,14 @@
         </a>
 <!--        <a href="--><?php //echo base_url()?><!--">Trao tiện ích, nhận tin yêu</a>-->
     </div>
-    <div class="language" style="float: right; line-height: 45px; margin-right: 20px">
-        <?php
-
-        if ($language == 'en')
-        {
-            ?>
-            <a href="<?php echo base_url('vn/'.getLastUri())?>"><img src="<?php echo public_url('images/flag_vn.png')?>"> Vietnamese</a>
-
-
-        <?php } else { ?>
-
-            <a href="<?php echo base_url('en/'.getLastUri())?>"><img src="<?php echo public_url('images/flag_us.png')?>"> English</a>
-
-        <?php }
-
-        ?>
+<!--    switch language -->
+    <div id="language">
+        <a href="<?php echo $language == 'vn' ? base_url('en' .getLastUri()) : base_url('vn'.getLastUri()) ?>">
+            <img src="<?php echo $language == 'vn' ? public_url('images/flag_us.png') : public_url('images/flag_vn.png') ?>"/>
+            <?php echo $language == 'vn' ? 'English' : 'Vietnamese' ; ?>
+        </a>
     </div>
+
     <ul class="ul-large">
         <li class="<?php echo isset($li_1) ? 'menu-active' : ''?>" title="Trang chủ"><a href="<?php echo base_url()?>"><i class="fa fa-home"></i> Trang chủ</a></li>
         <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="Giới thiệu dịch vụ"><a href="<?php echo base_url('gioi-thieu-dich-vu')?>"><i class="fa fa-window-restore"></i> Giới thiệu dịch vụ</a></li>
@@ -33,7 +24,6 @@
         <li class="<?php echo isset($li_4) ? 'menu-active' : ''?>" title="Chính sách và điều khoản"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"><i class="fa fa-handshake"></i> Chính sách và điều khoản</a></li>
         <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="Liên hệ"><a href="<?php echo base_url('lien-he')?>"><i class="fa fa-user-md"></i> Liên hệ</a></li>
     </ul>
-
 
     <nav role='navigation' class="nav-small">
         <div id="menuToggle">
