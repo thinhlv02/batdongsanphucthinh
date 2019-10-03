@@ -23,6 +23,19 @@
         <li class="<?php echo isset($li_6) ? 'menu-active' : ''?>" title="Tin tức"><a href="<?php echo base_url('tin-tuc')?>"><i class="fa fa-newspaper"></i> <?php echo $this->lang->line('news_menu'); ?></a></li>
         <li class="<?php echo isset($li_4) ? 'menu-active' : ''?>" title="Chính sách và điều khoản"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"><i class="fa fa-handshake"></i> <?php echo $this->lang->line('policies'); ?></a></li>
         <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="Liên hệ"><a href="<?php echo base_url('lien-he')?>"><i class="fa fa-user-md"></i> <?php echo $this->lang->line('contact'); ?></a></li>
+<!--        register - login-->
+        <li class="user_style" title="<?php echo $this->lang->line('login'); ?>">
+            <a href="javascript:void(0)" class="menu_login">
+                <i class="fa fa-sign-in-alt text-danger mr-3" aria-hidden="true"></i>
+                <?php echo $this->lang->line('login'); ?>
+            </a>
+        </li>
+        <li class="user_style" title="<?php echo $this->lang->line('register'); ?>">
+            <a href="javascript:void(0)">
+                <i class="fa fa-user text-danger mr-3" aria-hidden="true"></i>
+                <?php echo $this->lang->line('register'); ?>
+            </a>
+        </li>
     </ul>
 
     <nav role='navigation' class="nav-small">

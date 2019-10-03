@@ -21,6 +21,8 @@ $lang['policies'] = "Policies";
 $lang['product'] = "PRODUCT";
 $lang['recruit'] = 'CAREER';
 $lang['contact'] = 'Contact us';
+$lang['login'] = 'Login';
+$lang['register'] = 'Register';
 //footer
 $lang['plhName'] = 'Enter your name';
 $lang['plhEmail'] = 'Enter your email';

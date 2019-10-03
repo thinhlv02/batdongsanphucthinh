@@ -21,6 +21,8 @@ $lang['policies'] = "Chính sách và điều khoản";
 $lang['product'] = "Sản phẩm";
 $lang['recruit'] = 'Tuyển dụng';
 $lang['contact'] = 'Liên hệ';
+$lang['login'] = 'Đăng nhập';
+$lang['register'] = 'Đăng ký';
 //footer
 $lang['plhName'] = 'Nhập tên của bạn';
 $lang['plhEmail'] = 'Nhập email của bạn';

@@ -1414,3 +1414,8 @@ button#myPageup {
     height: 16px;
     margin-right: 5px;
 }
+
+/*menu login ,register*/
+.user_style>a {
+    color: #000 !important;
+}
