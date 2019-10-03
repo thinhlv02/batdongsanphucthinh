@@ -1365,10 +1365,6 @@ button#myPageup {
     padding: 19px !important;
 }
 
-#myPageup img {
-    border-radius: 6px !important;
-}
-
 #myPageup {
     display: none;
     position: fixed ;
