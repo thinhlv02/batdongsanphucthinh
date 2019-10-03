@@ -1362,7 +1362,11 @@ span.item-date {
 
 /*page up top*/
 button#myPageup {
-    padding: 0px !important;
+    padding: 19px !important;
+}
+
+#myPageup img {
+    border-radius: 6px !important;
 }
 
 #myPageup {
@@ -1374,15 +1378,15 @@ button#myPageup {
     font-size: 18px;
     border: none;
     outline: none;
-    /*background-color: red;*/
-    color: white;
+    /*background-color: rgba(0, 0, 0, .1);*/
+    /*color: white;*/
     cursor: pointer;
     /*padding: 15px;*/
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 #myPageup:hover {
-    background-color: #555;
+    /*background-color: #555;*/
 }
 
 /*page up top*/
