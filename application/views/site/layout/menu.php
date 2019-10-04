@@ -75,6 +75,5 @@
             timer: 1500
         });
         $(".swal-text").addClass("font-weight-bold");
-
     }
 </script>
