@@ -23,6 +23,8 @@ $lang['recruit'] = 'Tuyển dụng';
 $lang['contact'] = 'Liên hệ';
 $lang['login'] = 'Đăng nhập';
 $lang['register'] = 'Đăng ký';
+$lang['oops'] = 'Oops!';
+$lang['warning'] = 'Hệ thống đang bảo trì chức năng này. Vui lòng thử lại sau!';
 //footer
 $lang['plhName'] = 'Nhập tên của bạn';
 $lang['plhEmail'] = 'Nhập email của bạn';

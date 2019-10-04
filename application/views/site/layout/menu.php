@@ -26,14 +26,14 @@
         <li class="<?php echo isset($li_4) ? 'menu-active' : ''?>" title="Chính sách và điều khoản"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $this->lang->line('policies'); ?></a></li>
         <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="Liên hệ"><a href="<?php echo base_url('lien-he')?>"> <?php echo $this->lang->line('contact'); ?></a></li>
 <!--        register - login-->
-        <li class="user_style" title="<?php echo $this->lang->line('login'); ?>">
-            <a href="javascript:void(0)" class="menu_login">
+        <li class="user_style" id="login" title="<?php echo $this->lang->line('login'); ?>">
+            <a href="javascript:void(0)" class="menu_login" onclick="show_alert()">
                 <i class="fa fa-sign-in-alt text-danger mr-3" aria-hidden="true"></i>
                 <?php echo $this->lang->line('login'); ?>
             </a>
         </li>
-        <li class="user_style" title="<?php echo $this->lang->line('register'); ?>">
-            <a href="javascript:void(0)">
+        <li class="user_style" id="register" title="<?php echo $this->lang->line('register'); ?>">
+            <a href="javascript:void(0)" onclick="show_alert()">
                 <i class="fa fa-user text-danger mr-3" aria-hidden="true"></i>
                 <?php echo $this->lang->line('register'); ?>
             </a>
@@ -65,4 +65,16 @@
             $(this).prepend('<span></span>');
         });
     });
+
+    function show_alert() {
+        swal({
+            title: "<?php echo $this->lang->line('oops'); ?>",
+            text: "<?php echo $this->lang->line('warning'); ?>",
+            icon: "warning",
+            buttons: {},
+            timer: 1500
+        });
+        $(".swal-text").addClass("font-weight-bold");
+
+    }
 </script>

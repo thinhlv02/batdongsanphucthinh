@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo base_url('public/css/style.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('public/css/sweetalert.css'); ?>">
 
 <!--thinhlv add css-->
 
@@ -43,3 +44,4 @@
 <script src="<?php echo base_url('public/js/lightslider.js'); ?>"></script>
 <script src="<?php echo base_url('public/js/bxslider/jquery.bxslider.min.js'); ?>"></script>
 <script src="<?php echo base_url('public/js/bxslider/jquery.flexisel.js'); ?>"></script>
+<script src="<?php echo base_url('public/js/sweetalert.min.js'); ?>"></script>

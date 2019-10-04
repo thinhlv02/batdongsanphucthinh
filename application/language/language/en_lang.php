@@ -23,6 +23,8 @@ $lang['recruit'] = 'CAREER';
 $lang['contact'] = 'Contact us';
 $lang['login'] = 'Login';
 $lang['register'] = 'Register';
+$lang['oops'] = 'Oops!';
+$lang['warning'] = 'The system is maintaining this function. Please try again later!';
 //footer
 $lang['plhName'] = 'Enter your name';
 $lang['plhEmail'] = 'Enter your email';
