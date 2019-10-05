@@ -18,7 +18,7 @@
 
     <ul class="ul-large">
         <li class="<?php echo isset($li_1) ? 'menu-active' : ''?>" title="Trang chủ">
-            <a href="<?php echo base_url()?>"><i class="fa fa-home"></i> <?php echo $this->lang->line('home'); ?></a>
+            <a href="<?php echo base_url()?>"><i class="fa fa-home fa-lg"></i> </a>
         </li>
         <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="Giới thiệu dịch vụ"><a href="<?php echo base_url('gioi-thieu-dich-vu')?>"> <?php echo $this->lang->line('intro'); ?></a></li>
         <li class="<?php echo isset($li_3) ? 'menu-active' : ''?>" title="Hỗ trợ"><a href="<?php echo base_url('ho-tro')?>"> <?php echo $this->lang->line('support'); ?></a></li>
@@ -27,13 +27,13 @@
         <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="Liên hệ"><a href="<?php echo base_url('lien-he')?>"> <?php echo $this->lang->line('contact'); ?></a></li>
 <!--        register - login-->
         <li class="user_style" id="login" title="<?php echo $this->lang->line('login'); ?>">
-            <a href="javascript:void(0)" class="menu_login" onclick="show_alert()">
+            <a href="javascript:void(0)" class="menu_login text-uppercase" onclick="show_alert()">
                 <i class="fa fa-sign-in-alt text-danger mr-3" aria-hidden="true"></i>
                 <?php echo $this->lang->line('login'); ?>
             </a>
         </li>
         <li class="user_style" id="register" title="<?php echo $this->lang->line('register'); ?>">
-            <a href="javascript:void(0)" onclick="show_alert()">
+            <a href="javascript:void(0)" class="text-uppercase" onclick="show_alert()">
                 <i class="fa fa-user text-danger mr-3" aria-hidden="true"></i>
                 <?php echo $this->lang->line('register'); ?>
             </a>
