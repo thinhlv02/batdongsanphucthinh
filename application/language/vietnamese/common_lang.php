@@ -3,6 +3,20 @@
 $lang['common_lang'] = array();
 
 // for default config site title, tags, desc
+$lang['common_lang']['home'] = 'Trang chủ';
+$lang['common_lang']['about'] = "Giới thiệu";
+$lang['common_lang']['intro'] = "Giới thiệu";
+$lang['common_lang']['support'] = "Hỗ trợ";
+$lang['common_lang']['news_menu'] = "Tin tức";
+$lang['common_lang']['policies'] = "Chính sách và điều khoản";
+$lang['common_lang']['product'] = "Sản phẩm";
+$lang['common_lang']['recruit'] = 'Tuyển dụng';
+$lang['common_lang']['contact'] = 'Liên hệ';
+$lang['common_lang']['login'] = 'Đăng nhập';
+$lang['common_lang']['register'] = 'Đăng ký';
+$lang['common_lang']['oops'] = 'Oops!';
+$lang['common_lang']['warning'] = 'Hệ thống đang bảo trì chức năng này. Vui lòng thử lại sau!';
+
 $lang['common_lang']['site_title'] = 'Admicro Ad Exchange';
 $lang['common_lang']['site_tags'] = 'Admicro Ad Exchange';
 $lang['common_lang']['site_desc'] = 'Admicro Ad Exchange';

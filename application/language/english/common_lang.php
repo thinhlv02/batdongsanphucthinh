@@ -3,6 +3,7 @@
 $lang['common_lang'] = array();
 
 // for default config site title, tags, desc
+$lang['common_lang']['test'] = 'testttttttttttttttttttttttttt';
 $lang['common_lang']['site_title'] = 'Admicro Ad Exchange';
 $lang['common_lang']['site_tags'] = 'Admicro Ad Exchange';
 $lang['common_lang']['site_desc'] = 'Admicro Ad Exchange';
