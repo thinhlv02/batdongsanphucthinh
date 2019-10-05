@@ -78,6 +78,8 @@ m-0 {
     border-bottom: 2px #2199e8 solid;
 }
 
+.p-0{padding: 0px !important;}
+
 .p-2 {
     padding: 2px !important;
 }
@@ -162,6 +164,13 @@ m-0 {
 .pl-5 {
     padding-left: 5px !important;
 }
+
+.pr-0{padding-right: 0px !important;}
+.pr-1{padding-right: 1px !important;}
+.pr-2{padding-right: 2px !important;}
+.pr-3{padding-right: 3px !important;}
+.pr-4{padding-right: 4px !important;}
+.pr-5{padding-right: 5px !important;}
 
 .border-bottom {
     border-bottom: 1px solid #ccc !important;

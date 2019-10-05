@@ -18,7 +18,7 @@
 
     <ul class="ul-large">
         <li class="<?php echo isset($li_1) ? 'menu-active' : ''?>" title="Trang chủ">
-            <a href="<?php echo base_url()?>"><i class="fa fa-home fa-lg"></i> </a>
+            <a href="<?php echo base_url()?>"><i class="fa fa-home"></i> <?php echo $common_lang['home']; ?></a>
         </li>
         <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="Giới thiệu dịch vụ"><a href="<?php echo base_url('gioi-thieu-dich-vu')?>"> <?php echo $common_lang['intro']; ?></a></li>
         <li class="<?php echo isset($li_3) ? 'menu-active' : ''?>" title="Hỗ trợ"><a href="<?php echo base_url('ho-tro')?>"> <?php echo $common_lang['support']; ?></a></li>
@@ -26,16 +26,16 @@
         <li class="<?php echo isset($li_4) ? 'menu-active' : ''?>" title="Chính sách và điều khoản"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $common_lang['policies']; ?></a></li>
         <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="Liên hệ"><a href="<?php echo base_url('lien-he')?>"> <?php echo $common_lang['contact']; ?></a></li>
 <!--        register - login-->
-        <li class="user_style" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" onclick="">
+        <li class="user_style pr-0" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" onclick="">
             <a href="javascript:void(0)" class="text-uppercase">
-                <i class="fa fa-user-plus text-danger mr-3" aria-hidden="true"></i>
+                <i class="fa fa-user-plus text-danger" aria-hidden="true"></i>
                 <?php echo $this->lang->line('register'); ?>
             </a>
         </li>
 
-        <li class="user_style" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
+        <li class="user_style p-0" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
             <a href="javascript:void(0)" class="menu_login text-uppercase">
-                <i class="fa fa-sign-in-alt text-danger mr-3" aria-hidden="true"></i>
+                <i class="fa fa-sign-in-alt text-danger" aria-hidden="true"></i>
                 <?php echo $this->lang->line('login'); ?>
             </a>
         </li>
