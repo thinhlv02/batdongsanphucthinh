@@ -17,7 +17,6 @@ Class Home extends MY_Controller
         $this->load->model('Ward_model');
         //language load
         $this->load->language('login/login', $this->_langcode);
-        $this->load->language('common', $this->_langcode);
     }
 
     function index()
@@ -26,7 +25,6 @@ Class Home extends MY_Controller
 //        var_dump($this->_common_lang);
 //        die;
         $this->data['li_1'] = 1;
-        $this->data['common_lang'] = $this->lang->line('common_lang');
         $this->data['login_lang'] = $this->lang->line('login_lang');
 
         $lstProvince = $this->_province;
