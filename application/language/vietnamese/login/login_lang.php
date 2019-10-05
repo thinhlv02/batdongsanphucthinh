@@ -1,6 +1,7 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 $lang['login_lang'] = array();
-$lang['login_lang']['login_title'] = 'Login ';
+$lang['login_lang']['login_title'] = 'Đăng nhập hệ thống';
+$lang['login_lang']['register_title'] = 'Đăng ký tài khoản';
 $lang['login_lang']['username'] = 'Username';
 $lang['login_lang']['password'] = 'Password';
 $lang['login_lang']['register_new_account'] = 'Register';

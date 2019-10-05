@@ -3,6 +3,28 @@
 $lang['common_lang'] = array();
 
 // for default config site title, tags, desc
+$lang['common_lang']['home'] = "Home";
+$lang['common_lang']['about'] = "INTRODUCE";
+$lang['common_lang']['intro'] = "Introduction";
+$lang['common_lang']['support'] = "Support";
+$lang['common_lang']['news_menu'] = "News";
+$lang['common_lang']['policies'] = "Policies";
+$lang['common_lang']['product'] = "PRODUCT";
+$lang['common_lang']['recruit'] = 'CAREER';
+$lang['common_lang']['contact'] = 'Contact us';
+$lang['common_lang']['login'] = 'Login';
+$lang['common_lang']['register'] = 'Register';
+$lang['common_lang']['oops'] = 'Oops!';
+$lang['common_lang']['warning'] = 'The system is maintaining this function. Please try again later!';
+
+
+
+
+
+
+
+
+
 $lang['common_lang']['test'] = 'testttttttttttttttttttttttttt';
 $lang['common_lang']['site_title'] = 'Admicro Ad Exchange';
 $lang['common_lang']['site_tags'] = 'Admicro Ad Exchange';

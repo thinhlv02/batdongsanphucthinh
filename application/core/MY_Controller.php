@@ -8,6 +8,7 @@ Class MY_Controller extends CI_Controller
     var $_uname = '';
     var $_device_type = '';
     var $_province = '';
+    protected $_langcode = '';
 
     function __construct()
     {
@@ -49,6 +50,12 @@ Class MY_Controller extends CI_Controller
                 if (!$language) {
                     $this->session->set_userdata('language', 'vn');
                     $language = 'vn';
+                }
+//                var_dump($language);
+                if ($language == 'vn') {
+                    $this->_langcode = 'vietnamese';
+                } else {
+                    $this->_langcode = 'english';
                 }
                 $this->data['language'] = $language;
                 $this->lang->load($language, 'language');

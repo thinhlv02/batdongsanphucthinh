@@ -20,22 +20,23 @@
         <li class="<?php echo isset($li_1) ? 'menu-active' : ''?>" title="Trang chủ">
             <a href="<?php echo base_url()?>"><i class="fa fa-home fa-lg"></i> </a>
         </li>
-        <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="Giới thiệu dịch vụ"><a href="<?php echo base_url('gioi-thieu-dich-vu')?>"> <?php echo $this->lang->line('intro'); ?></a></li>
-        <li class="<?php echo isset($li_3) ? 'menu-active' : ''?>" title="Hỗ trợ"><a href="<?php echo base_url('ho-tro')?>"> <?php echo $this->lang->line('support'); ?></a></li>
-        <li class="<?php echo isset($li_6) ? 'menu-active' : ''?>" title="Tin tức"><a href="<?php echo base_url('tin-tuc')?>"> <?php echo $this->lang->line('news_menu'); ?></a></li>
-        <li class="<?php echo isset($li_4) ? 'menu-active' : ''?>" title="Chính sách và điều khoản"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $this->lang->line('policies'); ?></a></li>
-        <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="Liên hệ"><a href="<?php echo base_url('lien-he')?>"> <?php echo $this->lang->line('contact'); ?></a></li>
+        <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="Giới thiệu dịch vụ"><a href="<?php echo base_url('gioi-thieu-dich-vu')?>"> <?php echo $common_lang['intro']; ?></a></li>
+        <li class="<?php echo isset($li_3) ? 'menu-active' : ''?>" title="Hỗ trợ"><a href="<?php echo base_url('ho-tro')?>"> <?php echo $common_lang['support']; ?></a></li>
+        <li class="<?php echo isset($li_6) ? 'menu-active' : ''?>" title="Tin tức"><a href="<?php echo base_url('tin-tuc')?>"> <?php echo $common_lang['news_menu']; ?></a></li>
+        <li class="<?php echo isset($li_4) ? 'menu-active' : ''?>" title="Chính sách và điều khoản"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $common_lang['policies']; ?></a></li>
+        <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="Liên hệ"><a href="<?php echo base_url('lien-he')?>"> <?php echo $common_lang['contact']; ?></a></li>
 <!--        register - login-->
-        <li class="user_style" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
-            <a href="javascript:void(0)" class="menu_login text-uppercase">
-                <i class="fa fa-sign-in-alt text-danger mr-3" aria-hidden="true"></i>
-                <?php echo $this->lang->line('login'); ?>
-            </a>
-        </li>
         <li class="user_style" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" onclick="">
             <a href="javascript:void(0)" class="text-uppercase">
                 <i class="fa fa-user text-danger mr-3" aria-hidden="true"></i>
                 <?php echo $this->lang->line('register'); ?>
+            </a>
+        </li>
+
+        <li class="user_style" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
+            <a href="javascript:void(0)" class="menu_login text-uppercase">
+                <i class="fa fa-sign-in-alt text-danger mr-3" aria-hidden="true"></i>
+                <?php echo $this->lang->line('login'); ?>
             </a>
         </li>
     </ul>
@@ -69,7 +70,7 @@
             <div class="modal-content">
                 <div class="modal-header" style="padding:35px 50px;">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4><span class="glyphicon glyphicon-log-in"></span> Login</h4>
+                    <h4><span class="glyphicon glyphicon-log-in"></span> <?php echo $login_lang['login_title'] ?></h4>
                 </div>
                 <div class="modal-body" style="padding:40px 50px;">
                     <form role="form">
@@ -108,7 +109,7 @@
             <div class="modal-content">
                 <div class="modal-header" style="padding:35px 50px;">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4><span class="glyphicon glyphicon-user"></span> Register</h4>
+                    <h4><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['register_title']; ?></h4>
                 </div>
                 <div class="modal-body" style="padding:40px 50px;">
                     <form role="form">
@@ -123,19 +124,19 @@
 
                         <div class="form-group">
                             <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Repeat Password</label>
-                            <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                            <input type="text" class="form-control" id="psw" placeholder="Enter Repeat password">
                         </div>
 
                         <div class="checkbox">
                             <label><input type="checkbox" value="" checked>Remember me</label>
                         </div>
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
                         <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                    <p>Not a member? <a href="#">Sign Up</a></p>
-                    <p>Forgot <a href="#">Password?</a></p>
+
                 </div>
             </div>
 
