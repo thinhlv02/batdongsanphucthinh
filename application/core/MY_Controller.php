@@ -23,37 +23,37 @@ Class MY_Controller extends CI_Controller
 //        var_dump($new_url);
         switch ($new_url) {
             case 'admin' :
-                {
+            {
 //                pre('abc');
-                    $this->_check_login();
-                    $this->data['admin'] = $this->session->userdata('admin');
-                    break;
-                }
+                $this->_check_login();
+                $this->data['admin'] = $this->session->userdata('admin');
+                break;
+            }
 
             default:
-                {
-                    $this->load->model('contact_model');
-                    $this->load->model('product_model');
-                    $this->load->model('agency_model');
-                    $this->load->model('content_model');
-                    $contact = $this->contact_model->get_info(1);
-                    $this->data['contact'] = $contact;
-                    $products = $this->product_model->get_list(array('order' => array('id', 'asc')));
-                    $this->data['products'] = $products;
-                    $this->data['content'] = $this->content_model->get_info(1);
-                    $this->data['agencies'] = $this->agency_model->get_list(array('order' => array('id', 'asc')));
+            {
+                $this->load->model('contact_model');
+                $this->load->model('product_model');
+                $this->load->model('agency_model');
+                $this->load->model('content_model');
+                $contact = $this->contact_model->get_info(1);
+                $this->data['contact'] = $contact;
+                $products = $this->product_model->get_list(array('order' => array('id', 'asc')));
+                $this->data['products'] = $products;
+                $this->data['content'] = $this->content_model->get_info(1);
+                $this->data['agencies'] = $this->agency_model->get_list(array('order' => array('id', 'asc')));
 //                pre($this->data['content']);
-                    //fix sgc
+                //fix sgc
 
                 $language = $this->session->userdata('language');
-                if(!$language){
+                if (!$language) {
                     $this->session->set_userdata('language', 'vn');
                     $language = 'vn';
                 }
                 $this->data['language'] = $language;
                 $this->lang->load($language, 'language');
-                    //fix sgc
-                }
+                //fix sgc
+            }
         }
     }
 
@@ -94,9 +94,10 @@ Class MY_Controller extends CI_Controller
         return $this->config->config["device_type"];
     }
 
-    protected function _func_province() {
+    protected function _func_province()
+    {
         $this->load->model('Province_model');
-        $lstData = $this->Province_model->get_list(array('order' => array('_name','asc')));
+        $lstData = $this->Province_model->get_list(array('order' => array('_name', 'asc')));
         return $lstData;
 
     }
