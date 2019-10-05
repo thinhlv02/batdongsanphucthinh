@@ -1,0 +1,20 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+$lang['login_lang'] = array();
+$lang['login_lang']['login_title'] = 'Login ';
+$lang['login_lang']['username'] = 'Username';
+$lang['login_lang']['password'] = 'Password';
+$lang['login_lang']['register_new_account'] = 'Register';
+$lang['login_lang']['error_mess'] = 'The username or password you entered is not correct';
+$lang['login_lang']['btn_login'] = 'Login ';
+$lang['login_lang']['or'] = 'or';
+$lang['login_lang']['error_username'] = 'Enter your username!';
+$lang['login_lang']['error_password'] = 'Enter your password!';
+$lang['login_lang']['error_captcha'] = 'Enter your captcha!';
+$lang['login_lang']['register_lostpassword'] = 'Forgot your password?';
+$lang['login_lang']['remember'] = 'Remember your password?';
+$lang['login_lang']['errCaptcha'] = 'Confirm Captcha wrong !';
+$lang['login_lang']['countError'] = 'You signed false 3 times! Confirm captcha below to continue';
+$lang['login_lang']['lbl_captcha_reload'] = 'Reload';
+$lang['login_lang']['time_reload'] = 'You have logged more than 10 times wrong! You will be logged in again after';
+$lang['login_lang']['second'] = 'seconds';
+?>
