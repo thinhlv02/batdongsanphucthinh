@@ -119,6 +119,9 @@
         <div class="modal-dialog">
 
             <!-- Modal content-->
+            <form id="frmLogin" class="modal-content animate" action="" method="post">
+
+
             <div class="modal-content">
                 <div class="modal-header" style="padding:35px 50px;">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -128,7 +131,7 @@
                     <form role="form">
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
-                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter email" required>
                         </div>
                         <div class="form-group">
                             <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> <?php echo $login_lang['password']; ?></label>
@@ -146,6 +149,7 @@
                     <p><?php echo $login_lang['forgot']; ?> <a href="#"><?php echo $login_lang['password']; ?>?</a></p>
                 </div>
             </div>
+            </form>
 
         </div>
     </div>
@@ -161,6 +165,11 @@
         //login
         $("#myBtnLogin").click(function(){
             $("#myModalLogin").modal();
+        });
+
+        $( "#frmLogin" ).submit(function( event ) {
+            alert( "Handler for .submit() called." );
+            event.preventDefault();
         });
 
 
