@@ -63,7 +63,10 @@ Class MY_Controller extends CI_Controller
 
                 //load common lang
                 $this->load->language('common', $this->_langcode);
+                $this->load->language('login/login', $this->_langcode);
+
                 $this->data['common_lang'] = $this->lang->line('common_lang');
+                $this->data['login_lang'] = $this->lang->line('login_lang');
             }
         }
     }
