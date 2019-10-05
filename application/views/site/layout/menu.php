@@ -26,13 +26,13 @@
         <li class="<?php echo isset($li_4) ? 'menu-active' : ''?>" title="Chính sách và điều khoản"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $this->lang->line('policies'); ?></a></li>
         <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="Liên hệ"><a href="<?php echo base_url('lien-he')?>"> <?php echo $this->lang->line('contact'); ?></a></li>
 <!--        register - login-->
-        <li class="user_style" id="myLogin" title="<?php echo $this->lang->line('login'); ?>">
+        <li class="user_style" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
             <a href="javascript:void(0)" class="menu_login text-uppercase">
                 <i class="fa fa-sign-in-alt text-danger mr-3" aria-hidden="true"></i>
                 <?php echo $this->lang->line('login'); ?>
             </a>
         </li>
-        <li class="user_style" id="myRegister" title="<?php echo $this->lang->line('register'); ?>" onclick="show_alert()">
+        <li class="user_style" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" onclick="">
             <a href="javascript:void(0)" class="text-uppercase">
                 <i class="fa fa-user text-danger mr-3" aria-hidden="true"></i>
                 <?php echo $this->lang->line('register'); ?>
@@ -62,14 +62,53 @@
 <!--modal login-->
 <div class="container">
     <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal fade" id="myModalLogin" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header" style="padding:35px 50px;">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+                    <h4><span class="glyphicon glyphicon-log-in"></span> Login</h4>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                            <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" checked>Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    <p>Not a member? <a href="#">Sign Up</a></p>
+                    <p>Forgot <a href="#">Password?</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--modal register-->
+<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModalRegister" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4><span class="glyphicon glyphicon-user"></span> Register</h4>
                 </div>
                 <div class="modal-body" style="padding:40px 50px;">
                     <form role="form">
@@ -105,8 +144,14 @@
         });
 
         //login
-        $("#myLogin").click(function(){
-            $("#myModal").modal();
+        $("#myBtnLogin").click(function(){
+            $("#myModalLogin").modal();
+        });
+
+
+        //register
+        $("#myBtnRegister").click(function(){
+            $("#myModalRegister").modal();
         });
     });
 
