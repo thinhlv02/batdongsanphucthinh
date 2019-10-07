@@ -125,7 +125,7 @@
                     <h4><span class="glyphicon glyphicon-log-in"></span> <?php echo $login_lang['login_title'] ?></h4>
                 </div>
                 <div class="modal-body" style="padding:40px 50px;">
-                    <form role="form">
+                    <form12 role="form">
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
                             <p class="text-danger mb-0" id="errUserName" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_username']; ?></p>
@@ -141,7 +141,7 @@
                             <label><input type="checkbox" value="" checked><?php echo $login_lang['remember']; ?></label>
                         </div>
                         <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> <?php echo $login_lang['btn_login']; ?></button>
-                    </form>
+                    </form12>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> <?php echo $login_lang['btn_cancel']; ?></button>
