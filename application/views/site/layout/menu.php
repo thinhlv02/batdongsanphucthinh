@@ -119,9 +119,6 @@
         <div class="modal-dialog">
 
             <!-- Modal content-->
-            <form id="frmLogin" class="modal-content animate" action="" method="post">
-
-
             <div class="modal-content">
                 <div class="modal-header" style="padding:35px 50px;">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -131,11 +128,14 @@
                     <form role="form">
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
-                            <input type="text" class="form-control" id="usrname" placeholder="Enter email" required>
+                            <p class="text-danger mb-0" id="errUserName" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_username']; ?></p>
+                            <input type="text" class="form-control" id="txtUserName" placeholder="<?php echo $login_lang['username']; ?>" onchange="banItemChange('#txtUserName', '#errUserName')">
                         </div>
                         <div class="form-group">
                             <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> <?php echo $login_lang['password']; ?></label>
-                            <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                            <p class="text-danger mb-0" id="errPassWord" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_password']; ?></p>
+
+                            <input type="password" class="form-control" id="txtPassWord" placeholder="<?php echo $login_lang['password']; ?>" onchange="banItemChange('#txtPassWord', '#errPassWord')">
                         </div>
                         <div class="checkbox">
                             <label><input type="checkbox" value="" checked><?php echo $login_lang['remember']; ?></label>
@@ -149,7 +149,6 @@
                     <p><?php echo $login_lang['forgot']; ?> <a href="#"><?php echo $login_lang['password']; ?>?</a></p>
                 </div>
             </div>
-            </form>
 
         </div>
     </div>
@@ -167,12 +166,6 @@
             $("#myModalLogin").modal();
         });
 
-        $( "#frmLogin" ).submit(function( event ) {
-            alert( "Handler for .submit() called." );
-            event.preventDefault();
-        });
-
-
         //register
         $("#myBtnRegister").click(function(){
             $("#myModalRegister").modal();
@@ -189,6 +182,27 @@
         });
         $(".swal-text").addClass("font-weight-bold");
     }
+
+    //process login
+    function banItemChange(id, errId)
+    {
+        var val = $(id).val().trim();
+        var isShow = val == '' ? true : false;
+        showErrBanItem(errId, isShow);
+    }
+
+    function showErrBanItem(errId, isShow)
+    {
+        if(isShow)
+        {
+            $(errId).show();
+        }
+        else
+        {
+            $(errId).hide();
+        }
+    }
+
 </script>
 
 <style>

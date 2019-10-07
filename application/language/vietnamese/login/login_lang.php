@@ -17,8 +17,8 @@ $lang['login_lang']['not_member'] = 'Không phải là thành viên?';
 $lang['login_lang']['forgot'] = 'Quên';
 
 $lang['login_lang']['or'] = 'or';
-$lang['login_lang']['error_username'] = 'Enter your username!';
-$lang['login_lang']['error_password'] = 'Enter your password!';
+$lang['login_lang']['error_username'] = 'Nhập tên đăng nhập!';
+$lang['login_lang']['error_password'] = 'Nhập mật khẩu!';
 $lang['login_lang']['error_captcha'] = 'Enter your captcha!';
 $lang['login_lang']['register_lostpassword'] = 'Forgot your password?';
 $lang['login_lang']['remember'] = 'Ghi nhớ tôi';
