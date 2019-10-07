@@ -15,6 +15,8 @@ $lang['login_lang']['policies1'] = 'Bằng cách tạo một tài khoản, bạn
 $lang['login_lang']['policies2'] = 'Của chúng tôi';
 $lang['login_lang']['not_member'] = 'Không phải là thành viên?';
 $lang['login_lang']['forgot'] = 'Quên';
+$lang['login_lang']['lbl_msg_form_confirm_login'] = 'Bạn có chắc chắn đã nhập đúng và đầy đủ thông tin khi đăng nhập?';
+$lang['login_lang']['lbl_msg_form_error_add'] = 'Thông tin bạn nhập chưa đầy đủ hoặc không chính xác. Bạn xem lại các thông tin bắt buộc phải nhập';
 
 $lang['login_lang']['or'] = 'or';
 $lang['login_lang']['error_username'] = 'Nhập tên đăng nhập!';

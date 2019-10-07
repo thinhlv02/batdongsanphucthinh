@@ -533,4 +533,9 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
+    function adduser()
+    {
+        echo 'ok';
+    }
+
 }

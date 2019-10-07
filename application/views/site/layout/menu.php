@@ -140,7 +140,7 @@
                         <div class="checkbox">
                             <label><input type="checkbox" value="" checked><?php echo $login_lang['remember']; ?></label>
                         </div>
-                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> <?php echo $login_lang['btn_login']; ?></button>
+                        <button type="submit" class="btn btn-success btn-block" onclick="chkForm()"><span class="glyphicon glyphicon-off"></span> <?php echo $login_lang['btn_login']; ?></button>
                     </form12>
                 </div>
                 <div class="modal-footer">
@@ -200,6 +200,80 @@
         else
         {
             $(errId).hide();
+        }
+    }
+
+    function chkForm() {
+        // check banner name
+        var chkUserName = false;
+        var userName = $('#txtUserName').val().trim();
+
+        if(userName == '')
+        {
+            chkUserName = false;
+            $('#errUserName').show();
+        }
+        else
+        {
+            chkUserName = true;
+            $('#errUserName').hide();
+        }
+
+        //check psw
+        var chkPassWord = false;
+        var passWord = $('#txtPassWord').val().trim();
+
+        if(passWord == '')
+        {
+            chkPassWord = false;
+            $('#errPassWord').show();
+        }
+        else
+        {
+            chkPassWord = true;
+            $('#errPassWord').hide();
+        }
+
+        if(chkUserName && chkPassWord)
+        {
+            swal({
+                text: "<?php echo $login_lang['lbl_msg_form_confirm_login']; ?>",
+                icon: "warning",
+                buttons: {
+                    confirm : {text:'Yes',className:'bg-primary'},
+                    cancel_: {text: 'Cancel', className: 'btn-danger'}
+                },
+            }).then((will)=>{
+                if(will === true)
+                {
+                    var _onSuccess = function (data) {
+                        console.log(data);
+                        alert('aaaaaa');
+                    };
+
+                    var params = {
+                        'username': userName,
+                        'password': passWord,
+                    };
+
+                    console.log(params);
+                    getAjax('<?php echo base_url('home/adduser'); ?>', params,'', 'GET',false, _onSuccess);
+                    //getAjax('<?php //echo base_url('home/update_view'); ?>//', 'id=' + UrlEncode.encode(id), '', 'GET', '', false, _onSuccess);
+                }
+            });
+            $(".swal-text").addClass("font-weight-bold");
+
+        }
+        else
+        {
+            swal({
+                title: "<?php echo $common_lang['oops']; ?>",
+                text: "<?php echo $login_lang['lbl_msg_form_error_add']; ?>",
+                icon: "warning",
+                buttons: {},
+                timer: 1500
+            });
+            $(".swal-text").addClass("font-weight-bold");
         }
     }
 
