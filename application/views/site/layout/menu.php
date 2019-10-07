@@ -153,13 +153,13 @@ $user =  $this->data['user'];
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
                             <p class="text-danger mb-0" id="errUserName" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_username']; ?></p>
-                            <input type="text" class="form-control" id="txtUserName" value="thinhlv" placeholder="<?php echo $login_lang['username']; ?>" onchange="banItemChange('#txtUserName', '#errUserName')">
+                            <input type="text" class="form-control" id="txtUserName" placeholder="<?php echo $login_lang['username']; ?>" onchange="banItemChange('#txtUserName', '#errUserName')">
                         </div>
                         <div class="form-group">
                             <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> <?php echo $login_lang['password']; ?></label>
                             <p class="text-danger mb-0" id="errPassWord" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_password']; ?></p>
 
-                            <input type="password" class="form-control" value="12121212" id="txtPassWord" placeholder="<?php echo $login_lang['password']; ?>" onchange="banItemChange('#txtPassWord', '#errPassWord')">
+                            <input type="password" class="form-control" id="txtPassWord" placeholder="<?php echo $login_lang['password']; ?>" onchange="banItemChange('#txtPassWord', '#errPassWord')">
                         </div>
                         <div class="checkbox">
                             <label><input type="checkbox" value="" checked><?php echo $login_lang['remember']; ?></label>
