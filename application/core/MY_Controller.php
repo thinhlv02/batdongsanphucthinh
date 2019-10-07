@@ -67,6 +67,9 @@ Class MY_Controller extends CI_Controller
 
                 $this->data['common_lang'] = $this->lang->line('common_lang');
                 $this->data['login_lang'] = $this->lang->line('login_lang');
+
+                $this->data['user'] = $this->session->userdata('user');
+//                var_dump($this->data['user']);
             }
         }
     }

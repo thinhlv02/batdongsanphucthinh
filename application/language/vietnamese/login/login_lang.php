@@ -7,7 +7,7 @@ $lang['login_lang']['password'] = 'Mật khẩu';
 $lang['login_lang']['repassword'] = 'Nhập lại mật khẩu';
 $lang['login_lang']['email'] = 'Địa chỉ Email';
 $lang['login_lang']['register_new_account'] = 'Register';
-$lang['login_lang']['error_mess'] = 'The username or password you entered is not correct';
+$lang['login_lang']['error_mess'] = 'Tên tài khoản hoặc mật khẩu bạn nhập không tồn tại!';
 $lang['login_lang']['btn_register'] = 'Đăng ký ';
 $lang['login_lang']['btn_login'] = 'Đăng nhập ';
 $lang['login_lang']['btn_cancel'] = 'Hủy bỏ';
@@ -16,6 +16,7 @@ $lang['login_lang']['policies2'] = 'Của chúng tôi';
 $lang['login_lang']['not_member'] = 'Không phải là thành viên?';
 $lang['login_lang']['forgot'] = 'Quên';
 $lang['login_lang']['lbl_msg_form_confirm_login'] = 'Bạn có chắc chắn đã nhập đúng và đầy đủ thông tin khi đăng nhập?';
+$lang['login_lang']['lbl_msg_form_confirm_logout'] = 'Bạn có chắc chắn muốn thoát ?';
 $lang['login_lang']['lbl_msg_form_error_add'] = 'Thông tin bạn nhập chưa đầy đủ hoặc không chính xác. Bạn xem lại các thông tin bắt buộc phải nhập';
 
 $lang['login_lang']['or'] = 'or';
@@ -29,4 +30,5 @@ $lang['login_lang']['countError'] = 'You signed false 3 times! Confirm captcha b
 $lang['login_lang']['lbl_captcha_reload'] = 'Reload';
 $lang['login_lang']['time_reload'] = 'You have logged more than 10 times wrong! You will be logged in again after';
 $lang['login_lang']['second'] = 'seconds';
+$lang['login_lang']['logout'] = 'Thoát';
 ?>

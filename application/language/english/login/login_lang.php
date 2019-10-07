@@ -16,6 +16,7 @@ $lang['login_lang']['btn_cancel'] = 'Cancel';
 $lang['login_lang']['not_member'] = 'Not a remember';
 $lang['login_lang']['forgot'] = 'Forgot';
 $lang['login_lang']['lbl_msg_form_confirm_login'] = 'Are you have an incorrect input?';
+$lang['login_lang']['lbl_msg_form_confirm_logout'] = 'Are you sure logout?';
 $lang['login_lang']['lbl_msg_form_error_add'] = 'You entered information is not fully enough';
 $lang['login_lang']['or'] = 'or';
 $lang['login_lang']['error_username'] = 'Enter your username!';
@@ -28,4 +29,5 @@ $lang['login_lang']['countError'] = 'You signed false 3 times! Confirm captcha b
 $lang['login_lang']['lbl_captcha_reload'] = 'Reload';
 $lang['login_lang']['time_reload'] = 'You have logged more than 10 times wrong! You will be logged in again after';
 $lang['login_lang']['second'] = 'seconds';
+$lang['login_lang']['logout'] = 'Logout';
 ?>

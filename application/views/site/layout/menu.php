@@ -1,4 +1,8 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
 
+<?php
+$user =  $this->data['user'];
+?>
 <div class="sub-nav">
     <div id="hot_line">Hotline: 0796 43 22 11</div>
     <div class="logo">
@@ -26,18 +30,38 @@
         <li class="<?php echo isset($li_4) ? 'menu-active' : ''?>" title="Chính sách và điều khoản"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $common_lang['policies']; ?></a></li>
         <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="Liên hệ"><a href="<?php echo base_url('lien-he')?>"> <?php echo $common_lang['contact']; ?></a></li>
 <!--        register - login-->
-        <li class="user_style pr-0" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" onclick="">
-            <a href="javascript:void(0)" class="text-uppercase">
-                <i class="fa fa-user-plus text-danger" aria-hidden="true"></i>
-                <?php echo $this->lang->line('register'); ?>
-            </a>
-        </li>
+        <?php
+        if (empty($user)) { ?>
 
-        <li class="user_style p-0" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
-            <a href="javascript:void(0)" class="menu_login text-uppercase">
-                <i class="fa fa-sign-in-alt text-danger" aria-hidden="true"></i>
-                <?php echo $this->lang->line('login'); ?>
-            </a>
+            <li class="user_style pr-0" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" onclick="">
+                <a href="javascript:void(0)" class="text-uppercase">
+                    <i class="fa fa-user-plus text-danger" aria-hidden="true"></i>
+                    <?php echo $this->lang->line('register'); ?>
+                </a>
+            </li>
+
+            <li class="user_style p-0" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
+                <a href="javascript:void(0)" class="menu_login text-uppercase">
+                    <i class="fa fa-sign-in-alt text-danger" aria-hidden="true"></i>
+                    <?php echo $this->lang->line('login'); ?>
+                </a>
+            </li>
+
+        <?php }
+        ?>
+
+        <li>
+            <?php
+            if (!empty($user)) { ?>
+                <li>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <?php echo $user->username; ?>
+                </li>
+
+                 <li><a href="javascript:void(0)" onclick="confirm_logout()"><i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+                         <?php echo $login_lang['logout'] ?> </a></li>
+            <?php }
+        ?>
         </li>
     </ul>
 
@@ -129,13 +153,13 @@
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
                             <p class="text-danger mb-0" id="errUserName" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_username']; ?></p>
-                            <input type="text" class="form-control" id="txtUserName" placeholder="<?php echo $login_lang['username']; ?>" onchange="banItemChange('#txtUserName', '#errUserName')">
+                            <input type="text" class="form-control" id="txtUserName" value="thinhlv" placeholder="<?php echo $login_lang['username']; ?>" onchange="banItemChange('#txtUserName', '#errUserName')">
                         </div>
                         <div class="form-group">
                             <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> <?php echo $login_lang['password']; ?></label>
                             <p class="text-danger mb-0" id="errPassWord" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_password']; ?></p>
 
-                            <input type="password" class="form-control" id="txtPassWord" placeholder="<?php echo $login_lang['password']; ?>" onchange="banItemChange('#txtPassWord', '#errPassWord')">
+                            <input type="password" class="form-control" value="12121212" id="txtPassWord" placeholder="<?php echo $login_lang['password']; ?>" onchange="banItemChange('#txtPassWord', '#errPassWord')">
                         </div>
                         <div class="checkbox">
                             <label><input type="checkbox" value="" checked><?php echo $login_lang['remember']; ?></label>
@@ -244,21 +268,33 @@
                     cancel_: {text: 'Cancel', className: 'btn-danger'}
                 },
             }).then((will)=>{
+
                 if(will === true)
                 {
                     var _onSuccess = function (data) {
-                        console.log(data);
-                        alert('aaaaaa');
+                        var check = $.trim(data);
+                        if ( check === 'ok')
+                        {
+                            window.location.reload(true);
+                        }
+                        else {
+                            swal({
+                                title: "<?php echo $common_lang['oops']; ?>",
+                                text: "<?php echo $login_lang['error_mess']; ?>",
+                                icon: "warning",
+                                buttons: {},
+                                timer: 1500
+                            });
+                            $(".swal-text").addClass("font-weight-bold");
+                        }
                     };
 
                     var params = {
-                        'username': userName,
-                        'password': passWord,
+                       'username': userName,
+                       'password': passWord,
                     };
+                    getAjax('<?php echo base_url('home/adduser'); ?>', params, '', 'GET', '', false, _onSuccess);
 
-                    console.log(params);
-                    getAjax('<?php echo base_url('home/adduser'); ?>', params,'', 'GET',false, _onSuccess);
-                    //getAjax('<?php //echo base_url('home/update_view'); ?>//', 'id=' + UrlEncode.encode(id), '', 'GET', '', false, _onSuccess);
                 }
             });
             $(".swal-text").addClass("font-weight-bold");
@@ -275,6 +311,26 @@
             });
             $(".swal-text").addClass("font-weight-bold");
         }
+    }
+
+    //confirm logut
+    function confirm_logout() {
+        swal({
+            title: "<?php echo $common_lang['oops']; ?>",
+            text: "<?php echo $login_lang['lbl_msg_form_confirm_logout']; ?>",
+            icon: "warning",
+            buttons: {
+                confirm : {text:'Yes',className:'bg-primary'},
+                cancel_: {text: 'Cancel', className: 'btn-danger'}
+            },
+        }).then((will)=>{
+
+            if(will === true)
+            {
+                window.location.href = '<?php echo base_url('home/logout')?>';
+            }
+        });
+        $(".swal-text").addClass("font-weight-bold");
     }
 
 </script>

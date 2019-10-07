@@ -535,7 +535,31 @@ Class Home extends MY_Controller
 
     function adduser()
     {
-        echo 'ok';
+        $username = $this->input->get('username');
+        $password = $this->input->get('password');
+
+        $password = md5($password);
+
+        $this->load->model('user_model');
+        $where = array('username' => $username , 'password' => $password);
+
+        if($this->user_model->check_exists($where))
+        {
+            $this->load->model('user_model');
+            $input = array();
+            $input['where']['username'] = $username;
+            $admin = $this->user_model->get_list($input);
+            $this->session->set_userdata('user', $admin[0]);
+            echo 'ok';
+        }
+        else echo 'failed';
+    }
+
+    function logout(){
+//        pre('logout');
+        $this->session->unset_userdata('user');
+        $this->session->unset_userdata('login');
+        redirect(base_url());
     }
 
 }
