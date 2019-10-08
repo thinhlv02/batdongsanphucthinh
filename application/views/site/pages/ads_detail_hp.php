@@ -38,37 +38,14 @@
                         </div>
                         <div class="col-md-2 col-sm-2">
                             <div class="title_land_box">Ảnh đại diện(click để phóng to):</div>
-                            <img id="myImg" src="<?php echo public_url('images/ads/' . $ads->img) ?> " style="width:100%;">
+                            <img id="myImg" alt="<?php echo $ads->title; ?>" src="<?php echo public_url('images/ads/' . $ads->img) ?>" style="width:100%;">
 
                             <!-- The Modal -->
                             <div id="myModal" class="modal">
-                                <span class="close">&times;</span>
+                                <span class="close" onclick="closeImgModal()">&times;</span>
                                 <img class="modal-content" id="img01">
                                 <div id="caption"></div>
                             </div>
-
-                            <script>
-                                // Get the modal
-                                var modal = document.getElementById("myModal");
-
-                                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                var img = document.getElementById("myImg");
-                                var modalImg = document.getElementById("img01");
-                                var captionText = document.getElementById("caption");
-                                img.onclick = function () {
-                                    modal.style.display = "block";
-                                    modalImg.src = this.src;
-                                    captionText.innerHTML = this.alt;
-                                }
-
-                                // Get the <span> element that closes the modal
-                                var span = document.getElementsByClassName("close")[0];
-
-                                // When the user clicks on <span> (x), close the modal
-                                span.onclick = function () {
-                                    modal.style.display = "none";
-                                }
-                            </script>
                         </div>
                         <!--End imgs_land_box-->
 
@@ -443,6 +420,24 @@
             pager: false
         });
     });
+
+    // show modal Img
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    };
+
+    //close img modal
+    function closeImgModal() {
+        modal.style.display = "none";
+    }
 
 </script>
 
