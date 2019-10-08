@@ -104,12 +104,7 @@ $user =  $this->data['user'];
                             <p class="text-danger mb-0" id="errUserNameRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_username']; ?></p>
                             <input type="text" class="form-control" id="txtUserNameRe" placeholder="Enter Username" onchange="banItemChange('#txtUserNameRe', '#errUserNameRe')">
                         </div>
-                        <div class="form-group">
-                            <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> <?php echo $login_lang['email']; ?></label>
-                            <p class="text-danger mb-0" id="errEmailRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_email']; ?></p>
 
-                            <input type="text" class="form-control" id="txtEmailRe" placeholder="Enter email" onchange="banItemChange('#txtEmailRe', '#errEmailRe')">
-                        </div>
                         <div class="form-group">
                             <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> <?php echo $login_lang['password']; ?></label>
                             <p class="text-danger mb-0" id="errPassWordRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_password']; ?></p>
@@ -118,9 +113,21 @@ $user =  $this->data['user'];
                         </div>
 
                         <div class="form-group">
-                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> <?php echo $login_lang['repassword']; ?></label>
-                            <p class="text-danger mb-0" id="errPassWordRe2" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_repassword']; ?></p>
-                            <input type="text" class="form-control" id="txtPassWordRe2" placeholder="Enter Repeat password" onchange="banItemChange('#txtPassWordRe2', '#errPassWordRe2')">
+                            <label for="usrname"><span class="glyphicon glyphicon-phone"></span> <?php echo $login_lang['phone']; ?></label>
+                            <p class="text-danger mb-0" id="errPhone" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_phone']; ?></p>
+                            <input type="text" class="form-control" id="txtPhone" placeholder="Enter Phone" onchange="banItemChange('#txtPhone', '#errPhone')">
+                        </div>
+                        <div class="form-group d-none">
+<!--                            <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> --><?php //echo $login_lang['email']; ?><!--</label>-->
+<!--                            <p class="text-danger mb-0" id="errEmailRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> --><?php //echo $login_lang['error_email']; ?><!--</p>-->
+<!---->
+<!--                            <input type="text" class="form-control" id="txtEmailRe" placeholder="Enter email" onchange="banItemChange('#txtEmailRe', '#errEmailRe')">-->
+                        </div>
+
+                        <div class="form-group d-none">
+<!--                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> --><?php //echo $login_lang['repassword']; ?><!--</label>-->
+<!--                            <p class="text-danger mb-0" id="errPassWordRe2" style="display: none;"><span class="glyphicon glyphicon-alert"></span> --><?php //echo $login_lang['error_repassword']; ?><!--</p>-->
+<!--                            <input type="text" class="form-control" id="txtPassWordRe2" placeholder="Enter Repeat password" onchange="banItemChange('#txtPassWordRe2', '#errPassWordRe2')">-->
                         </div>
 
                         <div class="checkbox">
@@ -336,21 +343,20 @@ $user =  $this->data['user'];
             $('#errUserNameRe').hide();
         }
 
-        // check Email
-        var chkEmailRe = false;
-        var email = $('#txtEmailRe').val().trim();
+        // check phone
+        var chkPhone = false;
+        var userPhone = $('#txtPhone').val().trim();
 
-        if(email == '')
+        if(userPhone == '')
         {
-            chkEmailRe = false;
-            $('#errUserNameRe').show();
+            chkPhone = false;
+            $('#errPhone').show();
         }
         else
         {
-            chkEmailRe = true;
-            $('#errUserNameRe').hide();
+            chkPhone = true;
+            $('#errPhone').hide();
         }
-
 
         //check psw
         var chkPassWord = false;
@@ -367,26 +373,11 @@ $user =  $this->data['user'];
             $('#errPassWordRe').hide();
         }
 
-        //check re enter psw
-        var chkPassWord2 = false;
-        var passWord2 = $('#txtPassWordRe2').val().trim();
-
-        if(passWord2 == '')
-        {
-            chkPassWord2 = false;
-            $('#errPassWordRe2').show();
-        }
-        else
-        {
-            chkPassWord2 = true;
-            $('#errPassWord2').hide();
-        }
-
-        if(chkUserName && chkEmailRe && chkPassWord && chkPassWord2)
+        if(chkUserName && chkPhone && chkPassWord)
         {
             swal({
                 title: "<?php echo $common_lang['oops']; ?>",
-                text: "<?php echo $login_lang['lbl_msg_form_error_add']; ?>",
+                text: "TKS",
                 icon: "warning",
                 buttons: {},
                 timer: 1500
