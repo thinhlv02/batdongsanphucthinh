@@ -67,7 +67,7 @@
                                 <div class="row">
                                     <div class="col-xs-6 ibrief"><strong>- Lượt xem:</strong> <?php echo $ads->view ?>
                                     </div>
-                                    <div class="col-xs-6 ibrief"><strong>- Ngày hết hạn:</strong>
+                                    <div class="col-xs-6 ibrief" style="display: none"><strong>- Ngày hết hạn:</strong>
                                         <span class="danger">
                                             <?php echo date('d-m-Y', strtotime('+30 days', strtotime($ads->created_at))) . PHP_EOL; ?></span>
                                     </div>
