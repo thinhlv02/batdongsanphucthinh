@@ -97,7 +97,7 @@ $user =  $this->data['user'];
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['register_title']; ?></h4>
                 </div>
-                <div class="modal-body" style="">
+                <div class="modal-body">
                     <form role="form">
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
@@ -148,7 +148,7 @@ $user =  $this->data['user'];
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4><span class="glyphicon glyphicon-log-in"></span> <?php echo $login_lang['login_title'] ?></h4>
                 </div>
-                <div class="modal-body" style="">
+                <div class="modal-body">
                     <form12 role="form">
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
