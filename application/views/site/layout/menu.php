@@ -98,32 +98,38 @@ $user =  $this->data['user'];
                     <h4><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['register_title']; ?></h4>
                 </div>
                 <div class="modal-body">
-                    <form role="form">
+                    <form12 role="form">
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
-                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                            <p class="text-danger mb-0" id="errUserNameRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_username']; ?></p>
+                            <input type="text" class="form-control" id="txtUserNameRe" placeholder="Enter Username" onchange="banItemChange('#txtUserNameRe', '#errUserNameRe')">
                         </div>
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> <?php echo $login_lang['email']; ?></label>
-                            <input type="text" class="form-control" id="email" placeholder="Enter email">
+                            <p class="text-danger mb-0" id="errEmailRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_email']; ?></p>
+
+                            <input type="text" class="form-control" id="txtEmailRe" placeholder="Enter email" onchange="banItemChange('#txtEmailRe', '#errEmailRe')">
                         </div>
                         <div class="form-group">
                             <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> <?php echo $login_lang['password']; ?></label>
-                            <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                            <p class="text-danger mb-0" id="errPassWordRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_password']; ?></p>
+
+                            <input type="text" class="form-control" id="txtPassWordRe" placeholder="Enter password" onchange="banItemChange('#txtPassWordRe', '#errPassWordRe')">
                         </div>
 
                         <div class="form-group">
                             <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> <?php echo $login_lang['repassword']; ?></label>
-                            <input type="text" class="form-control" id="psw" placeholder="Enter Repeat password">
+                            <p class="text-danger mb-0" id="errPassWordRe2" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_repassword']; ?></p>
+                            <input type="text" class="form-control" id="txtPassWordRe2" placeholder="Enter Repeat password" onchange="banItemChange('#txtPassWordRe2', '#errPassWordRe2')">
                         </div>
 
                         <div class="checkbox">
                             <label><input type="checkbox" value="" checked><?php echo $login_lang['remember']; ?></label>
                         </div>
                         <p><?php echo $login_lang['policies1']; ?> <a href="#" style="color:dodgerblue"><?php echo $login_lang['policies2']; ?></a>.</p>
-                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>
+                        <button type="submit" class="btn btn-success btn-block" onclick="chkFormRegister()"><span class="glyphicon glyphicon-off"></span>
                             <?php echo $login_lang['btn_register']; ?></button>
-                    </form>
+                    </form12>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> <?php echo $login_lang['btn_cancel']; ?></button>
@@ -164,7 +170,7 @@ $user =  $this->data['user'];
                         <div class="checkbox">
                             <label><input type="checkbox" value="" checked><?php echo $login_lang['remember']; ?></label>
                         </div>
-                        <button type="submit" class="btn btn-success btn-block" onclick="chkForm()"><span class="glyphicon glyphicon-off"></span> <?php echo $login_lang['btn_login']; ?></button>
+                        <button type="submit" class="btn btn-success btn-block" onclick="chkFormLogin()"><span class="glyphicon glyphicon-off"></span> <?php echo $login_lang['btn_login']; ?></button>
                     </form12>
                 </div>
                 <div class="modal-footer">
@@ -227,7 +233,7 @@ $user =  $this->data['user'];
         }
     }
 
-    function chkForm() {
+    function chkFormLogin() {
         // check banner name
         var chkUserName = false;
         var userName = $('#txtUserName').val().trim();
@@ -292,6 +298,124 @@ $user =  $this->data['user'];
                     var params = {
                        'username': userName,
                        'password': passWord,
+                    };
+                    getAjax('<?php echo base_url('home/adduser'); ?>', params, '', 'GET', '', false, _onSuccess);
+
+                }
+            });
+            $(".swal-text").addClass("font-weight-bold");
+
+        }
+        else
+        {
+            swal({
+                title: "<?php echo $common_lang['oops']; ?>",
+                text: "<?php echo $login_lang['lbl_msg_form_error_add']; ?>",
+                icon: "warning",
+                buttons: {},
+                timer: 1500
+            });
+            $(".swal-text").addClass("font-weight-bold");
+        }
+    }
+
+    //check form register
+    function chkFormRegister() {
+        // check banner name
+        var chkUserName = false;
+        var userName = $('#txtUserNameRe').val().trim();
+
+        if(userName == '')
+        {
+            chkUserName = false;
+            $('#errUserNameRe').show();
+        }
+        else
+        {
+            chkUserName = true;
+            $('#errUserNameRe').hide();
+        }
+
+        // check Email
+        var chkEmailRe = false;
+        var email = $('#txtEmailRe').val().trim();
+
+        if(email == '')
+        {
+            chkEmailRe = false;
+            $('#errUserNameRe').show();
+        }
+        else
+        {
+            chkEmailRe = true;
+            $('#errUserNameRe').hide();
+        }
+
+
+        //check psw
+        var chkPassWord = false;
+        var passWord = $('#txtPassWordRe').val().trim();
+
+        if(passWord == '')
+        {
+            chkPassWord = false;
+            $('#errPassWordRe').show();
+        }
+        else
+        {
+            chkPassWord = true;
+            $('#errPassWordRe').hide();
+        }
+
+        //check re enter psw
+        var chkPassWord2 = false;
+        var passWord2 = $('#txtPassWordRe2').val().trim();
+
+        if(passWord2 == '')
+        {
+            chkPassWord2 = false;
+            $('#errPassWordRe2').show();
+        }
+        else
+        {
+            chkPassWord2 = true;
+            $('#errPassWord2').hide();
+        }
+
+        if(chkUserName && chkEmailRe && chkPassWord && chkPassWord2)
+        {
+            swal({
+                text: "<?php echo $login_lang['lbl_msg_form_confirm_login']; ?>",
+                icon: "warning",
+                buttons: {
+                    confirm : {text:'Yes',className:'bg-primary'},
+                    cancel_: {text: 'Cancel', className: 'btn-danger'}
+                },
+            }).then((will)=>{
+
+                if(will === true)
+                {
+                    var _onSuccess = function (data) {
+                        var check = $.trim(data);
+                        if ( check === 'ok')
+                        {
+                            window.location.reload(true);
+                        }
+                        else {
+                            swal({
+                                title: "<?php echo $common_lang['oops']; ?>",
+                                text: "<?php echo $login_lang['error_mess']; ?>",
+                                icon: "warning",
+                                buttons: {},
+                                timer: 1500
+                            });
+                            $(".swal-text").addClass("font-weight-bold");
+                        }
+                    };
+
+                    var params = {
+                        'username': userName,
+                        'password': passWord,
                     };
                     getAjax('<?php echo base_url('home/adduser'); ?>', params, '', 'GET', '', false, _onSuccess);
 
