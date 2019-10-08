@@ -299,7 +299,7 @@ $user =  $this->data['user'];
                        'username': userName,
                        'password': passWord,
                     };
-                    getAjax('<?php echo base_url('home/adduser'); ?>', params, '', 'GET', '', false, _onSuccess);
+                    getAjax('<?php echo base_url('home/user_login'); ?>', params, '', 'GET', '', false, _onSuccess);
 
                 }
             });
@@ -385,41 +385,11 @@ $user =  $this->data['user'];
         if(chkUserName && chkEmailRe && chkPassWord && chkPassWord2)
         {
             swal({
-                text: "<?php echo $login_lang['lbl_msg_form_confirm_login']; ?>",
+                title: "<?php echo $common_lang['oops']; ?>",
+                text: "<?php echo $login_lang['lbl_msg_form_error_add']; ?>",
                 icon: "warning",
-                buttons: {
-                    confirm : {text:'Yes',className:'bg-primary'},
-                    cancel_: {text: 'Cancel', className: 'btn-danger'}
-                },
-            }).then((will)=>{
-
-                if(will === true)
-                {
-                    var _onSuccess = function (data) {
-                        var check = $.trim(data);
-                        if ( check === 'ok')
-                        {
-                            window.location.reload(true);
-                        }
-                        else {
-                            swal({
-                                title: "<?php echo $common_lang['oops']; ?>",
-                                text: "<?php echo $login_lang['error_mess']; ?>",
-                                icon: "warning",
-                                buttons: {},
-                                timer: 1500
-                            });
-                            $(".swal-text").addClass("font-weight-bold");
-                        }
-                    };
-
-                    var params = {
-                        'username': userName,
-                        'password': passWord,
-                    };
-                    getAjax('<?php echo base_url('home/adduser'); ?>', params, '', 'GET', '', false, _onSuccess);
-
-                }
+                buttons: {},
+                timer: 1500
             });
             $(".swal-text").addClass("font-weight-bold");
 

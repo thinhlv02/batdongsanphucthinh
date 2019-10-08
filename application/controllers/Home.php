@@ -533,7 +533,7 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
-    function adduser()
+    function user_login()
     {
         $username = $this->input->get('username');
         $password = $this->input->get('password');
