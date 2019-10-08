@@ -334,3 +334,13 @@ $user =  $this->data['user'];
     }
 
 </script>
+
+<style>
+    .modal-header, h4, .close {
+        color:white !important;
+        font-size: 30px;
+    }
+    .modal-footer {
+        background-color: #f9f9f9;
+    }
+</style>
