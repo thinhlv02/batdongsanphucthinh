@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 $lang['common_lang'] = array();
 
@@ -15,20 +15,8 @@ $lang['common_lang']['login'] = 'Đăng nhập';
 $lang['common_lang']['register'] = 'Đăng ký';
 $lang['common_lang']['oops'] = 'Oops!';
 $lang['common_lang']['warning'] = 'Hệ thống đang bảo trì chức năng này. Vui lòng thử lại sau!';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$lang['common_lang']['confirm_yes'] = 'Đồng ý';
+$lang['common_lang']['confirm_no'] = 'Hủy bỏ';
 
 
 $lang['common_lang']['site_title'] = 'Admicro Ad Exchange';
@@ -47,11 +35,11 @@ $lang['common_lang']['lost_password'] = 'Quên mật khẩu?';
 $lang['common_lang']['account_info'] = 'Thông tin cá nhân';
 $lang['common_lang']['access_denied'] = 'Bạn không thể truy cập chức năng này!';
 
-$lang['common_lang']['arr_location'] = array('0'=>'Toàn quốc',
-													'1'=>'Miền Bắc',
-													'2'=>'Miền Trung',
-													'3'=>'Miền Nam',
-											);
+$lang['common_lang']['arr_location'] = array('0' => 'Toàn quốc',
+    '1' => 'Miền Bắc',
+    '2' => 'Miền Trung',
+    '3' => 'Miền Nam',
+);
 
 $lang['common_lang']['lbl_create_ad'] = 'Tạo mới quảng cáo';
 $lang['common_lang']['lbl_charge'] = 'Nạp tiền';
@@ -108,15 +96,15 @@ $lang['common_lang']['lbl_menu_admin'] = 'Admin control';
 // Support
 $lang['common_lang']['lmenu_support_title'] = 'Hỗ trợ trực tuyến';
 $lang['common_lang']['sale_hn_mobile'] = 'Kinh doanh';
-$lang['common_lang']['num_hn_mobile']='0942.86.11.33';
+$lang['common_lang']['num_hn_mobile'] = '0942.86.11.33';
 $lang['common_lang']['sale_hcm_mobile'] = 'Kinh doanh HCM';
-$lang['common_lang']['num_hcm_mobile']='0942.86.11.33';
+$lang['common_lang']['num_hcm_mobile'] = '0942.86.11.33';
 $lang['common_lang']['technology_mobile'] = 'Kĩ thuật';
 $lang['common_lang']['num_tech_mobile'] = '0963 134 498';
 $lang['common_lang']['num_tech_mobile1'] = '0936 952 002';
-$lang['common_lang']['admarketvn']='Admarketvn';
-$lang['common_lang']['admarketvn1']='Admarketvn1';
-$lang['common_lang']['call_now']='Call me now';
+$lang['common_lang']['admarketvn'] = 'Admarketvn';
+$lang['common_lang']['admarketvn1'] = 'Admarketvn1';
+$lang['common_lang']['call_now'] = 'Call me now';
 
 $lang['common_lang']['tq'] = 'Toàn quốc';
 $lang['common_lang']['mb'] = 'Miền bắc';
