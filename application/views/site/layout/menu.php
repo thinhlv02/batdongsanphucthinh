@@ -93,11 +93,11 @@ $user =  $this->data['user'];
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header" style="padding:35px 50px;">
+                <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['register_title']; ?></h4>
                 </div>
-                <div class="modal-body" style="padding:40px 50px;">
+                <div class="modal-body" style="">
                     <form role="form">
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
@@ -144,11 +144,11 @@ $user =  $this->data['user'];
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header" style="padding:35px 50px;">
+                <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4><span class="glyphicon glyphicon-log-in"></span> <?php echo $login_lang['login_title'] ?></h4>
                 </div>
-                <div class="modal-body" style="padding:40px 50px;">
+                <div class="modal-body" style="">
                     <form12 role="form">
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
