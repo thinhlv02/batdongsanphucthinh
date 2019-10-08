@@ -3,6 +3,7 @@ $lang['login_lang'] = array();
 $lang['login_lang']['login_title'] = 'Đăng nhập hệ thống';
 $lang['login_lang']['register_title'] = 'Đăng ký tài khoản';
 $lang['login_lang']['username'] = 'Tên đăng nhập';
+$lang['login_lang']['fullname'] = 'Tên đầy đủ';
 $lang['login_lang']['password'] = 'Mật khẩu';
 $lang['login_lang']['phone'] = 'Số Điện Thoại';
 $lang['login_lang']['repassword'] = 'Nhập lại mật khẩu';
@@ -22,6 +23,7 @@ $lang['login_lang']['lbl_msg_form_error_add'] = 'Thông tin bạn nhập chưa �
 
 $lang['login_lang']['or'] = 'or';
 $lang['login_lang']['error_username'] = 'Nhập tên đăng nhập!';
+$lang['login_lang']['error_fullname'] = 'Nhập tên đầy đủ!';
 $lang['login_lang']['error_password'] = 'Nhập mật khẩu!';
 $lang['login_lang']['error_phone'] = 'Nhập Số điện thoại!';
 $lang['login_lang']['error_repassword'] = 'Nhập lại mật khẩu!';

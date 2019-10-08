@@ -100,23 +100,24 @@ $user =  $this->data['user'];
                 <div class="modal-body">
                     <form12 role="form">
                         <div class="form-group">
-                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
-                            <p class="text-danger mb-0" id="errUserNameRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_username']; ?></p>
-                            <input type="text" class="form-control" id="txtUserNameRe" placeholder="Enter Username" onchange="banItemChange('#txtUserNameRe', '#errUserNameRe')">
+                            <label for="usrname"><span class="glyphicon glyphicon-phone"></span> <?php echo $login_lang['phone']; ?></label>
+                            <p class="text-danger mb-0" id="errPhone" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_phone']; ?></p>
+                            <input type="text" class="form-control" id="txtPhone" placeholder="<?php echo $login_lang['phone']; ?>" onchange="banItemChange('#txtPhone', '#errPhone')">
                         </div>
 
                         <div class="form-group">
                             <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> <?php echo $login_lang['password']; ?></label>
                             <p class="text-danger mb-0" id="errPassWordRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_password']; ?></p>
 
-                            <input type="text" class="form-control" id="txtPassWordRe" placeholder="Enter password" onchange="banItemChange('#txtPassWordRe', '#errPassWordRe')">
+                            <input type="password" class="form-control" id="txtPassWordRe" placeholder="<?php echo $login_lang['password']; ?>" onchange="banItemChange('#txtPassWordRe', '#errPassWordRe')">
                         </div>
 
                         <div class="form-group">
-                            <label for="usrname"><span class="glyphicon glyphicon-phone"></span> <?php echo $login_lang['phone']; ?></label>
-                            <p class="text-danger mb-0" id="errPhone" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_phone']; ?></p>
-                            <input type="text" class="form-control" id="txtPhone" placeholder="Enter Phone" onchange="banItemChange('#txtPhone', '#errPhone')">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['fullname']; ?></label>
+                            <p class="text-danger mb-0" id="errFullNameRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_fullname']; ?></p>
+                            <input type="text" class="form-control" id="txtFullNameRe" placeholder="<?php echo $login_lang['fullname']; ?>" onchange="banItemChange('#txtFullNameRe', '#errFullNameRe')">
                         </div>
+
                         <div class="form-group d-none">
 <!--                            <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> --><?php //echo $login_lang['email']; ?><!--</label>-->
 <!--                            <p class="text-danger mb-0" id="errEmailRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> --><?php //echo $login_lang['error_email']; ?><!--</p>-->
@@ -329,18 +330,18 @@ $user =  $this->data['user'];
     //check form register
     function chkFormRegister() {
         // check banner name
-        var chkUserName = false;
-        var userName = $('#txtUserNameRe').val().trim();
+        var chkFullName = false;
+        var fullName = $('#txtFullNameRe').val().trim();
 
-        if(userName == '')
+        if(fullName == '')
         {
-            chkUserName = false;
-            $('#errUserNameRe').show();
+            chkFullName = false;
+            $('#errFullNameRe').show();
         }
         else
         {
-            chkUserName = true;
-            $('#errUserNameRe').hide();
+            chkFullName = true;
+            $('#errFullNameRe').hide();
         }
 
         // check phone
@@ -373,7 +374,7 @@ $user =  $this->data['user'];
             $('#errPassWordRe').hide();
         }
 
-        if(chkUserName && chkPhone && chkPassWord)
+        if(chkFullName && chkPhone && chkPassWord)
         {
             swal({
                 title: "<?php echo $common_lang['oops']; ?>",
