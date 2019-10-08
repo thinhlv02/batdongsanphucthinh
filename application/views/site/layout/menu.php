@@ -93,7 +93,7 @@ $user =  $this->data['user'];
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-success text-center text-uppercase">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['register_title']; ?></h4>
                 </div>
@@ -144,7 +144,7 @@ $user =  $this->data['user'];
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-success text-center text-uppercase">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4><span class="glyphicon glyphicon-log-in"></span> <?php echo $login_lang['login_title'] ?></h4>
                 </div>
@@ -334,15 +334,3 @@ $user =  $this->data['user'];
     }
 
 </script>
-
-<style>
-    .modal-header, h4, .close {
-        background-color: #5cb85c;
-        color:white !important;
-        text-align: center;
-        font-size: 30px;
-    }
-    .modal-footer {
-        background-color: #f9f9f9;
-    }
-</style>
