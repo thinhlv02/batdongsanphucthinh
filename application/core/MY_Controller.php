@@ -10,6 +10,9 @@ Class MY_Controller extends CI_Controller
     var $_device_type = '';
     var $_province = '';
     protected $_langcode = '';
+    // common lang
+    protected $_common_lang = NULL;
+    protected $_login_lang = NULL;
 
     function __construct()
     {
@@ -67,13 +70,20 @@ Class MY_Controller extends CI_Controller
                 $this->load->language('common', $this->_langcode);
                 $this->load->language('login/login', $this->_langcode);
 
-                $this->data['common_lang'] = $this->lang->line('common_lang');
-                $this->data['login_lang'] = $this->lang->line('login_lang');
+                $this->_common_lang = $this->lang->line('common_lang');
+                $this->_login_lang = $this->lang->line('login_lang');
 
                 $this->data['user'] = $this->session->userdata('user');
 //                var_dump($this->data['user']);
             }
         }
+
+        // init and assign common value to view: language, common lang
+        $preHeader = array();
+        $preHeader['common_lang'] = $this->_common_lang;
+        $preHeader['login_lang'] = $this->_login_lang;
+        // assign all common param to view
+        $this->load->view($this->_template_f . 'preheader_view', $preHeader);
     }
 
     private function _check_login()
