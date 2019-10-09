@@ -92,7 +92,7 @@ Class Home extends MY_Controller
 //        $this->data['ads_new'] = $ads_new;
 
         $this->data['temp'] = $this->_template_f . 'home/home';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function service_info($slug = '', $id = 0)
@@ -113,7 +113,7 @@ Class Home extends MY_Controller
 
         $this->data['active'] = $id;
         $this->data['temp'] = $this->_template_f . 'pages/service_info';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function support($type = 1)
@@ -132,7 +132,7 @@ Class Home extends MY_Controller
         $this->data['categories'] = $categories;
         $this->data['type'] = $type;
         $this->data['temp'] = $this->_template_f . 'pages/support_level_1';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function detail_support($slug = "", $id = 0)
@@ -164,7 +164,7 @@ Class Home extends MY_Controller
         }
 
 
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function policy()
@@ -176,7 +176,7 @@ Class Home extends MY_Controller
         $this->data['title'] = "Điều khoản sử dụng";
         $this->data['page_content'] = $policy;
         $this->data['temp'] = $this->_template_f . 'pages/policy';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function privacy()
@@ -187,14 +187,14 @@ Class Home extends MY_Controller
         $this->data['title'] = "Chính sách bảo mật";
         $this->data['page_content'] = $privacy;
         $this->data['temp'] = $this->_template_f . 'pages/policy';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function contact()
     {
         $this->data['li_5'] = 1;
         $this->data['temp'] = $this->_template_f . 'pages/contact';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function download()
@@ -231,7 +231,7 @@ Class Home extends MY_Controller
 //        $news = $this->news_model->get_list();
         $this->data['news'] = $news;
         $this->data['temp'] = $this->_template_f . 'pages/news';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function news_detail($slug, $id)
@@ -256,7 +256,7 @@ Class Home extends MY_Controller
 
         $this->data['li_6'] = 1;
         $this->data['temp'] = $this->_template_f . 'pages/news_detail';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function ads()
@@ -287,7 +287,7 @@ Class Home extends MY_Controller
 //        $news = $this->ads_model->get_list();
         $this->data['ads'] = $news;
         $this->data['temp'] = $this->_template_f . 'pages/ads';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function ads_detail($slug, $id)
@@ -322,7 +322,7 @@ Class Home extends MY_Controller
         $this->data['li_6'] = 1;
 //        $this->data['temp'] = $this->_template_f . 'pages/ads_detail';
         $this->data['temp'] = $this->_template_f . 'pages/ads_detail_hp';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
 
@@ -332,7 +332,7 @@ Class Home extends MY_Controller
         $this->data['li_product'] = 1;
         $this->data['product'] = $product;
         $this->data['temp'] = $this->_template_f . 'product/product';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function language()
@@ -358,7 +358,7 @@ Class Home extends MY_Controller
     function agency()
     {
         $this->data['temp'] = $this->_template_f . 'pages/agency';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function sitemap()
@@ -531,7 +531,7 @@ Class Home extends MY_Controller
         $this->data['province'] = $province;
         $this->data['lstProvince'] = $lstProvince;
         $this->data['temp'] = $this->_template_f . 'pages/search';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function user_register()

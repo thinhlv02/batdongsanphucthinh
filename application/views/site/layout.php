@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php $this->load->view($this->_template_f . 'layout/head') ?>
+    <?php $this->load->view($this->_template_f . 'head') ?>
 </head>
 <body>
-<?php $this->load->view($this->_template_f . 'layout/menu') ?>
-<?php $this->load->view($this->_template_f . 'layout/banner') ?>
+<?php $this->load->view($this->_template_f . 'menu') ?>
+<?php $this->load->view($this->_template_f . 'banner') ?>
 <?php $this->load->view($temp) ?>
-<?php $this->load->view($this->_template_f . 'layout/footer_view') ?>
+<?php $this->load->view($this->_template_f . 'footer_view') ?>
 </body>
 
 <!--<div id='ads-left'>-->
