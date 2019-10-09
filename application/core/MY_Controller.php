@@ -10,6 +10,7 @@ Class MY_Controller extends CI_Controller
     var $_device_type = '';
     var $_province = '';
     protected $_langcode = '';
+    protected $_language = '';
     // common lang
     protected $_common_lang = NULL;
     protected $_login_lang = NULL;
@@ -28,6 +29,8 @@ Class MY_Controller extends CI_Controller
         $this->_device_type = $this->_func_device_type();
         $this->_province = $this->_func_province();
         $this->_template_f = TEMPLATE_FOLDER;
+        $this->data['content'] = '';
+        $this->data['contact'] = '';
 
 //        var_dump($new_url);
         switch ($new_url) {
@@ -66,6 +69,7 @@ Class MY_Controller extends CI_Controller
                     $this->_langcode = 'english';
                 }
                 $this->data['language'] = $language;
+                $this->_language = $language;
                 $this->lang->load($language, 'language');
                 //fix sgc
 
@@ -85,7 +89,7 @@ Class MY_Controller extends CI_Controller
         $preHeader = array();
         $preHeader['common_lang'] = $this->_common_lang;
         $preHeader['login_lang'] = $this->_login_lang;
-        $preHeader['language'] = $this->_langcode;
+        $preHeader['language'] = $this->_language;
         $preHeader['content'] = $this->data['content'];
         $preHeader['contact'] = $this->data['contact'];
         // assign all common param to view
