@@ -27,6 +27,7 @@ $lang['login_lang']['error_fullname'] = 'Enter your full name!';
 $lang['login_lang']['error_password'] = 'Enter your password!';
 $lang['login_lang']['error_phone'] = 'Enter your phone!';
 $lang['login_lang']['invalid_phone'] = 'Phone number not invalid!';
+$lang['login_lang']['exits_phone'] = 'The phone number exits, please checking!';
 $lang['login_lang']['error_repassword'] = 'Re Enter your password!';
 $lang['login_lang']['error_email'] = 'Enter Email!';
 $lang['login_lang']['error_captcha'] = 'Enter your captcha!';

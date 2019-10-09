@@ -374,7 +374,6 @@ $user =  $this->data['user'];
             $('#errFullNameRe').hide();
         }
 
-
         if(chkFullName && chkPhone && chkPassWord)
         {
             swal({
@@ -398,12 +397,9 @@ $user =  $this->data['user'];
 
                         if (obj.exits_phone == 'true')
                         {
-                            alert('Sđt đã tồn tại');
+                            alert("<?php echo $login_lang['exits_phone']; ?>");
                         }
 
-                        // return;
-
-                        // var check = $.trim(data);
                         if ( obj.ok == 'ok')
                         {
                             window.location.reload(true);

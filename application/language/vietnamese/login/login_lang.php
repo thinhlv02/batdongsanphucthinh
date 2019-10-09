@@ -28,6 +28,7 @@ $lang['login_lang']['error_fullname'] = 'Nhập tên đầy đủ!';
 $lang['login_lang']['error_password'] = 'Nhập mật khẩu!';
 $lang['login_lang']['error_phone'] = 'Nhập Số điện thoại!';
 $lang['login_lang']['invalid_phone'] = 'Số điện thoại không hợp lệ!';
+$lang['login_lang']['exits_phone'] = 'Số điện thoại đã đăng ký, vui lòng kiểm tra lại!';
 $lang['login_lang']['error_repassword'] = 'Nhập lại mật khẩu!';
 $lang['login_lang']['error_email'] = 'Nhập Email!';
 $lang['login_lang']['error_captcha'] = 'Enter your captcha!';
