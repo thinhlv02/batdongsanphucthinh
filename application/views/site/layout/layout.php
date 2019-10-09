@@ -7,7 +7,7 @@
 <?php $this->load->view($this->_template_f . 'layout/menu') ?>
 <?php $this->load->view($this->_template_f . 'layout/banner') ?>
 <?php $this->load->view($temp) ?>
-<?php $this->load->view($this->_template_f . 'layout/footer') ?>
+<?php $this->load->view($this->_template_f . 'layout/footer_view') ?>
 </body>
 
 <!--<div id='ads-left'>-->
