@@ -548,6 +548,17 @@ Class Home extends MY_Controller
                 'fullname' => $fullname,
                 'password' => $password
             );
+
+            $phone = trim(removeAllTags($phone));
+            $phone = str_replace(' ', '', $phone);
+
+            if(!str_valid_phone($phone))
+            {
+                $error['phone'] = true;
+                echo 'failed';
+                die;
+            }
+
             if ($this->user_model->create($data)) {
                 $input = array();
                 $input['where']['phone'] = $phone;

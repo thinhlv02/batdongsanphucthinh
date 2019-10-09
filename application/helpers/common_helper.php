@@ -138,6 +138,111 @@ function getFirstLastMonth($type)
     }
 }
 
+function str_valid_phone($strNumber)
+{
+    $strNumber = trim($strNumber);
+    $chk = FALSE;
+    $len = strlen($strNumber);
+    if ((
+            ($len == 10 && substr($strNumber, 0, 2) == '09') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '088') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '086') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '089') ||
+            //($len == 10 && substr($strNumber, 0, 3) == '061') ||
+            //($len == 11 && substr($strNumber, 0, 2) == '01') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '032') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '033') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '034') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '035') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '036') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '037') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '038') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '039') ||
+
+            ($len == 10 && substr($strNumber, 0, 3) == '070') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '076') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '077') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '078') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '079') ||
+
+            ($len == 10 && substr($strNumber, 0, 3) == '081') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '082') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '083') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '084') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '085') ||
+
+            ($len == 10 && substr($strNumber, 0, 3) == '056') ||
+            ($len == 10 && substr($strNumber, 0, 3) == '058') ||
+
+            ($len == 10 && substr($strNumber, 0, 3) == '059'))
+        && !preg_match("/[^0-9]/", $strNumber)
+    ) {
+        $chk = TRUE;
+    }
+
+    return $chk;
+}
+
+function removeAllTags($text)
+{
+    $text = rawurldecode($text);
+    $text = htmlspecialchars_decode(html_entity_decode($text, ENT_QUOTES | ENT_IGNORE, "UTF-8"),
+        ENT_QUOTES | ENT_IGNORE);
+    $text = trim($text);
+    // PHP's strip_tags() function will remove tags, but it
+    // doesn't remove scripts, styles, and other unwanted
+    // invisible text between tags.  Also, as a prelude to
+    // tokenizing the text, we need to insure that when
+    // block-level tags (such as <p> or <div>) are removed,
+    // neighboring words aren't joined.
+    $text = preg_replace(
+        array(
+            // Remove invisible content
+            '@<head[^>]*?>.*?</head>@siu',
+            '@<style[^>]*?>.*?</style>@siu',
+            '@<script[^>]*?.*?</script>@siu',
+            '@<object[^>]*?.*?</object>@siu',
+            '@<embed[^>]*?.*?</embed>@siu',
+            '@<applet[^>]*?.*?</applet>@siu',
+            '@<noframes[^>]*?.*?</noframes>@siu',
+            '@<noscript[^>]*?.*?</noscript>@siu',
+            '@<noembed[^>]*?.*?</noembed>@siu',
+
+            // Add line breaks before & after blocks
+            '@<((br)|(hr))@iu',
+            '@</?((address)|(blockquote)|(center)|(del))@iu',
+            '@</?((div)|(h[1-9])|(ins)|(isindex)|(p)|(pre))@iu',
+            '@</?((dir)|(dl)|(dt)|(dd)|(li)|(menu)|(ol)|(ul))@iu',
+            '@</?((table)|(th)|(td)|(caption))@iu',
+            '@</?((form)|(button)|(fieldset)|(legend)|(input))@iu',
+            '@</?((label)|(select)|(optgroup)|(option)|(textarea))@iu',
+            '@</?((frameset)|(frame)|(iframe))@iu',
+        ),
+        array(
+            ' ',
+            ' ',
+            ' ',
+            ' ',
+            ' ',
+            ' ',
+            ' ',
+            ' ',
+            ' ',
+            "\n\$0",
+            "\n\$0",
+            "\n\$0",
+            "\n\$0",
+            "\n\$0",
+            "\n\$0",
+            "\n\$0",
+            "\n\$0",
+        ),
+        $text);
+    $text = preg_replace('/([0-9|#][\x{20E3}])|[\x{00ae}|\x{00a9}|\x{203C}|\x{2047}|\x{2048}|\x{2049}|\x{3030}|\x{303D}|\x{2139}|\x{2122}|\x{3297}|\x{3299}][\x{FE00}-\x{FEFF}]?|[\x{2190}-\x{21FF}][\x{FE00}-\x{FEFF}]?|[\x{2300}-\x{23FF}][\x{FE00}-\x{FEFF}]?|[\x{2460}-\x{24FF}][\x{FE00}-\x{FEFF}]?|[\x{25A0}-\x{25FF}][\x{FE00}-\x{FEFF}]?|[\x{2600}-\x{27BF}][\x{FE00}-\x{FEFF}]?|[\x{2900}-\x{297F}][\x{FE00}-\x{FEFF}]?|[\x{2B00}-\x{2BF0}][\x{FE00}-\x{FEFF}]?|[\x{1F000}-\x{1F6FF}][\x{FE00}-\x{FEFF}]?/u', '', $text);
+    // Remove all remaining tags and comments and return.
+    return strip_tags($text);
+}
+
 function pre($data)
 {
     echo '<pre>', print_r($data, 1), '</pre>';
