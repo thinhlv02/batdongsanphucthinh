@@ -541,33 +541,40 @@ Class Home extends MY_Controller
         $password = $this->input->get('password');
         $password = md5($password);
 
-        if ($phone != '' && $fullname != '' && $password != '') {
+        $data = array(
+            'phone' => $phone,
+            'fullname' => $fullname,
+            'password' => $password
+        );
 
-            $data = array(
-                'phone' => $phone,
-                'fullname' => $fullname,
-                'password' => $password
-            );
+        $phone = trim(removeAllTags($phone));
+        $phone = str_replace(' ', '', $phone);
 
-            $phone = trim(removeAllTags($phone));
-            $phone = str_replace(' ', '', $phone);
+        $this->data['err_phone'] = '';
+        $this->data['exits_phone'] = '';
+        if (!str_valid_phone($phone)) {
+            $this->data['err_phone'] = 'true';
+        }
 
-            if(!str_valid_phone($phone))
-            {
-                $error['phone'] = true;
-                echo 'failed';
-                die;
-            }
+        $user_info = $this->user_model->get_list(array('where' => array('phone' => $phone)));
+        if (!empty($user_info)) {
+            $this->data['exits_phone'] = 'true';
+        }
+
+        if ($this->data['err_phone'] != 'true' && $this->data['exits_phone'] != 'true') {
 
             if ($this->user_model->create($data)) {
                 $input = array();
                 $input['where']['phone'] = $phone;
                 $admin = $this->user_model->get_list($input);
                 $this->session->set_userdata('user', $admin[0]);
-                echo 'ok';
+                $this->data['ok'] = 'ok';
+            } else {
+                $this->data['failed'] = 'failed';
             }
-            else echo 'failed';
         }
+
+        echo json_encode($this->data);
 
     }
 
@@ -578,21 +585,20 @@ Class Home extends MY_Controller
 
         $password = md5($password);
 
-        $where = array('username' => $username , 'password' => $password);
+        $where = array('username' => $username, 'password' => $password);
 
-        if($this->user_model->check_exists($where))
-        {
+        if ($this->user_model->check_exists($where)) {
 
             $input = array();
             $input['where']['username'] = $username;
             $admin = $this->user_model->get_list($input);
             $this->session->set_userdata('user', $admin[0]);
             echo 'ok';
-        }
-        else echo 'failed';
+        } else echo 'failed';
     }
 
-    function logout(){
+    function logout()
+    {
         $this->session->unset_userdata('user');
         $this->session->unset_userdata('login');
         redirect(base_url());

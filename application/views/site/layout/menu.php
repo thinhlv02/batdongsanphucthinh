@@ -389,12 +389,26 @@ $user =  $this->data['user'];
                 if(will === true)
                 {
                     var _onSuccess = function (data) {
-                        var check = $.trim(data);
-                        if ( check === 'ok')
+                        var obj = jQuery.parseJSON(data);
+
+                        if (obj.err_phone == 'true')
+                        {
+                            alert("<?php echo $login_lang['invalid_phone']; ?>");
+                        }
+
+                        if (obj.exits_phone == 'true')
+                        {
+                            alert('Sđt đã tồn tại');
+                        }
+
+                        // return;
+
+                        // var check = $.trim(data);
+                        if ( obj.ok == 'ok')
                         {
                             window.location.reload(true);
                         }
-                        else {
+                        if ( obj.failed == 'failed') {
                             swal({
                                 title: "<?php echo $common_lang['oops']; ?>",
                                 text: "<?php echo $login_lang['error_mess']; ?>",
