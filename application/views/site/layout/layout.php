@@ -4,7 +4,7 @@
     <?php $this->load->view('site/layout/head') ?>
 </head>
 <body>
-<?php $this->load->view('site/layout/menu') ?>s
+<?php $this->load->view('site/layout/menu') ?>
 <?php $this->load->view('site/layout/banner') ?>
 <?php $this->load->view($temp) ?>
 <?php $this->load->view('site/layout/footer') ?>
