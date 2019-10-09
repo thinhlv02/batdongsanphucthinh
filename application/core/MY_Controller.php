@@ -92,6 +92,28 @@ Class MY_Controller extends CI_Controller
         }
     }
 
+    protected function _loadHeader($data = NULL, $loadHeader = TRUE)
+    {
+        $header = array();
+        $header['function'] = $this->_function;
+        $header['title'] = isset($data['title']) ? $data['title'] : '';
+        $header['metaTitle'] = isset($data['metaTitle']) ? $data['metaTitle'] : '';
+        $header['metaKeyword'] = isset($data['metaKeyword']) ? $data['metaKeyword'] : '';
+        $header['metaDesc'] = isset($data['metaDesc']) ? $data['metaDesc'] : '';
+        $header['metaImage'] = isset($data['metaImage']) ? $data['metaImage'] : '';
+        $header['loadHeader'] = $loadHeader;
+
+        // load header
+        $this->load->view($this->_template_f . 'header_view', $header);
+    }
+
+    protected function _loadFooter()
+    {
+        $footerData = array();
+        $footerData['function'] = $this->_function;
+        $this->load->view($this->_template_f . 'footer_view', $footerData);
+    }
+
     protected function _session_uid()
     {
         if ($this->session->userdata('admin')) {
