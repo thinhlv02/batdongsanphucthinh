@@ -14,6 +14,8 @@ Class MY_Controller extends CI_Controller
     protected $_common_lang = NULL;
     protected $_login_lang = NULL;
     protected $_function = '';
+    protected $_content = '';
+    protected $_contact = '';
 
     function __construct()
     {
@@ -83,6 +85,9 @@ Class MY_Controller extends CI_Controller
         $preHeader = array();
         $preHeader['common_lang'] = $this->_common_lang;
         $preHeader['login_lang'] = $this->_login_lang;
+        $preHeader['language'] = $this->_langcode;
+        $preHeader['content'] = $this->data['content'];
+        $preHeader['contact'] = $this->data['contact'];
         // assign all common param to view
         $this->load->view($this->_template_f . 'preheader_view', $preHeader);
     }
