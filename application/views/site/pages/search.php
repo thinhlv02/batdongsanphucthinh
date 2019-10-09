@@ -59,7 +59,7 @@
             </div>
         </div>
 
-        <?php $this->load->view('site/home/form_search') ?>
+        <?php $this->load->view($this->_template_f . 'home/form_search') ?>
 
         <div class="col-xs-10  left catland_page">
 

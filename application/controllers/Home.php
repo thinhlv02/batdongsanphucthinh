@@ -200,7 +200,7 @@ Class Home extends MY_Controller
     function download()
     {
 //        $this->data['temp'] = $this->_template_f . 'pages/contact';
-        $this->load->view('site/pages/download', $this->data);
+        $this->load->view($this->_template_f . 'pages/download', $this->data);
     }
 
     function news()
@@ -423,7 +423,7 @@ Class Home extends MY_Controller
 //        pre($lst_district_end);
         $this->data['lstdata'] = $lst_district_end;
 
-        $this->load->view('site/home/view_list_district', $this->data);
+        $this->load->view($this->_template_f . 'home/view_list_district', $this->data);
     }
 
     function ajax_get_list_ward()
@@ -449,7 +449,7 @@ Class Home extends MY_Controller
 //        pre($lst_ward_end);
         $this->data['lstdata'] = $lst_ward_end;
 
-        $this->load->view('site/home/view_list_ward', $this->data);
+        $this->load->view($this->_template_f . 'home/view_list_ward', $this->data);
     }
 
     function ajax_book()
@@ -497,7 +497,7 @@ Class Home extends MY_Controller
 //        }
 
         $this->data['lstdata'] = $lst_data;
-        $this->load->view('site/home/view_list_search', $this->data);
+        $this->load->view($this->_template_f . 'home/view_list_search', $this->data);
 //        $this->load->view($this->_template_f . 'tktaikhoan/view_book_table', $this->data);
 
     }

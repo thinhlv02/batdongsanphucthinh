@@ -6,7 +6,7 @@
         <div class="row">
 
 <!--            load form search-->
-            <?php $this->load->view('site/home/form_search') ?>
+            <?php $this->load->view($this->_template_f . 'home/form_search') ?>
 
             <!--            load form search-->
 

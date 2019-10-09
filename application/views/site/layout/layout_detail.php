@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php $this->load->view('site/layout/head')?>
+    <?php $this->load->view($this->_template_f . 'layout/head')?>
 </head>
 <body>
-<?php $this->load->view('site/layout/menu')?>
-<?php $this->load->view('site/layout/banner')?>
+<?php $this->load->view($this->_template_f . 'layout/menu')?>
+<?php $this->load->view($this->_template_f . 'layout/banner')?>
 <section class="detail">
     <div class="container">
         <div class="col-sm-4 col-md-4">
@@ -28,7 +28,7 @@
         </div>
     </div>
 </section>
-<?php $this->load->view('site/layout/footer')?>
+<?php $this->load->view($this->_template_f . 'layout/footer')?>
 <!--</div>-->
 </body>
 </html>
