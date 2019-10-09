@@ -50,6 +50,7 @@
                                 <li><a href="<?php echo admin_url('devices') ?>">Thiết bị sử dụng</a></li>
                                 <li><a href="<?php echo admin_url('employees') ?>">Nhân viên </a></li>
                                 <li><a href="<?php echo admin_url('customers') ?>">Khách hàng việc làm</a></li>
+                                <li><a href="<?php echo admin_url('user') ?>">Khách hàng đăng ký website</a></li>
                                 <li><a href="<?php echo admin_url('documents') ?>">Tài liệu</a></li>
                                 <li><a href="<?php echo admin_url('service_money') ?>">Tiền Kh nạp</a></li>
                                 <li><a href="<?php echo admin_url('money_lost') ?>">Tiền tiêu hao</a></li>
