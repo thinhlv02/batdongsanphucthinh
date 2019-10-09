@@ -1,6 +1,8 @@
 <?php
 //echo '';
 //die();
+// custom define
+require_once('cf/cf.php');
 /**
  * CodeIgniter
  *

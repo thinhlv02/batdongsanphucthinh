@@ -2,6 +2,7 @@
 
 Class MY_Controller extends CI_Controller
 {
+    var $_template_f = '';
     public $data = array();
 
     var $_uid = '';
@@ -20,6 +21,7 @@ Class MY_Controller extends CI_Controller
         $this->_uname = $this->_session_uname();
         $this->_device_type = $this->_func_device_type();
         $this->_province = $this->_func_province();
+        $this->_template_f = TEMPLATE_FOLDER;
 
 //        var_dump($new_url);
         switch ($new_url) {
