@@ -55,7 +55,7 @@ $user =  $this->data['user'];
             if (!empty($user)) { ?>
                 <li>
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <?php echo $user->username; ?>
+                    <?php echo $user->fullname; ?>
                 </li>
 
                  <li><a href="javascript:void(0)" onclick="confirm_logout()"><i class="fa fa-sign-out-alt" aria-hidden="true"></i>
@@ -329,21 +329,6 @@ $user =  $this->data['user'];
 
     //check form register
     function chkFormRegister() {
-        // check banner name
-        var chkFullName = false;
-        var fullName = $('#txtFullNameRe').val().trim();
-
-        if(fullName == '')
-        {
-            chkFullName = false;
-            $('#errFullNameRe').show();
-        }
-        else
-        {
-            chkFullName = true;
-            $('#errFullNameRe').hide();
-        }
-
         // check phone
         var chkPhone = false;
         var userPhone = $('#txtPhone').val().trim();
@@ -374,14 +359,62 @@ $user =  $this->data['user'];
             $('#errPassWordRe').hide();
         }
 
+        // check full name
+        var chkFullName = false;
+        var fullName = $('#txtFullNameRe').val().trim();
+
+        if(fullName == '')
+        {
+            chkFullName = false;
+            $('#errFullNameRe').show();
+        }
+        else
+        {
+            chkFullName = true;
+            $('#errFullNameRe').hide();
+        }
+
+
         if(chkFullName && chkPhone && chkPassWord)
         {
             swal({
-                title: "<?php echo $common_lang['oops']; ?>",
-                text: "TKS",
+                text: "<?php echo $login_lang['lbl_msg_form_confirm_register']; ?>",
                 icon: "warning",
-                buttons: {},
-                timer: 1500
+                buttons: {
+                    confirm : {text:'<?php echo $common_lang['confirm_yes']; ?>',className:'bg-primary'},
+                    cancel_: {text: '<?php echo $common_lang['confirm_no']; ?>', className: 'btn-danger'}
+                },
+            }).then((will)=>{
+
+                if(will === true)
+                {
+                    var _onSuccess = function (data) {
+                        var check = $.trim(data);
+                        if ( check === 'ok')
+                        {
+                            window.location.reload(true);
+                        }
+                        else {
+                            swal({
+                                title: "<?php echo $common_lang['oops']; ?>",
+                                text: "<?php echo $login_lang['error_mess']; ?>",
+                                icon: "warning",
+                                buttons: {},
+                                timer: 1500
+                            });
+                            $(".swal-text").addClass("font-weight-bold");
+                        }
+                    };
+
+                    var params = {
+                        'phone': userPhone,
+                        'password': passWord,
+                        'fullname': fullName,
+                    };
+                    console.log(params);
+                    getAjax('<?php echo base_url('home/user_register'); ?>', params, '', 'GET', '', false, _onSuccess);
+
+                }
             });
             $(".swal-text").addClass("font-weight-bold");
 

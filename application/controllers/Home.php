@@ -15,6 +15,7 @@ Class Home extends MY_Controller
         $this->load->model('ads_model');
         $this->load->model('district_model');
         $this->load->model('Ward_model');
+        $this->load->model('user_model');
         //language load
     }
 
@@ -533,6 +534,32 @@ Class Home extends MY_Controller
         $this->load->view('site/layout/layout', $this->data);
     }
 
+    function user_register()
+    {
+        $phone = $this->input->get('phone');
+        $fullname = $this->input->get('fullname');
+        $password = $this->input->get('password');
+        $password = md5($password);
+
+        if ($phone != '' && $fullname != '' && $password != '') {
+
+            $data = array(
+                'phone' => $phone,
+                'fullname' => $fullname,
+                'password' => $password
+            );
+            if ($this->user_model->create($data)) {
+                $input = array();
+                $input['where']['phone'] = $phone;
+                $admin = $this->user_model->get_list($input);
+                $this->session->set_userdata('user', $admin[0]);
+                echo 'ok';
+            }
+            else echo 'failed';
+        }
+
+    }
+
     function user_login()
     {
         $username = $this->input->get('username');
@@ -540,12 +567,11 @@ Class Home extends MY_Controller
 
         $password = md5($password);
 
-        $this->load->model('user_model');
         $where = array('username' => $username , 'password' => $password);
 
         if($this->user_model->check_exists($where))
         {
-            $this->load->model('user_model');
+
             $input = array();
             $input['where']['username'] = $username;
             $admin = $this->user_model->get_list($input);
@@ -556,7 +582,6 @@ Class Home extends MY_Controller
     }
 
     function logout(){
-//        pre('logout');
         $this->session->unset_userdata('user');
         $this->session->unset_userdata('login');
         redirect(base_url());

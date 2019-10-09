@@ -18,6 +18,7 @@ $lang['login_lang']['policies2'] = 'Của chúng tôi';
 $lang['login_lang']['not_member'] = 'Không phải là thành viên?';
 $lang['login_lang']['forgot'] = 'Quên';
 $lang['login_lang']['lbl_msg_form_confirm_login'] = 'Bạn có chắc chắn đã nhập đúng và đầy đủ thông tin khi đăng nhập?';
+$lang['login_lang']['lbl_msg_form_confirm_register'] = 'Bạn có chắc chắn đã nhập đúng và đầy đủ thông tin khi tạo tài khoản?';
 $lang['login_lang']['lbl_msg_form_confirm_logout'] = 'Bạn có chắc chắn muốn thoát ?';
 $lang['login_lang']['lbl_msg_form_error_add'] = 'Thông tin bạn nhập chưa đầy đủ hoặc không chính xác. Bạn xem lại các thông tin bắt buộc phải nhập';
 
