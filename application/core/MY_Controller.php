@@ -13,6 +13,7 @@ Class MY_Controller extends CI_Controller
     // common lang
     protected $_common_lang = NULL;
     protected $_login_lang = NULL;
+    protected $_function = '';
 
     function __construct()
     {

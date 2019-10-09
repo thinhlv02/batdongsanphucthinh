@@ -21,7 +21,7 @@ Class Landing extends MY_Controller
 
     function index()
     {
-        die('landing');
+//        die('landing');
         $this->data['li_1'] = 1;
         $lstProvince = $this->_province;
 
@@ -92,8 +92,16 @@ Class Landing extends MY_Controller
 //        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(100, 0)));
 //        $this->data['ads_new'] = $ads_new;
 
-        $this->data['temp'] = $this->_template_f . 'home/home';
-        $this->load->view($this->_template_f . 'layout/layout', $this->data);
+        // load header
+        $header = array();
+        $header['title'] = 'test';
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'home/home', $this->data);
+        $this->_loadFooter();
+
+//        $this->data['temp'] = $this->_template_f . 'home/home';
+//        $this->load->view($this->_template_f . 'layout/layout', $this->data);
     }
 
     function service_info($slug = '', $id = 0)
