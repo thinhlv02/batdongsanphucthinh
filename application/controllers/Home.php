@@ -220,6 +220,8 @@ Class Home extends MY_Controller
 
     function policy()
     {
+        $this->load->language('policies/policies', $this->_langcode);
+        $this->data['policies_lang'] = $this->lang->line('policies_lang');
         $this->data['li_4'] = 1;
         $this->data['active'] = 99;
 
@@ -229,7 +231,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = 'test';
+        $header['title'] = $this->data['policies_lang']['title'];
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/policy', $this->data);
@@ -241,6 +243,9 @@ Class Home extends MY_Controller
 
     function privacy()
     {
+        $this->load->language('policies/policies', $this->_langcode);
+        $this->data['policies_lang'] = $this->lang->line('policies_lang');
+
         $this->data['active'] = 100;
         $this->data['li_4'] = 1;
         $privacy = $this->contact_model->get_info(1)->privacy;
@@ -249,7 +254,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = 'test';
+        $header['title'] = $this->data['policies_lang']['title'];
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/policy', $this->data);
@@ -261,11 +266,13 @@ Class Home extends MY_Controller
 
     function contact()
     {
+        $this->load->language('contact/contact', $this->_langcode);
+        $this->data['contact_lang'] = $this->lang->line('contact_lang');
         $this->data['li_5'] = 1;
 
         // load header
         $header = array();
-        $header['title'] = 'test';
+        $header['title'] = $this->data['contact_lang']['title'];
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/contact', $this->data);
@@ -283,8 +290,8 @@ Class Home extends MY_Controller
 
     function news()
     {
-        $this->load->language('support/support', $this->_langcode);
-        $this->data['support_lang'] = $this->lang->line('support_lang');
+        $this->load->language('news/news', $this->_langcode);
+        $this->data['news_lang'] = $this->lang->line('news_lang');
         $per_page = 10;
         $offset = $this->uri->segment(2);
         $offset = intval($offset);
@@ -313,7 +320,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = $this->data['support_lang']['title'];
+        $header['title'] = $this->data['news_lang']['title'];
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/news', $this->data);
