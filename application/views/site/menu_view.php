@@ -24,7 +24,7 @@ $user =  $this->data['user'];
         <li class="<?php echo isset($li_1) ? 'menu-active' : ''?>" title="Trang chủ">
             <a href="<?php echo base_url()?>"><i class="fa fa-home fa-lg"></i> </a>
         </li>
-        <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="Giới thiệu dịch vụ"><a href="<?php echo base_url('gioi-thieu-dich-vu')?>"> <?php echo $common_lang['intro']; ?></a></li>
+        <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="Giới thiệu dịch vụ"><a href="<?php echo base_url('gioi-thieu')?>"> <?php echo $common_lang['intro']; ?></a></li>
         <li class="<?php echo isset($li_3) ? 'menu-active' : ''?>" title="Hỗ trợ"><a href="<?php echo base_url('ho-tro')?>"> <?php echo $common_lang['support']; ?></a></li>
         <li class="<?php echo isset($li_6) ? 'menu-active' : ''?>" title="Tin tức"><a href="<?php echo base_url('tin-tuc')?>"> <?php echo $common_lang['news_menu']; ?></a></li>
         <li class="<?php echo isset($li_4) ? 'menu-active' : ''?>" title="Chính sách và điều khoản"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $common_lang['policies']; ?></a></li>
@@ -73,7 +73,7 @@ $user =  $this->data['user'];
             <span></span>
             <ul id="menu">
                 <a href="<?php echo base_url()?>"><li><?php echo $this->lang->line('home'); ?></li></a>
-                <a href="<?php echo base_url('gioi-thieu-dich-vu')?>"><li><?php echo $this->lang->line('intro'); ?></li></a>
+                <a href="<?php echo base_url('gioi-thieu')?>"><li><?php echo $this->lang->line('intro'); ?></li></a>
                 <a href="<?php echo base_url('ho-tro')?>"><li><?php echo $this->lang->line('support'); ?></li></a>
                 <a href="<?php echo base_url('tin-tuc')?>"><li><?php echo $this->lang->line('news_menu'); ?></li></a>
                 <a href="<?php echo base_url('dieu-khoan-su-dung')?>"><li><?php echo $this->lang->line('policies'); ?></li></a>

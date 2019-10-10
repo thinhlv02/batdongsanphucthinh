@@ -104,13 +104,13 @@ Class Home extends MY_Controller
 //        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
-    function service_info($slug = '', $id = 0)
+    function introduce($slug = '', $id = 0)
     {
         $this->data['li_2'] = 1;
         if (strlen($slug) > 0 && $id > 0) {
             $product = $this->product_model->get_info($id);
             if (!$product || create_slug($product->name) != $slug) {
-                redirect(base_url('gioi-thieu-dich-vu.html'));
+                redirect(base_url('gioi-thieu.html'));
             }
             $this->data['product'] = $product;
         } else {
@@ -127,11 +127,11 @@ Class Home extends MY_Controller
         $header['title'] = 'test';
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/service_info', $this->data);
+        $this->load->view($this->_template_f . 'pages/introduce', $this->data);
 
         $this->_loadFooter();
 
-//        $this->data['temp'] = $this->_template_f . 'pages/service_info';
+//        $this->data['temp'] = $this->_template_f . 'pages/introduce';
 //        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
