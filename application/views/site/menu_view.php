@@ -22,7 +22,7 @@ $user =  $this->data['user'];
 
     <ul class="ul-large">
         <li class="<?php echo isset($li_1) ? 'menu-active' : ''?>" title="Trang chủ">
-            <a href="<?php echo base_url()?>"><i class="fa fa-home fa-lg"></i> </a>
+            <a href="<?php echo base_url()?>"><i class="fa fa-home"></i> <?php echo $common_lang['home']; ?></a>
         </li>
         <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="Giới thiệu dịch vụ"><a href="<?php echo base_url('gioi-thieu')?>"> <?php echo $common_lang['intro']; ?></a></li>
         <li class="<?php echo isset($li_3) ? 'menu-active' : ''?>" title="Hỗ trợ"><a href="<?php echo base_url('ho-tro')?>"> <?php echo $common_lang['support']; ?></a></li>
