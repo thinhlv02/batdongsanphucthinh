@@ -93,10 +93,11 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = 'test';
+//        $header['title'] = 'test';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'home/home', $this->data);
+
         $this->_loadFooter();
 
 //        $this->data['temp'] = $this->_template_f . 'home/home';
@@ -127,6 +128,7 @@ Class Home extends MY_Controller
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/service_info', $this->data);
+
         $this->_loadFooter();
 
 //        $this->data['temp'] = $this->_template_f . 'pages/service_info';
