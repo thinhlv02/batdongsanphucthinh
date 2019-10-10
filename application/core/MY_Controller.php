@@ -10,13 +10,14 @@ Class MY_Controller extends CI_Controller
     var $_device_type = '';
     var $_province = '';
     protected $_langcode = '';
-    protected $_language = '';
     // common lang
     protected $_common_lang = NULL;
     protected $_login_lang = NULL;
     protected $_function = '';
     protected $_content = '';
     protected $_contact = '';
+    protected $_products = '';
+    protected $_agencies = '';
 
     function __construct()
     {
@@ -29,8 +30,6 @@ Class MY_Controller extends CI_Controller
         $this->_device_type = $this->_func_device_type();
         $this->_province = $this->_func_province();
         $this->_template_f = TEMPLATE_FOLDER;
-        $this->data['content'] = '';
-        $this->data['contact'] = '';
 
 //        var_dump($new_url);
         switch ($new_url) {
@@ -49,12 +48,12 @@ Class MY_Controller extends CI_Controller
                 $this->load->model('agency_model');
                 $this->load->model('content_model');
                 $contact = $this->contact_model->get_info(1);
-                $this->data['contact'] = $contact;
+                $this->_contact = $contact;
                 $products = $this->product_model->get_list(array('order' => array('id', 'asc')));
-                $this->data['products'] = $products;
-                $this->data['content'] = $this->content_model->get_info(1);
-                $this->data['agencies'] = $this->agency_model->get_list(array('order' => array('id', 'asc')));
-//                pre($this->data['content']);
+                $this->_products = $products;
+                $this->_content = $this->content_model->get_info(1);
+                $this->_agencies = $this->agency_model->get_list(array('order' => array('id', 'asc')));
+
                 //fix sgc
 
                 $language = $this->session->userdata('language');
@@ -89,9 +88,11 @@ Class MY_Controller extends CI_Controller
         $preHeader = array();
         $preHeader['common_lang'] = $this->_common_lang;
         $preHeader['login_lang'] = $this->_login_lang;
-        $preHeader['language'] = $this->_language;
-        $preHeader['content'] = $this->data['content'];
-        $preHeader['contact'] = $this->data['contact'];
+        $preHeader['language'] = $this->_langcode;
+        $preHeader['content'] = $this->_content;
+        $preHeader['contact'] = $this->_contact;
+        $preHeader['products'] = $this->_products;
+        $preHeader['agencies'] = $this->_agencies;
         // assign all common param to view
         $this->load->view($this->_template_f . 'preheader_view', $preHeader);
     }

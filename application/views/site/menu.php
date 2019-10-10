@@ -14,9 +14,9 @@ $user =  $this->data['user'];
     </div>
 <!--    switch language -->
     <div id="language">
-        <a href="<?php echo $language == 'vn' ? base_url('en/' .getLastUri()) : base_url('vn/'.getLastUri()) ?>">
-            <img src="<?php echo $language == 'vn' ? public_url('images/flag_us.png') : public_url('images/flag_vn.png') ?>"/>
-            <?php echo $language == 'vn' ? 'English' : 'Vietnamese' ; ?>
+        <a href="<?php echo $language == 'vietnamese' ? base_url('en/' .getLastUri()) : base_url('vn/'.getLastUri()) ?>">
+            <img src="<?php echo $language == 'vietnamese' ? public_url('images/flag_us.png') : public_url('images/flag_vn.png') ?>"/>
+            <?php echo $language == 'vietnamese' ? 'English' : 'Vietnamese' ; ?>
         </a>
     </div>
 
