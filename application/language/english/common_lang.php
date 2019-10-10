@@ -5,10 +5,10 @@ $lang['common_lang'] = array();
 // for default config site title, tags, desc
 $lang['common_lang']['home'] = "Home";
 $lang['common_lang']['about'] = "INTRODUCE";
-$lang['common_lang']['intro'] = "Introduction";
-$lang['common_lang']['support'] = "Support";
-$lang['common_lang']['news_menu'] = "News";
-$lang['common_lang']['policies'] = "Policies";
+$lang['common_lang']['lmenu_intro'] = "Introduction";
+$lang['common_lang']['lmenu_support'] = "Support";
+$lang['common_lang']['lmenu_news'] = "News";
+$lang['common_lang']['lmenu_policies'] = "Policies";
 $lang['common_lang']['product'] = "PRODUCT";
 $lang['common_lang']['recruit'] = 'CAREER';
 $lang['common_lang']['lmenu_contact'] = 'Contact us';

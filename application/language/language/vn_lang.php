@@ -14,10 +14,10 @@ $lang['plhBirthday'] = "Nhập ngày sinh của bạn";
 //menu
 $lang['home'] = "Trang chủ";
 $lang['about'] = "Giới thiệu";
-$lang['intro'] = "Giới thiệu";
-$lang['support'] = "Hỗ trợ";
-$lang['news_menu'] = "Tin tức";
-$lang['policies'] = "Chính sách và điều khoản";
+$lang['lmenu_intro'] = "Giới thiệu";
+$lang['lmenu_support'] = "Hỗ trợ";
+$lang['lmenu_news'] = "Tin tức";
+$lang['lmenu_policies'] = "Chính sách và điều khoản";
 $lang['product'] = "Sản phẩm";
 $lang['recruit'] = 'Tuyển dụng';
 $lang['contact'] = 'Liên hệ';

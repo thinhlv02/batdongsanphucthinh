@@ -14,10 +14,10 @@ $lang['plhBirthday'] = "Enter your birthday";
 //menu
 $lang['home'] = "Home";
 $lang['about'] = "INTRODUCE";
-$lang['intro'] = "Introduction";
-$lang['support'] = "Support";
-$lang['news_menu'] = "News";
-$lang['policies'] = "Policies";
+$lang['lmenu_intro'] = "Introduction";
+$lang['lmenu_support'] = "Support";
+$lang['lmenu_news'] = "News";
+$lang['lmenu_policies'] = "Policies";
 $lang['product'] = "PRODUCT";
 $lang['recruit'] = 'CAREER';
 $lang['contact'] = 'Contact us';
