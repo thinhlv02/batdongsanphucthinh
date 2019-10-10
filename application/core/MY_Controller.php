@@ -117,10 +117,10 @@ Class MY_Controller extends CI_Controller
         $header = array();
         $header['function'] = $this->_function;
 //        $header['title'] = isset($data['title']) ? $data['title'] : '';
-        $header['metaTitle'] = isset($data['metaTitle']) ? $data['metaTitle'] : '';
-        $header['metaKeyword'] = isset($data['metaKeyword']) ? $data['metaKeyword'] : '';
-        $header['metaDesc'] = isset($data['metaDesc']) ? $data['metaDesc'] : '';
-        $header['metaImage'] = isset($data['metaImage']) ? $data['metaImage'] : '';
+//        $header['metaTitle'] = isset($data['metaTitle']) ? $data['metaTitle'] : '';
+//        $header['metaKeyword'] = isset($data['metaKeyword']) ? $data['metaKeyword'] : '';
+//        $header['metaDesc'] = isset($data['metaDesc']) ? $data['metaDesc'] : '';
+//        $header['metaImage'] = isset($data['metaImage']) ? $data['metaImage'] : '';
         $header['loadHeader'] = $loadHeader;
 
         // load header
