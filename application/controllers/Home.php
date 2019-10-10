@@ -421,7 +421,8 @@ Class Home extends MY_Controller
 //        $this->data['temp'] = $this->_template_f . 'pages/ads_detail';
         // load header
         $header = array();
-        $header['title'] = 'test';
+        $header['title'] = $ads->title;
+        $header['image'] = public_url('images/ads/' . $ads->img);
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/ads_detail_hp', $this->data);
