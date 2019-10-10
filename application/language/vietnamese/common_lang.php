@@ -18,6 +18,16 @@ $lang['common_lang']['warning'] = 'Hệ thống đang bảo trì chức năng n�
 $lang['common_lang']['confirm_yes'] = 'Đồng ý';
 $lang['common_lang']['confirm_no'] = 'Hủy bỏ';
 
+//search
+$lang['common_lang']['search_title'] = 'Tìm kiếm';
+$lang['common_lang']['choose_province'] = 'Tỉnh/TP';
+$lang['common_lang']['choose_district'] = 'Quận/Huyện';
+$lang['common_lang']['choose_ward'] = 'Xã/Phường';
+$lang['common_lang']['choose_street'] = 'Đường phố';
+$lang['common_lang']['choose_type'] = 'Loại';
+$lang['common_lang']['btn_search'] = 'Tìm';
+//End search
+
 
 $lang['common_lang']['site_title'] = 'Admicro Ad Exchange';
 $lang['common_lang']['site_tags'] = 'Admicro Ad Exchange';

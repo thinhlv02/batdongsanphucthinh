@@ -2,7 +2,7 @@
 <div class="col-sm-2 col-md-2">
     <div class="box-module mt-2">
         <div class="bg-modul"><h7>
-                <i class="glyphicon glyphicon-search"></i>tìm kiếm</h7></div>
+                <i class="glyphicon glyphicon-search"></i><?php echo $common_lang['search_title']; ?></h7></div>
     </div>
     <div class="card" style="background: #5caceb33 !important;">
         <div class="card-body pt-0 " style="height: 295px;">
@@ -26,7 +26,7 @@
                 <div class="form-group">
                     <!--                                <label for="email">Tỉnh thành</label>-->
                     <select class="form-control" name="province" onchange="get_district(this)">
-                        <option value=""> Tỉnh / Thành phố </option>
+                        <option value=""> <?php echo $common_lang['choose_province']; ?> </option>
                         <?php echo $_GET['province'] ?>
                         <?php foreach ($lstProvince as $key => $value) { ?>
                             <option value="<?= $value->id ?>" <?php if (isset($_GET['province']) && $_GET['province'] == $value->id) echo 'selected' ?>>
@@ -39,7 +39,7 @@
                     <!--                                <label for="email">Quận Huyện</label>-->
                     <div class="" id="divDistrict">
                         <select class="form-control" name="district">
-                            <option value="0"> Quận / Huyện</option>
+                            <option value="0"> <?php echo $common_lang['choose_district']; ?></option>
                         </select>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                     <!--                                <label for="email">Xã / Phường</label>-->
                     <div class="" id="divWard">
                         <select class="form-control" name="ward">
-                            <option value="0"> Xã / Phường</option>
+                            <option value="0"> <?php echo $common_lang['choose_ward']; ?></option>
                         </select>
                     </div>
                 </div>
@@ -56,14 +56,14 @@
                 <div class="form-group">
 <!--                                            <label for="email">Loại</label>-->
                     <select class="form-control">
-                        <option value=""> -- Loại --</option>
+                        <option value=""> -- <?php echo $common_lang['choose_type']; ?> --</option>
                         <option value="1"> Cần mua</option>
                         <option value="2"> Cần bán</option>
                     </select>
                 </div>
                 <div class="text-center">
 
-                    <button style="background: #5caceb " type="submit" class="btn btn-default">Tìm kiếm
+                    <button style="background: #5caceb " type="submit" class="btn btn-default"><?php echo $common_lang['btn_search']; ?>
                     </button>
                 </div>
 

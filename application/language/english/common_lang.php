@@ -19,6 +19,15 @@ $lang['common_lang']['warning'] = 'The system is maintaining this function. Plea
 $lang['common_lang']['confirm_yes'] = 'Yes';
 $lang['common_lang']['confirm_no'] = 'Cancel';
 
+//search
+$lang['common_lang']['search_title'] = 'Search';
+$lang['common_lang']['choose_province'] = 'Province/City';
+$lang['common_lang']['choose_district'] = 'District';
+$lang['common_lang']['choose_ward'] = 'Ward';
+$lang['common_lang']['choose_street'] = 'Street';
+$lang['common_lang']['choose_type'] = 'Type';
+$lang['common_lang']['btn_search'] = 'Search';
+//End search
 
 $lang['common_lang']['site_title'] = 'Admicro Ad Exchange';
 $lang['common_lang']['site_tags'] = 'Admicro Ad Exchange';
