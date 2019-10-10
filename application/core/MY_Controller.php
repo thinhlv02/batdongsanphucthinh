@@ -116,7 +116,8 @@ Class MY_Controller extends CI_Controller
     {
         $header = array();
         $header['function'] = $this->_function;
-//        $header['title'] = isset($data['title']) ? $data['title'] : '';
+        $header['title'] = isset($data['title']) ? $data['title'] : '';
+        $header['image'] = isset($data['image']) ? $data['image'] : '';
 //        $header['metaTitle'] = isset($data['metaTitle']) ? $data['metaTitle'] : '';
 //        $header['metaKeyword'] = isset($data['metaKeyword']) ? $data['metaKeyword'] : '';
 //        $header['metaDesc'] = isset($data['metaDesc']) ? $data['metaDesc'] : '';
