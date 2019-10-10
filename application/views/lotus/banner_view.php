@@ -4,8 +4,8 @@
 
 <section class="pb-0">
     <div class="container banner" style="background-image: url(<?php echo public_url('images/' . $content->banner) ?>);background-size: 100%;">
-        <div class="" style="position: absolute;top: 2px;left: 2px;color: #ffffff;">
-            <marquee><?php echo $language == 'vn' ? $contact->slogan: $contact->slogan_en; ?></marquee>
+        <div class="" style="position: absolute;top: 20px;left: 2px;color: #ffffff;">
+            <marquee><?php echo $language == 'vietnamese' ? $contact->slogan: $contact->slogan_en; ?></marquee>
         </div>
         <div class="banner-left">
 <!--            <p style="display: none" class="caption-banner animated slideInLeft">Đơn giản hoá việc bán hàng<br>vì chúng tôi luôn bên bạn-->
