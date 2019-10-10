@@ -36,7 +36,7 @@
 
                             </div>
                             <div class="footer-bottom-end-row1" style="padding: 10px 0 10px;">
-                                <img src="https://file4.batdongsan.com.vn/images/line-footer.png" alt=""
+                                <img src="<?php echo public_url('images/line-footer.png') ?>" alt=""
                                      noloaderror="true">
                             </div>
                         </div>
