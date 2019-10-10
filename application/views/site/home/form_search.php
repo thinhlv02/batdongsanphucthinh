@@ -2,7 +2,7 @@
 <div class="col-sm-2 col-md-2">
     <div class="box-module mt-2">
         <div class="bg-modul"><h7>
-                <i class="glyphicon glyphicon-search"></i><?php echo $common_lang['search_title']; ?></h7></div>
+                <i class="glyphicon glyphicon-search"></i> <?php echo $common_lang['search_title']; ?></h7></div>
     </div>
     <div class="card" style="background: #5caceb33 !important;">
         <div class="card-body pt-0 " style="height: 295px;">
@@ -21,7 +21,7 @@
                   enctype="multipart/form-data">
                 <div class="form-group">
 <!--                    <label for="email">Mã tin:</label>-->
-                    <input type="text" class="form-control" placeholder="số điện thoại" name="code">
+                    <input type="text" class="form-control" placeholder="<?php echo $common_lang['search_phone']; ?>" name="code">
                 </div>
                 <div class="form-group">
                     <!--                                <label for="email">Tỉnh thành</label>-->
@@ -57,8 +57,8 @@
 <!--                                            <label for="email">Loại</label>-->
                     <select class="form-control">
                         <option value=""> -- <?php echo $common_lang['choose_type']; ?> --</option>
-                        <option value="1"> Cần mua</option>
-                        <option value="2"> Cần bán</option>
+                        <option value="1"> <?php echo $common_lang['for_sale']; ?></option>
+                        <option value="2"> <?php echo $common_lang['need_to_buy']; ?></option>
                     </select>
                 </div>
                 <div class="text-center">

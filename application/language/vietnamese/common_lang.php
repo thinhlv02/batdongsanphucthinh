@@ -19,13 +19,17 @@ $lang['common_lang']['confirm_yes'] = 'Đồng ý';
 $lang['common_lang']['confirm_no'] = 'Hủy bỏ';
 
 //search
-$lang['common_lang']['search_title'] = 'Tìm kiếm';
-$lang['common_lang']['choose_province'] = 'Tỉnh/TP';
-$lang['common_lang']['choose_district'] = 'Quận/Huyện';
-$lang['common_lang']['choose_ward'] = 'Xã/Phường';
-$lang['common_lang']['choose_street'] = 'Đường phố';
-$lang['common_lang']['choose_type'] = 'Loại';
+$lang['common_lang']['page_title'] = 'Trang tìm kiếm';
+$lang['common_lang']['search_title'] = 'Công cụ tìm kiếm';
+$lang['common_lang']['search_phone'] = 'Số điện thoại';
+$lang['common_lang']['choose_province'] = 'Chọn Tỉnh/TP';
+$lang['common_lang']['choose_district'] = 'Chọn Quận/Huyện';
+$lang['common_lang']['choose_ward'] = 'Chọn xã/Phường';
+$lang['common_lang']['choose_street'] = 'Chọn đường phố';
+$lang['common_lang']['choose_type'] = 'Loại nhà đất';
 $lang['common_lang']['btn_search'] = 'Tìm';
+$lang['common_lang']['for_sale'] = 'Cần bán';
+$lang['common_lang']['need_to_buy'] = 'Cần mua';
 //End search
 
 

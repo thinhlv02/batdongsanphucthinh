@@ -629,6 +629,8 @@ Class Home extends MY_Controller
     {
 //        pre($_GET['province']);
 //        die;
+        $this->load->language('search/search', $this->_langcode);
+        $this->data['search_lang'] = $this->lang->line('search_lang');
         $lstProvince = $this->_province;
 
         $province = $this->input->get('province');
@@ -655,7 +657,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = 'Tìm kiếm';
+        $header['title'] = $this->data['search_lang']['title'];
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/search', $this->data);

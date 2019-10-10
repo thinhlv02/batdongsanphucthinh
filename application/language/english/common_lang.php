@@ -20,13 +20,17 @@ $lang['common_lang']['confirm_yes'] = 'Yes';
 $lang['common_lang']['confirm_no'] = 'Cancel';
 
 //search
+$lang['common_lang']['page_title'] = 'Trang tìm kiếm';
 $lang['common_lang']['search_title'] = 'Search';
-$lang['common_lang']['choose_province'] = 'Province/City';
-$lang['common_lang']['choose_district'] = 'District';
-$lang['common_lang']['choose_ward'] = 'Ward';
-$lang['common_lang']['choose_street'] = 'Street';
-$lang['common_lang']['choose_type'] = 'Type';
+$lang['common_lang']['search_phone'] = 'Phone number';
+$lang['common_lang']['choose_province'] = 'Choose Pro/City';
+$lang['common_lang']['choose_district'] = 'Choose district';
+$lang['common_lang']['choose_ward'] = 'Choose ward';
+$lang['common_lang']['choose_street'] = 'Choose street';
+$lang['common_lang']['choose_type'] = 'Type land';
 $lang['common_lang']['btn_search'] = 'Search';
+$lang['common_lang']['for_sale'] = 'for sale';
+$lang['common_lang']['need_to_buy'] = 'need to buy';
 //End search
 
 $lang['common_lang']['site_title'] = 'Admicro Ad Exchange';
