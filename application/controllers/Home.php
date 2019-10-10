@@ -93,7 +93,6 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-//        $header['title'] = 'test';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'home/home', $this->data);
@@ -183,7 +182,7 @@ Class Home extends MY_Controller
 
             // load header
             $header = array();
-            $header['title'] = 'test';
+
             $this->_loadHeader($header);
 
 //            $this->load->view($this->_template_f . 'home/home', $this->data);
@@ -206,11 +205,6 @@ Class Home extends MY_Controller
         } else {
             redirect(base_url('ho-tro.html'));
         }
-
-        // load header
-//        $header = array();
-//        $header['title'] = 'test';
-//        $this->_loadHeader($header);
 
 //        $this->load->view($this->_template_f . 'home/home', $this->data);
         $this->_loadFooter();
@@ -341,7 +335,7 @@ Class Home extends MY_Controller
         $highlight = $this->news_model->get_list(array('where' => array('highlight' => 1)));
         $this->data['highlight'] = $highlight;
 
-        $this->data['title'] = $news->title;
+//        $this->data['title'] = $news->title;
         $this->data['description'] = $news->meta_description;
         $this->data['image'] = public_url('images/news/' . $news->img);
         $this->data['page_url'] = base_url('tin-tuc/' . create_slug($news->name) . '-' . $news->id);
@@ -353,7 +347,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = 'test';
+        $header['title'] = $news->title;
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/news_detail', $this->data);
@@ -393,7 +387,7 @@ Class Home extends MY_Controller
         $this->data['ads'] = $news;
         // load header
         $header = array();
-        $header['title'] = 'test';
+
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/ads', $this->data);
@@ -454,7 +448,6 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = 'test';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'product/product', $this->data);
@@ -662,7 +655,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = 'test';
+        $header['title'] = 'Tìm kiếm';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/search', $this->data);
