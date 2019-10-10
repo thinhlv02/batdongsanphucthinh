@@ -1,8 +1,5 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
 
-<?php
-$user =  $this->data['user'];
-?>
 <div class="sub-nav">
     <div id="hot_line">Hotline: 0796 43 22 11</div>
     <div class="logo">
@@ -31,7 +28,7 @@ $user =  $this->data['user'];
         <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="Liên hệ"><a href="<?php echo base_url('lien-he')?>"> <?php echo $common_lang['lmenu_contact']; ?></a></li>
 <!--        register - login-->
         <?php
-        if (empty($user)) { ?>
+        if (empty($user_login)) { ?>
 
             <li class="user_style pr-0" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" onclick="">
                 <a href="javascript:void(0)" class="text-uppercase">
@@ -52,10 +49,10 @@ $user =  $this->data['user'];
 
         <li>
             <?php
-            if (!empty($user)) { ?>
+            if (!empty($user_login)) { ?>
                 <li>
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <?php echo $user->fullname; ?>
+                    <?php echo $user_login->fullname; ?>
                 </li>
 
                  <li><a href="javascript:void(0)" onclick="confirm_logout()"><i class="fa fa-sign-out-alt" aria-hidden="true"></i>

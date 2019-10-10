@@ -18,6 +18,7 @@ Class MY_Controller extends CI_Controller
     protected $_contact = '';
     protected $_products = '';
     protected $_agencies = '';
+    protected $_user_login = '';
 
     function __construct()
     {
@@ -53,6 +54,7 @@ Class MY_Controller extends CI_Controller
                 $this->_products = $products;
                 $this->_content = $this->content_model->get_info(1);
                 $this->_agencies = $this->agency_model->get_list(array('order' => array('id', 'asc')));
+                $this->_user_login = $this->session->userdata('user_login');
 
                 //fix sgc
 
@@ -93,6 +95,7 @@ Class MY_Controller extends CI_Controller
         $preHeader['contact'] = $this->_contact;
         $preHeader['products'] = $this->_products;
         $preHeader['agencies'] = $this->_agencies;
+        $preHeader['user_login'] = $this->_user_login;
         // assign all common param to view
         $this->load->view($this->_template_f . 'preheader_view', $preHeader);
     }

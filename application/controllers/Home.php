@@ -700,7 +700,7 @@ Class Home extends MY_Controller
                 $input = array();
                 $input['where']['phone'] = $phone;
                 $admin = $this->user_model->get_list($input);
-                $this->session->set_userdata('user', $admin[0]);
+                $this->session->set_userdata('user_login', $admin[0]);
                 $this->data['ok'] = 'ok';
             } else {
                 $this->data['failed'] = 'failed';
@@ -725,14 +725,14 @@ Class Home extends MY_Controller
             $input = array();
             $input['where']['username'] = $username;
             $admin = $this->user_model->get_list($input);
-            $this->session->set_userdata('user', $admin[0]);
+            $this->session->set_userdata('user_login', $admin[0]);
             echo 'ok';
         } else echo 'failed';
     }
 
     function logout()
     {
-        $this->session->unset_userdata('user');
+        $this->session->unset_userdata('user_login');
         $this->session->unset_userdata('login');
         redirect(base_url());
     }

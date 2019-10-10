@@ -1,8 +1,5 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
 
-<?php
-$user =  $this->data['user'];
-?>
 <div class="sub-nav">
     <div id="hot_line">Hotline: 0796 43 22 11</div>
     <div class="logo">
@@ -21,17 +18,17 @@ $user =  $this->data['user'];
     </div>
 
     <ul class="ul-large">
-        <li class="<?php echo isset($li_1) ? 'menu-active' : ''?>" title="Trang chủ">
+        <li class="<?php echo isset($li_1) ? 'menu-active' : ''?>" title="<?php echo $common_lang['home']; ?>">
             <a href="<?php echo base_url()?>"><i class="fa fa-home"></i> <?php echo $common_lang['home']; ?></a>
         </li>
-        <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="Giới thiệu dịch vụ"><a href="<?php echo base_url('gioi-thieu')?>"> <?php echo $common_lang['lmenu_intro']; ?></a></li>
-        <li class="<?php echo isset($li_3) ? 'menu-active' : ''?>" title="Hỗ trợ"><a href="<?php echo base_url('ho-tro')?>"> <?php echo $common_lang['lmenu_support']; ?></a></li>
-        <li class="<?php echo isset($li_6) ? 'menu-active' : ''?>" title="Tin tức"><a href="<?php echo base_url('tin-tuc')?>"> <?php echo $common_lang['lmenu_news']; ?></a></li>
-        <li class="<?php echo isset($li_4) ? 'menu-active' : ''?>" title="Chính sách và điều khoản"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $common_lang['lmenu_policies']; ?></a></li>
-        <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="Liên hệ"><a href="<?php echo base_url('lien-he')?>"> <?php echo $common_lang['lmenu_contact']; ?></a></li>
+        <li class="<?php echo isset($li_2) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_intro']; ?>"><a href="<?php echo base_url('gioi-thieu')?>"> <?php echo $common_lang['lmenu_intro']; ?></a></li>
+        <li class="<?php echo isset($li_3) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_support']; ?>"><a href="<?php echo base_url('ho-tro')?>"> <?php echo $common_lang['lmenu_support']; ?></a></li>
+        <li class="<?php echo isset($li_6) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_news']; ?>"><a href="<?php echo base_url('tin-tuc')?>"> <?php echo $common_lang['lmenu_news']; ?></a></li>
+        <li class="<?php echo isset($li_4) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_policies']; ?>"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $common_lang['lmenu_policies']; ?></a></li>
+        <li class="<?php echo isset($li_5) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_contact']; ?>"><a href="<?php echo base_url('lien-he')?>"> <?php echo $common_lang['lmenu_contact']; ?></a></li>
 <!--        register - login-->
         <?php
-        if (empty($user)) { ?>
+        if (empty($user_login)) { ?>
 
             <li class="user_style pr-0" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" onclick="">
                 <a href="javascript:void(0)" class="text-uppercase">
@@ -52,10 +49,10 @@ $user =  $this->data['user'];
 
         <li>
             <?php
-            if (!empty($user)) { ?>
+            if (!empty($user_login)) { ?>
                 <li>
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <?php echo $user->fullname; ?>
+                    <?php echo $user_login->fullname; ?>
                 </li>
 
                  <li><a href="javascript:void(0)" onclick="confirm_logout()"><i class="fa fa-sign-out-alt" aria-hidden="true"></i>
@@ -116,19 +113,6 @@ $user =  $this->data['user'];
                             <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['fullname']; ?></label>
                             <p class="text-danger mb-0" id="errFullNameRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_fullname']; ?></p>
                             <input type="text" class="form-control" id="txtFullNameRe" placeholder="<?php echo $login_lang['fullname']; ?>" onchange="banItemChange('#txtFullNameRe', '#errFullNameRe')">
-                        </div>
-
-                        <div class="form-group d-none">
-<!--                            <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> --><?php //echo $login_lang['email']; ?><!--</label>-->
-<!--                            <p class="text-danger mb-0" id="errEmailRe" style="display: none;"><span class="glyphicon glyphicon-alert"></span> --><?php //echo $login_lang['error_email']; ?><!--</p>-->
-<!---->
-<!--                            <input type="text" class="form-control" id="txtEmailRe" placeholder="Enter email" onchange="banItemChange('#txtEmailRe', '#errEmailRe')">-->
-                        </div>
-
-                        <div class="form-group d-none">
-<!--                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> --><?php //echo $login_lang['repassword']; ?><!--</label>-->
-<!--                            <p class="text-danger mb-0" id="errPassWordRe2" style="display: none;"><span class="glyphicon glyphicon-alert"></span> --><?php //echo $login_lang['error_repassword']; ?><!--</p>-->
-<!--                            <input type="text" class="form-control" id="txtPassWordRe2" placeholder="Enter Repeat password" onchange="banItemChange('#txtPassWordRe2', '#errPassWordRe2')">-->
                         </div>
 
                         <div class="checkbox">
@@ -463,13 +447,3 @@ $user =  $this->data['user'];
     }
 
 </script>
-
-<style>
-    .modal-header, h4, .close {
-        color:white !important;
-        font-size: 30px;
-    }
-    .modal-footer {
-        background-color: #f9f9f9;
-    }
-</style>
