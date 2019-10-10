@@ -50,5 +50,5 @@
     <script src="<?php echo base_url('public/js/sweetalert.min.js'); ?>"></script>
 </head>
 <body>
-<?php $this->load->view($this->_template_f . 'menu') ?>
-<?php $this->load->view($this->_template_f . 'banner') ?>
+<?php $this->load->view($this->_template_f . 'menu_view') ?>
+<?php $this->load->view($this->_template_f . 'banner_view') ?>
