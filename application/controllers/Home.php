@@ -106,6 +106,8 @@ Class Home extends MY_Controller
 
     function introduce($slug = '', $id = 0)
     {
+        $this->load->language('introduce/introduce', $this->_langcode);
+        $this->data['introduce_lang'] = $this->lang->line('introduce_lang');
         $this->data['li_2'] = 1;
         if (strlen($slug) > 0 && $id > 0) {
             $product = $this->product_model->get_info($id);
@@ -124,7 +126,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = 'test';
+        $header['title'] = $this->data['introduce_lang']['title'];
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/introduce', $this->data);
@@ -137,6 +139,8 @@ Class Home extends MY_Controller
 
     function support($type = 1)
     {
+        $this->load->language('support/support', $this->_langcode);
+        $this->data['support_lang'] = $this->lang->line('support_lang');
         $this->data['li_3'] = 1;
 
         if ($type == "ky-thuat-vien" || $type == "ky-thuat-vien.html") {
@@ -153,7 +157,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = 'test';
+        $header['title'] = $this->data['support_lang']['title'];
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/support_level_1', $this->data);
