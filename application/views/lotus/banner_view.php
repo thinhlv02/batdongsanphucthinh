@@ -1,5 +1,3 @@
-<!--<section class="news">-->
-<!--    <div class="container">-->
 
 
 <section class="pb-0">
