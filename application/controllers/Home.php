@@ -283,6 +283,8 @@ Class Home extends MY_Controller
 
     function news()
     {
+        $this->load->language('support/support', $this->_langcode);
+        $this->data['support_lang'] = $this->lang->line('support_lang');
         $per_page = 10;
         $offset = $this->uri->segment(2);
         $offset = intval($offset);
@@ -311,7 +313,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = 'test';
+        $header['title'] = $this->data['support_lang']['title'];
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/news', $this->data);
@@ -332,7 +334,6 @@ Class Home extends MY_Controller
         $highlight = $this->news_model->get_list(array('where' => array('highlight' => 1)));
         $this->data['highlight'] = $highlight;
 
-        $this->data['title'] = $news->document_title;
         $this->data['title'] = $news->title;
         $this->data['description'] = $news->meta_description;
         $this->data['image'] = public_url('images/news/' . $news->img);
@@ -414,7 +415,6 @@ Class Home extends MY_Controller
         $ads_center = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(30, 0)));
         $this->data['ads_center'] = $ads_center;
 
-//        $this->data['title'] = $ads->document_title;
         $this->data['title'] = $ads->title;
         $this->data['description'] = $ads->meta_description;
         $this->data['image'] = public_url('images/ads/' . $ads->img);
