@@ -30,7 +30,7 @@
         <?php
         if (empty($user_login)) { ?>
 
-            <li class="user_style pr-0" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" onclick="">
+            <li class="user_style pr-0" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" >
                 <a href="javascript:void(0)" class="text-uppercase">
                     <i class="fa fa-user-plus text-danger" aria-hidden="true"></i>
                     <?php echo $this->lang->line('register'); ?>

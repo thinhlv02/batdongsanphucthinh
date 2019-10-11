@@ -30,7 +30,7 @@
         <?php
         if (empty($user_login)) { ?>
 
-            <li class="user_style pr-0" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" onclick="">
+            <li class="user_style pr-0" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" >
                 <a href="javascript:void(0)" class="text-uppercase">
                     <i class="fa fa-user-plus text-danger" aria-hidden="true"></i>
                     <?php echo $this->lang->line('register'); ?>
@@ -69,18 +69,17 @@
             <span></span>
             <span></span>
             <ul id="menu">
-                <a href="<?php echo base_url()?>"><li><?php echo $this->lang->line('home'); ?></li></a>
-                <a href="<?php echo base_url('gioi-thieu')?>"><li><?php echo $this->lang->line('intro'); ?></li></a>
-                <a href="<?php echo base_url('ho-tro')?>"><li><?php echo $this->lang->line('support'); ?></li></a>
-                <a href="<?php echo base_url('tin-tuc')?>"><li><?php echo $this->lang->line('lmenu_news'); ?></li></a>
-                <a href="<?php echo base_url('dieu-khoan-su-dung')?>"><li><?php echo $this->lang->line('policies'); ?></li></a>
-                <a href="<?php echo base_url('lien-he')?>"><li><?php echo $this->lang->line('contact'); ?></li></a>
+                <a href="<?php echo base_url()?>"><li><?php echo $common_lang['home']; ?></li></a>
+                <a href="<?php echo base_url('gioi-thieu')?>"><li><?php echo $common_lang['lmenu_intro']; ?></li></a>
+                <a href="<?php echo base_url('ho-tro')?>"><li><?php echo $common_lang['lmenu_support']; ?></li></a>
+                <a href="<?php echo base_url('tin-tuc')?>"><li><?php echo $common_lang['lmenu_news']; ?></li></a>
+                <a href="<?php echo base_url('dieu-khoan-su-dung')?>"><li><?php echo $common_lang['lmenu_policies']; ?></li></a>
+                <a href="<?php echo base_url('lien-he')?>"><li><?php echo $common_lang['lmenu_contact']; ?></li></a>
             </ul>
         </div>
     </nav>
 
 </div>
-
 
 <!--modal register-->
 <div class="container">
