@@ -48,8 +48,7 @@
             <?php
             if (!empty($user_login)) { ?>
                 <li>
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <?php echo $user_login->fullname; ?>
+                    <a href="<?php echo base_url('trang-ca-nhan'); ?>"><i class="fa fa-user" aria-hidden="true"></i><?php echo $user_login->fullname; ?></a>
                 </li>
 
                  <li><a href="javascript:void(0)" onclick="confirm_logout()"><i class="fa fa-sign-out-alt" aria-hidden="true"></i>
