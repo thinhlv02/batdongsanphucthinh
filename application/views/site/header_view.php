@@ -24,10 +24,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('public/css/style.css'); ?>">
-    <link rel="stylesheet" href="<?php echo base_url('public/css/sweetalert.css'); ?>">
+    <link href="<?php echo base_url('public/css/responsive.css'); ?>" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <!--thinhlv add css-->
-
+    <link rel="stylesheet" href="<?php echo base_url('public/css/sweetalert.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('public/css/common.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('public/css/custom.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('public/css/lightslider.css'); ?>">
@@ -35,10 +36,8 @@
     <link rel="stylesheet" href="<?php echo base_url('public/css/hp.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('public/css/colors.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('public/css/bootstrap-extended.css'); ?>">
+    <!--End thinhlv add css-->
 
-    <!--thinhlv add css-->
-    <link href="<?php echo base_url('public/css/responsive.css'); ?>" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!--<script src="--><?php //echo public_url('js/jquery.min.js')?><!--"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="<?php echo public_url('js/bootstrap.min.js') ?>"></script>
