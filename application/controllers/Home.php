@@ -741,14 +741,11 @@ Class Home extends MY_Controller
     {
         $this->load->language('user_page/user_page', $this->_langcode);
         $this->data['user_page_lang'] = $this->lang->line('user_page_lang');
-//        var_dump($user_login);
-        echo 'page person user';
+
         // load header
         $header = array();
         $header['title'] = $this->data['user_page_lang']['title'];
-//        $header['image'] = public_url('images/ads/' . $ads->img);
         $this->_loadHeader($header);
-
         $this->load->view($this->_template_f . 'pages/user_page', $this->data);
         $this->_loadFooter();
     }
