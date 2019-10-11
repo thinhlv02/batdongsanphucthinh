@@ -84,6 +84,8 @@
 <!--modal register-->
 <!--modal register-->
 <!--modal register-->
+<!--modal register-->
+<!--modal register-->
 <div class="container">
     <!-- Modal -->
     <div class="modal fade" id="myModalRegister" role="dialog">
