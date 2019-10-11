@@ -21,8 +21,6 @@
                     </div>
                     <p>
                         <button>Contact</button>
-<!--                        <button>Contact</button>-->
-<!--                        <button>Contact</button>-->
                     </p>
                 </div>
             </div>
