@@ -15,16 +15,12 @@
                                         <i class="fas fa-user-circle fa-10x text-success"></i>
                                     </p>
                                     <br/>
-                                    <span id=""
-                                          class="userfullname">Lưu Thị Bình</span>
+                                    <span class="userfullname">Lưu Thị Bình</span>
 
-                                    <div id="" class="userpoint_menu">
+                                    <div class="userpoint_menu">
 
-                                        <div class="">
-
-                                            <label style="padding-left:0px;">Tài khoản: Thường</label>
-                                        </div>
-                                        <div class="">
+                                        <div><label style="padding-left:0px;">Tài khoản: Thường</label></div>
+                                        <div>
                                             <label style="font-size:16px; font-weight:bold;">
                                                 45</label>
                                             <span style="font-size:14px; font-weight:normal;">&nbsp;điểm&nbsp;</span>
@@ -45,16 +41,16 @@
                                     </div>
                                     <div class="userbalance">
                                         Tài khoản tin rao:
-                                        <span id="">99.267</span><br>
+                                        <span>99.267</span><br>
                                         Tài khoản ngoài tin rao:
-                                        <span id="">0</span><br>
+                                        <span>0</span><br>
                                         Tài khoản KM1:
-                                        <span id="">0</span><br>
+                                        <span>0</span><br>
                                         Tài khoản KM2:
-                                        <span id="">3.733</span><br>
+                                        <span>3.733</span><br>
                                     </div>
 
-                                    <a id="" class="bluebotton"
+                                    <a class="bluebotton"
                                        href="javascript:void(0)">Nạp tiền</a>
                                 </div>
                                 <div class="title">Quản lý thông tin cá nhân</div>
@@ -68,7 +64,6 @@
                                             Thay đổi mật khẩu</a>
                                     </li>
 
-
                                 </ul>
                                 <div class="title">Quản lý tin rao</div>
                                 <ul class="item">
@@ -81,21 +76,21 @@
                                         <a href="javascript:void(0)" title="Đăng tin rao bán/cho thuê">
                                             Đăng tin rao bán/cho thuê</a>
                                     </li>
-                                    <li id="" class="row-content">
+                                    <li class="row-content">
                                         <a href="javascript:void(0)"
                                            title="Quản lý tin rao cần mua/cần thuê">Quản lý tin cần mua/cần thuê</a>
                                     </li>
-                                    <li id="" class="row-content">
+                                    <li class="row-content">
                                         <a href="javascript:void(0)" title="Đăng tin rao cần mua/cần thuê">Đăng
                                             tin cần mua/cần thuê</a>
                                     </li>
-                                    <li id="" class="row-content">
+                                    <li class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý tin nháp">
                                             Quản lý tin nháp</a>
                                     </li>
 
                                 </ul>
-                                <div id="MainContent__userPage_pnlFinaceManagement">
+                                <div id="">
 
                                     <div class="title">Quản lý tài chính</div>
                                     <ul class="item">
@@ -104,21 +99,21 @@
                                                     src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
                                         </li>
                                         <li class="row-content">
-                                            <a href="/trang-ca-nhan/uspg-transaction" title="Lịch sử giao dịch">
+                                            <a href="#" title="Lịch sử giao dịch">
                                                 Lịch sử giao dịch</a>
                                         </li>
-                                        <li id="MainContent__userPage_menuGroupOfUser" class="row-content">
+                                        <li id="" class="row-content">
                                             <a href="javascript:void(0)" title="Nhóm khuyến mãi">
                                                 Nhóm khuyến mãi</a>
                                         </li>
 
-                                        <li id="MainContent__userPage_menuEnterpriseAccount" class="row-content">
+                                        <li id="" class="row-content">
                                             <a href="javascript:void(0)"
                                                title="Quản lý tài khoản Doanh nghiệp">
                                                 Quản lý tài khoản Doanh nghiệp</a>&nbsp;<img
                                                     src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
                                         </li>
-                                        <li id="MainContent__userPage_menuDeposit" class="row-content">
+                                        <li id="" class="row-content">
                                             <a href="javascript:void(0)"
                                                title="Nạp tiền vào tài khoản">
                                                 Nạp tiền vào tài khoản</a>
@@ -129,12 +124,12 @@
                                 <div class="title">Tiện ích</div>
                                 <ul class="item">
 
-                                    <li id="MainContent__userPage_menuNotify" class="row-content">
+                                    <li id="" class="row-content">
                                         <a href="javascript:void(0)" title="Thông báo">
                                             Thông báo</a>&nbsp;<img
                                                 src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
                                     </li>
-                                    <li id="" class="row-content">
+                                    <li class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý đăng kí nhận email">
                                             Quản lý đăng kí nhận email</a>
                                     </li>
@@ -143,14 +138,13 @@
                                             Hộp tin nhắn</a>
                                     </li>
 
-
-                                    <li id="" class="row-content">
+                                    <li class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý điểm tích lũy">Quản lý
                                             điểm tích lũy</a>&nbsp;<img
                                                 src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
                                     </li>
 
-                                    <li id="" class="row-content">
+                                    <li class="row-content">
                                         <a href="javascript:void(0)"
                                            title="Yêu cầu khóa tài khoản">Yêu cầu khóa tài khoản</a>
                                     </li>
@@ -169,12 +163,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div id="account_info">
-                        </div>
-                    </div>
-                    <div>
 
                     </div>
+
                 </div>
 
             </div>
@@ -254,13 +245,12 @@
                         <tr>
                             <td>
                                 <input name="" type="text"
-                                       id="" class="keycode">
+                                       class="keycode">
                             </td>
                             <td colspan="3">
                                 <input type="submit" name="" value="Tìm kiếm"
-                                       onclick="doSearch();" id="" class="timkiem"
-                                       autopostback="true">
-                                <span class="colorboldblue"><strong>(Lưu ý khi nhập mã tin thì các bộ lọc khác không có tác dụng)</strong></span>
+                                       onclick="" class="timkiem">
+                                <span class=""><strong>(Lưu ý khi nhập mã tin thì các bộ lọc khác không có tác dụng)</strong></span>
                             </td>
                         </tr>
                         </tbody>
@@ -268,8 +258,7 @@
                     <div class="clear10"></div>
                     <div style="display: none;">
                         <input type="text" style="width: 120px !important; height: 22px;" placeholder="Nhập Số Tiền"
-                               id="txtMoney" onkeydown="return numbersonly(this, window.event, false);"
-                               onkeyup="formatCurrency(this);">
+                               id="txtMoney" onkeydown="return numbersonly(this, window.event, false);">
                         <input type="button" onclick=""
                                value="Khuyến mãi tin rao"
                                style="background-color: #055699; border: none; width: auto; height: 27px; color: #fff !important; font-weight: bold; font-size: 12px !important;">
@@ -325,8 +314,8 @@
                                             src="<?php echo public_url('images/nophoto.jpg'); ?>"
                                             alt="Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2">Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2</span>
                                 <div style="clear: both; text-align: right; padding-top: 5px;">
-                                    <a id="" href="javascript:void(0)"><i class="far fa-edit"></i> Sửa</a>&nbsp;
-                                    <a id="" class="btn-xoa" href="javascript:void(0)">Xóa</a>
+                                    <a href="javascript:void(0)"><i class="far fa-edit"></i> Sửa</a>&nbsp;
+                                    <a class="btn-xoa" href="javascript:void(0)">Xóa</a>
                                 </div>
                             </td>
                             <td class="text-center">
@@ -352,7 +341,7 @@
                                 </p>
                             </td>
                             <td class="text-center">
-                                <p><a href="javascript:void(0)" onclick="GetAllNote('22892268')" class="grey"
+                                <p><a href="javascript:void(0)" onclick="" class=""
                                       style="text-decoration: underline;">1</a>
 
                                 </p>
@@ -363,7 +352,7 @@
                     </table>
 
                     <div class="pager">
-                        <span id="MainContent__userPage_ctl00_DataPager"></span>
+                        <span id=""></span>
                     </div>
                     <div class="clear10"></div>
                     <div><strong>Note</strong></div>
@@ -372,10 +361,6 @@
                         <img src="<?php echo public_url('images/flag_us.png'); ?>" width="24px">&nbsp;<a title=""
                                                                                                          href="/user-page"><strong>English</strong></a>
                     </div>
-
-
-                    <input type="hidden" name="ctl00$MainContent$_userPage$ctl00$hddPageViewData" id="hddPageViewData"
-                           value="fbHCH63qdzHXseY4LA3k3vsyU%2b3T3baomKp2bWXUtDArKdFJBHQ9UFi3c7Ms%2bczltwuqkqm6e8ASVitpTHcm36M8MeMqgkj%2bmAtZkSoMFCqM83RubjACloz0LvSSWubYRtYP2jraugRY8PBt9XDeCPrx2DTi5OhmEO578M3AS%2bWyDkn7FvIN%2fgwdHF%2fbQ4MCqcll0XhemlOWgKyTa12QTlJK9MT4oZPGzAFClAgw1oIyh9fydZR60Pmo%2fp7HzUAP">
 
                     <div class="clear">
                     </div>
