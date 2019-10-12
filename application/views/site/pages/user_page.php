@@ -13,10 +13,10 @@
                             </div>
                             <div class="box-arround">
                                 <div class="useravatar">
-                                    <img id="MainContent__userPage_imgAvatar" class="avatar" src="https://www.w3schools.com/w3images/team1.jpg">
-                                    <span id="MainContent__userPage_lblUserName" class="userfullname">Lưu Thị Bình</span>
+                                    <img id="" class="avatar" src="https://www.w3schools.com/w3images/team1.jpg">
+                                    <span id="" class="userfullname">Lưu Thị Bình</span>
 
-                                    <div id="MainContent__userPage_pnlUserPoint" class="userpoint_menu">
+                                    <div id="" class="userpoint_menu">
 
                                         <div class="userpoint_menu_level">
 
@@ -43,16 +43,16 @@
                                     </div>
                                     <div class="userbalance">
                                         Tài khoản tin rao:
-                                        <span id="MainContent__userPage_ltrBalance">99.267</span><br>
+                                        <span id="">99.267</span><br>
                                         Tài khoản ngoài tin rao:
-                                        <span id="MainContent__userPage_ltrOtherBalance">0</span><br>
+                                        <span id="">0</span><br>
                                         Tài khoản KM1:
-                                        <span id="MainContent__userPage_ltrPromotion1">0</span><br>
+                                        <span id="">0</span><br>
                                         Tài khoản KM2:
-                                        <span id="MainContent__userPage_ltrPromotion2">3.733</span><br>
+                                        <span id="">3.733</span><br>
                                     </div>
 
-                                    <a id="MainContent__userPage_lnkDeposit" class="bluebotton" href="/trang-ca-nhan/uspg-paymentdeposit/method-nvpdomesticcard">Nạp tiền</a>
+                                    <a id="" class="bluebotton" href="/trang-ca-nhan/uspg-paymentdeposit/method-nvpdomesticcard">Nạp tiền</a>
                                 </div>
                                 <div class="title">Quản lý thông tin cá nhân</div>
                                 <ul class="item">
@@ -77,19 +77,19 @@
                                         <a href="javascript:void(0)" title="Đăng tin rao bán/cho thuê">
                                             Đăng tin rao bán/cho thuê</a>
                                     </li>
-                                    <li id="MainContent__userPage_menuAdNewsManager" class="row-content">
+                                    <li id="" class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý tin rao cần mua/cần thuê">Quản lý tin cần mua/cần thuê</a>
                                     </li>
-                                    <li id="MainContent__userPage_menuPostAdNews" class="row-content">
+                                    <li id="" class="row-content">
                                         <a href="javascript:void(0)" title="Đăng tin rao cần mua/cần thuê">Đăng tin cần mua/cần thuê</a>
                                     </li>
-                                    <li id="MainContent__userPage_menuProductDraft" class="row-content">
+                                    <li id="" class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý tin nháp">
                                             Quản lý tin nháp</a>
                                     </li>
 
                                 </ul>
-                                <div id="MainContent__userPage_pnlFinaceManagement">
+                                <div id="">
 
                                     <div class="title">Quản lý tài chính</div>
                                     <ul class="item">
@@ -105,7 +105,7 @@
                                                 Nhóm khuyến mãi</a>
                                         </li>
 
-                                        <li id="MainContent__userPage_menuEnterpriseAccount" class="row-content">
+                                        <li id="" class="row-content">
                                             <a href="javascript:void(0)" title="Quản lý tài khoản Doanh nghiệp">
                                                 Quản lý tài khoản Doanh nghiệp</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
                                         </li>
@@ -119,7 +119,7 @@
                                 <div class="title">Tiện ích</div>
                                 <ul class="item">
 
-                                    <li id="MainContent__userPage_menuNotify" class="row-content">
+                                    <li id="" class="row-content">
                                         <a href="javascript:void(0)" title="Thông báo">
                                             Thông báo</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
                                     </li>
@@ -133,11 +133,11 @@
                                     </li>
 
 
-                                    <li id="MainContent__userPage_menuUserPoint" class="row-content">
+                                    <li id="" class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý điểm tích lũy">Quản lý điểm tích lũy</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
                                     </li>
 
-                                    <li id="MainContent__userPage_menuUserDeleteAccount" class="row-content">
+                                    <li id="" class="row-content">
                                         <a href="javascript:void(0)" title="Yêu cầu khóa tài khoản">Yêu cầu khóa tài khoản</a>
                                     </li>
                                 </ul>
@@ -172,34 +172,6 @@
 
                 <div id="column-no-right-user" style="float: left">
 
-                    <style type="text/css">
-                        .tblKM {
-                            width: 750px;
-                            border-collapse: collapse;
-                        }
-
-                        .tblKM tr:hover {
-                            background-color: #cdcdcd;
-                        }
-
-                        .tblKM td {
-                            padding: 3px;
-                        }
-
-                        .tblKM th {
-                            padding: 3px;
-                            font-size: 14px;
-                            font-weight: bold;
-                        }
-
-                        .tblKM tr td:last-child {
-                            text-align: right;
-                        }
-                    </style>
-                    <div class="aligncenter">
-
-                    </div>
-
                     <div class="moduletitle bg-success">
                         Quản lý tin rao bán, cho thuê
                     </div>
@@ -214,7 +186,7 @@
                         <tr>
                             <td>
                                 <div class="advance-control">
-                                    <input name="ctl00$MainContent$_userPage$ctl00$txtFromDate" type="text" value="12/04/2019" id="txtFromDate" class="hasDatepicker">
+                                    <input name="" type="text" value="12/04/2019" id="txtFromDate" class="hasDatepicker">
                                     <span class="select-text">
 <span class="select-text-content">12/04/2019</span>
 </span>
@@ -222,7 +194,7 @@
                             </td>
                             <td>
                                 <div class="advance-control">
-                                    <input name="ctl00$MainContent$_userPage$ctl00$txtToDate" type="text" value="13/10/2019" id="txtToDate" class="hasDatepicker">
+                                    <input name="" type="text" value="13/10/2019" id="txtToDate" class="hasDatepicker">
                                     <span class="select-text">
 <span class="select-text-content">13/10/2019</span>
 </span>
@@ -233,7 +205,7 @@
 <span class="select-text">
 <span class="select-text-content">Chọn loại tin</span>
 </span>
-                                    <select name="ctl00$MainContent$_userPage$ctl00$ddlVipType" id="ddlVipType">
+                                    <select name="" id="ddlVipType">
                                         <option selected="selected" value="7">Chọn loại tin</option>
                                         <option value="0">Tin VIP đặc biệt</option>
                                         <option value="1">Tin VIP 1</option>
@@ -247,7 +219,7 @@
                             </td>
                             <td>
                                 <div class="advance-control">
-                                    <select name="ctl00$MainContent$_userPage$ctl00$ddlStatus" id="ddlStatus">
+                                    <select name="" id="ddlStatus">
                                         <option selected="selected" value="0">Tất cả</option>
                                         <option value="1">Còn hạn</option>
                                         <option value="2">Hết hạn</option>
@@ -264,10 +236,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <input name="ctl00$MainContent$_userPage$ctl00$txtMaTin" type="text" id="MainContent__userPage_ctl00_txtMaTin" class="keycode">
+                                <input name="" type="text" id="" class="keycode">
                             </td>
                             <td colspan="3">
-                                <input type="submit" name="ctl00$MainContent$_userPage$ctl00$btnSearch" value="Tìm kiếm" onclick="doSearch();" id="MainContent__userPage_ctl00_btnSearch" class="timkiem" autopostback="true">
+                                <input type="submit" name="" value="Tìm kiếm" onclick="doSearch();" id="MainContent__userPage_ctl00_btnSearch" class="timkiem" autopostback="true">
                                 <span class="colorboldblue"><strong>(Lưu ý khi nhập mã tin thì các bộ lọc khác không có tác dụng)</strong></span>
                             </td>
                         </tr>
@@ -288,239 +260,83 @@
                     </div>
                     <div class="clear10"></div>
 
-                    <table class="tbl" border="0" cellpadding="3px" cellspacing="0" width="100%">
-
+                    <table id="datatable-news" class="table table-striped table-bordered bulk_action dataTable no-footer" role="grid" aria-describedby="datatable-news_info">
+                        <thead>
+                        <tr role="row">
+                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 45px;">Mã tin</th>
+                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79px;">SĐT</th>
+                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79px;">Ảnh minh họa</th>
+                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 217px;">Tiêu đề</th>
+                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 258px;">Giá / Diện tích</th>
+                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 30px;">Lượt xem</th>
+                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 65px;">Ngày Tạo</th>
+                        </tr>
+                        </thead>
                         <tbody>
 
-                        <tr class="tit-tbl bg_tit">
-                            <th style="width: 40px">
-                                STT
-                            </th>
-                            <th style="width: 70px">
-                                Mã tin
-                            </th>
-                            <th style="width: 330px">
-                                Tiêu đề
-                            </th>
-                            <th style="width: 30px">
-                                Xem
-                            </th>
-                            <th style="width: 90px">
-                                Ngày bắt đầu
-                            </th>
-                            <th style="width: 90px">
-                                Ngày hết hạn
-                            </th>
-                            <th style="width: 40px">
-                                Ghi chú
-                            </th>
+                        <tr title="" class="odd" role="row">
+                            <td class="text-center">
+                                <button class="btn btn-default btn-xs">122</button>
+                            </td>
+
+                            <td> 0988559509</td>
+                            <td>
+                                <img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg" style="max-width: 80px">
+                            </td>
+                            <td>
+                                <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122" target="_blank">CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a>
+                            </td>
+
+                            <td><p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
+                                <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p></td>
+
+                            <td>237</td>
+                            <td>08/10/2019</td>
                         </tr>
 
-                        <tr class="prod-vip5">
-                            <td>
-
-                                1
+                        <tr title="" class="odd" role="row">
+                            <td class="text-center">
+                                <button class="btn btn-default btn-xs">122</button>
                             </td>
-                            <td class="aligncenter">
-                                <div style="padding-top:25px;">
-                                    22892268
-                                    <img src="https://file4.batdongsan.com.vn/images/Default/images/ViptypeV5-label.png">
-                                </div>
-                                Không duyệt<br>09-10-2019
+
+                            <td> 0988559509</td>
+                            <td>
+                                <img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg" style="max-width: 80px">
                             </td>
                             <td>
-
-                                <span class="prod-title" id="view_22892268"><img src="https://file4.batdongsan.com.vn/crop/77x62/2019/10/08/20191008214106-4653_wm.jpg" alt="Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2">Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2</span>
-                                <div style="clear: both; text-align: right; padding-top: 5px;">
-
-
-                                    &nbsp;
-
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_0" href="/trang-ca-nhan/uspg-updateproduct/itemId-22892268">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
-
-
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkDel_0" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22892268">Xóa</a>
-
-
-                                    <div style="display: none;">
-
-                                    </div>
-                                </div>
+                                <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122" target="_blank">CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a>
                             </td>
-                            <td class="aligncenter">
-                                <p>
-                                    <a id="pageviews_22892268" href="javascript: PageViewDaily('EZw7SGxGnSHQG1hoRywMUQ==')" class="grey" style="text-decoration: underline">_</a>
-                                </p>
 
-                                <p>
+                            <td><p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
+                                <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p></td>
 
-                                    <br>
-
-                                </p>
-
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-                                    08-10-2019
-                                </p>
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-                                    08-11-2019
-                                </p>
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-
-                                    <a href="javascript:void(0)" onclick="GetAllNote('22892268')" class="grey" style="text-decoration: underline;">1</a>
-
-                                </p>
-                            </td>
+                            <td>237</td>
+                            <td>08/10/2019</td>
                         </tr>
 
-                        <tr class="prod-vip5">
-                            <td>
-
-                                2
+                        <tr title="" class="odd" role="row">
+                            <td class="text-center">
+                                <button class="btn btn-default btn-xs">122</button>
                             </td>
-                            <td class="aligncenter">
-                                <div style="padding-top:25px;">
-                                    22794027
-                                    <img src="https://file4.batdongsan.com.vn/images/Default/images/ViptypeV5-label.png">
-                                </div>
-                                Đang Hiển thị
+
+                            <td> 0988559509</td>
+                            <td>
+                                <img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg" style="max-width: 80px">
                             </td>
                             <td>
-
-                                <a class="prod-title" id="view_22794027" href="/ban-nha-rieng-duong-thong-nhat-102/cap-4-tai-t-moi-phuong-8-thanh-pho-vung-tau-pr22794027" target="_blank"><img src="https://file4.batdongsan.com.vn/crop/77x62/2019/10/03/20191003083649-66fa.jpg" alt="Bán nhà cấp 4 tại đường Thống Nhất Mới, phường 8, thành phố Vũng Tàu">Bán nhà cấp 4 tại đường Thống Nhất Mới, phường 8, thành phố Vũng Tàu</a>
-                                <div style="clear: both; text-align: right; padding-top: 5px;">
-
-
-                                    &nbsp;
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkView_1" class="grey" href="/ban-nha-rieng-duong-thong-nhat-102/cap-4-tai-t-moi-phuong-8-thanh-pho-vung-tau-pr22794027" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
-                                        Xem</a>
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_1" href="/trang-ca-nhan/uspg-updateproduct/itemId-22794027">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
-
-
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkDel_1" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22794027">Xóa</a>
-
-
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkDown_1" class="btn-xoa" href="/trang-ca-nhan/uspg-userdownproduct/itemId-22794027">Hạ</a>
-
-                                    <div style="display: none;">
-                                        <input type="submit" name="ctl00$MainContent$_userPage$ctl00$rpItems$ctl02$btnDone" value="Đã bán" id="MainContent__userPage_ctl00_rpItems_btnDone_1" title="Click để chuyển tin sang trạng thái đã bán hoặc đã cho thuê" class="product-done-grey">
-                                    </div>
-                                </div>
+                                <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122" target="_blank">CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a>
                             </td>
-                            <td class="aligncenter">
-                                <p>
-                                    <a id="pageviews_22794027" href="javascript: PageViewDaily('uTvYXyt7a03mFy4dnWchWw==')" class="grey" style="text-decoration: underline">33</a>
-                                </p>
 
-                                <p>
-                                    <a id="MainContent__userPage_ctl00_rpItems_linkUp_1" href="/trang-ca-nhan/uspg-userupproduct/itemId-22794027">
-                                        <img src="https://file4.batdongsan.com.vn/images/action_up.gif" alt="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin" title="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin">
-                                    </a>
-                                    <br>
+                            <td><p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
+                                <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p></td>
 
-                                </p>
-
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-                                    03-10-2019
-                                </p>
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-                                    21-11-2019
-                                </p>
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-
-                                    <a href="javascript:void(0)" onclick="GetAllNote('22794027')" class="grey" style="text-decoration: underline;">1</a>
-
-                                </p>
-                            </td>
-                        </tr>
-
-                        <tr class="prod-vip5">
-                            <td>
-
-                                3
-                            </td>
-                            <td class="aligncenter">
-                                <div style="padding-top:25px;">
-                                    22733443
-                                    <img src="https://file4.batdongsan.com.vn/images/Default/images/ViptypeV5-label.png">
-                                </div>
-                                Đang Hiển thị
-                            </td>
-                            <td>
-
-                                <a class="prod-title" id="view_22733443" href="/ban-dat-nen-du-an-ha-long-qni/hung-tng-phuong-hung-tng-tnh-pho-tinh-quang-ninh-pr22733443" target="_blank"><img src="https://file4.batdongsan.com.vn/crop/77x62/2019/09/27/20190927160907-4519_wm.jpg" alt="Bán đất Hùng Thắng, phường Hùng Thắng, thành phố Hạ Long, tỉnh Quảng Ninh">Bán đất Hùng Thắng, phường Hùng Thắng, thành phố Hạ Long, tỉnh Quảng Ninh</a>
-                                <div style="clear: both; text-align: right; padding-top: 5px;">
-
-
-                                    &nbsp;
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkView_2" class="grey" href="/ban-dat-nen-du-an-ha-long-qni/hung-tng-phuong-hung-tng-tnh-pho-tinh-quang-ninh-pr22733443" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
-                                        Xem</a>
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_2" href="/trang-ca-nhan/uspg-updateproduct/itemId-22733443">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
-
-
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkDel_2" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22733443">Xóa</a>
-
-
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkDown_2" class="btn-xoa" href="/trang-ca-nhan/uspg-userdownproduct/itemId-22733443">Hạ</a>
-
-                                    <div style="display: none;">
-                                        <input type="submit" name="ctl00$MainContent$_userPage$ctl00$rpItems$ctl03$btnDone" value="Đã bán" id="MainContent__userPage_ctl00_rpItems_btnDone_2" title="Click để chuyển tin sang trạng thái đã bán hoặc đã cho thuê" class="product-done-grey">
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-                                    <a id="pageviews_22733443" href="javascript: PageViewDaily('am6Csde3/Gtx9qI3Bo8dWg==')" class="grey" style="text-decoration: underline">29</a>
-                                </p>
-
-                                <p>
-                                    <a id="MainContent__userPage_ctl00_rpItems_linkUp_2" href="/trang-ca-nhan/uspg-userupproduct/itemId-22733443">
-                                        <img src="https://file4.batdongsan.com.vn/images/action_up.gif" alt="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin" title="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin">
-                                    </a>
-                                    <br>
-
-                                </p>
-
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-                                    27-09-2019
-                                </p>
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-                                    12-10-2019
-                                </p>
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-
-                                    <a href="javascript:void(0)" onclick="GetAllNote('22733443')" class="grey" style="text-decoration: underline;">0</a>
-
-                                </p>
-                            </td>
+                            <td>237</td>
+                            <td>08/10/2019</td>
                         </tr>
 
                         </tbody>
 
                     </table>
-
 
 
                     <div class="pager">
