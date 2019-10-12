@@ -321,13 +321,13 @@
                             <td class="aligncenter">
                                 <div style="padding-top:25px;">
                                     22892268
-                                    <img src="https://file4.batdongsan.com.vn/images/Default/images/ViptypeV5-label.png">
+
                                 </div>
                                 Không duyệt<br>09-10-2019
                             </td>
                             <td>
 
-                                <span class="prod-title" id="view_22892268"><img src="https://file4.batdongsan.com.vn/crop/77x62/2019/10/08/20191008214106-4653_wm.jpg" alt="Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2">Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2</span>
+                                <span class="prod-title" id="view_22892268"><img src="https://file4.batdongsanphucthinh.vn/crop/77x62/2019/10/08/20191008214106-4653_wm.jpg" alt="Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2">Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2</span>
                                 <div style="clear: both; text-align: right; padding-top: 5px;">
 
 
@@ -384,13 +384,13 @@
                             <td class="aligncenter">
                                 <div style="padding-top:25px;">
                                     22794027
-                                    <img src="https://file4.batdongsan.com.vn/images/Default/images/ViptypeV5-label.png">
+
                                 </div>
                                 Đang Hiển thị
                             </td>
                             <td>
 
-                                <a class="prod-title" id="view_22794027" href="/ban-nha-rieng-duong-thong-nhat-102/cap-4-tai-t-moi-phuong-8-thanh-pho-vung-tau-pr22794027" target="_blank"><img src="https://file4.batdongsan.com.vn/crop/77x62/2019/10/03/20191003083649-66fa.jpg" alt="Bán nhà cấp 4 tại đường Thống Nhất Mới, phường 8, thành phố Vũng Tàu">Bán nhà cấp 4 tại đường Thống Nhất Mới, phường 8, thành phố Vũng Tàu</a>
+                                <a class="prod-title" id="view_22794027" href="/ban-nha-rieng-duong-thong-nhat-102/cap-4-tai-t-moi-phuong-8-thanh-pho-vung-tau-pr22794027" target="_blank"><img src="https://file4.batdongsanphucthinh.vn/crop/77x62/2019/10/03/20191003083649-66fa.jpg" alt="Bán nhà cấp 4 tại đường Thống Nhất Mới, phường 8, thành phố Vũng Tàu">Bán nhà cấp 4 tại đường Thống Nhất Mới, phường 8, thành phố Vũng Tàu</a>
                                 <div style="clear: both; text-align: right; padding-top: 5px;">
 
 
@@ -419,7 +419,7 @@
 
                                 <p>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkUp_1" href="/trang-ca-nhan/uspg-userupproduct/itemId-22794027">
-                                        <img src="https://file4.batdongsan.com.vn/images/action_up.gif" alt="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin" title="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin">
+                                        <i class="fas fa-upload"></i>
                                     </a>
                                     <br>
 
@@ -453,13 +453,13 @@
                             <td class="aligncenter">
                                 <div style="padding-top:25px;">
                                     22733443
-                                    <img src="https://file4.batdongsan.com.vn/images/Default/images/ViptypeV5-label.png">
+
                                 </div>
                                 Đang Hiển thị
                             </td>
                             <td>
 
-                                <a class="prod-title" id="view_22733443" href="/ban-dat-nen-du-an-ha-long-qni/hung-tng-phuong-hung-tng-tnh-pho-tinh-quang-ninh-pr22733443" target="_blank"><img src="https://file4.batdongsan.com.vn/crop/77x62/2019/09/27/20190927160907-4519_wm.jpg" alt="Bán đất Hùng Thắng, phường Hùng Thắng, thành phố Hạ Long, tỉnh Quảng Ninh">Bán đất Hùng Thắng, phường Hùng Thắng, thành phố Hạ Long, tỉnh Quảng Ninh</a>
+                                <a class="prod-title" id="view_22733443" href="/ban-dat-nen-du-an-ha-long-qni/hung-tng-phuong-hung-tng-tnh-pho-tinh-quang-ninh-pr22733443" target="_blank"><img src="https://file4.batdongsanphucthinh.vn/crop/77x62/2019/09/27/20190927160907-4519_wm.jpg" alt="Bán đất Hùng Thắng, phường Hùng Thắng, thành phố Hạ Long, tỉnh Quảng Ninh">Bán đất Hùng Thắng, phường Hùng Thắng, thành phố Hạ Long, tỉnh Quảng Ninh</a>
                                 <div style="clear: both; text-align: right; padding-top: 5px;">
 
 
@@ -488,7 +488,7 @@
 
                                 <p>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkUp_2" href="/trang-ca-nhan/uspg-userupproduct/itemId-22733443">
-                                        <img src="https://file4.batdongsan.com.vn/images/action_up.gif" alt="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin" title="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin">
+                                        <i class="fas fa-upload"></i>
                                     </a>
                                     <br>
 
@@ -522,13 +522,13 @@
                             <td class="aligncenter">
                                 <div style="padding-top:25px;">
                                     22699576
-                                    <img src="https://file4.batdongsan.com.vn/images/Default/images/ViptypeV5-label.png">
+
                                 </div>
                                 Đang Hiển thị
                             </td>
                             <td>
 
-                                <a class="prod-title" id="view_22699576" href="/ban-dat-duong-vu-the-lang-485/phuong-thanh-mieu-thanh-pho-viet-tri-tinh-phu-tho-pr22699576" target="_blank"><img src="https://file4.batdongsan.com.vn/crop/77x62/2019/09/25/20190925163404-4bde_wm.jpg" alt="Bán đất Vũ Thê Lang, phường Thanh miếu, thành phố Việt Trì, tỉnh Phú Thọ">Bán đất Vũ Thê Lang, phường Thanh miếu, thành phố Việt Trì, tỉnh Phú Thọ</a>
+                                <a class="prod-title" id="view_22699576" href="/ban-dat-duong-vu-the-lang-485/phuong-thanh-mieu-thanh-pho-viet-tri-tinh-phu-tho-pr22699576" target="_blank"><img src="https://file4.batdongsanphucthinh.vn/crop/77x62/2019/09/25/20190925163404-4bde_wm.jpg" alt="Bán đất Vũ Thê Lang, phường Thanh miếu, thành phố Việt Trì, tỉnh Phú Thọ">Bán đất Vũ Thê Lang, phường Thanh miếu, thành phố Việt Trì, tỉnh Phú Thọ</a>
                                 <div style="clear: both; text-align: right; padding-top: 5px;">
 
 
@@ -557,7 +557,7 @@
 
                                 <p>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkUp_3" href="/trang-ca-nhan/uspg-userupproduct/itemId-22699576">
-                                        <img src="https://file4.batdongsan.com.vn/images/action_up.gif" alt="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin" title="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin">
+                                        <i class="fas fa-upload"></i>
                                     </a>
                                     <br>
 
@@ -591,7 +591,7 @@
                             <td class="aligncenter">
                                 <div style="padding-top:25px;">
                                     22272297
-                                    <img src="https://file4.batdongsan.com.vn/images/Default/images/ViptypeV5-label.png">
+
                                 </div>
                                 Hết thời gian hiển thị
                             </td>
@@ -660,7 +660,7 @@
                     <div><strong>Note</strong></div>
                     <div>
                         Trong trường hợp Quý khách muốn đăng và quản lý tin rao tiếng Anh, xin vui lòng click vào đây
-                        <img src="https://file1.batdongsan.com.vn/images/flags/cy-GB.gif" width="24px">&nbsp;<a title="" href="/user-page"><strong>English</strong></a>
+                        <img src="https://file1.batdongsanphucthinh.vn/images/flags/cy-GB.gif" width="24px">&nbsp;<a title="" href="/user-page"><strong>English</strong></a>
                     </div>
 
 
