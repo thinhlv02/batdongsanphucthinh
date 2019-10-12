@@ -7,7 +7,7 @@
                 <h2 style="text-align:center">User Profile Card</h2>
                 <div class="card text-center">
                     <img src="https://www.w3schools.com/w3images/team1.jpg" alt="John" style="width:100%">
-                    <h1>Khách hàng 1</h1>
+                    <h1>Jane Doe</h1>
                     <p class="title">CEO & Founder, Example</p>
                     <p>Harvard University</p>
                     <div style="margin: 24px 0;">
