@@ -330,3 +330,13 @@
         </div>
     </div>
 </div>
+
+<style>
+    .white-background-new .box-arround .title {
+        color: #666;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: #e8e8e8;
+    }
+</style>
