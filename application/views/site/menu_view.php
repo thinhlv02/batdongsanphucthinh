@@ -27,14 +27,14 @@
         <?php
         if (empty($user_login)) { ?>
 
-            <li class="user_style pr-0" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" >
+            <li class="user_style pr-0 text-bold-600" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" >
                 <a href="javascript:void(0)" class="text-uppercase">
                     <i class="fa fa-user-plus text-danger" aria-hidden="true"></i>
                     <?php echo $this->lang->line('register'); ?>
                 </a>
             </li>
 
-            <li class="user_style p-0" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
+            <li class="user_style p-0 text-bold-600" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
                 <a href="javascript:void(0)" class="menu_login text-uppercase">
                     <i class="fa fa-sign-in-alt text-danger" aria-hidden="true"></i>
                     <?php echo $this->lang->line('login'); ?>
@@ -47,11 +47,11 @@
         <li>
             <?php
             if (!empty($user_login)) { ?>
-                <li>
-                    <a href="<?php echo base_url('trang-ca-nhan'); ?>"><i class="fa fa-user" aria-hidden="true"></i><?php echo $user_login->fullname; ?></a>
+                <li class="user_style text-bold-600">
+                    <a href="<?php echo base_url('trang-ca-nhan'); ?>"><i class="fa fa-user" aria-hidden="true"></i> <?php echo $user_login->fullname; ?></a>
                 </li>
 
-                 <li><a href="javascript:void(0)" onclick="confirm_logout()"><i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+                 <li class="user_style text-bold-600"><a href="javascript:void(0)" onclick="confirm_logout()"><i class="fa fa-sign-out-alt" aria-hidden="true"></i>
                          <?php echo $login_lang['logout'] ?> </a></li>
             <?php }
         ?>
