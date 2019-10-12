@@ -3,11 +3,11 @@
         <div class="col-sm-4 col-md-3">
             <div class="left-menu">
 
-                <div id="column-left-user" style="float: left">
-                    <div id="usercp">
+                <div id="column-left-user" class="card" style="">
+                    <div id="usercp" class="card-body">
                         <div class="white-background-new">
                             <div class="box-header text-center">
-                                <h3>TRANG CÁ NHÂN</h3>
+                                <h4>TRANG CÁ NHÂN</h4>
                             </div>
                             <div class="box-arround">
                                 <div class="useravatar text-center">
@@ -24,18 +24,7 @@
                                             <label style="font-size:16px; font-weight:bold;">
                                                 45</label>
                                             <span style="font-size:14px; font-weight:normal;">&nbsp;điểm&nbsp;</span>
-                                            <a class="fa fa-info-circle" href="#">
-                                                <div>
-                                                    <ul>
-                                                        <li><span>Điểm đổi thưởng <b>45</b> điểm</span></li>
-                                                        <li>
-                                                            <span>Đã tích lũy 445.566 VNĐ. Cần thêm 11.554.434 VNĐ để lên hạng Đồng</span>
-                                                        </li>
-                                                        <li><span>Kỳ xét hạng tiếp theo vào 06/03/2020</span></li>
 
-                                                    </ul>
-                                                </div>
-                                            </a>
                                         </div>
 
                                     </div>
@@ -174,187 +163,162 @@
         <div class="col-sm-8 col-md-9 detail-content">
             <div class="line-height-2">
 
-                <div id="column-no-right-user" style="float: left;padding:2px; border: 1px solid #ddd;">
+                <div id="column-no-right-user" class="card">
 
                     <div class="moduletitle">
-                        <h3 class="text-uppercase">
+                        <h4 class="text-uppercase">
                             Quản lý tin rao bán, cho thuê
-                        </h3>
+                        </h4>
                     </div>
-                    <table style="width: 100%; margin-top: 20px;" class="t-4-c">
-                        <tbody>
-                        <tr>
-                            <td class="colorblue">Từ ngày</td>
-                            <td class="colorblue">Đến ngày</td>
-                            <td class="colorblue">Loại tin</td>
-                            <td class="colorblue">Trạng thái</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="advance-control">
-                                    <input name="" type="text"
-                                           value="12/04/2019" id="txtFromDate" class="hasDatepicker">
-                                    <span class="select-text">
+                    <div class="card-body">
+
+
+                        <table style="width: 100%; margin-top: 20px;" class="t-4-c">
+                            <tbody>
+                            <tr>
+                                <td class="colorblue">Từ ngày</td>
+                                <td class="colorblue">Đến ngày</td>
+                                <td class="colorblue">Loại tin</td>
+                                <td class="colorblue">Trạng thái</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="advance-control">
+                                        <input name="" type="text"
+                                               value="12/04/2019" id="txtFromDate" class="hasDatepicker">
+                                        <span class="select-text">
 <span class="select-text-content">12/04/2019</span>
 </span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="advance-control">
-                                    <input name="" type="text"
-                                           value="13/10/2019" id="txtToDate" class="hasDatepicker">
-                                    <span class="select-text">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="advance-control">
+                                        <input name="" type="text"
+                                               value="13/10/2019" id="txtToDate" class="hasDatepicker">
+                                        <span class="select-text">
 <span class="select-text-content">13/10/2019</span>
 </span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="advance-control">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="advance-control">
 <span class="select-text">
 <span class="select-text-content">Chọn loại tin</span>
 </span>
-                                    <select name="" id="ddlVipType">
-                                        <option selected="selected" value="7">Chọn loại tin</option>
-                                        <option value="0">Tin VIP đặc biệt</option>
-                                        <option value="1">Tin VIP 1</option>
-                                        <option value="2">Tin VIP 2</option>
-                                        <option value="3">Tin VIP 3</option>
-                                        <option value="4">Tin Ưu Đãi</option>
-                                        <option value="5">Tin Thường</option>
+                                        <select name="" id="ddlVipType">
+                                            <option selected="selected" value="7">Chọn loại tin</option>
+                                            <option value="0">Tin VIP đặc biệt</option>
+                                            <option value="1">Tin VIP 1</option>
+                                            <option value="2">Tin VIP 2</option>
+                                            <option value="3">Tin VIP 3</option>
+                                            <option value="4">Tin Ưu Đãi</option>
+                                            <option value="5">Tin Thường</option>
 
-                                    </select>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="advance-control">
-                                    <select name="" id="ddlStatus">
-                                        <option selected="selected" value="0">Tất cả</option>
-                                        <option value="1">Còn hạn</option>
-                                        <option value="2">Hết hạn</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="advance-control">
+                                        <select name="" id="ddlStatus">
+                                            <option selected="selected" value="0">Tất cả</option>
+                                            <option value="1">Còn hạn</option>
+                                            <option value="2">Hết hạn</option>
 
-                                    </select>
-                                    <span class="select-text">
+                                        </select>
+                                        <span class="select-text">
 <span class="select-text-content">Tất cả</span>
 </span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="4" class="colorblue">Mã tin</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input name="" type="text"
-                                       class="keycode">
-                            </td>
-                            <td colspan="3">
-                                <input type="submit" name="" value="Tìm kiếm"
-                                       onclick="" class="timkiem">
-                                <span class=""><strong>(Lưu ý khi nhập mã tin thì các bộ lọc khác không có tác dụng)</strong></span>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <div class="clear10"></div>
-                    <div style="display: none;">
-                        <input type="text" style="width: 120px !important; height: 22px;" placeholder="Nhập Số Tiền"
-                               id="txtMoney" onkeydown="return numbersonly(this, window.event, false);">
-                        <input type="button" onclick=""
-                               value="Khuyến mãi tin rao"
-                               style="background-color: #055699; border: none; width: auto; height: 27px; color: #fff !important; font-weight: bold; font-size: 12px !important;">
-                        <input type="button" onclick=""
-                               value="Khuyến mãi tháng 8"
-                               style="background-color: #055699; border: none; width: auto; height: 27px; color: #fff !important; font-weight: bold; font-size: 12px !important;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="colorblue">Mã tin</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="" type="text"
+                                           class="keycode">
+                                </td>
+                                <td colspan="3">
+                                    <input type="submit" name="" value="Tìm kiếm" onclick="" class="timkiem">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
 
-                        <input type="button" onclick=""
-                               value="Banner loại 1"
-                               style="background-color: #055699; border: none; width: auto; height: 27px; color: #fff !important; font-weight: bold; font-size: 12px !important;">
+                        <table class="tbl" border="0" cellpadding="3px" cellspacing="0" width="100%">
+                            <tbody>
+                            <tr class="tit-tbl bg_tit">
+                                <th class="text-center" style="width: 40px">
+                                    STT
+                                </th>
+                                <th class="text-center" style="width: 70px">
+                                    Mã tin
+                                </th>
+                                <th class="text-center" style="width: 330px">
+                                    Tiêu đề
+                                </th>
+                                <th class="text-center" style="width: 30px">
+                                    Xem
+                                </th>
+                                <th class="text-center" style="width: 90px">
+                                    Ngày bắt đầu
+                                </th>
+                                <th class="text-center" style="width: 90px">
+                                    Ngày hết hạn
+                                </th>
+                                <th class="text-center" style="width: 40px">
+                                    Ghi chú
+                                </th>
+                            </tr>
 
-                        (VNĐ)
-                        <br>
-
-                        <br>
-                    </div>
-                    <div class="clear10"></div>
-
-                    <table class="tbl" border="0" cellpadding="3px" cellspacing="0" width="100%">
-                        <tbody>
-                        <tr class="tit-tbl bg_tit">
-                            <th style="width: 40px">
-                                STT
-                            </th>
-                            <th style="width: 70px">
-                                Mã tin
-                            </th>
-                            <th style="width: 330px">
-                                Tiêu đề
-                            </th>
-                            <th style="width: 30px">
-                                Xem
-                            </th>
-                            <th style="width: 90px">
-                                Ngày bắt đầu
-                            </th>
-                            <th style="width: 90px">
-                                Ngày hết hạn
-                            </th>
-                            <th style="width: 40px">
-                                Ghi chú
-                            </th>
-                        </tr>
-
-                        <tr class="prod-vip5">
-                            <td>1</td>
-                            <td class="text-center">
-                                <div style="padding-top:25px;">22892268</div>
-                                Không duyệt<br>09-10-2019
-                            </td>
-                            <td>
+                            <tr class="prod-vip5">
+                                <td>1</td>
+                                <td class="text-center">
+                                    <div style="padding-top:25px;">22892268</div>
+                                    <br>09-10-2019
+                                </td>
+                                <td>
                                 <span class="prod-title" id="view_22892268"><img
                                             src="<?php echo public_url('images/nophoto.jpg'); ?>"
                                             alt="Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2">Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2</span>
-                                <div style="clear: both; text-align: right; padding-top: 5px;">
-                                    <a href="javascript:void(0)"><i class="far fa-edit"></i> Sửa</a>&nbsp;
-                                    <a class="btn-xoa" href="javascript:void(0)">Xóa</a>
-                                </div>
-                            </td>
-                            <td class="text-center">
-                                <p>
-                                    <a id="pageviews_22892268"
-                                       href="javascript:void(0)" class="grey"
-                                       style="text-decoration: underline">_</a>
-                                </p>
 
-                                <p>
-                                    <br>
-                                </p>
+                                </td>
+                                <td class="text-center">
+                                    <p>
+                                        <a id="pageviews_22892268"
+                                           href="javascript:void(0)" class="grey"
+                                           style="text-decoration: underline">_</a>
+                                    </p>
 
-                            </td>
-                            <td class="text-center">
-                                <p>
-                                    08-10-2019
-                                </p>
-                            </td>
-                            <td class="text-center">
-                                <p>
-                                    08-11-2019
-                                </p>
-                            </td>
-                            <td class="text-center">
-                                <p><a href="javascript:void(0)" onclick="" class=""
-                                      style="text-decoration: underline;">1</a>
+                                    <p>
+                                        <br>
+                                    </p>
 
-                                </p>
-                            </td>
-                        </tr>
+                                </td>
+                                <td class="text-center">
+                                    <p>
+                                        08-10-2019
+                                    </p>
+                                </td>
+                                <td class="text-center">
+                                    <p>
+                                        08-11-2019
+                                    </p>
+                                </td>
+                                <td class="text-center">
+                                    <p><a href="javascript:void(0)" onclick="" class=""
+                                          style="text-decoration: underline;">1</a>
 
-                        </tbody>
-                    </table>
+                                    </p>
+                                </td>
+                            </tr>
 
-                    <div class="clear10"></div>
+                            </tbody>
+                        </table>
 
-                    <div class="clear">
                     </div>
+
                 </div>
 
             </div>
@@ -364,9 +328,44 @@
 
 <style>
     #column-left-user {
-        float: left;
-        border-left: 1px solid #ddd;
-        border-top: 1px solid #ddd;
-        padding: 6px;
+        /*float: left;*/
+        /*border-left: 1px solid #ddd;*/
+        /*border-top: 1px solid #ddd;*/
+        /*padding: 6px;*/
+    }
+
+    .white-background-new .box-arround .title {
+        color: #666;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: #e8e8e8;
+    }
+
+    .white-background-new .box-header {
+        background: #055699;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        height: 30px;
+        line-height: 30px;
+        width: 100%;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .moduletitle, .moduletitle a {
+        background: #055699;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        height: 30px;
+        line-height: 30px;
+        width: 100%;
+        color: white;
+        font-weight: bold;
+        margin-top: 2px;
+        padding-left: 10px;
+        text-transform: uppercase;
+        width: 740px;
     }
 </style>
