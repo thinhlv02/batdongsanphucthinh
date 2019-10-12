@@ -93,7 +93,7 @@
                                     <div class="title">Quản lý tài chính</div>
                                     <ul class="item">
                                         <li class="row-content">
-                                            <a href="/trang-ca-nhan/uspg-balanceinfo">Thông tin số dư</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
+                                            <a href="/trang-ca-nhan/uspg-balanceinfo">Thông tin số dư</a>&nbsp;<img src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
                                         </li>
                                         <li class="row-content">
                                             <a href="/trang-ca-nhan/uspg-transaction" title="Lịch sử giao dịch">
@@ -106,7 +106,7 @@
 
                                         <li id="MainContent__userPage_menuEnterpriseAccount" class="row-content">
                                             <a href="/trang-ca-nhan/uspg-enterpriseaccount" title="Quản lý tài khoản Doanh nghiệp">
-                                                Quản lý tài khoản Doanh nghiệp</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
+                                                Quản lý tài khoản Doanh nghiệp</a>&nbsp;<img src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
                                         </li>
                                         <li id="MainContent__userPage_menuDeposit" class="row-content">
                                             <a href="/trang-ca-nhan/uspg-paymentdeposit/method-nvpdomesticcard" title="Nạp tiền vào tài khoản">
@@ -120,7 +120,7 @@
 
                                     <li id="MainContent__userPage_menuNotify" class="row-content">
                                         <a href="/trang-ca-nhan/uspg-notify" title="Thông báo">
-                                            Thông báo</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
+                                            Thông báo</a>&nbsp;<img src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
                                     </li>
                                     <li id="MainContent__userPage_menuEmailRegist" class="row-content">
                                         <a href="/trang-ca-nhan/uspg-emailLetter" title="Quản lý đăng kí nhận email">
@@ -133,7 +133,7 @@
 
 
                                     <li id="MainContent__userPage_menuUserPoint" class="row-content">
-                                        <a href="/trang-ca-nhan/uspg-userpoint" title="Quản lý điểm tích lũy">Quản lý điểm tích lũy</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
+                                        <a href="/trang-ca-nhan/uspg-userpoint" title="Quản lý điểm tích lũy">Quản lý điểm tích lũy</a>&nbsp;<img src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
                                     </li>
 
                                     <li id="MainContent__userPage_menuUserDeleteAccount" class="row-content">
