@@ -13,7 +13,7 @@
                             </div>
                             <div class="box-arround">
                                 <div class="useravatar">
-                                    <img id="MainContent__userPage_imgAvatar" class="avatar" onerror="this.src='http://file4.batdongsan.com.vn/images/default-user-avatar-blue.jpg'" src="http://file4.batdongsan.com.vn/images/default-user-avatar-blue.jpg">
+                                    <img id="MainContent__userPage_imgAvatar" class="avatar" onerror="this.src='https://www.w3schools.com/w3images/team1.jpg'" src="https://www.w3schools.com/w3images/team1.jpg">
                                     <span id="MainContent__userPage_lblUserName" class="userfullname">Lưu Thị Bình</span>
 
                                     <div id="MainContent__userPage_pnlUserPoint" class="userpoint_menu">
