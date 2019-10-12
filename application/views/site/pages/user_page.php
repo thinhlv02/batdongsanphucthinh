@@ -289,6 +289,7 @@
                     <div class="clear10"></div>
 
                     <table class="tbl" border="0" cellpadding="3px" cellspacing="0" width="100%">
+
                         <tbody>
 
                         <tr class="tit-tbl bg_tit">
@@ -517,7 +518,10 @@
                         </tr>
 
                         </tbody>
+
                     </table>
+
+
 
                     <div class="pager">
                         <span id="MainContent__userPage_ctl00_DataPager"></span>
