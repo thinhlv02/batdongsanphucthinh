@@ -2,12 +2,13 @@
     <div class="row mt-5">
         <div class="col-sm-4 col-md-3">
             <div class="left-menu">
+                <div class="left-title">Thông tin tài khoản</div>
 
                 <div id="column-left-user" class="card" style="">
                     <div id="usercp" class="card-body">
                         <div class="white-background-new">
                             <div class="box-header text-center">
-                                <h4>TRANG CÁ NHÂN</h4>
+                                <h5>TRANG CÁ NHÂN</h5>
                             </div>
                             <div class="box-arround">
                                 <div class="useravatar text-center">
@@ -164,153 +165,157 @@
             <div class="line-height-2">
 
                 <div id="column-no-right-user" class="card">
+                    <div class="left-title">Quản lý tin rao bán, cho thuê</div>
 
-                    <div class="moduletitle">
-                        <h4 class="text-uppercase">
-                            Quản lý tin rao bán, cho thuê
-                        </h4>
-                    </div>
                     <div class="card-body">
 
+                        <table id="datatable-news"
+                               class="table table-striped table-bordered bulk_action dataTable no-footer" role="grid"
+                               aria-describedby="datatable-news_info">
+                            <!--            <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">-->
+                            <thead>
+                            <tr role="row">
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 42px;">Mã tin</th>
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79px;">SĐT</th>
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79px;">Ảnh minh họa
+                                </th>
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 86px;">Tiêu đề</th>
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 258px;">Giá / Diện
+                                    tích
+                                </th>
 
-                        <table style="width: 100%; margin-top: 20px;" class="t-4-c">
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 30px;">Lượt xem</th>
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 65px;">Ngày Tạo</th>
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 65px;">Quản lý đăng
+                                    bài
+                                </th>
+                            </tr>
+                            </thead>
                             <tbody>
-                            <tr>
-                                <td class="colorblue">Từ ngày</td>
-                                <td class="colorblue">Đến ngày</td>
-                                <td class="colorblue">Loại tin</td>
-                                <td class="colorblue">Trạng thái</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="advance-control">
-                                        <input name="" type="text"
-                                               value="12/04/2019" id="txtFromDate" class="hasDatepicker">
-                                        <span class="select-text">
-<span class="select-text-content">12/04/2019</span>
-</span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="advance-control">
-                                        <input name="" type="text"
-                                               value="13/10/2019" id="txtToDate" class="hasDatepicker">
-                                        <span class="select-text">
-<span class="select-text-content">13/10/2019</span>
-</span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="advance-control">
-<span class="select-text">
-<span class="select-text-content">Chọn loại tin</span>
-</span>
-                                        <select name="" id="ddlVipType">
-                                            <option selected="selected" value="7">Chọn loại tin</option>
-                                            <option value="0">Tin VIP đặc biệt</option>
-                                            <option value="1">Tin VIP 1</option>
-                                            <option value="2">Tin VIP 2</option>
-                                            <option value="3">Tin VIP 3</option>
-                                            <option value="4">Tin Ưu Đãi</option>
-                                            <option value="5">Tin Thường</option>
 
-                                        </select>
-                                    </div>
+                            <tr title="" class="odd" role="row">
+                                <td class="text-center">
+                                    <button class="btn btn-default btn-xs">122</button>
                                 </td>
-                                <td>
-                                    <div class="advance-control">
-                                        <select name="" id="ddlStatus">
-                                            <option selected="selected" value="0">Tất cả</option>
-                                            <option value="1">Còn hạn</option>
-                                            <option value="2">Hết hạn</option>
 
-                                        </select>
-                                        <span class="select-text">
-<span class="select-text-content">Tất cả</span>
-</span>
-                                    </div>
+                                <td> 0988559509</td>
+                                <td><img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg"
+                                         style="max-width: 80px"></td>
+                                <td>
+                                    <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122"
+                                       target="_blank">
+                                        CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a></td>
+
+                                <td>
+                                    <p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
+                                    <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p>
+
+                                </td>
+
+                                <td>237</td>
+                                <td>08/10/2019</td>
+                                <td class="text-center">
+                                    <a href="#"><i class="fas fa-search fa-lg"></i></a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td colspan="4" class="colorblue">Mã tin</td>
-                            </tr>
-                            <tr>
+                            <tr title="" class="odd" role="row">
+                                <td class="text-center">
+                                    <button class="btn btn-default btn-xs">122</button>
+                                </td>
+
+                                <td> 0988559509</td>
+                                <td><img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg"
+                                         style="max-width: 80px"></td>
                                 <td>
-                                    <input name="" type="text"
-                                           class="keycode">
-                                </td>
-                                <td colspan="3">
-                                    <input type="submit" name="" value="Tìm kiếm" onclick="" class="timkiem">
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+                                    <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122"
+                                       target="_blank">
+                                        CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a></td>
 
-                        <table class="tbl" border="0" cellpadding="3px" cellspacing="0" width="100%">
-                            <tbody>
-                            <tr class="tit-tbl bg_tit">
-                                <th class="text-center" style="width: 40px">
-                                    STT
-                                </th>
-                                <th class="text-center" style="width: 70px">
-                                    Mã tin
-                                </th>
-                                <th class="text-center" style="width: 330px">
-                                    Tiêu đề
-                                </th>
-                                <th class="text-center" style="width: 30px">
-                                    Xem
-                                </th>
-                                <th class="text-center" style="width: 90px">
-                                    Ngày bắt đầu
-                                </th>
-                                <th class="text-center" style="width: 90px">
-                                    Ngày hết hạn
-                                </th>
-                                <th class="text-center" style="width: 40px">
-                                    Ghi chú
-                                </th>
-                            </tr>
-
-                            <tr class="prod-vip5">
-                                <td>1</td>
-                                <td class="text-center">
-                                    <div style="padding-top:25px;">22892268</div>
-                                    <br>09-10-2019
-                                </td>
                                 <td>
-                                <span class="prod-title" id="view_22892268"><img
-                                            src="<?php echo public_url('images/nophoto.jpg'); ?>"
-                                            alt="Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2">Bán khách sạn 6 tầng số12  Thủ Dầu Một  thị trấn Sa Pa  Sa Pa  Lào Cai Diện tích: 225 m2</span>
+                                    <p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
+                                    <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p>
 
                                 </td>
-                                <td class="text-center">
-                                    <p>
-                                        <a id="pageviews_22892268"
-                                           href="javascript:void(0)" class="grey"
-                                           style="text-decoration: underline">_</a>
-                                    </p>
 
-                                    <p>
-                                        <br>
-                                    </p>
+                                <td>237</td>
+                                <td>08/10/2019</td>
+                                <td class="text-center">
+                                    <a href="#"><i class="fas fa-search fa-lg"></i></a>
+                                </td>
+                            </tr>
+                            <tr title="" class="odd" role="row">
+                                <td class="text-center">
+                                    <button class="btn btn-default btn-xs">122</button>
+                                </td>
+
+                                <td> 0988559509</td>
+                                <td><img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg"
+                                         style="max-width: 80px"></td>
+                                <td>
+                                    <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122"
+                                       target="_blank">
+                                        CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a></td>
+
+                                <td>
+                                    <p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
+                                    <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p>
 
                                 </td>
-                                <td class="text-center">
-                                    <p>
-                                        08-10-2019
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p>
-                                        08-11-2019
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p><a href="javascript:void(0)" onclick="" class=""
-                                          style="text-decoration: underline;">1</a>
 
-                                    </p>
+                                <td>237</td>
+                                <td>08/10/2019</td>
+                                <td class="text-center">
+                                    <a href="#"><i class="fas fa-search fa-lg"></i></a>
+                                </td>
+                            </tr>
+                            <tr title="" class="odd" role="row">
+                                <td class="text-center">
+                                    <button class="btn btn-default btn-xs">122</button>
+                                </td>
+
+                                <td> 0988559509</td>
+                                <td><img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg"
+                                         style="max-width: 80px"></td>
+                                <td>
+                                    <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122"
+                                       target="_blank">
+                                        CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a></td>
+
+                                <td>
+                                    <p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
+                                    <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p>
+
+                                </td>
+
+                                <td>237</td>
+                                <td>08/10/2019</td>
+                                <td class="text-center">
+                                    <a href="#"><i class="fas fa-search fa-lg"></i></a>
+                                </td>
+                            </tr>
+                            <tr title="" class="odd" role="row">
+                                <td class="text-center">
+                                    <button class="btn btn-default btn-xs">122</button>
+                                </td>
+
+                                <td> 0988559509</td>
+                                <td><img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg"
+                                         style="max-width: 80px"></td>
+                                <td>
+                                    <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122"
+                                       target="_blank">
+                                        CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a></td>
+
+                                <td>
+                                    <p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
+                                    <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p>
+
+                                </td>
+
+                                <td>237</td>
+                                <td>08/10/2019</td>
+                                <td class="text-center">
+                                    <a href="#"><i class="fas fa-search fa-lg"></i></a>
                                 </td>
                             </tr>
 
@@ -325,47 +330,3 @@
         </div>
     </div>
 </div>
-
-<style>
-    #column-left-user {
-        /*float: left;*/
-        /*border-left: 1px solid #ddd;*/
-        /*border-top: 1px solid #ddd;*/
-        /*padding: 6px;*/
-    }
-
-    .white-background-new .box-arround .title {
-        color: #666;
-        font-size: 12px;
-        font-weight: bold;
-        padding: 10px;
-        background-color: #e8e8e8;
-    }
-
-    .white-background-new .box-header {
-        background: #055699;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        height: 30px;
-        line-height: 30px;
-        width: 100%;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .moduletitle, .moduletitle a {
-        background: #055699;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        height: 30px;
-        line-height: 30px;
-        width: 100%;
-        color: white;
-        font-weight: bold;
-        margin-top: 2px;
-        padding-left: 10px;
-        text-transform: uppercase;
-        width: 740px;
-    }
-</style>
