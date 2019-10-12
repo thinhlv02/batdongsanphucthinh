@@ -8,13 +8,12 @@
                 <div id="column-left-user" style="float: left">
                     <div id="usercp">
                         <div class="white-background-new">
-                            <div class="box-header">
-                                <h3>
-                                    TRANG CÁ NHÂN</h3>
+                            <div class="box-header text-center bg-success">
+                                <h3>TRANG CÁ NHÂN</h3>
                             </div>
                             <div class="box-arround">
                                 <div class="useravatar">
-                                    <img id="MainContent__userPage_imgAvatar" class="avatar" onerror="this.src='http://file4.batdongsan.com.vn/images/default-user-avatar-blue.jpg'" src="http://file4.batdongsan.com.vn/images/default-user-avatar-blue.jpg">
+                                    <img id="MainContent__userPage_imgAvatar" class="avatar" src="https://www.w3schools.com/w3images/team1.jpg">
                                     <span id="MainContent__userPage_lblUserName" class="userfullname">Lưu Thị Bình</span>
 
                                     <div id="MainContent__userPage_pnlUserPoint" class="userpoint_menu">
@@ -201,7 +200,7 @@
 
                     </div>
 
-                    <div class="moduletitle">
+                    <div class="moduletitle bg-success">
                         Quản lý tin rao bán, cho thuê
                     </div>
                     <table style="width: 100%; margin-top: 20px;" class="t-4-c">
@@ -1661,3 +1660,15 @@
         </div>
     </div>
 </div>
+
+<!--<style>-->
+<!--    .useravatar .userfullname {-->
+<!--        color: #069;-->
+<!--        font-size: 16px;-->
+<!--        text-transform: uppercase;-->
+<!--        text-align: center;-->
+<!--        font-family: Calibri;-->
+<!--        display: block;-->
+<!--        font-weight: bold;-->
+<!--    }-->
+<!--</style>-->
