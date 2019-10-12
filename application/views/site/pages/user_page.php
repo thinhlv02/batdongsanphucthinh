@@ -325,7 +325,7 @@
                                     &nbsp;
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_0" href="/trang-ca-nhan/uspg-updateproduct/itemId-22892268">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_0" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22892268">Xóa</a>
@@ -389,10 +389,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_1" class="grey" href="/ban-nha-rieng-duong-thong-nhat-102/cap-4-tai-t-moi-phuong-8-thanh-pho-vung-tau-pr22794027" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_1" href="/trang-ca-nhan/uspg-updateproduct/itemId-22794027">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_1" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22794027">Xóa</a>
@@ -458,10 +458,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_2" class="grey" href="/ban-dat-nen-du-an-ha-long-qni/hung-tng-phuong-hung-tng-tnh-pho-tinh-quang-ninh-pr22733443" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_2" href="/trang-ca-nhan/uspg-updateproduct/itemId-22733443">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_2" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22733443">Xóa</a>
@@ -527,10 +527,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_3" class="grey" href="/ban-dat-duong-vu-the-lang-485/phuong-thanh-mieu-thanh-pho-viet-tri-tinh-phu-tho-pr22699576" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_3" href="/trang-ca-nhan/uspg-updateproduct/itemId-22699576">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_3" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22699576">Xóa</a>
@@ -596,10 +596,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_4" class="grey" href="/ban-nha-rieng-duong-nguyen-thi-nho-63/can-chinh-chu-quan-11-nho-pr22272297" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_4" href="javascript:confirmReNew('/trang-ca-nhan/uspg-userrenewproduct/itemId-22272297')">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_4" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22272297">Xóa</a>
@@ -621,7 +621,7 @@
 
                                     <br>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkRenew_4" class="renew" href="#" renew="/trang-ca-nhan/uspg-userrenewproduct/itemId-22272297">
-                                        <img src="https://file4.batdongsan.com.vn/images/renew.png" alt="Gửi lại tin này" title="Gửi lại tin này">
+                                        <i class="fas fa-sync-alt"></i>
                                     </a>
                                 </p>
 
@@ -665,10 +665,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_5" class="grey" href="/ban-dat-trang-bom-dna/chinh-chu-can-gap-2-manh-co-dien-tich-rat-dep-o-dong-nai-pr22194651" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_5" href="javascript:confirmReNew('/trang-ca-nhan/uspg-userrenewproduct/itemId-22194651')">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_5" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22194651">Xóa</a>
@@ -690,7 +690,7 @@
 
                                     <br>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkRenew_5" class="renew" href="#" renew="/trang-ca-nhan/uspg-userrenewproduct/itemId-22194651">
-                                        <img src="https://file4.batdongsan.com.vn/images/renew.png" alt="Gửi lại tin này" title="Gửi lại tin này">
+                                        <i class="fas fa-sync-alt"></i>
                                     </a>
                                 </p>
 
@@ -734,10 +734,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_6" class="grey" href="/cho-thue-kho-nha-xuong-dat-duong-my-phuoc-tan-van-161/chinh-chu-can-sang-de-kinh-doanh-lien-he-0796432211-pr22154824" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_6" href="javascript:confirmReNew('/trang-ca-nhan/uspg-userrenewproduct/itemId-22154824')">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_6" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22154824">Xóa</a>
@@ -759,7 +759,7 @@
 
                                     <br>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkRenew_6" class="renew" href="#" renew="/trang-ca-nhan/uspg-userrenewproduct/itemId-22154824">
-                                        <img src="https://file4.batdongsan.com.vn/images/renew.png" alt="Gửi lại tin này" title="Gửi lại tin này">
+                                        <i class="fas fa-sync-alt"></i>
                                     </a>
                                 </p>
 
@@ -804,7 +804,7 @@
                                     &nbsp;
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_7" href="/trang-ca-nhan/uspg-updateproduct/itemId-22062610">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_7" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22062610">Xóa</a>
@@ -869,7 +869,7 @@
                                     &nbsp;
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_8" href="/trang-ca-nhan/uspg-updateproduct/itemId-21630990">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_8" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-21630990">Xóa</a>
@@ -934,7 +934,7 @@
                                     &nbsp;
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_9" href="/trang-ca-nhan/uspg-updateproduct/itemId-21613708">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_9" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-21613708">Xóa</a>
@@ -999,7 +999,7 @@
                                     &nbsp;
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_10" href="/trang-ca-nhan/uspg-updateproduct/itemId-21597841">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_10" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-21597841">Xóa</a>
@@ -1063,10 +1063,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_11" class="grey" href="/ban-nha-rieng-pho-phuong-mai-3/33-m2-5-tang-6-m-3-3-ty-pr20809908" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_11" href="javascript:confirmReNew('/trang-ca-nhan/uspg-userrenewproduct/itemId-20809908')">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_11" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20809908">Xóa</a>
@@ -1088,7 +1088,7 @@
 
                                     <br>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkRenew_11" class="renew" href="#" renew="/trang-ca-nhan/uspg-userrenewproduct/itemId-20809908">
-                                        <img src="https://file4.batdongsan.com.vn/images/renew.png" alt="Gửi lại tin này" title="Gửi lại tin này">
+                                        <i class="fas fa-sync-alt"></i>
                                     </a>
                                 </p>
 
@@ -1132,10 +1132,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_12" class="grey" href="/ban-nha-rieng-pho-kim-hoa-3/phan-khuc-hiem-gan-nga-tu-xa-dan-dai-co-viet-27m-4m-mat-tien-gia-2-3-ty-co-thuong-luong-pr20809757" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_12" href="javascript:confirmReNew('/trang-ca-nhan/uspg-userrenewproduct/itemId-20809757')">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_12" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20809757">Xóa</a>
@@ -1157,7 +1157,7 @@
 
                                     <br>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkRenew_12" class="renew" href="#" renew="/trang-ca-nhan/uspg-userrenewproduct/itemId-20809757">
-                                        <img src="https://file4.batdongsan.com.vn/images/renew.png" alt="Gửi lại tin này" title="Gửi lại tin này">
+                                        <i class="fas fa-sync-alt"></i>
                                     </a>
                                 </p>
 
@@ -1201,10 +1201,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_13" class="grey" href="/ban-nha-rieng-duong-pham-ngoc-thach-3/81m-4-tang-mat-tien-6m-5-6-ty-pr20594018" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_13" href="javascript:confirmReNew('/trang-ca-nhan/uspg-userrenewproduct/itemId-20594018')">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_13" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20594018">Xóa</a>
@@ -1226,7 +1226,7 @@
 
                                     <br>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkRenew_13" class="renew" href="#" renew="/trang-ca-nhan/uspg-userrenewproduct/itemId-20594018">
-                                        <img src="https://file4.batdongsan.com.vn/images/renew.png" alt="Gửi lại tin này" title="Gửi lại tin này">
+                                        <i class="fas fa-sync-alt"></i>
                                     </a>
                                 </p>
 
@@ -1270,10 +1270,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_14" class="grey" href="/ban-nha-rieng-pho-bach-mai-4/o-to-do-cua-32-m-4-m-mat-tien-sieu-re-3-6-ty-pr20507588" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_14" href="javascript:confirmReNew('/trang-ca-nhan/uspg-userrenewproduct/itemId-20507588')">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_14" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20507588">Xóa</a>
@@ -1295,7 +1295,7 @@
 
                                     <br>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkRenew_14" class="renew" href="#" renew="/trang-ca-nhan/uspg-userrenewproduct/itemId-20507588">
-                                        <img src="https://file4.batdongsan.com.vn/images/renew.png" alt="Gửi lại tin này" title="Gửi lại tin này">
+                                        <i class="fas fa-sync-alt"></i>
                                     </a>
                                 </p>
 
@@ -1340,7 +1340,7 @@
                                     &nbsp;
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_15" href="/trang-ca-nhan/uspg-updateproduct/itemId-20224130">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_15" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20224130">Xóa</a>
@@ -1404,10 +1404,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_16" class="grey" href="/ban-nha-rieng-hai-ba-trung/phan-lo-o-to-do-cua-32m-3-tang-dep-3-3-ty-pr20541572" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_16" href="javascript:confirmReNew('/trang-ca-nhan/uspg-userrenewproduct/itemId-20541572')">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_16" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20541572">Xóa</a>
@@ -1429,7 +1429,7 @@
 
                                     <br>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkRenew_16" class="renew" href="#" renew="/trang-ca-nhan/uspg-userrenewproduct/itemId-20541572">
-                                        <img src="https://file4.batdongsan.com.vn/images/renew.png" alt="Gửi lại tin này" title="Gửi lại tin này">
+                                        <i class="fas fa-sync-alt"></i>
                                     </a>
                                 </p>
 
@@ -1473,10 +1473,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_17" class="grey" href="/ban-nha-rieng-pho-thai-thinh-3/gap-nhatay-son-ngo-o-to-kinh-doanh-45m2-4-2-ty-pr20230597" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_17" href="javascript:confirmReNew('/trang-ca-nhan/uspg-userrenewproduct/itemId-20230597')">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_17" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20230597">Xóa</a>
@@ -1498,7 +1498,7 @@
 
                                     <br>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkRenew_17" class="renew" href="#" renew="/trang-ca-nhan/uspg-userrenewproduct/itemId-20230597">
-                                        <img src="https://file4.batdongsan.com.vn/images/renew.png" alt="Gửi lại tin này" title="Gửi lại tin này">
+                                        <i class="fas fa-sync-alt"></i>
                                     </a>
                                 </p>
 
@@ -1542,10 +1542,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_18" class="grey" href="/ban-nha-mat-pho-duong-nguyen-khuyen-3/sieu-re-2-6-ty-cho-thue-12tr-tang-1-25m-2-tang-khuyen-pr20346147" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_18" href="javascript:confirmReNew('/trang-ca-nhan/uspg-userrenewproduct/itemId-20346147')">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_18" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20346147">Xóa</a>
@@ -1567,7 +1567,7 @@
 
                                     <br>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkRenew_18" class="renew" href="#" renew="/trang-ca-nhan/uspg-userrenewproduct/itemId-20346147">
-                                        <img src="https://file4.batdongsan.com.vn/images/renew.png" alt="Gửi lại tin này" title="Gửi lại tin này">
+                                        <i class="fas fa-sync-alt"></i>
                                     </a>
                                 </p>
 
@@ -1611,10 +1611,10 @@
 
                                     &nbsp;
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkView_19" class="grey" href="/ban-nha-rieng-pho-chua-boc-3/mat-ngo-dang-cho-sinh-vien-thue-17tr-58m2-4-tang-5-m-5-9-ty-pr20325081" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
+                                        <i class="far fa-file-alt"></i>
                                         Xem</a>
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_19" href="javascript:confirmReNew('/trang-ca-nhan/uspg-userrenewproduct/itemId-20325081')">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
+                                        <i class="far fa-edit"></i> Sửa</a>&nbsp;
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_19" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20325081">Xóa</a>
@@ -1636,7 +1636,7 @@
 
                                     <br>
                                     <a id="MainContent__userPage_ctl00_rpItems_linkRenew_19" class="renew" href="#" renew="/trang-ca-nhan/uspg-userrenewproduct/itemId-20325081">
-                                        <img src="https://file4.batdongsan.com.vn/images/renew.png" alt="Gửi lại tin này" title="Gửi lại tin này">
+                                        <i class="fas fa-sync-alt"></i>
                                     </a>
                                 </p>
 
