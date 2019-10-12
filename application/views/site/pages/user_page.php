@@ -1,5 +1,4 @@
 <div class="container">
-    <div class="title-section"><h2><?php echo $user_page_lang['title']; ?></h2></div>
     <div class="row mt-5">
         <div class="col-sm-4 col-md-3">
             <div class="left-menu">
