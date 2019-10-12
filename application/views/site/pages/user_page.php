@@ -8,8 +8,7 @@
                     <div id="usercp">
                         <div class="white-background-new">
                             <div class="box-header">
-                                <h3>
-                                    TRANG CÁ NHÂN</h3>
+                                <h3>TRANG CÁ NHÂN</h3>
                             </div>
                             <div class="box-arround">
                                 <div class="useravatar">
