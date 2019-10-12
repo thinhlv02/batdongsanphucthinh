@@ -28,7 +28,11 @@
                                             <a class="fa fa-info-circle" href="#">
                                                 <div>
                                                     <ul>
-                                                        <li><span>Điểm đổi thưởng <b>45</b> điểm</span></li><li><span>Đã tích lũy 445.566 VNĐ. Cần thêm 11.554.434 VNĐ để lên hạng Đồng</span></li><li><span>Kỳ xét hạng tiếp theo vào 06/03/2020</span></li>
+                                                        <li><span>Điểm đổi thưởng <b>45</b> điểm</span></li>
+                                                        <li>
+                                                            <span>Đã tích lũy 445.566 VNĐ. Cần thêm 11.554.434 VNĐ để lên hạng Đồng</span>
+                                                        </li>
+                                                        <li><span>Kỳ xét hạng tiếp theo vào 06/03/2020</span></li>
 
                                                     </ul>
                                                 </div>
@@ -172,17 +176,21 @@
                             width: 750px;
                             border-collapse: collapse;
                         }
+
                         .tblKM tr:hover {
                             background-color: #cdcdcd;
                         }
+
                         .tblKM td {
                             padding: 3px;
                         }
+
                         .tblKM th {
                             padding: 3px;
                             font-size: 14px;
                             font-weight: bold;
                         }
+
                         .tblKM tr td:last-child {
                             text-align: right;
                         }
@@ -280,7 +288,8 @@
                     <div class="clear10"></div>
 
                     <table class="tbl" border="0" cellpadding="3px" cellspacing="0" width="100%">
-                        <tbody><tr class="tit-tbl bg_tit">
+                        <tbody>
+                        <tr class="tit-tbl bg_tit">
                             <th style="width: 40px">
                                 STT
                             </th>
@@ -329,8 +338,6 @@
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_0" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22892268">Xóa</a>
-
-
 
 
                                     <div style="display: none;">
@@ -605,8 +612,6 @@
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_4" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22272297">Xóa</a>
 
 
-
-
                                     <div style="display: none;">
                                         <input type="submit" name="ctl00$MainContent$_userPage$ctl00$rpItems$ctl05$btnDone" value="Đã bán" id="MainContent__userPage_ctl00_rpItems_btnDone_4" title="Click để chuyển tin sang trạng thái đã bán hoặc đã cho thuê" class="product-done-grey">
                                     </div>
@@ -672,8 +677,6 @@
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_5" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22194651">Xóa</a>
-
-
 
 
                                     <div style="display: none;">
@@ -743,8 +746,6 @@
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_6" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22154824">Xóa</a>
 
 
-
-
                                     <div style="display: none;">
                                         <input type="submit" name="ctl00$MainContent$_userPage$ctl00$rpItems$ctl07$btnDone" value="Đã cho thuê" id="MainContent__userPage_ctl00_rpItems_btnDone_6" title="Click để chuyển tin sang trạng thái đã bán hoặc đã cho thuê" class="product-done-grey">
                                     </div>
@@ -810,8 +811,6 @@
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_7" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22062610">Xóa</a>
 
 
-
-
                                     <div style="display: none;">
 
                                     </div>
@@ -873,8 +872,6 @@
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_8" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-21630990">Xóa</a>
-
-
 
 
                                     <div style="display: none;">
@@ -940,8 +937,6 @@
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_9" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-21613708">Xóa</a>
 
 
-
-
                                     <div style="display: none;">
 
                                     </div>
@@ -1003,8 +998,6 @@
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_10" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-21597841">Xóa</a>
-
-
 
 
                                     <div style="display: none;">
@@ -1070,8 +1063,6 @@
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_11" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20809908">Xóa</a>
-
-
 
 
                                     <div style="display: none;">
@@ -1141,8 +1132,6 @@
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_12" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20809757">Xóa</a>
 
 
-
-
                                     <div style="display: none;">
                                         <input type="submit" name="ctl00$MainContent$_userPage$ctl00$rpItems$ctl13$btnDone" value="Đã bán" id="MainContent__userPage_ctl00_rpItems_btnDone_12" title="Click để chuyển tin sang trạng thái đã bán hoặc đã cho thuê" class="product-done-grey">
                                     </div>
@@ -1208,8 +1197,6 @@
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_13" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20594018">Xóa</a>
-
-
 
 
                                     <div style="display: none;">
@@ -1279,8 +1266,6 @@
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_14" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20507588">Xóa</a>
 
 
-
-
                                     <div style="display: none;">
                                         <input type="submit" name="ctl00$MainContent$_userPage$ctl00$rpItems$ctl15$btnDone" value="Đã bán" id="MainContent__userPage_ctl00_rpItems_btnDone_14" title="Click để chuyển tin sang trạng thái đã bán hoặc đã cho thuê" class="product-done-grey">
                                     </div>
@@ -1346,8 +1331,6 @@
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_15" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20224130">Xóa</a>
 
 
-
-
                                     <div style="display: none;">
 
                                     </div>
@@ -1411,8 +1394,6 @@
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_16" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20541572">Xóa</a>
-
-
 
 
                                     <div style="display: none;">
@@ -1482,8 +1463,6 @@
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_17" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20230597">Xóa</a>
 
 
-
-
                                     <div style="display: none;">
                                         <input type="submit" name="ctl00$MainContent$_userPage$ctl00$rpItems$ctl18$btnDone" value="Đã bán" id="MainContent__userPage_ctl00_rpItems_btnDone_17" title="Click để chuyển tin sang trạng thái đã bán hoặc đã cho thuê" class="product-done-grey">
                                     </div>
@@ -1549,8 +1528,6 @@
 
 
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_18" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20346147">Xóa</a>
-
-
 
 
                                     <div style="display: none;">
@@ -1620,8 +1597,6 @@
                                     <a id="MainContent__userPage_ctl00_rpItems_lnkDel_19" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-20325081">Xóa</a>
 
 
-
-
                                     <div style="display: none;">
                                         <input type="submit" name="ctl00$MainContent$_userPage$ctl00$rpItems$ctl20$btnDone" value="Đã bán" id="MainContent__userPage_ctl00_rpItems_btnDone_19" title="Click để chuyển tin sang trạng thái đã bán hoặc đã cho thuê" class="product-done-grey">
                                     </div>
@@ -1660,7 +1635,8 @@
                             </td>
                         </tr>
 
-                        </tbody></table>
+                        </tbody>
+                    </table>
 
                     <div class="pager">
                         <span id="MainContent__userPage_ctl00_DataPager"></span>
@@ -1668,7 +1644,8 @@
                     <div class="clear10"></div>
                     <div><strong>Note</strong></div>
                     <div>
-                        Trong trường hợp Quý khách muốn đăng và quản lý tin rao tiếng Anh, xin vui lòng click vào đây <img src="https://file1.batdongsan.com.vn/images/flags/cy-GB.gif" width="24px">&nbsp;<a title="" href="/user-page"><strong>English</strong></a>
+                        Trong trường hợp Quý khách muốn đăng và quản lý tin rao tiếng Anh, xin vui lòng click vào đây
+                        <img src="https://file1.batdongsan.com.vn/images/flags/cy-GB.gif" width="24px">&nbsp;<a title="" href="/user-page"><strong>English</strong></a>
                     </div>
 
 
