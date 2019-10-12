@@ -3,11 +3,8 @@
     <div class="row mt-5">
         <div class="col-sm-4 col-md-3">
             <div class="left-menu">
-                <div class="left-title text-center">Thông tin cá nhân</div>
-
-
+                <div class="left-title">Thông tin cá nhân</div>
                 <h2 style="text-align:center">User Profile Card</h2>
-
                 <div class="card text-center">
                     <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
                     <h1>Khách hàng 1</h1>
@@ -26,10 +23,9 @@
             </div>
         </div>
 
-        <div class="col-md-9 col-sm-8 detail-content">
+        <div class="col-sm-8 col-md-9 detail-content">
             <div class="line-height-2">
                 <div class="left-title">Danh sách bài đăng !</div>
-
             </div>
         </div>
     </div>
