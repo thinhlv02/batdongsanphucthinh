@@ -57,11 +57,11 @@
                                 <div class="title">Quản lý thông tin cá nhân</div>
                                 <ul class="item">
                                     <li class="row-content">
-                                        <a href="/trang-ca-nhan/uspg-changeinfo" title="Thay đổi thông tin cá nhân">
+                                        <a href="javascript:void(0)" title="Thay đổi thông tin cá nhân">
                                             Thay đổi thông tin cá nhân</a>
                                     </li>
                                     <li class="row-content">
-                                        <a href="/trang-ca-nhan/uspg-changepass" title="Thay đổi mật khẩu">
+                                        <a href="javascript:void(0)" title="Thay đổi mật khẩu">
                                             Thay đổi mật khẩu</a>
                                     </li>
 
@@ -70,21 +70,21 @@
                                 <div class="title">Quản lý tin rao</div>
                                 <ul class="item">
                                     <li class="row-content">
-                                        <a href="/trang-ca-nhan/uspg-lstproduct" title="Quản lý tin rao bán/cho thuê" class="selected">
+                                        <a href="javascript:void(0)" title="Quản lý tin rao bán/cho thuê" class="selected">
                                             Quản lý tin rao bán/cho thuê</a>
                                     </li>
                                     <li class="row-content">
-                                        <a href="/dang-tin-rao-vat-ban-nha-dat" title="Đăng tin rao bán/cho thuê">
+                                        <a href="javascript:void(0)" title="Đăng tin rao bán/cho thuê">
                                             Đăng tin rao bán/cho thuê</a>
                                     </li>
                                     <li id="MainContent__userPage_menuAdNewsManager" class="row-content">
-                                        <a href="/trang-ca-nhan/uspg-lstadnews" title="Quản lý tin rao cần mua/cần thuê">Quản lý tin cần mua/cần thuê</a>
+                                        <a href="javascript:void(0)" title="Quản lý tin rao cần mua/cần thuê">Quản lý tin cần mua/cần thuê</a>
                                     </li>
                                     <li id="MainContent__userPage_menuPostAdNews" class="row-content">
-                                        <a href="/dang-tin-rao-vat-mua-nha-dat" title="Đăng tin rao cần mua/cần thuê">Đăng tin cần mua/cần thuê</a>
+                                        <a href="javascript:void(0)" title="Đăng tin rao cần mua/cần thuê">Đăng tin cần mua/cần thuê</a>
                                     </li>
                                     <li id="MainContent__userPage_menuProductDraft" class="row-content">
-                                        <a href="/trang-ca-nhan/uspg-lstproductDraft" title="Quản lý tin nháp">
+                                        <a href="javascript:void(0)" title="Quản lý tin nháp">
                                             Quản lý tin nháp</a>
                                     </li>
 
@@ -94,23 +94,23 @@
                                     <div class="title">Quản lý tài chính</div>
                                     <ul class="item">
                                         <li class="row-content">
-                                            <a href="/trang-ca-nhan/uspg-balanceinfo">Thông tin số dư</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
+                                            <a href="javascript:void(0)">Thông tin số dư</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
                                         </li>
                                         <li class="row-content">
-                                            <a href="/trang-ca-nhan/uspg-transaction" title="Lịch sử giao dịch">
+                                            <a href="javascript:void(0)" title="Lịch sử giao dịch">
                                                 Lịch sử giao dịch</a>
                                         </li>
                                         <li id="MainContent__userPage_menuGroupOfUser" class="row-content">
-                                            <a href="/trang-ca-nhan/uspg-groupofuser" title="Nhóm khuyến mãi">
+                                            <a href="javascript:void(0)" title="Nhóm khuyến mãi">
                                                 Nhóm khuyến mãi</a>
                                         </li>
 
                                         <li id="MainContent__userPage_menuEnterpriseAccount" class="row-content">
-                                            <a href="/trang-ca-nhan/uspg-enterpriseaccount" title="Quản lý tài khoản Doanh nghiệp">
+                                            <a href="javascript:void(0)" title="Quản lý tài khoản Doanh nghiệp">
                                                 Quản lý tài khoản Doanh nghiệp</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
                                         </li>
                                         <li id="MainContent__userPage_menuDeposit" class="row-content">
-                                            <a href="/trang-ca-nhan/uspg-paymentdeposit/method-nvpdomesticcard" title="Nạp tiền vào tài khoản">
+                                            <a href="javascript:void(0)" title="Nạp tiền vào tài khoản">
                                                 Nạp tiền vào tài khoản</a>
                                         </li>
                                     </ul>
@@ -120,37 +120,37 @@
                                 <ul class="item">
 
                                     <li id="MainContent__userPage_menuNotify" class="row-content">
-                                        <a href="/trang-ca-nhan/uspg-notify" title="Thông báo">
+                                        <a href="javascript:void(0)" title="Thông báo">
                                             Thông báo</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
                                     </li>
                                     <li id="MainContent__userPage_menuEmailRegist" class="row-content">
-                                        <a href="/trang-ca-nhan/uspg-emailLetter" title="Quản lý đăng kí nhận email">
+                                        <a href="javascript:void(0)" title="Quản lý đăng kí nhận email">
                                             Quản lý đăng kí nhận email</a>
                                     </li>
                                     <li class="row-content">
-                                        <a href="/trang-ca-nhan/uspg-msg" title="Hộp tin nhắn">
+                                        <a href="javascript:void(0)" title="Hộp tin nhắn">
                                             Hộp tin nhắn</a>
                                     </li>
 
 
                                     <li id="MainContent__userPage_menuUserPoint" class="row-content">
-                                        <a href="/trang-ca-nhan/uspg-userpoint" title="Quản lý điểm tích lũy">Quản lý điểm tích lũy</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
+                                        <a href="javascript:void(0)" title="Quản lý điểm tích lũy">Quản lý điểm tích lũy</a>&nbsp;<img src="https://file4.batdongsan.com.vn/images/Icons/icon-green.png" alt="new">
                                     </li>
 
                                     <li id="MainContent__userPage_menuUserDeleteAccount" class="row-content">
-                                        <a href="/trang-ca-nhan/uspg-requestblockaccount" title="Yêu cầu khóa tài khoản">Yêu cầu khóa tài khoản</a>
+                                        <a href="javascript:void(0)" title="Yêu cầu khóa tài khoản">Yêu cầu khóa tài khoản</a>
                                     </li>
                                 </ul>
                                 <div class="title">Hướng dẫn &amp; báo giá</div>
                                 <ul class="item">
                                     <li class="row-content">
-                                        <a href="/bao-gia-quang-cao#a7" target="_blank">Hướng dẫn sử dụng</a>
+                                        <a href="javascript:void(0)" target="_blank">Hướng dẫn sử dụng</a>
                                     </li>
                                     <li class="row-content">
-                                        <a href="/bao-gia-quang-cao#a8" target="_blank">Hướng dẫn thanh toán</a>
+                                        <a href="javascript:void(0)" target="_blank">Hướng dẫn thanh toán</a>
                                     </li>
                                     <li class="row-content">
-                                        <a href="/bao-gia-quang-cao#a4" target="_blank">Báo giá</a>
+                                        <a href="javascript:void(0)" target="_blank">Báo giá</a>
                                     </li>
                                 </ul>
                             </div>
@@ -511,75 +511,6 @@
                                 <p>
 
                                     <a href="javascript:void(0)" onclick="GetAllNote('22733443')" class="grey" style="text-decoration: underline;">0</a>
-
-                                </p>
-                            </td>
-                        </tr>
-
-                        <tr class="prod-vip5">
-                            <td>
-
-                                4
-                            </td>
-                            <td class="aligncenter">
-                                <div style="padding-top:25px;">
-                                    22699576
-                                    <img src="https://file4.batdongsan.com.vn/images/Default/images/ViptypeV5-label.png">
-                                </div>
-                                Đang Hiển thị
-                            </td>
-                            <td>
-
-                                <a class="prod-title" id="view_22699576" href="/ban-dat-duong-vu-the-lang-485/phuong-thanh-mieu-thanh-pho-viet-tri-tinh-phu-tho-pr22699576" target="_blank"><img src="https://file4.batdongsan.com.vn/crop/77x62/2019/09/25/20190925163404-4bde_wm.jpg" alt="Bán đất Vũ Thê Lang, phường Thanh miếu, thành phố Việt Trì, tỉnh Phú Thọ">Bán đất Vũ Thê Lang, phường Thanh miếu, thành phố Việt Trì, tỉnh Phú Thọ</a>
-                                <div style="clear: both; text-align: right; padding-top: 5px;">
-
-
-                                    &nbsp;
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkView_3" class="grey" href="/ban-dat-duong-vu-the-lang-485/phuong-thanh-mieu-thanh-pho-viet-tri-tinh-phu-tho-pr22699576" target="_blank">
-                                        <img src="https://file4.batdongsan.com.vn/images/xem.gif">
-                                        Xem</a>
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkEdit_3" href="/trang-ca-nhan/uspg-updateproduct/itemId-22699576">
-                                        <img src="https://file4.batdongsan.com.vn/images/sua.gif"> Sửa</a>&nbsp;
-
-
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkDel_3" class="btn-xoa" href="/trang-ca-nhan/uspg-userdelproduct/itemId-22699576">Xóa</a>
-
-
-                                    <a id="MainContent__userPage_ctl00_rpItems_lnkDown_3" class="btn-xoa" href="/trang-ca-nhan/uspg-userdownproduct/itemId-22699576">Hạ</a>
-
-                                    <div style="display: none;">
-                                        <input type="submit" name="ctl00$MainContent$_userPage$ctl00$rpItems$ctl04$btnDone" value="Đã bán" id="MainContent__userPage_ctl00_rpItems_btnDone_3" title="Click để chuyển tin sang trạng thái đã bán hoặc đã cho thuê" class="product-done-grey">
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-                                    <a id="pageviews_22699576" href="javascript: PageViewDaily('7E329CbfwTNhrwdW6PE0Bg==')" class="grey" style="text-decoration: underline">156</a>
-                                </p>
-
-                                <p>
-                                    <a id="MainContent__userPage_ctl00_rpItems_linkUp_3" href="/trang-ca-nhan/uspg-userupproduct/itemId-22699576">
-                                        <img src="https://file4.batdongsan.com.vn/images/action_up.gif" alt="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin" title="Đưa tin rao lên đầu danh sách tin, phí bằng 1 ngày đăng tin">
-                                    </a>
-                                    <br>
-
-                                </p>
-
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-                                    25-09-2019
-                                </p>
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-                                    15-10-2019
-                                </p>
-                            </td>
-                            <td class="aligncenter">
-                                <p>
-
-                                    <a href="javascript:void(0)" onclick="GetAllNote('22699576')" class="grey" style="text-decoration: underline;">0</a>
 
                                 </p>
                             </td>
