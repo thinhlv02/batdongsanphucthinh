@@ -248,10 +248,10 @@
                     <div class="clear10"></div>
                     <div style="display: none;">
                         <input type="text" style="width: 120px !important; height: 22px;" placeholder="Nhập Số Tiền" id="txtMoney" onkeydown="return numbersonly(this, window.event, false);" onkeyup="formatCurrency(this);">
-                        <input type="button" onclick="TinhKhuyenMai('txtMoney', productConfig2017);" value="Khuyến mãi tin rao" style="background-color: #055699; border: none; width: auto; height: 27px; color: #fff !important; font-weight: bold; font-size: 12px !important;">
-                        <input type="button" onclick="TinhKhuyenMai082017('txtMoney', productConfig082017);" value="Khuyến mãi tháng 8" style="background-color: #055699; border: none; width: auto; height: 27px; color: #fff !important; font-weight: bold; font-size: 12px !important;">
+                        <input type="button" onclick="" value="Khuyến mãi tin rao" style="background-color: #055699; border: none; width: auto; height: 27px; color: #fff !important; font-weight: bold; font-size: 12px !important;">
+                        <input type="button" onclick="" value="Khuyến mãi tháng 8" style="background-color: #055699; border: none; width: auto; height: 27px; color: #fff !important; font-weight: bold; font-size: 12px !important;">
 
-                        <input type="button" onclick="TinhKhuyenMai('txtMoney', bannerConfig2017);" value="Banner loại 1" style="background-color: #055699; border: none; width: auto; height: 27px; color: #fff !important; font-weight: bold; font-size: 12px !important;">
+                        <input type="button" onclick="" value="Banner loại 1" style="background-color: #055699; border: none; width: auto; height: 27px; color: #fff !important; font-weight: bold; font-size: 12px !important;">
 
                         (VNĐ)
                         <br>
@@ -338,19 +338,12 @@
 
                     </table>
 
-
-                    <div class="pager">
-                        <span id="MainContent__userPage_ctl00_DataPager"></span>
-                    </div>
                     <div class="clear10"></div>
                     <div><strong>Note</strong></div>
                     <div>
                         Trong trường hợp Quý khách muốn đăng và quản lý tin rao tiếng Anh, xin vui lòng click vào đây
                         <img src="https://file1.batdongsan.com.vn/images/flags/cy-GB.gif" width="24px">&nbsp;<a title="" href="/user-page"><strong>English</strong></a>
                     </div>
-
-
-                    <input type="hidden" name="ctl00$MainContent$_userPage$ctl00$hddPageViewData" id="hddPageViewData" value="fbHCH63qdzHXseY4LA3k3vsyU%2b3T3baomKp2bWXUtDArKdFJBHQ9UFi3c7Ms%2bczltwuqkqm6e8ASVitpTHcm36M8MeMqgkj%2bmAtZkSoMFCqM83RubjACloz0LvSSWubYRtYP2jraugRY8PBt9XDeCPrx2DTi5OhmEO578M3AS%2bWyDkn7FvIN%2fgwdHF%2fbQ4MCqcll0XhemlOWgKyTa12QTlJK9MT4oZPGzAFClAgw1oIyh9fydZR60Pmo%2fp7HzUAP">
 
                     <div class="clear">
                     </div>
