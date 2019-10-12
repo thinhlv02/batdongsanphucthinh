@@ -351,16 +351,7 @@
                         </tbody>
                     </table>
 
-                    <div class="pager">
-                        <span id=""></span>
-                    </div>
                     <div class="clear10"></div>
-                    <div><strong>Note</strong></div>
-                    <div>
-                        Trong trường hợp Quý khách muốn đăng và quản lý tin rao tiếng Anh, xin vui lòng click vào đây
-                        <img src="<?php echo public_url('images/flag_us.png'); ?>" width="24px">&nbsp;<a title=""
-                                                                                                         href="/user-page"><strong>English</strong></a>
-                    </div>
 
                     <div class="clear">
                     </div>
