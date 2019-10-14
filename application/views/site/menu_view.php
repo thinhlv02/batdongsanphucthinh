@@ -269,6 +269,7 @@
                         if ( check === 'ok')
                         {
                             window.location.reload(true);
+                            window.location.href = '<?php echo base_url('trang-ca-nhan')?>';
                         }
                         else {
                             swal({

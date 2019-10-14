@@ -189,8 +189,7 @@
 
                                     <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 30px;">Lượt xem</th>
                                     <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 65px;">Ngày Tạo</th>
-                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 65px;">Quản lý đăng
-                                        bài
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 65px;">Chi tiết
                                     </th>
                                 </tr>
                                 </thead>
@@ -223,7 +222,7 @@
                                         <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                                         <td class="text-center">
                                             <a href="<?php echo base_url('trang-ca-nhan/' . create_slug($row->title) . '-' . $row->id) ?>">
-                                                <i class="fas fa-search fa-lg"></i></a>
+                                                <i class="fas fa-file"></i> Xem</a>
                                         </td>
                                     </tr>
                                     <?php
