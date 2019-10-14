@@ -16,7 +16,7 @@
                                         <i class="fas fa-user-circle fa-10x text-success"></i>
                                     </p>
                                     <br/>
-                                    <span class="userfullname">Lưu Thị Bình</span>
+                                    <span class="userfullname"><?php echo $user_login -> fullname; ?></span>
 
                                     <div class="userpoint_menu">
 
@@ -89,7 +89,7 @@
                                                     src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
                                         </li>
                                         <li class="row-content">
-                                            <a href="#" title="Lịch sử giao dịch">
+                                            <a href="javascript:void(0)" title="Lịch sử giao dịch">
                                                 Lịch sử giao dịch</a>
                                         </li>
                                         <li id="" class="row-content">
@@ -142,13 +142,13 @@
                                 <div class="title">Hướng dẫn &amp; báo giá</div>
                                 <ul class="item">
                                     <li class="row-content">
-                                        <a href="javascript:void(0)" target="_blank">Hướng dẫn sử dụng</a>
+                                        <a href="javascript:void(0)" target="">Hướng dẫn sử dụng</a>
                                     </li>
                                     <li class="row-content">
-                                        <a href="javascript:void(0)" target="_blank">Hướng dẫn thanh toán</a>
+                                        <a href="javascript:void(0)" target="">Hướng dẫn thanh toán</a>
                                     </li>
                                     <li class="row-content">
-                                        <a href="javascript:void(0)" target="_blank">Báo giá</a>
+                                        <a href="javascript:void(0)" target="">Báo giá</a>
                                     </li>
                                 </ul>
                             </div>
@@ -193,56 +193,6 @@
                             </thead>
                             <tbody>
 
-                            <tr title="" class="odd" role="row">
-                                <td class="text-center">
-                                    <button class="btn btn-default btn-xs">122</button>
-                                </td>
-
-                                <td> 0988559509</td>
-                                <td><img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg"
-                                         style="max-width: 80px"></td>
-                                <td>
-                                    <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122"
-                                       target="_blank">
-                                        CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a></td>
-
-                                <td>
-                                    <p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
-                                    <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p>
-
-                                </td>
-
-                                <td>237</td>
-                                <td>08/10/2019</td>
-                                <td class="text-center">
-                                    <a href="#"><i class="fas fa-search fa-lg"></i></a>
-                                </td>
-                            </tr>
-                            <tr title="" class="odd" role="row">
-                                <td class="text-center">
-                                    <button class="btn btn-default btn-xs">122</button>
-                                </td>
-
-                                <td> 0988559509</td>
-                                <td><img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg"
-                                         style="max-width: 80px"></td>
-                                <td>
-                                    <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122"
-                                       target="_blank">
-                                        CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a></td>
-
-                                <td>
-                                    <p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
-                                    <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p>
-
-                                </td>
-
-                                <td>237</td>
-                                <td>08/10/2019</td>
-                                <td class="text-center">
-                                    <a href="#"><i class="fas fa-search fa-lg"></i></a>
-                                </td>
-                            </tr>
                             <tr title="" class="odd" role="row">
                                 <td class="text-center">
                                     <button class="btn btn-default btn-xs">122</button>
