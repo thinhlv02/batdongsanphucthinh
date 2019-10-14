@@ -1,7 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
 
 <div class="sub-nav">
-    <div id="hot_line">Hotline: 0796 43 22 11</div>
+<!--    <div id="hot_line"><i class="fas fa-phone-volume"></i>: 0796 43 22 11</div>-->
     <div class="logo">
         <a href="<?php echo base_url() ?>"><img src="<?php echo public_url('images/logo.png')?>"></a>
 <!--        <a href="--><?php //echo base_url()?><!--">Trao tiện ích, nhận tin yêu</a>-->

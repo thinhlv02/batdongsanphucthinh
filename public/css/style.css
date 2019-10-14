@@ -1392,14 +1392,14 @@ button#myPageup {
 /*page up top*/
 
 /*hotline*/
-#hot_line {
-    position: absolute;
-    top: 17px;
-    left: 150px;
-    color: #feff90;
-    font-weight: bold;
-    font-size: 20px;
-}
+/*#hot_line {*/
+/*    position: absolute;*/
+/*    top: 17px;*/
+/*    left: 150px;*/
+/*    color: #feff90;*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*}*/
 
 /*language */
 #language {
