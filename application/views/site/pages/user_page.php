@@ -169,65 +169,76 @@
 
                     <div class="card-body">
 
-                        <table id="datatable-news"
-                               class="table table-striped table-bordered bulk_action dataTable no-footer" role="grid"
-                               aria-describedby="datatable-news_info">
-                            <!--            <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">-->
-                            <thead>
-                            <tr role="row">
-                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 42px;">Mã tin</th>
-                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79px;">SĐT</th>
-                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79px;">Ảnh minh họa
-                                </th>
-                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 86px;">Tiêu đề</th>
-                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 258px;">Giá / Diện
-                                    tích
-                                </th>
+                        <?php if (empty($lstData)) { ?>
 
-                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 30px;">Lượt xem</th>
-                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 65px;">Ngày Tạo</th>
-                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 65px;">Quản lý đăng
-                                    bài
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody>
+                            <div class="alert alert-danger">
+                                <strong><?php echo $user_page_lang['empty_data']; ?> </strong>
+                            </div>
 
-                           <?php
-                            foreach ($lstData as $k => $row) {
-                                ?>
-                                <tr title="" class="odd" role="row">
-                                    <td class="text-center">
-                                        <button class="btn btn-default btn-xs">PT-<?php echo $row->id . substr($row->code, 0, 3) ?></button>
-                                    </td>
+                        <?php } else { ?>
 
-                                    <td> <?php echo $row->phone; ?></td>
-                                    <td><img src="<?php echo public_url('images/ads/' . $row->img); ?>"
-                                             style="max-width: 80px"></td>
-                                    <td>
-                                        <a href="<?php echo base_url('rao-vat/' . create_slug($row->title) . '-' . $row->id) ?>"
-                                           target="_blank">
-                                            <?php echo $row->title; ?></a></td>
 
-                                    <td>
-                                        <p class="btn btn-outline-danger btn-xs"><?php echo $row->price ?> </p><br>
-                                        <p class="btn btn-outline-cyan btx-xs"><?php echo $row->acreage ?> m<sup>2</sup>
-                                        </p>
+                            <table id="datatable-news"
+                                   class="table table-striped table-bordered bulk_action dataTable no-footer" role="grid"
+                                   aria-describedby="datatable-news_info">
+                                <!--            <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">-->
+                                <thead>
+                                <tr role="row">
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 42px;">Mã tin</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79px;">SĐT</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79px;">Ảnh minh họa
+                                    </th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 86px;">Tiêu đề</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 258px;">Giá / Diện
+                                        tích
+                                    </th>
 
-                                    </td>
-
-                                    <td><?php echo $row->view; ?></td>
-                                    <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
-                                    <td class="text-center">
-                                        <a href="#"><i class="fas fa-search fa-lg"></i></a>
-                                    </td>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 30px;">Lượt xem</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 65px;">Ngày Tạo</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 65px;">Quản lý đăng
+                                        bài
+                                    </th>
                                 </tr>
-                                <?php
-                            }
-                            ?>
+                                </thead>
+                                <tbody>
 
-                            </tbody>
-                        </table>
+                                <?php
+                                foreach ($lstData as $k => $row) {
+                                    ?>
+                                    <tr title="" class="odd" role="row">
+                                        <td class="text-center">
+                                            <button class="btn btn-default btn-xs">PT-<?php echo $row->id . substr($row->code, 0, 3) ?></button>
+                                        </td>
+
+                                        <td> <?php echo $row->phone; ?></td>
+                                        <td><img src="<?php echo public_url('images/ads/' . $row->img); ?>"
+                                                 style="max-width: 80px"></td>
+                                        <td>
+                                            <a href="<?php echo base_url('rao-vat/' . create_slug($row->title) . '-' . $row->id) ?>"
+                                               target="_blank">
+                                                <?php echo $row->title; ?></a></td>
+
+                                        <td>
+                                            <p class="btn btn-outline-danger btn-xs"><?php echo $row->price ?> </p><br>
+                                            <p class="btn btn-outline-cyan btx-xs"><?php echo $row->acreage ?> m<sup>2</sup>
+                                            </p>
+
+                                        </td>
+
+                                        <td><?php echo $row->view; ?></td>
+                                        <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
+                                        <td class="text-center">
+                                            <a href="#"><i class="fas fa-search fa-lg"></i></a>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                }
+                                ?>
+
+                                </tbody>
+                            </table>
+
+                        <?php } ?>
 
                     </div>
 
