@@ -26,7 +26,14 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="txtName" name="txtName" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề">
+                        <input type="text" id="txtName" name="txtName" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tên">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên đầy đủ <span class="required">*</span></label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <input type="text" name="txtFullName"  required="required" class="form-control col-md-7 col-xs-12" placeholder="Tên ">
                     </div>
                 </div>
 
@@ -38,9 +45,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Địa chỉ<span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Mật khẩu <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" name="txtAddress" class="form-control col-md-7 col-xs-12" placeholder="address">
+                        <input type="text" name="txtPassword" class="form-control col-md-7 col-xs-12" placeholder="mật khẩu">
                     </div>
                 </div>
 

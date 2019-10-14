@@ -11,7 +11,7 @@
                     <a href="<?php echo admin_url('user')?>" id="home-tab">Danh sách</a>
                 </li>
                 <li class="<?php echo $tab == 2 ? 'active' : ''?>">
-                    <a href="<?php echo admin_url('user/add')?>" id="profile-tab2">Thêm mới</a>
+<!--                    <a href="--><?php //echo admin_url('user/add')?><!--" id="profile-tab2">Thêm mới</a>-->
                 </li>
             </ul>
         </div>

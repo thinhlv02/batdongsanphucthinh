@@ -35,12 +35,24 @@ Class User extends MY_Controller
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
 
+//            $data = array(
+//                'name' => $this->input->post('txtName'),
+//                'phone' => $this->input->post('txtPhone'),
+//                'address' => $this->input->post('txtAddress'),
+//                'created_by' => $this->_uid,
+//            );
+
+
             $data = array(
-                'name' => $this->input->post('txtName'),
+                'username' => $this->input->post('txtName'),
+                'fullname' => $this->input->post('txtFullName'),
                 'phone' => $this->input->post('txtPhone'),
-                'address' => $this->input->post('txtAddress'),
-                'created_by' => $this->_uid,
+                'password' => md5($this->input->post('txtPassword')),
+                'password_txt' => $this->input->post('txtPassword')
             );
+
+
+
             if ($this->user_model->create($data)) {
                 $this->session->set_flashdata('message', 'Thêmthành công');
                 redirect(base_url('admin/user'));
@@ -71,7 +83,8 @@ Class User extends MY_Controller
                 'username' => $this->input->post('txtName'),
                 'fullname' => $this->input->post('txtFullName'),
                 'phone' => $this->input->post('txtPhone'),
-//                'address' => $this->input->post('txtAddress')
+                'password' => md5($this->input->post('txtPassword')),
+                'password_txt' => $this->input->post('txtPassword')
             );
 
             if ($this->user_model->update($id, $data)) {

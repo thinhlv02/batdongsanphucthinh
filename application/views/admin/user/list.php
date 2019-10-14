@@ -24,6 +24,7 @@
                 <th>Tên KH</th>
                 <th>Tên đầy đủ</th>
                 <th>SĐT</th>
+                <th>Mật khẩu</th>
 <!--                <th>Địa chỉ</th>-->
                 <th>Ngày Tạo</th>
                 <th>Hành động</th>
@@ -38,6 +39,7 @@
                     <td><?php echo $row->username ?></td>
                     <td><?php echo $row->fullname ?></td>
                     <td><?php echo $row->phone ?></td>
+                    <td><?php echo $row->password_txt; ?></td>
 <!--                    <td>--><?php //echo $row->address ?><!--</td>-->
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
 
