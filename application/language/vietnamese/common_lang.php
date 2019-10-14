@@ -4,7 +4,7 @@ $lang['common_lang'] = array();
 
 // for default config site title, tags, desc
 $lang['common_lang']['home'] = 'Trang chủ';
-$lang['common_lang']['lmenu_intro'] = "Giới thiệu12";
+$lang['common_lang']['lmenu_intro'] = "Giới thiệu";
 $lang['common_lang']['lmenu_support'] = "Hỗ trợ";
 $lang['common_lang']['lmenu_news'] = "Tin tức";
 $lang['common_lang']['lmenu_policies'] = "Chính sách và điều khoản";
