@@ -758,8 +758,6 @@ Class Home extends MY_Controller
 
     function user_page_detail($slug, $id)
     {
-//        var_dump($id);
-//        die('hihih');
         $ads = $this->ads_model->get_info($id);
         if (!$ads || create_slug($ads->title) != $slug) {
             redirect(base_url('tin-tuc'));
@@ -771,7 +769,19 @@ Class Home extends MY_Controller
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/user_page_detail', $this->data);
-//        var_dump($this->data);
+        $this->_loadFooter();
+    }
+
+    function price()
+    {
+//        echo 'bang gia';
+        // load header
+        $header = array();
+        $header['title'] = 'Bảng giá';
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'pages/price_table', $this->data);
+
         $this->_loadFooter();
     }
 
