@@ -9,6 +9,7 @@ Class Home extends MY_Controller
         parent::__construct();
 //        $this->load->model('recruitment_model');
         $this->load->model('product_model');
+        $this->load->model('price_model');
         $this->load->model('questions_model');
         $this->load->model('contact_model');
         $this->load->model('news_model');
@@ -772,7 +773,7 @@ Class Home extends MY_Controller
         $this->_loadFooter();
     }
 
-    function price()
+    function price_postvn()
     {
 //        echo 'bang gia';
         // load header
@@ -781,6 +782,37 @@ Class Home extends MY_Controller
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/price_table', $this->data);
+
+        $this->_loadFooter();
+    }
+
+    function price($slug = '', $id = 0)
+    {
+//        die('aaaaaaa');
+        $this->load->language('introduce/introduce', $this->_langcode);
+        $this->data['introduce_lang'] = $this->lang->line('introduce_lang');
+        $this->data['li_2'] = 1;
+        if (strlen($slug) > 0 && $id > 0) {
+            $price = $this->price_model->get_info($id);
+            if (!$price || create_slug($price->name) != $slug) {
+                redirect(base_url('bang-gia.html'));
+            }
+            $this->data['price'] = $price;
+        } else {
+            $price = $this->price_model->get_list(array('order' => array('id', 'asc'), 'limit' => array(1, 0)));
+            if (sizeof($price)) {
+                $this->data['price'] = $price[0];
+            }
+        }
+
+        $this->data['active'] = $id;
+
+        // load header
+        $header = array();
+        $header['title'] = $this->data['introduce_lang']['title'];
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'pages/price', $this->data);
 
         $this->_loadFooter();
     }

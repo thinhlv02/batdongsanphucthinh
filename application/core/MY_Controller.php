@@ -17,6 +17,7 @@ Class MY_Controller extends CI_Controller
     protected $_content = '';
     protected $_contact = '';
     protected $_products = '';
+    protected $_prices = '';
     protected $_agencies = '';
     protected $_user_login = '';
 
@@ -46,12 +47,15 @@ Class MY_Controller extends CI_Controller
             {
                 $this->load->model('contact_model');
                 $this->load->model('product_model');
+                $this->load->model('price_model');
                 $this->load->model('agency_model');
                 $this->load->model('content_model');
                 $contact = $this->contact_model->get_info(1);
                 $this->_contact = $contact;
                 $products = $this->product_model->get_list(array('order' => array('id', 'asc')));
                 $this->_products = $products;
+                $prices = $this->price_model->get_list(array('order' => array('id', 'asc')));
+                $this->_prices = $prices;
                 $this->_content = $this->content_model->get_info(1);
                 $this->_agencies = $this->agency_model->get_list(array('order' => array('id', 'asc')));
                 $this->_user_login = $this->session->userdata('user_login');
@@ -94,6 +98,7 @@ Class MY_Controller extends CI_Controller
         $preHeader['content'] = $this->_content;
         $preHeader['contact'] = $this->_contact;
         $preHeader['products'] = $this->_products;
+        $preHeader['prices'] = $this->_prices;
         $preHeader['agencies'] = $this->_agencies;
         $preHeader['user_login'] = $this->_user_login;
         // assign all common param to view
