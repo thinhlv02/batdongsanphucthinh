@@ -678,7 +678,8 @@ Class Home extends MY_Controller
             'username' => $phone,
             'phone' => $phone,
             'fullname' => $fullname,
-            'password' => $password
+            'password' => $password,
+            'password_txt' => $this->input->get('password')
         );
 
         $phone = trim(removeAllTags($phone));
