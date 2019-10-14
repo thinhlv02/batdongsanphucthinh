@@ -80,7 +80,7 @@
                                     </li>
 
                                 </ul>
-                                <div id="">
+                                <div>
 
                                     <div class="title">Quản lý tài chính</div>
                                     <ul class="item">
@@ -92,18 +92,18 @@
                                             <a href="javascript:void(0)" title="Lịch sử giao dịch">
                                                 Lịch sử giao dịch</a>
                                         </li>
-                                        <li id="" class="row-content">
+                                        <li class="row-content">
                                             <a href="javascript:void(0)" title="Nhóm khuyến mãi">
                                                 Nhóm khuyến mãi</a>
                                         </li>
 
-                                        <li id="" class="row-content">
+                                        <li class="row-content">
                                             <a href="javascript:void(0)"
                                                title="Quản lý tài khoản Doanh nghiệp">
                                                 Quản lý tài khoản Doanh nghiệp</a>&nbsp;<img
                                                     src="<?php echo public_url('images/icon_green_pt.png'); ?>" alt="new">
                                         </li>
-                                        <li id="" class="row-content">
+                                        <li class="row-content">
                                             <a href="javascript:void(0)"
                                                title="Nạp tiền vào tài khoản">
                                                 Nạp tiền vào tài khoản</a>
@@ -114,7 +114,7 @@
                                 <div class="title">Tiện ích</div>
                                 <ul class="item">
 
-                                    <li id="" class="row-content">
+                                    <li class="row-content">
                                         <a href="javascript:void(0)" title="Thông báo">
                                             Thông báo</a>&nbsp;<img
                                                 src="<?php echo public_url('images/icon_green_pt.png'); ?>" alt="new">
