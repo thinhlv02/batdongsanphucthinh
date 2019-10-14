@@ -64,7 +64,8 @@ a:hover {
 .ul-large li a {
     color: #FFFFFF;
     padding: 20px 3px;
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .ul-large li a:hover {
