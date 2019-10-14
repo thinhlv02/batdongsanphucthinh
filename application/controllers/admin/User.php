@@ -10,16 +10,12 @@ Class User extends MY_Controller
 
     function index()
     {
-//        var_dump($this->_device_type);
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
         $input = array();
         $input['order'] = array('id', 'desc');
         $devices = $this->user_model->get_list($input);
-
-
-//        echo '<pre>',print_r($devices_end,1),'</pre>';
 
         $this->data['customers'] = $devices;
         $this->data['device_type'] = $this->_device_type;
@@ -35,14 +31,6 @@ Class User extends MY_Controller
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
 
-//            $data = array(
-//                'name' => $this->input->post('txtName'),
-//                'phone' => $this->input->post('txtPhone'),
-//                'address' => $this->input->post('txtAddress'),
-//                'created_by' => $this->_uid,
-//            );
-
-
             $data = array(
                 'username' => $this->input->post('txtName'),
                 'fullname' => $this->input->post('txtFullName'),
@@ -50,8 +38,6 @@ Class User extends MY_Controller
                 'password' => md5($this->input->post('txtPassword')),
                 'password_txt' => $this->input->post('txtPassword')
             );
-
-
 
             if ($this->user_model->create($data)) {
                 $this->session->set_flashdata('message', 'Thêmthành công');
@@ -109,10 +95,8 @@ Class User extends MY_Controller
         $devices = $this->user_model->get_info($id);
         if ($devices) {
             $this->user_model->delete($id);
-//            unlink('./public/images/devices/' . $devices->img);
         }
         redirect(base_url('admin/user'));
     }
-
 
 }
