@@ -18,7 +18,7 @@ Class Product extends MY_Controller
         $this->load->view('admin/layout', $this->data);
     }
 
-    function add_old()
+    function add()
     {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
@@ -50,32 +50,6 @@ Class Product extends MY_Controller
         $this->data['view'] = 'admin/product/add';
         $this->load->view('admin/layout', $this->data);
     }
-
-    function add()
-    {
-        $message = $this->session->flashdata('message');
-        $this->data['message'] = $message;
-        $this->data['tab'] = 2;
-        if ($this->input->post('btnAddProduct')) {
-            $data_submit = array(
-                'name' => $this->input->post('txtName'),
-                'content' => $this->input->post('txtContent'),
-                'intro' => $this->input->post('txtIntro'),
-            );
-            if ($this->product_model->create($data_submit)) {
-                $this->session->set_flashdata('message', 'Đăng bài thành công!');
-                redirect(base_url('admin/product/add'));
-            } else {
-                $this->session->set_flashdata('message', 'Có lỗi xảy ra, vui lòng thử lại!');
-                redirect(base_url('admin/product/add'));
-            }
-
-        }
-        $this->data['temp'] = 'admin/product/index';
-        $this->data['view'] = 'admin/product/add';
-        $this->load->view('admin/layout', $this->data);
-    }
-
 
     function edit()
     {
