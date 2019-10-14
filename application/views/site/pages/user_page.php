@@ -4,7 +4,7 @@
             <div class="left-menu">
                 <div class="left-title">Thông tin tài khoản</div>
 
-                <div id="column-left-user" class="card" style="">
+                <div id="column-left-user" class="card">
                     <div id="usercp" class="card-body">
                         <div class="white-background-new">
                             <div class="box-header text-center">
