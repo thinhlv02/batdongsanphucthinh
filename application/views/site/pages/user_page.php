@@ -16,7 +16,7 @@
                                         <i class="fas fa-user-circle fa-10x text-success"></i>
                                     </p>
                                     <br/>
-                                    <span class="userfullname"><?php echo $user_login -> fullname; ?></span>
+                                    <span class="userfullname text-uppercase"><?php echo $user_login->fullname; ?></span>
 
                                     <div class="userpoint_menu">
 
@@ -86,7 +86,7 @@
                                     <ul class="item">
                                         <li class="row-content">
                                             <a href="javascript:void(0)">Thông tin số dư</a>&nbsp;<img
-                                                    src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
+                                                    src="<?php echo public_url('images/icon_green_pt.png'); ?>" alt="new">
                                         </li>
                                         <li class="row-content">
                                             <a href="javascript:void(0)" title="Lịch sử giao dịch">
@@ -101,7 +101,7 @@
                                             <a href="javascript:void(0)"
                                                title="Quản lý tài khoản Doanh nghiệp">
                                                 Quản lý tài khoản Doanh nghiệp</a>&nbsp;<img
-                                                    src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
+                                                    src="<?php echo public_url('images/icon_green_pt.png'); ?>" alt="new">
                                         </li>
                                         <li id="" class="row-content">
                                             <a href="javascript:void(0)"
@@ -117,7 +117,7 @@
                                     <li id="" class="row-content">
                                         <a href="javascript:void(0)" title="Thông báo">
                                             Thông báo</a>&nbsp;<img
-                                                src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
+                                                src="<?php echo public_url('images/icon_green_pt.png'); ?>" alt="new">
                                     </li>
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý đăng kí nhận email">
@@ -131,7 +131,7 @@
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý điểm tích lũy">Quản lý
                                             điểm tích lũy</a>&nbsp;<img
-                                                src="<?php echo public_url('images/icon-green.png'); ?>" alt="new">
+                                                src="<?php echo public_url('images/icon_green_pt.png'); ?>" alt="new">
                                     </li>
 
                                     <li class="row-content">

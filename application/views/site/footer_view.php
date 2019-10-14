@@ -132,7 +132,7 @@
 <!--test full footer-->
 
 <button onclick="topFunction()" id="myPageup" title="Go to top">
-    <img src="<?php echo base_url('public/images/arrowPageUp2.png'); ?>">
+    <img src="<?php echo base_url('public/images/arrowPageUp_v2.png'); ?>">
 </button>
 
 <script>
