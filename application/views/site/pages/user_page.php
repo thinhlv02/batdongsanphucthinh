@@ -81,7 +81,7 @@
                                     <ul class="item">
                                         <li class="row-content">
                                             <a href="javascript:void(0)"><i class="fas fa-caret-right"></i> Thông tin số dư</a>
-                                            <i class="fas fa-search-dollar fa-2x text-success"></i>
+                                            <i class="fas fa-search-dollar fa-lg green6"></i>
                                         </li>
                                         <li class="row-content">
                                             <a href="javascript:void(0)" title="Lịch sử giao dịch">
@@ -96,7 +96,7 @@
                                             <a href="javascript:void(0)"
                                                title="Quản lý tài khoản Doanh nghiệp">
                                                 <i class="fas fa-caret-right"></i> Quản lý tài khoản Doanh nghiệp</a>
-                                            <i class="fas fa-chart-bar fa-2x text-success"></i>
+                                            <i class="fas fa-chart-bar fa-lg green6"></i>
                                         </li>
                                         <li class="row-content">
                                             <a href="javascript:void(0)"
@@ -112,7 +112,7 @@
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Thông báo">
                                             <i class="fas fa-caret-right"></i> Thông báo</a>
-                                        <i class="far fa-bell fa-2x text-success"></i>
+                                        <i class="far fa-bell fa-lg green6"></i>
                                     </li>
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý đăng kí nhận email">
@@ -126,7 +126,7 @@
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý điểm tích lũy"><i class="fas fa-caret-right"></i> Quản lý
                                             điểm tích lũy</a>
-                                        <i class="fas fa-map-marker-alt fa-2x text-success"></i>
+                                        <i class="fas fa-map-marker-alt fa-lg green6"></i>
                                     </li>
 
                                     <li class="row-content">
