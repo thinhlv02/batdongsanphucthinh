@@ -70,6 +70,9 @@ $route['dieu-khoan-su-dung(.html)?'] = 'home/policy';
 $route['chinh-sach-bao-mat(.html)?'] = 'home/privacy';
 $route['lien-he(.html)?'] = 'home/contact';
 $route['trang-ca-nhan(.html)?'] = 'home/user_page';
+$route['trang-ca-nhan(:num)'] = 'home/user_page/$1';
+$route['trang-ca-nhan/(:any)-(:num)(.html)?'] = 'home/user_page_detail/$1/$2';
+
 $route['download(.html)?'] = 'home/download';
 $route['tin-tuc(.html)?'] = 'home/news';
 $route['tim-kiem(.html)?'] = 'home/search';

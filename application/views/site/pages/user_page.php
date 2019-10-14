@@ -7,9 +7,6 @@
                 <div id="column-left-user" class="card">
                     <div id="usercp" class="card-body">
                         <div class="white-background-new">
-                            <div class="box-header text-center">
-                                <h5>TRANG CÁ NHÂN</h5>
-                            </div>
                             <div class="box-arround">
                                 <div class="useravatar text-center">
                                     <p>
@@ -47,11 +44,11 @@
                                 <ul class="item">
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Thay đổi thông tin cá nhân">
-                                            Thay đổi thông tin cá nhân</a>
+                                            <i class="fas fa-caret-right"></i> Thay đổi thông tin cá nhân</a>
                                     </li>
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Thay đổi mật khẩu">
-                                            Thay đổi mật khẩu</a>
+                                            <i class="fas fa-caret-right"></i> Thay đổi mật khẩu</a>
                                     </li>
 
                                 </ul>
@@ -60,53 +57,51 @@
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý tin rao bán/cho thuê"
                                            class="selected">
-                                            Quản lý tin rao bán/cho thuê</a>
+                                            <i class="fas fa-caret-right"></i> Quản lý tin rao bán/cho thuê</a>
                                     </li>
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Đăng tin rao bán/cho thuê">
-                                            Đăng tin rao bán/cho thuê</a>
+                                            <i class="fas fa-caret-right"></i> Đăng tin rao bán/cho thuê</a>
                                     </li>
                                     <li class="row-content">
                                         <a href="javascript:void(0)"
-                                           title="Quản lý tin rao cần mua/cần thuê">Quản lý tin cần mua/cần thuê</a>
+                                           title="Quản lý tin rao cần mua/cần thuê"><i class="fas fa-caret-right"></i> Quản lý tin cần mua/cần thuê</a>
                                     </li>
                                     <li class="row-content">
-                                        <a href="javascript:void(0)" title="Đăng tin rao cần mua/cần thuê">Đăng
+                                        <a href="javascript:void(0)" title="Đăng tin rao cần mua/cần thuê"><i class="fas fa-caret-right"></i> Đăng
                                             tin cần mua/cần thuê</a>
                                     </li>
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý tin nháp">
-                                            Quản lý tin nháp</a>
+                                            <i class="fas fa-caret-right"></i> Quản lý tin nháp</a>
                                     </li>
-
                                 </ul>
                                 <div>
-
                                     <div class="title">Quản lý tài chính</div>
                                     <ul class="item">
                                         <li class="row-content">
-                                            <a href="javascript:void(0)">Thông tin số dư</a>&nbsp;<img
+                                            <a href="javascript:void(0)"><i class="fas fa-caret-right"></i> Thông tin số dư</a>&nbsp;<img
                                                     src="<?php echo public_url('images/icon_green_pt.png'); ?>" alt="new">
                                         </li>
                                         <li class="row-content">
                                             <a href="javascript:void(0)" title="Lịch sử giao dịch">
-                                                Lịch sử giao dịch</a>
+                                                <i class="fas fa-caret-right"></i> Lịch sử giao dịch</a>
                                         </li>
                                         <li class="row-content">
                                             <a href="javascript:void(0)" title="Nhóm khuyến mãi">
-                                                Nhóm khuyến mãi</a>
+                                                <i class="fas fa-caret-right"></i> Nhóm khuyến mãi</a>
                                         </li>
 
                                         <li class="row-content">
                                             <a href="javascript:void(0)"
                                                title="Quản lý tài khoản Doanh nghiệp">
-                                                Quản lý tài khoản Doanh nghiệp</a>&nbsp;<img
+                                                <i class="fas fa-caret-right"></i> Quản lý tài khoản Doanh nghiệp</a>&nbsp;<img
                                                     src="<?php echo public_url('images/icon_green_pt.png'); ?>" alt="new">
                                         </li>
                                         <li class="row-content">
                                             <a href="javascript:void(0)"
                                                title="Nạp tiền vào tài khoản">
-                                                Nạp tiền vào tài khoản</a>
+                                                <i class="fas fa-caret-right"></i> Nạp tiền vào tài khoản</a>
                                         </li>
                                     </ul>
 
@@ -116,39 +111,39 @@
 
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Thông báo">
-                                            Thông báo</a>&nbsp;<img
+                                            <i class="fas fa-caret-right"></i> Thông báo</a>&nbsp;<img
                                                 src="<?php echo public_url('images/icon_green_pt.png'); ?>" alt="new">
                                     </li>
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Quản lý đăng kí nhận email">
-                                            Quản lý đăng kí nhận email</a>
+                                            <i class="fas fa-caret-right"></i> Quản lý đăng kí nhận email</a>
                                     </li>
                                     <li class="row-content">
                                         <a href="javascript:void(0)" title="Hộp tin nhắn">
-                                            Hộp tin nhắn</a>
+                                            <i class="fas fa-caret-right"></i> Hộp tin nhắn</a>
                                     </li>
 
                                     <li class="row-content">
-                                        <a href="javascript:void(0)" title="Quản lý điểm tích lũy">Quản lý
+                                        <a href="javascript:void(0)" title="Quản lý điểm tích lũy"><i class="fas fa-caret-right"></i> Quản lý
                                             điểm tích lũy</a>&nbsp;<img
                                                 src="<?php echo public_url('images/icon_green_pt.png'); ?>" alt="new">
                                     </li>
 
                                     <li class="row-content">
                                         <a href="javascript:void(0)"
-                                           title="Yêu cầu khóa tài khoản">Yêu cầu khóa tài khoản</a>
+                                           title="Yêu cầu khóa tài khoản"><i class="fas fa-caret-right"></i> Yêu cầu khóa tài khoản</a>
                                     </li>
                                 </ul>
                                 <div class="title">Hướng dẫn &amp; báo giá</div>
                                 <ul class="item">
                                     <li class="row-content">
-                                        <a href="javascript:void(0)" target="">Hướng dẫn sử dụng</a>
+                                        <a href="javascript:void(0)"><i class="fas fa-caret-right"></i> Hướng dẫn sử dụng</a>
                                     </li>
                                     <li class="row-content">
-                                        <a href="javascript:void(0)" target="">Hướng dẫn thanh toán</a>
+                                        <a href="javascript:void(0)"><i class="fas fa-caret-right"></i> Hướng dẫn thanh toán</a>
                                     </li>
                                     <li class="row-content">
-                                        <a href="javascript:void(0)" target="">Báo giá</a>
+                                        <a href="javascript:void(0)"><i class="fas fa-caret-right"></i> Báo giá</a>
                                     </li>
                                 </ul>
                             </div>
@@ -176,7 +171,6 @@
                             </div>
 
                         <?php } else { ?>
-
 
                             <table id="datatable-news"
                                    class="table table-striped table-bordered bulk_action dataTable no-footer" role="grid"
@@ -228,7 +222,8 @@
                                         <td><?php echo $row->view; ?></td>
                                         <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                                         <td class="text-center">
-                                            <a href="#"><i class="fas fa-search fa-lg"></i></a>
+                                            <a href="<?php echo base_url('trang-ca-nhan/' . create_slug($row->title) . '-' . $row->id) ?>">
+                                                <i class="fas fa-search fa-lg"></i></a>
                                         </td>
                                     </tr>
                                     <?php
@@ -250,6 +245,10 @@
 </div>
 
 <style>
+    #column-left-user > #usercp {
+        border: 1px solid #ccc;
+    }
+
     .white-background-new .box-arround .title {
         color: #666;
         font-size: 12px;

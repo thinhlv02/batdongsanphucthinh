@@ -121,7 +121,7 @@
                             <h5>Cập nhật website</h5>
                         </div>
 
-                        <?php echo $ads->link_list ?>
+                        <?php echo $ads->link_web ?>
 
                     </div>
 
