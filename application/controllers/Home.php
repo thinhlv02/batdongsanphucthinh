@@ -739,8 +739,12 @@ Class Home extends MY_Controller
 
     function user_page()
     {
+        $user_info = $this->_user_login;
         $this->load->language('user_page/user_page', $this->_langcode);
         $this->data['user_page_lang'] = $this->lang->line('user_page_lang');
+        $phone = trim(removeAllTags($user_info->phone));
+        $phone = str_replace(' ', '', $phone);
+        $this->data['lstData'] = $this->ads_model->get_list(array('where' => array('phone' => $phone)));
 
         // load header
         $header = array();

@@ -193,81 +193,38 @@
                             </thead>
                             <tbody>
 
-                            <tr title="" class="odd" role="row">
-                                <td class="text-center">
-                                    <button class="btn btn-default btn-xs">122</button>
-                                </td>
+                           <?php
+                            foreach ($lstData as $k => $row) {
+                                ?>
+                                <tr title="" class="odd" role="row">
+                                    <td class="text-center">
+                                        <button class="btn btn-default btn-xs">PT-<?php echo $row->id . substr($row->code, 0, 3) ?></button>
+                                    </td>
 
-                                <td> 0988559509</td>
-                                <td><img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg"
-                                         style="max-width: 80px"></td>
-                                <td>
-                                    <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122"
-                                       target="_blank">
-                                        CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a></td>
+                                    <td> <?php echo $row->phone; ?></td>
+                                    <td><img src="<?php echo public_url('images/ads/' . $row->img); ?>"
+                                             style="max-width: 80px"></td>
+                                    <td>
+                                        <a href="<?php echo base_url('rao-vat/' . create_slug($row->title) . '-' . $row->id) ?>"
+                                           target="_blank">
+                                            <?php echo $row->title; ?></a></td>
 
-                                <td>
-                                    <p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
-                                    <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p>
+                                    <td>
+                                        <p class="btn btn-outline-danger btn-xs"><?php echo $row->price ?> </p><br>
+                                        <p class="btn btn-outline-cyan btx-xs"><?php echo $row->acreage ?> m<sup>2</sup>
+                                        </p>
 
-                                </td>
+                                    </td>
 
-                                <td>237</td>
-                                <td>08/10/2019</td>
-                                <td class="text-center">
-                                    <a href="#"><i class="fas fa-search fa-lg"></i></a>
-                                </td>
-                            </tr>
-                            <tr title="" class="odd" role="row">
-                                <td class="text-center">
-                                    <button class="btn btn-default btn-xs">122</button>
-                                </td>
-
-                                <td> 0988559509</td>
-                                <td><img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg"
-                                         style="max-width: 80px"></td>
-                                <td>
-                                    <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122"
-                                       target="_blank">
-                                        CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a></td>
-
-                                <td>
-                                    <p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
-                                    <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p>
-
-                                </td>
-
-                                <td>237</td>
-                                <td>08/10/2019</td>
-                                <td class="text-center">
-                                    <a href="#"><i class="fas fa-search fa-lg"></i></a>
-                                </td>
-                            </tr>
-                            <tr title="" class="odd" role="row">
-                                <td class="text-center">
-                                    <button class="btn btn-default btn-xs">122</button>
-                                </td>
-
-                                <td> 0988559509</td>
-                                <td><img src="http://batdongsanphucthinh.vn/public/images/ads/122-main2.jpg"
-                                         style="max-width: 80px"></td>
-                                <td>
-                                    <a href="http://batdongsanphucthinh.vn/rao-vat/chinh-chu-can-ban-khach-san-tai-sa-pa-6-tang-122"
-                                       target="_blank">
-                                        CHÍNH CHỦ CẦN BÁN KHÁCH SẠN TẠI SA PA 6 TẦNG</a></td>
-
-                                <td>
-                                    <p class="btn btn-outline-danger btn-xs">thỏa thuận </p><br>
-                                    <p class="btn btn-outline-cyan btx-xs">225 m2 m<sup>2</sup></p>
-
-                                </td>
-
-                                <td>237</td>
-                                <td>08/10/2019</td>
-                                <td class="text-center">
-                                    <a href="#"><i class="fas fa-search fa-lg"></i></a>
-                                </td>
-                            </tr>
+                                    <td><?php echo $row->view; ?></td>
+                                    <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
+                                    <td class="text-center">
+                                        <a href="#"><i class="fas fa-search fa-lg"></i></a>
+                                    </td>
+                                </tr>
+                                <?php
+                            }
+                            ?>
 
                             </tbody>
                         </table>
