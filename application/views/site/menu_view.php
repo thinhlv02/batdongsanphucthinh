@@ -144,9 +144,9 @@
                 <div class="modal-body">
                     <form12 role="form">
                         <div class="form-group">
-                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> <?php echo $login_lang['username']; ?></label>
+                            <label for="usrname"><span class="glyphicon glyphicon-phone"></span> <?php echo $login_lang['phone']; ?></label>
                             <p class="text-danger mb-0" id="errUserName" style="display: none;"><span class="glyphicon glyphicon-alert"></span> <?php echo $login_lang['error_username']; ?></p>
-                            <input type="text" class="form-control" id="txtUserName" placeholder="<?php echo $login_lang['username']; ?>" onchange="banItemChange('#txtUserName', '#errUserName')">
+                            <input type="text" class="form-control" id="txtUserName" placeholder="<?php echo $login_lang['phone']; ?>" onchange="banItemChange('#txtUserName', '#errUserName')">
                         </div>
                         <div class="form-group">
                             <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> <?php echo $login_lang['password']; ?></label>

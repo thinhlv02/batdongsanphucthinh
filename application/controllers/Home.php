@@ -675,6 +675,7 @@ Class Home extends MY_Controller
         $password = md5($password);
 
         $data = array(
+            'username' => $phone,
             'phone' => $phone,
             'fullname' => $fullname,
             'password' => $password
