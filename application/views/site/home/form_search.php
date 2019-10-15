@@ -54,7 +54,7 @@
                     </select>
                 </div>
                 <div class="text-center">
-                    <button style="background-color: #2196F3;color: #fff;" type="submit" class="btn btn-default w-100"><i class="glyphicon glyphicon-search"></i> <?php echo $common_lang['btn_search']; ?>
+                    <button type="submit" class="btn btn-default bg-info w-100"><i class="glyphicon glyphicon-search"></i> <?php echo $common_lang['btn_search']; ?>
                     </button>
                 </div>
 
