@@ -53,7 +53,7 @@
                                 <i class="fa fa-location-arrow" style="color: #e40b00"></i>
                                 <?php echo $value->province_name != '' ? $value->province_name : 'update...'; ?>
                             </div>
-                            <div class="col-xs-6 btn-sm btn btn-primary font-weight-600">
+                            <div class="col-xs-6 btn-sm btn btn-info font-weight-600">
                                 <?php echo $value->price ?>
                             </div>
                         </div>
