@@ -3,7 +3,6 @@
 
         <div class="col-sm-12 col-md-12">
 
-<!--            <div class="row" style="border: 1px solid #dddddd">-->
             <div class="row">
                 <div class="box-module">
                     <div class="bg-modul"><i class="glyphicon glyphicon-tag"></i> Bất động sản nổi bật</div>
@@ -14,7 +13,6 @@
                     <div class="col-md-3 col-sm-6 col-xs-12 top2 item_ads _hot p-5" onclick="updateView('<?php echo $value->id; ?>');">
                         <div class="card mb-0">
                             <div class="card-body border-primary">
-
 
                         <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                             <img style="width: 100%;height: 210px"
