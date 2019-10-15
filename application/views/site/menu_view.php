@@ -14,7 +14,7 @@
     </div>
 
     <ul class="ul-large">
-        <li class="<?php echo !empty($li_1) ? 'menu-active' : ''?>" title="<?php echo $common_lang['home']; ?>"><a href="<?php echo base_url()?>"><i class="fa fa-home fa-lg"></i> <?php echo $common_lang['home']; ?></a></li>
+        <li class="<?php echo !empty($li_1) ? 'menu-active' : ''?>" title="<?php echo $common_lang['home']; ?>"><a href="<?php echo base_url()?>"><i class="fa fa-home"></i> <?php echo $common_lang['home']; ?></a></li>
         <li class="<?php echo !empty($li_2) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_intro']; ?>"><a href="<?php echo base_url('gioi-thieu')?>"> <?php echo $common_lang['lmenu_intro']; ?></a></li>
         <li class="<?php echo !empty($li_7) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_price']; ?>"><a href="<?php echo base_url('bang-gia')?>"> <?php echo $common_lang['lmenu_price']; ?></a></li>
 <!--        <li class="--><?php //echo !empty($li_3) ? 'menu-active' : ''?><!--" title="--><?php //echo $common_lang['lmenu_support']; ?><!--"><a href="--><?php //echo base_url('ho-tro')?><!--"> --><?php //echo $common_lang['lmenu_support']; ?><!--</a></li>-->
