@@ -18,7 +18,7 @@
             <div class="line-height-2 pl-5">
 
                 <?php if (isset($product)) { ?>
-                    <h2><?php echo $product->name ?></h2>
+<!--                    <h2>--><?php //echo $product->name ?><!--</h2>-->
                     <p>
                         <?php echo $product->content ?>
                     </p>

@@ -18,7 +18,7 @@
             <div class="line-height-2 pl-5">
 
                 <?php if (isset($price)) { ?>
-                    <div style="border: 1px solid #ccc; border-radius: 8px 8px 0 0; padding: 10px 0;">
+                    <div style="padding: 10px 0;">
                         <div id="price1" class="priceTitle" style="display: block;">
                             <div style="color: #055699; font-weight: bold;">
                                 <div style="width: 350px; float: left; margin: 80px 0 0 60px;">
