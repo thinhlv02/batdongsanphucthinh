@@ -14,7 +14,40 @@
         <div class="col-md-9 col-sm-8 detail-content">
             <div class="card line-height-2">
                 <div class="card-body">
-                    <?php echo $page_content ?>
+<!--                    --><?php //echo $page_content ?>
+
+                    <div style="padding: 10px 0;">
+                        <div id="price1" class="priceTitle" style="display: block;">
+                            <div style="color: #055699; font-weight: bold;">
+                                <div style="width: 350px; float: left; margin: 80px 0 0 60px;">
+                                    <div style="width: 80px; float: left; font-size: 30px; line-height: 35px; font-family: times new roman;">
+                                        ĐIỀU
+                                    </div>
+                                    <div style="width: 65px; float: left; font-size: 80px; line-height: 60px; font-family: times new roman;">
+                                        K
+                                    </div>
+                                    <div style="width: 200px; float: left;">
+                                        <div style="font-size: 30px; line-height: 35px; font-family: times new roman;">
+                                            HOẢN
+                                        </div>
+                                        <div style="font-size: 30px; line-height: 35px; font-family: times new roman;">
+                                            CHÍNH SÁCH
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <img src="<?php echo public_url('images/policies_page.png'); ?>">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="p-5" style="text-align: justify; clear: both">
+                            <p>
+                                <?php echo $page_content ?>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="col-md-9 col-sm-8 detail-content" style="padding-left: 10px !important;">
-            <div class="line-height-2 pl-5">
+            <div class="line-height-2 pl-5 card">
 
                 <?php if (isset($price)) { ?>
                     <div style="padding: 10px 0;">
