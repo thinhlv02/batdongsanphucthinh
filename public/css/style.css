@@ -23,7 +23,7 @@ a:hover {
     top: 0;
     z-index: 100;
     /*background-color: #ddd;*/
-    background-color: #5caceb;
+    background-color: #1E9FF2;
     text-align: center;
     /*display: none;*/
     width: 100%;
@@ -64,8 +64,8 @@ a:hover {
 .ul-large li a {
     color: #FFFFFF;
     padding: 20px 3px;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .ul-large li a:hover {
@@ -712,7 +712,7 @@ blockquote span {
     position: absolute;
     bottom: 0;
     /*background-color: rgba(0, 0, 0, 0.8);*/
-    background-color: #5caceb;
+    background-color: #1E9FF2;
     width: 100%;
     opacity: 1;
     padding: 2px;
@@ -726,7 +726,7 @@ blockquote span {
     width: 100%;
     height: 100%;
     /*background: rgba(0,0,0,0.8);*/
-    background: #5caceb;
+    background: #1E9FF2;
     /* position: absolute; */
     /* top: 0; */
     /* left: 0; */
@@ -1330,7 +1330,7 @@ span.item-date {
 
     left: 0% !important;
     right: 0% !important;
-    background: #5caceb !important;
+    background: #1E9FF2 !important;
     bottom: 0%;
     text-align: left;
     padding-bottom: 0px !important;
