@@ -1392,35 +1392,6 @@ button#myPageup {
 
 /*page up top*/
 
-/*hotline*/
-/*#hot_line {*/
-/*    position: absolute;*/
-/*    top: 17px;*/
-/*    left: 150px;*/
-/*    color: #feff90;*/
-/*    font-weight: bold;*/
-/*    font-size: 20px;*/
-/*}*/
-
-/*language */
-#language {
-    float: right;
-    line-height: 45px;
-    margin-right: 20px
-}
-
-#language a {
-    color: #fff !important;
-    font-weight: bold;
-}
-
-#language img {
-    display: inline !important;
-    width: 24px;
-    height: 16px;
-    margin-right: 5px;
-}
-
 /*menu login ,register*/
 .user_style .fa {
     color: #e40b00 !important;
