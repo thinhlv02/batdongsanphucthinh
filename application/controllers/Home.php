@@ -782,8 +782,8 @@ Class Home extends MY_Controller
     function price($slug = '', $id = 0)
     {
 //        die('aaaaaaa');
-        $this->load->language('introduce/introduce', $this->_langcode);
-        $this->data['introduce_lang'] = $this->lang->line('introduce_lang');
+        $this->load->language('price/price', $this->_langcode);
+        $this->data['price_lang'] = $this->lang->line('price_lang');
         if (strlen($slug) > 0 && $id > 0) {
             $price = $this->price_model->get_info($id);
             if (!$price || create_slug($price->name) != $slug) {
@@ -802,7 +802,7 @@ Class Home extends MY_Controller
         // load header
         $header = array();
         $header['li_7'] = '1';
-        $header['title'] = $this->data['introduce_lang']['title'];
+        $header['title'] = $this->data['price_lang']['title'];
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/price', $this->data);
