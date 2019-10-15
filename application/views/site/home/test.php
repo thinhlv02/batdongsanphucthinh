@@ -63,10 +63,7 @@
 
                                         <?php } ?>
 
-                                        <div class="pull-right mt-10 viewall">
-                                            <a href="javascript:void(0)"><i class="glyphicon glyphicon-th"></i>
-                                                Xem tất cả</a>
-                                        </div>
+
                                     </div>
 
 
@@ -143,10 +140,7 @@
 
                                         <?php } ?>
 
-                                        <div class="pull-right mt-10 viewall">
-                                            <a href="javascript:void(0)"><i class="glyphicon glyphicon-th"></i>
-                                                Xem tất cả</a>
-                                        </div>
+
                                     </div>
 
 
@@ -286,10 +280,7 @@
 
                                         <?php } ?>
 
-                                        <div class="pull-right mt-10 viewall">
-                                            <a href="javascript:void(0)"><i class="glyphicon glyphicon-th"></i>
-                                                Xem tất cả</a>
-                                        </div>
+
                                     </div>
 
 

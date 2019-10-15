@@ -7,7 +7,6 @@ Class Home extends MY_Controller
     function __construct()
     {
         parent::__construct();
-//        $this->load->model('recruitment_model');
         $this->load->model('product_model');
         $this->load->model('price_model');
         $this->load->model('questions_model');
