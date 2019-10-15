@@ -18,10 +18,40 @@
             <div class="line-height-2 pl-5">
 
                 <?php if (isset($product)) { ?>
-<!--                    <h2>--><?php //echo $product->name ?><!--</h2>-->
-                    <p>
-                        <?php echo $product->content ?>
-                    </p>
+                    <div style="padding: 10px 0;">
+                        <div id="price1" class="priceTitle" style="display: block;">
+                            <div style="color: #055699; font-weight: bold;">
+                                <div style="width: 350px; float: left; margin: 80px 0 0 60px;">
+                                    <div style="width: 80px; float: left; font-size: 30px; line-height: 35px; font-family: times new roman;">
+                                        VỀ
+                                    </div>
+                                    <div style="width: 65px; float: left; font-size: 80px; line-height: 60px; font-family: times new roman;">
+                                        C
+                                    </div>
+                                    <div style="width: 200px; float: left;">
+                                        <div style="font-size: 30px; line-height: 35px; font-family: times new roman;">
+                                            HÚNG
+                                        </div>
+                                        <div style="font-size: 30px; line-height: 35px; font-family: times new roman;color: #1E9FF2;">
+                                            TÔI
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <img style="max-width: 308px;"
+                                         src="<?php echo public_url('images/intro_us.jpg'); ?>">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="p-5" style="text-align: justify; clear: both">
+                            <p>
+                                <?php echo $product->content ?>
+                            </p>
+                        </div>
+                    </div>
+
                 <?php } ?>
 
             </div>
