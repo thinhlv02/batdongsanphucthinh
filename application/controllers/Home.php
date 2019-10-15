@@ -22,7 +22,6 @@ Class Home extends MY_Controller
 
     function index()
     {
-        $this->data['li_1'] = 1;
         $lstProvince = $this->_province;
 
 //        $lstProvince_end = [];
@@ -94,6 +93,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
+        $header['li_1'] = '1';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'home/home', $this->data);
@@ -108,7 +108,6 @@ Class Home extends MY_Controller
     {
         $this->load->language('introduce/introduce', $this->_langcode);
         $this->data['introduce_lang'] = $this->lang->line('introduce_lang');
-        $this->data['li_2'] = 1;
         if (strlen($slug) > 0 && $id > 0) {
             $product = $this->product_model->get_info($id);
             if (!$product || create_slug($product->name) != $slug) {
@@ -126,6 +125,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
+        $header['li_2'] = '1';
         $header['title'] = $this->data['introduce_lang']['title'];
         $this->_loadHeader($header);
 
@@ -141,7 +141,6 @@ Class Home extends MY_Controller
     {
         $this->load->language('support/support', $this->_langcode);
         $this->data['support_lang'] = $this->lang->line('support_lang');
-        $this->data['li_3'] = 1;
 
         if ($type == "ky-thuat-vien" || $type == "ky-thuat-vien.html") {
             $type = 2;
@@ -158,6 +157,7 @@ Class Home extends MY_Controller
         // load header
         $header = array();
         $header['title'] = $this->data['support_lang']['title'];
+        $header['li_3'] = '1';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/support_level_1', $this->data);
@@ -170,7 +170,6 @@ Class Home extends MY_Controller
     function detail_support($slug = "", $id = 0)
     {
         $this->data['active'] = $id;
-        $this->data['li_3'] = 1;
         if (strlen($slug) > 0 && $id > 0) {
             $question = $this->questions_model->get_info($id);
             if (!$question || create_slug($question->name) != $slug) {
@@ -217,7 +216,6 @@ Class Home extends MY_Controller
     {
         $this->load->language('policies/policies', $this->_langcode);
         $this->data['policies_lang'] = $this->lang->line('policies_lang');
-        $this->data['li_4'] = 1;
         $this->data['active'] = 99;
 
         $policy = $this->contact_model->get_info(1)->policy;
@@ -227,6 +225,7 @@ Class Home extends MY_Controller
         // load header
         $header = array();
         $header['title'] = $this->data['policies_lang']['title'];
+        $header['li_4'] = '1';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/policy', $this->data);
@@ -242,7 +241,6 @@ Class Home extends MY_Controller
         $this->data['policies_lang'] = $this->lang->line('policies_lang');
 
         $this->data['active'] = 100;
-        $this->data['li_4'] = 1;
         $privacy = $this->contact_model->get_info(1)->privacy;
         $this->data['title'] = "Chính sách bảo mật";
         $this->data['page_content'] = $privacy;
@@ -263,11 +261,11 @@ Class Home extends MY_Controller
     {
         $this->load->language('contact/contact', $this->_langcode);
         $this->data['contact_lang'] = $this->lang->line('contact_lang');
-        $this->data['li_5'] = 1;
 
         // load header
         $header = array();
         $header['title'] = $this->data['contact_lang']['title'];
+        $header['li_5'] = '1';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/contact', $this->data);
@@ -309,13 +307,13 @@ Class Home extends MY_Controller
         $this->data['news'] = $news;
         $this->data['highlight'] = $highlight;
 
-        $this->data['li_6'] = 1;
 //        $news = $this->news_model->get_list();
         $this->data['news'] = $news;
 
         // load header
         $header = array();
         $header['title'] = $this->data['news_lang']['title'];
+        $header['li_6'] = '1';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/news', $this->data);
@@ -343,8 +341,6 @@ Class Home extends MY_Controller
         $this->data['robots'] = $news->robots_meta;
         $this->data['canonical'] = $news->canonical_url;
         $this->data['keywords'] = $news->meta_keywords;
-
-        $this->data['li_6'] = 1;
 
         // load header
         $header = array();
@@ -383,7 +379,6 @@ Class Home extends MY_Controller
         $this->data['ads'] = $news;
         $this->data['highlight'] = $highlight;
 
-        $this->data['li_6'] = 1;
 //        $news = $this->ads_model->get_list();
         $this->data['ads'] = $news;
         // load header
@@ -425,7 +420,6 @@ Class Home extends MY_Controller
 //        $this->data['canonical'] = $ads->canonical_url;
 //        $this->data['keywords'] = $ads->meta_keywords;
 
-        $this->data['li_6'] = 1;
 //        $this->data['temp'] = $this->_template_f . 'pages/ads_detail';
         // load header
         $header = array();
@@ -652,7 +646,6 @@ Class Home extends MY_Controller
 
         $this->data['lstSearch'] = $lstSearch;
 
-        $this->data['li_6'] = 1;
         $this->data['province'] = $province;
         $this->data['lstProvince'] = $lstProvince;
 
@@ -791,7 +784,6 @@ Class Home extends MY_Controller
 //        die('aaaaaaa');
         $this->load->language('introduce/introduce', $this->_langcode);
         $this->data['introduce_lang'] = $this->lang->line('introduce_lang');
-        $this->data['li_2'] = 1;
         if (strlen($slug) > 0 && $id > 0) {
             $price = $this->price_model->get_info($id);
             if (!$price || create_slug($price->name) != $slug) {
@@ -809,6 +801,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
+        $header['li_7'] = '1';
         $header['title'] = $this->data['introduce_lang']['title'];
         $this->_loadHeader($header);
 
