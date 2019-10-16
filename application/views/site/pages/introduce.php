@@ -2,7 +2,7 @@
     <div class="container">
         <div class="col-sm-4 col-md-3">
             <div class="left-menu">
-                <div class="left-title">Giới thiệu Website</div>
+                <div class="left-title">Giới thiệu </div>
                 <ul>
                     <?php foreach ($products as $k => $p) { ?>
                         <li class="<?php if ($p->id == $active || ($k == 0 && $active == 0)) echo 'active'; ?>">
