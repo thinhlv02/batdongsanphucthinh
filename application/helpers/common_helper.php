@@ -307,7 +307,8 @@ function sendmail($data, $langcode = '')
 
     $mail_from = $ci->config->item('serving_email');
     $from_name = $ci->config->item('serving_email_name');
-    $from_name = $from_name[$langcode];
+//    $from_name = $from_name[$langcode];
+    $from_name = $from_name['vietnamese'];
 
     $ci->email->set_newline("\r\n");
     $ci->email->from($mail_from, $from_name);
@@ -315,7 +316,7 @@ function sendmail($data, $langcode = '')
     $result = true;
 
     if (strpos($data['to'], ',')) {
-        echo 1;
+//        echo 1;
         $emailList = explode(',', $data['to']);
         foreach ($emailList as $eL) {
             if (($eL != '') && !(realEmail($eL))) {
@@ -324,17 +325,18 @@ function sendmail($data, $langcode = '')
             }
         }
     } else {
-        echo 2;
+//        echo 2;
         $result = realEmail($data['to']);
     }
 
-    echo '33';
+//    echo '33';
 
-    var_dump($result);
+//    var_dump($result);
 
     if ($result) {
-        echo 'dcm';
+//        echo 'dcm';
         $ci->email->to($data['to']);
+        var_dump($data['to']);
         if (array_key_exists('cc', $data)) $ci->email->cc($data['cc']);
         if (array_key_exists('bcc', $data)) $ci->email->bcc($data['bcc']);
         $ci->email->subject($data['subject']);

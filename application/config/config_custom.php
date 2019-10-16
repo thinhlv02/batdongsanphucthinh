@@ -39,3 +39,7 @@ $config['device_type'] = array(
 
 );
 //1: laptop: 2:pc; 3: mobile; 4: khác
+
+$config['serving_email'] = 'noreply@adclick.vn';
+
+$config['serving_email_name'] = array('vietnamese' => 'Admarket', 'english' => 'Admarket');
