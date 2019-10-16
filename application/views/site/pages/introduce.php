@@ -39,7 +39,7 @@
                                 </div>
                                 <div style="float: left;">
                                     <img style="max-width: 308px;"
-                                         src="<?php echo public_url('images/intro_us.jpg'); ?>">
+                                         src="<?php echo public_url('images/about_us.jpg'); ?>">
                                 </div>
                             </div>
 
