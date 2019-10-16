@@ -48,6 +48,9 @@ defined('FOPEN_READ_WRITE_CREATE')              OR define('FOPEN_READ_WRITE_CREA
 defined('FOPEN_WRITE_CREATE_STRICT')            OR define('FOPEN_WRITE_CREATE_STRICT', 'xb');
 defined('FOPEN_READ_WRITE_CREATE_STRICT')       OR define('FOPEN_READ_WRITE_CREATE_STRICT', 'x+b');
 
+//custom by thinhlv
+define('SENDMAIL', true);
+//END custom by thinhlv
 /*
 |--------------------------------------------------------------------------
 | Exit Status Codes

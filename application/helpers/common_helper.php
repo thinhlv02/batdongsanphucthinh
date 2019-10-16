@@ -243,6 +243,116 @@ function removeAllTags($text)
     return strip_tags($text);
 }
 
+function realEmail($email)
+{
+    $chk = false;
+    $email = trim($email);
+    if ($email == '') {
+        return $chk;
+    }
+    if (!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $email)) {
+        return $chk;
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        return $chk;
+    }
+
+    list($userName, $mailDomain) = explode("@", $email);
+    $mailDomain = trim($mailDomain);
+    if (!checkdnsrr($mailDomain, "MX")) {
+        return $chk;
+    }
+    /*
+    $arr = dns_get_record($mailDomain);
+    if(empty($arr))
+    {
+        return $chk;
+    }
+    else
+    {
+        if(isset($arr[1]) && isset($arr[1]['target']) && strtolower(trim($arr[1]['target'])) == 'thongbao.vnnic.vn')
+        {
+            return $chk;
+        }
+    }
+    */
+    return true;
+}
+
+
+function sendmail($data, $langcode = '')
+{
+    /* data array
+    $data = array(
+        'to' => '',
+        'cc' => '',
+        'bcc' => '',
+        'subject' => '',
+        'body' => ''
+    );
+    */
+
+    $langcode = trim($langcode);
+    if ($langcode == '') {
+//        $langcode = get_langcode();
+    }
+    $config = array();
+    $config['mailtype'] = 'html';
+    $config['protocol'] = 'smtp';
+    $config['smtp_crypto'] = '';
+
+    $ci = &get_instance();
+    $ci->load->library('email', $config);
+
+    $mail_from = $ci->config->item('serving_email');
+    $from_name = $ci->config->item('serving_email_name');
+    $from_name = $from_name[$langcode];
+
+    $ci->email->set_newline("\r\n");
+    $ci->email->from($mail_from, $from_name);
+    //Check if email is list
+    $result = true;
+
+    if (strpos($data['to'], ',')) {
+        echo 1;
+        $emailList = explode(',', $data['to']);
+        foreach ($emailList as $eL) {
+            if (($eL != '') && !(realEmail($eL))) {
+                $result = false;
+                exit;
+            }
+        }
+    } else {
+        echo 2;
+        $result = realEmail($data['to']);
+    }
+
+    echo '33';
+
+    var_dump($result);
+
+    if ($result) {
+        echo 'dcm';
+        $ci->email->to($data['to']);
+        if (array_key_exists('cc', $data)) $ci->email->cc($data['cc']);
+        if (array_key_exists('bcc', $data)) $ci->email->bcc($data['bcc']);
+        $ci->email->subject($data['subject']);
+        $ci->email->message($data['body']);
+        if (SENDMAIL) {
+            if ($ci->email->send()) {
+                $ci->email->clear();
+                echo 'true';
+                return true;
+            } else {
+                echo 'false222222222';
+                return false;
+            }
+        }
+    }
+    return false;
+}
+
 function pre($data)
 {
     echo '<pre>', print_r($data, 1), '</pre>';
