@@ -45,7 +45,18 @@
 
                         </div>
 
+                        <div id="price2" style="display: none;" class="priceTitle">
+                            <div style="text-align: center; color: #055699; font-size: 18px; margin-top: 20px; margin-bottom: 5px; font-family: 'times new roman'; font-weight: bold;">
+                                SẢN PHẨM  - DỊCH VỤ CỦA TÂN BÌNH
+                            </div>
+                            <div style="text-align: center; margin-bottom: 30px;"></div>
+                            <div style="text-align: center">
+
+                            </div>
+                        </div>
+
                         <div class="p-5" style="text-align: justify; clear: both">
+                            <h2><?php echo $product->intro ?></h2>
                             <p>
                                 <?php echo $product->content ?>
                             </p>
@@ -61,3 +72,23 @@
     </div>
 
 </section>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if (window.location.hash) {
+            var hash = window.location.hash.substring(1, 2);
+            if ($.isNumeric(hash)) showTitlePrice(hash);
+        } else {
+            showTitlePrice(1);
+        }
+    });
+
+    function showTitlePrice(id) {
+        $(".priceTitle").each(function () {
+            $(this).css("display", "none");
+        });
+
+        $("#price" + id).css("display", "block");
+    }
+
+</script>
