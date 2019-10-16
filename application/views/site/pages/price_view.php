@@ -45,9 +45,19 @@
                         </div>
                         <div id="price2" style="display: none;" class="priceTitle">
                             <div style="text-align: center; color: #055699; font-size: 18px; margin-top: 20px; margin-bottom: 5px; font-family: 'times new roman'; font-weight: bold;">
-                                BÁO GIÁ BANNER PHIÊN BẢN DESKTOP
+                                PHƯƠNG THỨC ĐĂNG TIN BĐS
                             </div>
                             <div style="text-align: center; margin-bottom: 30px;">(Áp dụng từ 26/01/2019 – Giá đã bao gồm VAT)</div>
+                            <div style="text-align: center">
+
+                            </div>
+                        </div>
+
+                        <div id="price3" style="display: none;" class="priceTitle">
+                            <div style="text-align: center; color: #055699; font-size: 18px; margin-top: 20px; margin-bottom: 5px; font-family: 'times new roman'; font-weight: bold;">
+                                BÁO GIÁ BANNER PHIÊN BẢN DESKTOP
+                            </div>
+                            <div style="text-align: center; margin-bottom: 30px;"></div>
                             <div style="text-align: center">
 
                             </div>
