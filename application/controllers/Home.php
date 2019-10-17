@@ -98,7 +98,7 @@ Class Home extends MY_Controller
         $header['title'] = $this->data['introduce_lang']['title'];
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/introduce', $this->data);
+        $this->load->view($this->_template_f . 'introduce/introduce', $this->data);
 
         $this->_loadFooter();
 
