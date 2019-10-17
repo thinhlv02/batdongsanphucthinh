@@ -30,7 +30,7 @@
                                         <div style="font-size: 30px; line-height: 35px; font-family: times new roman;">
                                             HOẢN
                                         </div>
-                                        <div style="font-size: 30px; line-height: 35px; font-family: times new roman;">
+                                        <div style="font-size: 30px; line-height: 35px; font-family: times new roman;color: #1E9FF2 !important;">
                                             CHÍNH SÁCH
                                         </div>
                                     </div>

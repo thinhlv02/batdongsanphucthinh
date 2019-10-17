@@ -636,7 +636,7 @@ Class Home extends MY_Controller
         $header['title'] = 'Bảng giá';
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/price_table', $this->data);
+        $this->load->view($this->_template_f . 'price/price_vipost', $this->data);
 
         $this->_loadFooter();
     }
