@@ -414,8 +414,11 @@ Class Home extends MY_Controller
 
     function agency()
     {
-        $this->data['temp'] = $this->_template_f . 'pages/agency';
-        $this->load->view($this->_template_f . 'layout', $this->data);
+        // load header
+        $header = array();
+        $this->_loadHeader($header);
+        $this->load->view($this->_template_f . 'agency/agency', $this->data);
+        $this->_loadFooter();
     }
 
     function sitemap()
