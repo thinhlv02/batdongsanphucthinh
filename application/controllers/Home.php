@@ -23,25 +23,6 @@ Class Home extends MY_Controller
     {
         $lstProvince = $this->_province;
 
-//        $lstProvince_end = [];
-//        $index = 0;
-//        foreach ($lstProvince as $k => $val) {
-//            $index++;
-//            $lstProvince_end[$index] = new stdClass();
-//            $lstProvince_end[$index]->id = $val->id;
-//            $lstProvince_end[$index]->_name = $val->_name;
-//            $lstProvince_end[$index]->_code = $val->_code;
-//            $lstProvince_end[$index]->_area = $val->_area;
-
-//
-//            [id] => 1
-//            [_name] => Hồ Chí Minh
-//            [_code] => SG
-//            [_area] => 3
-//        }
-
-//        pre_arr($lstProvince_end);
-
         $this->data['lstProvince'] = $lstProvince;
 
         $news = $this->news_model->get_list(array('limit' => array(11, 0)));
@@ -77,18 +58,9 @@ Class Home extends MY_Controller
         $layer_right = $this->ads_model->get_list(array('where' => array('layer_right' => 1), 'limit' => array(5, 0)));
         $this->data['layer_right'] = $layer_right;
 
-
-        //ads nổi bật
-//        $ads = $this->ads_model->get_list(array('where' => array('highlight' => 1), 'limit' => array(8, 0)));
-//        $this->data['ads'] = $ads;
-
         //ads new
         $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(7, 0)));
         $this->data['ads_new'] = $ads_new;
-
-        //ads mới cập nhật
-//        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(100, 0)));
-//        $this->data['ads_new'] = $ads_new;
 
         // load header
         $header = array();
@@ -99,8 +71,6 @@ Class Home extends MY_Controller
 
         $this->_loadFooter();
 
-//        $this->data['temp'] = $this->_template_f . 'home/home';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function introduce($slug = '', $id = 0)
@@ -132,8 +102,6 @@ Class Home extends MY_Controller
 
         $this->_loadFooter();
 
-//        $this->data['temp'] = $this->_template_f . 'pages/introduce';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function support($type = 1)
@@ -162,8 +130,6 @@ Class Home extends MY_Controller
         $this->load->view($this->_template_f . 'pages/support_level_1', $this->data);
         $this->_loadFooter();
 
-//        $this->data['temp'] = $this->_template_f . 'pages/support_level_1';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function detail_support($slug = "", $id = 0)
@@ -184,9 +150,6 @@ Class Home extends MY_Controller
 
             $this->_loadHeader($header);
 
-//            $this->load->view($this->_template_f . 'home/home', $this->data);
-//            $this->_loadFooter();
-
             if ($question->level == 1) {
                 $questions = $this->questions_model->get_list(array('where' => array('parent_id' => $question->id), 'order' => array('id', 'asc')));
                 $this->data['questions'] = $questions;
@@ -205,10 +168,8 @@ Class Home extends MY_Controller
             redirect(base_url('ho-tro.html'));
         }
 
-//        $this->load->view($this->_template_f . 'home/home', $this->data);
         $this->_loadFooter();
 
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function policy()
@@ -230,8 +191,6 @@ Class Home extends MY_Controller
         $this->load->view($this->_template_f . 'pages/policy', $this->data);
         $this->_loadFooter();
 
-//        $this->data['temp'] = $this->_template_f . 'pages/policy';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function privacy()
@@ -252,8 +211,6 @@ Class Home extends MY_Controller
         $this->load->view($this->_template_f . 'pages/policy', $this->data);
         $this->_loadFooter();
 
-//        $this->data['temp'] = $this->_template_f . 'pages/policy';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function contact()
@@ -270,8 +227,6 @@ Class Home extends MY_Controller
         $this->load->view($this->_template_f . 'pages/contact', $this->data);
         $this->_loadFooter();
 
-//        $this->data['temp'] = $this->_template_f . 'pages/contact';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function download()
@@ -317,9 +272,6 @@ Class Home extends MY_Controller
 
         $this->load->view($this->_template_f . 'pages/news', $this->data);
         $this->_loadFooter();
-
-//        $this->data['temp'] = $this->_template_f . 'pages/news';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function news_detail($slug, $id)
@@ -349,9 +301,6 @@ Class Home extends MY_Controller
         $this->load->view($this->_template_f . 'pages/news_detail', $this->data);
         $this->_loadFooter();
 
-
-//        $this->data['temp'] = $this->_template_f . 'pages/news_detail';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function ads()
@@ -387,8 +336,7 @@ Class Home extends MY_Controller
 
         $this->load->view($this->_template_f . 'pages/ads', $this->data);
         $this->_loadFooter();
-//        $this->data['temp'] = $this->_template_f . 'pages/ads';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
+
     }
 
     function ads_detail($slug, $id)
@@ -429,8 +377,6 @@ Class Home extends MY_Controller
         $this->load->view($this->_template_f . 'pages/ads_detail_hp', $this->data);
         $this->_loadFooter();
 
-//        $this->data['temp'] = $this->_template_f . 'pages/ads_detail_hp';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
 
@@ -447,8 +393,6 @@ Class Home extends MY_Controller
         $this->load->view($this->_template_f . 'product/product', $this->data);
         $this->_loadFooter();
 
-//        $this->data['temp'] = $this->_template_f . 'product/product';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function language()
@@ -506,37 +450,20 @@ Class Home extends MY_Controller
             echo 'not update';
         }
 
-//        echo json_encode($res);
-
-//        echo 'dcm';
-//        die();
-
-//        $id = $this->input->get('id');
-//        echo $id;
     }
 
     function ajax_get_list_district()
     {
         $id = $this->input->get('id');
-//        var_dump($id);
-//        $selected = $this->input->post('selected');
-
-        //get list tbl_gift_item_info_by_type
-
 
         $lst_district = $this->district_model->get_list(array('where' => array('_province_id' => $id)));
-//        $lst_district = $this->district_model->get_list();
-//        var_dump($lst_district);
-//        die;
 
         $lst_district_end = [];
         foreach ($lst_district as $k => $value) {
             $lst_district_end[$value->id]['id'] = $value->id;
             $lst_district_end[$value->id]['_name'] = $value->_name;
         }
-//        pre_arr($lst_district_end);
 
-//        pre($lst_district_end);
         $this->data['lstdata'] = $lst_district_end;
 
         $this->load->view($this->_template_f . 'home/view_list_district', $this->data);
@@ -545,24 +472,15 @@ Class Home extends MY_Controller
     function ajax_get_list_ward()
     {
         $id = $this->input->get('id');
-//        var_dump($id);
-//        $selected = $this->input->post('selected');
-
-        //get list tbl_gift_item_info_by_type
 
         $lst_ward = $this->Ward_model->get_list(array('where' => array('_district_id' => $id)));
-//        $lst_ward = $this->District_model->get_list();
-//        var_dump($lst_ward);
-//        die;
 
         $lst_ward_end = [];
         foreach ($lst_ward as $k => $value) {
             $lst_ward_end[$value->id]['id'] = $value->id . '|' . $value->_district_id;
             $lst_ward_end[$value->id]['_name'] = $value->_name;
         }
-//        pre_arr($lst_ward_end);
 
-//        pre($lst_ward_end);
         $this->data['lstdata'] = $lst_ward_end;
 
         $this->load->view($this->_template_f . 'home/view_list_ward', $this->data);
@@ -571,16 +489,13 @@ Class Home extends MY_Controller
     // tìm kiếm
     function search()
     {
-//        pre($_GET['province']);
-//        die;
         $this->load->language('search/search', $this->_langcode);
         $this->data['search_lang'] = $this->lang->line('search_lang');
         $lstProvince = $this->_province;
 
         $province = $this->input->get('province');
         $province = $province != '' ? $province : '';
-//        echo $province;
-//        die;
+
         $district = $this->input->get('district');
         $ward = $this->input->get('ward');
         $code = $this->input->get('code');
@@ -606,8 +521,6 @@ Class Home extends MY_Controller
         $this->load->view($this->_template_f . 'pages/search', $this->data);
         $this->_loadFooter();
 
-//        $this->data['temp'] = $this->_template_f . 'pages/search';
-//        $this->load->view($this->_template_f . 'layout', $this->data);
     }
 
     function user_register()
@@ -758,6 +671,5 @@ Class Home extends MY_Controller
 
         $this->_loadFooter();
     }
-
 
 }
