@@ -63,6 +63,40 @@
                             </div>
                         </div>
 
+                        <div id="price4" style="display: none;" class="priceTitle">
+                            <h2 style="text-align: center; color: #055699; padding: 20px 0 7px 0;">
+                                <span style="font-size: 50px; font-family: times new roman; text-transform: uppercase;">Báo giá</span>
+                                <span style="font-size: 25px; font-family: times new roman; text-transform: uppercase;">tin rao theo từng gói</span>
+                            </h2>
+                            <div style="text-align: center; padding: 0 0 20px 0;">(Áp dụng kể từ ngày 01/04/2019 - Giá đã bao gồm VAT)</div>
+                            <div style="text-align: center;">
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-center">Loại tin</th>
+                                        <th class="text-center">Phí theo ngày</th>
+                                        <th class="text-center">Phí 1 Tuần</th>
+                                        <th class="text-center">Phí 2 Tuần</th>
+                                        <th class="text-center">Phí 1 Tháng</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    <tr class="info">
+                                        <td>Tin thường</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>300K</td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
                         <div class="p-5" style="text-align: justify; clear: both">
                             <p>
                                 <?php echo $price->content ?>
