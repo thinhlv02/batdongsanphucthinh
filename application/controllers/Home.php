@@ -174,8 +174,8 @@ Class Home extends MY_Controller
 
     function policy()
     {
-        $this->load->language('policies/policies', $this->_langcode);
-        $this->data['policies_lang'] = $this->lang->line('policies_lang');
+        $this->load->language('policy/policy', $this->_langcode);
+        $this->data['policy_lang'] = $this->lang->line('policy_lang');
         $this->data['active'] = 99;
 
         $policy = $this->contact_model->get_info(1)->policy;
@@ -184,19 +184,19 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = $this->data['policies_lang']['title'];
+        $header['title'] = $this->data['policy_lang']['title'];
         $header['li_4'] = '1';
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/policy', $this->data);
+        $this->load->view($this->_template_f . 'policy/policy', $this->data);
         $this->_loadFooter();
 
     }
 
     function privacy()
     {
-        $this->load->language('policies/policies', $this->_langcode);
-        $this->data['policies_lang'] = $this->lang->line('policies_lang');
+        $this->load->language('policy/policy', $this->_langcode);
+        $this->data['policy_lang'] = $this->lang->line('policy_lang');
 
         $this->data['active'] = 100;
         $privacy = $this->contact_model->get_info(1)->privacy;
@@ -205,10 +205,10 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = $this->data['policies_lang']['title'];
+        $header['title'] = $this->data['policy_lang']['title'];
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/policy', $this->data);
+        $this->load->view($this->_template_f . 'policy/policy', $this->data);
         $this->_loadFooter();
 
     }

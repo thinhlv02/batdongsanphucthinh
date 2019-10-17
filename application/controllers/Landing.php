@@ -184,7 +184,7 @@ Class Landing extends MY_Controller
         $policy = $this->contact_model->get_info(1)->policy;
         $this->data['title'] = "Điều khoản sử dụng";
         $this->data['page_content'] = $policy;
-        $this->data['temp'] = $this->_template_f . 'pages/policy';
+        $this->data['temp'] = $this->_template_f . 'policy/policy';
         $this->load->view($this->_template_f . 'layout/layout', $this->data);
     }
 
@@ -195,7 +195,7 @@ Class Landing extends MY_Controller
         $privacy = $this->contact_model->get_info(1)->privacy;
         $this->data['title'] = "Chính sách bảo mật";
         $this->data['page_content'] = $privacy;
-        $this->data['temp'] = $this->_template_f . 'pages/policy';
+        $this->data['temp'] = $this->_template_f . 'policy/policy';
         $this->load->view($this->_template_f . 'layout/layout', $this->data);
     }
 

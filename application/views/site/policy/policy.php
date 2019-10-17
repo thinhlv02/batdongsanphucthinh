@@ -36,7 +36,7 @@
                                     </div>
                                 </div>
                                 <div style="float: left;">
-                                    <img src="<?php echo public_url('images/policies_page.png'); ?>">
+                                    <img src="<?php echo public_url('images/policy_page.png'); ?>">
                                 </div>
                             </div>
 
