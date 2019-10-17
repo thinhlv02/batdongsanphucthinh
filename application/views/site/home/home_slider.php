@@ -1,14 +1,9 @@
 <section class="news pt-0 ">
     <div class="container">
-        <!--        <div class="box-module">-->
-        <!--            <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Tin Vip</div>-->
-        <!--        </div>-->
+
         <div class="row">
 
-<!--            load form search-->
             <?php $this->load->view($this->_template_f . 'home/form_search') ?>
-
-            <!--            load form search-->
 
             <div class="col-sm-6 col-md-6">
 
@@ -64,10 +59,6 @@
 
             <div class="col-sm-4 col-md-4">
 
-                <!--                    <div class="box-module mt-2">-->
-                <!--                        <div class="bg-modul"><i class="glyphicon glyphicon-file"></i>Tin tức mới</div>-->
-                <!--                    </div>-->
-
                 <div id="myCarouse2" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <!--                        <ol class="carousel-indicators">-->
@@ -116,29 +107,6 @@
                     </a>
                 </div>
 
-                <!--                    <div class="box-links-right">-->
-                <!--                        <p>-->
-                <!--                            <span style="font-size:12px">-->
-                <!--                                <span  style="font-family:tahoma,geneva,sans-serif"><strong>KHU VỰC&nbsp;HÀ NỘI</strong></span></span>-->
-                <!--                        </p>-->
-                <!---->
-                <!--                        <ul>-->
-                <!---->
-                <!--                            --><?php //foreach ($news as $key=>$value){ ?>
-                <!---->
-                <!--                            <li>-->
-                <!--                                <a href="-->
-                <?php //echo base_url('tin-tuc/'.create_slug($value->name).'-'.$value->id)?><!--">-->
-                <!--                                    --><?php //echo $value->name?>
-                <!--                                </a>-->
-                <!--                            </li>-->
-                <!---->
-                <!--                            --><?php //} ?>
-                <!---->
-                <!--                        </ul>-->
-                <!---->
-                <!--                    </div>-->
-
             </div>
 
         </div>
@@ -151,13 +119,10 @@
     $("#formAddProduct_book").submit(function (e) {
         //prevent Default functionality
         e.preventDefault();
-        // console.log('abc');
-        // var data = $("#formAddProduct_book").serialize() + '&userid=' + userid+ '&server='+server;
         var params = $("#formAddProduct_book").serialize();
         console.log('data submit11111111 ' + params);
 
         var _onSuccess = function (data) {
-            console.log(data);
             if (data == 'NOT_LOGIN') {
 
             } else if (data === 'false') {
@@ -169,9 +134,6 @@
         };
 
         getAjax('<?php echo base_url('home/ajax_book') ?>', params, 'POST', '', false, _onSuccess);
-
-        //getAjax('<?php //echo admin_url('ads/ajax_get_list_ward'); ?>//', params, '', 'GET', '', false, _onSuccess);
-
 
     });
 

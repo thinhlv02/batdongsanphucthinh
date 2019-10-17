@@ -1,5 +1,5 @@
 <?php //$this->load->view($this->_template_f . 'home/intro_1') ?>
-<?php $this->load->view($this->_template_f . 'home/banner')?>
+<?php $this->load->view($this->_template_f . 'home/home_slider')?>
 <?php $this->load->view($this->_template_f . 'home/home_center')?>
 <?php $this->load->view($this->_template_f . 'home/home_hp')?>
 <?php $this->load->view($this->_template_f . 'home/home_col3')?>
