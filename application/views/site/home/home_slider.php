@@ -8,37 +8,19 @@
             <div class="col-sm-6 col-md-6">
 
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <!--                    <ol class="carousel-indicators">-->
-                    <!--                        --><?php //foreach ($ads_left as $key => $value) {
-                    //                            ?>
-                    <!--                            <li data-target="#myCarousel" data-slide-to="-->
-                    <?php //echo $key ?><!--" class="--><?php //if ($key == 0) echo 'active'; ?><!--"></li>-->
-                    <!--                        --><?php //} ?>
-                    <!--                    </ol>-->
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <?php foreach ($ads_left as $key => $value) {
-//                        echo $key;
                             ?>
                             <div class="item <?php if ($key == 0) echo 'active'; ?>"
                                  onclick="updateView('<?php echo $value->id; ?>');">
-                                <!--                                    <img src="-->
-                                <?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
+
                                 <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                     <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                          alt="<?php echo $value->img ?>" style="width:100%; height: 320px">
                                 </a>
-                                <!--                                <div class="carousel-caption">-->
-                                <!--                                    <h4><a style="color: white !important;" href="-->
-                                <?php //echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?><!--">-->
-                                <!--                                            --><?php //echo $value->intro ?>
-                                <!--                                        </a></h4>-->
-                                <!--                                            <p><a class="text-danger" href="">-->
-                                <!--                                                --><?php //echo $value->intro ?>
-                                <!--                                            </a></p>-->
-                                <!--                                </div>-->
+
                             </div>
                         <?php } ?>
 
@@ -60,37 +42,18 @@
             <div class="col-sm-4 col-md-4">
 
                 <div id="myCarouse2" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <!--                        <ol class="carousel-indicators">-->
-                    <!--                            --><?php //foreach ($ads_right as $key => $value) {
-                    //                                ?>
-                    <!--                                <li data-target="#myCarouse2" data-slide-to="-->
-                    <?php //echo $key ?><!--" class="--><?php //if ($key == 0) echo 'active'; ?><!--"></li>-->
-                    <!--                            --><?php //} ?>
-                    <!--                        </ol>-->
-
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <?php foreach ($ads_right as $key => $value) {
-//                        echo $key;
                             ?>
                             <div class="item <?php if ($key == 0) echo 'active'; ?>"
                                  onclick="updateView('<?php echo $value->id; ?>');">
-                                <!--                                    <img src="-->
-                                <?php //echo public_url('images/ads/' . $value->img) ?><!--" alt="$value->img" style="width:100% ">-->
+
                                 <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                     <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="$value->img"
                                          style="width: 100%; height: 320px ">
                                 </a>
 
-
-                                <!--                                    <div class="carousel-caption">-->
-                                <!--                                        <h4><a class="" href="-->
-                                <?php //echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?><!--">-->
-                                <?php //echo $value->intro ?><!--</a></h4>-->
-                                <!--                                        <p>-->
-                                <?php //echo $value->intro ?><!--</p>-->
-                                <!--                                    </div>-->
                             </div>
                         <?php } ?>
 
@@ -110,31 +73,7 @@
             </div>
 
         </div>
+
     </div>
 
 </section>
-
-<script>
-    //search submit
-    $("#formAddProduct_book").submit(function (e) {
-        //prevent Default functionality
-        e.preventDefault();
-        var params = $("#formAddProduct_book").serialize();
-        console.log('data submit11111111 ' + params);
-
-        var _onSuccess = function (data) {
-            if (data == 'NOT_LOGIN') {
-
-            } else if (data === 'false') {
-
-            } else {
-                console.log(data);
-                // $("#divStreet").html(data);
-            }
-        };
-
-        getAjax('<?php echo base_url('home/ajax_book') ?>', params, 'POST', '', false, _onSuccess);
-
-    });
-
-</script>
