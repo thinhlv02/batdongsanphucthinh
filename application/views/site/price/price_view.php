@@ -80,22 +80,22 @@
                                     </thead>
                                     <tbody>
 
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="success">
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="danger">
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="info">
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
+<!--                                    <tr>-->
+<!--                                        <td></td>-->
+<!--                                        <td></td>-->
+<!--                                    </tr>-->
+<!--                                    <tr class="success">-->
+<!--                                        <td></td>-->
+<!--                                        <td></td>-->
+<!--                                    </tr>-->
+<!--                                    <tr class="danger">-->
+<!--                                        <td></td>-->
+<!--                                        <td></td>-->
+<!--                                    </tr>-->
+<!--                                    <tr class="info">-->
+<!--                                        <td></td>-->
+<!--                                        <td></td>-->
+<!--                                    </tr>-->
                                     <tr class="warning">
                                         <td>Vip ưu đãi</td>
                                         <td>500k</td>
@@ -120,22 +120,22 @@
                                     </thead>
                                     <tbody>
 
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="success">
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="danger">
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="info">
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
+<!--                                    <tr>-->
+<!--                                        <td></td>-->
+<!--                                        <td></td>-->
+<!--                                    </tr>-->
+<!--                                    <tr class="success">-->
+<!--                                        <td></td>-->
+<!--                                        <td></td>-->
+<!--                                    </tr>-->
+<!--                                    <tr class="danger">-->
+<!--                                        <td></td>-->
+<!--                                        <td></td>-->
+<!--                                    </tr>-->
+<!--                                    <tr class="info">-->
+<!--                                        <td></td>-->
+<!--                                        <td></td>-->
+<!--                                    </tr>-->
                                     <tr class="warning">
                                         <td>Vip ưu đãi</td>
                                         <td></td>
