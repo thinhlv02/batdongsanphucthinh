@@ -83,7 +83,42 @@
                                     </thead>
                                     <tbody>
 
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
                                     <tr class="info">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="warning">
+                                        <td>Vip ưu đãi</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>500k</td>
+                                    </tr>
+                                    <tr class="active">
                                         <td>Tin thường</td>
                                         <td></td>
                                         <td></td>
@@ -93,6 +128,47 @@
 
                                     </tbody>
                                 </table>
+
+                                <h2>Mô tả các gói</h2>
+                                <p>Các gói khác nhau sẽ ở các vị trí khác nhau , và màu chữ tiêu đề... sẽ khác nhau.</p>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-center">Loại tin</th>
+                                        <th class="text-center">Mô tả</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="warning">
+                                        <td>Vip ưu đãi</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="active">
+                                        <td>Tin thường</td>
+                                        <td></td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+
 
                             </div>
                         </div>
