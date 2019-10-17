@@ -75,9 +75,6 @@
                                     <thead>
                                     <tr>
                                         <th class="text-center">Loại tin</th>
-                                        <th class="text-center">Phí theo ngày</th>
-                                        <th class="text-center">Phí 1 Tuần</th>
-                                        <th class="text-center">Phí 2 Tuần</th>
                                         <th class="text-center">Phí 1 Tháng</th>
                                     </tr>
                                     </thead>
@@ -86,43 +83,25 @@
                                     <tr>
                                         <td></td>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
                                     </tr>
                                     <tr class="success">
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
                                         <td></td>
                                         <td></td>
                                     </tr>
                                     <tr class="danger">
                                         <td></td>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
                                     </tr>
                                     <tr class="info">
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
                                         <td></td>
                                         <td></td>
                                     </tr>
                                     <tr class="warning">
                                         <td>Vip ưu đãi</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
                                         <td>500k</td>
                                     </tr>
                                     <tr class="active">
                                         <td>Tin thường</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
                                         <td>300K</td>
                                     </tr>
 
