@@ -202,13 +202,13 @@ Class Landing extends MY_Controller
     function contact()
     {
         $this->data['li_5'] = 1;
-        $this->data['temp'] = $this->_template_f . 'pages/contact';
+        $this->data['temp'] = $this->_template_f . 'contact/contact';
         $this->load->view($this->_template_f . 'layout/layout', $this->data);
     }
 
     function download()
     {
-//        $this->data['temp'] = $this->_template_f . 'pages/contact';
+//        $this->data['temp'] = $this->_template_f . 'contact/contact';
         $this->load->view($this->_template_f . 'pages/download', $this->data);
     }
 
@@ -295,7 +295,7 @@ Class Landing extends MY_Controller
         $this->data['li_6'] = 1;
 //        $news = $this->ads_model->get_list();
         $this->data['ads'] = $news;
-        $this->data['temp'] = $this->_template_f . 'pages/ads';
+        $this->data['temp'] = $this->_template_f . 'ads/ads';
         $this->load->view($this->_template_f . 'layout/layout', $this->data);
     }
 
@@ -329,8 +329,8 @@ Class Landing extends MY_Controller
 //        $this->data['keywords'] = $ads->meta_keywords;
 
         $this->data['li_6'] = 1;
-//        $this->data['temp'] = $this->_template_f . 'pages/ads_detail';
-        $this->data['temp'] = $this->_template_f . 'pages/ads_detail_hp';
+//        $this->data['temp'] = $this->_template_f . 'ads/ads_detail';
+        $this->data['temp'] = $this->_template_f . 'ads/ads_detail_hp';
         $this->load->view($this->_template_f . 'layout/layout', $this->data);
     }
 

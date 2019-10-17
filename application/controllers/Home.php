@@ -127,7 +127,7 @@ Class Home extends MY_Controller
         $header['li_3'] = '1';
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/support_level_1', $this->data);
+        $this->load->view($this->_template_f . 'support/support_level_1', $this->data);
         $this->_loadFooter();
 
     }
@@ -154,15 +154,13 @@ Class Home extends MY_Controller
                 $questions = $this->questions_model->get_list(array('where' => array('parent_id' => $question->id), 'order' => array('id', 'asc')));
                 $this->data['questions'] = $questions;
 //                $this->data['active'] = $id;
-                $this->load->view($this->_template_f . 'pages/support_level_2', $this->data);
+                $this->load->view($this->_template_f . 'support/support_level_2', $this->data);
 
-//                $this->data['temp'] = $this->_template_f . 'pages/support_level_2';
             } else {
                 $this->data['question'] = $question;
 //                $this->data['active'] = $id;
-                $this->load->view($this->_template_f . 'pages/support_level_3', $this->data);
+                $this->load->view($this->_template_f . 'support/support_level_3', $this->data);
 
-//                $this->data['temp'] = $this->_template_f . 'pages/support_level_3';
             }
         } else {
             redirect(base_url('ho-tro.html'));
@@ -224,14 +222,13 @@ Class Home extends MY_Controller
         $header['li_5'] = '1';
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/contact', $this->data);
+        $this->load->view($this->_template_f . 'contact/contact', $this->data);
         $this->_loadFooter();
 
     }
 
     function download()
     {
-//        $this->data['temp'] = $this->_template_f . 'pages/contact';
         $this->load->view($this->_template_f . 'pages/download', $this->data);
     }
 
@@ -334,7 +331,7 @@ Class Home extends MY_Controller
 
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/ads', $this->data);
+        $this->load->view($this->_template_f . 'ads/ads', $this->data);
         $this->_loadFooter();
 
     }
@@ -367,14 +364,14 @@ Class Home extends MY_Controller
 //        $this->data['canonical'] = $ads->canonical_url;
 //        $this->data['keywords'] = $ads->meta_keywords;
 
-//        $this->data['temp'] = $this->_template_f . 'pages/ads_detail';
+//        $this->data['temp'] = $this->_template_f . 'ads/ads_detail';
         // load header
         $header = array();
         $header['title'] = $ads->title;
         $header['image'] = public_url('images/ads/' . $ads->img);
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/ads_detail_hp', $this->data);
+        $this->load->view($this->_template_f . 'ads/ads_detail_hp', $this->data);
         $this->_loadFooter();
 
     }
@@ -608,7 +605,7 @@ Class Home extends MY_Controller
         $header = array();
         $header['title'] = $this->data['user_page_lang']['title'];
         $this->_loadHeader($header);
-        $this->load->view($this->_template_f . 'pages/user_page', $this->data);
+        $this->load->view($this->_template_f . 'user/user_view', $this->data);
         $this->_loadFooter();
     }
 
@@ -624,7 +621,7 @@ Class Home extends MY_Controller
         $header['title'] = $ads->title;
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/user_page_detail', $this->data);
+        $this->load->view($this->_template_f . 'user/user_view_detail', $this->data);
         $this->_loadFooter();
     }
 
