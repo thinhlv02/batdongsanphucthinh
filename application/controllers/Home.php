@@ -667,7 +667,7 @@ Class Home extends MY_Controller
         $header['title'] = $this->data['price_lang']['title'];
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/price_view', $this->data);
+        $this->load->view($this->_template_f . 'price/price_view', $this->data);
 
         $this->_loadFooter();
     }
