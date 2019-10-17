@@ -69,6 +69,7 @@ $route['ho-tro/(:any)(.html)?'] = 'home/support/$1';
 $route['dieu-khoan-su-dung(.html)?'] = 'home/policy';
 $route['chinh-sach-bao-mat(.html)?'] = 'home/privacy';
 $route['lien-he(.html)?'] = 'home/contact';
+$route['nhung-cau-hoi-thuong-gap(.html)?'] = 'home/faq';
 //$route['bang-gia(.html)?'] = 'home/price';
 $route['bang-gia(.html)?'] = 'home/price';
 $route['bang-gia/(:any)-(:num)(.html)?'] = 'home/price/$1/$2';

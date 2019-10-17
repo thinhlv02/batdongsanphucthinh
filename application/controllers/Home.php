@@ -672,4 +672,18 @@ Class Home extends MY_Controller
         $this->_loadFooter();
     }
 
+    function faq()
+    {
+        // load header
+        $header = array();
+        $header['li_8'] = '1';
+        $header['title'] = '';
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'faq/front-end', $this->data);
+
+        $this->_loadFooter();
+
+    }
+
 }
