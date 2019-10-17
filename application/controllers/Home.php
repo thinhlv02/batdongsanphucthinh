@@ -267,7 +267,7 @@ Class Home extends MY_Controller
         $header['li_6'] = '1';
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/news', $this->data);
+        $this->load->view($this->_template_f . 'news/news', $this->data);
         $this->_loadFooter();
     }
 
@@ -295,7 +295,7 @@ Class Home extends MY_Controller
         $header['title'] = $news->title;
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'pages/news_detail', $this->data);
+        $this->load->view($this->_template_f . 'news/news_detail', $this->data);
         $this->_loadFooter();
 
     }
