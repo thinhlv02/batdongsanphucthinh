@@ -21,13 +21,14 @@
     <meta property="og:type" content="website"/>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">-->
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'style.css'; ?>">
     <link href="<?php echo base_url() . 'public/css/' . $template_f . 'responsive.css'; ?>" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <!--thinhlv add css-->
+    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'font.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'vendors.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'app.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'sweetalert.css'; ?>">
