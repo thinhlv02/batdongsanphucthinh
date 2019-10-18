@@ -13,6 +13,7 @@ $lang['common_lang']['product'] = "Sản phẩm";
 $lang['common_lang']['recruit'] = 'Tuyển dụng';
 $lang['common_lang']['lmenu_contact'] = 'Liên hệ';
 $lang['common_lang']['lmenu_faq'] = 'Câu hỏi';
+$lang['common_lang']['lmenu_phonebook'] = 'Danh bạ';
 $lang['common_lang']['login'] = 'Đăng nhập';
 $lang['common_lang']['register'] = 'Đăng ký';
 $lang['common_lang']['oops'] = 'Oops!';
