@@ -8,9 +8,9 @@
                     <span><?php echo $value->address ?></span></div>
                 <div style="color: #666"><i class="fa fa-phone" aria-hidden="true"></i>
                     <span><?php echo $value->phone ?></span></div>
-                <div>
-                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
-                </div>
+<!--                <div>-->
+<!--                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">-->
+<!--                </div>-->
             </div>
         <?php } ?>
     </div>
@@ -25,10 +25,10 @@
 </script>
 
 <style>
-    .avatar {
-        vertical-align: middle;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-    }
+    /*.avatar {*/
+    /*    vertical-align: middle;*/
+    /*    width: 50px;*/
+    /*    height: 50px;*/
+    /*    border-radius: 50%;*/
+    /*}*/
 </style>
