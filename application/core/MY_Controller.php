@@ -93,6 +93,7 @@ Class MY_Controller extends CI_Controller
         // init and assign common value to view: language, common lang
         $preHeader = array();
         $preHeader['common_lang'] = $this->_common_lang;
+        $preHeader['template_f'] = $this->_template_f;
         $preHeader['login_lang'] = $this->_login_lang;
         $preHeader['language'] = $this->_langcode;
         $preHeader['content'] = $this->_content;
