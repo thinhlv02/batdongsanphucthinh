@@ -28,14 +28,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <!--thinhlv add css-->
+    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'vendors.css'; ?>">
+    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'app.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'sweetalert.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'common.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'custom.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'lightslider.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'jquery.bxslider.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'hp.css'; ?>">
-    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'colors.css'; ?>">
-    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'bootstrap-extended.css'; ?>">
     <!--End thinhlv add css-->
 
     <!--<script src="--><?php //echo public_url('js/jquery.min.js')?><!--"></script>-->

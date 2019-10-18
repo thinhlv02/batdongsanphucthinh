@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'faq/faq.css'; ?>">
+
+
 <section class="detail">
     <div class="container">
         <div class="col-sm-12 col-md-12">
