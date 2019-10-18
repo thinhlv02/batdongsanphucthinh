@@ -36,7 +36,6 @@
                         </ul>
                     </li>
 
-<!--                    <li><a href="--><?php //echo admin_url('agency') ?><!--"><i class="fa fa-map-marker" aria-hidden="true"></i>Đại lý</a></li>-->
 <!--                    //only admin view-->
                     <?php if($admin->id == 1) { ?>
                         <li><a><i class="fa fa-book"></i>Quản lý chung<span class="fa fa-chevron-down"></span></a>
@@ -54,6 +53,7 @@
                                 <li><a href="<?php echo admin_url('question') ?>">Hỗ trợ</a></li>
                                 <li><a href="<?php echo admin_url('contact') ?>">Liên hệ</a></li>
                                 <li><a href="<?php echo admin_url('content') ?>">Nội dung</a></li>
+                                <li><a href="<?php echo admin_url('agency') ?>">Đại lý</a></li>
 
                             </ul>
                         </li>
