@@ -689,4 +689,8 @@
             width: 100%;
         }
     }
+
+    ul#lightSlider {
+        height: 100% !important;
+    }
 </style>
