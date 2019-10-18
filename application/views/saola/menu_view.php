@@ -3,7 +3,6 @@
 <div class="sub-nav">
     <div class="logo">
         <a href="<?php echo base_url() ?>"><img src="<?php echo public_url('images/logo.png')?>"></a>
-<!--        <a href="--><?php //echo base_url()?><!--">Trao tiện ích, nhận tin yêu</a>-->
     </div>
 <!--    switch language -->
     <div id="language">
@@ -17,8 +16,6 @@
         <li class="<?php echo !empty($li_1) ? 'menu-active' : ''?>" title="<?php echo $common_lang['home']; ?>"><a href="<?php echo base_url()?>"><i class="mdi mdi-home"></i> <?php echo $common_lang['home']; ?></a></li>
         <li class="<?php echo !empty($li_2) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_intro']; ?>"><a href="<?php echo base_url('gioi-thieu')?>"> <?php echo $common_lang['lmenu_intro']; ?></a></li>
         <li class="<?php echo !empty($li_7) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_price']; ?>"><a href="<?php echo base_url('bang-gia')?>"> <?php echo $common_lang['lmenu_price']; ?></a></li>
-<!--        <li class="--><?php //echo !empty($li_3) ? 'menu-active' : ''?><!--" title="--><?php //echo $common_lang['lmenu_support']; ?><!--"><a href="--><?php //echo base_url('ho-tro')?><!--"> --><?php //echo $common_lang['lmenu_support']; ?><!--</a></li>-->
-<!--        <li class="--><?php //echo !empty($li_6) ? 'menu-active' : ''?><!--" title="--><?php //echo $common_lang['lmenu_news']; ?><!--"><a href="--><?php //echo base_url('tin-tuc')?><!--"> --><?php //echo $common_lang['lmenu_news']; ?><!--</a></li>-->
         <li class="<?php echo !empty($li_4) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_policy']; ?>"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $common_lang['lmenu_policy']; ?></a></li>
         <li class="<?php echo !empty($li_8) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_faq']; ?>"><a href="<?php echo base_url('nhung-cau-hoi-thuong-gap')?>"> <?php echo $common_lang['lmenu_faq']; ?></a></li>
         <li class="dropdown <?php echo !empty($li_8) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_phonebook']; ?>">
@@ -26,7 +23,6 @@
             <div class="dropdown-content">
                 <a href="javascript:void(0)"><?php echo $common_lang['lbl_menu_agency']; ?></a>
             </div>
-
         </li>
         <li class="<?php echo !empty($li_5) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_contact']; ?>"><a href="<?php echo base_url('lien-he')?>"> <?php echo $common_lang['lmenu_contact']; ?></a></li>
 <!--        register - login-->
@@ -73,8 +69,6 @@
             <ul id="menu">
                 <a href="<?php echo base_url()?>"><li><?php echo $common_lang['home']; ?></li></a>
                 <a href="<?php echo base_url('gioi-thieu')?>"><li><?php echo $common_lang['lmenu_intro']; ?></li></a>
-<!--                <a href="--><?php //echo base_url('ho-tro')?><!--"><li>--><?php //echo $common_lang['lmenu_support']; ?><!--</li></a>-->
-<!--                <a href="--><?php //echo base_url('tin-tuc')?><!--"><li>--><?php //echo $common_lang['lmenu_news']; ?><!--</li></a>-->
                 <a href="<?php echo base_url('dieu-khoan-su-dung')?>"><li><?php echo $common_lang['lmenu_policy']; ?></li></a>
                 <a href="<?php echo base_url('lien-he')?>"><li><?php echo $common_lang['lmenu_contact']; ?></li></a>
             </ul>
