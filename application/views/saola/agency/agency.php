@@ -1,22 +1,34 @@
-
 <div class="container">
-    <div class="title-section"><h2><?php echo 'Danh sách đại lý'?></h2></div>
+    <div class="title-section"><h2><?php echo 'Danh sách đại lý' ?></h2></div>
     <div class="row" style="margin-top: 30px">
-        <?php foreach ($agencies as $key=>$value){ ?>
-            <div class="item-agency" id="<?php echo create_slug($value->name)?>">
-                <div style="font-weight: bold"><?php echo $value->name?></div>
-                <div style="color: #666"><i class="fa fa-building" aria-hidden="true"></i> <span><?php echo $value->address?></span></div>
-                <div style="color: #666"><i class="fa fa-phone" aria-hidden="true"></i> <span><?php echo $value->phone?></span></div>
+        <?php foreach ($agencies as $key => $value) { ?>
+            <div class="item-agency" id="<?php echo create_slug($value->name) ?>">
+                <div style="font-weight: bold"><?php echo $value->name ?></div>
+                <div style="color: #666"><i class="fa fa-building" aria-hidden="true"></i>
+                    <span><?php echo $value->address ?></span></div>
+                <div style="color: #666"><i class="fa fa-phone" aria-hidden="true"></i>
+                    <span><?php echo $value->phone ?></span></div>
+                <div>
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+                </div>
             </div>
-        <?php }?>
+        <?php } ?>
     </div>
 </div>
 
 <script>
     $(document).ready(function () {
-        if(window.location.href.includes("div-panel"))
-        {
+        if (window.location.href.includes("div-panel")) {
             $(document).scrollTop(450);
         }
     });
 </script>
+
+<style>
+    .avatar {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+</style>
