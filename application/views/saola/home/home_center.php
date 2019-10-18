@@ -46,7 +46,7 @@
                         </div>
                         <div class="">
                             <div class="col-xs-6 btn btn-sm" style="background: #eeeeee;">
-                                <i class="fa fa-location-arrow" style="color: #e40b00"></i>
+                                <i class="mdi mdi-map-marker" style="color: #e40b00"></i>
                                 <?php echo $value->province_name != '' ? $value->province_name : 'update...'; ?>
                             </div>
                             <div class="col-xs-6 btn-sm btn btn-info font-weight-600">
