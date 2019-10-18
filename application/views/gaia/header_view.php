@@ -43,8 +43,8 @@
     <script src="<?php echo public_url() . 'js/' . $template_f . 'bootstrap.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'public/js/' . $template_f . 'common.js'; ?>"></script>
     <script src="<?php echo base_url() . 'public/js/' . $template_f . 'lightslider.js'; ?>"></script>
-    <script src="<?php echo base_url() . 'public/js/bxslider/' . $template_f . 'jquery.bxslider.min.js'; ?>"></script>
-    <script src="<?php echo base_url() . 'public/js/bxslider/' . $template_f . 'jquery.flexisel.js'; ?>"></script>
+    <script src="<?php echo base_url() . 'public/js/' . $template_f . 'bxslider/jquery.bxslider.min.js'; ?>"></script>
+    <script src="<?php echo base_url() . 'public/js/' . $template_f . 'bxslider/jquery.flexisel.js'; ?>"></script>
     <script src="<?php echo base_url() . 'public/js/' . $template_f . 'sweetalert.min.js'; ?>"></script>
 </head>
 <body>
