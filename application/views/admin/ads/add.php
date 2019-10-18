@@ -30,7 +30,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề <span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" id="txtName" name="txtName" required="required"
+                        <input type="text" id="txtName" name="txtName"
                                class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề">
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền <span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="price" required="required"
+                        <input type="text" name="price"
                                class="form-control col-md-7 col-xs-12" placeholder="ví dụ : 1,2 tỷ / nền">
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Diện tích<span
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
-                        <input type="text" name="acreage" required="required"
+                        <input type="text" name="acreage"
                                class="form-control col-md-7 col-xs-12" placeholder="ví dụ: 90">
                     </div>
 
@@ -87,16 +87,8 @@
                                 class="required">*</span></label>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <input type="text" name="useacreage"
-                               required="required" class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">
+                                class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">
                     </div>
-
-
-<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Đơn vị<span-->
-<!--                                class="required">*</span></label>-->
-<!--                    <div class="col-md-4 col-sm-4 col-xs-12">-->
-<!--                        <input type="text" name="" required="required" value="m2"-->
-<!--                               class="form-control col-md-7 col-xs-12" placeholder="" readonly>-->
-<!--                    </div>-->
 
                 </div>
 
@@ -104,7 +96,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Mặt tiền<span
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
-                        <input type="text" name="width" required="required"
+                        <input type="text" name="width"
                                class="form-control col-md-7 col-xs-12" placeholder="ví dụ: 10">
                     </div>
 
@@ -112,7 +104,7 @@
                                 class="required">*</span></label>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <input type="text" name="landwidth"
-                               required="required" class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 20">
+                                class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 20">
                     </div>
 
                 </div>
@@ -121,7 +113,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Khu vực<span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="area" required="required" class="form-control col-md-7 col-xs-12"
+                        <input type="text" name="area" class="form-control col-md-7 col-xs-12"
                                placeholder="Địa chỉ tin rao vặt">
                     </div>
                 </div>
@@ -130,7 +122,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">SĐT liên hệ<span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="phone" required="required"
+                        <input type="text" name="phone"
                                class="form-control col-md-7 col-xs-12" placeholder="sđt liên hệ">
                     </div>
                 </div>
@@ -192,7 +184,7 @@
 
                 <div class="form-group" style="margin-top: 30px">
                     <div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-2" style="width: 70px">
-                        <input type="submit" id="btnAddProduct" name="btnAdd" required="required"
+                        <input type="submit" id="btnAddProduct" name="btnAdd"
                                class="btn btn-primary" value="Thêm">
                     </div>
                 </div>
