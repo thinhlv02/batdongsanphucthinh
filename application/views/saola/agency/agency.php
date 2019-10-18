@@ -1,18 +1,22 @@
 <div class="container">
     <div class="title-section"><h2><?php echo 'Danh sách đại lý' ?></h2></div>
-    <div class="row" style="margin-top: 30px">
-        <?php foreach ($agencies as $key => $value) { ?>
-            <div class="item-agency" id="<?php echo create_slug($value->name) ?>">
-                <div style="font-weight: bold"><?php echo $value->name ?></div>
-                <div style="color: #666"><i class="fa fa-building" aria-hidden="true"></i>
-                    <span><?php echo $value->address ?></span></div>
-                <div style="color: #666"><i class="fa fa-phone" aria-hidden="true"></i>
-                    <span><?php echo $value->phone ?></span></div>
-<!--                <div>-->
-<!--                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">-->
-<!--                </div>-->
+    <div class="row mt-5">
+        <div class="card">
+            <div class="card-body">
+                <?php foreach ($agencies as $key => $value) { ?>
+                    <div class="item-agency" id="<?php echo create_slug($value->name) ?>">
+                        <div style="font-weight: bold"><?php echo $value->name ?></div>
+                        <div style="color: #666"><i class="fa fa-building" aria-hidden="true"></i>
+                            <span><?php echo $value->address ?></span></div>
+                        <div style="color: #666"><i class="fa fa-phone" aria-hidden="true"></i>
+                            <span><?php echo $value->phone ?></span></div>
+                        <!--                <div>-->
+                        <!--                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">-->
+                        <!--                </div>-->
+                    </div>
+                <?php } ?>
             </div>
-        <?php } ?>
+        </div>
     </div>
 </div>
 
