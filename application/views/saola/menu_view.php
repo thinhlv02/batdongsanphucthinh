@@ -21,7 +21,7 @@
         <li class="dropdown <?php echo !empty($li_8) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_phonebook']; ?>">
             <a href="javascript:void(0)"> <?php echo $common_lang['lmenu_phonebook']; ?><i class="mdi mdi-menu-down"></i></a>
             <div class="dropdown-content">
-                <a href="javascript:void(0)"><?php echo $common_lang['lbl_menu_agency']; ?></a>
+                <a href="<?php echo base_url('dai-ly')?>"><?php echo $common_lang['lbl_menu_agency']; ?></a>
             </div>
         </li>
         <li class="<?php echo !empty($li_5) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_contact']; ?>"><a href="<?php echo base_url('lien-he')?>"> <?php echo $common_lang['lmenu_contact']; ?></a></li>
