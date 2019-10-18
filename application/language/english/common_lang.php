@@ -13,6 +13,7 @@ $lang['common_lang']['lmenu_policy'] = "Policy";
 $lang['common_lang']['product'] = "PRODUCT";
 $lang['common_lang']['recruit'] = 'CAREER';
 $lang['common_lang']['lmenu_contact'] = 'Contact us';
+$lang['common_lang']['lmenu_faq'] = 'FAQ';
 $lang['common_lang']['login'] = 'Login';
 $lang['common_lang']['register'] = 'Register';
 $lang['common_lang']['oops'] = 'Oops!';
