@@ -23,11 +23,13 @@
                                     $tags = explode('#', $lightSlider_str);
                                     foreach ($tags as $k => $val) { ?>
                                         <!--                                <li style="width: 450px; height: 338px"-->
-                                        <li style="max-height: 703px !important;"
+<!--                                        <li style="max-height: 703px !important;"-->
+                                        <li style=""
                                             data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
                                             <!--                                    <img style="width: 450px; height: 338px" alt="-->
                                             <? //= $val ?><!--"-->
-                                            <img style="max-height: 703px !important;" alt="<?= $val ?>"
+<!--                                            <img style="max-height: 703px !important;" alt="--><?//= $val ?><!--"-->
+                                            <img style="" alt="<?= $val ?>"
                                                  src="<?php echo public_url('images/ads/' . $val) ?>"/>
                                         </li>
                                     <?php } ?>
