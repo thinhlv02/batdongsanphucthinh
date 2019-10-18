@@ -16,7 +16,7 @@
                         <div class="content-news-1 col-md-10 col-sm-12">
 
                             <div class="demo">
-                                <ul id="lightSlider">
+                                <ul id="lightSlider" style="height: 100% !important;">
                                     <?php
                                     $lightSlider_str = $ads->lightSlider != '' ? $ads->img . '#' . $ads->lightSlider : $ads->img;
                                     //                                $lightSlider_str = $ads->lightSlider != '' ? $ads->lightSlider : $ads->img;
