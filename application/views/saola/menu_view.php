@@ -21,7 +21,10 @@
 <!--        <li class="--><?php //echo !empty($li_6) ? 'menu-active' : ''?><!--" title="--><?php //echo $common_lang['lmenu_news']; ?><!--"><a href="--><?php //echo base_url('tin-tuc')?><!--"> --><?php //echo $common_lang['lmenu_news']; ?><!--</a></li>-->
         <li class="<?php echo !empty($li_4) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_policy']; ?>"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $common_lang['lmenu_policy']; ?></a></li>
         <li class="<?php echo !empty($li_8) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_faq']; ?>"><a href="<?php echo base_url('nhung-cau-hoi-thuong-gap')?>"> <?php echo $common_lang['lmenu_faq']; ?></a></li>
-        <li class="<?php echo !empty($li_8) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_phonebook']; ?>"><a href="javascript:void(0)"> <?php echo $common_lang['lmenu_phonebook']; ?></a></li>
+        <li class="<?php echo !empty($li_8) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_phonebook']; ?>">
+            <a href="javascript:void(0)"> <?php echo $common_lang['lmenu_phonebook']; ?><i class="mdi mdi-menu-down"></i></a>
+
+        </li>
         <li class="<?php echo !empty($li_5) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_contact']; ?>"><a href="<?php echo base_url('lien-he')?>"> <?php echo $common_lang['lmenu_contact']; ?></a></li>
 <!--        register - login-->
         <?php
