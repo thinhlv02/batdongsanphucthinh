@@ -78,7 +78,9 @@ m-0 {
     border-bottom: 2px #2199e8 solid;
 }
 
-.p-0{padding: 0px !important;}
+.p-0 {
+    padding: 0px !important;
+}
 
 .p-2 {
     padding: 2px !important;
@@ -165,29 +167,46 @@ m-0 {
     padding-left: 5px !important;
 }
 
-.pr-0{padding-right: 0px !important;}
-.pr-1{padding-right: 1px !important;}
-.pr-2{padding-right: 2px !important;}
-.pr-3{padding-right: 3px !important;}
-.pr-4{padding-right: 4px !important;}
-.pr-5{padding-right: 5px !important;}
+.pr-0 {
+    padding-right: 0px !important;
+}
+
+.pr-1 {
+    padding-right: 1px !important;
+}
+
+.pr-2 {
+    padding-right: 2px !important;
+}
+
+.pr-3 {
+    padding-right: 3px !important;
+}
+
+.pr-4 {
+    padding-right: 4px !important;
+}
+
+.pr-5 {
+    padding-right: 5px !important;
+}
 
 .border-bottom {
     border-bottom: 1px solid #ccc !important;
 }
 
 .bg-modul {
-    /*background: #FF4961;*/
+    /*background: #FF4961; *!*/
     background: #2199e8;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 2px 20px 0px 12px;
+    padding: 6px 20px 4px 12px;
     display: inline-block;
     -ms-border-top-right-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-right-radius: 6px;
     -ms-border-top-left-radius: 4px;
-    border-top-left-radius: 4px;
+    border-top-left-radius: 6px;
 }
 
 .card {

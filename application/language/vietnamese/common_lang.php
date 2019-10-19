@@ -96,7 +96,7 @@ $lang['common_lang']['lmenu_searchcampaign'] = 'Tìm chiến dịch';
 $lang['common_lang']['lbl_menu_banner'] = 'Quảng cáo';
 $lang['common_lang']['lbl_menu_banner_dashboard'] = 'Tất cả quảng cáo';
 
-$lang['common_lang']['lbl_menu_agency'] = 'Đại lý';
+$lang['common_lang']['lbl_menu_agency'] = 'Nhà môi giới';
 $lang['common_lang']['lbl_menu_agency_customer'] = 'Thông tin khách hàng';
 $lang['common_lang']['lbl_menu_agency_report'] = 'Thực chạy';
 
