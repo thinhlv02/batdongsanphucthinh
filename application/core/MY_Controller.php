@@ -135,6 +135,8 @@ Class MY_Controller extends CI_Controller
         $header['li_5'] = isset($data['li_5']) ? $data['li_5'] : '';
         $header['li_6'] = isset($data['li_6']) ? $data['li_6'] : '';
         $header['li_7'] = isset($data['li_7']) ? $data['li_7'] : '';
+        $header['li_8'] = isset($data['li_8']) ? $data['li_8'] : '';
+        $header['li_9'] = isset($data['li_9']) ? $data['li_9'] : '';
 //        $header['metaTitle'] = isset($data['metaTitle']) ? $data['metaTitle'] : '';
 //        $header['metaKeyword'] = isset($data['metaKeyword']) ? $data['metaKeyword'] : '';
 //        $header['metaDesc'] = isset($data['metaDesc']) ? $data['metaDesc'] : '';
