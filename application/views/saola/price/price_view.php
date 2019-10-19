@@ -174,7 +174,7 @@
             var hash = window.location.hash.substring(1, 2);
             if ($.isNumeric(hash)) showTitlePrice(hash);
         } else {
-            showTitlePrice(1);
+            showTitlePrice(2);
         }
     });
 
