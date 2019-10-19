@@ -215,7 +215,7 @@
                 <div class="left_box top3_box">
                     <p class="title_box1"><strong>CÁC TIN CÙNG TIÊU CHÍ TÌM KIẾM</strong></p>
                     <div>
-                        <div class="row12 body_top2_box">
+                        <div class="body_top2_box">
                             <?php foreach ($highlight as $key => $value) {
                                 if ($ads->id != $value->id) { ?>
                                     <div class="col-xs-6 top2 top2_up">
@@ -276,7 +276,7 @@
                 <div class="left_box top3_box">
                     <p class="title_box1"><strong>CÁC TIN LIÊN QUAN</strong></p>
                     <div>
-                        <div class="row12 body_top2_box">
+                        <div class="body_top2_box">
                             <?php foreach ($ads_left as $key => $value) { ?>
                                 <div class="col-xs-6 top2 top2_up">
                                     <div class="row">

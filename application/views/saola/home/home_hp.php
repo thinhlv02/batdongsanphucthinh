@@ -9,11 +9,11 @@
                     <div class="left_box top2_box">
                         <p class="title_box"><strong>TIN GIÁ HẤP DẪN</strong></p>
 
-                        <div class="row12 body_top2_box">
+                        <div class="body_top2_box">
 
                             <?php foreach ($ads_center as $key => $value) { ?>
                                 <div class="col-xs-6 top2 top2_up">
-                                    <div class="row12 _pt_vip_hot border-danger p-2">
+                                    <div class="_pt_vip_hot border-danger p-2">
                                         <div class="col-xs-5 ltop2">
                                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
                                                         src="<?php echo public_url('images/ads/' . $value->img) ?>"
