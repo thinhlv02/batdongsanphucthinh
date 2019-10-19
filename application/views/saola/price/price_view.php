@@ -92,13 +92,13 @@
 <!--                                        <td></td>-->
 <!--                                        <td></td>-->
 <!--                                    </tr>-->
-<!--                                    <tr class="info">-->
-<!--                                        <td></td>-->
-<!--                                        <td></td>-->
-<!--                                    </tr>-->
+                                    <tr class="info">
+                                        <td>Vip 3</td>
+                                        <td>500k</td>
+                                    </tr>
                                     <tr class="warning">
                                         <td>Vip ưu đãi</td>
-                                        <td>500k</td>
+                                        <td>400k</td>
                                     </tr>
                                     <tr class="active">
                                         <td>Tin thường</td>
@@ -132,10 +132,10 @@
 <!--                                        <td></td>-->
 <!--                                        <td></td>-->
 <!--                                    </tr>-->
-<!--                                    <tr class="info">-->
-<!--                                        <td></td>-->
-<!--                                        <td></td>-->
-<!--                                    </tr>-->
+                                    <tr class="info">
+                                        <td>Vip 3</td>
+                                        <td></td>
+                                    </tr>
                                     <tr class="warning">
                                         <td>Vip ưu đãi</td>
                                         <td></td>
