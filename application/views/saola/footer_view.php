@@ -222,6 +222,13 @@
         }
     }
 
+    //add class span to menu-active when clicked
+    $(document).ready(function () {
+        $('.menu-active').each(function() {
+            $(this).prepend('<span class="menu-active-span"></span>');
+        });
+    });
+
 </script>
 
 <?php //$this->load->view($this->_template_f . 'footer') ?>

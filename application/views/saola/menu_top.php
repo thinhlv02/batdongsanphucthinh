@@ -176,10 +176,6 @@
 
 <script>
     $(document).ready(function(){
-        $('.menu-active').each(function() {
-            $(this).prepend('<span></span>');
-        });
-
         //login
         $("#myBtnLogin").click(function(){
             $("#myModalLogin").modal();
