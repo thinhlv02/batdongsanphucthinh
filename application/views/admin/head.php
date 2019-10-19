@@ -10,7 +10,7 @@
 <link href="<?php echo admin_theme()?>vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Font Awesome -->
 <link href="<?php echo admin_theme()?>vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<link href="<?php echo public_url()?>css/colors.css" rel="stylesheet">
+<link href="<?php echo public_url(). 'css/'. $template_f. 'colors.css'?>" rel="stylesheet">
 
 <!--responsive-->
 <link href="<?php echo admin_theme()?>vendors/datatables.net-responsive-bs/css/responsive.bootstrap.css" rel="stylesheet">
@@ -21,11 +21,11 @@
 <link href="<?php echo admin_theme()?>build/css/custom.min.css" rel="stylesheet">
 
 <script src="<?php echo admin_theme()?>vendors/jquery/dist/jquery.min.js"></script>
-<script src="<?php echo public_url('js/common.js')?>"></script>
+<script src="<?php echo public_url(). 'js/'.$template_f.'common.js' ; ?>"></script>
 
 <!--lib format number when input reltime-->
-<script src="<?php echo public_url('js/meiomask.js')?>"></script>
+<script src="<?php echo public_url().'js/'.$template_f.'meiomask.js' ; ?>"></script>
 
 <!--custom css by thinhlv-->
-<link href="<?php echo public_url('css/custom.css')?>" rel="stylesheet">
+<link href="<?php echo public_url(). 'css/'.$template_f.'custom.css'; ?>" rel="stylesheet">
     
