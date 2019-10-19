@@ -15,5 +15,6 @@
     .navbar-default {
         border-top: 1px solid #ccc !important;
         border-bottom: 1px solid #ccc !important;
+        background-color: #ddd !important;
     }
 </style>
