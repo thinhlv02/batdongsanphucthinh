@@ -4,7 +4,7 @@
         <div class="col-sm-12 col-md-12">
             <div class="row two_cols">
 
-                <div class="col-xs-9 left12 ">
+                <div class="col-xs-9">
 
                     <div class="left_box top2_box">
                         <p class="title_box"><strong>TIN GIÁ HẤP DẪN</strong></p>
