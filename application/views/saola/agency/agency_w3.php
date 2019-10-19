@@ -7,7 +7,7 @@
                     <div class="col-sm-4 col-md-4">
                         <div class="card">
 <!--                            <img src="https://w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">-->
-                            <div class="">
+                            <div class="card-body">
                                 <h2><?php echo $value->name ?></h2>
                                 <p class="title"><?php echo $value->phone ?></p>
                                 <p><?php echo $value->address ?></p>
