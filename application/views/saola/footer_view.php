@@ -1,4 +1,7 @@
 
+
+<?php $this->load->view($this->_template_f . 'menu_footer') ?>
+
 <section class="footer">
     <div class="container">
         <div style="min-height: 200px">
