@@ -4,7 +4,7 @@
 
             <div class="col-sm-4 col-md-4">
 
-                <div id="center-body">
+                <div id="">
 
                     <div id="raovat-nb">
                         <div class="box-module mt-2">
@@ -74,7 +74,7 @@
 
             <div class="col-sm-4 col-md-4">
 
-                <div id="center-body">
+                <div id="">
 
                     <div id="raovat-nb">
                         <div class="box-module mt-2">
@@ -201,7 +201,7 @@
 
             <div class="col-sm-4 col-md-4">
 
-                <div id="center-body">
+                <div id="">
 
                     <div id="raovat-nb">
                         <div class="box-module mt-2">

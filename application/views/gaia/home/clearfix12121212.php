@@ -4,7 +4,7 @@
         <!--        <div class="col-sm-12 col-md-12">-->
         <div class="clearfix" style="margin-top:10px">
             <div class="col-sm-8 col-md-8">
-                <div id="center-body">
+                <div id="">
                     <div class="text-center mt-10"><input type="text" name="q" id="sTxt" size="50" class="search-tag"
                                                          placeholder="Nhập từ khóa tìm kiếm" tabindex="1"> <select
                                 id="TypeSearch"
