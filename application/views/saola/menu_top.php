@@ -451,7 +451,7 @@
         position: absolute;
         top: 45px;
         left: 0px;
-        background-color: #4a84b5;
+        background-color: #508fc6;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
