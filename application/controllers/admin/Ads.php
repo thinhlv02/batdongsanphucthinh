@@ -6,6 +6,7 @@ Class Ads extends MY_Controller
     {
         parent::__construct();
         $this->load->model('ads_model');
+        $this->load->model('ads_link_model');
         $this->load->model('Province_model');
         $this->load->model('District_model');
         $this->load->model('Ward_model');
@@ -551,6 +552,86 @@ Class Ads extends MY_Controller
             //delete image slide
         }
         redirect(base_url('admin/ads'));
+    }
+
+    function ads_link()
+    {
+        $message = $this->session->flashdata('message');
+        $this->data['message'] = $message;
+
+        $id = $this->uri->segment(4);
+        $ads = $this->ads_model->get_info($id);
+//        pre($ads);
+        if (!$ads) {
+            redirect(base_url('admin/ads'));
+        }
+
+        $input = array();
+        $input['where'] = array('id_ads' => $id);
+        $input['order'] = array('id', 'desc');
+        $ads = $this->ads_link_model->get_list($input);
+        $count = count($ads);
+        $count = $count > 0 ? $count: 0;
+
+        $ads_end = [];
+        $index = 0;
+        foreach ($ads as $key => $val) {
+            $index++;
+            $ads_end[$index] = new stdClass();
+            $ads_end[$index]->id = $val->id;
+            $ads_end[$index]->link_web = $val->link_web;
+            $ads_end[$index]->link_facebook = $val->link_facebook;
+            $ads_end[$index]->created_at = $val->created_at;
+
+        }
+
+        $this->data['count'] = $count;
+        $this->data['ads'] = $ads_end;
+        $this->data['id'] = $id;
+        $this->data['tab'] = 1;
+        $this->data['temp'] = 'admin/ads_link/index';
+        $this->data['view'] = 'admin/ads_link/list_link_by_ads_id';
+        $this->load->view('admin/layout', $this->data);
+    }
+
+    function add_link()
+    {
+        $id = $this->uri->segment(4);
+        $ads = $this->ads_model->get_info($id);
+//        pre($ads);
+        if (!$ads) {
+            redirect(base_url('admin/ads'));
+        }
+        $message = $this->session->flashdata('message');
+        $this->data['message'] = $message;
+        if ($this->input->post('btnAdd')) {
+
+            $created_at =  $this->input->post('created_at');
+            $created_at = date('Y-m-d', strtotime($created_at));
+
+            $data = array(
+                'link_web' => $this->input->post('txtLinkWeb'),
+                'link_facebook' => $this->input->post('txtLinkFacebook'),
+                'id_ads' => $id,
+                'created_at' => $created_at,
+            );
+
+//            pre($data);
+//            die();
+
+            if ($this->ads_link_model->create($data)) {
+                $this->session->set_flashdata('message', 'Thêm link thành công');
+                redirect(base_url('admin/ads/ads_link/'.$id));
+            } else {
+                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
+            }
+
+        }
+        $this->data['tab'] = 2;
+        $this->data['id'] = $id;
+        $this->data['temp'] = 'admin/ads_link/index';
+        $this->data['view'] = 'admin/ads_link/add';
+        $this->load->view('admin/layout', $this->data);
     }
 
     function ads_left()
