@@ -376,6 +376,47 @@ Class Home extends MY_Controller
 
     }
 
+    function ads_detail_link($slug, $id)
+    {
+        $ads = $this->ads_model->get_info($id);
+        if (!$ads || create_slug($ads->title) != $slug) {
+            redirect(base_url('tin-tuc'));
+        }
+        $this->data['ads'] = $ads;
+
+//        $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
+        $highlight = $this->ads_model->get_list(array('limit' => array('10', '0')));
+        $this->data['highlight'] = $highlight;
+
+        //ads left
+        $ads_left = $this->ads_model->get_list(array('where' => array('ads_left' => 1), 'limit' => array(13, 0)));
+        $this->data['ads_left'] = $ads_left;
+
+        //ads center
+        $ads_center = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(30, 0)));
+        $this->data['ads_center'] = $ads_center;
+
+        $this->data['title'] = $ads->title;
+        $this->data['description'] = $ads->meta_description;
+        $this->data['image'] = public_url('images/ads/' . $ads->img);
+        $this->data['page_url'] = base_url('rao-vat/' . create_slug($ads->title) . '-' . $ads->id);
+//        $this->data['robots'] = $ads->robots_meta;
+//        $this->data['canonical'] = $ads->canonical_url;
+//        $this->data['keywords'] = $ads->meta_keywords;
+
+//        $this->data['temp'] = $this->_template_f . 'ads/ads_detail';
+        // load header
+        $header = array();
+        $header['title'] = $ads->title;
+        $header['image'] = public_url('images/ads/' . $ads->img);
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'ads/ads_detail_link', $this->data);
+        $this->_loadFooter();
+
+    }
+
+
 
     function product()
     {
