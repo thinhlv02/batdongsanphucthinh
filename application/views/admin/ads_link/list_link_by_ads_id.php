@@ -30,12 +30,16 @@
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($ads as $row){ ?>
+            <?php
+            $id_ads = $this->uri->segment(4);
+            echo $id_ads;
+
+            foreach ($ads as $row){ ?>
                 <tr title="" class="">
                     <td class="text-center">
                         <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
 
-                        <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
+                        <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/ads/edit_link/'.$row->id.'/'.$id_ads)?>">Sửa</a>
                             <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
                     </td>
 

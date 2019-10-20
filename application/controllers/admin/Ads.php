@@ -529,6 +529,42 @@ Class Ads extends MY_Controller
         $this->load->view('admin/layout', $this->data);
     }
 
+    function edit_link()
+    {
+        $message = $this->session->flashdata('message');
+        $this->data['message'] = $message;
+        $id = $this->uri->segment(4);
+        $id_ads = $this->uri->segment(5);
+        $ads = $this->ads_link_model->get_info($id);
+//        pre($ads);
+        if (!$ads) {
+            redirect(base_url('admin/ads'));
+        }
+
+        if ($this->input->post('btnEdit')) {
+            $data = array(
+                'link_web' => $this->input->post('txtLinkWeb'),
+                'link_facebook' => $this->input->post('txtLinkFacebook'),
+            );
+
+
+            if ($this->ads_link_model->update($id, $data)) {
+                $this->session->set_flashdata('message', 'Cập nhật link thành công');
+//                redirect(base_url('admin/ads/edit/' . $id));
+                redirect(base_url('admin/ads/ads_link/'.$id_ads));
+            } else {
+                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
+            }
+        }
+        $this->data['id'] = $id;
+        $this->data['tab'] = 3;
+        $this->data['ads'] = $ads;
+        $this->data['temp'] = 'admin/ads_link/index';
+        $this->data['view'] = 'admin/ads_link/edit';
+        $this->load->view('admin/layout', $this->data);
+    }
+
+
     function del()
     {
         $id = $this->uri->segment(4);
