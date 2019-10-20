@@ -590,6 +590,18 @@ Class Ads extends MY_Controller
         redirect(base_url('admin/ads'));
     }
 
+    function del_link()
+    {
+        $id = $this->uri->segment(4);
+        $id_ads = $this->uri->segment(5);
+        $ads = $this->ads_link_model->get_info($id);
+        if ($ads) {
+            $this->ads_link_model->delete($id);
+
+        }
+        redirect(base_url('admin/ads/ads_link/'.$id_ads));
+    }
+
     function ads_link()
     {
         $message = $this->session->flashdata('message');
