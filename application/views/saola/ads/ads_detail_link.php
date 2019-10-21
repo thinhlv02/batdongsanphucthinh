@@ -27,55 +27,108 @@
 
                             <div style="clear: both;"></div>
 
-                            <div class="title_land_box">Ngày đẩy tin:</div>
-                            <div class="pack_land_box" style="border: 0;">
-                                <div class="row">
-                                    <div class="col-xs-12 pland" style="border: 0;">
-                                        <div class="ads_link">
-                                            <?php
-                                            $tags_link = explode('a href="', trim($ads->link_web));
-                                            ?>
-
-                                            <table class="table table-hover">
-                                                <thead>
-                                                <tr>
-                                                    <th>STT</th>
-                                                    <th>Link</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
+                            <?php foreach ($ads_end as $k1 => $v1) { ?>
+                                <div class="title_land_box">Ngày đẩy tin: <?php echo $v1->created_at; ?></div>
+                                <div class="pack_land_box" style="border: 0;">
+                                    <div class="row">
+                                        <div class="col-xs-12 pland" style="border: 0;">
+                                            <div class="ads_link">
                                                 <?php
-                                                $index_2 = -1;
-                                                foreach ($tags_link as $key => $value) {
-                                                    $index_2++;
-                                                    $link = $value;
-                                                    if ($key != 0) {
-                                                        $value = explode('">', $value);
-                                                        $value = $value[0];
-                                                        ?>
-                                                        <tr>
-                                                            <td><?php echo $index_2; ?></td>
-                                                            <td><a href="<?php echo $value; ?>"
-                                                                   target="_blank"><?php echo $value; ?></a></td>
-                                                        </tr>
-                                                    <?php }
-                                                }
+                                                $tags_link = explode('a href="', trim($v1->link_web));
                                                 ?>
-                                                </tbody>
-                                            </table>
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>STT</th>
+                                                        <th>Link website</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <?php
+                                                    $index_2 = -1;
+                                                    foreach ($tags_link as $key => $value) {
+                                                        $index_2++;
+                                                        $link = $value;
+                                                        if ($key != 0) {
+                                                            $value = explode('">', $value);
+                                                            $value = $value[0];
+                                                            ?>
+                                                            <tr>
+                                                                <td><?php echo $index_2; ?></td>
+                                                                <td><a href="<?php echo $value; ?>"
+                                                                       target="_blank"><?php echo $value; ?></a></td>
+                                                            </tr>
+                                                        <?php }
+                                                    }
+                                                    ?>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+
+                            <?php } ?>
 
                         </div>
 
                     </div>
 
                     <div id="Paris" class="tabcontent">
-                        <p>Facebook đang update</p>
-                    </div>
+                        <!--                        <p>Facebook đang update</p>-->
 
+                        <div class="land_box">
+
+                            <div class="clearfix"></div>
+
+                            <div style="clear: both;"></div>
+
+                            <?php foreach ($ads_end as $k1 => $v1) { ?>
+                                <div class="title_land_box">Ngày đẩy tin: <?php echo $v1->created_at; ?></div>
+                                <div class="pack_land_box" style="border: 0;">
+                                    <div class="row">
+                                        <div class="col-xs-12 pland" style="border: 0;">
+                                            <div class="ads_link">
+                                                <?php
+                                                $tags_link = explode('a href="', trim($v1->link_facebook));
+                                                ?>
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>STT</th>
+                                                        <th>Link Facebook</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <?php
+                                                    $index_2 = -1;
+                                                    foreach ($tags_link as $key => $value) {
+                                                        $index_2++;
+                                                        $link = $value;
+                                                        if ($key != 0) {
+                                                            $value = explode('">', $value);
+                                                            $value = $value[0];
+                                                            ?>
+                                                            <tr>
+                                                                <td><?php echo $index_2; ?></td>
+                                                                <td><a href="<?php echo $value; ?>"
+                                                                       target="_blank"><?php echo $value; ?></a></td>
+                                                            </tr>
+                                                        <?php }
+                                                    }
+                                                    ?>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <?php } ?>
+
+                        </div>
+
+                    </div>
 
                 </div>
                 <!--End detail_land-->

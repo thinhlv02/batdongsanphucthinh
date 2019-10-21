@@ -13,6 +13,7 @@ Class Home extends MY_Controller
         $this->load->model('contact_model');
         $this->load->model('news_model');
         $this->load->model('ads_model');
+        $this->load->model('ads_link_model');
         $this->load->model('district_model');
         $this->load->model('Ward_model');
         $this->load->model('user_model');
@@ -382,29 +383,33 @@ Class Home extends MY_Controller
         if (!$ads || create_slug($ads->title) != $slug) {
             redirect(base_url('tin-tuc'));
         }
-        $this->data['ads'] = $ads;
+        $this->data['ads'] = $this->ads_model->get_info($id);
+        $this->data['ads_link'] = $this->ads_link_model->get_list(array('where' => array('id_ads' => $id)));
+        $ads_link = $this->data['ads_link'];
 
-//        $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
-        $highlight = $this->ads_model->get_list(array('limit' => array('10', '0')));
-        $this->data['highlight'] = $highlight;
+        $ads_end = [];
+        $index = 0;
+        foreach ($ads_link as $key => $val) {
+            $index++;
+            $ads_end[$index] = new stdClass();
+            $ads_end[$index]->id = $val->id;
+            $ads_end[$index]->id_ads = $val->id_ads;
+            $ads_end[$index]->created_at = date('d-m-Y', strtotime( $val->created_at));
+            $ads_end[$index]->link_web = $val->link_web;
+            $ads_end[$index]->link_facebook = $val->link_facebook;
 
-        //ads left
-        $ads_left = $this->ads_model->get_list(array('where' => array('ads_left' => 1), 'limit' => array(13, 0)));
-        $this->data['ads_left'] = $ads_left;
+        }
 
-        //ads center
-        $ads_center = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(30, 0)));
-        $this->data['ads_center'] = $ads_center;
+        $this->data['ads_end'] = $ads_end;
+
+//        pre($ads_end);
+//        die;
 
         $this->data['title'] = $ads->title;
         $this->data['description'] = $ads->meta_description;
         $this->data['image'] = public_url('images/ads/' . $ads->img);
         $this->data['page_url'] = base_url('rao-vat/' . create_slug($ads->title) . '-' . $ads->id);
-//        $this->data['robots'] = $ads->robots_meta;
-//        $this->data['canonical'] = $ads->canonical_url;
-//        $this->data['keywords'] = $ads->meta_keywords;
 
-//        $this->data['temp'] = $this->_template_f . 'ads/ads_detail';
         // load header
         $header = array();
         $header['title'] = $ads->title;
@@ -415,8 +420,6 @@ Class Home extends MY_Controller
         $this->_loadFooter();
 
     }
-
-
 
     function product()
     {
