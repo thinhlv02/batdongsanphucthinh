@@ -19,11 +19,9 @@
     </div>
     <div class="x_content">
         <table id="datatable-news" class="table table-striped table-bordered bulk_action">
-<!--            <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">-->
             <thead>
             <tr>
                 <th>Mã tin</th>
-<!--                <th>Tạo bởi</th>-->
                 <th>Ngày</th>
                 <th>Link web</th>
                 <th>Link facebook</th>
@@ -32,18 +30,15 @@
             <tbody>
             <?php
             $id_ads = $this->uri->segment(4);
-            echo $id_ads;
+            echo '<h2 class="text-primary">ID_bài đăng: '.$id_ads.'</h2>';
 
             foreach ($ads as $row){ ?>
                 <tr title="" class="">
                     <td class="text-center">
                         <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
-
                         <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/ads/edit_link/'.$row->id.'/'.$id_ads)?>">Sửa</a>
                             <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>, <?php echo $id_ads; ?>)">Xóa</a>
                     </td>
-
-
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td><?php echo $row->link_web ?></td>
                     <td><?php echo $row->link_facebook ?></td>
@@ -55,16 +50,8 @@
     </div>
 </div>
 <script>
-    // $(document).ready(function () {
-    //     $('#datatable-news').dataTable({
-    //         "ordering": false,
-    //         "iDisplayLength": 30,
-    //     });
-    // });
-
     function confirmDel(id, id_ads) {
         if(confirm('Bạn có chắc chắn muốn xóa?')){
-//            console.log('delll');
             window.location.href = '<?php echo base_url('admin/ads/del_link/')?>' + id + '/' + id_ads;
         }
     }
