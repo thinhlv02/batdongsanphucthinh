@@ -3,13 +3,16 @@
 Class Banner extends MY_Controller
 {
     public $_lstBannerSize = '';
+    public $_lstAds = '';
 
     function __construct()
     {
         parent::__construct();
+        $this->load->model('ads_model');
         $this->load->model('banner_model');
         $this->load->model('banner_size_model');
         $this->_lstBannerSize = $this->banner_size_model->get_list();
+        $this->_lstAds = $this->ads_model->get_list();
     }
 
     function index()
@@ -28,21 +31,19 @@ Class Banner extends MY_Controller
         $devices_end = [];
         $index = 0;
         foreach ($devices as $key => $val) {
+            $ads_info = $this->ads_model->get_info($val->id_ads);
+            $bsize_info = $this->banner_size_model->get_info($val->bsizeid);
             $index++;
             $devices_end[$index] = new stdClass();
             $devices_end[$index]->id = $val->id;
             $devices_end[$index]->img = $val->img;
-            $devices_end[$index]->name = $val->name;
-            $devices_end[$index]->imei = $val->imei;
-            $devices_end[$index]->type = $val->type;
-            $devices_end[$index]->type_name = isset($this->_device_type[$val->type]) ? $this->_device_type[$val->type] : 'dcm';
-            $devices_end[$index]->price = $val->price;
-            $devices_end[$index]->description = $val->description;
+            $devices_end[$index]->id_ads = $val->id_ads;
+            $devices_end[$index]->title = $ads_info->title;
+            $devices_end[$index]->type_name = $bsize_info->bsize_name;
             $devices_end[$index]->created_by = $val->created_by;
             $devices_end[$index]->created_at = $val->created_at;
-//            $devices_end[$key]->id = $val->id;
+            $devices_end[$index]->status = $val->status;
         }
-//        echo '<pre>',print_r($devices_end,1),'</pre>';
 
         $this->data['devices'] = $devices_end;
         $this->data['device_type'] = $this->_device_type;
@@ -54,20 +55,19 @@ Class Banner extends MY_Controller
 
     function add()
     {
+        $lstSizeBanner = $this->_lstBannerSize;
+        $lstAds = $this->_lstAds;
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
-            $config['upload_path'] = './public/images/devices';
+            $config['upload_path'] = './public/images/banner';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $this->load->library("upload", $config);
             if ($this->upload->do_upload('img_news')) {
                 $file_data = $this->upload->data();
                 $data = array(
-                    'name' => $this->input->post('txtName'),
-                    'imei' => $this->input->post('imei'),
-                    'type' => $this->input->post('type'),
-                    'description' => $this->input->post('txtDes'),
-                    'price' => $this->input->post('txtPrice'),
+                    'id_ads' => $this->input->post('txtAds'),
+                    'bsizeid' => $this->input->post('bsizeid'),
                     'created_by' => $this->_uid,
                     'img' => $file_data['file_name'],
                 );
@@ -82,7 +82,9 @@ Class Banner extends MY_Controller
             }
         }
         $this->data['tab'] = 2;
-        $this->data['device_type'] = $this->_device_type;
+//        pre($lstSizeBanner);
+        $this->data['lstAds'] = $lstAds;
+        $this->data['lstSizeBanner'] = $lstSizeBanner;
         $this->data['temp'] = 'admin/banner/index';
         $this->data['view'] = 'admin/banner/add';
         $this->load->view('admin/layout', $this->data);
@@ -107,13 +109,13 @@ Class Banner extends MY_Controller
                 'description' => $this->input->post('txtDes'),
             );
 
-            $config['upload_path'] = './public/images/devices';
+            $config['upload_path'] = './public/images/banner';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $this->load->library("upload", $config);
             if ($this->upload->do_upload('img_news')) {
                 $file_data = $this->upload->data();
                 $data['img'] = $file_data['file_name'];
-                unlink('./public/images/devices/' . $devices->img);
+                unlink('./public/images/banner/' . $devices->img);
             } else {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
@@ -139,10 +141,28 @@ Class Banner extends MY_Controller
         $devices = $this->banner_model->get_info($id);
         if ($devices) {
             $this->banner_model->delete($id);
-            unlink('./public/images/devices/' . $devices->img);
+            unlink('./public/images/banner/' . $devices->img);
         }
         redirect(base_url('admin/banner'));
     }
 
-
+    function highlight()
+    {
+        $id = $_POST['id'];
+        $news = $this->banner_model->get_info($id);
+        $res = array("status" => 1);
+        if ($news) {
+//            $res['status'] = 1;
+            $dataSubmit = array();
+            if ($news->status == 1) {
+                $res['class'] = 'fa-toggle-off';
+                $dataSubmit['status'] = 2;
+            } else {
+                $res['class'] = 'fa-toggle-on';
+                $dataSubmit['status'] = 1;
+            }
+            $this->banner_model->update($id, $dataSubmit);
+        }
+        echo json_encode($res);
+    }
 }

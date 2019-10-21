@@ -22,33 +22,44 @@
             <tr>
                 <th>Mã số</th>
                 <th>Ảnh minh họa</th>
-                <th>Tên thiết bị</th>
-                <th>IMEI</th>
+                <th>ID rao vặt</th>
+                <th>rao vặt</th>
+                <!--                <th>IMEI</th>-->
                 <th>Loại</th>
-                <th>Mô tả</th>
-                <th>Giá tiền</th>
+                <!--                <th>Mô tả</th>-->
+                <!--                <th>Giá tiền</th>-->
                 <th>Người tạo</th>
                 <th>Ngày Tạo</th>
+                <th>Trạng thái</th>
                 <th>Hành động</th>
             </tr>
             </thead>
             <tbody>
-            <?php $sum = 0;
+            <?php
+            //            $sum = 0;
             foreach ($devices as $row) {
-                $sum += $row->price;
+//                $sum += $row->price;
                 ?>
                 <tr>
                     <td><?php echo $row->id ?></td>
                     <td>
-                        <img src="<?php echo base_url('public/images/devices/' . $row->img) ?>" style="max-width: 150px">
+                        <img src="<?php echo base_url('public/images/banner/' . $row->img) ?>" style="max-width: 150px">
                     </td>
-                    <td><?php echo $row->name ?></td>
-                    <td><?php echo $row->imei ?></td>
+                    <td><?php echo $row->id_ads; ?></td>
+                    <td><?php echo $row->title; ?></td>
+                    <!--                    <td>--><?php //echo $row->imei ?><!--</td>-->
                     <td><?php echo $row->type_name ?></td>
-                    <td><?php echo $row->description ?></td>
-                    <td><?php echo $row->price ? number_format($row->price) : ''; ?></td>
+                    <!--                    <td>--><?php //echo $row->description ?><!--</td>-->
+                    <!--                    <td>--><?php //echo $row->price ? number_format($row->price) : ''; ?><!--</td>-->
                     <td><?php echo $row->created_by ?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
+                    <td>
+                        <?php echo $row->status; ?>
+                        <i id="highlight-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->status == 2 ? 'fa-toggle-off' : 'fa-toggle-on' ?>"
+                           onclick="highlight(<?php echo $row->id ?>)"
+                           style="color: green"
+                        ></i></td>
 
                     <td>
                         <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/banner/edit/' . $row->id) ?>">Sửa</a>
@@ -57,13 +68,7 @@
                 </tr>
             <?php } ?>
             </tbody>
-            <tfoot>
-            <tr class="bg-primary">
-                <td colspan="6">Tổng tiền</td>
-                <td><?php echo($sum > 0 ? number_format($sum) : '') ?></td>
-                <td colspan="3"></td>
-            </tr>
-            </tfoot>
+
         </table>
         <!-- <a href="#" class="btn btn-danger">Xóa đã chọn </a> -->
     </div>
@@ -79,6 +84,31 @@
         if (confirm('Bạn có chắc chắn muốn xóa?')) {
             window.location.href = '<?php echo base_url('admin/banner/del/')?>' + id;
         }
+    }
+
+    function highlight(id) {
+        $.ajax({
+            url: "<?php echo admin_url('banner/highlight')?>",
+            type: "post",
+            data: {
+                id: id
+            },
+            success: function (msg) {
+                msg = JSON.parse(msg);
+                console.log(msg);
+                console.log(msg.status);
+                if (msg.status == 1) {
+                    console.log('11111');
+                    $('#highlight-' + id).removeClass("fa-toggle-off").addClass(msg.class);
+                } else {
+                    console.log('222222');
+                    $('#highlight-' + id).removeClass("fa-toggle-on").addClass(msg.class);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
     }
 
 
