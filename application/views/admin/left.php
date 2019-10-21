@@ -54,6 +54,7 @@
                                 <li><a href="<?php echo admin_url('contact') ?>">Liên hệ</a></li>
                                 <li><a href="<?php echo admin_url('content') ?>">Nội dung</a></li>
                                 <li><a href="<?php echo admin_url('agency') ?>">Đại lý</a></li>
+                                <li><a href="<?php echo admin_url('banner') ?>">Quản lý banner web</a></li>
 
                             </ul>
                         </li>
