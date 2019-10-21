@@ -11,122 +11,127 @@
                             <i class="fa fa-angle-right"></i> <?php echo $ads->title ?></strong>
                     </p>
 
-                    <div class="tab">
-                        <button class="tablinks" onclick="openLink(event, 'tabWebsite')" id="defaultOpen">Danh sách bài đăng
-                            website
-                        </button>
-                        <button class="tablinks" onclick="openLink(event, 'tabFacebook')">Danh sách bài đăng trên facebook
-                        </button>
-                    </div>
+                    <div class="container12">
 
-                    <div id="tabWebsite" class="tabcontent">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">Danh sách bài đăng
+                                    website</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Danh sách bài đăng trên facebook</a></li>
+                        </ul>
 
-                        <div class="land_box">
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
 
-                            <div class="clearfix"></div>
+                                <div class="land_box">
 
-                            <div style="clear: both;"></div>
+                                    <div class="clearfix"></div>
 
-                            <?php foreach ($ads_end as $k1 => $v1) { ?>
-                                <div class="pack_land_box" style="border: 0;">
-                                    <div class="row">
-                                        <div class="col-xs-12 pland" style="border: 0;">
-                                            <div class="ads_link">
-                                                <?php
-                                                $tags_link = explode('a href="', trim($v1->link_web));
-                                                ?>
-                                                <h2>Ngày đẩy tin: <?php echo $v1->created_at; ?></h2>
-                                                <table class="table table-bordered">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>STT</th>
-                                                        <th>Link website</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <?php
-                                                    $index_2 = -1;
-                                                    foreach ($tags_link as $key => $value) {
-                                                        $index_2++;
-                                                        $link = $value;
-                                                        if ($key != 0) {
-                                                            $value = explode('">', $value);
-                                                            $value = $value[0];
-                                                            ?>
+                                    <div style="clear: both;"></div>
+
+                                    <?php foreach ($ads_end as $k1 => $v1) { ?>
+                                        <div class="pack_land_box" style="border: 0;">
+                                            <div class="row">
+                                                <div class="col-xs-12 pland" style="border: 0;">
+                                                    <div class="ads_link">
+                                                        <?php
+                                                        $tags_link = explode('a href="', trim($v1->link_web));
+                                                        ?>
+                                                        <h2>Ngày đẩy tin: <?php echo $v1->created_at; ?></h2>
+                                                        <table class="table table-bordered">
+                                                            <thead>
                                                             <tr>
-                                                                <td><?php echo $index_2; ?></td>
-                                                                <td><a href="<?php echo $value; ?>"
-                                                                       target="_blank"><?php echo $value; ?></a></td>
+                                                                <th>STT</th>
+                                                                <th>Link website</th>
                                                             </tr>
-                                                        <?php }
-                                                    }
-                                                    ?>
-                                                    </tbody>
-                                                </table>
+                                                            </thead>
+                                                            <tbody>
+                                                            <?php
+                                                            $index_2 = -1;
+                                                            foreach ($tags_link as $key => $value) {
+                                                                $index_2++;
+                                                                $link = $value;
+                                                                if ($key != 0) {
+                                                                    $value = explode('">', $value);
+                                                                    $value = $value[0];
+                                                                    ?>
+                                                                    <tr>
+                                                                        <td><?php echo $index_2; ?></td>
+                                                                        <td><a href="<?php echo $value; ?>"
+                                                                               target="_blank"><?php echo $value; ?></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                <?php }
+                                                            }
+                                                            ?>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+
+                                    <?php } ?>
+
                                 </div>
 
-                            <?php } ?>
 
-                        </div>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
 
-                    </div>
+                                <div class="land_box">
 
-                    <div id="tabFacebook" class="tabcontent">
+                                    <div class="clearfix"></div>
 
-                        <div class="land_box">
+                                    <div style="clear: both;"></div>
 
-                            <div class="clearfix"></div>
-
-                            <div style="clear: both;"></div>
-
-                            <?php foreach ($ads_end as $k1 => $v1) { ?>
-                                <div class="pack_land_box" style="border: 0;">
-                                    <div class="row">
-                                        <div class="col-xs-12 pland" style="border: 0;">
-                                            <div class="ads_link">
-                                                <?php
-                                                $tags_link = explode('a href="', trim($v1->link_facebook));
-                                                ?>
-                                                <h2>Ngày đẩy tin: <?php echo $v1->created_at; ?></h2>
-                                                <table class="table table-bordered">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>STT</th>
-                                                        <th>Link Facebook</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <?php
-                                                    $index_2 = -1;
-                                                    foreach ($tags_link as $key => $value) {
-                                                        $index_2++;
-                                                        $link = $value;
-                                                        if ($key != 0) {
-                                                            $value = explode('">', $value);
-                                                            $value = $value[0];
-                                                            ?>
+                                    <?php foreach ($ads_end as $k1 => $v1) { ?>
+                                        <div class="pack_land_box" style="border: 0;">
+                                            <div class="row">
+                                                <div class="col-xs-12 pland" style="border: 0;">
+                                                    <div class="ads_link">
+                                                        <?php
+                                                        $tags_link = explode('a href="', trim($v1->link_facebook));
+                                                        ?>
+                                                        <h2>Ngày đẩy tin: <?php echo $v1->created_at; ?></h2>
+                                                        <table class="table table-bordered">
+                                                            <thead>
                                                             <tr>
-                                                                <td><?php echo $index_2; ?></td>
-                                                                <td><a href="<?php echo $value; ?>"
-                                                                       target="_blank"><?php echo $value; ?></a></td>
+                                                                <th>STT</th>
+                                                                <th>Link Facebook</th>
                                                             </tr>
-                                                        <?php }
-                                                    }
-                                                    ?>
-                                                    </tbody>
-                                                </table>
+                                                            </thead>
+                                                            <tbody>
+                                                            <?php
+                                                            $index_2 = -1;
+                                                            foreach ($tags_link as $key => $value) {
+                                                                $index_2++;
+                                                                $link = $value;
+                                                                if ($key != 0) {
+                                                                    $value = explode('">', $value);
+                                                                    $value = $value[0];
+                                                                    ?>
+                                                                    <tr>
+                                                                        <td><?php echo $index_2; ?></td>
+                                                                        <td><a href="<?php echo $value; ?>"
+                                                                               target="_blank"><?php echo $value; ?></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                <?php }
+                                                            }
+                                                            ?>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+
+                                    <?php } ?>
+
                                 </div>
 
-                            <?php } ?>
-
+                            </div>
                         </div>
-
                     </div>
 
                 </div>
@@ -138,22 +143,7 @@
 </section>
 
 <script>
-    function openLink(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
 
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
 </script>
 
 <style>
@@ -300,45 +290,11 @@
         font-size: 20px;
         color: #e40b00;
     }
-</style>
 
-
-<style>
-    /* Style the tab */
-    .tab {
-        overflow: hidden;
-        border: 1px solid #ccc;
-        background-color: #f1f1f1;
-    }
-
-    /* Style the buttons inside the tab */
-    .tab button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-        font-size: 17px;
-    }
-
-    /* Change background color of buttons on hover */
-    .tab button:hover {
-        background-color: #ddd;
-    }
-
-    /* Create an active/current tablink class */
-    .tab button.active {
-        background-color: #ccc;
-    }
-
-    /* Style the tab content */
-    .tabcontent {
-        display: none;
-        /*padding: 6px 12px;*/
-        /*border: 1px solid #ccc;*/
-        border-top: none;
+    /*//css tab active*/
+    li.active a {
+        border-right: 6px solid #D3D6DA !important;
+        font-weight: bold;
     }
 </style>
 
