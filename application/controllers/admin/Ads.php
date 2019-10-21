@@ -638,7 +638,7 @@ Class Ads extends MY_Controller
         $this->data['id'] = $id;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/ads_link/index';
-        $this->data['view'] = 'admin/ads_link/list_link_by_ads_id';
+        $this->data['view'] = 'admin/ads_link/list';
         $this->load->view('admin/layout', $this->data);
     }
 
