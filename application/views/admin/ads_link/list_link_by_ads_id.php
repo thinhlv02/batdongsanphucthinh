@@ -30,8 +30,6 @@
             <tbody>
             <?php
             $id_ads = $this->uri->segment(4);
-            echo '<h2 class="text-primary">ID_bài đăng: '.$id_ads.'</h2>';
-
             foreach ($ads as $row){ ?>
                 <tr title="" class="">
                     <td class="text-center">
