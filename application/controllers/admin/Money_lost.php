@@ -58,7 +58,7 @@ Class Money_lost extends MY_Controller
                 'created_by' => $this->_uid
             );
             if ($this->money_lost_model->create($data)) {
-                $this->session->set_flashdata('message', 'Thêmthành công');
+                $this->session->set_flashdata('message', 'Thêm thành công');
                 redirect(base_url('admin/money_lost'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');

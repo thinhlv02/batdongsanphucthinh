@@ -42,7 +42,7 @@ Class Customers extends MY_Controller
                 'created_by' => $this->_uid,
             );
             if ($this->customers_model->create($data)) {
-                $this->session->set_flashdata('message', 'Thêmthành công');
+                $this->session->set_flashdata('message', 'Thêm thành công');
                 redirect(base_url('admin/customers'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');

@@ -2,10 +2,14 @@
 
 Class Banner extends MY_Controller
 {
+    public $_lstBannerSize = '';
+
     function __construct()
     {
         parent::__construct();
         $this->load->model('banner_model');
+        $this->load->model('banner_size_model');
+        $this->_lstBannerSize = $this->banner_size_model->get_list();
     }
 
     function index()
@@ -16,6 +20,9 @@ Class Banner extends MY_Controller
 
         $input = array();
         $input['order'] = array('id', 'desc');
+        $lstSizeBanner = $this->_lstBannerSize;
+//        pre($lstSizeBanner);
+
         $devices = $this->banner_model->get_list($input);
 
         $devices_end = [];
@@ -65,7 +72,7 @@ Class Banner extends MY_Controller
                     'img' => $file_data['file_name'],
                 );
                 if ($this->banner_model->create($data)) {
-                    $this->session->set_flashdata('message', 'Thêmthành công');
+                    $this->session->set_flashdata('message', 'Thêm thành công');
                     redirect(base_url('admin/banner'));
                 } else {
                     $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');

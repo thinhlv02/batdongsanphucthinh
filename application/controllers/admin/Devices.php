@@ -65,7 +65,7 @@ Class Devices extends MY_Controller
                     'img' => $file_data['file_name'],
                 );
                 if ($this->devices_model->create($data)) {
-                    $this->session->set_flashdata('message', 'Thêmthành công');
+                    $this->session->set_flashdata('message', 'Thêm thành công');
                     redirect(base_url('admin/devices'));
                 } else {
                     $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');

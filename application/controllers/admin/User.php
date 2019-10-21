@@ -40,7 +40,7 @@ Class User extends MY_Controller
             );
 
             if ($this->user_model->create($data)) {
-                $this->session->set_flashdata('message', 'Thêmthành công');
+                $this->session->set_flashdata('message', 'Thêm thành công');
                 redirect(base_url('admin/user'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
