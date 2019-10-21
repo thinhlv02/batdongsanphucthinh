@@ -384,7 +384,7 @@ Class Home extends MY_Controller
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $this->ads_model->get_info($id);
-        $this->data['ads_link'] = $this->ads_link_model->get_list(array('where' => array('id_ads' => $id)));
+        $this->data['ads_link'] = $this->ads_link_model->get_list(array('where' => array('id_ads' => $id), 'order' => array('id', 'asc')));
         $ads_link = $this->data['ads_link'];
 
         $ads_end = [];

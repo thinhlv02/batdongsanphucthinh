@@ -12,14 +12,14 @@
                     </p>
 
                     <div class="tab">
-                        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Danh sách bài đăng
-                            web
+                        <button class="tablinks" onclick="openLink(event, 'tabWebsite')" id="defaultOpen">Danh sách bài đăng
+                            website
                         </button>
-                        <button class="tablinks" onclick="openCity(event, 'Paris')">Danh sách bài đăng trên facebook
+                        <button class="tablinks" onclick="openLink(event, 'tabFacebook')">Danh sách bài đăng trên facebook
                         </button>
                     </div>
 
-                    <div id="London" class="tabcontent">
+                    <div id="tabWebsite" class="tabcontent">
 
                         <div class="land_box">
 
@@ -28,7 +28,6 @@
                             <div style="clear: both;"></div>
 
                             <?php foreach ($ads_end as $k1 => $v1) { ?>
-                                <div class="title_land_box">Ngày đẩy tin: <?php echo $v1->created_at; ?></div>
                                 <div class="pack_land_box" style="border: 0;">
                                     <div class="row">
                                         <div class="col-xs-12 pland" style="border: 0;">
@@ -36,7 +35,8 @@
                                                 <?php
                                                 $tags_link = explode('a href="', trim($v1->link_web));
                                                 ?>
-                                                <table class="table table-hover">
+                                                <h2>Ngày đẩy tin: <?php echo $v1->created_at; ?></h2>
+                                                <table class="table table-bordered">
                                                     <thead>
                                                     <tr>
                                                         <th>STT</th>
@@ -74,8 +74,7 @@
 
                     </div>
 
-                    <div id="Paris" class="tabcontent">
-                        <!--                        <p>Facebook đang update</p>-->
+                    <div id="tabFacebook" class="tabcontent">
 
                         <div class="land_box">
 
@@ -84,7 +83,6 @@
                             <div style="clear: both;"></div>
 
                             <?php foreach ($ads_end as $k1 => $v1) { ?>
-                                <div class="title_land_box">Ngày đẩy tin: <?php echo $v1->created_at; ?></div>
                                 <div class="pack_land_box" style="border: 0;">
                                     <div class="row">
                                         <div class="col-xs-12 pland" style="border: 0;">
@@ -92,7 +90,8 @@
                                                 <?php
                                                 $tags_link = explode('a href="', trim($v1->link_facebook));
                                                 ?>
-                                                <table class="table table-hover">
+                                                <h2>Ngày đẩy tin: <?php echo $v1->created_at; ?></h2>
+                                                <table class="table table-bordered">
                                                     <thead>
                                                     <tr>
                                                         <th>STT</th>
@@ -139,7 +138,7 @@
 </section>
 
 <script>
-    function openCity(evt, cityName) {
+    function openLink(evt, cityName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -337,8 +336,8 @@
     /* Style the tab content */
     .tabcontent {
         display: none;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
+        /*padding: 6px 12px;*/
+        /*border: 1px solid #ccc;*/
         border-top: none;
     }
 </style>
