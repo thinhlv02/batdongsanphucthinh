@@ -10,7 +10,6 @@
     font-weight: 600;
 }
 
-/*.pt_hotLand_home .item_ads .area {*/
 .area {
     font-weight: 600;
     font-size: 12px;
@@ -27,13 +26,13 @@
     margin: 10px 0;
 }
 
-.pt_hotLand_home, .item_ads>p {
+.pt_hotLand_home, .item_ads > p {
     line-height: 18px;
     height: 72px;
     overflow: hidden;
 }
 
-.item_ads>p {
+.item_ads > p {
     line-height: 18px;
     height: 72px;
     overflow: hidden;
@@ -45,7 +44,7 @@
     display: inline-block;
     line-height: 20px;
     color: #055699;
-    height:100%;
+    height: 100%;
 }
 
 /*ads center*/
@@ -191,8 +190,21 @@
     left: 8px;
 }
 
-.vip_box>div dl dt div {
+.vip_box > div dl dt div {
     margin-top: 4px;
     text-align: center;
 }
+
 /*//colum3*/
+
+.top2 .rtop2 p {
+    height: 15px;
+    overflow: hidden;
+}
+
+.top2 .rtop2 div {
+    line-height: 18px;
+    max-height: 54px;
+    overflow: hidden;
+    margin: 5px 0;
+}
