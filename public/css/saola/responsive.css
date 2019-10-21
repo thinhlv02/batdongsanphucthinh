@@ -50,6 +50,10 @@
     .nav-small{
         display: inline-block;
     }
+
+    #ads-left, #ads-right {
+        display: none;
+    }
 }
 @media all and (max-width: 710px) {
     .logo img {
