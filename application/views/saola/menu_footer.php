@@ -1,4 +1,5 @@
-<nav class="navbar navbar-default">
+<!--<nav class="navbar navbar-default">-->
+<nav class="container nav_fix">
     <div class="container">
         <ul class="nav navbar-nav">
             <li class="<?php echo !empty($li_1) ? 'menu-active' : ''?>" title="<?php echo $common_lang['home']; ?>"><a href="<?php echo base_url()?>"><i class="mdi mdi-home"></i> <?php echo $common_lang['home']; ?></a></li>
@@ -13,7 +14,7 @@
 </nav>
 
 <style>
-    .navbar-default {
+    .nav_fix {
         border-top: 1px solid #ccc !important;
         border-bottom: 1px solid #ccc !important;
         background-color: #ddd !important;
