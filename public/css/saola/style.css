@@ -283,7 +283,7 @@ section {
 
 .intro_home {
     /*background: url("../images/bgIntro.jpg") no-repeat center center;*/
-    background: url("../images/contact-background.jpg") no-repeat center center;
+    background: url("../../images/contact-background.jpg") no-repeat center center;
     background-attachment: fixed;
     color: #ffffff;
     background-size: cover;
