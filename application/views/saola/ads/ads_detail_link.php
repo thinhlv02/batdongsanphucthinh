@@ -151,5 +151,9 @@
         border-right: 6px solid #D3D6DA !important;
         font-weight: bold;
     }
+
+    .table-bordered {
+        border: 1px solid #ddd !important;
+    }
 </style>
 
