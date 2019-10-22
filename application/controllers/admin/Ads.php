@@ -656,12 +656,13 @@ Class Ads extends MY_Controller
 
 //            $created_at =  $this->input->post('created_at');
 //            $created_at = date('Y-m-d', strtotime($created_at));
+            $created_at = date('Y-m-d H:i:s');
 
             $data = array(
                 'link_web' => $this->input->post('txtLinkWeb'),
                 'link_facebook' => $this->input->post('txtLinkFacebook'),
                 'id_ads' => $id,
-//                'created_at' => $created_at,
+                'created_at' => $created_at,
             );
 
 //            pre($data);
