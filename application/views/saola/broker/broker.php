@@ -36,15 +36,25 @@
                                                         <thead>
                                                         <tr>
                                                             <th>#</th>
-                                                            <th>Tên công ty</th>
+                                                            <th>Tên</th>
+                                                            <th>Mail</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td></td>
-                                                            <td><a href="#"
-                                                                   target="_blank">3</a>
-                                                            </td>
+                                                            <td>John</td>
+                                                            <td>Doe</td>
+                                                            <td>john@example.com</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Mary</td>
+                                                            <td>Moe</td>
+                                                            <td>mary@example.com</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>July</td>
+                                                            <td>Dooley</td>
+                                                            <td>july@example.com</td>
                                                         </tr>
 
                                                         </tbody>
@@ -76,16 +86,26 @@
                                                         <thead>
                                                         <tr>
                                                             <th>#</th>
-                                                            <th>Tên cá nhân</th>
+                                                            <th>Tên</th>
+                                                            <th>Mail</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
 
                                                         <tr>
-                                                            <td>2</td>
-                                                            <td><a href="#"
-                                                                   target="_blank">abcccc</a>
-                                                            </td>
+                                                            <td>John</td>
+                                                            <td>Doe</td>
+                                                            <td>john@example.com</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Mary</td>
+                                                            <td>Moe</td>
+                                                            <td>mary@example.com</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>July</td>
+                                                            <td>Dooley</td>
+                                                            <td>july@example.com</td>
                                                         </tr>
 
                                                         </tbody>
