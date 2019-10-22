@@ -34,9 +34,31 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Email <span class="required">*</span></label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <input type="text" id="txtEmail" name="txtEmail" value="<?php echo $agency->email ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Nhập txtEmail">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Khu vực hoạt động <span class="required">*</span></label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <input type="text" id="" name="txtArea" value="<?php echo $agency->area?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Nhập">
+                    </div>
+                </div>
+                <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Địa chỉ <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="txtAddress" name="txtAddress" value="<?php echo $agency->area?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Nhập địa chỉ">
+                        <input type="text" id="txtAddress" name="txtAddress" value="<?php echo $agency->address?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Nhập địa chỉ">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu <span
+                                class="required">*</span></label>
+                    <div class="col-md-10 col-sm-10 col-xs-12">
+                        <textarea name="txtIntro" class="form-control" style="height: 120px"><?php echo $agency->intro; ?></textarea>
+                        <script type="text/javascript">CKEDITOR.replace('txtIntro', {height: '300px'}); </script>
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-xs-12">
                     </div>
                 </div>
                 <div class="form-group" style="margin-top: 30px">

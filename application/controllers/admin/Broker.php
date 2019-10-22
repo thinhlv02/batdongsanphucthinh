@@ -25,7 +25,10 @@ Class Broker extends MY_Controller {
             $data = array(
                 'name' => $this->input->post('txtName'),
                 'phone' => $this->input->post('txtPhone'),
-                'area' => $this->input->post('txtAddress'),
+                'email' => $this->input->post('txtEmail'),
+                'area' => $this->input->post('txtArea'),
+                'address' => $this->input->post('txtAddress'),
+                'intro' => $this->input->post('txtIntro'),
             );
             if($this->broker_model->create($data)){
                 $this->session->set_flashdata('message', 'Thêm thành công');
@@ -54,7 +57,10 @@ Class Broker extends MY_Controller {
             $data = array(
                 'name' => $this->input->post('txtName'),
                 'phone' => $this->input->post('txtPhone'),
+                'email' => $this->input->post('txtEmail'),
                 'area' => $this->input->post('txtAddress'),
+                'address' => $this->input->post('txtAddress'),
+                'intro' => $this->input->post('txtIntro'),
             );
             if($this->broker_model->update($id, $data)){
                 $this->session->set_flashdata('message', 'Cập nhật thành công');
