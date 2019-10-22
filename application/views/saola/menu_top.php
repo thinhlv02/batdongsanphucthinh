@@ -446,13 +446,15 @@
         position: absolute;
         top: 45px;
         left: 0px;
-        background-color: #508fc6;
+        /*background-color: #508fc6;*/
+        background-color: #cfe5f7;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
 
     .dropdown-content a {
+        color: #333 !important;
         display: block;
         text-align: left;
         padding: 12px 16px !important;
