@@ -92,7 +92,10 @@ $route['rao-vat-link/(:num)'] = 'home/ads/$1';
 $route['rao-vat-link/(:any)-(:num)(.html)?'] = 'home/ads_detail_link/$1/$2';
 
 $route['dai-ly(.html)?'] = 'home/agency';
+
 $route['chuyen-vien-tu-van(.html)?'] = 'home/broker';
+$route['chuyen-vien-tu-van/(:num)'] = 'home/broker/$1';
+$route['chuyen-vien-tu-van/(:any)-(:num)(.html)?'] = 'home/broker_detail/$1/$2';
 
 $route['hinh-thuc-vay/(:any)-(:num)(.html)?'] = 'home/hinh_thuc_vay/$1/$2';
 $route['tuyen-dung.html'] = 'home/recruit';
