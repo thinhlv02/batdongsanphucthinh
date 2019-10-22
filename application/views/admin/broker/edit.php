@@ -1,4 +1,5 @@
 
+<script type="text/javascript" src="<?php echo base_url(); ?>public/scripts/ckeditor/ckeditor.js"></script>
 
 <div class="x_panel">
     <div class="x_title">
