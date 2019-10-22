@@ -40,6 +40,9 @@
                                                                 <i class="mdi mdi-cellphone-android mdi-18px text-primary"></i> <?php echo $v->phone; ?>
                                                             </p>
                                                             <p>
+                                                                <i class="mdi mdi-email-outline mdi-18px text-primary"></i> <?php echo $v->email; ?>
+                                                            </p>
+                                                            <p>
                                                                 <button class="btn btn-outline-warning btn-xs"> Read more</button>
                                                             </p>
                                                         </div>
