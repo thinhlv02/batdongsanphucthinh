@@ -1411,7 +1411,7 @@ button#myPageup {
 }
 
 /*menu login ,register*/
-.user_style .fa {
+.user_style .mdi-account-plus, .user_style .mdi-login {
     color: #e40b00 !important;
 }
 

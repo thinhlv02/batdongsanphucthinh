@@ -29,16 +29,16 @@
         <?php
         if (empty($user_login)) { ?>
 
-            <li class="user_style pr-0 text-bold-600" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" >
+            <li class="user_style pr-0 text-bold-60012" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>" >
                 <a href="javascript:void(0)" class="text-uppercase">
-                    <i class="mdi mdi-account-plus text-danger"></i>
+                    <i class="mdi mdi-account-plus"></i>
                     <?php echo $this->lang->line('register'); ?>
                 </a>
             </li>
 
-            <li class="user_style p-0 text-bold-600" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
+            <li class="user_style p-0 text-bold-60012" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
                 <a href="javascript:void(0)" class="menu_login text-uppercase">
-                    <i class="mdi mdi-login text-danger"></i>
+                    <i class="mdi mdi-login"></i>
                     <?php echo $this->lang->line('login'); ?>
                 </a>
             </li>

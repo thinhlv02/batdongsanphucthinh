@@ -5,8 +5,8 @@
                 <i class="glyphicon glyphicon-search"></i> <?php echo $common_lang['search_title']; ?></h7>
         </div>
     </div>
-    <div class="card" style="border: 1px solid #cacfe7;">
-        <div class="card-body pt-0 " style="height: 295px;">
+    <div class="card12" style="border: 1px solid #cacfe7;">
+        <div class="card-body pt-0 " style="height: 265px;">
 
             <form id="formAddProduct_book12" data-parsley-validate class="" method="get"
                   action="<?php echo base_url('tim-kiem') ?>"
@@ -45,14 +45,14 @@
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <!--                                            <label for="email">Loại</label>-->
-                    <select class="form-control">
-                        <option value=""> -- <?php echo $common_lang['choose_type']; ?> --</option>
-                        <option value="1"> <?php echo $common_lang['for_sale']; ?></option>
-                        <option value="2"> <?php echo $common_lang['need_to_buy']; ?></option>
-                    </select>
-                </div>
+<!--                <div class="form-group">-->
+<!--                    <label for="email">Loại</label>-->
+<!--                    <select class="form-control">-->
+<!--                        <option value=""> -- --><?php //echo $common_lang['choose_type']; ?><!-- --</option>-->
+<!--                        <option value="1"> --><?php //echo $common_lang['for_sale']; ?><!--</option>-->
+<!--                        <option value="2"> --><?php //echo $common_lang['need_to_buy']; ?><!--</option>-->
+<!--                    </select>-->
+<!--                </div>-->
                 <div class="text-center">
                     <button type="submit" class="btn btn-default bg-info w-100"><i class="glyphicon glyphicon-search"></i> <?php echo $common_lang['btn_search']; ?>
                     </button>
