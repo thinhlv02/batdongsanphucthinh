@@ -555,11 +555,6 @@
         margin-bottom: 10px;
     }
 
-    .land_page .land_box {
-        border: 1px solid #ddd;
-        padding: 15px;
-    }
-
     .land_page .poster_land_box .pic_poster_land_box p {
         border: 1px solid #ddd;
         padding: 4px;

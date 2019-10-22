@@ -146,16 +146,6 @@
 </script>
 
 <style>
-    .land_box h5 {
-        color: #e40b00;
-        font-weight: 600;
-    }
-
-    .land_page .land_box {
-        border: 1px solid #ddd;
-        padding: 15px;
-    }
-
     /*//css tab active*/
     li.active a {
         border-right: 6px solid #D3D6DA !important;

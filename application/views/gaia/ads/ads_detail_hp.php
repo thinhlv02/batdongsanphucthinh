@@ -522,11 +522,6 @@
         border-top: 1px dotted #ddd;
     }
 
-    .land_page .land_box {
-        border: 1px solid #ddd;
-        padding: 15px;
-    }
-
     .land_page .title1_land_box strong {
         background: #fff;
         display: inline-block;
@@ -563,11 +558,6 @@
         text-transform: uppercase;
         font-weight: 600;
         margin-bottom: 10px;
-    }
-
-    .land_page .land_box {
-        border: 1px solid #ddd;
-        padding: 15px;
     }
 
     .land_page .poster_land_box .pic_poster_land_box p {

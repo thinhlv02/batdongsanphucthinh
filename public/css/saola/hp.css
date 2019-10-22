@@ -208,3 +208,14 @@
     overflow: hidden;
     margin: 5px 0;
 }
+
+/*//ads detail + ads detail link*/
+.land_page .land_box {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.land_box h5 {
+    color: #e40b00;
+    font-weight: 600;
+}
