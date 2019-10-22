@@ -43,7 +43,7 @@
                                                                 <i class="mdi mdi-email-outline mdi-18px text-danger"></i> <?php echo $v->email; ?>
                                                             </p>
                                                             <p>
-                                                                <button class="btn btn-outline-warning btn-xs"> Read more</button>
+                                                                <button class="btn btn-outline-primary btn-xs"> Read more</button>
                                                             </p>
                                                         </div>
                                                     </div>
