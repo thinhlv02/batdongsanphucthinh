@@ -8,7 +8,7 @@
                 <!--Begin land_box-->
                 <div class="_box">
                     <p class="title_box" style="color: #055699"><strong>Cần bán
-                            <i class="fa fa-angle-right"></i> <?php echo $ads->title ?></strong>
+                            <i class="mdi mdi-chevron-right"></i> <?php echo $ads->title ?></strong>
                     </p>
 
                     <div class="">
@@ -33,9 +33,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12 pland">
                                                     <div class="ads_link">
-                                                        <?php
-                                                        $tags_link = explode('a href="', trim($v1->link_web));
-                                                        ?>
+                                                        <?php $tags_link = explode('a href="', trim($v1->link_web)); ?>
                                                         <h5 class="text-uppercase">Ngày đẩy tin: <?php echo $v1->created_at; ?></h5>
                                                         <table class="table table-bordered">
                                                             <thead>
@@ -140,10 +138,6 @@
         </div>
     </div>
 </section>
-
-<script>
-
-</script>
 
 <style>
     /*//css tab active*/
