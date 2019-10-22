@@ -23,12 +23,12 @@
                                     $tags = explode('#', $lightSlider_str);
                                     foreach ($tags as $k => $val) { ?>
                                         <!--                                <li style="width: 450px; height: 338px"-->
-<!--                                        <li style="max-height: 703px !important;"-->
+                                        <!--                                        <li style="max-height: 703px !important;"-->
                                         <li style=""
                                             data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
                                             <!--                                    <img style="width: 450px; height: 338px" alt="-->
                                             <? //= $val ?><!--"-->
-<!--                                            <img style="max-height: 703px !important;" alt="--><?//= $val ?><!--"-->
+                                            <!--                                            <img style="max-height: 703px !important;" alt="--><? //= $val ?><!--"-->
                                             <img style="" alt="<?= $val ?>"
                                                  src="<?php echo public_url('images/ads/' . $val) ?>"/>
                                         </li>
@@ -155,7 +155,8 @@
                         <div class="clearfix"></div>
 
                         <div class="title_land_box text-center bg-warning" style="border-radius: 5px;">
-                            <a style="color: #fff;" href="<?php echo base_url('rao-vat-link/' . create_slug($ads->title) . '-' . $ads->id) ?>" class="text-uppercase">Click vào đây để chuyển sang trang chi tiết link đẩy tin </a></div>
+                            <a style="color: #fff;" href="<?php echo base_url('rao-vat-link/' . create_slug($ads->title) . '-' . $ads->id) ?>" class="text-uppercase">Click vào đây để chuyển sang trang chi tiết link đẩy tin </a>
+                        </div>
 
 
                         <div class="title_land_box">Thông tin liên hệ:</div>
