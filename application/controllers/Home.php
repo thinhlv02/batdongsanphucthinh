@@ -32,8 +32,12 @@ Class Home extends MY_Controller
         $this->data['news'] = $news;
 
         //load banner list show
-        $banner = $this->banner_model->get_list(array('where' => array('status' => 1)));
-//        pre($banner);
+        $banner_left = $this->banner_model->get_list(array('where' => array('status' => 1, 'location' => 1)));
+        $banner_right = $this->banner_model->get_list(array('where' => array('status' => 1, 'location' => 2)));
+        $banner_top = $this->banner_model->get_list(array('where' => array('status' => 1, 'location' => 3)));
+//        pre($banner_left);
+//        pre($banner_right);
+//        pre($banner_top);
 
         $news_mb = $this->news_model->get_list(array('limit' => array(5, 0)));
         $this->data['news_mb'] = $news_mb;
