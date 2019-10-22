@@ -150,13 +150,13 @@ Class Banner extends MY_Controller
     {
         $id = $_POST['id'];
         $news = $this->banner_model->get_info($id);
-        $res = array("status" => 1);
+        $res = array("status" => 0);
         if ($news) {
-//            $res['status'] = 1;
+            $res['status'] = 1;
             $dataSubmit = array();
-            if ($news->status == 1) {
+            if ($news->status) {
                 $res['class'] = 'fa-toggle-off';
-                $dataSubmit['status'] = 2;
+                $dataSubmit['status'] = 0;
             } else {
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['status'] = 1;

@@ -54,11 +54,9 @@
                     <td><?php echo $row->created_by ?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td>
-                        <?php echo $row->status; ?>
-                        <i id="highlight-<?php echo $row->id ?>"
-                           class="fa fa-2x <?php echo $row->status == 2 ? 'fa-toggle-off' : 'fa-toggle-on' ?>"
-                           onclick="highlight(<?php echo $row->id ?>)"
-                           style="color: green"
+                        <i id="highlight-<?php echo $row->id?>"
+                           class="text-success fa fa-2x <?php echo $row->status ? 'fa-toggle-on' : 'fa-toggle-off'?>"
+                           onclick="highlight(<?php echo $row->id?>)"
                         ></i></td>
 
                     <td>
@@ -96,13 +94,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                console.log(msg.status);
-                if (msg.status == 1) {
-                    console.log('11111');
-                    $('#highlight-' + id).removeClass("fa-toggle-off").addClass(msg.class);
-                } else {
-                    console.log('222222');
-                    $('#highlight-' + id).removeClass("fa-toggle-on").addClass(msg.class);
+                if(msg.status){
+                    $('#highlight-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
             error: function (err) {
