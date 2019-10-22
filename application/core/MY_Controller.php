@@ -96,12 +96,12 @@ Class MY_Controller extends CI_Controller
         $preHeader['template_f'] = $this->_template_f;
         $preHeader['login_lang'] = $this->_login_lang;
         $preHeader['language'] = $this->_langcode;
-        $preHeader['content'] = $this->_content;
-        $preHeader['contact'] = $this->_contact;
-        $preHeader['products'] = $this->_products;
-        $preHeader['prices'] = $this->_prices;
         $preHeader['agencies'] = $this->_agencies;
+        $preHeader['contact'] = $this->_contact;
+        $preHeader['content'] = $this->_content;
         $preHeader['user_login'] = $this->_user_login;
+        $preHeader['prices'] = $this->_prices;
+        $preHeader['products'] = $this->_products;
         // assign all common param to view
         $this->load->view($this->_template_f . 'preheader_view', $preHeader);
     }
