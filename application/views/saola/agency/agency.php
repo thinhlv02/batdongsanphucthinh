@@ -7,9 +7,9 @@
                     <div class="item-agency" id="<?php echo create_slug($value->name) ?>">
                         <div style="font-weight: bold"><?php echo $value->name ?></div>
                         <div style="color: #666"><i class="fa fa-building" aria-hidden="true"></i>
-                            <span><?php echo $value->address ?></span></div>
+                            <span><i class="mdi mdi-map-marker-circle text-danger"></i> <?php echo $value->address ?></span></div>
                         <div style="color: #666"><i class="fa fa-phone" aria-hidden="true"></i>
-                            <span><?php echo $value->phone ?></span></div>
+                            <span><i class="mdi mdi-cellphone-android text-danger"></i> <?php echo $value->phone ?></span></div>
                         <!--                <div>-->
                         <!--                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">-->
                         <!--                </div>-->
