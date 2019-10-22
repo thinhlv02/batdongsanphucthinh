@@ -48,33 +48,31 @@
 
                             <a href="<?php echo base_url() ?>">
                                 <img src="<?php echo public_url('images/logo.png') ?>"
-                                     style="max-width: 180px; margin-top: 30px">
+                                     style="margin-top: 30px">
                             </a>
 
                         </div>
                         <div class="col-md-4 col-sm-12 col-xs-12 mt-2">
                             <div class="footer-title"><strong>THÔNG TIN LIÊN HỆ</strong></div>
                             <div>
-                                <i class="fa fa-building" aria-hidden="true"></i>
+                                <i class="mdi mdi-map-marker-circle text-danger"></i>
                                 <span><?php echo $contact->address ?></span>
                             </div>
                             <div style="margin-top: 10px">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <span><?php echo $contact->phone ?></span>
+                                <span><i class="mdi mdi-phone text-danger"></i> <?php echo $contact->phone ?></span>
                             </div>
                             <div style="margin-top: 10px">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <span><?php echo $contact->email ?></span>
+                                <span><i class="mdi mdi-email-outline text-danger"></i> <?php echo $contact->email ?></span>
                             </div>
                         </div>
                         <div class="col-md-2  col-sm-12 col-xs-12 mt-2">
                             <div class="footer-title"><strong>LIÊN KẾT</strong></div>
                             <ul>
-                                <li><a href="<?php echo base_url('gioi-thieu') ?>">Giới thiệu dịch vụ</a></li>
-                                <li><a href="<?php echo base_url('ho-tro') ?>">Hỗ trợ</a></li>
-                                <li><a href="<?php echo base_url('dieu-khoan-su-dung') ?>">Chính sách và điều khoản</a>
+                                <li><a href="<?php echo base_url('gioi-thieu') ?>"><i class="mdi mdi-information-outline text-danger"></i> Giới thiệu dịch vụ</a></li>
+                                <li><a href="<?php echo base_url('ho-tro') ?>"><i class="mdi mdi-sim text-danger"></i>  Hỗ trợ</a></li>
+                                <li><a href="<?php echo base_url('dieu-khoan-su-dung') ?>"><i class="mdi mdi-play-protected-content text-danger"></i> Chính sách và điều khoản</a>
                                 </li>
-                                <li><a href="<?php echo base_url('lien-he') ?>">Liên hệ</a></li>
+                                <li><a href="<?php echo base_url('lien-he') ?>"><i class="mdi mdi-contacts text-danger"></i> Liên hệ</a></li>
                             </ul>
                         </div>
 

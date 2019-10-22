@@ -1,15 +1,15 @@
 <section class="contact">
     <div class="container">
         <div class="title-section"><h2><?php echo 'Thông tin liên hệ'?></h2></div>
-        <div class="col-sm-12 col-md-6 card" style="margin-top: 20px">
+        <div class="col-sm-12 col-md-6" style="margin-top: 10px">
             <div class="company-phone">
-                <i class="fa fa-phone" aria-hidden="true"></i> <span>Số điện thoại: <strong style="color: #1B60A8"><?php echo $contact->phone?></strong></span>
+                <i class="mdi mdi-phone text-danger" aria-hidden="true"></i> <span><strong style="color: #1B60A8"><?php echo $contact->phone?></strong></span>
             </div>
             <div class="company-phone">
-                <i class="fa fa-envelope" aria-hidden="true"></i> <span>Email: <strong style="color: #1B60A8"><?php echo $contact->email?></strong></span>
+                <i class="mdi mdi-email text-danger" aria-hidden="true"></i> <span><strong style="color: #1B60A8"><?php echo $contact->email?></strong></span>
             </div>
             <div class="company-address">
-                <i class="fa fa-building" aria-hidden="true"></i> <span>Địa chỉ: <strong style="color: #1B60A8"><?php echo $contact->address ?></strong></span>
+                <i class="mdi mdi-marker text-danger" aria-hidden="true"></i> <span><strong style="color: #1B60A8"><?php echo $contact->address ?></strong></span>
             </div>
         </div>
         <div class="col-sm-12 col-md-6 card" style="margin-top: 20px">

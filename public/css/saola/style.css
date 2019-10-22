@@ -841,17 +841,6 @@ span.item-date {
     color: #4dbb6d;
 }
 
-.company-phone {
-    font-size: 16px;
-    margin: 10px 0px;
-    /*color: chocolate;*/
-}
-
-.company-address {
-    font-size: 16px;
-    margin: 10px 0px;
-}
-
 .nav-small {
     display: none;
 }
