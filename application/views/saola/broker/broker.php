@@ -7,7 +7,7 @@
 
                 <!--Begin land_box-->
                 <div class="_box">
-                    <p class="title_box" style="color: #055699"><strong>Nhà môi giới
+                    <p class="title_box" style="color: #055699"><strong>Chuyên viên tư vấn
                             <i class="mdi mdi-chevron-right"></i> Danh sách</strong>
                     </p>
 

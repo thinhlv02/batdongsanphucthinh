@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="title-section"><h2><?php echo 'Danh sách các nhà môi giới đã hợp tác với chúng tôi !' ?></h2></div>
+    <div class="title-section"><h2><?php echo 'Danh sách các Chuyên viên tư vấn đã hợp tác với chúng tôi !' ?></h2></div>
     <div class="row mt-5">
         <div class="card">
             <div class="card-body">
