@@ -654,14 +654,14 @@ Class Ads extends MY_Controller
         $this->data['message'] = $message;
         if ($this->input->post('btnAdd')) {
 
-            $created_at =  $this->input->post('created_at');
-            $created_at = date('Y-m-d', strtotime($created_at));
+//            $created_at =  $this->input->post('created_at');
+//            $created_at = date('Y-m-d', strtotime($created_at));
 
             $data = array(
                 'link_web' => $this->input->post('txtLinkWeb'),
                 'link_facebook' => $this->input->post('txtLinkFacebook'),
                 'id_ads' => $id,
-                'created_at' => $created_at,
+//                'created_at' => $created_at,
             );
 
 //            pre($data);
