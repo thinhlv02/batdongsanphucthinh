@@ -49,17 +49,6 @@
                     </div>
                 </div>
 
-                <div class="form-group">
-
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ngày đăng<span
-                                class="required"></span></label>
-                    <div class="col-md-2 col-sm-2 col-xs-12">
-                        <input type="text" id="txtFrom" name="created_at" required
-                               value=""
-                               class="form-control col-md-7 col-xs-12"/>
-                    </div>
-                </div>
-
                 <div class="form-group" style="margin-top: 30px">
                     <div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-2" style="width: 70px">
                         <input type="submit" id="btnAddProduct" name="btnAdd"
@@ -72,88 +61,5 @@
 </div>
 
 <script>
-    function get_district(sel) {
-        var id = sel.value;
-        console.log(id);
-        if (id == 0) {
-            $('#selectDistrict').empty();
-            $('#selectWard').empty();
-            $('#selectStreet').empty();
-        } else {
-            // ajax
-            var params = {
-                'id': id
-            };
-
-            // console.log(params);
-            var _onSuccess = function (data) {
-                // console.log(data);
-                if (data == 'NOT_LOGIN') {
-                    window.location.reload(true);
-                } else if (data === 'false') {
-
-                } else {
-                    // console.log(data);
-                    $("#divDistrict").html(data);
-                }
-            };//
-
-            getAjax('<?php echo admin_url('ads/ajax_get_list_district'); ?>', params, '', 'GET', '', false, _onSuccess);
-        }
-    }
-
-    function get_ward(sel) {
-        var id = sel.value;
-        console.log(id);
-        if (id == 0) {
-            $('#selectWard').empty();
-            $('#selectStreet').empty();
-        } else {
-            var params = {
-                'id': id
-            };
-
-            var _onSuccess = function (data) {
-                // console.log(data);
-                if (data == 'NOT_LOGIN') {
-
-                } else if (data === 'false') {
-
-                } else {
-                    $("#divWard").html(data);
-                }
-            };
-
-            getAjax('<?php echo admin_url('ads/ajax_get_list_ward'); ?>', params, '', 'GET', '', false, _onSuccess);
-        }
-    }
-
-    function get_street(sel) {
-        var id = sel.value;
-        console.log(id);
-        if (id == 0) {
-            $('#selectStreet').empty();
-        } else {
-            // ajax
-            var params = {
-                'id': id
-            };
-
-            // console.log(params);
-            var _onSuccess = function (data) {
-                // console.log(data);
-                if (data == 'NOT_LOGIN') {
-
-                } else if (data === 'false') {
-
-                } else {
-                    // console.log(data);
-                    $("#divStreet").html(data);
-                }
-            };
-
-            getAjax('<?php echo admin_url('ads/ajax_get_list_street'); ?>', params, '', 'GET', '', false, _onSuccess);
-        }
-    }
 
 </script>
