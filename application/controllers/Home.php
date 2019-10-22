@@ -394,7 +394,7 @@ Class Home extends MY_Controller
             $ads_end[$index] = new stdClass();
             $ads_end[$index]->id = $val->id;
             $ads_end[$index]->id_ads = $val->id_ads;
-            $ads_end[$index]->created_at = date('d-m-Y H:i:s', strtotime( $val->created_at));
+            $ads_end[$index]->created_at = date('d-m-Y H:i:s', strtotime($val->created_at));
             $ads_end[$index]->link_web = $val->link_web;
             $ads_end[$index]->link_facebook = $val->link_facebook;
 
@@ -464,6 +464,16 @@ Class Home extends MY_Controller
         $this->_loadHeader($header);
         $this->load->view($this->_template_f . 'agency/agency', $this->data);
 //        $this->load->view($this->_template_f . 'agency/agency_w3', $this->data);
+        $this->_loadFooter();
+    }
+
+    function broker()
+    {
+        // load header
+        $header = array();
+        $header['li_10'] = '1';
+        $this->_loadHeader($header);
+        $this->load->view($this->_template_f . 'broker/broker', $this->data);
         $this->_loadFooter();
     }
 
