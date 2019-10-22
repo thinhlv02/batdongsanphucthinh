@@ -17,6 +17,7 @@ Class Home extends MY_Controller
         $this->load->model('district_model');
         $this->load->model('Ward_model');
         $this->load->model('user_model');
+        $this->load->model('broker_model');
         //language load
     }
 
@@ -469,6 +470,7 @@ Class Home extends MY_Controller
 
     function broker()
     {
+        $this->data['lstData'] = $this->broker_model->get_list();
         // load header
         $header = array();
         $header['li_10'] = '1';

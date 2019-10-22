@@ -14,8 +14,8 @@
                     <div class="">
 
                         <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#home">Công ty</a></li>
-                            <li><a data-toggle="tab" href="#menu1">Cá nhân</a></li>
+                            <li class="active"><a data-toggle="tab" href="#home">Cá nhân</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Công ty</a></li>
                         </ul>
 
                         <div class="tab-content">
@@ -23,99 +23,40 @@
 
                                 <div class="land_box">
 
-                                    <div class="clearfix"></div>
-
-                                    <div style="clear: both;"></div>
-
                                     <div class="pack_land_box">
+
                                         <div class="row">
-                                            <div class="col-xs-12 pland">
-                                                <div class="ads_link">
-                                                    <h5 class="text-uppercase">Bordered Table: </h5>
-                                                    <table class="table table-bordered">
-                                                        <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Tên</th>
-                                                            <th>Mail</th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        <tr>
-                                                            <td>John</td>
-                                                            <td>Doe</td>
-                                                            <td>john@example.com</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Mary</td>
-                                                            <td>Moe</td>
-                                                            <td>mary@example.com</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>July</td>
-                                                            <td>Dooley</td>
-                                                            <td>july@example.com</td>
-                                                        </tr>
 
-                                                        </tbody>
-                                                    </table>
+                                            <?php foreach ($lstData as $k => $v) { ?>
+
+                                                <div class="col-md-3 col-sm-3 col-xs-3">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h4><?php echo $v->name; ?></h4>
+                                                            <p class="broker-area">
+                                                                <i class="mdi mdi-map-marker-circle mdi-18px text-primary"></i> <?php echo $v->area; ?>
+                                                            </p>
+                                                            <p>
+                                                                <i class="mdi mdi-cellphone-android mdi-18px text-primary"></i> <?php echo $v->phone; ?>
+                                                            </p>
+                                                            <p>
+                                                                <button class="btn btn-outline-warning btn-xs"> Read more</button>
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
+                                            <?php } ?>
+
+                                        </div>
+
+                                    </div>
 
                                 </div>
 
                             </div>
+
                             <div id="menu1" class="tab-pane fade">
-
-                                <div class="land_box">
-
-                                    <div class="clearfix"></div>
-
-                                    <div style="clear: both;"></div>
-
-                                    <div class="pack_land_box" style="border: 0;">
-                                        <div class="row">
-                                            <div class="col-xs-12 pland" style="border: 0;">
-                                                <div class="ads_link">
-
-                                                    <h5 class="text-uppercase">Bordered Table:</h5>
-                                                    <table class="table table-bordered">
-                                                        <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Tên</th>
-                                                            <th>Mail</th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-
-                                                        <tr>
-                                                            <td>John</td>
-                                                            <td>Doe</td>
-                                                            <td>john@example.com</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Mary</td>
-                                                            <td>Moe</td>
-                                                            <td>mary@example.com</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>July</td>
-                                                            <td>Dooley</td>
-                                                            <td>july@example.com</td>
-                                                        </tr>
-
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
 
                             </div>
 
@@ -137,9 +78,16 @@
         border-right: 6px solid #D3D6DA !important;
         font-weight: bold;
     }
+</style>
 
-    .table-bordered {
-        border: 1px solid #ddd !important;
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .broker-area {
+        height: 40px;
+        overflow: hidden;
     }
 </style>
 
