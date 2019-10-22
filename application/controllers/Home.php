@@ -462,8 +462,8 @@ Class Home extends MY_Controller
         $header = array();
         $header['li_9'] = '1';
         $this->_loadHeader($header);
-//        $this->load->view($this->_template_f . 'agency/agency', $this->data);
-        $this->load->view($this->_template_f . 'agency/agency_w3', $this->data);
+        $this->load->view($this->_template_f . 'agency/agency', $this->data);
+//        $this->load->view($this->_template_f . 'agency/agency_w3', $this->data);
         $this->_loadFooter();
     }
 

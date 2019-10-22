@@ -14,6 +14,7 @@ $lang['common_lang']['recruit'] = 'Tuyển dụng';
 $lang['common_lang']['lmenu_contact'] = 'Liên hệ';
 $lang['common_lang']['lmenu_faq'] = 'Những câu hỏi thường gặp';
 $lang['common_lang']['lmenu_phonebook'] = 'Danh bạ';
+$lang['common_lang']['lmenu_broker'] = 'Nhà môi giới';
 $lang['common_lang']['login'] = 'Đăng nhập';
 $lang['common_lang']['register'] = 'Đăng ký';
 $lang['common_lang']['oops'] = 'Oops!';
@@ -96,7 +97,7 @@ $lang['common_lang']['lmenu_searchcampaign'] = 'Tìm chiến dịch';
 $lang['common_lang']['lbl_menu_banner'] = 'Quảng cáo';
 $lang['common_lang']['lbl_menu_banner_dashboard'] = 'Tất cả quảng cáo';
 
-$lang['common_lang']['lbl_menu_agency'] = 'Nhà môi giới';
+$lang['common_lang']['lbl_menu_agency'] = 'Đại lý';
 $lang['common_lang']['lbl_menu_agency_customer'] = 'Thông tin khách hàng';
 $lang['common_lang']['lbl_menu_agency_report'] = 'Thực chạy';
 

@@ -15,6 +15,7 @@ $lang['common_lang']['recruit'] = 'CAREER';
 $lang['common_lang']['lmenu_contact'] = 'Contact us';
 $lang['common_lang']['lmenu_faq'] = 'FAQ';
 $lang['common_lang']['lmenu_phonebook'] = 'Phone book';
+$lang['common_lang']['lmenu_broker'] = 'Broker';
 $lang['common_lang']['login'] = 'Login';
 $lang['common_lang']['register'] = 'Register';
 $lang['common_lang']['oops'] = 'Oops!';
