@@ -19,18 +19,10 @@
                                 <ul id="lightSlider" style="height: 100% !important;">
                                     <?php
                                     $lightSlider_str = $ads->lightSlider != '' ? $ads->img . '#' . $ads->lightSlider : $ads->img;
-                                    //                                $lightSlider_str = $ads->lightSlider != '' ? $ads->lightSlider : $ads->img;
                                     $tags = explode('#', $lightSlider_str);
                                     foreach ($tags as $k => $val) { ?>
-                                        <!--                                <li style="width: 450px; height: 338px"-->
-                                        <!--                                        <li style="max-height: 703px !important;"-->
-                                        <li style=""
-                                            data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
-                                            <!--                                    <img style="width: 450px; height: 338px" alt="-->
-                                            <? //= $val ?><!--"-->
-                                            <!--                                            <img style="max-height: 703px !important;" alt="--><? //= $val ?><!--"-->
-                                            <img style="" alt="<?= $val ?>"
-                                                 src="<?php echo public_url('images/ads/' . $val) ?>"/>
+                                        <li data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
+                                            <img style="" alt="<?= $val ?>" src="<?php echo public_url('images/ads/' . $val) ?>"/>
                                         </li>
                                     <?php } ?>
 
@@ -158,7 +150,6 @@
                             <a style="color: #fff;" href="<?php echo base_url('rao-vat-link/' . create_slug($ads->title) . '-' . $ads->id) ?>" class="text-uppercase">Click vào đây để chuyển sang trang chi tiết link đẩy tin </a>
                         </div>
 
-
                         <div class="title_land_box">Thông tin liên hệ:</div>
                         <div class="pack_land_box">
                             <div class="row12">
@@ -186,8 +177,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!--                        <div style="clear: both;"></div>-->
 
                         <div class="title1_land_box"><strong>Thông tin người đăng</strong></div>
                         <!--Begin brief_land_box-->
@@ -304,8 +293,7 @@
                                             <p>
                                                 <strong>DTMB:</strong> <?php echo $value->acreage ?> m2 -
                                                 <strong>Giá:</strong>
-                                                <span>
-												<?php echo $value->price ?> VND												</span>
+                                                <span><?php echo $value->price ?> VND </span>
                                             </p>
                                         </div>
                                     </div>
