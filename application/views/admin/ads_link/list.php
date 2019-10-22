@@ -38,7 +38,7 @@ $id_ads = $this->uri->segment(4);
                         <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/ads/edit_link/' . $row->id . '/' . $id_ads) ?>">Sửa</a>
                         <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>, <?php echo $id_ads; ?>)">Xóa</a>
                     </td>
-                    <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
+                    <td><?php echo date('d/m/Y H:i:s', strtotime($row->created_at)); ?></td>
                     <td><?php echo $row->link_web ?></td>
                     <td><?php echo $row->link_facebook ?></td>
                 </tr>
