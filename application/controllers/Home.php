@@ -14,6 +14,7 @@ Class Home extends MY_Controller
         $this->load->model('news_model');
         $this->load->model('ads_model');
         $this->load->model('ads_link_model');
+        $this->load->model('banner_model');
         $this->load->model('district_model');
         $this->load->model('Ward_model');
         $this->load->model('user_model');
@@ -29,6 +30,10 @@ Class Home extends MY_Controller
 
         $news = $this->news_model->get_list(array('limit' => array(11, 0)));
         $this->data['news'] = $news;
+
+        //load banner list show
+        $banner = $this->banner_model->get_list(array('where' => array('status' => 1)));
+//        pre($banner);
 
         $news_mb = $this->news_model->get_list(array('limit' => array(5, 0)));
         $this->data['news_mb'] = $news_mb;
