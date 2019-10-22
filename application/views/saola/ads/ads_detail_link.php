@@ -146,7 +146,7 @@
 </script>
 
 <style>
-    .land_page .land_box h1, .land_page .land_box h2, .land_box h5 {
+    .land_box h5 {
         color: #e40b00;
         font-weight: 600;
     }
