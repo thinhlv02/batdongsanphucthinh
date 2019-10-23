@@ -283,6 +283,16 @@
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
     })();
+
+    $( document ).ready(function() {
+        var _widthWindow = $(window).width() - 160;
+        var _widthContainer = $('.container').width() + 30;
+        console.log( "_widthWindow!" + _widthWindow );
+        console.log( "hoem _widthContainer!" + _widthContainer );
+        var _end = (_widthWindow - _widthContainer - 320) ;
+        console.log(_end / 2);
+
+    });
 </script>
 <!--End of Tawk.to Script-->
 
