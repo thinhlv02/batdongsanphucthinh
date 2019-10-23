@@ -88,7 +88,7 @@
 </div>
 <script>
     $(document).ready(function () {
-        $('#datatable-news').dataTable({
+        $('#datatable-product').dataTable({
             "ordering": false
         });
     });
