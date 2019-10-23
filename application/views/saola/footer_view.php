@@ -93,6 +93,36 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="card">
+                    <div class="card-body line-height-2" style="background-color: #EDEDED">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <div class="footer-bottom-end-row1" style="padding-bottom: 10px; color: #000;">
+                                <strong style="font-size: 1.2em;">Đại lý</strong>
+                            </div>
+                            <div class="footer-bottom-end-row1" style="padding: 10px 0 10px;">
+                                <img src="<?php echo public_url('images/line-footer.png') ?>" alt="" noloaderror="true">
+                            </div>
+                        </div>
+
+                        <?php foreach ($agencies as $key => $value) { ?>
+                        <div class="col-md-4 col-sm-12 col-xs-12 mt-2">
+                            <div class="footer-title">
+                                <strong><a href="<?php echo base_url('dai-ly#' . create_slug($value->name)) ?>"><?php echo $value->name ?></a></strong>
+                            </div>
+                            <div>
+                                <i class="mdi mdi-map-marker-circle text-danger"></i>
+                                <span><?php echo $value->address ?></span>
+                            </div>
+                            <div style="margin-top: 10px">
+                                <span><i class="mdi mdi-phone text-danger"></i> <?php echo $value->phone ?></span>
+                            </div>
+                        </div>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
