@@ -103,8 +103,7 @@
     <div class="caption">
         <div class="container">
             <div class="text-intro">
-                <div class="title-section"><h3 style="color: #fff; font-size:30px"><strong>TẢI VÀ TRẢI NGHIỆM ỨNG DỤNG
-                            TẠI ĐÂY</strong></h3></div>
+                <div class="title-section"><h3 style="color: #fff; font-size:30px"><strong>TẢI VÀ TRẢI NGHIỆM ỨNG DỤNG TẠI ĐÂY</strong></h3></div>
                 <div style="display: flex; justify-content: center;">
                     <div>
                         <span>SCAN QR CODE</span>
@@ -113,12 +112,8 @@
                     <div style="margin-left: 30px">
                         <span>HOẶC</span>
                         <div style="margin-top: 10px">
-                            <a href="javascript:void(0)">
-                                <img class="img-responsive" style="width: 250px" src="<?php echo public_url(). 'images/download_android.png' ?>">
-                            </a>
-                            <a href="javascript:void(0)">
-                                <img class="img-responsive" style="width: 250px; margin-top: 8px" src="<?php echo public_url(). 'images/download_ios.png' ?>">
-                            </a>
+                            <a href="javascript:void(0)"><img class="img-responsive" style="width: 250px" src="<?php echo public_url(). 'images/download_android.png' ?>"></a>
+                            <a href="javascript:void(0)"><img class="img-responsive" style="width: 250px; margin-top: 8px" src="<?php echo public_url(). 'images/download_ios.png' ?>"></a>
                         </div>
                     </div>
                 </div>
@@ -218,22 +213,7 @@
 
 </script>
 
-<?php //$this->load->view($this->_template_f . 'footer') ?>
 </body>
-
-<!--<div id='ads-left'>-->
-<!--    <div style='margin:0 0 5px 0; padding:0;width:160px;position:fixed; left:0; top:0;'>-->
-<!--        <a href='--><?php //echo public_url('images/ads/banner1.jpg') ?><!--' target='_blank'>-->
-<!--            <img border='0' height='665' src='--><?php //echo public_url('images/ads/banner1.jpg') ?><!--' width='200'/>-->
-<!--        </a>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div id='ads-right'>-->
-<!--    <div style='margin:0 0 5px 0; padding:0;width:200px;position:fixed; right:0; top:0;'>-->
-<!--        <a href='Link quảng cáo bên phải' target='_blank'><img border='0' height='665' src='Ảnh quảng cáo bên phải'-->
-<!--                                                               width='200'/></a>-->
-<!--    </div>-->
-<!--</div>-->
 
 <!--<script type="text/javascript">-->
 <!--    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();-->
