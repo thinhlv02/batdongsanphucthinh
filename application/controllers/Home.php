@@ -32,9 +32,22 @@ Class Home extends MY_Controller
         $this->data['news'] = $news;
 
         //load banner list show
-        $banner_left = $this->banner_model->get_list(array('where' => array('status' => 1, 'location' => 1)));
-        $banner_right = $this->banner_model->get_list(array('where' => array('status' => 1, 'location' => 2)));
-        $banner_top = $this->banner_model->get_list(array('where' => array('status' => 1, 'location' => 3)));
+        $banner_left = $this->banner_model->get_list(array('where' => array('highlight' => 1, 'ads_left' => 1, 'bsizeid' => 5), 'limit' => array('1', '0')));
+        if ($banner_left) {
+            $banner_left[0]->{'title'} = $this->ads_model->get_info($banner_left[0]->id_ads)->title;
+        }
+        $banner_right = $this->banner_model->get_list(array('where' => array('highlight' => 1, 'ads_right' => 1, 'bsizeid' => 5), 'limit' => array('1', '0')));
+
+        if ($banner_right) {
+            $banner_right[0]->{'title'} = $this->ads_model->get_info($banner_right[0]->id_ads)->title;
+        }
+
+        $banner_top = $this->banner_model->get_list(array('where' => array('highlight' => 1, 'ads_top' => 1, 'bsizeid' => 4), 'limit' => array('1', '0')));
+
+        $this->data['banner_left'] = $banner_left;
+        $this->data['banner_right'] = $banner_right;
+        $this->data['banner_top'] = $banner_top;
+
 //        pre($banner_left);
 //        pre($banner_right);
 //        pre($banner_top);

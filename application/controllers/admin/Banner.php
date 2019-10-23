@@ -42,7 +42,10 @@ Class Banner extends MY_Controller
             $devices_end[$index]->type_name = $bsize_info->bsize_name;
             $devices_end[$index]->created_by = $val->created_by;
             $devices_end[$index]->created_at = $val->created_at;
-            $devices_end[$index]->status = $val->status;
+            $devices_end[$index]->highlight = $val->highlight;
+            $devices_end[$index]->ads_left = $val->ads_left;
+            $devices_end[$index]->ads_right = $val->ads_right;
+            $devices_end[$index]->ads_top = $val->ads_top;
         }
 
         $this->data['devices'] = $devices_end;
@@ -92,6 +95,10 @@ Class Banner extends MY_Controller
 
     function edit()
     {
+        $lstAds = $this->_lstAds;
+
+        $lstSizeBanner = $this->_lstBannerSize;
+
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
@@ -102,11 +109,8 @@ Class Banner extends MY_Controller
 
         if ($this->input->post('btnEdit')) {
             $data = array(
-                'name' => $this->input->post('txtName'),
-                'imei' => $this->input->post('imei'),
-                'type' => $this->input->post('type'),
-                'price' => $this->input->post('txtPrice'),
-                'description' => $this->input->post('txtDes'),
+                'id_ads' => $this->input->post('txtAds'),
+                'bsizeid' => $this->input->post('bsizeid'),
             );
 
             $config['upload_path'] = './public/images/banner';
@@ -127,6 +131,8 @@ Class Banner extends MY_Controller
             }
         }
         $this->data['tab'] = 3;
+        $this->data['lstSizeBanner'] = $lstSizeBanner;
+        $this->data['lstAds'] = $lstAds;
         $this->data['devices'] = $devices;
 //        var_dump($devices);
         $this->data['device_type'] = $this->_device_type;
@@ -154,12 +160,72 @@ Class Banner extends MY_Controller
         if ($news) {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($news->status) {
+            if ($news->highlight) {
                 $res['class'] = 'fa-toggle-off';
-                $dataSubmit['status'] = 0;
+                $dataSubmit['highlight'] = 0;
             } else {
                 $res['class'] = 'fa-toggle-on';
-                $dataSubmit['status'] = 1;
+                $dataSubmit['highlight'] = 1;
+            }
+            $this->banner_model->update($id, $dataSubmit);
+        }
+        echo json_encode($res);
+    }
+
+    function ads_left()
+    {
+        $id = $_POST['id'];
+        $news = $this->banner_model->get_info($id);
+        $res = array("status" => 0);
+        if ($news) {
+            $res['status'] = 1;
+            $dataSubmit = array();
+            if ($news->ads_left) {
+                $res['class'] = 'fa-toggle-off';
+                $dataSubmit['ads_left'] = 0;
+            } else {
+                $res['class'] = 'fa-toggle-on';
+                $dataSubmit['ads_left'] = 1;
+            }
+            $this->banner_model->update($id, $dataSubmit);
+        }
+        echo json_encode($res);
+    }
+
+    function ads_right()
+    {
+        $id = $_POST['id'];
+        $news = $this->banner_model->get_info($id);
+        $res = array("status" => 0);
+        if ($news) {
+            $res['status'] = 1;
+            $dataSubmit = array();
+            if ($news->ads_right) {
+                $res['class'] = 'fa-toggle-off';
+                $dataSubmit['ads_right'] = 0;
+            } else {
+                $res['class'] = 'fa-toggle-on';
+                $dataSubmit['ads_right'] = 1;
+            }
+            $this->banner_model->update($id, $dataSubmit);
+        }
+        echo json_encode($res);
+    }
+
+    function ads_top()
+    {
+        $id = $_POST['id'];
+        $news = $this->banner_model->get_info($id);
+        $res = array("status" => 0);
+        if ($news) {
+            $res['status'] = 1;
+            $dataSubmit = array();
+            if ($news->ads_top) {
+                $res['class'] = 'fa-toggle-off';
+                $dataSubmit['ads_top'] = 0;
+            } else {
+                $res['class'] = 'fa-toggle-on';
+                $dataSubmit['ads_top'] = 1;
             }
             $this->banner_model->update($id, $dataSubmit);
         }

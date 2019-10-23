@@ -24,41 +24,57 @@
                 <th>Ảnh minh họa</th>
                 <th>ID rao vặt</th>
                 <th>rao vặt</th>
-                <!--                <th>IMEI</th>-->
                 <th>Loại</th>
-                <!--                <th>Mô tả</th>-->
-                <!--                <th>Giá tiền</th>-->
                 <th>Người tạo</th>
                 <th>Ngày Tạo</th>
-                <th>Trạng thái</th>
+                <th>Nổi bật</th>
+                <th>Trái</th>
+                <th>Phải</th>
+                <th>TOP</th>
                 <th>Hành động</th>
             </tr>
             </thead>
             <tbody>
             <?php
-            //            $sum = 0;
             foreach ($devices as $row) {
-//                $sum += $row->price;
                 ?>
                 <tr>
                     <td><?php echo $row->id ?></td>
                     <td>
-                        <img src="<?php echo base_url('public/images/banner/' . $row->img) ?>" style="max-width: 150px">
+                        <img src="<?php echo base_url('public/images/banner/' . $row->img) ?>" style="max-width: 60px">
                     </td>
                     <td><?php echo $row->id_ads; ?></td>
                     <td><?php echo $row->title; ?></td>
-                    <!--                    <td>--><?php //echo $row->imei ?><!--</td>-->
                     <td><?php echo $row->type_name ?></td>
-                    <!--                    <td>--><?php //echo $row->description ?><!--</td>-->
-                    <!--                    <td>--><?php //echo $row->price ? number_format($row->price) : ''; ?><!--</td>-->
                     <td><?php echo $row->created_by ?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td>
-                        <i id="highlight-<?php echo $row->id?>"
-                           class="text-success fa fa-2x <?php echo $row->status ? 'fa-toggle-on' : 'fa-toggle-off'?>"
-                           onclick="highlight(<?php echo $row->id?>)"
-                        ></i></td>
+                        <i id="highlight-<?php echo $row->id ?>"
+                           class="text-danger fa fa-2x <?php echo $row->highlight ? 'fa-toggle-on' : 'fa-toggle-off' ?>"
+                           onclick="highlight(<?php echo $row->id ?>)"
+                        ></i>
+                    </td>
+                    <td>
+                        <i id="ads_left-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->ads_left ? 'fa-toggle-on' : 'fa-toggle-off' ?> primary"
+                           onclick="ads_left(<?php echo $row->id ?>)"
+                        ></i>
+                    </td>
 
+                    <td>
+                        <i id="ads_right-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off' ?> secondary"
+                           onclick="ads_right(<?php echo $row->id ?>)"
+                        ></i>
+                    </td>
+
+                    <td>
+                        <i id="ads_center-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->ads_top ? 'fa-toggle-on' : 'fa-toggle-off' ?> success"
+                           onclick="ads_top(<?php echo $row->id ?>)"
+
+                        ></i>
+                    </td>
                     <td>
                         <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/banner/edit/' . $row->id) ?>">Sửa</a>
                         <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
@@ -68,7 +84,6 @@
             </tbody>
 
         </table>
-        <!-- <a href="#" class="btn btn-danger">Xóa đã chọn </a> -->
     </div>
 </div>
 <script>
@@ -94,7 +109,7 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if(msg.status){
+                if (msg.status) {
                     $('#highlight-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -105,4 +120,63 @@
     }
 
 
+    function ads_left(id) {
+        $.ajax({
+            url: "<?php echo admin_url('banner/ads_left')?>",
+            type: "post",
+            data: {
+                id: id
+            },
+            success: function (msg) {
+                msg = JSON.parse(msg);
+                console.log(msg);
+                if (msg.status) {
+                    $('#ads_left-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
+    }
+
+    function ads_right(id) {
+        $.ajax({
+            url: "<?php echo admin_url('banner/ads_right')?>",
+            type: "post",
+            data: {
+                id: id
+            },
+            success: function (msg) {
+                msg = JSON.parse(msg);
+                console.log(msg);
+                if (msg.status) {
+                    $('#ads_right-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
+    }
+
+    function ads_top(id) {
+        $.ajax({
+            url: "<?php echo admin_url('banner/ads_top')?>",
+            type: "post",
+            data: {
+                id: id
+            },
+            success: function (msg) {
+                msg = JSON.parse(msg);
+                console.log(msg);
+                if (msg.status) {
+                    $('#ads_center-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
+    }
 </script>

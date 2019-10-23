@@ -25,12 +25,20 @@
         <div class="row">
             <form id="formAddCatalog" data-parsley-validate class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên thiết bị <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên ADS <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" id="txtName" name="txtName" value="<?php echo $devices->name?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tên bài viết">
+                        <select name="txtAds" class="form-control col-md-12 col-xs-12">
+
+                            <?php foreach ($lstAds as $key => $value) { ?>
+                                <option value="<?= $value->id; ?>" <?php if ($devices->id_ads == $value->id) echo 'selected' ?>>
+                                    <?php echo $value->id. ' => '. $value->title; ?>
+                                </option>
+                            <?php } ?>
+
+                        </select>
+
                     </div>
                 </div>
-
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh minh họa<span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
@@ -39,38 +47,17 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">IMEI <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="text" name="imei" value="<?php echo $devices->imei ?>" class="form-control col-md-7 col-xs-12" placeholder="mã imei">
-                    </div>
-                </div>
-                <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Loại <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <select name="type" class="form-control col-md-12 col-xs-12">
+                        <select name="bsizeid" class="form-control col-md-12 col-xs-12">
 
-                            <?php foreach ($device_type as $key => $value) { ?>
-                                <option value="<?= $key ?>" <?php if ($devices->type == $key) echo 'selected' ?>>
-                                    <?php echo $value ?>
+                            <?php foreach ($lstSizeBanner as $key => $value) { ?>
+                                <option value="<?php echo  $value->id ?>" <?php if ($devices->bsizeid == $value->id) echo 'selected' ?>>
+                                    <?php echo $value->bsize_name; ?>
                                 </option>
                             <?php } ?>
 
                         </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Mô tả <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                        <textarea name="txtDes" class="form-control" style="height: 120px"><?php echo $devices->description?></textarea>
-                        <script type="text/javascript">CKEDITOR.replace('txtDes',{height: '300px'}); </script>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền <span class="required">*</span></label>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                        <input type="number" name="txtPrice" value="<?php echo $devices->price ?>" class="form-control col-md-7 col-xs-12" placeholder="Giá tiền">
                     </div>
                 </div>
 

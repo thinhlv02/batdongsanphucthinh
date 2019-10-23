@@ -25,7 +25,7 @@
         <div class="row">
             <form id="formAddCatalog" data-parsley-validate class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên thiết bị <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên ADS <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <select name="txtAds" class="form-control col-md-12 col-xs-12">
 
