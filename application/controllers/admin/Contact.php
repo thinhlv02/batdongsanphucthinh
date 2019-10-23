@@ -31,7 +31,7 @@ Class Contact extends MY_Controller
                 );
                 $this->contact_model->update(1, $contact_submit);
                 $this->session->set_flashdata('message', 'Cập nhật thông tin thành công!');
-                redirect(base_url('admin/contact/contact'));
+                redirect(base_url('admin/contact'));
             }
         }
         $contact = $this->contact_model->get_info(1);
