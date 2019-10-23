@@ -67,7 +67,7 @@
                         <div class="col-md-2  col-sm-12 col-xs-12 mt-2">
                             <div class="footer-title"><strong>LIÊN KẾT</strong></div>
                             <ul>
-                                <li><a href="<?php echo base_url('gioi-thieu') ?>">Giới thiệu dịch vụ</a></li>
+                                <li><a href="<?php echo base_url('gioi-thieu') ?>">Giới thiệu</a></li>
                                 <li><a href="<?php echo base_url('ho-tro') ?>">Hỗ trợ</a></li>
                                 <li><a href="<?php echo base_url('dieu-khoan-su-dung') ?>">Chính sách và điều khoản</a>
                                 </li>
@@ -95,7 +95,7 @@
         </div>
 
     </div>
-    <div id="result_test"></div>
+
 </section>
 
 <!--test full footer-->
@@ -108,19 +108,16 @@
                 <div style="display: flex; justify-content: center;">
                     <div>
                         <span>SCAN QR CODE</span>
-                        <img class="img-responsive" style="width: 156px; margin-top: 10px"
-                             src="https://gaia.net.vn/public/images/GaiA_QR.png">
+                        <img class="img-responsive" style="width: 156px; margin-top: 10px" src="<?php echo public_url(). 'images/GaiA_QR.png' ?>">
                     </div>
                     <div style="margin-left: 30px">
                         <span>HOẶC</span>
                         <div style="margin-top: 10px">
                             <a href="javascript:void(0)">
-                                <img class="img-responsive" style="width: 250px"
-                                     src="https://gaia.net.vn/public/images/download_android.png">
+                                <img class="img-responsive" style="width: 250px" src="<?php echo public_url(). 'images/download_android.png' ?>">
                             </a>
                             <a href="javascript:void(0)">
-                                <img class="img-responsive" style="width: 250px; margin-top: 8px"
-                                     src="https://gaia.net.vn/public/images/download_ios.png">
+                                <img class="img-responsive" style="width: 250px; margin-top: 8px" src="<?php echo public_url(). 'images/download_ios.png' ?>">
                             </a>
                         </div>
                     </div>

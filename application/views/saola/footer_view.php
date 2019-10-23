@@ -68,10 +68,10 @@
                         <div class="col-md-2  col-sm-12 col-xs-12 mt-2">
                             <div class="footer-title"><strong>LIÊN KẾT</strong></div>
                             <ul>
-                                <li><a href="<?php echo base_url('gioi-thieu') ?>"><i class="mdi mdi-information-outline text-danger"></i> Giới thiệu dịch vụ</a></li>
-                                <li><a href="<?php echo base_url('ho-tro') ?>"><i class="mdi mdi-sim text-danger"></i>  Hỗ trợ</a></li>
-                                <li><a href="<?php echo base_url('dieu-khoan-su-dung') ?>"><i class="mdi mdi-play-protected-content text-danger"></i> Chính sách và điều khoản</a>
-                                </li>
+                                <li><a href="<?php echo base_url('gioi-thieu') ?>"><i class="mdi mdi-information-outline text-danger"></i> Giới thiệu</a></li>
+                                <li><a href="<?php echo base_url('ho-tro') ?>"><i class="mdi mdi-key-outline text-danger"></i>  Hỗ trợ</a></li>
+                                <li><a href="<?php echo base_url('dieu-khoan-su-dung') ?>"><i class="mdi mdi-settings-outline text-danger"></i> Chính sách và điều khoản</a></li>
+                                <li><a href="<?php echo base_url('bang-gia') ?>"><i class="mdi mdi-cash-usd text-danger"></i> Bảng giá</a></li>
                                 <li><a href="<?php echo base_url('lien-he') ?>"><i class="mdi mdi-contacts text-danger"></i> Liên hệ</a></li>
                             </ul>
                         </div>
@@ -96,7 +96,7 @@
         </div>
 
     </div>
-    <div id="result_test"></div>
+
 </section>
 
 <!--test full footer-->
@@ -109,19 +109,16 @@
                 <div style="display: flex; justify-content: center;">
                     <div>
                         <span>SCAN QR CODE</span>
-                        <img class="img-responsive" style="width: 156px; margin-top: 10px"
-                             src="https://gaia.net.vn/public/images/GaiA_QR.png">
+                        <img class="img-responsive" style="width: 156px; margin-top: 10px" src="<?php echo public_url(). 'images/GaiA_QR.png' ?>">
                     </div>
                     <div style="margin-left: 30px">
                         <span>HOẶC</span>
                         <div style="margin-top: 10px">
                             <a href="javascript:void(0)">
-                                <img class="img-responsive" style="width: 250px"
-                                     src="https://gaia.net.vn/public/images/download_android.png">
+                                <img class="img-responsive" style="width: 250px" src="<?php echo public_url(). 'images/download_android.png' ?>">
                             </a>
                             <a href="javascript:void(0)">
-                                <img class="img-responsive" style="width: 250px; margin-top: 8px"
-                                     src="https://gaia.net.vn/public/images/download_ios.png">
+                                <img class="img-responsive" style="width: 250px; margin-top: 8px" src="<?php echo public_url(). 'images/download_ios.png' ?>">
                             </a>
                         </div>
                     </div>
@@ -231,20 +228,6 @@
 
 <?php //$this->load->view($this->_template_f . 'footer') ?>
 </body>
-
-<!--<div id='ads-left'>-->
-<!--    <div style='margin:0 0 5px 0; padding:0;width:160px;position:fixed; left:0; top:0;'>-->
-<!--        <a href='--><?php //echo public_url('images/ads/banner1.jpg') ?><!--' target='_blank'>-->
-<!--            <img border='0' height='665' src='--><?php //echo public_url('images/ads/banner1.jpg') ?><!--' width='200'/>-->
-<!--        </a>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div id='ads-right'>-->
-<!--    <div style='margin:0 0 5px 0; padding:0;width:200px;position:fixed; right:0; top:0;'>-->
-<!--        <a href='Link quảng cáo bên phải' target='_blank'><img border='0' height='665' src='Ảnh quảng cáo bên phải'-->
-<!--                                                               width='200'/></a>-->
-<!--    </div>-->
-<!--</div>-->
 
 <!--<script type="text/javascript">-->
 <!--    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();-->
