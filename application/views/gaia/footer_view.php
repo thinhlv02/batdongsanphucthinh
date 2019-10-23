@@ -7,11 +7,11 @@
                     <div class="card-body line-height-2" style="background-color: #EDEDED">
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                             <div class="footer-bottom-end-row1" style="padding-bottom: 10px; color: #000;">
-                                <strong style="font-size: 1.2em;">Công ty TNHH Thương Mại và Dịch Vụ Tân Bình</strong>
+                                <strong style="font-size: 1.2em;"><?php echo $contact->company ?></strong>
                             </div>
 
                             <div class="footer-bottom-end-row1" style="color: #555754">
-                                <strong>Tổng đài CSKH: 0796 43 22 11</strong>
+                                <strong>Tổng đài CSKH: <?php echo $contact->phone ?></strong>
                             </div>
 
                             <div class="footer-bottom-end-row1" style="color: #555754">
@@ -19,7 +19,7 @@
                             </div>
 
                             <div class="footer-bottom-end-row1" style="color: #555754">
-                                Email: batdongsanphucthinh1411@gmail.com | phucthinhcorp1411@gmail.com
+                                Email: <?php echo $contact->email ?>
 
                             </div>
                             <div class="footer-bottom-end-row1" style="color: #555754">
