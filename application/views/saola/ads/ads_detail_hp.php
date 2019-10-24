@@ -153,8 +153,8 @@
                         <div class="title_land_box">Thông tin liên hệ:</div>
                         <div class="pack_land_box">
                             <div class="row12">
-                                <div class="col-xs-12 pland"><strong>Người liên hệ :</strong>
-                                    <?php echo $ads->brname != '' ? $ads->brname : 'Qua điện thoại' ?>
+                                <div class="col-xs-12 pland"><strong>Tên liên lạc :</strong>
+                                    <?php echo $ads->contact_name != '' ? $ads->contact_name : 'Qua điện thoại' ?>
                                 </div>
                             </div>
                             <div class="row12">
