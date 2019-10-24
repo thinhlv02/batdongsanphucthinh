@@ -153,21 +153,21 @@
                         <div class="title_land_box">Thông tin liên hệ:</div>
                         <div class="pack_land_box">
                             <div class="row12">
-                                <div class="col-xs-12 pland"><i class="mdi mdi-account text-info"></i> <strong>Tên liên lạc :</strong>
+                                <div class="col-xs-12 pland"><strong>Tên liên lạc :</strong>
                                     <?php echo $ads->contact_name != '' ? $ads->contact_name : 'N/A' ?>
                                 </div>
                             </div>
                             <div class="row12">
                                 <div class="col-xs-12 pland">
-                                    <i class="mdi mdi-map-marker text-info"></i> <strong>Địa chỉ :</strong> <?php echo $ads->area ?>
+                                    <strong>Địa chỉ :</strong> <?php echo $ads->area ?>
                                 </div>
                             </div>
                             <div class="row12">
-                                <div class="col-xs-12 pland"><i class="mdi mdi-phone text-info"></i> <strong>Điện thoại :</strong>
+                                <div class="col-xs-12 pland"><strong>Điện thoại :</strong>
                                     <a href="tel:<?php echo $ads->phone ?>"><?php echo $ads->phone ?></a></div>
                             </div>
                             <div class="row12">
-                                <div class="col-xs-12 pland"><i class="mdi mdi-email text-info"></i> <strong>Email :</strong>
+                                <div class="col-xs-12 pland"><strong>Email :</strong>
                                     <a href="javascript:void(0)"><?php echo $ads->email; ?></a></div>
                             </div>
                         </div>
