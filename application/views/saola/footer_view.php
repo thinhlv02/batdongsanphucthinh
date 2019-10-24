@@ -293,15 +293,15 @@
         var _end = (_widthWindow - _widthContainer - 320) ;
         var _end = _end /2 + 'px' ;
         console.log(_end);
-        $("#fuck_left").css({
+        $("#ads-left-sub").css({
             'left': _end,
         });
 
-        $("#fuck_right").css({
+        $("#ads-right-sub").css({
             'right': _end,
         });
-        $("#fuck_left").show();
-        $("#fuck_right").show();
+        $("#ads-left-sub").show();
+        $("#ads-right-sub").show();
 
     });
 </script>
