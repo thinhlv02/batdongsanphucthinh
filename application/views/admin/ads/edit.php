@@ -33,7 +33,7 @@
                         <span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="text" id="txtName" name="txtName" value="<?php echo $ads->title ?>"
-                               required="required" class="form-control col-md-7 col-xs-12" placeholder="Tên bài viết">
+                                class="form-control col-md-7 col-xs-12" placeholder="Tên bài viết">
                     </div>
                 </div>
                 <div class="form-group">
@@ -81,7 +81,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền <span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="price" value="<?php echo $ads->price ?>" required="required"
+                        <input type="text" name="price" value="<?php echo $ads->price ?>"
                                class="form-control col-md-7 col-xs-12" placeholder="ví dụ : 1,2 tỷ / nền">
                     </div>
                 </div>
@@ -91,20 +91,20 @@
                                 class="required">*</span></label>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <input type="text" name="acreage" value="<?php echo $ads->acreage ?>"
-                               required="required" class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">
+                                class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">
                     </div>
 
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Diện tích SD<span
                                 class="required">*</span></label>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <input type="text" name="useacreage" value="<?php echo $ads->useacreage ?>"
-                               required="required" class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">
+                                class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">
                     </div>
 
 <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Đơn vị<span-->
 <!--                                class="required">*</span></label>-->
 <!--                    <div class="col-md-2 col-sm-2 col-xs-12">-->
-<!--                        <input type="text" name="" required="required" value="m2"-->
+<!--                        <input type="text" name=""  value="m2"-->
 <!--                               class="form-control col-md-7 col-xs-12" placeholder="" readonly>-->
 <!--                    </div>-->
 
@@ -114,7 +114,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Mặt tiền<span
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
-                        <input type="text" name="width" required="required" value="<?php echo $ads->width ?>"
+                        <input type="text" name="width"  value="<?php echo $ads->width ?>"
                                class="form-control col-md-7 col-xs-12" placeholder="ví dụ: 10">
                     </div>
 
@@ -122,7 +122,7 @@
                                 class="required">*</span></label>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <input type="text" name="landwidth" value="<?php echo $ads->landwidth ?>"
-                               required="required" class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 20">
+                                class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 20">
                     </div>
 
                 </div>
@@ -131,7 +131,7 @@
                 <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề tin trên web <span class="required">*</span></label>-->
                 <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
                 <!--                        <input type="text" id="txtDocumentTitle" name="txtDocumentTitle" value="-->
-                <?php //echo $ads->document_title ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề tin trên web">-->
+                <?php //echo $ads->document_title ?><!--"  class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề tin trên web">-->
                 <!--                    </div>-->
                 <!--                </div>-->
 
@@ -139,7 +139,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Khu vực<span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="area" required="required" value="<?php echo $ads->area ?>"
+                        <input type="text" name="area"  value="<?php echo $ads->area ?>"
                                class="form-control col-md-7 col-xs-12" placeholder="Địa chỉ tin rao vặt">
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">SĐT liên hệ<span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="phone" required="required" value="<?php echo $ads->phone ?>"
+                        <input type="text" name="phone"  value="<?php echo $ads->phone ?>"
                                class="form-control col-md-7 col-xs-12" placeholder="sđt liên hệ">
                     </div>
                 </div>
@@ -234,7 +234,7 @@
 
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Lượt xem<span class="required">*</span></label>
                     <div class="col-md-5 col-sm-5 col-xs-12">
-                        <input type="number" name="view" value="<?php echo $ads->view ?>" required="required" class="form-control col-md-7 col-xs-12" placeholder="nhập lượt xem">
+                        <input type="number" name="view" value="<?php echo $ads->view ?>"  class="form-control col-md-7 col-xs-12" placeholder="nhập lượt xem">
                     </div>
                 </div>
 
@@ -250,7 +250,7 @@
                 <!--                        <span class="required">*</span></label>-->
                 <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
                 <!--                        <input type="text" id="txtMetaDescription" name="txtMetaDescription" value="-->
-                <?php //echo $ads->meta_description ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Description">-->
+                <?php //echo $ads->meta_description ?><!--"  class="form-control col-md-7 col-xs-12" placeholder="Meta Description">-->
                 <!--                    </div>-->
                 <!--                </div>-->
 
@@ -259,7 +259,7 @@
                 <!--                        <span class="required">*</span></label>-->
                 <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
                 <!--                        <input type="text" id="txtMetaKeywords" name="txtMetaKeywords" value="-->
-                <?php //echo $ads->meta_keywords ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Meta Keywords">-->
+                <?php //echo $ads->meta_keywords ?><!--"  class="form-control col-md-7 col-xs-12" placeholder="Meta Keywords">-->
                 <!--                    </div>-->
                 <!--                </div>-->
 
@@ -268,7 +268,7 @@
                 <!--                        <span class="required">*</span></label>-->
                 <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
                 <!--                        <input type="text" id="txtCanonicalUrl" name="txtCanonicalUrl" value="-->
-                <?php //echo $ads->canonical_url ?><!--" required="required" class="form-control col-md-7 col-xs-12" placeholder="Canonical URL">-->
+                <?php //echo $ads->canonical_url ?><!--"  class="form-control col-md-7 col-xs-12" placeholder="Canonical URL">-->
                 <!--                    </div>-->
                 <!--                </div>-->
 
@@ -288,7 +288,7 @@
 
                 <div class="form-group" style="margin-top: 30px">
                     <div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-2" style="width: 70px">
-                        <input type="submit" id="btnAddProduct" name="btnEdit" required="required"
+                        <input type="submit" id="btnAddProduct" name="btnEdit"
                                class="btn btn-primary" value="Cập nhật">
                     </div>
                 </div>
