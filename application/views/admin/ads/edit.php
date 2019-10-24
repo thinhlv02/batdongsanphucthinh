@@ -101,13 +101,6 @@
                                 class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">
                     </div>
 
-<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Đơn vị<span-->
-<!--                                class="required">*</span></label>-->
-<!--                    <div class="col-md-2 col-sm-2 col-xs-12">-->
-<!--                        <input type="text" name=""  value="m2"-->
-<!--                               class="form-control col-md-7 col-xs-12" placeholder="" readonly>-->
-<!--                    </div>-->
-
                 </div>
 
                 <div class="form-group">
@@ -126,14 +119,6 @@
                     </div>
 
                 </div>
-
-                <!--                <div class="form-group">-->
-                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề tin trên web <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
-                <!--                        <input type="text" id="txtDocumentTitle" name="txtDocumentTitle" value="-->
-                <?php //echo $ads->document_title ?><!--"  class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề tin trên web">-->
-                <!--                    </div>-->
-                <!--                </div>-->
 
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Khu vực<span
@@ -161,7 +146,6 @@
                             <option value="0">-- Chọn Tỉnh/TP --</option>
 
                             <?php foreach ($lstProvince as $key => $value) { ?>
-<!--                                <option value="--><?//= $value->id ?><!--" --><?php //if (isset($_POST['type']) && $_POST['type'] == $key) echo 'selected' ?>
                                 <option value="<?= $value->id ?>" <?php if (isset($province_id) && $province_id == $value->id) echo 'selected' ?>>
                                     <?php echo $value->_name ?>
                                 </option>
@@ -173,7 +157,6 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Quận / Huyện<span
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divDistrict">
-<!--                        <select class="select2_group form-control" name="district">-->
                             <select class="select2_group form-control" name="district" id="selectDistrict" onchange="get_ward(this)">
 
                             <option value="0">Chọn Quận/Huyện</option>
@@ -192,7 +175,6 @@
                                 class="required">*</span></label>
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divWard">
-<!--                        <select class="select2_group form-control" name="ward">-->
                         <select class="select2_group form-control" name="ward" id="selectWard" onchange="get_street(this)">
 
                         <option value="0">Chọn Xã/Phường</option>
@@ -220,7 +202,6 @@
                             <option value="0">-- Không có --</option>
 
                             <?php
-//                            pre($street_id);
                             if (isset($street_arr) && !empty($street_arr)) {
                                 foreach ($street_arr as $k => $val) { ?>
                                     <option value="<?php echo $val->id ?>" <?php if (isset($street_id) && $street_id == $val->id) echo 'selected' ?>>
@@ -244,47 +225,6 @@
                         <input type="text" name="link" value="<?php echo $ads->link ?>" class="form-control col-md-7 col-xs-12" placeholder="nhập link bài viết">
                     </div>
                 </div>
-
-                <!--                <div class="form-group">-->
-                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Description-->
-                <!--                        <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
-                <!--                        <input type="text" id="txtMetaDescription" name="txtMetaDescription" value="-->
-                <?php //echo $ads->meta_description ?><!--"  class="form-control col-md-7 col-xs-12" placeholder="Meta Description">-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
-                <!--                <div class="form-group">-->
-                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Meta Keywords-->
-                <!--                        <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
-                <!--                        <input type="text" id="txtMetaKeywords" name="txtMetaKeywords" value="-->
-                <?php //echo $ads->meta_keywords ?><!--"  class="form-control col-md-7 col-xs-12" placeholder="Meta Keywords">-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
-                <!--                <div class="form-group">-->
-                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Canonical URL-->
-                <!--                        <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
-                <!--                        <input type="text" id="txtCanonicalUrl" name="txtCanonicalUrl" value="-->
-                <?php //echo $ads->canonical_url ?><!--"  class="form-control col-md-7 col-xs-12" placeholder="Canonical URL">-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
-                <!--                <div class="form-group">-->
-                <!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Robots meta setting-->
-                <!--                        <span class="required">*</span></label>-->
-                <!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
-                <!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noindex" -->
-                <?php //echo $ads->robots_meta && strpos($ads->robots_meta, 'noindex') > -1 ? 'checked' : '' ?><!-- > Apply noindex to this page</label><br>-->
-                <!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="nofollow" -->
-                <?php //echo $ads->robots_meta && strpos($ads->robots_meta, 'nofollow') > -1 ? 'checked' : '' ?><!-- > Apply nofollow to this page</label><br>-->
-                <!--                        <label class="radio-inline"><input type="checkbox" name="robots_meta[]" value="noarchive" -->
-                <?php //echo $ads->robots_meta && strpos($ads->robots_meta, 'noarchive') > -1 ? 'checked' : '' ?><!-- > Apply noarchive to this page</label>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
 
                 <div class="form-group" style="margin-top: 30px">
                     <div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-2" style="width: 70px">
