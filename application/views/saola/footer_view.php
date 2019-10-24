@@ -286,12 +286,22 @@
     })();
 
     $( document ).ready(function() {
-        var _widthWindow = $(window).width() - 160;
+        var _widthWindow = $(window).width();
         var _widthContainer = $('.container').width() + 30;
-        console.log( "_widthWindow!" + _widthWindow );
-        console.log( "hoem _widthContainer!" + _widthContainer );
+        // console.log( "_widthWindow!" + _widthWindow );
+        // console.log( "hoem _widthContainer!" + _widthContainer );
         var _end = (_widthWindow - _widthContainer - 320) ;
-        console.log(_end / 2);
+        var _end = _end /2 + 'px' ;
+        console.log(_end);
+        $("#fuck_left").css({
+            'left': _end,
+        });
+
+        $("#fuck_right").css({
+            'right': _end,
+        });
+        $("#fuck_left").show();
+        $("#fuck_right").show();
 
     });
 </script>
