@@ -130,7 +130,7 @@
 </section>
 
 <!--test full footer-->
-<section class="intro_home">
+<section class="intro_home" style="display: none">
     <div class="caption">
         <div class="container">
             <div class="text-intro">
