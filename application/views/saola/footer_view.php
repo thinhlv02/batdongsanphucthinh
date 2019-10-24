@@ -129,36 +129,6 @@
 
 </section>
 
-<!--test full footer-->
-<section class="intro_home" style="display: none">
-    <div class="caption">
-        <div class="container">
-            <div class="text-intro">
-                <div class="title-section"><h3 style="color: #fff; font-size:30px"><strong>TẢI VÀ TRẢI NGHIỆM ỨNG DỤNG
-                            TẠI ĐÂY</strong></h3></div>
-                <div style="display: flex; justify-content: center;">
-                    <div>
-                        <span>SCAN QR CODE</span>
-                        <img class="img-responsive" style="width: 156px; margin-top: 10px" src="<?php echo public_url(). 'images/GaiA_QR.png' ?>">
-                    </div>
-                    <div style="margin-left: 30px">
-                        <span>HOẶC</span>
-                        <div style="margin-top: 10px">
-                            <a href="javascript:void(0)">
-                                <img class="img-responsive" style="width: 250px" src="<?php echo public_url(). 'images/download_android.png' ?>">
-                            </a>
-                            <a href="javascript:void(0)">
-                                <img class="img-responsive" style="width: 250px; margin-top: 8px" src="<?php echo public_url(). 'images/download_ios.png' ?>">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--test full footer-->
-
 <button onclick="topFunction()" id="myPageup" title="Go to top">
 <!--    <img src="--><?php //echo base_url('public/images/arrowPageUp_v2.png'); ?><!--">-->
     <i class="mdi mdi-arrow-up-bold-circle-outline text-primary mdi-24px"></i>
