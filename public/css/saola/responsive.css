@@ -58,7 +58,7 @@
         display: inline-block;
     }
 
-    #ads-left, #ads-right {
+    #SiteLeft, #SiteRight {
         display: none;
     }
 }
