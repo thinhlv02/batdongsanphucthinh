@@ -14,9 +14,8 @@
                     <div class="">
 
                         <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#home">Danh sách bài đăng
-                                    website</a></li>
-                            <li><a data-toggle="tab" href="#menu1">Danh sách bài đăng trên facebook</a></li>
+                            <li class="active"><a data-toggle="tab" href="#home"><i class="mdi mdi-web text-primary"></i> Link website</a></li>
+                            <li><a data-toggle="tab" href="#menu1"><i class="mdi mdi-facebook text-info"></i> Link facebook</a></li>
                         </ul>
 
                         <div class="tab-content">
