@@ -147,4 +147,7 @@ $lang['common_lang']['FAQ'] = 'FAQ';
 $lang['common_lang']['viewAll'] = 'View all';
 $lang['common_lang']['contact_to_help'] = 'Support contact';
 $lang['common_lang']['lbl_search'] = 'Search';
-$lang['common_lang']['msg_err_faq_search'] = 'Please enter a searching keyword, at least 3 characters.'; 
+$lang['common_lang']['msg_err_faq_search'] = 'Please enter a searching keyword, at least 3 characters.';
+
+//warning
+$lang['common_lang']['data_not_found'] = 'Data not found!';

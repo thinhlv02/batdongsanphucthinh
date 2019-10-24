@@ -149,3 +149,6 @@ $lang['common_lang']['contact_to_help'] = 'Liên hệ để được trợ giúp
 $lang['common_lang']['lbl_search'] = 'Tìm kiếm';
 $lang['common_lang']['msg_err_faq_search'] = 'Bạn hãy nhập từ khóa tìm kiếm. Ít nhất 3 ký tự';
 $lang['common_lang']['lmenu_brandbox'] = 'Box thương hiệu';
+
+//warning
+$lang['common_lang']['data_not_found'] = 'Dữ liệu không tìm thấy!';
