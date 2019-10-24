@@ -160,7 +160,8 @@
 <!--test full footer-->
 
 <button onclick="topFunction()" id="myPageup" title="Go to top">
-    <img src="<?php echo base_url('public/images/arrowPageUp_v2.png'); ?>">
+<!--    <img src="--><?php //echo base_url('public/images/arrowPageUp_v2.png'); ?><!--">-->
+    <i class="mdi mdi-arrow-up-bold-circle-outline text-primary mdi-24px"></i>
 </button>
 
 <script>
