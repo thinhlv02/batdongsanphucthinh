@@ -23,7 +23,6 @@
             <thead>
             <tr>
                 <th>Mã tin</th>
-<!--                <th>Tạo bởi</th>-->
                 <th>SĐT</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
@@ -49,7 +48,7 @@
                         <?php if ($_uid == 1) { ?>
                             <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
 <!--                            //update link-->
-                            <a class="btn btn-xs btn-success btn-xs" href="<?php echo base_url('admin/ads/ads_link/'.$row->id)?>">Cập nhật link</a>
+                            <a class="btn btn-xs btn-success btn-xs" href="<?php echo base_url('admin/ads/ads_link/'.$row->id)?>">Update link</a>
                         <?php } ?>
 
                         <p><?php echo $row->created_name; ?></p>
