@@ -814,6 +814,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
+        $header['li_11'] = '1';
         $header['li_1'] = '1';
         $header['title'] = 'Cần bán';
         $this->_loadHeader($header);
