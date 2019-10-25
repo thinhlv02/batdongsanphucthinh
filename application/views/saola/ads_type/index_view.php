@@ -62,7 +62,7 @@
             </div>
 
 
-            <div class="navigation mt-3">
+            <div class="navigation mt-3 row">
                 <?php echo $lstPaging; ?>
             </div>
 

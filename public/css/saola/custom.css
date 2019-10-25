@@ -52,4 +52,10 @@
     border-color: #4CAF50 !important;
     border-radius: 5px;
 }
+
+ul.pagination {
+    width: 100%;
+    background-color: #ccc;
+    padding: 5px;
+}
 /*End paging*/
