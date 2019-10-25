@@ -806,4 +806,24 @@ Class Home extends MY_Controller
 
     }
 
+    function land_canban()
+    {
+
+    }
+
+    function land_chothue()
+    {
+
+    }
+
+    function land_canmua()
+    {
+
+    }
+
+    function land_canthue()
+    {
+
+    }
+
 }
