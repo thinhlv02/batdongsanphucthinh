@@ -6,7 +6,7 @@
     <div class="container">
         <div style="min-height: 200px">
             <div class="row">
-                <div class="card">
+                <div class="card mb-5">
                     <div class="card-body line-height-2" style="background-color: #EDEDED">
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                             <div class="footer-bottom-end-row12" style="padding-bottom: 10px; color: #000;">
