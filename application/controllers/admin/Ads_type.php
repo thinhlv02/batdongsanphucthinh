@@ -10,7 +10,7 @@ Class Ads_type extends MY_Controller
 
     function index()
     {
-        $questions = $this->ads_type_model->get_list(array('where' => array('parent_id' => 0, 'type' => 1), 'order' => array('id', 'asc')));
+        $questions = $this->ads_type_model->get_list(array('where' => array('type' => 1), 'order' => array('id', 'asc')));
 //        pre($questions);
         $this->data['tab'] = 1;
         $this->data['questions'] = $questions;
@@ -22,7 +22,7 @@ Class Ads_type extends MY_Controller
     function get_list_by_type()
     {
         $type = intval($_POST['type']);
-        $questions = $this->ads_type_model->get_list(array('where' => array('parent_id' => 0, 'type' => $type)));
+        $questions = $this->ads_type_model->get_list(array('where' => array('type' => $type)));
         $this->data['questions'] = $questions;
         $this->load->view('admin/ads_type/table_question', $this->data);
     }
@@ -37,7 +37,6 @@ Class Ads_type extends MY_Controller
                 'name' => $this->input->post('txtName'),
                 'content' => '',
                 'type' => intval($this->input->post('slType')),
-                'parent_id' => 0,
                 'level' => 1,
             );
             if ($this->ads_type_model->create($data_submit)) {
