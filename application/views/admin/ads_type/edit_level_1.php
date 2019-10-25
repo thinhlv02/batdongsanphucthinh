@@ -1,7 +1,7 @@
 <script language="javascript" src="<?php echo base_url('public')?>/ckeditor/ckeditor.js" type="text/javascript"></script>
 <div class="x_panel">
     <div class="x_title">
-        <h2>Sửa thông tin111111111</h2>
+        <h2>Sửa thông tin loại nhà đất</h2>
         <ul class="nav navbar-right panel_toolbox">
             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
             <li class="dropdown">
@@ -23,6 +23,12 @@
                 <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề <span class="required">*</span></label>
                 <div class="col-md-8 col-sm-8 col-xs-12">
                     <input type="text" id="txtName" name="txtName" value="<?php echo $question->name?>" required="required" class="form-control col-md-7 col-xs-12">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Routes <span class="required">*</span></label>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <input type="text" id="" name="txtRoutes" value="<?php echo $question->routes?>" required="required" class="form-control col-md-7 col-xs-12">
                 </div>
             </div>
             <div class="form-group">

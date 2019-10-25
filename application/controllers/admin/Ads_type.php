@@ -62,15 +62,15 @@ Class Ads_type extends MY_Controller
             redirect(admin_url('ads_type'));
         }
 
-        if ($question->level == 1) {
-            $questions = $this->ads_type_model->get_list(array('where' => array('parent_id' => $question->id)));
-            $this->data['questions'] = $questions;
-            $this->data['view'] = 'admin/ads_type/edit_level_1';
-        }
+        $questions = $this->ads_type_model->get_list(array('where' => array('parent_id' => $question->id)));
+        $this->data['questions'] = $questions;
+        $this->data['view'] = 'admin/ads_type/edit_level_1';
+
 
         if ($this->input->post('btnEditLevel1')) {
             $data_submit = array(
                 'name' => $this->input->post('txtName'),
+                'routes' => $this->input->post('txtRoutes'),
             );
             if ($this->ads_type_model->update($id, $data_submit)) {
                 $this->session->set_flashdata('message', 'Cập nhật thành công!');
