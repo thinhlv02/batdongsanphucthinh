@@ -829,7 +829,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = $this->data['news_lang']['title'];
+        $header['title'] = 'Nhà đất cần bán';
         $header['li_11'] = '1';
         $this->_loadHeader($header);
 
