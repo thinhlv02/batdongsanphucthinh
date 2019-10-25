@@ -58,8 +58,8 @@ function config_pagination($per_page = 10, $segment = 1, $total = 0, $base_url =
     $config['base_url'] = $base_url;
     $config['total_rows'] = $total;
     $config['per_page'] = $per_page;
-    $config['prev_link'] = '&gt;';
-    $config['next_link'] = '&lt;';
+    $config['prev_link'] = '&lt;';
+    $config['next_link'] = '&gt;';
     $config['last_link'] = 'Last';
     $config['first_link'] = 'First';
     $config['use_page_numbers'] = TRUE;
