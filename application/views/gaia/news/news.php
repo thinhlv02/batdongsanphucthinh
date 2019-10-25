@@ -53,7 +53,7 @@
                 <?php }?>
             <?php } ?>
             <div class="navigation" style="margin-top: 20px">
-                <?php echo $paginator; ?>
+                <?php echo $lstPaging; ?>
             </div>
         </div>
 

@@ -81,9 +81,9 @@ function getListPaging($per_page = 10, $uri_segment = 1, $total_rows = 0, $base_
 
     $config['uri_segment'] = $uri_segment;
     $ci->pagination->initialize($config);
-    $paginator = $ci->pagination->create_links();
+    $lstPaging = $ci->pagination->create_links();
 
-    return $paginator;
+    return $lstPaging;
 }
 
 function getCurrentURL()

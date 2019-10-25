@@ -266,7 +266,7 @@ Class Home extends MY_Controller
         $input = array();
         $input['where'] = array('highlight' => 0);
         $total_rows = $this->news_model->get_total($input);
-        $paginator = getListPaging($per_page, 2, $total_rows, base_url('tin-tuc'));
+        $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('tin-tuc'));
 
         if ($offset >= 1) {
             $offset -= 1;
@@ -278,7 +278,7 @@ Class Home extends MY_Controller
 
         $highlight = $this->news_model->get_list(array('where' => array('highlight' => 1)));
 
-        $this->data['paginator'] = $paginator;
+        $this->data['lstPaging'] = $lstPaging;
         $this->data['news'] = $news;
         $this->data['highlight'] = $highlight;
 
@@ -332,7 +332,7 @@ Class Home extends MY_Controller
         $input = array();
 //        $input['where'] = array('highlight' => 0);
         $total_rows = $this->ads_model->get_total($input);
-        $paginator = getListPaging($per_page, 2, $total_rows, base_url('rao-vat'));
+        $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('rao-vat'));
 
         if ($offset >= 1) {
             $offset -= 1;
@@ -344,7 +344,7 @@ Class Home extends MY_Controller
 
         $highlight = $this->ads_model->get_list();
 
-        $this->data['paginator'] = $paginator;
+        $this->data['lstPaging'] = $lstPaging;
         $this->data['ads'] = $news;
         $this->data['highlight'] = $highlight;
 
@@ -815,7 +815,7 @@ Class Home extends MY_Controller
         $offset = intval($offset);
         $input = array();
         $total_rows = $this->ads_model->get_total($input);
-        $paginator = getListPaging($per_page, 2, $total_rows, base_url('can-ban'));
+        $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('can-ban'));
 
         if ($offset >= 1) {
             $offset -= 1;
@@ -824,7 +824,7 @@ Class Home extends MY_Controller
 
         $input['limit'] = array($per_page, $offset);
         $news = $this->ads_model->get_list($input);
-        $this->data['paginator'] = $paginator;
+        $this->data['lstPaging'] = $lstPaging;
         $this->data['ads_center'] = $news;
 
         // load header

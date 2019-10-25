@@ -63,7 +63,7 @@
 
 
             <div class="navigation mt-3">
-                <?php echo $paginator; ?>
+                <?php echo $lstPaging; ?>
             </div>
 
         </div>
