@@ -65,6 +65,7 @@ $route['gioi-thieu(.html)?'] = 'home/introduce';
 $route['gioi-thieu/(:any)-(:num)(.html)?'] = 'home/introduce/$1/$2';
 
 $route['can-ban(.html)?'] = 'home/land_canban';
+$route['can-ban/(:num)'] = 'home/land_canban/$1';
 $route['cho-thue(.html)?'] = 'home/land_chothue';
 
 $route['ho-tro(.html)?'] = 'home/support';

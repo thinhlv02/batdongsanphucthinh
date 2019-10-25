@@ -3,7 +3,7 @@
         <div class="col-sm-12 col-md-12">
             <div class="row">
                 <div class="box-module">
-                    <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> <?php echo $title; ?></div>
+                    <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Bất động sản nổi bật</div>
                 </div>
 
                 <?php foreach ($ads_center as $key => $value) { ?>
@@ -33,7 +33,7 @@
                                     <?php } ?>
                                 </div>
 
-                                <div class="code_row">PT-<?php echo $value->id . substr($value->code, 0, 2) ?></div>
+                                <div class="code_row">PT-<?php echo $value->id.substr($value->code,0,2) ?></div>
 
                                 <h3 style="height: 44px;font-size: 13px;overflow: hidden;border-bottom: 1px solid #ddd;">
                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a>
@@ -41,11 +41,8 @@
 
                                 <p style="height: 72px !important;overflow: hidden;"><?php echo $value->intro ?></p>
                                 <div class="row area gia-title">
-                                    <div class="col-xs-12 larea">DTMB:
-                                        <strong><?php echo $value->acreage ?> m<sup>2</sup></strong></div>
-                                    <div class="col-xs-12 larea">DTSD:
-                                        <strong><?php echo $value->useacreage != '' ? $value->useacreage : 0 ?> m<sup>2</sup></strong>
-                                    </div>
+                                    <div class="col-xs-12 larea">DTMB: <strong><?php echo $value->acreage ?> m<sup>2</sup></strong></div>
+                                    <div class="col-xs-12 larea">DTSD: <strong><?php echo $value->useacreage != '' ? $value->useacreage: 0 ?> m<sup>2</sup></strong></div>
                                 </div>
                                 <div class="">
                                     <div class="col-xs-6 btn btn-sm" style="background: #eeeeee;">
@@ -62,6 +59,11 @@
 
                 <?php } ?>
 
+            </div>
+
+
+            <div class="navigation" style="margin-top: 20px">
+                <?php echo $paginator; ?>
             </div>
 
         </div>
