@@ -15,6 +15,8 @@
     <ul class="ul-large">
         <li class="<?php echo !empty($li_1) ? 'menu-active' : ''?>" title="<?php echo $common_lang['home']; ?>"><a href="<?php echo base_url()?>"><i class="mdi mdi-home"></i> <?php echo $common_lang['home']; ?></a></li>
         <li class="<?php echo !empty($li_2) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_intro']; ?>"><a href="<?php echo base_url('gioi-thieu')?>"> <?php echo $common_lang['lmenu_intro']; ?></a></li>
+<!--        <li class="--><?php //echo !empty($li_11) ? 'menu-active' : ''?><!--" title="--><?php //echo $common_lang['lmenu_land_canban']; ?><!--"><a href="--><?php //echo base_url('nha-dat-can-ban')?><!--"> --><?php //echo $common_lang['lmenu_land_canban']; ?><!--</a></li>-->
+<!--        <li class="--><?php //echo !empty($li_12) ? 'menu-active' : ''?><!--" title="--><?php //echo $common_lang['lmenu_land_chothue']; ?><!--"><a href="--><?php //echo base_url('nha-dat-cho-thue')?><!--"> --><?php //echo $common_lang['lmenu_land_chothue']; ?><!--</a></li>-->
         <li class="<?php echo !empty($li_7) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_price']; ?>"><a href="<?php echo base_url('bang-gia')?>"> <?php echo $common_lang['lmenu_price']; ?></a></li>
         <li class="<?php echo !empty($li_4) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_policy']; ?>"><a href="<?php echo base_url('dieu-khoan-su-dung')?>"> <?php echo $common_lang['lmenu_policy']; ?></a></li>
         <li class="dropdown <?php echo !empty($li_9) || !empty($li_10) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_phonebook']; ?>">

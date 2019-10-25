@@ -4,6 +4,8 @@ $lang['common_lang'] = array();
 
 // for default config site title, tags, desc
 $lang['common_lang']['home'] = "Home";
+$lang['common_lang']['lmenu_land_canban'] = "Land sell";
+$lang['common_lang']['lmenu_land_chothue'] = "Land to rend";
 $lang['common_lang']['about'] = "INTRODUCE";
 $lang['common_lang']['lmenu_price'] = "Price";
 $lang['common_lang']['lmenu_intro'] = "Introduction";
