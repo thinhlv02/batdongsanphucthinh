@@ -67,8 +67,6 @@ Class Ads_type extends MY_Controller
             $questions = $this->ads_type_model->get_list(array('where' => array('parent_id' => $question->id)));
             $this->data['questions'] = $questions;
             $this->data['view'] = 'admin/ads_type/edit_level_1';
-        } else {
-            $this->data['view'] = 'admin/ads_type/edit_level_2';
         }
 
         if ($this->input->post('btnEditLevel1')) {

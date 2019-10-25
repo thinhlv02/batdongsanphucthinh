@@ -2,7 +2,7 @@
 
 <div class="page-title" style="height: auto">
     <div class="title_left">
-        <h3>Hỗ trợ</h3>
+        <h3>Quản lý loại nhà đất</h3>
     </div>
     <div class="clearfix"></div>
     <div class="row">
