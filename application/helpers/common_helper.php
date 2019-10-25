@@ -50,13 +50,13 @@ function create_slug($string)
     return $string;
 }
 
-function config_pagination($per_page = 10, $segment = 1, $total = 0, $base_url = '')
+function getListPaging($per_page = 10, $uri_segment = 1, $total_rows = 0, $base_url = '')
 {
     //phan trang
     $ci =& get_instance();
     $ci->load->library("pagination");
     $config['base_url'] = $base_url;
-    $config['total_rows'] = $total;
+    $config['total_rows'] = $total_rows;
     $config['per_page'] = $per_page;
     $config['prev_link'] = '&lt;';
     $config['next_link'] = '&gt;';
@@ -79,7 +79,7 @@ function config_pagination($per_page = 10, $segment = 1, $total = 0, $base_url =
     $config['last_tag_open'] = "<li>";
     $config['last_tagl_close'] = "</li>";
 
-    $config['uri_segment'] = $segment;
+    $config['uri_segment'] = $uri_segment;
     $ci->pagination->initialize($config);
     $paginator = $ci->pagination->create_links();
 

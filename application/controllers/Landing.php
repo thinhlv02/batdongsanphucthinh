@@ -219,8 +219,8 @@ Class Landing extends MY_Controller
         $offset = intval($offset);
         $input = array();
         $input['where'] = array('highlight' => 0);
-        $total = $this->news_model->get_total($input);
-        $paginator = config_pagination($per_page, 2, $total, base_url('tin-tuc'));
+        $total_rows = $this->news_model->get_total($input);
+        $paginator = getListPaging($per_page, 2, $total_rows, base_url('tin-tuc'));
 
         if ($offset >= 1) {
             $offset -= 1;
@@ -275,8 +275,8 @@ Class Landing extends MY_Controller
         $offset = intval($offset);
         $input = array();
 //        $input['where'] = array('highlight' => 0);
-        $total = $this->ads_model->get_total($input);
-        $paginator = config_pagination($per_page, 2, $total, base_url('rao-vat'));
+        $total_rows = $this->ads_model->get_total($input);
+        $paginator = getListPaging($per_page, 2, $total_rows, base_url('rao-vat'));
 
         if ($offset >= 1) {
             $offset -= 1;
