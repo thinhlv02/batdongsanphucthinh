@@ -640,6 +640,23 @@ blockquote span {
     margin-top: 20px;
 }
 
+.pagination > li > a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.pagination > li > a {
+    color: #333333 !important;
+    padding: 8px 16px !important;
+}
+
+.pagination > .active > a {
+    background-color: #4dbb6d !important;
+    color: #fff !important;
+    border-color: #4CAF50 !important;
+    border-radius: 5px;
+}
+
 .img-product {
     /*max-width: 300px;*/
     text-align: center;
@@ -1056,7 +1073,7 @@ span.item-date {
     padding: 5px 30px;
     /*background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0));*/
     /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0));*/
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0,0,0,0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
     display: flex;
     flex-direction: column;
     align-items: flex-start;

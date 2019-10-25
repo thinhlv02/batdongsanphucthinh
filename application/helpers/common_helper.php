@@ -58,8 +58,8 @@ function config_pagination($per_page = 10, $segment = 1, $total = 0, $base_url =
     $config['base_url'] = $base_url;
     $config['total_rows'] = $total;
     $config['per_page'] = $per_page;
-    $config['prev_link'] = '&lt;';
-    $config['next_link'] = '&gt;';
+    $config['prev_link'] = '&laquo;';
+    $config['next_link'] = '&raquo;';
     $config['last_link'] = 'Cuối';
     $config['first_link'] = 'Đầu';
     $config['use_page_numbers'] = TRUE;
