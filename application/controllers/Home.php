@@ -810,7 +810,7 @@ Class Home extends MY_Controller
     {
         $this->load->language('news/news', $this->_langcode);
         $this->data['news_lang'] = $this->lang->line('news_lang');
-        $per_page = 10;
+        $per_page = 12;
         $offset = $this->uri->segment(2);
         $offset = intval($offset);
         $input = array();
