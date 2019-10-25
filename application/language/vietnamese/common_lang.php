@@ -4,8 +4,8 @@ $lang['common_lang'] = array();
 
 // for default config site title, tags, desc
 $lang['common_lang']['home'] = 'Trang chủ';
-$lang['common_lang']['lmenu_land_canban'] = "Nhà đất bán";
-$lang['common_lang']['lmenu_land_chothue'] = "Nhà đất cho thuê";
+$lang['common_lang']['lmenu_land_canban'] = "Cần bán";
+$lang['common_lang']['lmenu_land_chothue'] = "Cho thuê";
 $lang['common_lang']['lmenu_intro'] = "Giới thiệu";
 $lang['common_lang']['lmenu_price'] = "Bảng giá";
 $lang['common_lang']['lmenu_support'] = "Hỗ trợ";

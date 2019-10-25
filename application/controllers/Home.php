@@ -808,6 +808,19 @@ Class Home extends MY_Controller
 
     function land_canban()
     {
+        //ads center
+        $ads_center = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(100, 0)));
+        $this->data['ads_center'] = $ads_center;
+
+        // load header
+        $header = array();
+        $header['li_1'] = '1';
+        $header['title'] = 'Cần bán';
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'ads_type/index_view', $this->data);
+
+        $this->_loadFooter();
 
     }
 

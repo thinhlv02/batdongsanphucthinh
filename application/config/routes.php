@@ -63,6 +63,10 @@ $route['en/(:any)/(:any)'] = 'home/language';
 
 $route['gioi-thieu(.html)?'] = 'home/introduce';
 $route['gioi-thieu/(:any)-(:num)(.html)?'] = 'home/introduce/$1/$2';
+
+$route['can-ban(.html)?'] = 'home/land_canban';
+$route['cho-thue(.html)?'] = 'home/land_chothue';
+
 $route['ho-tro(.html)?'] = 'home/support';
 $route['ho-tro/(:any)-(:num)(.html)?'] = 'home/detail_support/$1/$2';
 $route['ho-tro/(:any)(.html)?'] = 'home/support/$1';
