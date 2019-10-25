@@ -56,6 +56,7 @@
                                 <li><a href="<?php echo admin_url('agency') ?>">Đại lý</a></li>
                                 <li><a href="<?php echo admin_url('broker') ?>">Chuyên viên tư vấn</a></li>
                                 <li><a href="<?php echo admin_url('banner') ?>">Quản lý banner web</a></li>
+                                <li><a href="<?php echo admin_url('ads_type') ?>">Quản lý loại nhà đất</a></li>
 
                             </ul>
                         </li>
