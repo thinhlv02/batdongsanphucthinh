@@ -58,8 +58,8 @@ function getListPaging($per_page = 10, $uri_segment = 1, $total_rows = 0, $base_
     $config['base_url'] = $base_url;
     $config['total_rows'] = $total_rows;
     $config['per_page'] = $per_page;
-    $config['prev_link'] = '&lt;';
-    $config['next_link'] = '&gt;';
+    $config['prev_link'] = '<span class="button-pre"></span>';
+    $config['next_link'] = '<span class="button-next"></span>';
     $config['last_link'] = 'Cuối';
     $config['first_link'] = 'Đầu';
     $config['use_page_numbers'] = TRUE;
