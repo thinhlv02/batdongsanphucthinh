@@ -15,7 +15,7 @@
     <ul class="ul-large">
         <li class="<?php echo activate_menu('index'); ?>" title="<?php echo $common_lang['home']; ?>"><a href="<?php echo base_url()?>"><i class="mdi mdi-home"></i> <?php echo $common_lang['home']; ?></a></li>
         <li class="<?php echo activate_menu('land_canban'); ?>" title="<?php echo $common_lang['lmenu_canban']; ?>"><a href="<?php echo base_url('can-ban')?>"> <?php echo $common_lang['lmenu_canban']; ?></a></li>
-<!--        <li class="--><?php //echo !empty($li_11) ? 'menu-active' : ''?><!--" title="--><?php //echo $common_lang['lmenu_chothue']; ?><!--"><a href="--><?php //echo base_url('cho-thue')?><!--"> --><?php //echo $common_lang['lmenu_chothue']; ?><!--</a></li>-->
+        <li class="<?php echo activate_menu('land_chothue') ; ?>" title="<?php echo $common_lang['lmenu_chothue']; ?>"><a href="<?php echo base_url('cho-thue')?>"> <?php echo $common_lang['lmenu_chothue']; ?></a></li>
         <li class="<?php echo activate_menu('price'); ?>" title="<?php echo $common_lang['lmenu_price']; ?>"><a href="<?php echo base_url('bang-gia')?>"> <?php echo $common_lang['lmenu_price']; ?></a></li>
         <li class="dropdown <?php echo ''; ?>" title="<?php echo $common_lang['lmenu_phonebook']; ?>">
             <a href="javascript:void(0)"> <?php echo $common_lang['lmenu_phonebook']; ?><i class="mdi mdi-menu-down"></i></a>
