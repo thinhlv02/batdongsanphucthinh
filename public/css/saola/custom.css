@@ -27,9 +27,8 @@
 }
 
 /*background hover tr table*/
-.table>tbody>tr:hover
-{
-    background-color:#ffffe3;
+.table > tbody > tr:hover {
+    background-color: #ffffe3;
 }
 
 .bg-warning-pt {
@@ -58,4 +57,5 @@ ul.pagination {
     background-color: #ccc;
     padding: 5px;
 }
+
 /*End paging*/
