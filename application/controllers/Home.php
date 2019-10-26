@@ -838,7 +838,7 @@ Class Home extends MY_Controller
         $input = array();
         $input['where'] = array('ads_type' => 2);
         $total_rows = $this->ads_model->get_total($input);
-        $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('can-ban'));
+        $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('cho-thue'));
 
         if ($offset >= 1) {
             $offset -= 1;
@@ -852,7 +852,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['title'] = 'Nhà đất cần bán';
+        $header['title'] = 'Nhà đất cho thuê';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'ads_type/index_view', $this->data);
