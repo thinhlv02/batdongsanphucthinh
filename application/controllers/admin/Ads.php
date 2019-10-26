@@ -210,7 +210,7 @@ Class Ads extends MY_Controller
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
 
-            for ($x = 1; $x <= 100; $x++) {
+            for ($x = 1; $x <= 50; $x++) {
 //                echo "The number is: $x <br>";
 //            }
                 $this->ads_model->create($data);
