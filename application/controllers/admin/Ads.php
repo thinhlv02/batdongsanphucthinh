@@ -143,6 +143,7 @@ Class Ads extends MY_Controller
 
             $data = array(
                 'title' => $this->input->post('txtName'),
+                'ads_type' => $this->input->post('slType'),
                 'code' => generateRandomString(6),
                 'view' => generateRandomString(2),
                 'content' => $this->input->post('txtContent'),
@@ -204,15 +205,22 @@ Class Ads extends MY_Controller
                 $file_data = $this->upload->data();
                 $data['img'] = $file_data['file_name'];
             } else {
-                $data['img'] = 'default.png';
+//                $data['img'] = 'default.png';
+                $data['img'] = 'chothue_temp.jpg';
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
 
-            if ($this->ads_model->create($data)) {
-                $this->session->set_flashdata('message', 'Thêm rao bán thành công');
-                redirect(base_url('admin/ads'));
-            } else {
-                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
+            for ($x = 1; $x <= 100; $x++) {
+//                echo "The number is: $x <br>";
+//            }
+                $this->ads_model->create($data);
+
+//            if ($this->ads_model->create($data)) {
+////                $this->session->set_flashdata('message', 'Thêm rao bán thành công');
+////                redirect(base_url('admin/ads'));
+//            } else {
+//                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
+//            }
             }
 
         }
