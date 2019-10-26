@@ -88,7 +88,6 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['li_1'] = '1';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'home/home', $this->data);
@@ -118,7 +117,6 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['li_2'] = '1';
         $header['title'] = $this->data['introduce_lang']['title'];
         $this->_loadHeader($header);
 
@@ -148,7 +146,6 @@ Class Home extends MY_Controller
         // load header
         $header = array();
         $header['title'] = $this->data['support_lang']['title'];
-        $header['li_3'] = '1';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'support/support_level_1', $this->data);
@@ -207,7 +204,6 @@ Class Home extends MY_Controller
         // load header
         $header = array();
         $header['title'] = $this->data['policy_lang']['title'];
-        $header['li_4'] = '1';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'policy/policy', $this->data);
@@ -243,7 +239,6 @@ Class Home extends MY_Controller
         // load header
         $header = array();
         $header['title'] = $this->data['contact_lang']['title'];
-        $header['li_5'] = '1';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'contact/contact', $this->data);
@@ -288,7 +283,6 @@ Class Home extends MY_Controller
         // load header
         $header = array();
         $header['title'] = $this->data['news_lang']['title'];
-        $header['li_6'] = '1';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'news/news', $this->data);
@@ -483,7 +477,6 @@ Class Home extends MY_Controller
     {
         // load header
         $header = array();
-        $header['li_9'] = '1';
         $this->_loadHeader($header);
         $this->load->view($this->_template_f . 'agency/agency', $this->data);
 //        $this->load->view($this->_template_f . 'agency/agency_w3', $this->data);
@@ -495,7 +488,6 @@ Class Home extends MY_Controller
         $this->data['lstData'] = $this->broker_model->get_list();
         // load header
         $header = array();
-        $header['li_10'] = '1';
         $this->_loadHeader($header);
         $this->load->view($this->_template_f . 'broker/broker', $this->data);
         $this->_loadFooter();
@@ -783,7 +775,6 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
-        $header['li_7'] = '1';
         $header['title'] = $this->data['price_lang']['title'];
         $this->_loadHeader($header);
 
@@ -796,7 +787,6 @@ Class Home extends MY_Controller
     {
         // load header
         $header = array();
-        $header['li_8'] = '1';
         $header['title'] = '';
         $this->_loadHeader($header);
 
@@ -830,7 +820,6 @@ Class Home extends MY_Controller
         // load header
         $header = array();
         $header['title'] = 'Nhà đất cần bán';
-        $header['li_11'] = '1';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'ads_type/index_view', $this->data);
