@@ -86,6 +86,19 @@ function getListPaging($per_page = 10, $uri_segment = 1, $total_rows = 0, $base_
     return $lstPaging;
 }
 
+function getListPagingV2($per_page = 10, $uri_segment = 1, $total_rows = 0, $base_url = '')
+{
+    //custom by template Remarketing
+    $ci =& get_instance();
+    $ci->load->library('pagination');
+    $config['base_url'] = 'http://example.com/index.php/test/page/';
+    $config['total_rows'] = 200;
+    $config['per_page'] = 20;
+
+    $ci->pagination->initialize($config);
+    return $ci->pagination->create_links();
+}
+
 function getCurrentURL()
 {
     $currentURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
