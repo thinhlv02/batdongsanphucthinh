@@ -62,8 +62,33 @@
             </div>
 
 
-            <div class="navigation mt-3 row">
+            <div class="navigation mt-3 row card" style="border-top: 3px solid #d2d6de;">
                 <?php echo $lstPaging; ?>
+            </div>
+
+            <div class="card mb-2">
+                <div class="paging-container card-body text-center ">
+                    <a href="http://remarketing.code/vn/audience?kw=&amp;page=11" class="button-pre" title="Trang trước"></a>
+
+                    <a class="item " href="http://remarketing.code/vn/audience?kw=&amp;page=1">1</a>
+                    <span class="item">...</span>
+
+                    <a class="item " href="http://remarketing.code/vn/audience?kw=&amp;page=10">
+                        10				</a>
+                    <a class="item " href="http://remarketing.code/vn/audience?kw=&amp;page=11">
+                        11				</a>
+                    <a class="item active" href="http://remarketing.code/vn/audience?kw=&amp;page=12">
+                        12				</a>
+                    <a class="item " href="http://remarketing.code/vn/audience?kw=&amp;page=13">
+                        13				</a>
+                    <a class="item " href="http://remarketing.code/vn/audience?kw=&amp;page=14">
+                        14				</a>
+                    <span class="item">...</span>
+                    <a class="item " href="http://remarketing.code/vn/audience?kw=&amp;page=266">
+                        266				</a>
+
+                    <a href="http://remarketing.code/vn/audience?kw=&amp;page=13" class="button-next" title="Trang sau"></a>
+                </div>
             </div>
 
         </div>
