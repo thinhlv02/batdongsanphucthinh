@@ -23,7 +23,7 @@ Class Ads extends MY_Controller
         $input['order'] = array('id', 'desc');
         $ads = $this->ads_model->get_list($input);
         $count = count($ads);
-        $count = $count > 0 ? $count: 0;
+        $count = $count > 0 ? $count : 0;
 
         $emps = $this->admin_model->get_list();
 
@@ -53,17 +53,17 @@ Class Ads extends MY_Controller
             $ads_end[$index]->make_money_by = $val->make_money_by;
             $ads_end[$index]->pay_time = $val->pay_time;
             $ads_end[$index]->created_at = $val->created_at;
-            $ads_end[$index]->ads_left= $val->ads_left;
-            $ads_end[$index]->ads_right= $val->ads_right;
-            $ads_end[$index]->ads_center= $val->ads_center;
-            $ads_end[$index]->layer_left= $val->layer_left;
-            $ads_end[$index]->layer_vip= $val->layer_vip;
-            $ads_end[$index]->layer_right= $val->layer_right;
-            $ads_end[$index]->icon_new= $val->icon_new;
-            $ads_end[$index]->icon_vip= $val->icon_vip;
-            $ads_end[$index]->icon_hot= $val->icon_hot;
-            $ads_end[$index]->view= $val->view;
-            $ads_end[$index]->note= $val->note;
+            $ads_end[$index]->ads_left = $val->ads_left;
+            $ads_end[$index]->ads_right = $val->ads_right;
+            $ads_end[$index]->ads_center = $val->ads_center;
+            $ads_end[$index]->layer_left = $val->layer_left;
+            $ads_end[$index]->layer_vip = $val->layer_vip;
+            $ads_end[$index]->layer_right = $val->layer_right;
+            $ads_end[$index]->icon_new = $val->icon_new;
+            $ads_end[$index]->icon_vip = $val->icon_vip;
+            $ads_end[$index]->icon_hot = $val->icon_hot;
+            $ads_end[$index]->view = $val->view;
+            $ads_end[$index]->note = $val->note;
             $ads_end[$index]->created_name = isset($admin_arr[$val->created_by]) ? $admin_arr[$val->created_by]->name : 'dcm111111111';
         }
 
@@ -93,7 +93,7 @@ Class Ads extends MY_Controller
             $ward = '';
             if ($ward_str) {
                 $ward = explode('|', $ward_str);
-                $ward =$ward[0];
+                $ward = $ward[0];
             }
 
 //            $district = '';
@@ -110,7 +110,7 @@ Class Ads extends MY_Controller
 //                $street = $this->input->post('street');
 //            }
 
-            $created_at =  $this->input->post('created_at');
+            $created_at = $this->input->post('created_at');
             $created_at = date('Y-m-d', strtotime($created_at));
 
             $txtProvince = $this->input->post('province');
@@ -193,7 +193,7 @@ Class Ads extends MY_Controller
             }
             $path_name = substr($path_name, 0, -1);
             if ($path_name != '') {
-             $data['lightSlider'] = $path_name;
+                $data['lightSlider'] = $path_name;
             }
 
 //            echo pre_arr($path_name);
@@ -205,22 +205,15 @@ Class Ads extends MY_Controller
                 $file_data = $this->upload->data();
                 $data['img'] = $file_data['file_name'];
             } else {
-//                $data['img'] = 'default.png';
-                $data['img'] = 'chothue_temp.jpg';
+                $data['img'] = 'default.png';
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
 
-            for ($x = 1; $x <= 50; $x++) {
-//                echo "The number is: $x <br>";
-//            }
-                $this->ads_model->create($data);
-
-//            if ($this->ads_model->create($data)) {
-////                $this->session->set_flashdata('message', 'Thêm rao bán thành công');
-////                redirect(base_url('admin/ads'));
-//            } else {
-//                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
-//            }
+            if ($this->ads_model->create($data)) {
+                $this->session->set_flashdata('message', 'Thêm rao bán thành công');
+                redirect(base_url('admin/ads'));
+            } else {
+                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
 
         }
@@ -357,7 +350,7 @@ Class Ads extends MY_Controller
 
             $ward_arr_end = [];
             foreach ($ward_arr as $k => $value) {
-                $ward_arr_end[$value->id]['id'] = $value->id.'|'.$value->_district_id;
+                $ward_arr_end[$value->id]['id'] = $value->id . '|' . $value->_district_id;
                 $ward_arr_end[$value->id]['_name'] = $value->_name;
             }
 
@@ -380,7 +373,7 @@ Class Ads extends MY_Controller
             $ward = '';
             if ($ward_str) {
                 $ward = explode('|', $ward_str);
-                $ward =$ward[0];
+                $ward = $ward[0];
             }
 
             $txtProvince = $this->input->post('province');
@@ -561,7 +554,7 @@ Class Ads extends MY_Controller
             if ($this->ads_link_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật link thành công');
 //                redirect(base_url('admin/ads/edit/' . $id));
-                redirect(base_url('admin/ads/ads_link/'.$id_ads));
+                redirect(base_url('admin/ads/ads_link/' . $id_ads));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
@@ -609,7 +602,7 @@ Class Ads extends MY_Controller
             $this->ads_link_model->delete($id);
 
         }
-        redirect(base_url('admin/ads/ads_link/'.$id_ads));
+        redirect(base_url('admin/ads/ads_link/' . $id_ads));
     }
 
     function ads_link()
@@ -629,7 +622,7 @@ Class Ads extends MY_Controller
         $input['order'] = array('id', 'desc');
         $ads = $this->ads_link_model->get_list($input);
         $count = count($ads);
-        $count = $count > 0 ? $count: 0;
+        $count = $count > 0 ? $count : 0;
 
         $ads_end = [];
         $index = 0;
@@ -680,7 +673,7 @@ Class Ads extends MY_Controller
 
             if ($this->ads_link_model->create($data)) {
                 $this->session->set_flashdata('message', 'Thêm link thành công');
-                redirect(base_url('admin/ads/ads_link/'.$id));
+                redirect(base_url('admin/ads/ads_link/' . $id));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
@@ -911,7 +904,7 @@ Class Ads extends MY_Controller
 
         $lst_ward_end = [];
         foreach ($lst_ward as $k => $value) {
-            $lst_ward_end[$value->id]['id'] = $value->id.'|'.$value->_district_id;
+            $lst_ward_end[$value->id]['id'] = $value->id . '|' . $value->_district_id;
             $lst_ward_end[$value->id]['_name'] = $value->_name;
         }
 //        pre_arr($lst_ward_end);
@@ -944,7 +937,6 @@ Class Ads extends MY_Controller
 
         $this->load->view('admin/ads/view_list_street', $this->data);
     }
-
 
 
 }
