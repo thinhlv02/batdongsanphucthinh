@@ -862,11 +862,64 @@ Class Home extends MY_Controller
 
     function land_canmua()
     {
+        $this->load->language('news/news', $this->_langcode);
+        $this->data['news_lang'] = $this->lang->line('news_lang');
+        $per_page = 12;
+        $offset = $this->uri->segment(2);
+        $offset = intval($offset);
+        $input = array();
+        $input['where'] = array('ads_type' => 3);
+        $total_rows = $this->ads_model->get_total($input);
+        $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('can-mua'));
 
+        if ($offset >= 1) {
+            $offset -= 1;
+            $offset = $offset * $per_page;
+        }
+
+        $input['limit'] = array($per_page, $offset);
+        $news = $this->ads_model->get_list($input);
+        $this->data['lstPaging'] = $lstPaging;
+        $this->data['ads_center'] = $news;
+
+        // load header
+        $header = array();
+        $header['title'] = 'Nhà đất cần mua';
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'ads_type/index_view', $this->data);
+        $this->_loadFooter();
     }
 
     function land_canthue()
     {
+        $this->load->language('news/news', $this->_langcode);
+        $this->data['news_lang'] = $this->lang->line('news_lang');
+        $per_page = 12;
+        $offset = $this->uri->segment(2);
+        $offset = intval($offset);
+        $input = array();
+        $input['where'] = array('ads_type' => 4);
+        $total_rows = $this->ads_model->get_total($input);
+        $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('can-thue'));
+
+        if ($offset >= 1) {
+            $offset -= 1;
+            $offset = $offset * $per_page;
+        }
+
+        $input['limit'] = array($per_page, $offset);
+        $news = $this->ads_model->get_list($input);
+        $this->data['lstPaging'] = $lstPaging;
+        $this->data['ads_center'] = $news;
+
+        // load header
+        $header = array();
+        $header['title'] = 'Nhà đất cần thuê';
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'ads_type/index_view', $this->data);
+        $this->_loadFooter();
 
     }
 
