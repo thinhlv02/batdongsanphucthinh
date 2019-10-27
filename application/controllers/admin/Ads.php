@@ -217,6 +217,7 @@ Class Ads extends MY_Controller
             }
 
         }
+        $this->data['ads_type'] = $this->_ads_type;
         $this->data['lstProvince'] = $lstProvince;
         $this->data['tab'] = 2;
         $this->data['temp'] = 'admin/ads/index';
