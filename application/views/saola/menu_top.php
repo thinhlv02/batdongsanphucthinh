@@ -440,35 +440,3 @@
     }
 
 </script>
-
-<!--Dropdown Menu inside a Navigation Bar-->
-<style>
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        top: 45px;
-        left: 0px;
-        /*background-color: #508fc6;*/
-        background-color: #cfe5f7;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-
-    .dropdown-content a {
-        color: #333 !important;
-        display: block;
-        text-align: left;
-        padding: 12px 16px !important;
-        border-top: 1px solid rgba(255,255,255,.2);
-    }
-
-    .dropdown-content a:hover {
-        background-color: #a2bfd9a8;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-</style>
-<!--Dropdown Menu inside a Navigation Bar-->
