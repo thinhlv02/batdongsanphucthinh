@@ -1,20 +1,22 @@
 <section class="detail">
     <div class="container">
-        <div class="col-sm-4 col-md-3">
-            <div class="left-menu">
-                <div class="left-title">Bảng giá quảng cáo</div>
-                <ul>
-                    <?php foreach ($prices as $k => $p) { ?>
-                        <li class="<?php if ($p->id == $active || ($k == 0 && $active == 0)) echo 'active'; ?>" onclick="showTitlePrice('<?php echo $p->id; ?>')">
-                            <a href="<?php echo base_url('bang-gia/' . create_slug($p->name) . '-' . $p->id . '.html#' . $p->id) ?>">
-                                <?php echo $p->name ?>
-                            </a>
-                        </li>
-                    <?php } ?>
-                </ul>
+
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <div class="left-menu">
+                    <div class="left-title">Bảng giá quảng cáo</div>
+                    <ul>
+                        <?php foreach ($prices as $k => $p) { ?>
+                            <li class="<?php if ($p->id == $active || ($k == 0 && $active == 0)) echo 'active'; ?>" onclick="showTitlePrice('<?php echo $p->id; ?>')">
+                                <a href="<?php echo base_url('bang-gia/' . create_slug($p->name) . '-' . $p->id . '.html#' . $p->id) ?>">
+                                    <?php echo $p->name ?>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="col-md-9 col-sm-8 detail-content" style="padding-left: 10px !important;">
+            <div class="col-md-9 col-sm-8 detail-content" style="padding-left: 10px !important;">
             <div class="line-height-2 pl-5 card">
 
                 <?php if (isset($price)) { ?>
@@ -162,6 +164,7 @@
 
             </div>
 
+        </div>
         </div>
 
     </div>
