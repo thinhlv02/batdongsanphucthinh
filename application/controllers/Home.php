@@ -361,10 +361,10 @@ Class Home extends MY_Controller
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $ads;
+        $ads_type_item = $ads->ads_type;
 
-//        $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
-        $highlight = $this->ads_model->get_list(array('limit' => array('10', '0')));
-        $this->data['highlight'] = $highlight;
+        $lstDataRelated = $this->ads_model->get_list(array('where' => array('ads_type' => $ads_type_item), 'limit' => array('10', '0')));
+        $this->data['lstDataRelated'] = $lstDataRelated;
 
         //ads left
         $ads_left = $this->ads_model->get_list(array('where' => array('ads_left' => 1), 'limit' => array(13, 0)));
