@@ -1,10 +1,9 @@
 
-<div class="row col-md-3 col-sm-6 col-xs-12">
+<div class="row12 col-md-3 col-sm-6 col-xs-12">
     <select class="form-control" id="slType">
-        <option value="1">Nhà đất bán</option>
-        <option value="2">Nhà đất cho thuê</option>
-        <option value="3">Nhà đất cần mua</option>
-        <option value="4">Nhà đất cần thuê</option>
+        <?php foreach ($ads_type as $k => $v) { ?>
+            <option value="<?php echo $k ?>"> <?php echo $v; ?></option>
+        <?php } ?>
     </select>
 </div>
 

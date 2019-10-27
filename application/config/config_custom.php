@@ -40,6 +40,14 @@ $config['device_type'] = array(
 );
 //1: laptop: 2:pc; 3: mobile; 4: khác
 
+//ads type
+$config['ads_type'] = array(
+    '1' => 'Nhà đất bán',
+    '2' => 'Nhà đất cho thuê',
+    '3' => 'Nhà đất cần mua',
+    '4' => 'Nhà đất cần thuê'
+);
+
 $config['serving_email'] = 'noreply@adclick.vn';
 
 $config['serving_email_name'] = array('vietnamese' => 'Admarket', 'english' => 'Admarket');

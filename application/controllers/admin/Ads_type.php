@@ -13,6 +13,7 @@ Class Ads_type extends MY_Controller
         $questions = $this->ads_type_model->get_list(array('where' => array('type' => 1), 'order' => array('id', 'asc')));
 //        pre($questions);
         $this->data['tab'] = 1;
+        $this->data['ads_type'] = $this->_ads_type;
         $this->data['questions'] = $questions;
         $this->data['temp'] = 'admin/ads_type/index';
         $this->data['view'] = 'admin/ads_type/question';

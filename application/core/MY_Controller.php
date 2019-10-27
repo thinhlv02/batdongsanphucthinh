@@ -5,6 +5,7 @@ Class MY_Controller extends CI_Controller
     var $_template_f = '';
     public $data = array();
 
+    var $_ads_type = '';
     var $_uid = '';
     var $_uname = '';
     var $_device_type = '';
@@ -27,6 +28,7 @@ Class MY_Controller extends CI_Controller
         date_default_timezone_set('Asia/Ho_Chi_Minh');
         $new_url = $this->uri->segment(1);
 
+        $this->_ads_type = $this->_func_ads_type();
         $this->_uid = $this->_session_uid();
         $this->_uname = $this->_session_uname();
         $this->_device_type = $this->_func_device_type();
@@ -159,6 +161,11 @@ Class MY_Controller extends CI_Controller
             $_uid = trim($this->session->userdata('admin')->username);
             return $_uid;
         }
+    }
+
+    protected function _func_ads_type()
+    {
+        return $this->config->config["ads_type"];
     }
 
     protected function _func_device_type()
