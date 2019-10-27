@@ -3,7 +3,7 @@
         <div class="col-sm-12 col-md-12">
             <div class="row">
                 <div class="box-module">
-                    <div class="bg-modul"><i class="mdi mdi-view-list"></i> <?php echo $title; ?></div>
+                    <div class="bg-modul"><i class="mdi mdi-format-list-checks mdi-18px"></i> <?php echo $title; ?></div>
                 </div>
 
                 <?php foreach ($ads_center as $key => $value) { ?>
