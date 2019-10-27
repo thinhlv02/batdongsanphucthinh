@@ -205,16 +205,22 @@ Class Ads extends MY_Controller
                 $file_data = $this->upload->data();
                 $data['img'] = $file_data['file_name'];
             } else {
-                $data['img'] = 'default.png';
+//                $data['img'] = 'default.png';
+                $data['img'] = 'canmua_temp.jpg';
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
 
-            if ($this->ads_model->create($data)) {
-                $this->session->set_flashdata('message', 'Thêm rao bán thành công');
-                redirect(base_url('admin/ads'));
-            } else {
-                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
+            for ($x = 1; $x <= 50; $x++) {
+                $this->ads_model->create($data);
             }
+
+
+//            if ($this->ads_model->create($data)) {
+//                $this->session->set_flashdata('message', 'Thêm rao bán thành công');
+//                redirect(base_url('admin/ads'));
+//            } else {
+//                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
+//            }
 
         }
         $this->data['ads_type'] = $this->_ads_type;
