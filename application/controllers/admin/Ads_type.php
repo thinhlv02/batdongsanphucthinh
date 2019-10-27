@@ -38,7 +38,6 @@ Class Ads_type extends MY_Controller
                 'name' => $this->input->post('txtName'),
                 'content' => '',
                 'type' => intval($this->input->post('slType')),
-                'level' => 1,
             );
             if ($this->ads_type_model->create($data_submit)) {
                 $this->session->set_flashdata('message', 'Thêm thành công!');
@@ -48,6 +47,7 @@ Class Ads_type extends MY_Controller
                 redirect(base_url('admin/ads_type/add'));
             }
         }
+        $this->data['ads_type'] = $this->_ads_type;
         $this->data['temp'] = 'admin/ads_type/index';
         $this->data['view'] = 'admin/ads_type/add';
         $this->load->view('admin/layout', $this->data);
@@ -63,7 +63,7 @@ Class Ads_type extends MY_Controller
             redirect(admin_url('ads_type'));
         }
 
-        $questions = $this->ads_type_model->get_list(array('where' => array('parent_id' => $question->id)));
+        $questions = $this->ads_type_model->get_list(array('where' => array('id' => $question->id)));
         $this->data['questions'] = $questions;
         $this->data['view'] = 'admin/ads_type/edit_level_1';
 
@@ -75,38 +75,6 @@ Class Ads_type extends MY_Controller
             );
             if ($this->ads_type_model->update($id, $data_submit)) {
                 $this->session->set_flashdata('message', 'Cập nhật thành công!');
-                redirect(base_url('admin/ads_type/edit/' . $id));
-            } else {
-                $this->session->set_flashdata('message', 'Có lỗi xảy ra, vui lòng thử lại!');
-                redirect(base_url('admin/ads_type/edit/' . $id));
-            }
-        }
-
-        if ($this->input->post('btnEditLevel2')) {
-            $data_submit = array(
-                'name' => $this->input->post('txtName'),
-                'content' => $this->input->post('txtContent')
-            );
-            $parent_id = $question->parent_id;
-            if ($this->ads_type_model->update($id, $data_submit)) {
-                $this->session->set_flashdata('message', 'Cập nhật thành công!');
-                redirect(base_url('admin/ads_type/edit/' . $parent_id));
-            } else {
-                $this->session->set_flashdata('message', 'Có lỗi xảy ra, vui lòng thử lại!');
-                redirect(base_url('admin/ads_type/edit/' . $id));
-            }
-        }
-
-        if ($this->input->post('btnAdd')) {
-            $data_submit = array(
-                'name' => $this->input->post('txtNameAdd'),
-                'content' => $this->input->post('txtContentAdd'),
-                'parent_id' => $question->id,
-                'level' => 2,
-                'type' => $question->type
-            );
-            if ($this->ads_type_model->create($data_submit)) {
-                $this->session->set_flashdata('message', 'Thêm thành công!');
                 redirect(base_url('admin/ads_type/edit/' . $id));
             } else {
                 $this->session->set_flashdata('message', 'Có lỗi xảy ra, vui lòng thử lại!');
