@@ -36,10 +36,12 @@ Class Ads extends MY_Controller
         $this->data['todate'] = date('d/m/Y', $todate);
         $this->data['fromdate'] = date('d/m/Y', $fromdate);
 
-        $data['db_tdate'] = date('Y/m/d', $todate);
-        $data['db_fdate'] = date('Y/m/d', $fromdate);
+        $this->data['db_tdate'] = date('Y-m-d', $todate);
+        $this->data['db_fdate'] = date('Y-m-d', $fromdate);
 
         $input = array();
+        $input['where'] = array('created_at >=' => '' . $this->data['db_fdate'] . ' ');
+        $input['where'] += array('created_at <=' => '' . $this->data['db_tdate'] . ' ');
         if ($ads_type == '-1') {
             $input['where_in'] = array('ads_type', array('1', '2', '3', '4'));
         } else {
