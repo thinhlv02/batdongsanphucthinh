@@ -17,6 +17,36 @@
         <div class="clearfix"></div>
     </div>
     <div class="x_content">
+        <!--        form search-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+                <div class="form-group">
+                    <select class="form-control" id="ads_type">
+                        <option value="-1" <?php echo $ads_type == -1 ? 'selected' : '' ?>>Phân Loại</option>
+                        <?php foreach ($lstAdsType as $k => $v) { ?>
+                            <option value="<?php echo $k ?>" <?php echo $ads_type == $k ? 'selected' : '' ?>> <?php echo $v; ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+                <div class="form-group">
+                    <select class="form-control" id="created_by">
+                        <option value="-1" <?php echo $created_by == -1 ? 'selected' : '' ?>>Người tạo</option>
+                        <?php foreach ($lstAdmin as $k => $v) { ?>
+                            <option value="<?php echo $v->id ?>" <?php echo $created_by == $v->id ? 'selected' : '' ?>> <?php echo $v->name; ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                <div class="form-group">
+                    <button type="button" onclick="loadpage(1);" class="btn btn-info">Tìm</button>
+                </div>
+            </div>
+        </div>
+        <!--        End form search-->
         <table id="datatable-news" class="table table-striped table-bordered bulk_action">
             <!--            <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">-->
             <thead>
@@ -141,6 +171,18 @@
     //         "iDisplayLength": 30,
     //     });
     // });
+
+    function loadpage(page) {
+        console.log(page);
+        var ads_type = $("#ads_type").val();
+        var created_by = $("#created_by").val();
+        // var groupid = $('#slcGroup').val().trim();
+        // var kw = $("#keyword").val();
+        // var searchby = $("#searchby").val();
+
+        //window.location = "<?php //echo site_url("user", $langcode) ?>//?page=" + page + "&keyword=" + kw + "&sby=" + searchby + "&status=" + status + "&groupid=" + groupid;
+        window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by='+created_by;
+    }
 
     function confirmDel(id) {
         if (confirm('Bạn có chắc chắn muốn xóa?')) {

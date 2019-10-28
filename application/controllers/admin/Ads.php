@@ -19,7 +19,25 @@ Class Ads extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
+        $ads_type = trim($this->input->get('ads_type'));
+        $ads_type = in_array($ads_type, ['-1', '1', '2', '3', '4']) ? $ads_type : '-1';//created_by
+        $this->data['ads_type'] = $ads_type;
+
+        $created_by = trim($this->input->get('created_by'));
+        $this->data['created_by'] = $created_by;
+
         $input = array();
+        if ($ads_type == '-1') {
+            $input['where_in'] = array('ads_type', array('1','2','3','4'));
+        }
+        else {
+            $input['where'] = array('ads_type' => $ads_type);
+        }
+
+        if ($created_by != '-1') {
+            $input['where'] = array('created_by' => $created_by);
+        }
+
         $input['order'] = array('id', 'desc');
         $ads = $this->ads_model->get_list($input);
         $count = count($ads);
@@ -68,6 +86,8 @@ Class Ads extends MY_Controller
         }
 
 
+        $this->data['lstAdsType'] = $this->_func_ads_type();
+        $this->data['lstAdmin'] = $admin_arr;
         $this->data['count'] = $count;
         $this->data['ads'] = $ads_end;
         $this->data['_uid'] = $this->_uid;
