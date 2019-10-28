@@ -40,6 +40,7 @@
                 </div>
             </div>
 
+<!--            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">-->
             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
                 <div class="col-md-8 col-sm-8 col-xs-12">
                     <input type="text" id="txtFrom" name="txtFrom" value="" class="form-control col-md-7 col-xs-12"/>
