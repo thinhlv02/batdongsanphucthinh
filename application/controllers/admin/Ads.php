@@ -35,7 +35,7 @@ Class Ads extends MY_Controller
 
         if ($created_by != '-1') {
             if ($created_by != '') {
-                $input['where'] = array('created_by' => $created_by);
+                $input['where'] += array('created_by' => $created_by);
             }
         }
 
