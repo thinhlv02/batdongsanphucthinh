@@ -28,17 +28,19 @@ Class Ads extends MY_Controller
 
         $input = array();
         if ($ads_type == '-1') {
-            $input['where_in'] = array('ads_type', array('1','2','3','4'));
-        }
-        else {
+            $input['where_in'] = array('ads_type', array('1', '2', '3', '4'));
+        } else {
             $input['where'] = array('ads_type' => $ads_type);
         }
 
         if ($created_by != '-1') {
-            $input['where'] = array('created_by' => $created_by);
+            if ($created_by != '') {
+                $input['where'] = array('created_by' => $created_by);
+            }
         }
 
         $input['order'] = array('id', 'desc');
+//        pre($input);
         $ads = $this->ads_model->get_list($input);
         $count = count($ads);
         $count = $count > 0 ? $count : 0;
