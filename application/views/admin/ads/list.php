@@ -54,7 +54,6 @@
         </div>
         <!--        End form search-->
         <table id="datatable-news" class="table table-striped table-bordered bulk_action">
-            <!--            <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">-->
             <thead>
             <tr>
                 <th>Mã tin</th>
@@ -185,8 +184,6 @@
         // var groupid = $('#slcGroup').val().trim();
         // var kw = $("#keyword").val();
         // var searchby = $("#searchby").val();
-
-        //window.location = "<?php //echo site_url("user", $langcode) ?>//?page=" + page + "&keyword=" + kw + "&sby=" + searchby + "&status=" + status + "&groupid=" + groupid;
         window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by='+created_by;
     }
 
