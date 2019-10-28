@@ -41,7 +41,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
-                <input type="text" id="daterange" name="daterange" value="<?php echo $fromdate; ?> - <?php echo $todate; ?>" class="form-control col-md-7 col-xs-12" />
+                <input type="text" id="daterange" name="daterange" value="<?php echo $fromdate; ?> - <?php echo $todate; ?>" class="form-control col-md-7 col-xs-12"/>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
@@ -175,22 +175,33 @@
     //     });
     // });
 
-    $(function() {
+    $(function () {
         $('input[name="daterange"]').daterangepicker({
             // opens: 'left'
             locale: {
                 format: 'DD/MM/YYYY'
             }
-        }, function(start, end, label) {
+        }, function (start, end, label) {
             console.log("A new date selection was made: " + start.format('DD-MM-YYYY') + ' to ' + end.format('DD-MM-YYYY'));
         });
     });
 
     function loadpage(page) {
-        console.log(page);
+
         var ads_type = $("#ads_type").val();
         var created_by = $("#created_by").val();
         var dateRange = $("#daterange").val();
+
+        var arrTime = dateRange.split("-");
+        // var arrTime = formated.toString().split(',');
+        var fromdate = arrTime[0];
+        var todate = arrTime[1];
+        fromdate = fromdate.split('/');
+        fromdate = fromdate[0] + '-' + fromdate[1] + '-' + fromdate[2];
+        fromdate = fromdate.replace(/\s+/g, '');
+        todate = todate.split('/');
+        todate = todate[0] + '-' + todate[1] + '-' + todate[2];
+        todate = todate.replace(/\s+/g, '');
         // var result = $(dateRange).split('-');
         // alert( result[0] );
         // console.log('dateRange');
@@ -198,7 +209,7 @@
         // var groupid = $('#slcGroup').val().trim();
         // var kw = $("#keyword").val();
         // var searchby = $("#searchby").val();
-        window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by='+created_by;
+        window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by=' + created_by + '&fromdate=' + fromdate + '&todate=' + todate;
     }
 
     function confirmDel(id) {
