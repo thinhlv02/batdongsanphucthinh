@@ -1,7 +1,6 @@
-
 <div class="x_panel">
     <div class="x_title">
-        <h2>Danh sách bài đăng(<?php echo $count> 0 ? number_format($count) : $count ?>)</h2>
+        <h2>Danh sách bài đăng(<?php echo $count > 0 ? number_format($count) : $count ?>)</h2>
         <ul class="nav navbar-right panel_toolbox">
             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
             <li class="dropdown">
@@ -19,7 +18,7 @@
     </div>
     <div class="x_content">
         <table id="datatable-news" class="table table-striped table-bordered bulk_action">
-<!--            <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">-->
+            <!--            <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">-->
             <thead>
             <tr>
                 <th>Mã tin</th>
@@ -39,16 +38,16 @@
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($ads as $row){ ?>
+            <?php foreach ($ads as $row) { ?>
                 <tr title="<?php echo $row->note; ?>" class="<?php echo $row->note != '' ? 'bg-warning-pt' : ''; ?>">
                     <td class="text-center">
                         <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
 
-                        <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
+                        <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/ads/edit/' . $row->id) ?>">Sửa</a>
                         <?php if ($_uid == 1) { ?>
-                            <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
-<!--                            //update link-->
-                            <a class="btn btn-xs btn-success btn-xs" href="<?php echo base_url('admin/ads/ads_link/'.$row->id)?>">Update link</a>
+                            <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
+                            <!--                            //update link-->
+                            <a class="btn btn-xs btn-success btn-xs" href="<?php echo base_url('admin/ads/ads_link/' . $row->id) ?>">Update link</a>
                         <?php } ?>
 
                         <p><?php echo $row->created_name; ?></p>
@@ -56,80 +55,81 @@
                     </td>
 
                     <td><?php echo $row->phone; ?></td>
-                    <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" style="max-width: 80px"> </td>
+                    <td><img src="<?php echo base_url('public/images/ads/' . $row->img) ?>" style="max-width: 80px">
+                    </td>
                     <td>
                         <a href="<?php echo base_url('rao-vat/' . create_slug($row->title) . '-' . $row->id) ?>" target="_blank">
-                            <?php echo $row->title?></td>
-                        </a>
+                        <?php echo $row->title ?></td>
+                    </a>
                     <td>
-                        <p class="btn btn-outline-danger btn-xs"><?php echo $row->price?> </p><br/>
-                        <p class="btn btn-outline-cyan btx-xs"><?php echo $row->acreage?> m<sup>2</sup> </p>
+                        <p class="btn btn-outline-danger btn-xs"><?php echo $row->price ?> </p><br/>
+                        <p class="btn btn-outline-cyan btx-xs"><?php echo $row->acreage ?> m<sup>2</sup></p>
 
                     </td>
 
                     <td>
-                        <i id="ads_left-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->ads_left ? 'fa-toggle-on' : 'fa-toggle-off'?> primary"
-                           onclick="ads_left(<?php echo $row->id?>)"
+                        <i id="ads_left-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->ads_left ? 'fa-toggle-on' : 'fa-toggle-off' ?> primary"
+                           onclick="ads_left(<?php echo $row->id ?>)"
                         ></i>banner trái
                     </td>
 
                     <td>
-                        <i id="ads_right-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off'?> secondary"
-                           onclick="ads_right(<?php echo $row->id?>)"
+                        <i id="ads_right-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off' ?> secondary"
+                           onclick="ads_right(<?php echo $row->id ?>)"
                         ></i>banner phải
                     </td>
 
                     <td>
-                        <i id="ads_center-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->ads_center ? 'fa-toggle-on' : 'fa-toggle-off'?> success"
-                           onclick="ads_center(<?php echo $row->id?>)"
+                        <i id="ads_center-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->ads_center ? 'fa-toggle-on' : 'fa-toggle-off' ?> success"
+                           onclick="ads_center(<?php echo $row->id ?>)"
 
                         ></i>banner giữa
                     </td>
 
                     <td>
-                        <i id="layer_left-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off'?> danger"
-                           onclick="layer_left(<?php echo $row->id?>)"
+                        <i id="layer_left-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off' ?> danger"
+                           onclick="layer_left(<?php echo $row->id ?>)"
                         ></i>layer trái
                     </td>
 
                     <td>
-                        <i id="layer_vip-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->layer_vip ? 'fa-toggle-on' : 'fa-toggle-off'?> warning"
-                           onclick="layer_vip(<?php echo $row->id?>)"
+                        <i id="layer_vip-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->layer_vip ? 'fa-toggle-on' : 'fa-toggle-off' ?> warning"
+                           onclick="layer_vip(<?php echo $row->id ?>)"
                         ></i>layer vip
                     </td>
 
                     <td>
-                        <i id="layer_right-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->layer_right ? 'fa-toggle-on' : 'fa-toggle-off'?> info"
-                           onclick="layer_right(<?php echo $row->id?>)"
+                        <i id="layer_right-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->layer_right ? 'fa-toggle-on' : 'fa-toggle-off' ?> info"
+                           onclick="layer_right(<?php echo $row->id ?>)"
                         ></i>layer phải
                     </td>
 
                     <td style="display: grid ">
-                        <i id="icon_new-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->icon_new ? 'fa-toggle-on' : 'fa-toggle-off'?> primary"
-                           onclick="icon_new(<?php echo $row->id?>)"
+                        <i id="icon_new-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->icon_new ? 'fa-toggle-on' : 'fa-toggle-off' ?> primary"
+                           onclick="icon_new(<?php echo $row->id ?>)"
                         ></i> Mới
-                        <i id="icon_vip-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->icon_vip ? 'fa-toggle-on' : 'fa-toggle-off'?> info"
-                           onclick="icon_vip(<?php echo $row->id?>)"
+                        <i id="icon_vip-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->icon_vip ? 'fa-toggle-on' : 'fa-toggle-off' ?> info"
+                           onclick="icon_vip(<?php echo $row->id ?>)"
                         ></i> Vip
 
-                        <i id="icon_hot-<?php echo $row->id?>"
-                           class="fa fa-2x <?php echo $row->icon_hot ? 'fa-toggle-on' : 'fa-toggle-off'?> success"
-                           onclick="icon_hot(<?php echo $row->id?>)"
+                        <i id="icon_hot-<?php echo $row->id ?>"
+                           class="fa fa-2x <?php echo $row->icon_hot ? 'fa-toggle-on' : 'fa-toggle-off' ?> success"
+                           onclick="icon_hot(<?php echo $row->id ?>)"
                         ></i> Hot
                     </td>
                     <td><?php echo $row->view ?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                 </tr>
 
-            <?php }?>
+            <?php } ?>
             </tbody>
         </table>
     </div>
@@ -143,7 +143,7 @@
     // });
 
     function confirmDel(id) {
-        if(confirm('Bạn có chắc chắn muốn xóa?')){
+        if (confirm('Bạn có chắc chắn muốn xóa?')) {
 //            console.log('delll');
             window.location.href = '<?php echo base_url('admin/ads/del/')?>' + id;
         }
@@ -159,7 +159,7 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if(msg.status){
+                if (msg.status) {
                     $('#ads_left-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -179,7 +179,7 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if(msg.status){
+                if (msg.status) {
                     $('#ads_right-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -199,7 +199,7 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if(msg.status){
+                if (msg.status) {
                     $('#ads_center-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -219,7 +219,7 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if(msg.status){
+                if (msg.status) {
                     $('#layer_left-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -239,7 +239,7 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if(msg.status){
+                if (msg.status) {
                     $('#layer_vip-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -259,7 +259,7 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if(msg.status){
+                if (msg.status) {
                     $('#layer_right-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -279,7 +279,7 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if(msg.status){
+                if (msg.status) {
                     $('#icon_new-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -299,7 +299,7 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if(msg.status){
+                if (msg.status) {
                     $('#icon_vip-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -319,7 +319,7 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if(msg.status){
+                if (msg.status) {
                     $('#icon_hot-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
