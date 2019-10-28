@@ -41,9 +41,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                    <input type="text" id="txtFrom" name="txtFrom" value="" class="form-control col-md-7 col-xs-12"/>
-                </div>
+                <input type="text" id="daterange" name="daterange" value="<?php echo $fromdate; ?> - <?php echo $todate; ?>" class="form-control col-md-7 col-xs-12" />
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
@@ -177,10 +175,26 @@
     //     });
     // });
 
+    $(function() {
+        $('input[name="daterange"]').daterangepicker({
+            // opens: 'left'
+            locale: {
+                format: 'DD/MM/YYYY'
+            }
+        }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('DD-MM-YYYY') + ' to ' + end.format('DD-MM-YYYY'));
+        });
+    });
+
     function loadpage(page) {
         console.log(page);
         var ads_type = $("#ads_type").val();
         var created_by = $("#created_by").val();
+        var dateRange = $("#daterange").val();
+        // var result = $(dateRange).split('-');
+        // alert( result[0] );
+        // console.log('dateRange');
+        // console.log(dateRange);
         // var groupid = $('#slcGroup').val().trim();
         // var kw = $("#keyword").val();
         // var searchby = $("#searchby").val();

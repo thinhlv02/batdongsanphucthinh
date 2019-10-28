@@ -26,6 +26,19 @@ Class Ads extends MY_Controller
         $created_by = trim($this->input->get('created_by'));
         $this->data['created_by'] = $created_by;
 
+        $todate = strtotime(trim($this->input->get('todate')));
+        $fromdate = strtotime(trim($this->input->get('fromdate')));
+        // validate fromdate and todate
+        if ($todate === -1 OR $todate === FALSE OR $fromdate === -1 OR $fromdate === false OR $fromdate > $todate) {
+            $todate = strtotime(date('Y/m/d'));
+            $fromdate = strtotime('-7 day', $todate);
+        }
+        $this->data['todate'] = date('d/m/Y', $todate);
+        $this->data['fromdate'] = date('d/m/Y', $fromdate);
+
+        $data['db_tdate'] = date('Y/m/d', $todate);
+        $data['db_fdate'] = date('Y/m/d', $fromdate);
+
         $input = array();
         if ($ads_type == '-1') {
             $input['where_in'] = array('ads_type', array('1', '2', '3', '4'));
