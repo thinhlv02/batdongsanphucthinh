@@ -116,8 +116,8 @@ Class Ads extends MY_Controller
         $this->data['ads'] = $ads_end;
         $this->data['_uid'] = $this->_uid;
         $this->data['tab'] = 1;
-        $this->data['temp'] = 'admin/ads/index';
-        $this->data['view'] = 'admin/ads/list';
+        $this->data['temp'] = 'admin/product/index';
+        $this->data['view'] = 'admin/product/list';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -264,8 +264,8 @@ Class Ads extends MY_Controller
         $this->data['ads_type'] = $this->_ads_type;
         $this->data['lstProvince'] = $lstProvince;
         $this->data['tab'] = 2;
-        $this->data['temp'] = 'admin/ads/index';
-        $this->data['view'] = 'admin/ads/add';
+        $this->data['temp'] = 'admin/product/index';
+        $this->data['view'] = 'admin/product/add';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -310,8 +310,8 @@ Class Ads extends MY_Controller
 
         }
         $this->data['tab'] = 2;
-        $this->data['temp'] = 'admin/ads/index';
-        $this->data['view'] = 'admin/ads/add';
+        $this->data['temp'] = 'admin/product/index';
+        $this->data['view'] = 'admin/product/add';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -363,8 +363,8 @@ Class Ads extends MY_Controller
             }
         }
         $this->data['tab'] = 2;
-        $this->data['temp'] = 'admin/ads/index';
-        $this->data['view'] = 'admin/ads/add';
+        $this->data['temp'] = 'admin/product/index';
+        $this->data['view'] = 'admin/product/add';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -559,8 +559,8 @@ Class Ads extends MY_Controller
 
             if ($this->product_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật rao bán thành công');
-//                redirect(base_url('admin/ads/edit/' . $id));
-                redirect(base_url('admin/ads/edit'));
+//                redirect(base_url('admin/product/edit/' . $id));
+                redirect(base_url('admin/product/edit'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
@@ -572,8 +572,8 @@ Class Ads extends MY_Controller
         $this->data['ward_id'] = $ads->ward_id;
         $this->data['street_id'] = $ads->street_id;
         $this->data['lstProvince'] = $lstProvince;
-        $this->data['temp'] = 'admin/ads/index';
-        $this->data['view'] = 'admin/ads/edit';
+        $this->data['temp'] = 'admin/product/index';
+        $this->data['view'] = 'admin/product/edit';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -598,8 +598,8 @@ Class Ads extends MY_Controller
 
             if ($this->product_link_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật link thành công');
-//                redirect(base_url('admin/ads/edit/' . $id));
-                redirect(base_url('admin/ads/product_link/' . $id_ads));
+//                redirect(base_url('admin/product/edit/' . $id));
+                redirect(base_url('admin/product/product_link/' . $id_ads));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
@@ -647,7 +647,7 @@ Class Ads extends MY_Controller
             $this->product_link_model->delete($id);
 
         }
-        redirect(base_url('admin/ads/product_link/' . $id_ads));
+        redirect(base_url('admin/product/product_link/' . $id_ads));
     }
 
     function product_link()
@@ -718,7 +718,7 @@ Class Ads extends MY_Controller
 
             if ($this->product_link_model->create($data)) {
                 $this->session->set_flashdata('message', 'Thêm link thành công');
-                redirect(base_url('admin/ads/product_link/' . $id));
+                redirect(base_url('admin/product/product_link/' . $id));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
@@ -932,7 +932,7 @@ Class Ads extends MY_Controller
 //        pre($lst_district_end);
         $this->data['lstdata'] = $lst_district_end;
 
-        $this->load->view('admin/ads/view_list_district', $this->data);
+        $this->load->view('admin/product/view_list_district', $this->data);
     }
 
 
@@ -957,7 +957,7 @@ Class Ads extends MY_Controller
 //        pre($lst_ward_end);
         $this->data['lstdata'] = $lst_ward_end;
 
-        $this->load->view('admin/ads/view_list_ward', $this->data);
+        $this->load->view('admin/product/view_list_ward', $this->data);
     }
 
     function ajax_get_list_street()
@@ -980,7 +980,7 @@ Class Ads extends MY_Controller
 //        pre($lst_ward_end);
         $this->data['lstdata'] = $lst_ward_end;
 
-        $this->load->view('admin/ads/view_list_street', $this->data);
+        $this->load->view('admin/product/view_list_street', $this->data);
     }
 
 
