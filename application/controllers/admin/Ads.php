@@ -650,7 +650,7 @@ Class Ads extends MY_Controller
         redirect(base_url('admin/ads/product_link/' . $id_ads));
     }
 
-    function ads_link()
+    function product_link()
     {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
