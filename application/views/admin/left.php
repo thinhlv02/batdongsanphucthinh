@@ -47,7 +47,7 @@
                                 <li><a href="<?php echo admin_url('money_lost') ?>">Tiền tiêu hao</a></li>
 <!--                                <li><a href="--><?php //echo admin_url('Upload_Files') ?><!--">Upload_Files</a></li>-->
 
-                                <li><a href="<?php echo admin_url('product') ?>">Giới thiệu</a></li>
+                                <li><a href="<?php echo admin_url('introduce') ?>">Giới thiệu</a></li>
                                 <li><a href="<?php echo admin_url('price') ?>">Bảng giá quảng cáo</a></li>
                                 <li><a href="<?php echo admin_url('policy') ?>">Điều khoản, chính sách</a></li>
                                 <li><a href="<?php echo admin_url('question') ?>">Hỗ trợ</a></li>

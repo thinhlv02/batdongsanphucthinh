@@ -269,105 +269,6 @@ Class Ads extends MY_Controller
         $this->load->view('admin/layout', $this->data);
     }
 
-    function add12()
-    {
-//        die('fuck');
-        $message = $this->session->flashdata('message');
-        $this->data['message'] = $message;
-        if ($this->input->post('btnAdd')) {
-            $config['upload_path'] = './public/images/ads';
-            $config['allowed_types'] = 'jpg|png|jpeg|JPEG|jfif|JFIF';
-            $config['max_size'] = '10000';
-            $this->load->library("upload", $config);
-
-            $data = array(
-                'title' => $this->input->post('txtName'),
-                'code' => generateRandomString(6),
-                'view' => generateRandomString(2),
-                'content' => $this->input->post('txtContent'),
-                'area' => $this->input->post('area'),
-                'phone' => $this->input->post('phone'),
-                'intro' => $this->input->post('txtIntro'),
-                'price' => $this->input->post('price'),
-                'acreage' => $this->input->post('acreage'),
-                'created_by' => $this->_uid,
-            );
-
-            if ($this->upload->do_upload('img_news')) {
-                $file_data = $this->upload->data();
-                $data['img'] = $file_data['file_name'];
-            } else {
-                $data['img'] = 'default.png';
-                $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
-            }
-
-            if ($this->product_model->create($data)) {
-                $this->session->set_flashdata('message', 'Thêm rao bán thành công');
-                redirect(base_url('admin/ads'));
-            } else {
-                $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
-            }
-
-        }
-        $this->data['tab'] = 2;
-        $this->data['temp'] = 'admin/product/index';
-        $this->data['view'] = 'admin/product/add';
-        $this->load->view('admin/layout', $this->data);
-    }
-
-    function add_old()
-    {
-//        die('fuck');
-        $message = $this->session->flashdata('message');
-        $this->data['message'] = $message;
-        if ($this->input->post('btnAdd')) {
-            $config['upload_path'] = './public/images/ads';
-            $config['allowed_types'] = 'jpg|png|jpeg|JPEG|jfif|JFIF';
-            $config['max_size'] = '10000';
-            $this->load->library("upload", $config);
-//            var_dump($this->upload->do_upload('img_news'));
-
-//            die();
-            if ($this->upload->do_upload('img_news')) {
-                $file_data = $this->upload->data();
-                $data = array(
-                    'title' => $this->input->post('txtName'),
-                    'code' => generateRandomString(6),
-                    'view' => generateRandomString(2),
-                    'content' => $this->input->post('txtContent'),
-                    'area' => $this->input->post('area'),
-                    'phone' => $this->input->post('phone'),
-                    'intro' => $this->input->post('txtIntro'),
-                    'price' => $this->input->post('price'),
-//                    'unit' => $this->input->post('unit'),
-                    'acreage' => $this->input->post('acreage'),
-//                    'document_title' => $this->input->post('txtDocumentTitle'),
-//                    'meta_description' => $this->input->post('txtMetaDescription'),
-//                    'meta_keywords' => $this->input->post('txtMetaKeywords'),
-//                    'canonical_url' => $this->input->post('txtCanonicalUrl'),
-//                    'robots_meta' => implode(', ',$this->input->post('robots_meta')),
-                    'img' => $file_data['file_name'],
-                    'created_by' => $this->_uid,
-
-                );
-//                echo '<pre>',print_r($data,1),'</pre>';
-                if ($this->product_model->create($data)) {
-                    $this->session->set_flashdata('message', 'Thêm rao bán thành công');
-                    redirect(base_url('admin/ads'));
-                } else {
-//                    die('ảnh trống');
-                    $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
-                }
-            } else {
-                $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
-            }
-        }
-        $this->data['tab'] = 2;
-        $this->data['temp'] = 'admin/product/index';
-        $this->data['view'] = 'admin/product/add';
-        $this->load->view('admin/layout', $this->data);
-    }
-
     function edit()
     {
         $lstProvince = $this->_province;
@@ -611,7 +512,6 @@ Class Ads extends MY_Controller
         $this->data['view'] = 'admin/product_link/edit';
         $this->load->view('admin/layout', $this->data);
     }
-
 
     function del()
     {
@@ -982,6 +882,5 @@ Class Ads extends MY_Controller
 
         $this->load->view('admin/product/view_list_street', $this->data);
     }
-
 
 }
