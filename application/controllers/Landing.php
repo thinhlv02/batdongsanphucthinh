@@ -330,7 +330,7 @@ Class Landing extends MY_Controller
 
         $this->data['li_6'] = 1;
 //        $this->data['temp'] = $this->_template_f . 'ads/ads_detail';
-        $this->data['temp'] = $this->_template_f . 'ads/ads_detail_hp';
+        $this->data['temp'] = $this->_template_f . 'ads/product_detail_hp';
         $this->load->view($this->_template_f . 'layout/layout', $this->data);
     }
 

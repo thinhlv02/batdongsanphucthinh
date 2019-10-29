@@ -389,7 +389,7 @@ Class Home extends MY_Controller
         $header['image'] = public_url('images/ads/' . $ads->img);
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'ads/ads_detail_hp', $this->data);
+        $this->load->view($this->_template_f . 'ads/product_detail_hp', $this->data);
         $this->_loadFooter();
 
     }
@@ -528,7 +528,7 @@ Class Home extends MY_Controller
         $header['image'] = public_url('images/ads/' . $ads->img);
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'ads/ads_detail_hp', $this->data);
+        $this->load->view($this->_template_f . 'ads/product_detail_hp', $this->data);
         $this->_loadFooter();
 
     }
