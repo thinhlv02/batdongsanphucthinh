@@ -1,6 +1,8 @@
-<?php if (isset($message)){$this->load->view('admin/message',$this->data); }?>
+<?php if (isset($message)) {
+    $this->load->view('admin/message', $this->data);
+} ?>
 <div class="page-title">
-    <div class="title_left"><h3>Bình luận</h3></div>
+    <div class="title_left"><h3>hòm thư</h3></div>
 </div>
 
 
@@ -10,7 +12,8 @@
         <ul class="nav navbar-right panel_toolbox">
             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i
+                            class="fa fa-wrench"></i></a>
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="#">Settings 1</a>
                     </li>
@@ -28,25 +31,24 @@
             <tr>
                 <th>Mã số</th>
                 <th>Họ tên</th>
-<!--                <th>Số điện thoại</th>-->
+                <!--                <th>Số điện thoại</th>-->
                 <th>Nội dung</th>
                 <th>Ngày gửi</th>
                 <th>Hành động</th>
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($feedback as $row){ ?>
+            <?php foreach ($feedback as $row) { ?>
                 <tr>
-                    <td><?php echo $row->id?></td>
-                    <td><?php echo $row->name?></td>
-<!--                    <td>--><?php //echo $row->phone?><!--</td>-->
-                    <td><?php echo $row->message?></td>
-                    <td><?php echo substr($row->created, 0, 16) ?></td>
+                    <td><?php echo $row->id ?></td>
+                    <td><?php echo $row->name ?></td>
+                    <td><?php echo $row->message ?></td>
+                    <td><?php echo $row->created ?></td>
                     <td>
-                        <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
+                        <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
                     </td>
                 </tr>
-            <?php }?>
+            <?php } ?>
             </tbody>
         </table>
         <!-- <a href="#" class="btn btn-danger">Xóa đã chọn </a> -->
@@ -54,17 +56,18 @@
 </div>
 <script>
     function confirmDel(id) {
-        if(confirm('Bạn có chắc chắn muốn xóa bình luận này?')){
+        if (confirm('Bạn có chắc chắn muốn xóa bình luận này?')) {
             window.location.href = '<?php echo base_url('admin/feedback/del/')?>' + id;
         }
     }
 </script>
 
 <style type="text/css">
-    td{
+    td {
         vertical-align: middle !important;
     }
-    .action a{
+
+    .action a {
         font-size: 22px;
         display: block;
         cursor: pointer;
