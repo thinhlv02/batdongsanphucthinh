@@ -1,6 +1,6 @@
 <?php
 
-Class Ads extends MY_Controller
+Class Product extends MY_Controller
 {
     function __construct()
     {
@@ -255,7 +255,7 @@ Class Ads extends MY_Controller
 
             if ($this->product_model->create($data)) {
                 $this->session->set_flashdata('message', 'Thêm rao bán thành công');
-                redirect(base_url('admin/ads'));
+                redirect(base_url('admin/product'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
@@ -278,7 +278,7 @@ Class Ads extends MY_Controller
         $ads = $this->product_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
-            redirect(base_url('admin/ads'));
+            redirect(base_url('admin/product'));
         }
 
         //get list district if isset province on table ads
@@ -461,7 +461,7 @@ Class Ads extends MY_Controller
             if ($this->product_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật rao bán thành công');
 //                redirect(base_url('admin/product/edit/' . $id));
-                redirect(base_url('admin/ads/edit'));
+                redirect(base_url('admin/product/edit'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
@@ -487,7 +487,7 @@ Class Ads extends MY_Controller
         $ads = $this->product_link_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
-            redirect(base_url('admin/ads'));
+            redirect(base_url('admin/product'));
         }
 
         if ($this->input->post('btnEdit')) {
@@ -535,7 +535,7 @@ Class Ads extends MY_Controller
             }
             //delete image slide
         }
-        redirect(base_url('admin/ads'));
+        redirect(base_url('admin/product'));
     }
 
     function del_link()
@@ -559,7 +559,7 @@ Class Ads extends MY_Controller
         $ads = $this->product_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
-            redirect(base_url('admin/ads'));
+            redirect(base_url('admin/product'));
         }
 
         $input = array();
@@ -596,7 +596,7 @@ Class Ads extends MY_Controller
         $ads = $this->product_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
-            redirect(base_url('admin/ads'));
+            redirect(base_url('admin/product'));
         }
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
