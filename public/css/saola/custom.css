@@ -95,3 +95,9 @@ ul.pagination {
 /* end paging remarketing */
 
 /*End paging*/
+
+/*datepicker selected range*/
+.daterangepicker td.in-range {
+    background-color: #357ebd !important;
+}
+/*End datepicker selected range*/
