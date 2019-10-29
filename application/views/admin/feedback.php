@@ -27,9 +27,8 @@
             <thead>
             <tr>
                 <th>Mã số</th>
-                <th>Bài viết</th>
                 <th>Họ tên</th>
-                <th>Số điện thoại</th>
+<!--                <th>Số điện thoại</th>-->
                 <th>Nội dung</th>
                 <th>Ngày gửi</th>
                 <th>Hành động</th>
@@ -39,10 +38,9 @@
             <?php foreach ($feedback as $row){ ?>
                 <tr>
                     <td><?php echo $row->id?></td>
-                    <td><?php echo $this->introduce_model->get_info($row->product_id)->name ?></td>
                     <td><?php echo $row->name?></td>
-                    <td><?php echo $row->phone?></td>
-                    <td><?php echo $row->content?></td>
+<!--                    <td>--><?php //echo $row->phone?><!--</td>-->
+                    <td><?php echo $row->message?></td>
                     <td><?php echo substr($row->created, 0, 16) ?></td>
                     <td>
                         <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
