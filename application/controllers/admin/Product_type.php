@@ -1,6 +1,6 @@
 <?php
 
-Class Ads_type extends MY_Controller
+Class Product_type extends MY_Controller
 {
     function __construct()
     {
@@ -41,7 +41,7 @@ Class Ads_type extends MY_Controller
             );
             if ($this->product_type_model->create($data_submit)) {
                 $this->session->set_flashdata('message', 'Thêm thành công!');
-                redirect(base_url('admin/ads_type'));
+                redirect(base_url('admin/product_type'));
             } else {
                 $this->session->set_flashdata('message', 'Có lỗi xảy ra, vui lòng thử lại!');
                 redirect(base_url('admin/product_type/add'));
@@ -101,7 +101,7 @@ Class Ads_type extends MY_Controller
         if ($question->level == 1) {
             redirect(admin_url('ads_type'));
         } else {
-            redirect(admin_url('ads_type/edit/' . $question->parent_id));
+            redirect(admin_url('product_type/edit/' . $question->parent_id));
         }
 
     }

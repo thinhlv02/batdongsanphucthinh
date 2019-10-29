@@ -32,7 +32,7 @@
     function confirmDelQuestion(id) {
         var c = confirm("Xác nhận xoá type ads ???");
         if(c){
-            window.location.href = "<?php echo admin_url('ads_type/del/')?>" + id;
+            window.location.href = "<?php echo admin_url('product_type/del/')?>" + id;
         }
     }
 </script>

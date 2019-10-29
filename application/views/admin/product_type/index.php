@@ -9,10 +9,10 @@
         <div>
             <ul id="myTab" class="nav nav-tabs bar_tabs">
                 <li class="<?php echo $tab == 1 ? 'active' : ''?>">
-                    <a href="<?php echo admin_url('ads_type')?>" id="home-tab">Danh sách ads type</a>
+                    <a href="<?php echo admin_url('product_type')?>" id="home-tab">Danh sách ads type</a>
                 </li>
                 <li class="<?php echo $tab == 2 ? 'active' : ''?>">
-                    <a href="<?php echo admin_url('ads_type/add')?>" id="profile-tab2">Thêm mới</a>
+                    <a href="<?php echo admin_url('product_type/add')?>" id="profile-tab2">Thêm mới</a>
                 </li>
                 <?php if($tab == 3){ ?>
                     <li class="active">

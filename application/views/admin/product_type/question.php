@@ -39,7 +39,7 @@
             console.log($(this).val());
             var type = $(this).val();
             $.ajax({
-                url: "<?php echo admin_url('ads_type/get_list_by_type')?>",
+                url: "<?php echo admin_url('product_type/get_list_by_type')?>",
                 type: 'post',
                 data: {
                     type: type
