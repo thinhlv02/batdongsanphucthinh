@@ -19,6 +19,7 @@ Class Home extends MY_Controller
         $this->load->model('Ward_model');
         $this->load->model('user_model');
         $this->load->model('broker_model');
+        $this->load->model('feedback_model');
         //language load
     }
 
@@ -907,5 +908,33 @@ Class Home extends MY_Controller
         $this->_loadFooter();
 
     }
+
+
+    public function feedback()
+    {
+        $name = $this->input->post('name');
+        $email = $this->input->post('email');
+        $message = $this->input->post('message');
+        if ($name && $email && $message) {
+            $now = new DateTime();
+            $feedback = array(
+                'name' => $name,
+                'email' => $email,
+                'message' => $message,
+                'created' => $now->getTimestamp()
+            );
+
+            $check = $this->feedback_model->create($feedback);
+
+            if ($check == 0) {
+                echo true;
+            } else {
+                echo false;
+            }
+        } else {
+            echo false;
+        }
+    }
+
 
 }
