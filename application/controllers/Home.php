@@ -382,7 +382,7 @@ Class Home extends MY_Controller
 //        $this->data['canonical'] = $ads->canonical_url;
 //        $this->data['keywords'] = $ads->meta_keywords;
 
-//        $this->data['temp'] = $this->_template_f . 'ads/ads_detail';
+//        $this->data['temp'] = $this->_template_f . 'ads/product_detail';
         // load header
         $header = array();
         $header['title'] = $ads->title;
@@ -521,7 +521,7 @@ Class Home extends MY_Controller
 //        $this->data['canonical'] = $ads->canonical_url;
 //        $this->data['keywords'] = $ads->meta_keywords;
 
-//        $this->data['temp'] = $this->_template_f . 'ads/ads_detail';
+//        $this->data['temp'] = $this->_template_f . 'ads/product_detail';
         // load header
         $header = array();
         $header['title'] = $ads->title;
