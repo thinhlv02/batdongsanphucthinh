@@ -318,7 +318,7 @@ Class Home extends MY_Controller
 
     }
 
-    function ads()
+    function product()
     {
         $per_page = 10;
         $offset = $this->uri->segment(2);
@@ -354,7 +354,7 @@ Class Home extends MY_Controller
 
     }
 
-    function ads_detail($slug, $id)
+    function product_detail($slug, $id)
     {
         $ads = $this->product_model->get_info($id);
         if (!$ads || create_slug($ads->title) != $slug) {
@@ -394,7 +394,7 @@ Class Home extends MY_Controller
 
     }
 
-    function ads_detail_link($slug, $id)
+    function product_detail_link($slug, $id)
     {
         $ads = $this->product_model->get_info($id);
         if (!$ads || create_slug($ads->title) != $slug) {
@@ -434,21 +434,6 @@ Class Home extends MY_Controller
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'ads/product_detail_link', $this->data);
-        $this->_loadFooter();
-
-    }
-
-    function product()
-    {
-        $product = $this->introduce_model->get_list();
-        $this->data['li_product'] = 1;
-        $this->data['product'] = $product;
-
-        // load header
-        $header = array();
-        $this->_loadHeader($header);
-
-        $this->load->view($this->_template_f . 'product/product', $this->data);
         $this->_loadFooter();
 
     }
