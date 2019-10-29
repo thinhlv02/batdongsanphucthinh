@@ -33,7 +33,7 @@ Class Ads extends MY_Controller
         // validate fromdate and todate
         if ($todate === -1 OR $todate === FALSE OR $fromdate === -1 OR $fromdate === false OR $fromdate > $todate) {
             $todate = strtotime(date('Y/m/d'));
-            $fromdate = strtotime('-7 day', $todate);
+            $fromdate = strtotime('-30 day', $todate);
         }
         $this->data['todate'] = date('d/m/Y', $todate);
         $this->data['fromdate'] = date('d/m/Y', $fromdate);
