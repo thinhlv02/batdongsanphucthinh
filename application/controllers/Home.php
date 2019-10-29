@@ -823,7 +823,7 @@ Class Home extends MY_Controller
         $header['title'] = 'Nhà đất cần bán';
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'ads_type/index_view', $this->data);
+        $this->load->view($this->_template_f . 'product_type/index_view', $this->data);
         $this->_loadFooter();
 
     }
@@ -855,7 +855,7 @@ Class Home extends MY_Controller
         $header['title'] = 'Nhà đất cho thuê';
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'ads_type/index_view', $this->data);
+        $this->load->view($this->_template_f . 'product_type/index_view', $this->data);
         $this->_loadFooter();
 
     }
@@ -887,7 +887,7 @@ Class Home extends MY_Controller
         $header['title'] = 'Nhà đất cần mua';
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'ads_type/index_view', $this->data);
+        $this->load->view($this->_template_f . 'product_type/index_view', $this->data);
         $this->_loadFooter();
     }
 
@@ -918,7 +918,7 @@ Class Home extends MY_Controller
         $header['title'] = 'Nhà đất cần thuê';
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'ads_type/index_view', $this->data);
+        $this->load->view($this->_template_f . 'product_type/index_view', $this->data);
         $this->_loadFooter();
 
     }
