@@ -205,7 +205,7 @@
         // var groupid = $('#slcGroup').val().trim();
         // var kw = $("#keyword").val();
         // var searchby = $("#searchby").val();
-        window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by=' + created_by + '&fromdate=' + fromdate + '&todate=' + todate + '&province='+province;
+        window.location = "<?php echo admin_url("product") ?>?ads_type=" + ads_type + '&created_by=' + created_by + '&fromdate=' + fromdate + '&todate=' + todate + '&province='+province;
     }
 
     function confirmDel(id) {
