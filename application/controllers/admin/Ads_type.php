@@ -15,8 +15,8 @@ Class Ads_type extends MY_Controller
         $this->data['tab'] = 1;
         $this->data['ads_type'] = $this->_ads_type;
         $this->data['questions'] = $questions;
-        $this->data['temp'] = 'admin/ads_type/index';
-        $this->data['view'] = 'admin/ads_type/question';
+        $this->data['temp'] = 'admin/product_type/index';
+        $this->data['view'] = 'admin/product_type/question';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -25,7 +25,7 @@ Class Ads_type extends MY_Controller
         $type = intval($_POST['type']);
         $questions = $this->product_type_model->get_list(array('where' => array('type' => $type)));
         $this->data['questions'] = $questions;
-        $this->load->view('admin/ads_type/table_question', $this->data);
+        $this->load->view('admin/product_type/table_question', $this->data);
     }
 
     function add()
@@ -44,12 +44,12 @@ Class Ads_type extends MY_Controller
                 redirect(base_url('admin/ads_type'));
             } else {
                 $this->session->set_flashdata('message', 'Có lỗi xảy ra, vui lòng thử lại!');
-                redirect(base_url('admin/ads_type/add'));
+                redirect(base_url('admin/product_type/add'));
             }
         }
         $this->data['ads_type'] = $this->_ads_type;
-        $this->data['temp'] = 'admin/ads_type/index';
-        $this->data['view'] = 'admin/ads_type/add';
+        $this->data['temp'] = 'admin/product_type/index';
+        $this->data['view'] = 'admin/product_type/add';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -65,7 +65,7 @@ Class Ads_type extends MY_Controller
 
         $questions = $this->product_type_model->get_list(array('where' => array('id' => $question->id)));
         $this->data['questions'] = $questions;
-        $this->data['view'] = 'admin/ads_type/edit_level_1';
+        $this->data['view'] = 'admin/product_type/edit_level_1';
 
 
         if ($this->input->post('btnEditLevel1')) {
@@ -75,16 +75,16 @@ Class Ads_type extends MY_Controller
             );
             if ($this->product_type_model->update($id, $data_submit)) {
                 $this->session->set_flashdata('message', 'Cập nhật thành công!');
-                redirect(base_url('admin/ads_type/edit/' . $id));
+                redirect(base_url('admin/product_type/edit/' . $id));
             } else {
                 $this->session->set_flashdata('message', 'Có lỗi xảy ra, vui lòng thử lại!');
-                redirect(base_url('admin/ads_type/edit/' . $id));
+                redirect(base_url('admin/product_type/edit/' . $id));
             }
         }
 
         $this->data['tab'] = 3;
         $this->data['question'] = $question;
-        $this->data['temp'] = 'admin/ads_type/index';
+        $this->data['temp'] = 'admin/product_type/index';
         $this->load->view('admin/layout', $this->data);
     }
 

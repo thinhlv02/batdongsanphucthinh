@@ -16,7 +16,7 @@
             <td><?php echo $row->name?></td>
             <td><?php echo $row->routes?></td>
             <td>
-                <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/ads_type/edit/'.$row->id)?>">Sửa</a>
+                <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/product_type/edit/'.$row->id)?>">Sửa</a>
                 <a class="btn btn-xs btn-danger" onclick="confirmDelQuestion(<?php echo $row->id?>)">Xóa</a>
             </td>
         </tr>

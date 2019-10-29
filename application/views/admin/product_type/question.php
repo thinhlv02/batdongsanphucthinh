@@ -27,7 +27,7 @@
     </div>
     <div class="x_content">
         <div class="table-reponsive" id="table-question">
-            <?php $this->load->view('admin/ads_type/table_question')?>
+            <?php $this->load->view('admin/product_type/table_question')?>
         </div>
         <!-- <a href="#" class="btn btn-danger">Xóa đã chọn </a> -->
     </div>
