@@ -194,7 +194,6 @@
         var province = $("#province").val();
 
         var arrTime = dateRange.split("-");
-        // var arrTime = formated.toString().split(',');
         var fromdate = arrTime[0];
         var todate = arrTime[1];
         fromdate = fromdate.split('/');
@@ -203,10 +202,6 @@
         todate = todate.split('/');
         todate = todate[0] + '-' + todate[1] + '-' + todate[2];
         todate = todate.replace(/\s+/g, '');
-        // var result = $(dateRange).split('-');
-        // alert( result[0] );
-        // console.log('dateRange');
-        // console.log(dateRange);
         // var groupid = $('#slcGroup').val().trim();
         // var kw = $("#keyword").val();
         // var searchby = $("#searchby").val();
