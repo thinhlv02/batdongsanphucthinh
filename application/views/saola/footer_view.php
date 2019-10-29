@@ -1,5 +1,3 @@
-
-
 <?php $this->load->view($this->_template_f . 'menu_footer') ?>
 
 <section class="footer">
@@ -68,11 +66,17 @@
                         <div class="col-md-2  col-sm-12 col-xs-12 mt-2">
                             <div class="footer-title"><strong>LIÊN KẾT</strong></div>
                             <ul>
-                                <li><a href="<?php echo base_url('gioi-thieu') ?>"><i class="mdi mdi-information-outline text-danger"></i> Giới thiệu</a></li>
-                                <li><a href="<?php echo base_url('ho-tro') ?>"><i class="mdi mdi-key-outline text-danger"></i>  Hỗ trợ</a></li>
-                                <li><a href="<?php echo base_url('dieu-khoan-su-dung') ?>"><i class="mdi mdi-settings-outline text-danger"></i> Chính sách và điều khoản</a></li>
-                                <li><a href="<?php echo base_url('bang-gia') ?>"><i class="mdi mdi-cash-usd text-danger"></i> Bảng giá</a></li>
-                                <li><a href="<?php echo base_url('lien-he') ?>"><i class="mdi mdi-contacts text-danger"></i> Liên hệ</a></li>
+                                <li><a href="<?php echo base_url('gioi-thieu') ?>"><i
+                                                class="mdi mdi-information-outline text-danger"></i> Giới thiệu</a></li>
+                                <li><a href="<?php echo base_url('ho-tro') ?>"><i
+                                                class="mdi mdi-key-outline text-danger"></i> Hỗ trợ</a></li>
+                                <li><a href="<?php echo base_url('dieu-khoan-su-dung') ?>"><i
+                                                class="mdi mdi-settings-outline text-danger"></i> Chính sách và điều
+                                        khoản</a></li>
+                                <li><a href="<?php echo base_url('bang-gia') ?>"><i
+                                                class="mdi mdi-cash-usd text-danger"></i> Bảng giá</a></li>
+                                <li><a href="<?php echo base_url('lien-he') ?>"><i
+                                                class="mdi mdi-contacts text-danger"></i> Liên hệ</a></li>
                             </ul>
                         </div>
 
@@ -84,7 +88,8 @@
                             <!--                            </a>-->
 
                             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbatdongsanphucthinhvn-1535407536595838%2F%3Fmodal%3Dadmin_todo_tour&tabs&width=340&height=214&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=166934463979079"
-                                    width="340" height="214" style="border:none;overflow:hidden;width: 100%;" scrolling="no"
+                                    width="340" height="214" style="border:none;overflow:hidden;width: 100%;"
+                                    scrolling="no"
                                     frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
                         </div>
@@ -101,23 +106,24 @@
                                 <strong style="font-size: 1.2em;">Đại lý</strong>
                             </div>
                             <div class="footer-bottom-end-row12" style="padding: 10px 0 10px;">
-                                <img src="<?php echo public_url('images/line-footer12.png') ?>" alt="" noloaderror="true">
+                                <img src="<?php echo public_url('images/line-footer12.png') ?>" alt=""
+                                     noloaderror="true">
                             </div>
                         </div>
 
                         <?php foreach ($agencies as $key => $value) { ?>
-                        <div class="col-md-4 col-sm-12 col-xs-12 mt-2">
-                            <div class="footer-title">
-                                <strong><a href="<?php echo base_url('dai-ly#' . create_slug($value->name)) ?>"><?php echo $value->name ?></a></strong>
+                            <div class="col-md-4 col-sm-12 col-xs-12 mt-2">
+                                <div class="footer-title">
+                                    <strong><a href="<?php echo base_url('dai-ly#' . create_slug($value->name)) ?>"><?php echo $value->name ?></a></strong>
+                                </div>
+                                <div>
+                                    <i class="mdi mdi-map-marker-circle text-danger"></i>
+                                    <span><?php echo $value->address ?></span>
+                                </div>
+                                <div style="margin-top: 10px">
+                                    <span><i class="mdi mdi-phone text-danger"></i> <?php echo $value->phone ?></span>
+                                </div>
                             </div>
-                            <div>
-                                <i class="mdi mdi-map-marker-circle text-danger"></i>
-                                <span><?php echo $value->address ?></span>
-                            </div>
-                            <div style="margin-top: 10px">
-                                <span><i class="mdi mdi-phone text-danger"></i> <?php echo $value->phone ?></span>
-                            </div>
-                        </div>
                         <?php } ?>
                     </div>
                 </div>
@@ -219,7 +225,7 @@
 
     //add class span to menu-active when clicked
     $(document).ready(function () {
-        $('.menu-active').each(function() {
+        $('.menu-active').each(function () {
             $(this).prepend('<span class="menu-active-span"></span>');
         });
     });
@@ -230,22 +236,22 @@
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5d0f3b4453d10a56bd7b6c63/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5d0f3b4453d10a56bd7b6c63/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
     })();
 
-    $( document ).ready(function() {
+    $(document).ready(function () {
         var _widthWindow = $(window).width();
         var _widthContainer = $('.container').width() + 30;
 
-        var _end = (_widthWindow - _widthContainer - 320) ;
-        var _end = _end /2 + 'px' ;
+        var _end = (_widthWindow - _widthContainer - 320);
+        var _end = _end / 2 + 'px';
 
         $("#ban_wide_left").css({
             'left': _end,
