@@ -57,8 +57,7 @@
                                 <li><a href="<?php echo admin_url('broker') ?>">Chuyên viên tư vấn</a></li>
                                 <li><a href="<?php echo admin_url('banner') ?>">Quản lý banner web</a></li>
                                 <li><a href="<?php echo admin_url('product_type') ?>">Quản lý loại nhà đất</a></li>
-                                <li><a href="<?php echo admin_url('feedback') ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                        Hòm thư</a></li>
+                                <li><a href="<?php echo admin_url('feedback') ?>">Hòm thư</a></li>
                             </ul>
                         </li>
                     <?php } ?>

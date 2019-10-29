@@ -916,17 +916,17 @@ Class Home extends MY_Controller
         $email = $this->input->post('email');
         $message = $this->input->post('message');
         if ($name && $email && $message) {
-            $now = new DateTime();
+
             $feedback = array(
                 'name' => $name,
                 'email' => $email,
                 'message' => $message,
-                'created' => $now->getTimestamp()
+                'created' => date('Y-m-d H:i:s')
             );
 
             $check = $this->feedback_model->create($feedback);
 
-            if ($check == 0) {
+            if ($check) {
                 echo true;
             } else {
                 echo false;
