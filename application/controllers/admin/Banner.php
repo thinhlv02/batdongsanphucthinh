@@ -8,11 +8,11 @@ Class Banner extends MY_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('ads_model');
+        $this->load->model('product_model');
         $this->load->model('banner_model');
         $this->load->model('banner_size_model');
         $this->_lstBannerSize = $this->banner_size_model->get_list();
-        $this->_lstAds = $this->ads_model->get_list();
+        $this->_lstAds = $this->product_model->get_list();
     }
 
     function index()
@@ -31,7 +31,7 @@ Class Banner extends MY_Controller
         $devices_end = [];
         $index = 0;
         foreach ($devices as $key => $val) {
-            $ads_info = $this->ads_model->get_info($val->id_ads);
+            $ads_info = $this->product_model->get_info($val->id_ads);
             $bsize_info = $this->banner_size_model->get_info($val->bsizeid);
             $index++;
             $devices_end[$index] = new stdClass();
