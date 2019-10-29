@@ -39,7 +39,7 @@
             <?php foreach ($feedback as $row){ ?>
                 <tr>
                     <td><?php echo $row->id?></td>
-                    <td><?php echo $this->product_model->get_info($row->product_id)->name ?></td>
+                    <td><?php echo $this->introduce_model->get_info($row->product_id)->name ?></td>
                     <td><?php echo $row->name?></td>
                     <td><?php echo $row->phone?></td>
                     <td><?php echo $row->content?></td>
