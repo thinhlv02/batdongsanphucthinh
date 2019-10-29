@@ -7,10 +7,10 @@
         <div>
             <ul id="myTab" class="nav nav-tabs bar_tabs">
                 <li class="<?php echo $tab == 1 ? 'active' : '' ?>">
-                    <a href="<?php echo admin_url('ads/product_link/'.$id) ?>" id="home-tab">Danh sách</a>
+                    <a href="<?php echo admin_url('product/product_link/'.$id) ?>" id="home-tab">Danh sách</a>
                 </li>
                 <li class="<?php echo $tab == 2 ? 'active' : '' ?>">
-                    <a href="<?php echo admin_url('ads/add_link/'.$id) ?>" id="profile-tab2">Thêm mới</a>
+                    <a href="<?php echo admin_url('product/add_link/'.$id) ?>" id="profile-tab2">Thêm mới</a>
                 </li>
             </ul>
         </div>

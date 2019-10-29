@@ -272,7 +272,7 @@
                 }
             };//
 
-            getAjax('<?php echo admin_url('ads/ajax_get_list_district'); ?>', params, '', 'GET', '', false, _onSuccess);
+            getAjax('<?php echo admin_url('product/ajax_get_list_district'); ?>', params, '', 'GET', '', false, _onSuccess);
         }
     }
 
@@ -298,7 +298,7 @@
                 }
             };
 
-            getAjax('<?php echo admin_url('ads/ajax_get_list_ward'); ?>', params, '', 'GET', '', false, _onSuccess);
+            getAjax('<?php echo admin_url('product/ajax_get_list_ward'); ?>', params, '', 'GET', '', false, _onSuccess);
         }
     }
 
@@ -326,7 +326,7 @@
                 }
             };
 
-            getAjax('<?php echo admin_url('ads/ajax_get_list_street'); ?>', params, '', 'GET', '', false, _onSuccess);
+            getAjax('<?php echo admin_url('product/ajax_get_list_street'); ?>', params, '', 'GET', '', false, _onSuccess);
         }
     }
 
