@@ -14,25 +14,28 @@
             <li><a href="<?php echo base_url('ho-tro/'.create_slug(getTextType($type)))?>"><?php echo getTextType($type)?></a></li>
             <li class="active"><?php echo $question->name?></li>
         </ol>
-        <div class="col-sm-4 col-md-3">
-            <div class="left-menu">
-                <div class="left-title">Hỗ trợ</div>
-                <ul>
-                    <?php foreach ($categories as $p){ ?>
-                        <li class="<?php if ($p->id == $active) echo 'active'; ?>" style="margin: 15px 0">
-                            <a href="<?php echo base_url('ho-tro/'.create_slug($p->name).'-'.$p->id)?>">
-                                <?php echo $p->name?>
-                            </a>
-                        </li>
-                    <?php }?>
-                </ul>
+
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <div class="left-menu">
+                    <div class="left-title">Hỗ trợ</div>
+                    <ul>
+                        <?php foreach ($categories as $p){ ?>
+                            <li class="<?php if ($p->id == $active) echo 'active'; ?>" style="margin: 15px 0">
+                                <a href="<?php echo base_url('ho-tro/'.create_slug($p->name).'-'.$p->id)?>">
+                                    <?php echo $p->name?>
+                                </a>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="col-md-9 col-sm-8 detail-content">
+            <div class="col-md-9 col-sm-8 detail-content">
             <div class="line-height-2 pl-5">
                 <h2><?php echo $question->name?></h2>
                 <p><?php echo $question->content?></p>
             </div>
+        </div>
         </div>
     </div>
 </section>
