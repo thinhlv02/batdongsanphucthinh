@@ -186,17 +186,6 @@
     //     });
     // });
 
-    $(function () {
-        $('input[name="daterange"]').daterangepicker({
-            // opens: 'left'
-            locale: {
-                format: 'DD/MM/YYYY'
-            }
-        }, function (start, end, label) {
-            console.log("A new date selection was made: " + start.format('DD-MM-YYYY') + ' to ' + end.format('DD-MM-YYYY'));
-        });
-    });
-
     function loadpage(page) {
 
         var ads_type = $("#ads_type").val();

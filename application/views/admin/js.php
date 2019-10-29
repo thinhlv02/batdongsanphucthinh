@@ -62,6 +62,16 @@
             console.log(start.toISOString(), end.toISOString(), label);
         });
 
+        //Simple Date Range Picker With a Callback
+        $('#daterange').daterangepicker({
+            opens: 'center',
+            locale: {
+                format: 'DD/MM/YYYY'
+            }
+        }, function (start, end, label) {
+            console.log("A new date selection was made: " + start.format('DD-MM-YYYY') + ' to ' + end.format('DD-MM-YYYY'));
+        });
+
         $("#uploadImg").change(function () {
             readURL(this);
         });
