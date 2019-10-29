@@ -1,5 +1,6 @@
 <section class="detail">
     <div class="container">
+        <div class="row">
         <div class="col-md-3 col-sm-4">
             <div class="left-menu">
                 <div class="left-title">Chính sách và điều khoản</div>
@@ -50,6 +51,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>
