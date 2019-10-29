@@ -16,6 +16,7 @@ Class Ads extends MY_Controller
 
     function index()
     {
+        $this->data['lstProvince'] = $this->_province;
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
@@ -28,6 +29,7 @@ Class Ads extends MY_Controller
 
         $todate = strtotime(trim($this->input->get('todate')));
         $fromdate = strtotime(trim($this->input->get('fromdate')));
+        $province = trim($this->input->get('province'));
         // validate fromdate and todate
         if ($todate === -1 OR $todate === FALSE OR $fromdate === -1 OR $fromdate === false OR $fromdate > $todate) {
             $todate = strtotime(date('Y/m/d'));
@@ -52,6 +54,11 @@ Class Ads extends MY_Controller
             if ($created_by != '') {
                 $input['where'] += array('created_by' => $created_by);
             }
+        }
+        //province
+//        var_dump($province);
+        if ($province != 0) {
+            $input['where'] += array('province_id' => $province);
         }
 
         $input['order'] = array('id', 'desc');

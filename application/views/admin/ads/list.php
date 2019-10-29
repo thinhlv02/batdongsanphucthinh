@@ -44,6 +44,17 @@
                 <input type="text" id="daterange" name="daterange" value="<?php echo $fromdate; ?> - <?php echo $todate; ?>" class="form-control col-md-7 col-xs-12"/>
             </div>
 
+            <div class="col-md-2 col-sm-2 col-xs-12">
+                <select class="select2_group form-control" id="province" name="province">
+                    <option value="0">-- Chọn Tỉnh/TP --</option>
+                    <?php foreach ($lstProvince as $key => $value) { ?>
+                        <option value="<?= $value->id ?>" <?php if (isset($_GET['province']) && $_GET['province'] == $value->id) echo 'selected' ?>>
+                            <?php echo $value->_name ?>
+                        </option>
+                    <?php } ?>
+                </select>
+            </div>
+
             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
                 <div class="form-group">
                     <button type="button" onclick="loadpage(1);" class="btn btn-info">Tìm</button>
@@ -191,6 +202,7 @@
         var ads_type = $("#ads_type").val();
         var created_by = $("#created_by").val();
         var dateRange = $("#daterange").val();
+        var province = $("#province").val();
 
         var arrTime = dateRange.split("-");
         // var arrTime = formated.toString().split(',');
@@ -209,7 +221,7 @@
         // var groupid = $('#slcGroup').val().trim();
         // var kw = $("#keyword").val();
         // var searchby = $("#searchby").val();
-        window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by=' + created_by + '&fromdate=' + fromdate + '&todate=' + todate;
+        window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by=' + created_by + '&fromdate=' + fromdate + '&todate=' + todate + '&province='+province;
     }
 
     function confirmDel(id) {
