@@ -255,7 +255,7 @@ Class Ads extends MY_Controller
 
             if ($this->ads_model->create($data)) {
                 $this->session->set_flashdata('message', 'Thêm rao bán thành công');
-                redirect(base_url('admin/product'));
+                redirect(base_url('admin/ads'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
@@ -278,7 +278,7 @@ Class Ads extends MY_Controller
         $ads = $this->ads_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
-            redirect(base_url('admin/product'));
+            redirect(base_url('admin/ads'));
         }
 
         //get list district if isset province on table ads
@@ -487,7 +487,7 @@ Class Ads extends MY_Controller
         $ads = $this->ads_link_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
-            redirect(base_url('admin/product'));
+            redirect(base_url('admin/ads'));
         }
 
         if ($this->input->post('btnEdit')) {
@@ -535,7 +535,7 @@ Class Ads extends MY_Controller
             }
             //delete image slide
         }
-        redirect(base_url('admin/product'));
+        redirect(base_url('admin/ads'));
     }
 
     function del_link()
@@ -559,7 +559,7 @@ Class Ads extends MY_Controller
         $ads = $this->ads_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
-            redirect(base_url('admin/product'));
+            redirect(base_url('admin/ads'));
         }
 
         $input = array();
@@ -596,7 +596,7 @@ Class Ads extends MY_Controller
         $ads = $this->ads_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
-            redirect(base_url('admin/product'));
+            redirect(base_url('admin/ads'));
         }
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
