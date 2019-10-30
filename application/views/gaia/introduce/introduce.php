@@ -6,7 +6,7 @@
                 <ul>
                     <?php foreach ($products as $k => $p) { ?>
                         <li class="<?php if ($p->id == $active || ($k == 0 && $active == 0)) echo 'active'; ?>">
-                            <a href="<?php echo base_url('gioi-thieu/' . create_slug($p->name) . '-' . $p->id . '.html#' . $p->id) ?>">
+                            <a href="<?php echo base_url('gioi-thieu-dich-vu/' . create_slug($p->name) . '-' . $p->id . '.html#' . $p->id) ?>">
                                 <?php echo $p->name ?>
                             </a>
                         </li>

@@ -13,7 +13,7 @@
             <p class="caption-banner animated slideInLeft d-none">Đơn giản hoá việc bán hàng<br>vì chúng tôi luôn bên bạn
 <!--            <p class="caption-banner animated slideInLeft">Đơn giản hoá việc bán hàng , vì chúng tôi luôn bên bạn-->
             </p>
-            <!--        <a href="--><?php //echo base_url('gioi-thieu.html')?><!--"-->
+            <!--        <a href="--><?php //echo base_url('gioi-thieu-dich-vu.html')?><!--"-->
             <!--           class="btn btn-primary animated bounceIn delay-1s" style="margin: 2px 0px;padding: 3px;" >TÌM HIỂU THÊM</a>-->
         </div>
     </div>
