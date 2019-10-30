@@ -7,7 +7,7 @@ Class Home extends MY_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('introduce_model');
+        $this->load->model('product_model');
         $this->load->model('price_model');
         $this->load->model('questions_model');
         $this->load->model('contact_model');
@@ -102,13 +102,13 @@ Class Home extends MY_Controller
         $this->load->language('introduce/introduce', $this->_langcode);
         $this->data['introduce_lang'] = $this->lang->line('introduce_lang');
         if (strlen($slug) > 0 && $id > 0) {
-            $product = $this->introduce_model->get_info($id);
+            $product = $this->product_model->get_info($id);
             if (!$product || create_slug($product->name) != $slug) {
                 redirect(base_url('gioi-thieu-dich-vu.html'));
             }
             $this->data['product'] = $product;
         } else {
-            $product = $this->introduce_model->get_list(array('order' => array('id', 'asc'), 'limit' => array(1, 0)));
+            $product = $this->product_model->get_list(array('order' => array('id', 'asc'), 'limit' => array(1, 0)));
             if (sizeof($product)) {
                 $this->data['product'] = $product[0];
             }

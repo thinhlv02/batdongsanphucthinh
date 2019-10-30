@@ -5,12 +5,12 @@ Class Introduce extends MY_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('introduce_model');
+        $this->load->model('product_model');
     }
 
     function index()
     {
-        $product = $this->introduce_model->get_list();
+        $product = $this->product_model->get_list();
         $this->data['tab'] = 1;
         $this->data['product'] = $product;
         $this->data['temp'] = 'admin/introduce/index';
@@ -35,7 +35,7 @@ Class Introduce extends MY_Controller
                     'intro' => $this->input->post('txtIntro'),
                     'img' => $file_data['file_name']
                 );
-                if ($this->introduce_model->create($data_submit)) {
+                if ($this->product_model->create($data_submit)) {
                     $this->session->set_flashdata('message', 'Đăng bài thành công!');
                     redirect(base_url('admin/introduce/add'));
                 } else {
@@ -56,7 +56,7 @@ Class Introduce extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
-        $product = $this->introduce_model->get_info($id);
+        $product = $this->product_model->get_info($id);
         if (!$product) {
             echo 'Đường dẫn không đúng!';
             return;
@@ -77,7 +77,7 @@ Class Introduce extends MY_Controller
             } else {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
-            if ($this->introduce_model->update($id, $data_submit)) {
+            if ($this->product_model->update($id, $data_submit)) {
                 $this->session->set_flashdata('message', 'Cập nhật thành công!');
                 redirect(base_url('admin/introduce/edit/' . $id));
             } else {
@@ -95,8 +95,8 @@ Class Introduce extends MY_Controller
     function del()
     {
         $id = $this->uri->segment(4);
-        if ($this->introduce_model->get_info($id)) {
-            $this->introduce_model->delete($id);
+        if ($this->product_model->get_info($id)) {
+            $this->product_model->delete($id);
             redirect(base_url('admin/introduce'));
         } else {
             redirect(base_url('admin/introduce'));
