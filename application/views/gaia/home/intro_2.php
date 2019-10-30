@@ -9,7 +9,7 @@
             <div class="row">
                 <?php foreach ($products as $product){ ?>
                     <div>
-                        <a href="<?php echo base_url('gioi-thieu-dich-vu/'.create_slug($product->name).'-'.$product->id.'.html')?>">
+                        <a href="<?php echo base_url('gioi-thieu/'.create_slug($product->name).'-'.$product->id.'.html')?>">
                             <div class="col-xs-12 col-sm-6 col-md-4">
                                 <div class="item-product">
                                     <div class="img-product">

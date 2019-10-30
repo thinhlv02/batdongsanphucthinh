@@ -61,8 +61,8 @@ $route['en/(:any)'] = 'home/language';
 $route['en/(:any)/(:any)'] = 'home/language';
 //$route['dang-ky-vay-von.html'] = 'home/dang_ky_vay';
 
-$route['gioi-thieu-dich-vu(.html)?'] = 'home/service_info';
-$route['gioi-thieu-dich-vu/(:any)-(:num)(.html)?'] = 'home/service_info/$1/$2';
+$route['gioi-thieu(.html)?'] = 'home/service_info';
+$route['gioi-thieu/(:any)-(:num)(.html)?'] = 'home/service_info/$1/$2';
 
 $route['can-ban(.html)?'] = 'home/land_canban';
 $route['can-ban/(:num)'] = 'home/land_canban/$1';

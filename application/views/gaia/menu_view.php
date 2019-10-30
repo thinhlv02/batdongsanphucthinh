@@ -15,7 +15,7 @@
 
     <ul class="ul-large">
         <li class="<?php echo !empty($li_1) ? 'menu-active' : ''?>" title="<?php echo $common_lang['home']; ?>"><a href="<?php echo base_url()?>"><i class="fa fa-home"></i> <?php echo $common_lang['home']; ?></a></li>
-        <li class="<?php echo !empty($li_2) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_intro']; ?>"><a href="<?php echo base_url('gioi-thieu-dich-vu')?>"> <?php echo $common_lang['lmenu_intro']; ?></a></li>
+        <li class="<?php echo !empty($li_2) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_intro']; ?>"><a href="<?php echo base_url('gioi-thieu')?>"> <?php echo $common_lang['lmenu_intro']; ?></a></li>
         <li class="<?php echo !empty($li_7) ? 'menu-active' : ''?>" title="<?php echo $common_lang['lmenu_price']; ?>"><a href="<?php echo base_url('bang-gia')?>"> <?php echo $common_lang['lmenu_price']; ?></a></li>
 <!--        <li class="--><?php //echo !empty($li_3) ? 'menu-active' : ''?><!--" title="--><?php //echo $common_lang['lmenu_support']; ?><!--"><a href="--><?php //echo base_url('ho-tro')?><!--"> --><?php //echo $common_lang['lmenu_support']; ?><!--</a></li>-->
 <!--        <li class="--><?php //echo !empty($li_6) ? 'menu-active' : ''?><!--" title="--><?php //echo $common_lang['lmenu_news']; ?><!--"><a href="--><?php //echo base_url('tin-tuc')?><!--"> --><?php //echo $common_lang['lmenu_news']; ?><!--</a></li>-->
@@ -64,7 +64,7 @@
             <span></span>
             <ul id="menu">
                 <a href="<?php echo base_url()?>"><li><?php echo $common_lang['home']; ?></li></a>
-                <a href="<?php echo base_url('gioi-thieu-dich-vu')?>"><li><?php echo $common_lang['lmenu_intro']; ?></li></a>
+                <a href="<?php echo base_url('gioi-thieu')?>"><li><?php echo $common_lang['lmenu_intro']; ?></li></a>
 <!--                <a href="--><?php //echo base_url('ho-tro')?><!--"><li>--><?php //echo $common_lang['lmenu_support']; ?><!--</li></a>-->
 <!--                <a href="--><?php //echo base_url('tin-tuc')?><!--"><li>--><?php //echo $common_lang['lmenu_news']; ?><!--</li></a>-->
                 <a href="<?php echo base_url('dieu-khoan-su-dung')?>"><li><?php echo $common_lang['lmenu_policy']; ?></li></a>

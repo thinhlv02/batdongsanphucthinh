@@ -66,7 +66,7 @@
                         <div class="col-md-2  col-sm-12 col-xs-12 mt-2">
                             <div class="footer-title"><strong>LIÊN KẾT</strong></div>
                             <ul>
-                                <li><a href="<?php echo base_url('gioi-thieu-dich-vu') ?>"><i
+                                <li><a href="<?php echo base_url('gioi-thieu') ?>"><i
                                                 class="mdi mdi-information-outline text-danger"></i> Giới thiệu</a></li>
                                 <li><a href="<?php echo base_url('ho-tro') ?>"><i
                                                 class="mdi mdi-key-outline text-danger"></i> Hỗ trợ</a></li>

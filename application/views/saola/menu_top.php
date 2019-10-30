@@ -70,7 +70,7 @@
             <span></span>
             <ul id="menu">
                 <a href="<?php echo base_url()?>"><li><?php echo $common_lang['home']; ?></li></a>
-                <a href="<?php echo base_url('gioi-thieu-dich-vu')?>"><li><?php echo $common_lang['lmenu_intro']; ?></li></a>
+                <a href="<?php echo base_url('gioi-thieu')?>"><li><?php echo $common_lang['lmenu_intro']; ?></li></a>
                 <a href="<?php echo base_url('dieu-khoan-su-dung')?>"><li><?php echo $common_lang['lmenu_policy']; ?></li></a>
                 <a href="<?php echo base_url('lien-he')?>"><li><?php echo $common_lang['lmenu_contact']; ?></li></a>
             </ul>

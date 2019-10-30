@@ -104,7 +104,7 @@ Class Home extends MY_Controller
         if (strlen($slug) > 0 && $id > 0) {
             $product = $this->introduce_model->get_info($id);
             if (!$product || create_slug($product->name) != $slug) {
-                redirect(base_url('gioi-thieu-dich-vu.html'));
+                redirect(base_url('gioi-thieu.html'));
             }
             $this->data['product'] = $product;
         } else {
