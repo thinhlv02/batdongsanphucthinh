@@ -5,7 +5,7 @@ Class Service_money extends MY_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('product_model');
+        $this->load->model('ads_model');
         $this->load->model('employees_model');
     }
 
@@ -47,7 +47,7 @@ Class Service_money extends MY_Controller
                 $input['where']['make_money_by'] =  $make_money_by;
             }
 
-            $ads = $this->product_model->get_list($input);
+            $ads = $this->ads_model->get_list($input);
 //            pre($lstvip);
 //            die();
 //        }
@@ -55,7 +55,7 @@ Class Service_money extends MY_Controller
 //        $input = array();
 //        $input['order'] = array('highlight', 'desc');
 //        $input['order'] = array('id', 'desc');
-//        $ads = $this->product_model->get_list($input);
+//        $ads = $this->ads_model->get_list($input);
 
             $ads_end = [];
             $index = 0;
@@ -103,7 +103,7 @@ Class Service_money extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         $pay_time = $ads->pay_time;
         if ($pay_time == '0000-00-00') {
             $pay_time = date('d-m-Y');
@@ -128,7 +128,7 @@ Class Service_money extends MY_Controller
                 'pay_time' => $date,
             );
 
-            if ($this->product_model->update($id, $data)) {
+            if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật  thành công');
                 redirect(base_url('admin/service_money'));
             } else {
