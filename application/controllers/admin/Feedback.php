@@ -6,7 +6,7 @@ Class Feedback extends MY_Controller
     {
         parent::__construct();
         $this->load->model('comment_model');
-        $this->load->model('product_model');
+        $this->load->model('introduce_model');
         $this->load->model('feedback_model');
     }
 

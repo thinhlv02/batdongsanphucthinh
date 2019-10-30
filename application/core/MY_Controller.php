@@ -48,13 +48,13 @@ Class MY_Controller extends CI_Controller
             default:
             {
                 $this->load->model('contact_model');
-                $this->load->model('product_model');
+                $this->load->model('introduce_model');
                 $this->load->model('price_model');
                 $this->load->model('agency_model');
                 $this->load->model('content_model');
                 $contact = $this->contact_model->get_info(1);
                 $this->_contact = $contact;
-                $products = $this->product_model->get_list(array('order' => array('id', 'asc')));
+                $products = $this->introduce_model->get_list(array('order' => array('id', 'asc')));
                 $this->_products = $products;
                 $prices = $this->price_model->get_list(array('order' => array('id', 'asc')));
                 $this->_prices = $prices;

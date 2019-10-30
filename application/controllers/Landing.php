@@ -8,11 +8,11 @@ Class Landing extends MY_Controller
     {
         parent::__construct();
 //        $this->load->model('recruitment_model');
-        $this->load->model('product_model');
+        $this->load->model('introduce_model');
         $this->load->model('questions_model');
         $this->load->model('contact_model');
         $this->load->model('news_model');
-        $this->load->model('ads_model');
+        $this->load->model('product_model');
         $this->load->model('district_model');
         $this->load->model('Ward_model');
         $this->load->model('user_model');
@@ -56,40 +56,40 @@ Class Landing extends MY_Controller
         $this->data['news_mn'] = $news_mn;
 
         //ads left
-        $ads_left = $this->ads_model->get_list(array('where' => array('ads_left' => 1), 'limit' => array(13, 0)));
+        $ads_left = $this->product_model->get_list(array('where' => array('ads_left' => 1), 'limit' => array(13, 0)));
         $this->data['ads_left'] = $ads_left;
 
         //ads right
-        $ads_right = $this->ads_model->get_list(array('where' => array('ads_right' => 1), 'limit' => array(13, 0)));
+        $ads_right = $this->product_model->get_list(array('where' => array('ads_right' => 1), 'limit' => array(13, 0)));
         $this->data['ads_right'] = $ads_right;
 
         //ads center
-        $ads_center = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(24, 0)));
+        $ads_center = $this->product_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(24, 0)));
         $this->data['ads_center'] = $ads_center;
 
 //        layer left
-        $layer_left = $this->ads_model->get_list(array('where' => array('layer_left' => 1), 'limit' => array(8, 0)));
+        $layer_left = $this->product_model->get_list(array('where' => array('layer_left' => 1), 'limit' => array(8, 0)));
         $this->data['layer_left'] = $layer_left;
 
 //        layer vip
-        $layer_vip = $this->ads_model->get_list(array('where' => array('layer_vip' => 1), 'limit' => array(8, 0)));
+        $layer_vip = $this->product_model->get_list(array('where' => array('layer_vip' => 1), 'limit' => array(8, 0)));
         $this->data['layer_vip'] = $layer_vip;
 
 //        layer right
-        $layer_right = $this->ads_model->get_list(array('where' => array('layer_right' => 1), 'limit' => array(5, 0)));
+        $layer_right = $this->product_model->get_list(array('where' => array('layer_right' => 1), 'limit' => array(5, 0)));
         $this->data['layer_right'] = $layer_right;
 
 
         //ads nổi bật
-//        $ads = $this->ads_model->get_list(array('where' => array('highlight' => 1), 'limit' => array(8, 0)));
+//        $ads = $this->product_model->get_list(array('where' => array('highlight' => 1), 'limit' => array(8, 0)));
 //        $this->data['ads'] = $ads;
 
         //ads new
-        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(7, 0)));
+        $ads_new = $this->product_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(7, 0)));
         $this->data['ads_new'] = $ads_new;
 
         //ads mới cập nhật
-//        $ads_new = $this->ads_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(100, 0)));
+//        $ads_new = $this->product_model->get_list(array('order' => array('id', 'desc'), 'limit' => array(100, 0)));
 //        $this->data['ads_new'] = $ads_new;
 
         // load header
@@ -108,13 +108,13 @@ Class Landing extends MY_Controller
     {
         $this->data['li_2'] = 1;
         if (strlen($slug) > 0 && $id > 0) {
-            $product = $this->product_model->get_info($id);
+            $product = $this->introduce_model->get_info($id);
             if (!$product || create_slug($product->name) != $slug) {
                 redirect(base_url('gioi-thieu-dich-vu.html'));
             }
             $this->data['product'] = $product;
         } else {
-            $product = $this->product_model->get_list(array('order' => array('id', 'asc'), 'limit' => array(1, 0)));
+            $product = $this->introduce_model->get_list(array('order' => array('id', 'asc'), 'limit' => array(1, 0)));
             if (sizeof($product)) {
                 $this->data['product'] = $product[0];
             }
@@ -275,7 +275,7 @@ Class Landing extends MY_Controller
         $offset = intval($offset);
         $input = array();
 //        $input['where'] = array('highlight' => 0);
-        $total_rows = $this->ads_model->get_total($input);
+        $total_rows = $this->product_model->get_total($input);
         $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('rao-vat'));
 
         if ($offset >= 1) {
@@ -284,16 +284,16 @@ Class Landing extends MY_Controller
         }
 
         $input['limit'] = array($per_page, $offset);
-        $news = $this->ads_model->get_list($input);
+        $news = $this->product_model->get_list($input);
 
-        $highlight = $this->ads_model->get_list();
+        $highlight = $this->product_model->get_list();
 
         $this->data['lstPaging'] = $lstPaging;
         $this->data['ads'] = $news;
         $this->data['highlight'] = $highlight;
 
         $this->data['li_6'] = 1;
-//        $news = $this->ads_model->get_list();
+//        $news = $this->product_model->get_list();
         $this->data['ads'] = $news;
         $this->data['temp'] = $this->_template_f . 'ads/ads';
         $this->load->view($this->_template_f . 'layout/layout', $this->data);
@@ -301,22 +301,22 @@ Class Landing extends MY_Controller
 
     function ads_detail($slug, $id)
     {
-        $ads = $this->ads_model->get_info($id);
+        $ads = $this->product_model->get_info($id);
         if (!$ads || create_slug($ads->title) != $slug) {
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $ads;
 
-//        $highlight = $this->ads_model->get_list(array('where' => array('highlight' => 1)));
-        $highlight = $this->ads_model->get_list(array('limit' => array('10', '0')));
+//        $highlight = $this->product_model->get_list(array('where' => array('highlight' => 1)));
+        $highlight = $this->product_model->get_list(array('limit' => array('10', '0')));
         $this->data['highlight'] = $highlight;
 
         //ads left
-        $ads_left = $this->ads_model->get_list(array('where' => array('ads_left' => 1), 'limit' => array(13, 0)));
+        $ads_left = $this->product_model->get_list(array('where' => array('ads_left' => 1), 'limit' => array(13, 0)));
         $this->data['ads_left'] = $ads_left;
 
         //ads center
-        $ads_center = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(30, 0)));
+        $ads_center = $this->product_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(30, 0)));
         $this->data['ads_center'] = $ads_center;
 
 //        $this->data['title'] = $ads->document_title;
@@ -337,7 +337,7 @@ Class Landing extends MY_Controller
 
     function product()
     {
-        $product = $this->product_model->get_list();
+        $product = $this->introduce_model->get_list();
         $this->data['li_product'] = 1;
         $this->data['product'] = $product;
         $this->data['temp'] = $this->_template_f . 'product/product';
@@ -384,7 +384,7 @@ Class Landing extends MY_Controller
     {
 
         $id = $this->input->get('id');
-        $ads = $this->ads_model->get_info($id);
+        $ads = $this->product_model->get_info($id);
         $view_old = $ads->view;
         $view_new = $view_old + 14;
 
@@ -393,7 +393,7 @@ Class Landing extends MY_Controller
             $dataSubmit['view'] = $view_new;
 //            var_dump($id. '-----');
 //            var_dump($dataSubmit);
-            $this->ads_model->update($id, $dataSubmit);
+            $this->product_model->update($id, $dataSubmit);
             echo $id . '=>' . $view_new;
         } else {
             echo 'not update';
@@ -488,7 +488,7 @@ Class Landing extends MY_Controller
 //            $input = "and date(time) between '" . $txtFrom . "' and '" . $txtto . "' ";
 //        }
 
-        $lst_data = $this->ads_model->get_list($input);
+        $lst_data = $this->product_model->get_list($input);
 //        $lst_player_by_server = $this->player_get_all_by_server($server_name);
 
 //        $lst_data_arr = [];
@@ -532,7 +532,7 @@ Class Landing extends MY_Controller
 //        $input['or_like'] = array('phone', $code);
 //          pre($input);
 
-        $lstSearch = $this->ads_model->get_list($input);
+        $lstSearch = $this->product_model->get_list($input);
 
         $this->data['lstSearch'] = $lstSearch;
 
