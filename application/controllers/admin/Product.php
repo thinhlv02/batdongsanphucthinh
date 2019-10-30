@@ -508,8 +508,8 @@ Class Product extends MY_Controller
         $this->data['id'] = $id;
         $this->data['tab'] = 3;
         $this->data['ads'] = $ads;
-        $this->data['temp'] = 'admin/product_link/index';
-        $this->data['view'] = 'admin/product_link/edit';
+        $this->data['temp'] = 'admin/ads_link/index';
+        $this->data['view'] = 'admin/ads_link/edit';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -585,8 +585,8 @@ Class Product extends MY_Controller
         $this->data['ads'] = $ads_end;
         $this->data['id'] = $id;
         $this->data['tab'] = 1;
-        $this->data['temp'] = 'admin/product_link/index';
-        $this->data['view'] = 'admin/product_link/list';
+        $this->data['temp'] = 'admin/ads_link/index';
+        $this->data['view'] = 'admin/ads_link/list';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -626,8 +626,8 @@ Class Product extends MY_Controller
         }
         $this->data['tab'] = 2;
         $this->data['id'] = $id;
-        $this->data['temp'] = 'admin/product_link/index';
-        $this->data['view'] = 'admin/product_link/add';
+        $this->data['temp'] = 'admin/ads_link/index';
+        $this->data['view'] = 'admin/ads_link/add';
         $this->load->view('admin/layout', $this->data);
     }
 
