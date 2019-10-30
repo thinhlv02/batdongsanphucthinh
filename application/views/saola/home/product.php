@@ -5,7 +5,7 @@
             <div class="sub-title-section">Chọn hình thức phù hợp với bạn</div>
             <?php foreach ($products as $product){ ?>
                 <div>
-                <a href="<?php echo base_url('gioi-thieu/'.create_slug($product->name).'-'.$product->id.'.html')?>">
+                <a href="<?php echo base_url('gioi-thieu-dich-vu/'.create_slug($product->name).'-'.$product->id.'.html')?>">
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="item-product">
                             <div class="img-news col-xs-12 col-sm-12 col-md-6">
