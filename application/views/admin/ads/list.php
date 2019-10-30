@@ -91,7 +91,7 @@
                         <?php if ($_uid == 1) { ?>
                             <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
                             <!--                            //update link-->
-                            <a class="btn btn-xs btn-success btn-xs" href="<?php echo base_url('admin/ads/product_link/' . $row->id) ?>">Update link</a>
+                            <a class="btn btn-xs btn-success btn-xs" href="<?php echo base_url('admin/ads/ads_link/' . $row->id) ?>">Update link</a>
                         <?php } ?>
 
                         <p><?php echo $row->created_name; ?></p>

@@ -500,7 +500,7 @@ Class Ads extends MY_Controller
             if ($this->ads_link_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật link thành công');
 //                redirect(base_url('admin/ads/edit/' . $id));
-                redirect(base_url('admin/ads/product_link/' . $id_ads));
+                redirect(base_url('admin/ads/ads_link/' . $id_ads));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
@@ -547,10 +547,10 @@ Class Ads extends MY_Controller
             $this->ads_link_model->delete($id);
 
         }
-        redirect(base_url('admin/ads/product_link/' . $id_ads));
+        redirect(base_url('admin/ads/ads_link/' . $id_ads));
     }
 
-    function product_link()
+    function ads_link()
     {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
@@ -618,7 +618,7 @@ Class Ads extends MY_Controller
 
             if ($this->ads_link_model->create($data)) {
                 $this->session->set_flashdata('message', 'Thêm link thành công');
-                redirect(base_url('admin/ads/product_link/' . $id));
+                redirect(base_url('admin/ads/ads_link/' . $id));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
