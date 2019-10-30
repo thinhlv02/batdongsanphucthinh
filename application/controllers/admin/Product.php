@@ -116,8 +116,8 @@ Class Product extends MY_Controller
         $this->data['ads'] = $ads_end;
         $this->data['_uid'] = $this->_uid;
         $this->data['tab'] = 1;
-        $this->data['temp'] = 'admin/product/index';
-        $this->data['view'] = 'admin/product/list';
+        $this->data['temp'] = 'admin/ads/index';
+        $this->data['view'] = 'admin/ads/list';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -264,8 +264,8 @@ Class Product extends MY_Controller
         $this->data['ads_type'] = $this->_product_type;
         $this->data['lstProvince'] = $lstProvince;
         $this->data['tab'] = 2;
-        $this->data['temp'] = 'admin/product/index';
-        $this->data['view'] = 'admin/product/add';
+        $this->data['temp'] = 'admin/ads/index';
+        $this->data['view'] = 'admin/ads/add';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -473,8 +473,8 @@ Class Product extends MY_Controller
         $this->data['ward_id'] = $ads->ward_id;
         $this->data['street_id'] = $ads->street_id;
         $this->data['lstProvince'] = $lstProvince;
-        $this->data['temp'] = 'admin/product/index';
-        $this->data['view'] = 'admin/product/edit';
+        $this->data['temp'] = 'admin/ads/index';
+        $this->data['view'] = 'admin/ads/edit';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -832,7 +832,7 @@ Class Product extends MY_Controller
 //        pre($lst_district_end);
         $this->data['lstdata'] = $lst_district_end;
 
-        $this->load->view('admin/product/view_list_district', $this->data);
+        $this->load->view('admin/ads/view_list_district', $this->data);
     }
 
 
@@ -857,7 +857,7 @@ Class Product extends MY_Controller
 //        pre($lst_ward_end);
         $this->data['lstdata'] = $lst_ward_end;
 
-        $this->load->view('admin/product/view_list_ward', $this->data);
+        $this->load->view('admin/ads/view_list_ward', $this->data);
     }
 
     function ajax_get_list_street()
@@ -880,7 +880,7 @@ Class Product extends MY_Controller
 //        pre($lst_ward_end);
         $this->data['lstdata'] = $lst_ward_end;
 
-        $this->load->view('admin/product/view_list_street', $this->data);
+        $this->load->view('admin/ads/view_list_street', $this->data);
     }
 
 }
