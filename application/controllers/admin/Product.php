@@ -1,6 +1,6 @@
 <?php
 
-Class Introduce extends MY_Controller
+Class Product extends MY_Controller
 {
     function __construct()
     {
@@ -13,8 +13,8 @@ Class Introduce extends MY_Controller
         $product = $this->product_model->get_list();
         $this->data['tab'] = 1;
         $this->data['product'] = $product;
-        $this->data['temp'] = 'admin/introduce/index';
-        $this->data['view'] = 'admin/introduce/product';
+        $this->data['temp'] = 'admin/product/index';
+        $this->data['view'] = 'admin/product/product';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -37,17 +37,17 @@ Class Introduce extends MY_Controller
                 );
                 if ($this->product_model->create($data_submit)) {
                     $this->session->set_flashdata('message', 'Đăng bài thành công!');
-                    redirect(base_url('admin/introduce/add'));
+                    redirect(base_url('admin/product/add'));
                 } else {
                     $this->session->set_flashdata('message', 'Có lỗi xảy ra, vui lòng thử lại!');
-                    redirect(base_url('admin/introduce/add'));
+                    redirect(base_url('admin/product/add'));
                 }
             } else {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
         }
-        $this->data['temp'] = 'admin/introduce/index';
-        $this->data['view'] = 'admin/introduce/add';
+        $this->data['temp'] = 'admin/product/index';
+        $this->data['view'] = 'admin/product/add';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -79,16 +79,16 @@ Class Introduce extends MY_Controller
             }
             if ($this->product_model->update($id, $data_submit)) {
                 $this->session->set_flashdata('message', 'Cập nhật thành công!');
-                redirect(base_url('admin/introduce/edit/' . $id));
+                redirect(base_url('admin/product/edit/' . $id));
             } else {
                 $this->session->set_flashdata('message', 'Có lỗi xảy ra, vui lòng thử lại!');
-                redirect(base_url('admin/introduce/edit/' . $id));
+                redirect(base_url('admin/product/edit/' . $id));
             }
         }
         $this->data['product'] = $product;
         $this->data['tab'] = 3;
-        $this->data['temp'] = 'admin/introduce/index';
-        $this->data['view'] = 'admin/introduce/edit';
+        $this->data['temp'] = 'admin/product/index';
+        $this->data['view'] = 'admin/product/edit';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -97,9 +97,9 @@ Class Introduce extends MY_Controller
         $id = $this->uri->segment(4);
         if ($this->product_model->get_info($id)) {
             $this->product_model->delete($id);
-            redirect(base_url('admin/introduce'));
+            redirect(base_url('admin/product'));
         } else {
-            redirect(base_url('admin/introduce'));
+            redirect(base_url('admin/product'));
         }
     }
 }
