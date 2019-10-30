@@ -13,7 +13,7 @@ Class Home extends MY_Controller
         $this->load->model('contact_model');
         $this->load->model('news_model');
         $this->load->model('product_model');
-        $this->load->model('product_link_model');
+        $this->load->model('ads_link_model');
         $this->load->model('banner_model');
         $this->load->model('district_model');
         $this->load->model('Ward_model');
@@ -402,7 +402,7 @@ Class Home extends MY_Controller
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $this->product_model->get_info($id);
-        $this->data['ads_link'] = $this->product_link_model->get_list(array('where' => array('id_ads' => $id), 'order' => array('id', 'desc')));
+        $this->data['ads_link'] = $this->ads_link_model->get_list(array('where' => array('id_ads' => $id), 'order' => array('id', 'desc')));
         $ads_link = $this->data['ads_link'];
 
         $ads_end = [];

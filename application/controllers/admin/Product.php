@@ -6,7 +6,7 @@ Class Product extends MY_Controller
     {
         parent::__construct();
         $this->load->model('product_model');
-        $this->load->model('product_link_model');
+        $this->load->model('ads_link_model');
         $this->load->model('Province_model');
         $this->load->model('District_model');
         $this->load->model('Ward_model');
@@ -484,7 +484,7 @@ Class Product extends MY_Controller
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
         $id_ads = $this->uri->segment(5);
-        $ads = $this->product_link_model->get_info($id);
+        $ads = $this->ads_link_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
             redirect(base_url('admin/product'));
@@ -497,7 +497,7 @@ Class Product extends MY_Controller
             );
 
 
-            if ($this->product_link_model->update($id, $data)) {
+            if ($this->ads_link_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật link thành công');
 //                redirect(base_url('admin/product/edit/' . $id));
                 redirect(base_url('admin/product/product_link/' . $id_ads));
@@ -542,9 +542,9 @@ Class Product extends MY_Controller
     {
         $id = $this->uri->segment(4);
         $id_ads = $this->uri->segment(5);
-        $ads = $this->product_link_model->get_info($id);
+        $ads = $this->ads_link_model->get_info($id);
         if ($ads) {
-            $this->product_link_model->delete($id);
+            $this->ads_link_model->delete($id);
 
         }
         redirect(base_url('admin/product/product_link/' . $id_ads));
@@ -565,7 +565,7 @@ Class Product extends MY_Controller
         $input = array();
         $input['where'] = array('id_ads' => $id);
         $input['order'] = array('id', 'desc');
-        $ads = $this->product_link_model->get_list($input);
+        $ads = $this->ads_link_model->get_list($input);
         $count = count($ads);
         $count = $count > 0 ? $count : 0;
 
@@ -616,7 +616,7 @@ Class Product extends MY_Controller
 //            pre($data);
 //            die();
 
-            if ($this->product_link_model->create($data)) {
+            if ($this->ads_link_model->create($data)) {
                 $this->session->set_flashdata('message', 'Thêm link thành công');
                 redirect(base_url('admin/product/product_link/' . $id));
             } else {
