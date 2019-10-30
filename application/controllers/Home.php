@@ -97,7 +97,7 @@ Class Home extends MY_Controller
 
     }
 
-    function introduce($slug = '', $id = 0)
+    function service_info($slug = '', $id = 0)
     {
         $this->load->language('introduce/introduce', $this->_langcode);
         $this->data['introduce_lang'] = $this->lang->line('introduce_lang');
