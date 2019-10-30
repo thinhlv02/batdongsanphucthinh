@@ -87,11 +87,11 @@
                     <td class="text-center">
                         <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
 
-                        <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/product/edit/' . $row->id) ?>">Sửa</a>
+                        <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/ads/edit/' . $row->id) ?>">Sửa</a>
                         <?php if ($_uid == 1) { ?>
                             <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
                             <!--                            //update link-->
-                            <a class="btn btn-xs btn-success btn-xs" href="<?php echo base_url('admin/product/product_link/' . $row->id) ?>">Update link</a>
+                            <a class="btn btn-xs btn-success btn-xs" href="<?php echo base_url('admin/ads/product_link/' . $row->id) ?>">Update link</a>
                         <?php } ?>
 
                         <p><?php echo $row->created_name; ?></p>
@@ -211,7 +211,7 @@
     function confirmDel(id) {
         if (confirm('Bạn có chắc chắn muốn xóa?')) {
 //            console.log('delll');
-            window.location.href = '<?php echo base_url('admin/product/del/')?>' + id;
+            window.location.href = '<?php echo base_url('admin/ads/del/')?>' + id;
         }
     }
 

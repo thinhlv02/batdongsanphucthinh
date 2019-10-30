@@ -35,7 +35,7 @@ $id_ads = $this->uri->segment(4);
                 <tr title="" class="">
                     <td class="text-center">
                         <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
-                        <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/product/edit_link/' . $row->id . '/' . $id_ads) ?>">Sửa</a>
+                        <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/ads/edit_link/' . $row->id . '/' . $id_ads) ?>">Sửa</a>
                         <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>, <?php echo $id_ads; ?>)">Xóa</a>
                     </td>
                     <td><?php echo date('d/m/Y H:i:s', strtotime($row->created_at)); ?></td>
@@ -51,7 +51,7 @@ $id_ads = $this->uri->segment(4);
 <script>
     function confirmDel(id, id_ads) {
         if (confirm('Bạn có chắc chắn muốn xóa?')) {
-            window.location.href = '<?php echo base_url('admin/product/del_link/')?>' + id + '/' + id_ads;
+            window.location.href = '<?php echo base_url('admin/ads/del_link/')?>' + id + '/' + id_ads;
         }
     }
 </script>

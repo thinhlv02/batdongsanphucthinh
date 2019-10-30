@@ -1,6 +1,6 @@
 <?php
 
-Class Product extends MY_Controller
+Class Ads extends MY_Controller
 {
     function __construct()
     {
@@ -460,8 +460,8 @@ Class Product extends MY_Controller
 
             if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật rao bán thành công');
-//                redirect(base_url('admin/product/edit/' . $id));
-                redirect(base_url('admin/product/edit'));
+//                redirect(base_url('admin/ads/edit/' . $id));
+                redirect(base_url('admin/ads/edit'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
@@ -499,8 +499,8 @@ Class Product extends MY_Controller
 
             if ($this->ads_link_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật link thành công');
-//                redirect(base_url('admin/product/edit/' . $id));
-                redirect(base_url('admin/product/product_link/' . $id_ads));
+//                redirect(base_url('admin/ads/edit/' . $id));
+                redirect(base_url('admin/ads/product_link/' . $id_ads));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
@@ -547,7 +547,7 @@ Class Product extends MY_Controller
             $this->ads_link_model->delete($id);
 
         }
-        redirect(base_url('admin/product/product_link/' . $id_ads));
+        redirect(base_url('admin/ads/product_link/' . $id_ads));
     }
 
     function product_link()
@@ -618,7 +618,7 @@ Class Product extends MY_Controller
 
             if ($this->ads_link_model->create($data)) {
                 $this->session->set_flashdata('message', 'Thêm link thành công');
-                redirect(base_url('admin/product/product_link/' . $id));
+                redirect(base_url('admin/ads/product_link/' . $id));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }

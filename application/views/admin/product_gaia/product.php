@@ -32,7 +32,7 @@
                     <td><?php echo $row->id?></td>
                     <td><?php echo $row->name?></td>
                     <td>
-                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/product/edit/'.$row->id)?>">Sửa</a>
+                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/ads/edit/'.$row->id)?>">Sửa</a>
                         <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
                     </td>
                 </tr>
@@ -46,7 +46,7 @@
     function confirmDel(id) {
         if(confirm('Bạn có chắc chắn muốn xóa?')){
 //            console.log('delll');
-            window.location.href = '<?php echo base_url('admin/product/del/')?>' + id;
+            window.location.href = '<?php echo base_url('admin/ads/del/')?>' + id;
         }
     }
 </script>
