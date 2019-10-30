@@ -110,7 +110,7 @@ Class Ads extends MY_Controller
         }
 
 
-        $this->data['lstAdsType'] = $this->_func_product_type();
+        $this->data['lstAdsType'] = $this->_func_ads_type();
         $this->data['lstAdmin'] = $admin_arr;
         $this->data['count'] = $count;
         $this->data['ads'] = $ads_end;
@@ -261,7 +261,7 @@ Class Ads extends MY_Controller
             }
 
         }
-        $this->data['ads_type'] = $this->_product_type;
+        $this->data['ads_type'] = $this->_ads_type;
         $this->data['lstProvince'] = $lstProvince;
         $this->data['tab'] = 2;
         $this->data['temp'] = 'admin/ads/index';

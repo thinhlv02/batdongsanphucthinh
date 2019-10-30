@@ -41,7 +41,7 @@ $config['device_type'] = array(
 //1: laptop: 2:pc; 3: mobile; 4: khác
 
 //ads type
-$config['product_type'] = array(
+$config['ads_type'] = array(
     '1' => 'Nhà đất bán',
     '2' => 'Nhà đất cho thuê',
     '3' => 'Nhà đất cần mua',

@@ -13,7 +13,7 @@ Class Category extends MY_Controller
         $questions = $this->category_model->get_list(array('where' => array('type' => 1), 'order' => array('id', 'asc')));
 //        pre($questions);
         $this->data['tab'] = 1;
-        $this->data['ads_type'] = $this->_product_type;
+        $this->data['ads_type'] = $this->_ads_type;
         $this->data['questions'] = $questions;
         $this->data['temp'] = 'admin/category/index';
         $this->data['view'] = 'admin/category/question';
@@ -47,7 +47,7 @@ Class Category extends MY_Controller
                 redirect(base_url('admin/category/add'));
             }
         }
-        $this->data['ads_type'] = $this->_product_type;
+        $this->data['ads_type'] = $this->_ads_type;
         $this->data['temp'] = 'admin/category/index';
         $this->data['view'] = 'admin/category/add';
         $this->load->view('admin/layout', $this->data);
