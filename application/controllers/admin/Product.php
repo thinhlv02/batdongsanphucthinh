@@ -5,7 +5,7 @@ Class Product extends MY_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('product_model');
+        $this->load->model('ads_model');
         $this->load->model('ads_link_model');
         $this->load->model('Province_model');
         $this->load->model('District_model');
@@ -63,7 +63,7 @@ Class Product extends MY_Controller
 
         $input['order'] = array('id', 'desc');
 //        pre($input);
-        $ads = $this->product_model->get_list($input);
+        $ads = $this->ads_model->get_list($input);
         $count = count($ads);
         $count = $count > 0 ? $count : 0;
 
@@ -253,7 +253,7 @@ Class Product extends MY_Controller
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
 
-            if ($this->product_model->create($data)) {
+            if ($this->ads_model->create($data)) {
                 $this->session->set_flashdata('message', 'Thêm rao bán thành công');
                 redirect(base_url('admin/product'));
             } else {
@@ -275,7 +275,7 @@ Class Product extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
             redirect(base_url('admin/product'));
@@ -458,7 +458,7 @@ Class Product extends MY_Controller
             //img slide
 
 
-            if ($this->product_model->update($id, $data)) {
+            if ($this->ads_model->update($id, $data)) {
                 $this->session->set_flashdata('message', 'Cập nhật rao bán thành công');
 //                redirect(base_url('admin/product/edit/' . $id));
                 redirect(base_url('admin/product/edit'));
@@ -516,9 +516,9 @@ Class Product extends MY_Controller
     function del()
     {
         $id = $this->uri->segment(4);
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         if ($ads) {
-            $this->product_model->delete($id);
+            $this->ads_model->delete($id);
             if ($ads->img != 'default.png') {
                 unlink('./public/images/ads/' . $ads->img);
             }
@@ -556,7 +556,7 @@ Class Product extends MY_Controller
         $this->data['message'] = $message;
 
         $id = $this->uri->segment(4);
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
             redirect(base_url('admin/product'));
@@ -593,7 +593,7 @@ Class Product extends MY_Controller
     function add_link()
     {
         $id = $this->uri->segment(4);
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
 //        pre($ads);
         if (!$ads) {
             redirect(base_url('admin/product'));
@@ -634,7 +634,7 @@ Class Product extends MY_Controller
     function ads_left()
     {
         $id = $_POST['id'];
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
         if ($ads) {
             $res['status'] = 1;
@@ -646,7 +646,7 @@ Class Product extends MY_Controller
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['ads_left'] = 1;
             }
-            $this->product_model->update($id, $dataSubmit);
+            $this->ads_model->update($id, $dataSubmit);
         }
         echo json_encode($res);
     }
@@ -654,7 +654,7 @@ Class Product extends MY_Controller
     function ads_right()
     {
         $id = $_POST['id'];
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
         if ($ads) {
             $res['status'] = 1;
@@ -666,7 +666,7 @@ Class Product extends MY_Controller
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['ads_right'] = 1;
             }
-            $this->product_model->update($id, $dataSubmit);
+            $this->ads_model->update($id, $dataSubmit);
         }
         echo json_encode($res);
     }
@@ -674,7 +674,7 @@ Class Product extends MY_Controller
     function ads_center()
     {
         $id = $_POST['id'];
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
         if ($ads) {
             $res['status'] = 1;
@@ -686,7 +686,7 @@ Class Product extends MY_Controller
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['ads_center'] = 1;
             }
-            $this->product_model->update($id, $dataSubmit);
+            $this->ads_model->update($id, $dataSubmit);
         }
         echo json_encode($res);
     }
@@ -694,7 +694,7 @@ Class Product extends MY_Controller
     function layer_left()
     {
         $id = $_POST['id'];
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
         if ($ads) {
             $res['status'] = 1;
@@ -706,7 +706,7 @@ Class Product extends MY_Controller
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['layer_left'] = 1;
             }
-            $this->product_model->update($id, $dataSubmit);
+            $this->ads_model->update($id, $dataSubmit);
         }
         echo json_encode($res);
     }
@@ -714,7 +714,7 @@ Class Product extends MY_Controller
     function layer_vip()
     {
         $id = $_POST['id'];
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
         if ($ads) {
             $res['status'] = 1;
@@ -726,7 +726,7 @@ Class Product extends MY_Controller
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['layer_vip'] = 1;
             }
-            $this->product_model->update($id, $dataSubmit);
+            $this->ads_model->update($id, $dataSubmit);
         }
         echo json_encode($res);
     }
@@ -734,7 +734,7 @@ Class Product extends MY_Controller
     function layer_right()
     {
         $id = $_POST['id'];
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
         if ($ads) {
             $res['status'] = 1;
@@ -746,7 +746,7 @@ Class Product extends MY_Controller
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['layer_right'] = 1;
             }
-            $this->product_model->update($id, $dataSubmit);
+            $this->ads_model->update($id, $dataSubmit);
         }
         echo json_encode($res);
     }
@@ -754,7 +754,7 @@ Class Product extends MY_Controller
     function icon_new()
     {
         $id = $_POST['id'];
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
         if ($ads) {
             $res['status'] = 1;
@@ -766,7 +766,7 @@ Class Product extends MY_Controller
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['icon_new'] = 1;
             }
-            $this->product_model->update($id, $dataSubmit);
+            $this->ads_model->update($id, $dataSubmit);
         }
         echo json_encode($res);
     }
@@ -774,7 +774,7 @@ Class Product extends MY_Controller
     function icon_vip()
     {
         $id = $_POST['id'];
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
         if ($ads) {
             $res['status'] = 1;
@@ -786,7 +786,7 @@ Class Product extends MY_Controller
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['icon_vip'] = 1;
             }
-            $this->product_model->update($id, $dataSubmit);
+            $this->ads_model->update($id, $dataSubmit);
         }
         echo json_encode($res);
     }
@@ -794,7 +794,7 @@ Class Product extends MY_Controller
     function icon_hot()
     {
         $id = $_POST['id'];
-        $ads = $this->product_model->get_info($id);
+        $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
         if ($ads) {
             $res['status'] = 1;
@@ -806,7 +806,7 @@ Class Product extends MY_Controller
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['icon_hot'] = 1;
             }
-            $this->product_model->update($id, $dataSubmit);
+            $this->ads_model->update($id, $dataSubmit);
         }
         echo json_encode($res);
     }
