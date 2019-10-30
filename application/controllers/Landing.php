@@ -8,7 +8,7 @@ Class Landing extends MY_Controller
     {
         parent::__construct();
 //        $this->load->model('recruitment_model');
-        $this->load->model('introduce_model');
+        $this->load->model('product_model');
         $this->load->model('questions_model');
         $this->load->model('contact_model');
         $this->load->model('news_model');
@@ -108,13 +108,13 @@ Class Landing extends MY_Controller
     {
         $this->data['li_2'] = 1;
         if (strlen($slug) > 0 && $id > 0) {
-            $product = $this->introduce_model->get_info($id);
+            $product = $this->product_model->get_info($id);
             if (!$product || create_slug($product->name) != $slug) {
                 redirect(base_url('gioi-thieu-dich-vu.html'));
             }
             $this->data['product'] = $product;
         } else {
-            $product = $this->introduce_model->get_list(array('order' => array('id', 'asc'), 'limit' => array(1, 0)));
+            $product = $this->product_model->get_list(array('order' => array('id', 'asc'), 'limit' => array(1, 0)));
             if (sizeof($product)) {
                 $this->data['product'] = $product[0];
             }
@@ -337,7 +337,7 @@ Class Landing extends MY_Controller
 
     function product()
     {
-        $product = $this->introduce_model->get_list();
+        $product = $this->product_model->get_list();
         $this->data['li_product'] = 1;
         $this->data['product'] = $product;
         $this->data['temp'] = $this->_template_f . 'product/product';
