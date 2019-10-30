@@ -27,7 +27,7 @@
     </div>
     <div class="x_content">
         <div class="table-reponsive" id="table-question">
-            <?php $this->load->view('admin/product_type/table_question')?>
+            <?php $this->load->view('admin/category/table_question')?>
         </div>
         <!-- <a href="#" class="btn btn-danger">Xóa đã chọn </a> -->
     </div>
@@ -39,7 +39,7 @@
             console.log($(this).val());
             var type = $(this).val();
             $.ajax({
-                url: "<?php echo admin_url('product_type/get_list_by_type')?>",
+                url: "<?php echo admin_url('category/get_list_by_type')?>",
                 type: 'post',
                 data: {
                     type: type
