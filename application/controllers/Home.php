@@ -937,23 +937,21 @@ Class Home extends MY_Controller
         }
     }
 
-    public function recruit(){
+    public function recruit()
+    {
         $input = array();
         $type = $this->uri->segment(2);
-        if($type){
+        if ($type) {
             $arr = array();
-            if($type == 'ky-thuat.html'){
-                $arr = array(1,2,3,4,5,6);//php, .net, js, mobile, ios, android
-            }
-            else if($type == 'van-hanh-kiem-thu.html'){
-                $arr = array(7,8);
-            }
-            else if($type == 'kinh-doanh.html'){
+            if ($type == 'ky-thuat.html') {
+                $arr = array(1, 2, 3, 4, 5, 6);//php, .net, js, mobile, ios, android
+            } else if ($type == 'van-hanh-kiem-thu.html') {
+                $arr = array(7, 8);
+            } else if ($type == 'kinh-doanh.html') {
                 $arr = array(9);
             }
             $recruitment = $this->recruitment_model->get_list_by_department($arr);
-        }
-        else{
+        } else {
             $recruitment = $this->recruitment_model->get_list();
         }
 
@@ -980,11 +978,11 @@ Class Home extends MY_Controller
         $this->data['recruitment'] = $recruitment;
         $this->data['li_recruitment'] = 1;
         $this->data['js'] = ['bootstrap-datepicker.js'];
-        $this->data['recruit_temp'] = $this->_template_f .'recruit/list';
+        $this->data['recruit_temp'] = $this->_template_f . 'recruit/list';
 
         // load header
         $header = array();
-        $header['title'] = 'test recruiment title';
+        $header['title'] = 'Page recruiment';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'recruit/recruit', $this->data);
@@ -994,6 +992,28 @@ Class Home extends MY_Controller
 //        $this->load->view('site/layout/layout', $this->data);
     }
 
+    public function detailRecruit($slug = '', $id = -1)
+    {
+        $detail = $this->recruitment_model->get_info($id);
+        if ($detail) {
+            $this->data['detail'] = $detail;
+        } else {
+            redirect(base_url('tuyen-dung.html'));
+        }
+        $this->data['li_recruitment'] = 1;
+        $this->data['recruit_temp'] = $this->_template_f . 'recruit/detail';
+
+        // load header
+        $header = array();
+        $header['title'] = ' Detail recruiment';
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'recruit/recruit', $this->data);
+        $this->_loadFooter();
+
+//        $this->data['temp'] = 'site/recruit/recruit';
+//        $this->load->view('site/layout/layout', $this->data);
+    }
 
 
 }
