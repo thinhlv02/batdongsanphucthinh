@@ -936,5 +936,54 @@ Class Home extends MY_Controller
         }
     }
 
+    public function recruit(){
+        $input = array();
+        $type = $this->uri->segment(2);
+        if($type){
+            $arr = array();
+            if($type == 'ky-thuat.html'){
+                $arr = array(1,2,3,4,5,6);//php, .net, js, mobile, ios, android
+            }
+            else if($type == 'van-hanh-kiem-thu.html'){
+                $arr = array(7,8);
+            }
+            else if($type == 'kinh-doanh.html'){
+                $arr = array(9);
+            }
+            $recruitment = $this->recruitment_model->get_list_by_department($arr);
+        }
+        else{
+            $recruitment = $this->recruitment_model->get_list();
+        }
+
+
+//        $recruitmentWeb = array();
+//        $recruitmentMobile = array();
+//        $recruitmentTest = array();
+//        foreach ($recruitment as $row){
+//            if($row->department == 1){
+//                $recruitmentWeb[] = $row;
+//            }
+//            else if($row->department == 2){
+//                $recruitmentMobile[] = $row;
+//            }
+//            else{
+//                $recruitmentTest[] = $row;
+//            }
+//        }
+//        $this->data['recruitmentWeb'] = $recruitmentWeb;
+//        $this->data['recruitmentMobile'] = $recruitmentMobile;
+//        $this->data['recruitmentTest'] = $recruitmentTest;
+
+
+        $this->data['recruitment'] = $recruitment;
+        $this->data['li_recruitment'] = 1;
+        $this->data['js'] = ['bootstrap-datepicker.js'];
+        $this->data['recruit_temp'] = 'site/recruit/list';
+        $this->data['temp'] = 'site/recruit/recruit';
+        $this->load->view('site/layout/layout', $this->data);
+    }
+
+
 
 }

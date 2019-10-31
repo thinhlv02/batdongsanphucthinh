@@ -122,10 +122,10 @@ $route['sitemap\.xml'] = "home/sitemap";
 //$route['san-pham.html'] = 'home/product';
 //$route['lien-he.html'] = 'home/contact';
 //
-//$route['tuyen-dung/van-hanh-kiem-thu.html'] = 'home/recruit';
-//$route['tuyen-dung/kinh-doanh.html'] = 'home/recruit';
-//$route['tuyen-dung/ky-thuat.html'] = 'home/recruit';
-//$route['tuyen-dung/(:any)-(:num).html'] = 'home/detailRecruit/$1/$2';
+$route['tuyen-dung/van-hanh-kiem-thu.html'] = 'home/recruit';
+$route['tuyen-dung/kinh-doanh.html'] = 'home/recruit';
+$route['tuyen-dung/ky-thuat.html'] = 'home/recruit';
+$route['tuyen-dung/(:any)-(:num).html'] = 'home/detailRecruit/$1/$2';
 
 
 $route['admin'] = 'admin/login';
