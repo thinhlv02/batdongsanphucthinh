@@ -24,7 +24,7 @@
                 <th>Mã số</th>
                 <th>Bộ phận</th>
                 <th>Tiêu đề</th>
-                <th>Ngày Tạo</th>
+                <th>Ngày đăng</th>
                 <th>Ngày hết hạn</th>
                 <th>Ứng tuyển</th>
                 <th>Hành động</th>

@@ -58,6 +58,7 @@
                                 <li><a href="<?php echo admin_url('banner') ?>">Quản lý banner web</a></li>
                                 <li><a href="<?php echo admin_url('category') ?>">Quản lý loại nhà đất</a></li>
                                 <li><a href="<?php echo admin_url('feedback') ?>">Hòm thư</a></li>
+                                <li><a href="<?php echo admin_url('recruitment') ?>">Tuyển dụng</a></li>
                             </ul>
                         </li>
                     <?php } ?>
