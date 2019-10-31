@@ -16,6 +16,7 @@ $lang['common_lang']['lmenu_policy'] = "Chính sách và điều khoản";
 $lang['common_lang']['product'] = "Sản phẩm";
 $lang['common_lang']['recruit'] = 'Tuyển dụng';
 $lang['common_lang']['lmenu_contact'] = 'Liên hệ - Gửi yêu cầu';
+$lang['common_lang']['lmenu_recruitment'] = 'Tuyển dụng';
 $lang['common_lang']['lmenu_faq'] = 'Những câu hỏi thường gặp';
 $lang['common_lang']['lmenu_phonebook'] = 'Danh bạ';
 $lang['common_lang']['lmenu_broker'] = 'Chuyên viên tư vấn';
