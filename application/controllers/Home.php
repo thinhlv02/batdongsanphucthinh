@@ -20,6 +20,7 @@ Class Home extends MY_Controller
         $this->load->model('user_model');
         $this->load->model('broker_model');
         $this->load->model('feedback_model');
+        $this->load->model('recruitment_model');
         //language load
     }
 
@@ -979,9 +980,18 @@ Class Home extends MY_Controller
         $this->data['recruitment'] = $recruitment;
         $this->data['li_recruitment'] = 1;
         $this->data['js'] = ['bootstrap-datepicker.js'];
-        $this->data['recruit_temp'] = 'site/recruit/list';
-        $this->data['temp'] = 'site/recruit/recruit';
-        $this->load->view('site/layout/layout', $this->data);
+        $this->data['recruit_temp'] = $this->_template_f .'recruit/list';
+
+        // load header
+        $header = array();
+        $header['title'] = 'test recruiment title';
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'recruit/recruit', $this->data);
+        $this->_loadFooter();
+
+//        $this->data['temp'] = 'site/recruit/recruit';
+//        $this->load->view('site/layout/layout', $this->data);
     }
 
 
