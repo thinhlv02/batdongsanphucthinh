@@ -217,7 +217,7 @@
 
     function ads_left(id) {
         $.ajax({
-            url: "<?php echo admin_url('product/ads_left')?>",
+            url: "<?php echo admin_url('ads/ads_left')?>",
             type: "post",
             data: {
                 id: id
@@ -237,7 +237,7 @@
 
     function ads_right(id) {
         $.ajax({
-            url: "<?php echo admin_url('product/ads_right')?>",
+            url: "<?php echo admin_url('ads/ads_right')?>",
             type: "post",
             data: {
                 id: id
@@ -257,7 +257,7 @@
 
     function ads_center(id) {
         $.ajax({
-            url: "<?php echo admin_url('product/ads_center')?>",
+            url: "<?php echo admin_url('ads/ads_center')?>",
             type: "post",
             data: {
                 id: id
@@ -277,7 +277,7 @@
 
     function layer_left(id) {
         $.ajax({
-            url: "<?php echo admin_url('product/layer_left')?>",
+            url: "<?php echo admin_url('ads/layer_left')?>",
             type: "post",
             data: {
                 id: id
@@ -297,7 +297,7 @@
 
     function layer_vip(id) {
         $.ajax({
-            url: "<?php echo admin_url('product/layer_vip')?>",
+            url: "<?php echo admin_url('ads/layer_vip')?>",
             type: "post",
             data: {
                 id: id
@@ -317,7 +317,7 @@
 
     function layer_right(id) {
         $.ajax({
-            url: "<?php echo admin_url('product/layer_right')?>",
+            url: "<?php echo admin_url('ads/layer_right')?>",
             type: "post",
             data: {
                 id: id
@@ -337,7 +337,7 @@
 
     function icon_new(id) {
         $.ajax({
-            url: "<?php echo admin_url('product/icon_new')?>",
+            url: "<?php echo admin_url('ads/icon_new')?>",
             type: "post",
             data: {
                 id: id
@@ -357,7 +357,7 @@
 
     function icon_vip(id) {
         $.ajax({
-            url: "<?php echo admin_url('product/icon_vip')?>",
+            url: "<?php echo admin_url('ads/icon_vip')?>",
             type: "post",
             data: {
                 id: id
@@ -377,7 +377,7 @@
 
     function icon_hot(id) {
         $.ajax({
-            url: "<?php echo admin_url('product/icon_hot')?>",
+            url: "<?php echo admin_url('ads/icon_hot')?>",
             type: "post",
             data: {
                 id: id
