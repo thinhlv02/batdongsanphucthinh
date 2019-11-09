@@ -30,6 +30,8 @@ Class Ads extends MY_Controller
         $todate = strtotime(trim($this->input->get('todate')));
         $fromdate = strtotime(trim($this->input->get('fromdate')));
         $province = trim($this->input->get('province'));
+        $location = trim($this->input->get('location'));
+//        var_dump($location);
         // validate fromdate and todate
         if ($todate === -1 OR $todate === FALSE OR $fromdate === -1 OR $fromdate === false OR $fromdate > $todate) {
             $todate = strtotime(date('Y/m/d'));
@@ -59,6 +61,33 @@ Class Ads extends MY_Controller
 //        var_dump($province);
         if ($province != 0) {
             $input['where'] += array('province_id' => $province);
+        }
+
+        //search by location
+
+        if ($location != '-1')
+        {
+            switch ($location) {
+                case "ads_left":
+                    $input['where'] += array('ads_left' => 1);
+                    break;
+                case "ads_right":
+                    $input['where'] += array('ads_right' => 1);
+                    break;
+                case "ads_center":
+                    $input['where'] += array('ads_center' => 1);
+                    break;
+                case "layer_left":
+                    $input['where'] += array('layer_left' => 1);
+                    break;
+                case "layer_vip":
+                    $input['where'] += array('layer_vip' => 1);
+                    break;
+                case "layer_right":
+                    $input['where'] += array('layer_right' => 1);
+                    break;
+                default:
+            }
         }
 
         $input['order'] = array('id', 'desc');
