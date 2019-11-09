@@ -372,8 +372,7 @@ Class Ads extends MY_Controller
                 'district_name' => $district_name,
                 'ward_name' => $ward_name,
                 'street_name' => $street_name,
-                'link' => $this->input->post('link'),
-                'link_web' => $this->input->post('txtLinkSite'),
+                'ads_link' => $this->input->post('ads_link'),
                 'view' => $this->input->post('view')
             );
 
