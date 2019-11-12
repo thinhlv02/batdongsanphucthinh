@@ -114,7 +114,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Địa chỉ<span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="area" readonly  value="<?php echo $ads->area ?>"
+                        <input type="text" name="area" readonly  value="<?php echo $ads->area ?>" id="txtAddress"
                                class="form-control col-md-7 col-xs-12" placeholder="Địa chỉ tin rao vặt">
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                                 class="required">*</span></label>
                     <input type="hidden" id="hddtxtProvince" value="<?php echo $ads->province_name; ?>">
                     <div class="col-md-2 col-sm-2 col-xs-12">
-                        <select class="select2_group form-control" name="province" onchange="get_district(this)">
+                        <select class="select2_group form-control" name="province" id="txtProvince" onchange="get_district(this)">
                             <option value="0">-- Chọn Tỉnh/TP --</option>
 
                             <?php foreach ($lstProvince as $key => $value) { ?>
@@ -249,6 +249,10 @@
             $('#selectWard').empty();
             $('#selectStreet').empty();
         } else {
+            var _txtProvince = $.trim($("#txtProvince option:selected" ).text());
+
+            $('#txtAddress').val(_txtProvince);
+            $('#hddtxtProvince').val(_txtProvince);
             // ajax
             var params = {
                 'id': id
@@ -282,6 +286,12 @@
                 'id': id
             };
 
+            var _txtDistrict = $.trim($("#selectDistrict option:selected" ).text());
+            $('#hddtxtDistrict').val(_txtDistrict);
+
+            $('#txtAddress').val($('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
+
+
             var _onSuccess = function (data) {
                 // console.log(data);
                 if (data == 'NOT_LOGIN') {
@@ -308,6 +318,12 @@
                 'id': id
             };
 
+            var _txtWard = $.trim($("#selectWard option:selected" ).text());
+            $('#hddtxtWard').val(_txtWard);
+
+            $('#txtAddress').val( $('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
+
+
             // console.log(params);
             var _onSuccess = function (data) {
                 // console.log(data);
@@ -322,6 +338,23 @@
             };
 
             getAjax('<?php echo admin_url('ads/ajax_get_list_street'); ?>', params, '', 'GET', '', false, _onSuccess);
+        }
+    }
+
+    function getStreetName(sel)
+    {
+        var id = sel.value;
+        console.log(id);
+        if (id == 0) {
+            $('#hddtxtStreet').val('');
+            $('#txtAddress').val($('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
+
+        } else {
+
+            var _txtStreet = $.trim($("#selectStreet option:selected" ).text());
+            $('#hddtxtStreet').val(_txtStreet);
+
+            $('#txtAddress').val($('#hddtxtStreet').val() + ' - ' +  $('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
         }
     }
 
