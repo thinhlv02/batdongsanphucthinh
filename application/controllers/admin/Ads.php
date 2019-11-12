@@ -357,6 +357,7 @@ Class Ads extends MY_Controller
                 $ward = $ward[0];
             }
 
+            $title = $this->input->post('txtName');
             $txtProvince = $this->input->post('province');
             $txtDistrict = $this->input->post('district');
             $txtStreet = $this->input->post('street');
@@ -386,7 +387,7 @@ Class Ads extends MY_Controller
             }
 
             $data = array(
-                'title' => $this->input->post('txtName'),
+                'title' => $title,
                 'content' => $this->input->post('txtContent'),
                 'area' => $this->input->post('area'),
                 'contact_name' => $this->input->post('txtContactName'),
@@ -407,7 +408,7 @@ Class Ads extends MY_Controller
                 'district_name' => $district_name,
                 'ward_name' => $ward_name,
                 'street_name' => $street_name,
-                'ads_link' => $this->input->post('ads_link'),
+                'ads_link' => base_url('rao-vat/' . create_slug($title) . '-' . $id),
                 'view' => $this->input->post('view')
             );
 

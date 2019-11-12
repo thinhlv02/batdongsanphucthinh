@@ -224,7 +224,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Linh bài viết<span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" id="ads_link" name="ads_link" readonly value="<?php echo base_url('rao-vat/' . create_slug($ads->title) . '-' . $ads->id)  ?>" class="form-control col-md-7 col-xs-12" placeholder="nhập link bài viết">
+                        <input type="text" name="ads_link" readonly value="<?php echo $ads->ads_link; ?>" class="form-control col-md-7 col-xs-12" placeholder="nhập link bài viết">
                     </div>
                 </div>
 
@@ -357,13 +357,5 @@
             $('#txtAddress').val($('#hddtxtStreet').val() + ' - ' +  $('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
         }
     }
-
-    $('input#txtName').on('input',function(e){
-        var _change = $('#txtName').val();
-        console.log('changed' + _change);
-        // $('#ads_link').val(_change);
-
-        // alert('Changed!')
-    });
 
 </script>
