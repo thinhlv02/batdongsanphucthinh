@@ -1,4 +1,4 @@
-<select class="select2_group form-control" name="street" id="selectStreet">
+<select class="select2_group form-control" name="street" id="selectStreet" onchange="getStreetName(this)">
     <!--                            --><?php //pre($type_status) ?>
     <option value="0">-- Không có --</option>
     <?php foreach ($lstdata as $key => $value) { ?>

@@ -314,4 +314,19 @@
         }
     }
 
+    function getStreetName(sel)
+    {
+        var id = sel.value;
+        console.log(id);
+        if (id == 0) {
+
+        } else {
+
+            var _txtStreet = $.trim($("#selectStreet option:selected" ).text());
+            $('#hddtxtStreet').val(_txtStreet);//
+
+            $('#txtAddress').val($('#hddtxtStreet').val() + ' - ' +  $('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
+        }
+    }
+
 </script>
