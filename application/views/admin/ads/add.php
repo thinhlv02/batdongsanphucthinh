@@ -125,7 +125,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Khu vực<span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="area" class="form-control col-md-7 col-xs-12"
+                        <input type="text" name="area" readonly class="form-control col-md-7 col-xs-12" id="txtAddress"
                                placeholder="Địa chỉ tin rao vặt">
                     </div>
                 </div>
@@ -150,7 +150,8 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tỉnh / TP<span
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
-                        <select class="select2_group form-control" name="province" onchange="get_district(this)">
+                        <input type="hidden" id="hddtxtProvince">
+                        <select class="select2_group form-control" name="province" id="txtProvince" onchange="get_district(this)">
                             <option value="0">-- Chọn Tỉnh/TP --</option>
 
                             <?php foreach ($lstProvince as $key => $value) { ?>
@@ -164,6 +165,7 @@
 
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Quận / Huyện<span
                                 class="required">*</span></label>
+                    <input type="hidden" id="hddtxtDistrict">
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divDistrict">
                         <select class="select2_group form-control" name="district">
                             <option value="0">Chọn Quận/Huyện</option>
@@ -173,7 +175,7 @@
 
                     <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Xã / Phường<span
                                 class="required">*</span></label>
-
+                    <input type="hidden" id="hddtxtWard">
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divWard">
                         <select class="select2_group form-control" name="ward">
                             <option value="0">Chọn Xã/Phường</option>
@@ -185,7 +187,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Đường phố<span
                                 class="required">*</span></label>
-
+                    <input type="hidden" id="hddtxtStreet">
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divStreet">
                         <select class="select2_group form-control" name="street">
                             <option value="0">-- Không có --</option>
@@ -221,6 +223,11 @@
             $('#selectWard').empty();
             $('#selectStreet').empty();
         } else {
+            var _txtProvince = $.trim($("#txtProvince option:selected" ).text());
+
+            $('#txtAddress').val(_txtProvince);
+            $('#hddtxtProvince').val(_txtProvince);
+
             // ajax
             var params = {
                 'id': id
@@ -254,6 +261,11 @@
                 'id': id
             };
 
+            var _txtDistrict = $.trim($("#selectDistrict option:selected" ).text());
+            $('#hddtxtDistrict').val(_txtDistrict);
+
+            $('#txtAddress').val($('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
+
             var _onSuccess = function (data) {
                 // console.log(data);
                 if (data == 'NOT_LOGIN') {
@@ -279,6 +291,11 @@
             var params = {
                 'id': id
             };
+
+            var _txtWard = $.trim($("#selectWard option:selected" ).text());
+            $('#hddtxtWard').val(_txtWard);
+
+            $('#txtAddress').val( $('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
 
             // console.log(params);
             var _onSuccess = function (data) {
