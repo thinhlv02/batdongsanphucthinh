@@ -162,6 +162,7 @@ Class Ads extends MY_Controller
             $config['max_size'] = '10000';
             $this->load->library("upload", $config);
 
+            $title = $this->input->post('txtName');
             $ward_str = $this->input->post('ward');
             $ward = '';
             if ($ward_str) {
@@ -215,7 +216,7 @@ Class Ads extends MY_Controller
             }
 
             $data = array(
-                'title' => $this->input->post('txtName'),
+                'title' => $title,
                 'ads_type' => $this->input->post('slType'),
                 'code' => generateRandomString(6),
                 'view' => generateRandomString(2),
@@ -281,9 +282,14 @@ Class Ads extends MY_Controller
                 $data['img'] = 'default.png';
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
-
-            if ($this->ads_model->create($data)) {
+            $id_create = $this->ads_model->create($data);
+            if ($id_create) {
                 $this->session->set_flashdata('message', 'Thêm rao bán thành công');
+                //update link bài viết luôn
+//                echo $id_create;
+//                die;
+                $this->ads_model->update($id_create, array('ads_link' => base_url('rao-vat/' . create_slug($title) . '-' . $id_create)));
+
                 redirect(base_url('admin/ads'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
