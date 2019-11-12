@@ -111,10 +111,10 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Khu vực<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Địa chỉ<span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="area"  value="<?php echo $ads->area ?>"
+                        <input type="text" name="area" readonly  value="<?php echo $ads->area ?>"
                                class="form-control col-md-7 col-xs-12" placeholder="Địa chỉ tin rao vặt">
                     </div>
                 </div>
@@ -138,6 +138,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tỉnh / TP<span
                                 class="required">*</span></label>
+                    <input type="hidden" id="hddtxtProvince" value="<?php echo $ads->province_name; ?>">
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <select class="select2_group form-control" name="province" onchange="get_district(this)">
                             <option value="0">-- Chọn Tỉnh/TP --</option>
@@ -153,6 +154,8 @@
 
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Quận / Huyện<span
                                 class="required">*</span></label>
+                    <input type="hidden" id="hddtxtDistrict" value="<?php echo $ads->district_name; ?>">
+
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divDistrict">
                             <select class="select2_group form-control" name="district" id="selectDistrict" onchange="get_ward(this)">
 
@@ -170,6 +173,7 @@
 
                     <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Xã / Phường<span
                                 class="required">*</span></label>
+                    <input type="hidden" id="hddtxtWard" value="<?php echo $ads->ward_name; ?>">
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divWard">
                         <select class="select2_group form-control" name="ward" id="selectWard" onchange="get_street(this)">
@@ -193,6 +197,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Đường phố<span
                                 class="required">*</span></label>
+                    <input type="hidden" id="hddtxtStreet" value="<?php echo $ads->street_name; ?>">
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divStreet">
                         <select class="select2_group form-control" name="street">
