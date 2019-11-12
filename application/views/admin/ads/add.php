@@ -122,11 +122,11 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Khu vực<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Địa chỉ<span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="text" name="area" readonly class="form-control col-md-7 col-xs-12" id="txtAddress"
-                               placeholder="Địa chỉ tin rao vặt">
+                               placeholder="Địa chỉ">
                     </div>
                 </div>
 
@@ -319,11 +319,13 @@
         var id = sel.value;
         console.log(id);
         if (id == 0) {
+            $('#hddtxtStreet').val('');
+            $('#txtAddress').val($('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
 
         } else {
 
             var _txtStreet = $.trim($("#selectStreet option:selected" ).text());
-            $('#hddtxtStreet').val(_txtStreet);//
+            $('#hddtxtStreet').val(_txtStreet);
 
             $('#txtAddress').val($('#hddtxtStreet').val() + ' - ' +  $('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
         }
