@@ -396,7 +396,7 @@ Class Home extends MY_Controller
 
     }
 
-    function product_detail_link($slug, $id)
+    function ads_detail_link($slug, $id)
     {
         $ads = $this->ads_model->get_info($id);
         if (!$ads || create_slug($ads->title) != $slug) {

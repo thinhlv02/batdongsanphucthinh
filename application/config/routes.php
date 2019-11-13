@@ -103,7 +103,7 @@ $route['rao-vat/(:any)-(:num)(.html)?'] = 'home/product_detail/$1/$2';
 
 $route['rao-vat-link(.html)?'] = 'home/product';
 $route['rao-vat-link/(:num)'] = 'home/product/$1';
-$route['rao-vat-link/(:any)-(:num)(.html)?'] = 'home/product_detail_link/$1/$2';
+$route['rao-vat-link/(:any)-(:num)(.html)?'] = 'home/ads_detail_link/$1/$2';
 
 $route['dai-ly(.html)?'] = 'home/agency';
 
