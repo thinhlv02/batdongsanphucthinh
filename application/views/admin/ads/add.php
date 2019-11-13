@@ -36,7 +36,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Phân loại <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Phân loại <span
+                                class="required">*</span></label>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <select class="form-control" id="slType" name="slType">
                             <?php foreach ($ads_type as $k => $v) { ?>
@@ -99,7 +100,7 @@
                                 class="required">*</span></label>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <input type="text" name="useacreage"
-                                class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">
+                               class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">
                     </div>
 
                 </div>
@@ -116,7 +117,7 @@
                                 class="required">*</span></label>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <input type="text" name="landwidth"
-                                class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 20">
+                               class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 20">
                     </div>
 
                 </div>
@@ -151,7 +152,8 @@
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <input type="hidden" id="hddtxtProvince">
-                        <select class="select2_group form-control" name="province" id="txtProvince" onchange="get_district(this)">
+                        <select class="select2_group form-control" name="province" id="txtProvince"
+                                onchange="get_district(this)">
                             <option value="0">-- Chọn Tỉnh/TP --</option>
 
                             <?php foreach ($lstProvince as $key => $value) { ?>
@@ -223,7 +225,7 @@
             $('#selectWard').empty();
             $('#selectStreet').empty();
         } else {
-            var _txtProvince = $.trim($("#txtProvince option:selected" ).text());
+            var _txtProvince = $.trim($("#txtProvince option:selected").text());
 
             $('#txtAddress').val(_txtProvince);
             $('#hddtxtProvince').val(_txtProvince);
@@ -261,7 +263,7 @@
                 'id': id
             };
 
-            var _txtDistrict = $.trim($("#selectDistrict option:selected" ).text());
+            var _txtDistrict = $.trim($("#selectDistrict option:selected").text());
             $('#hddtxtDistrict').val(_txtDistrict);
 
             $('#txtAddress').val($('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
@@ -292,10 +294,10 @@
                 'id': id
             };
 
-            var _txtWard = $.trim($("#selectWard option:selected" ).text());
+            var _txtWard = $.trim($("#selectWard option:selected").text());
             $('#hddtxtWard').val(_txtWard);
 
-            $('#txtAddress').val( $('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
+            $('#txtAddress').val($('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
 
             // console.log(params);
             var _onSuccess = function (data) {
@@ -314,8 +316,7 @@
         }
     }
 
-    function getStreetName(sel)
-    {
+    function getStreetName(sel) {
         var id = sel.value;
         console.log(id);
         if (id == 0) {
@@ -324,10 +325,10 @@
 
         } else {
 
-            var _txtStreet = $.trim($("#selectStreet option:selected" ).text());
+            var _txtStreet = $.trim($("#selectStreet option:selected").text());
             $('#hddtxtStreet').val(_txtStreet);
 
-            $('#txtAddress').val($('#hddtxtStreet').val() + ' - ' +  $('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
+            $('#txtAddress').val($('#hddtxtStreet').val() + ' - ' + $('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
         }
     }
 
