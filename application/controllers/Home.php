@@ -384,14 +384,14 @@ Class Home extends MY_Controller
 //        $this->data['canonical'] = $ads->canonical_url;
 //        $this->data['keywords'] = $ads->meta_keywords;
 
-//        $this->data['temp'] = $this->_template_f . 'ads/product_detail';
+//        $this->data['temp'] = $this->_template_f . 'ads/ads_detail';
         // load header
         $header = array();
         $header['title'] = $ads->title;
         $header['image'] = public_url('images/ads/' . $ads->img);
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'ads/product_detail_hp', $this->data);
+        $this->load->view($this->_template_f . 'ads/ads_detail_hp', $this->data);
         $this->_loadFooter();
 
     }
@@ -435,7 +435,7 @@ Class Home extends MY_Controller
         $header['image'] = public_url('images/ads/' . $ads->img);
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'ads/product_detail_link', $this->data);
+        $this->load->view($this->_template_f . 'ads/ads_detail_link', $this->data);
         $this->_loadFooter();
 
     }
@@ -508,14 +508,14 @@ Class Home extends MY_Controller
 //        $this->data['canonical'] = $ads->canonical_url;
 //        $this->data['keywords'] = $ads->meta_keywords;
 
-//        $this->data['temp'] = $this->_template_f . 'ads/product_detail';
+//        $this->data['temp'] = $this->_template_f . 'ads/ads_detail';
         // load header
         $header = array();
         $header['title'] = $ads->title;
         $header['image'] = public_url('images/ads/' . $ads->img);
         $this->_loadHeader($header);
 
-        $this->load->view($this->_template_f . 'ads/product_detail_hp', $this->data);
+        $this->load->view($this->_template_f . 'ads/ads_detail_hp', $this->data);
         $this->_loadFooter();
 
     }
