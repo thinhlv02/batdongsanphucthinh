@@ -154,7 +154,7 @@
                         <div class="pack_land_box">
                             <div class="row12">
                                 <div class="col-xs-12 pland"><strong>Tên liên lạc :</strong>
-                                    <?php echo $ads->contact_name != '' ? $ads->contact_name : 'N/A' ?>
+                                    <?php echo $ads->contact_name != '' ? $ads->contact_name : 'Đang cập nhật' ?>
                                 </div>
                             </div>
                             <div class="row12">
