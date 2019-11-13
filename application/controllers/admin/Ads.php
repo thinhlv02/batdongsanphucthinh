@@ -65,8 +65,7 @@ Class Ads extends MY_Controller
 
         //search by location
 
-        if ($location != '-1')
-        {
+        if ($location != '-1') {
             switch ($location) {
                 case "ads_left":
                     $input['where'] += array('ads_left' => 1);
@@ -282,14 +281,11 @@ Class Ads extends MY_Controller
                 $data['img'] = 'default.png';
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
-            $id_create = $this->ads_model->create($data);
-            if ($id_create) {
+            $insert_id = $this->ads_model->create($data);
+            if ($insert_id) {
                 $this->session->set_flashdata('message', 'Thêm rao bán thành công');
-                //update link bài viết luôn
-//                echo $id_create;
-//                die;
-                $this->ads_model->update($id_create, array('ads_link' => base_url('rao-vat/' . create_slug($title) . '-' . $id_create)));
-
+                //update ads_link
+                $this->ads_model->update($insert_id, array('ads_link' => base_url('rao-vat/' . create_slug($title) . '-' . $insert_id)));
                 redirect(base_url('admin/ads'));
             } else {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
