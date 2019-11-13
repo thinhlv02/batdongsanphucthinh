@@ -609,13 +609,13 @@
                                                                         id="LoadDistrictId" name="DistrictId"
                                                                         onchange="changeDistrict(this.value)"
                                                                         style="display: none;">
-                                        <option value=""> -- Chọn Quận/Huyện --</option>
+                                        <option value=""> -- Quận/huyện --</option>
                                     </select>
                                     <div class="chosen-container chosen-container-single" title=""
                                          id="LoadDistrictId_chosen"
                                          style="width: 235px;"><a class="chosen-single">
                                             <input class="chosen-focus-input" type="text" autocomplete="off">
-                                            <span> -- Chọn Quận/Huyện --</span>
+                                            <span> -- Quận/huyện --</span>
                                             <div><b></b></div>
                                         </a>
                                         <div class="chosen-drop">

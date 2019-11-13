@@ -46,7 +46,7 @@
 
             <div class="col-md-2 col-sm-2 col-xs-12">
                 <select class="select2_group form-control" id="province" name="province">
-                    <option value="0">-- Chọn Tỉnh/TP --</option>
+                    <option value="0">-- Tỉnh/thành phố --</option>
                     <?php foreach ($lstProvince as $key => $value) { ?>
                         <option value="<?= $value->id ?>" <?php if (isset($_GET['province']) && $_GET['province'] == $value->id) echo 'selected' ?>>
                             <?php echo $value->_name ?>

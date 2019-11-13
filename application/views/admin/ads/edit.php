@@ -40,7 +40,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn
                         <span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <textarea name="txtIntro" rows="4"
+                        <textarea name="txtIntro" rows="3"
                                   class="form-control"><?php echo str_replace('<br />', '&#13;', $ads->intro) ?></textarea>
                     </div>
                 </div>
@@ -136,12 +136,12 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tỉnh / TP<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tỉnh/thành phố<span
                                 class="required">*</span></label>
                     <input type="hidden" id="hddtxtProvince" value="<?php echo $ads->province_name; ?>">
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <select class="select2_group form-control" name="province" id="txtProvince" onchange="get_district(this)">
-                            <option value="0">-- Chọn Tỉnh/TP --</option>
+                            <option value="0">-- Tỉnh/thành phố --</option>
 
                             <?php foreach ($lstProvince as $key => $value) { ?>
                                 <option value="<?= $value->id ?>" <?php if (isset($province_id) && $province_id == $value->id) echo 'selected' ?>>
@@ -152,14 +152,14 @@
                         </select>
                     </div>
 
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Quận / Huyện<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Quận/huyện<span
                                 class="required">*</span></label>
                     <input type="hidden" id="hddtxtDistrict" value="<?php echo $ads->district_name; ?>">
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divDistrict">
                             <select class="select2_group form-control" name="district" id="selectDistrict" onchange="get_ward(this)">
 
-                            <option value="0">Chọn Quận/Huyện</option>
+                            <option value="0">Quận/huyện</option>
                             <?php if (isset($district_arr) && !empty($district_arr)) {
                                 foreach ($district_arr as $k => $val) { ?>
                                     <option value="<?php echo $val->id ?>" <?php if (isset($district_id) && $district_id == $val->id) echo 'selected' ?>>
@@ -171,14 +171,14 @@
 
                     </div>
 
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Xã / Phường<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Xã/phường<span
                                 class="required">*</span></label>
                     <input type="hidden" id="hddtxtWard" value="<?php echo $ads->ward_name; ?>">
 
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divWard">
                         <select class="select2_group form-control" name="ward" id="selectWard" onchange="get_street(this)">
 
-                        <option value="0">Chọn Xã/Phường</option>
+                        <option value="0">Xã/phường</option>
                             <?php if (isset($ward_arr) && !empty($ward_arr)) {
                                 foreach ($ward_arr as $k => $val) {
                                     $first = explode('|', $val['id']);
@@ -195,7 +195,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Đường phố<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Đường/phố<span
                                 class="required">*</span></label>
                     <input type="hidden" id="hddtxtStreet" value="<?php echo $ads->street_name; ?>">
 

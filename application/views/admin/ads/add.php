@@ -51,7 +51,7 @@
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn <span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <textarea name="txtIntro" rows="4" class="form-control"></textarea>
+                        <textarea name="txtIntro" rows="3" class="form-control"></textarea>
                     </div>
                 </div>
                 <div class="form-group">
@@ -148,13 +148,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tỉnh / TP<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tỉnh/thành phố<span
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <input type="hidden" id="hddtxtProvince">
                         <select class="select2_group form-control" name="province" id="txtProvince"
                                 onchange="get_district(this)">
-                            <option value="0">-- Chọn Tỉnh/TP --</option>
+                            <option value="0">-- Tỉnh/thành phố --</option>
 
                             <?php foreach ($lstProvince as $key => $value) { ?>
                                 <option value="<?= $value->id ?>" <?php if (isset($_POST['type']) && $_POST['type'] == $key) echo 'selected' ?>>
@@ -165,29 +165,29 @@
                         </select>
                     </div>
 
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Quận / Huyện<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Quận/huyện<span
                                 class="required">*</span></label>
                     <input type="hidden" id="hddtxtDistrict">
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divDistrict">
                         <select class="select2_group form-control" name="district">
-                            <option value="0">Chọn Quận/Huyện</option>
+                            <option value="0">Quận/huyện</option>
                         </select>
 
                     </div>
 
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Xã / Phường<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Xã/phường<span
                                 class="required">*</span></label>
                     <input type="hidden" id="hddtxtWard">
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divWard">
                         <select class="select2_group form-control" name="ward">
-                            <option value="0">Chọn Xã/Phường</option>
+                            <option value="0">Xã/phường</option>
                         </select>
 
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Đường phố<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Đường/phố<span
                                 class="required">*</span></label>
                     <input type="hidden" id="hddtxtStreet">
                     <div class="col-md-2 col-sm-2 col-xs-12" id="divStreet">

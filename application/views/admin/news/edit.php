@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tỉnh / TP<span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tỉnh/thành phố<span
                                 class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <select class="select2_group form-control" name="province">

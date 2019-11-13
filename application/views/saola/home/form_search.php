@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="form-group">
-                    <!--                                <label for="email">Xã / Phường</label>-->
+                    <!--                                <label for="email">Xã/phường</label>-->
                     <div class="" id="divWard">
                         <select class="form-control" name="ward">
                             <option value="0"> <?php echo $common_lang['choose_ward']; ?></option>
