@@ -289,7 +289,7 @@
             var _txtDistrict = $.trim($("#selectDistrict option:selected" ).text());
             $('#hddtxtDistrict').val(_txtDistrict);
 
-            $('#txtAddress').val($('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
+            $('#txtAddress').val($('#hddtxtDistrict').val() + ', ' + $('#hddtxtProvince').val());
 
 
             var _onSuccess = function (data) {
@@ -321,7 +321,7 @@
             var _txtWard = $.trim($("#selectWard option:selected" ).text());
             $('#hddtxtWard').val(_txtWard);
 
-            $('#txtAddress').val( $('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
+            $('#txtAddress').val( $('#hddtxtWard').val() + ', ' + $('#hddtxtDistrict').val() + ', ' + $('#hddtxtProvince').val());
 
 
             // console.log(params);
@@ -347,14 +347,14 @@
         console.log(id);
         if (id == 0) {
             $('#hddtxtStreet').val('');
-            $('#txtAddress').val($('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
+            $('#txtAddress').val($('#hddtxtWard').val() + ', ' + $('#hddtxtDistrict').val() + ', ' + $('#hddtxtProvince').val());
 
         } else {
 
             var _txtStreet = $.trim($("#selectStreet option:selected" ).text());
             $('#hddtxtStreet').val(_txtStreet);
 
-            $('#txtAddress').val($('#hddtxtStreet').val() + ' - ' +  $('#hddtxtWard').val() + ' - ' + $('#hddtxtDistrict').val() + ' - ' + $('#hddtxtProvince').val());
+            $('#txtAddress').val($('#hddtxtStreet').val() + ', ' +  $('#hddtxtWard').val() + ', ' + $('#hddtxtDistrict').val() + ', ' + $('#hddtxtProvince').val());
         }
     }
 

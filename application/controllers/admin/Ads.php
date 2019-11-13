@@ -861,6 +861,7 @@ Class Ads extends MY_Controller
         foreach ($lst_district as $k => $value) {
             $lst_district_end[$value->id]['id'] = $value->id;
             $lst_district_end[$value->id]['_name'] = $value->_name;
+            $lst_district_end[$value->id]['_prefix'] = $value->_prefix;
         }
 //        pre_arr($lst_district_end);
 
@@ -886,6 +887,7 @@ Class Ads extends MY_Controller
         foreach ($lst_ward as $k => $value) {
             $lst_ward_end[$value->id]['id'] = $value->id . '|' . $value->_district_id;
             $lst_ward_end[$value->id]['_name'] = $value->_name;
+            $lst_ward_end[$value->id]['_prefix'] = $value->_prefix;
         }
 //        pre_arr($lst_ward_end);
 
@@ -909,6 +911,7 @@ Class Ads extends MY_Controller
         foreach ($lst_ward as $k => $value) {
             $lst_ward_end[$value->id]['id'] = $value->id;
             $lst_ward_end[$value->id]['_name'] = $value->_name;
+            $lst_ward_end[$value->id]['_prefix'] = $value->_prefix;
         }
 //        pre_arr($lst_ward_end);
 
