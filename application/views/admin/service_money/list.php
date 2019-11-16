@@ -89,7 +89,7 @@
                 <th>Tiêu đề</th>
 <!--                <th>Giá</th>-->
 <!--                <th>Diện tích</th>-->
-<!--                <th>Khu vực</th>-->
+                <th>Khu vực</th>
                 <th>Ngày Tạo</th>
                 <th>service_money</th>
                 <th>make_money_by</th>
@@ -115,7 +115,7 @@
 
 <!--                    <td>--><?php //echo $row->price?><!--</td>-->
 <!--                    <td>--><?php //echo $row->acreage?><!--</td>-->
-<!--                    <td>--><?php //echo $row->area?><!--</td>-->
+                    <td><?php echo $row->area?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                     <td><?php echo $row->service_money > 0 ? number_format($row->service_money) : '' ?></td>
                     <td><?php echo $row->name_emp ?></td>
@@ -132,7 +132,7 @@
             <?php if (isset($ads) && !empty($ads)) { ?>
                 <tfoot>
                 <tr class="bg-primary">
-                    <td colspan="4">Tổng tiền</td>
+                    <td colspan="5">Tổng tiền</td>
                     <td><?php echo($sum > 0 ? number_format($sum) : '') ?></td>
                     <td><?php echo($sum > 0 ? number_format($sum*0.15) : '') ?></td>
                     <td colspan="2"></td>
