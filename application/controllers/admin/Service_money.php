@@ -57,7 +57,7 @@ Class Service_money extends MY_Controller
 
                 if ($check_money == 0) //service_money
                 {
-                    $input['where'] += array('service_money' => 0);
+                    $input['where'] += array('service_money = ' => 0);
                 }
 
             }
