@@ -34,7 +34,7 @@
 
                         <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Nhân sự<span
                                     class="required">*</span></label>
-                        <div class="col-md-2 col-sm-2 col-xs-12">
+                        <div class="col-md-1 col-sm-2 col-xs-12">
                             <select class="select2_group form-control" name="make_money_by">
                                 <option value="99">-- All --</option>
                                 <?php foreach ($emps as $key => $value) { ?>
