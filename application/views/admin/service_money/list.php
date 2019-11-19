@@ -12,7 +12,7 @@
 
                         <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Bắt đầu<span
                                     class="required">*</span></label>
-                        <div class="col-md-2 col-sm-2 col-xs-12">
+                        <div class="col-md-1 col-sm-2 col-xs-12">
                             <!--                <span style="float: left;margin-top: 7px">Từ ngày: </span>-->
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <input type="text" id="txtFrom" name="txtFrom" required
@@ -23,7 +23,7 @@
 
                         <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">kết thúc<span
                                     class="required">*</span></label>
-                        <div class="col-md-2 col-sm-2 col-xs-12">
+                        <div class="col-md-1 col-sm-2 col-xs-12">
                             <!--                <span style="float: left;margin-top: 7px">Từ ngày: </span>-->
 
                             <input type="text" id="txtTo" name="txtTo" required
