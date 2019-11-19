@@ -33,6 +33,7 @@ Class Service_money extends MY_Controller
             $from = date('Y-m-d', strtotime($this->input->post('txtFrom')));
             $to = date('Y-m-d', strtotime($this->input->post('txtTo')));
             $make_money_by = $this->input->post('make_money_by');
+            $check_money = $this->input->post('check_money');
             $input = [];
             $input['where'] = array(
                 'created_at >=' => $from,
@@ -45,6 +46,20 @@ Class Service_money extends MY_Controller
 
             if ($make_money_by != 99) {
                 $input['where']['make_money_by'] =  $make_money_by;
+            }
+
+            if ($check_money != -1)
+            {
+                if ($check_money == 1) //service_money
+                {
+                    $input['where'] += array('service_money > ' => 0);
+                }
+
+                if ($check_money == 0) //service_money
+                {
+                    $input['where'] += array('service_money' => 0);
+                }
+
             }
 
             $ads = $this->ads_model->get_list($input);

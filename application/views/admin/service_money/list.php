@@ -46,6 +46,16 @@
                             </select>
                         </div>
 
+                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Trạng thái<span
+                                    class="required">*</span></label>
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <select class="select2_group form-control" name="check_money">
+                                <option value="-1" <?php if (isset($_POST['check_money']) && $_POST['check_money'] == -1) echo 'selected' ?>>-- All --</option>
+                                <option value="1" <?php if (isset($_POST['check_money']) && $_POST['check_money'] == 1) echo 'selected' ?>>Nạp tiền</option>
+                                <option value="0" <?php if (isset($_POST['check_money']) && $_POST['check_money'] == 0) echo 'selected' ?>>Trống</option>
+                            </select>
+                        </div>
+
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-0" style="width: 70px">
                             <input type="submit" id="btnAddEvent" name="btnAddSearch" class="btn btn-success"
                                    value="Tìm">
