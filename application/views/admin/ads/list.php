@@ -198,7 +198,8 @@
     //     });
     // });
 
-    function loadpage(page) {
+    function loadpage(page)
+    {
 
         var ads_type = $("#ads_type").val();
         var created_by = $("#created_by").val();
@@ -215,16 +216,19 @@
         todate = todate.split('/');
         todate = todate[0] + '-' + todate[1] + '-' + todate[2];
         todate = todate.replace(/\s+/g, '');
-        window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by=' + created_by + '&fromdate=' + fromdate + '&todate=' + todate + '&province='+province+'&location='+location;
+        window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by=' + created_by + '&fromdate=' + fromdate + '&todate=' + todate + '&province=' + province + '&location=' + location;
     }
 
-    function confirmDel(id) {
-        if (confirm('Bạn có chắc chắn muốn xóa?')) {
+    function confirmDel(id)
+    {
+        if (confirm('Bạn có chắc chắn muốn xóa?'))
+        {
             window.location.href = '<?php echo base_url('admin/ads/del/')?>' + id;
         }
     }
 
-    function ads_left(id) {
+    function ads_left(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('ads/ads_left')?>",
             type: "post",
@@ -234,7 +238,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#ads_left-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -244,7 +249,8 @@
         })
     }
 
-    function ads_right(id) {
+    function ads_right(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('ads/ads_right')?>",
             type: "post",
@@ -254,7 +260,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#ads_right-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -264,7 +271,8 @@
         })
     }
 
-    function ads_center(id) {
+    function ads_center(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('ads/ads_center')?>",
             type: "post",
@@ -274,7 +282,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#ads_center-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -284,7 +293,8 @@
         })
     }
 
-    function layer_left(id) {
+    function layer_left(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('ads/layer_left')?>",
             type: "post",
@@ -294,7 +304,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#layer_left-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -304,7 +315,8 @@
         })
     }
 
-    function layer_vip(id) {
+    function layer_vip(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('ads/layer_vip')?>",
             type: "post",
@@ -314,7 +326,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#layer_vip-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -324,7 +337,8 @@
         })
     }
 
-    function layer_right(id) {
+    function layer_right(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('ads/layer_right')?>",
             type: "post",
@@ -334,7 +348,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#layer_right-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -344,7 +359,8 @@
         })
     }
 
-    function icon_new(id) {
+    function icon_new(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('ads/icon_new')?>",
             type: "post",
@@ -354,7 +370,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#icon_new-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -364,7 +381,8 @@
         })
     }
 
-    function icon_vip(id) {
+    function icon_vip(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('ads/icon_vip')?>",
             type: "post",
@@ -374,7 +392,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#icon_vip-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -384,7 +403,8 @@
         })
     }
 
-    function icon_hot(id) {
+    function icon_hot(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('ads/icon_hot')?>",
             type: "post",
@@ -394,7 +414,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#icon_hot-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
