@@ -63,7 +63,7 @@
         });
 
         //Simple Date Range Picker With a Callback
-        $('#daterange').daterangepicker({
+        $('#txtDate').daterangepicker({
             opens: 'center',
             locale: {
                 format: 'DD/MM/YYYY'

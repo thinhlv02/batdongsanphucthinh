@@ -41,7 +41,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
-                <input type="text" id="daterange" name="daterange" value="<?php echo $fromdate; ?> - <?php echo $todate; ?>" class="form-control col-md-7 col-xs-12"/>
+                <input type="text" id="txtDate" name="daterange" value="<?php echo $fromdate; ?> - <?php echo $todate; ?>" class="form-control col-md-7 col-xs-12"/>
             </div>
 
             <div class="col-md-2 col-sm-2 col-xs-12">
@@ -202,7 +202,7 @@
 
         var ads_type = $("#ads_type").val();
         var created_by = $("#created_by").val();
-        var dateRange = $("#daterange").val();
+        var dateRange = $("#txtDate").val();
         var province = $("#province").val();
         var location = $("#location").val();
 
@@ -215,15 +215,11 @@
         todate = todate.split('/');
         todate = todate[0] + '-' + todate[1] + '-' + todate[2];
         todate = todate.replace(/\s+/g, '');
-        // var groupid = $('#slcGroup').val().trim();
-        // var kw = $("#keyword").val();
-        // var searchby = $("#searchby").val();
         window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by=' + created_by + '&fromdate=' + fromdate + '&todate=' + todate + '&province='+province+'&location='+location;
     }
 
     function confirmDel(id) {
         if (confirm('Bạn có chắc chắn muốn xóa?')) {
-//            console.log('delll');
             window.location.href = '<?php echo base_url('admin/ads/del/')?>' + id;
         }
     }
