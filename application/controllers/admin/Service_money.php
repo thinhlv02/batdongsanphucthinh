@@ -11,15 +11,16 @@ Class Service_money extends MY_Controller
 
     function index()
     {
-        $first = date('d-m-Y', strtotime(getFirstLastMonth(1))) ;
-        $last = date('d-m-Y', strtotime(getFirstLastMonth(2))) ;
+        $first = date('d-m-Y', strtotime(getFirstLastMonth(1)));
+        $last = date('d-m-Y', strtotime(getFirstLastMonth(2)));
 
 
         $emps = $this->employees_model->get_list(array('where' => array('type' => 1)));
 
         $i = 0;
         $emps_arr = [];
-        foreach ($emps as $key => $val) {
+        foreach ($emps as $key => $val)
+        {
             $i++;
             $emps_arr[$val->id] = new stdClass();
             $emps_arr[$val->id]->id = $val->id;
@@ -29,7 +30,8 @@ Class Service_money extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
-        if ($this->input->post('btnAddSearch')) {
+        if ($this->input->post('btnAddSearch'))
+        {
             $from = date('Y-m-d', strtotime($this->input->post('txtFrom')));
             $to = date('Y-m-d', strtotime($this->input->post('txtTo')));
             $make_money_by = $this->input->post('make_money_by');
@@ -44,8 +46,9 @@ Class Service_money extends MY_Controller
 
             $input['order'] = array('id', 'desc');
 
-            if ($make_money_by != 99) {
-                $input['where']['make_money_by'] =  $make_money_by;
+            if ($make_money_by != 99)
+            {
+                $input['where']['make_money_by'] = $make_money_by;
             }
 
             if ($check_money != -1)
@@ -74,7 +77,8 @@ Class Service_money extends MY_Controller
 
             $ads_end = [];
             $index = 0;
-            foreach ($ads as $key => $val) {
+            foreach ($ads as $key => $val)
+            {
                 $index++;
                 $ads_end[$index] = new stdClass();
                 $ads_end[$index]->id = $val->id;
@@ -89,9 +93,12 @@ Class Service_money extends MY_Controller
                 $ads_end[$index]->pay_time = $val->pay_time;
                 $ads_end[$index]->created_at = $val->created_at;
 
-                if ($val->make_money_by > 0) {
+                if ($val->make_money_by > 0)
+                {
                     $ads_end[$index]->name_emp = isset($emps_arr[$val->make_money_by]) ? $emps_arr[$val->make_money_by]->name : 'dcm111111111';
-                } else {
+                }
+                else
+                {
                     $ads_end[$index]->name_emp = '';
                 }
 
@@ -120,13 +127,17 @@ Class Service_money extends MY_Controller
         $id = $this->uri->segment(4);
         $ads = $this->ads_model->get_info($id);
         $pay_time = $ads->pay_time;
-        if ($pay_time == '0000-00-00') {
+        if ($pay_time == '0000-00-00')
+        {
             $pay_time = date('d-m-Y');
-        } else {
+        }
+        else
+        {
             $pay_time = date('d-m-Y', strtotime($ads->pay_time));
         }
 //        var_dump($ads);
-        if (!$ads) {
+        if (!$ads)
+        {
             redirect(base_url('admin/service_money'));
         }
 
@@ -136,17 +147,21 @@ Class Service_money extends MY_Controller
         $price = str_replace(',', '', $this->input->post('service_money'));
         $price = (is_numeric($price) && $price > 0) ? $price : 0;
 
-        if ($this->input->post('btnEdit')) {
+        if ($this->input->post('btnEdit'))
+        {
             $data = array(
                 'service_money' => $price,
                 'make_money_by' => $this->input->post('make_money_by'),
                 'pay_time' => $date,
             );
 
-            if ($this->ads_model->update($id, $data)) {
+            if ($this->ads_model->update($id, $data))
+            {
                 $this->session->set_flashdata('message', 'Cập nhật  thành công');
                 redirect(base_url('admin/service_money'));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
