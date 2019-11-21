@@ -33,7 +33,8 @@ Class Ads extends MY_Controller
         $location = trim($this->input->get('location'));
 //        var_dump($location);
         // validate fromdate and todate
-        if ($todate === -1 OR $todate === FALSE OR $fromdate === -1 OR $fromdate === false OR $fromdate > $todate) {
+        if ($todate === -1 OR $todate === FALSE OR $fromdate === -1 OR $fromdate === false OR $fromdate > $todate)
+        {
             $todate = strtotime(date('Y/m/d'));
             $fromdate = strtotime('-30 day', $todate);
         }
@@ -43,27 +44,35 @@ Class Ads extends MY_Controller
         $input = array();
         $input['where'] = array('created_at >=' => '' . date('Y-m-d', $fromdate) . ' ');
         $input['where'] += array('created_at <=' => '' . date('Y-m-d', $todate) . ' ');
-        if ($ads_type == '-1') {
+        if ($ads_type == '-1')
+        {
             $input['where_in'] = array('ads_type', array('1', '2', '3', '4'));
-        } else {
+        }
+        else
+        {
             $input['where'] = array('ads_type' => $ads_type);
         }
 
-        if ($created_by != '-1') {
-            if ($created_by != '') {
+        if ($created_by != '-1')
+        {
+            if ($created_by != '')
+            {
                 $input['where'] += array('created_by' => $created_by);
             }
         }
         //province
 //        var_dump($province);
-        if ($province != 0) {
+        if ($province != 0)
+        {
             $input['where'] += array('province_id' => $province);
         }
 
         //search by location
 
-        if ($location != '-1') {
-            switch ($location) {
+        if ($location != '-1')
+        {
+            switch ($location)
+            {
                 case "ads_left":
                     $input['where'] += array('ads_left' => 1);
                     break;
@@ -96,7 +105,8 @@ Class Ads extends MY_Controller
 
         $i = 0;
         $admin_arr = [];
-        foreach ($emps as $key => $val) {
+        foreach ($emps as $key => $val)
+        {
             $i++;
             $admin_arr[$val->id] = new stdClass();
             $admin_arr[$val->id]->id = $val->id;
@@ -105,7 +115,8 @@ Class Ads extends MY_Controller
 
         $ads_end = [];
         $index = 0;
-        foreach ($ads as $key => $val) {
+        foreach ($ads as $key => $val)
+        {
             $index++;
             $ads_end[$index] = new stdClass();
             $ads_end[$index]->id = $val->id;
@@ -152,7 +163,8 @@ Class Ads extends MY_Controller
 //        pre_arr($lstProvince);
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if ($this->input->post('btnAdd')) {
+        if ($this->input->post('btnAdd'))
+        {
             $config['upload_path'] = './public/images/ads';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG|jfif|JFIF';
             $config['max_size'] = '10000';
@@ -161,7 +173,8 @@ Class Ads extends MY_Controller
             $title = $this->input->post('txtName');
             $ward_str = $this->input->post('ward');
             $ward = '';
-            if ($ward_str) {
+            if ($ward_str)
+            {
                 $ward = explode('|', $ward_str);
                 $ward = $ward[0];
             }
@@ -191,22 +204,26 @@ Class Ads extends MY_Controller
             $district_name = '';
             $ward_name = '';
             $street_name = '';
-            if ($txtProvince != '') {
+            if ($txtProvince != '')
+            {
                 $txProvince_info = $this->Province_model->get_info($txtProvince);
                 $province_name = $txProvince_info->_name;
             }
 
-            if ($txtDistrict != '') {
+            if ($txtDistrict != '')
+            {
                 $txtDistrict_info = $this->District_model->get_info($txtDistrict);
                 $district_name = $txtDistrict_info->_name;
             }
 
-            if ($ward != '') {
+            if ($ward != '')
+            {
                 $ward_info = $this->Ward_model->get_info($ward);
                 $ward_name = $ward_info->_name;
             }
 
-            if ($txtStreet != '') {
+            if ($txtStreet != '')
+            {
                 $street_info = $this->Street_model->get_info($txtStreet);
                 $street_name = $street_info->_name;
             }
@@ -243,7 +260,8 @@ Class Ads extends MY_Controller
 
             $filesCount = count($_FILES['files']['name']);
             $path_name = '';
-            for ($i = 0; $i < $filesCount; $i++) {
+            for ($i = 0; $i < $filesCount; $i++)
+            {
                 $_FILES['file']['name'] = $_FILES['files']['name'][$i];
                 $_FILES['file']['type'] = $_FILES['files']['type'][$i];
                 $_FILES['file']['tmp_name'] = $_FILES['files']['tmp_name'][$i];
@@ -253,7 +271,8 @@ Class Ads extends MY_Controller
                 $this->upload->initialize($config);
 
                 // Upload file to server
-                if ($this->upload->do_upload('file')) {
+                if ($this->upload->do_upload('file'))
+                {
                     // Uploaded file data
                     $fileData = $this->upload->data();
                     $uploadData[$i]['file_name'] = $fileData['file_name'];
@@ -262,7 +281,8 @@ Class Ads extends MY_Controller
 
             }
             $path_name = substr($path_name, 0, -1);
-            if ($path_name != '') {
+            if ($path_name != '')
+            {
                 $data['lightSlider'] = $path_name;
             }
 
@@ -271,20 +291,26 @@ Class Ads extends MY_Controller
 //            var_dump($uploadData);
 //            die('');
 
-            if ($this->upload->do_upload('img_news')) {
+            if ($this->upload->do_upload('img_news'))
+            {
                 $file_data = $this->upload->data();
                 $data['img'] = $file_data['file_name'];
-            } else {
+            }
+            else
+            {
                 $data['img'] = 'default.png';
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
             $insert_id = $this->ads_model->create($data);
-            if ($insert_id) {
+            if ($insert_id)
+            {
                 $this->session->set_flashdata('message', 'Thêm rao bán thành công');
                 //update ads_link
                 $this->ads_model->update($insert_id, array('ads_link' => base_url('rao-vat/' . create_slug($title) . '-' . $insert_id)));
                 redirect(base_url('admin/ads'));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
 
@@ -305,13 +331,15 @@ Class Ads extends MY_Controller
         $id = $this->uri->segment(4);
         $ads = $this->ads_model->get_info($id);
 //        pre($ads);
-        if (!$ads) {
+        if (!$ads)
+        {
             redirect(base_url('admin/ads'));
         }
 
         //get list district if isset province on table ads
         $district_arr = '';
-        if ($ads->province_id != '' && $ads->district_id != '') {
+        if ($ads->province_id != '' && $ads->district_id != '')
+        {
             $district_arr = $this->District_model->get_list(array('where' => array('_province_id' => $ads->province_id)));
         }
         $this->data['district_arr'] = $district_arr;
@@ -319,11 +347,13 @@ Class Ads extends MY_Controller
 
         //get list ward if isset district on table ads
         $ward_arr_end = '';
-        if ($ads->province_id != '' && $ads->district_id != '' && $ads->ward_id != '') {
+        if ($ads->province_id != '' && $ads->district_id != '' && $ads->ward_id != '')
+        {
             $ward_arr = $this->Ward_model->get_list(array('where' => array('_district_id' => $ads->district_id)));
 
             $ward_arr_end = [];
-            foreach ($ward_arr as $k => $value) {
+            foreach ($ward_arr as $k => $value)
+            {
                 $ward_arr_end[$value->id]['id'] = $value->id . '|' . $value->_district_id;
                 $ward_arr_end[$value->id]['_name'] = $value->_name;
             }
@@ -334,18 +364,21 @@ Class Ads extends MY_Controller
 
         //get list street
         $street_arr = '';
-        if ($ads->province_id != '' && $ads->district_id != '' && $ads->ward_id != '' && $ads->street_id != '') {
+        if ($ads->province_id != '' && $ads->district_id != '' && $ads->ward_id != '' && $ads->street_id != '')
+        {
 
             $street_arr = $this->Street_model->get_list(array('where' => array('_district_id' => $ads->district_id)));
         }
         $this->data['street_arr'] = $street_arr;
 //        pre($street_arr);
 
-        if ($this->input->post('btnEdit')) {
+        if ($this->input->post('btnEdit'))
+        {
 
             $ward_str = $this->input->post('ward');
             $ward = '';
-            if ($ward_str) {
+            if ($ward_str)
+            {
                 $ward = explode('|', $ward_str);
                 $ward = $ward[0];
             }
@@ -359,22 +392,26 @@ Class Ads extends MY_Controller
             $district_name = '';
             $ward_name = '';
             $street_name = '';
-            if ($txtProvince != '') {
+            if ($txtProvince != '')
+            {
                 $txProvince_info = $this->Province_model->get_info($txtProvince);
                 $province_name = $txProvince_info->_name;
             }
 
-            if ($txtDistrict != '') {
+            if ($txtDistrict != '')
+            {
                 $txtDistrict_info = $this->District_model->get_info($txtDistrict);
                 $district_name = $txtDistrict_info->_name;
             }
 
-            if ($ward != '') {
+            if ($ward != '')
+            {
                 $ward_info = $this->Ward_model->get_info($ward);
                 $ward_name = $ward_info->_name;
             }
 
-            if ($txtStreet != '') {
+            if ($txtStreet != '')
+            {
                 $street_info = $this->Street_model->get_info($txtStreet);
                 $street_name = $street_info->_name;
             }
@@ -408,17 +445,22 @@ Class Ads extends MY_Controller
             $config['upload_path'] = './public/images/ads';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG|jfif|JFIF';
             $this->load->library("upload", $config);
-            if ($this->upload->do_upload('img_news')) {
+            if ($this->upload->do_upload('img_news'))
+            {
                 $file_data = $this->upload->data();
                 $data['img'] = $file_data['file_name'];
-                if (isset($ads->img)) {
+                if (isset($ads->img))
+                {
 
-                    if ($ads->img != 'default.png') {
+                    if ($ads->img != 'default.png')
+                    {
                         unlink('./public/images/ads/' . $ads->img);
                     }
 
                 }
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
 
@@ -443,10 +485,12 @@ Class Ads extends MY_Controller
 
             //img slide
 //            if(!empty($_FILES['files']['name'])) {
-            if (!empty($_FILES['files']['name'][0])) {
+            if (!empty($_FILES['files']['name'][0]))
+            {
                 $filesCount = count($_FILES['files']['name']);
                 $path_name = '';
-                for ($i = 0; $i < $filesCount; $i++) {
+                for ($i = 0; $i < $filesCount; $i++)
+                {
                     $_FILES['file']['name'] = $_FILES['files']['name'][$i];
                     $_FILES['file']['type'] = $_FILES['files']['type'][$i];
                     $_FILES['file']['tmp_name'] = $_FILES['files']['tmp_name'][$i];
@@ -456,7 +500,8 @@ Class Ads extends MY_Controller
                     $this->upload->initialize($config);
 
                     // Upload file to server
-                    if ($this->upload->do_upload('file')) {
+                    if ($this->upload->do_upload('file'))
+                    {
                         // Uploaded file data
                         $fileData = $this->upload->data();
                         $uploadData[$i]['file_name'] = $fileData['file_name'];
@@ -471,9 +516,11 @@ Class Ads extends MY_Controller
 
                 //delete image slide OLD
 
-                if ($path_name != '') {
+                if ($path_name != '')
+                {
                     $tags = explode('#', $ads->lightSlider);
-                    foreach ($tags as $k => $val) {
+                    foreach ($tags as $k => $val)
+                    {
                         unlink('./public/images/ads/' . $val);
                     }
 
@@ -486,11 +533,14 @@ Class Ads extends MY_Controller
             //img slide
 
 
-            if ($this->ads_model->update($id, $data)) {
+            if ($this->ads_model->update($id, $data))
+            {
                 $this->session->set_flashdata('message', 'Cập nhật rao bán thành công');
 //                redirect(base_url('admin/ads/edit/' . $id));
                 redirect(base_url('admin/ads/edit'));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
@@ -514,22 +564,27 @@ Class Ads extends MY_Controller
         $id_ads = $this->uri->segment(5);
         $ads = $this->ads_link_model->get_info($id);
 //        pre($ads);
-        if (!$ads) {
+        if (!$ads)
+        {
             redirect(base_url('admin/ads'));
         }
 
-        if ($this->input->post('btnEdit')) {
+        if ($this->input->post('btnEdit'))
+        {
             $data = array(
                 'link_web' => $this->input->post('txtLinkWeb'),
                 'link_facebook' => $this->input->post('txtLinkFacebook'),
             );
 
 
-            if ($this->ads_link_model->update($id, $data)) {
+            if ($this->ads_link_model->update($id, $data))
+            {
                 $this->session->set_flashdata('message', 'Cập nhật link thành công');
 //                redirect(base_url('admin/ads/edit/' . $id));
                 redirect(base_url('admin/ads/ads_link/' . $id_ads));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
@@ -545,17 +600,22 @@ Class Ads extends MY_Controller
     {
         $id = $this->uri->segment(4);
         $ads = $this->ads_model->get_info($id);
-        if ($ads) {
+        if ($ads)
+        {
             $this->ads_model->delete($id);
-            if ($ads->img != 'default.png') {
+            if ($ads->img != 'default.png')
+            {
                 unlink('./public/images/ads/' . $ads->img);
             }
 
             //delete image slide
-            if ($ads->lightSlider != '') {
+            if ($ads->lightSlider != '')
+            {
                 $tags = explode('#', $ads->lightSlider);
-                foreach ($tags as $k => $val) {
-                    if ($val != 'default.png') {
+                foreach ($tags as $k => $val)
+                {
+                    if ($val != 'default.png')
+                    {
                         unlink('./public/images/ads/' . $val);
                     }
                 }
@@ -571,7 +631,8 @@ Class Ads extends MY_Controller
         $id = $this->uri->segment(4);
         $id_ads = $this->uri->segment(5);
         $ads = $this->ads_link_model->get_info($id);
-        if ($ads) {
+        if ($ads)
+        {
             $this->ads_link_model->delete($id);
 
         }
@@ -586,7 +647,8 @@ Class Ads extends MY_Controller
         $id = $this->uri->segment(4);
         $ads = $this->ads_model->get_info($id);
 //        pre($ads);
-        if (!$ads) {
+        if (!$ads)
+        {
             redirect(base_url('admin/ads'));
         }
 
@@ -599,7 +661,8 @@ Class Ads extends MY_Controller
 
         $ads_end = [];
         $index = 0;
-        foreach ($ads as $key => $val) {
+        foreach ($ads as $key => $val)
+        {
             $index++;
             $ads_end[$index] = new stdClass();
             $ads_end[$index]->id = $val->id;
@@ -623,12 +686,14 @@ Class Ads extends MY_Controller
         $id = $this->uri->segment(4);
         $ads = $this->ads_model->get_info($id);
 //        pre($ads);
-        if (!$ads) {
+        if (!$ads)
+        {
             redirect(base_url('admin/ads'));
         }
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if ($this->input->post('btnAdd')) {
+        if ($this->input->post('btnAdd'))
+        {
 
 //            $created_at =  $this->input->post('created_at');
 //            $created_at = date('Y-m-d', strtotime($created_at));
@@ -644,10 +709,13 @@ Class Ads extends MY_Controller
 //            pre($data);
 //            die();
 
-            if ($this->ads_link_model->create($data)) {
+            if ($this->ads_link_model->create($data))
+            {
                 $this->session->set_flashdata('message', 'Thêm link thành công');
                 redirect(base_url('admin/ads/ads_link/' . $id));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
 
@@ -664,13 +732,17 @@ Class Ads extends MY_Controller
         $id = $_POST['id'];
         $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
-        if ($ads) {
+        if ($ads)
+        {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($ads->ads_left) {
+            if ($ads->ads_left)
+            {
                 $res['class'] = 'fa-toggle-off';
                 $dataSubmit['ads_left'] = 0;
-            } else {
+            }
+            else
+            {
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['ads_left'] = 1;
             }
@@ -684,13 +756,17 @@ Class Ads extends MY_Controller
         $id = $_POST['id'];
         $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
-        if ($ads) {
+        if ($ads)
+        {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($ads->ads_right) {
+            if ($ads->ads_right)
+            {
                 $res['class'] = 'fa-toggle-off';
                 $dataSubmit['ads_right'] = 0;
-            } else {
+            }
+            else
+            {
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['ads_right'] = 1;
             }
@@ -704,13 +780,17 @@ Class Ads extends MY_Controller
         $id = $_POST['id'];
         $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
-        if ($ads) {
+        if ($ads)
+        {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($ads->ads_center) {
+            if ($ads->ads_center)
+            {
                 $res['class'] = 'fa-toggle-off';
                 $dataSubmit['ads_center'] = 0;
-            } else {
+            }
+            else
+            {
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['ads_center'] = 1;
             }
@@ -724,13 +804,17 @@ Class Ads extends MY_Controller
         $id = $_POST['id'];
         $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
-        if ($ads) {
+        if ($ads)
+        {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($ads->layer_left) {
+            if ($ads->layer_left)
+            {
                 $res['class'] = 'fa-toggle-off';
                 $dataSubmit['layer_left'] = 0;
-            } else {
+            }
+            else
+            {
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['layer_left'] = 1;
             }
@@ -744,13 +828,17 @@ Class Ads extends MY_Controller
         $id = $_POST['id'];
         $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
-        if ($ads) {
+        if ($ads)
+        {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($ads->layer_vip) {
+            if ($ads->layer_vip)
+            {
                 $res['class'] = 'fa-toggle-off';
                 $dataSubmit['layer_vip'] = 0;
-            } else {
+            }
+            else
+            {
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['layer_vip'] = 1;
             }
@@ -764,13 +852,17 @@ Class Ads extends MY_Controller
         $id = $_POST['id'];
         $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
-        if ($ads) {
+        if ($ads)
+        {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($ads->layer_right) {
+            if ($ads->layer_right)
+            {
                 $res['class'] = 'fa-toggle-off';
                 $dataSubmit['layer_right'] = 0;
-            } else {
+            }
+            else
+            {
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['layer_right'] = 1;
             }
@@ -784,13 +876,17 @@ Class Ads extends MY_Controller
         $id = $_POST['id'];
         $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
-        if ($ads) {
+        if ($ads)
+        {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($ads->icon_new) {
+            if ($ads->icon_new)
+            {
                 $res['class'] = 'fa-toggle-off';
                 $dataSubmit['icon_new'] = 0;
-            } else {
+            }
+            else
+            {
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['icon_new'] = 1;
             }
@@ -804,13 +900,17 @@ Class Ads extends MY_Controller
         $id = $_POST['id'];
         $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
-        if ($ads) {
+        if ($ads)
+        {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($ads->icon_vip) {
+            if ($ads->icon_vip)
+            {
                 $res['class'] = 'fa-toggle-off';
                 $dataSubmit['icon_vip'] = 0;
-            } else {
+            }
+            else
+            {
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['icon_vip'] = 1;
             }
@@ -824,13 +924,17 @@ Class Ads extends MY_Controller
         $id = $_POST['id'];
         $ads = $this->ads_model->get_info($id);
         $res = array("status" => 0);
-        if ($ads) {
+        if ($ads)
+        {
             $res['status'] = 1;
             $dataSubmit = array();
-            if ($ads->icon_hot) {
+            if ($ads->icon_hot)
+            {
                 $res['class'] = 'fa-toggle-off';
                 $dataSubmit['icon_hot'] = 0;
-            } else {
+            }
+            else
+            {
                 $res['class'] = 'fa-toggle-on';
                 $dataSubmit['icon_hot'] = 1;
             }
@@ -851,7 +955,8 @@ Class Ads extends MY_Controller
         $lst_district = $this->District_model->get_list(array('where' => array('_province_id' => $id), 'order' => array('_name', 'asc')));
 
         $lst_district_end = [];
-        foreach ($lst_district as $k => $value) {
+        foreach ($lst_district as $k => $value)
+        {
             $lst_district_end[$value->id]['id'] = $value->id;
             $lst_district_end[$value->id]['_name'] = $value->_name;
             $lst_district_end[$value->id]['_prefix'] = $value->_prefix;
@@ -877,7 +982,8 @@ Class Ads extends MY_Controller
         $lst_ward = $this->Ward_model->get_list(array('where' => array('_district_id' => $id), 'order' => array('_name', 'asc')));
 
         $lst_ward_end = [];
-        foreach ($lst_ward as $k => $value) {
+        foreach ($lst_ward as $k => $value)
+        {
             $lst_ward_end[$value->id]['id'] = $value->id . '|' . $value->_district_id;
             $lst_ward_end[$value->id]['_name'] = $value->_name;
             $lst_ward_end[$value->id]['_prefix'] = $value->_prefix;
@@ -901,7 +1007,8 @@ Class Ads extends MY_Controller
         $lst_ward = $this->Street_model->get_list(array('where' => array('_district_id' => $street_id), 'order' => array('_name', 'asc')));
 
         $lst_ward_end = [];
-        foreach ($lst_ward as $k => $value) {
+        foreach ($lst_ward as $k => $value)
+        {
             $lst_ward_end[$value->id]['id'] = $value->id;
             $lst_ward_end[$value->id]['_name'] = $value->_name;
             $lst_ward_end[$value->id]['_prefix'] = $value->_prefix;
