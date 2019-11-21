@@ -14,7 +14,6 @@ Class Service_money extends MY_Controller
         $first = date('d-m-Y', strtotime(getFirstLastMonth(1)));
         $last = date('d-m-Y', strtotime(getFirstLastMonth(2)));
 
-
         $emps = $this->employees_model->get_list(array('where' => array('type' => 1)));
 
         $i = 0;
@@ -40,8 +39,6 @@ Class Service_money extends MY_Controller
             $input['where'] = array(
                 'created_at >=' => $from,
                 'created_at <=' => $to
-//                'pay_time >=' => $from,
-//                'pay_time <=' => $to
             );
 
             $input['order'] = array('id', 'desc');
@@ -66,14 +63,6 @@ Class Service_money extends MY_Controller
             }
 
             $ads = $this->ads_model->get_list($input);
-//            pre($lstvip);
-//            die();
-//        }
-
-//        $input = array();
-//        $input['order'] = array('highlight', 'desc');
-//        $input['order'] = array('id', 'desc');
-//        $ads = $this->ads_model->get_list($input);
 
             $ads_end = [];
             $index = 0;
@@ -135,7 +124,7 @@ Class Service_money extends MY_Controller
         {
             $pay_time = date('d-m-Y', strtotime($ads->pay_time));
         }
-//        var_dump($ads);
+
         if (!$ads)
         {
             redirect(base_url('admin/service_money'));
