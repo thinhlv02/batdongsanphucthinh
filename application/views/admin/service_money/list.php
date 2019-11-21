@@ -1,5 +1,3 @@
-
-
 <!--form-->
 <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -17,7 +15,7 @@
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <input type="text" id="txtFrom" name="txtFrom" required
                                        class="form-control col-md-7 col-xs-12"
-                                       value="<?php if (isset($_POST['txtFrom'])) echo $_POST['txtFrom'];else echo $first; ?>">
+                                       value="<?php if (isset($_POST['txtFrom'])) echo $_POST['txtFrom']; else echo $first; ?>">
                             </div>
                         </div>
 
@@ -28,7 +26,7 @@
 
                             <input type="text" id="txtTo" name="txtTo" required
                                    class="form-control col-md-7 col-xs-12"
-                                   value="<?php if (isset($_POST['txtTo'])) echo $_POST['txtTo'];else echo $last; ?>">
+                                   value="<?php if (isset($_POST['txtTo'])) echo $_POST['txtTo']; else echo $last; ?>">
 
                         </div>
 
@@ -97,8 +95,8 @@
                 <th>Mã tin</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
-<!--                <th>Giá</th>-->
-<!--                <th>Diện tích</th>-->
+                <!--                <th>Giá</th>-->
+                <!--                <th>Diện tích</th>-->
                 <th>Khu vực</th>
                 <th>Ngày Tạo</th>
                 <th>service_money</th>
@@ -109,34 +107,42 @@
             </thead>
             <tbody>
             <?php
-            if (isset($ads) && !empty($ads)) {
-            $sum = 0;
-            foreach ($ads as $row){
-                $sum += $row->service_money;
-                ?>
-                <tr>
-<!--                    <td>--><?php //echo $row->id?><!--</td>-->
-                    <td><?php echo $row->id?></td>
-                    <td><img src="<?php echo base_url('public/images/ads/'.$row->img)?>" alt="<?php echo $row->img ?>" style="max-width: 80px"> </td>
-                    <td>
-                        <a href="<?php echo base_url('rao-vat/' . create_slug($row->title) . '-' . $row->id) ?>" target="_blank">
-                        <?php echo $row->title?></td>
+            if (isset($ads) && !empty($ads))
+            {
+                $sum = 0;
+                foreach ($ads as $row)
+                {
+                    $sum += $row->service_money;
+                    ?>
+                    <tr>
+                        <!--                    <td>--><?php //echo $row->id
+                        ?><!--</td>-->
+                        <td><?php echo $row->id ?></td>
+                        <td>
+                            <img src="<?php echo base_url('public/images/ads/' . $row->img) ?>" alt="<?php echo $row->img ?>" style="max-width: 80px">
+                        </td>
+                        <td>
+                            <a href="<?php echo base_url('rao-vat/' . create_slug($row->title) . '-' . $row->id) ?>" target="_blank">
+                            <?php echo $row->title ?></td>
                         </a>
 
-<!--                    <td>--><?php //echo $row->price?><!--</td>-->
-<!--                    <td>--><?php //echo $row->acreage?><!--</td>-->
-                    <td><?php echo $row->area?></td>
-                    <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
-                    <td><?php echo $row->service_money > 0 ? number_format($row->service_money) : '' ?></td>
-                    <td><?php echo $row->name_emp ?></td>
-                    <td><?php echo $row->pay_time ?></td>
-                    <td>
-                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/service_money/edit/'.$row->id)?>">Sửa</a>
-                    </td>
+                        <!--                    <td>--><?php //echo $row->price
+                        ?><!--</td>-->
+                        <!--                    <td>--><?php //echo $row->acreage
+                        ?><!--</td>-->
+                        <td><?php echo $row->area ?></td>
+                        <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
+                        <td><?php echo $row->service_money > 0 ? number_format($row->service_money) : '' ?></td>
+                        <td><?php echo $row->name_emp ?></td>
+                        <td><?php echo $row->pay_time ?></td>
+                        <td>
+                            <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/service_money/edit/' . $row->id) ?>">Sửa</a>
+                        </td>
 
-                </tr>
+                    </tr>
 
-            <?php } } ?>
+                <?php }
+            } ?>
             </tbody>
 
             <?php if (isset($ads) && !empty($ads)) { ?>
@@ -144,7 +150,7 @@
                 <tr class="bg-primary">
                     <td colspan="5">Tổng tiền</td>
                     <td><?php echo($sum > 0 ? number_format($sum) : '') ?></td>
-                    <td><?php echo($sum > 0 ? number_format($sum*0.15) : '') ?></td>
+                    <td><?php echo($sum > 0 ? number_format($sum * 0.15) : '') ?></td>
                     <td colspan="2"></td>
                 </tr>
                 </tfoot>
