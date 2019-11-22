@@ -7,18 +7,8 @@
                 <form id="formAddProduct" data-parsley-validate class="form-horizontal form-label-left" method="post"
                       enctype="multipart/form-data">
                     <div class="form-group">
-                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Bắt đầu<span class="required">*</span></label>
-                        <div class="col-md-2 col-sm-2 col-xs-12">
-                            <!--                <span style="float: left;margin-top: 7px">Từ ngày: </span>-->
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <input type="text" id="txtFrom" name="txtFrom" required class="form-control col-md-7 col-xs-12" value="<?php if (isset($_POST['txtFrom'])) echo $_POST['txtFrom']; else echo $firstday; ?>">
-                            </div>
-                        </div>
-
-                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">kết thúc<span class="required">*</span></label>
-                        <div class="col-md-2 col-sm-2 col-xs-12">
-                            <!--                <span style="float: left;margin-top: 7px">Từ ngày: </span>-->
-                            <input type="text" id="txtTo" name="txtTo" required class="form-control col-md-7 col-xs-12" value="<?php if (isset($_POST['txtTo'])) echo $_POST['txtTo']; else echo $lastday; ?>">
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
+                            <input type="text" id="txtDate" name="daterange" value="<?php echo date('d/m/Y', strtotime($firstday)); ?> - <?php echo date('d/m/Y', strtotime($lastday)); ?>" class="form-control col-md-7 col-xs-12 text-center"/>
                         </div>
 
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-0" style="width: 70px">

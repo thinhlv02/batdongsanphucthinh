@@ -19,12 +19,16 @@ Class Money_lost extends MY_Controller
 
         if ($this->input->post('btnAddSearch'))
         {
-            $from = date('Y-m-d', strtotime($this->input->post('txtFrom')));
-            $to = date('Y-m-d', strtotime($this->input->post('txtTo')));
+            $txtDate = trim($this->input->post('daterange'));
+            $txtDateExp = explode(' - ', $txtDate);
+
+            $firstday = date('Y-m-d', strtotime(str_replace('/', '-', $txtDateExp[0])));
+            $lastday = date('Y-m-d', strtotime(str_replace('/', '-', $txtDateExp[1])));
+
             $input = [];
             $input['where'] = array(
-                'created_at >=' => $from,
-                'created_at <=' => $to
+                'created_at >=' => $firstday,
+                'created_at <=' => $lastday
             );
 
             $input['order'] = array('id', 'desc');

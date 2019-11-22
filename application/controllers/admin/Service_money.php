@@ -34,12 +34,10 @@ Class Service_money extends MY_Controller
         if ($this->input->post('btnAddSearch'))
         {
             $txtDate = trim($this->input->post('daterange'));
-            $txtDatetags = explode(' - ', $txtDate);
-            $txtDatetags0 = str_replace('/', '-', $txtDatetags[0]);
-            $txtDatetags1 = str_replace('/', '-', $txtDatetags[1]);
+            $txtDateExp = explode(' - ', $txtDate);
 
-            $firstday = date('Y-m-d', strtotime($txtDatetags0));
-            $lastday = date('Y-m-d', strtotime($txtDatetags1));
+            $firstday = date('Y-m-d', strtotime(str_replace('/', '-', $txtDateExp[0])));
+            $lastday = date('Y-m-d', strtotime(str_replace('/', '-', $txtDateExp[1])));
 
             $make_money_by = $this->input->post('make_money_by');
             $check_money = $this->input->post('check_money');
