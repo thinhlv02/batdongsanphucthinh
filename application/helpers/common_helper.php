@@ -133,26 +133,22 @@ function generateRandomString($length)
     return $randomString;
 }
 
-function getFirstLastMonth($type)
+function getFirstLastMonth($type, $date)
 {
-    $query_date = date('Y-m-d');
 
 // First day of the month.
-    $first = date('Y-m-01', strtotime($query_date));
+    $firstday = date('Y-m-01', strtotime($date));
 
 // Last day of the month.
-    $last = date('Y-m-t', strtotime($query_date));
+    $lastday = date('Y-m-t', strtotime($date));
 
     if ($type == 1)
     {
-
-        return $first;
-
+        return $firstday;
     }
     else if ($type == 2)
     {
-
-        return $last;
+        return $lastday;
     }
 }
 

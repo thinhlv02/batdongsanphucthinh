@@ -12,8 +12,9 @@ Class Service_money extends MY_Controller
 
     function index()
     {
-        $first = date('d-m-Y', strtotime(getFirstLastMonth(1)));
-        $last = date('d-m-Y', strtotime(getFirstLastMonth(2)));
+        $date = date('Y-m-d');
+        $firstday = date('d-m-Y', strtotime(getFirstLastMonth(1, $date)));
+        $lastday = date('d-m-Y', strtotime(getFirstLastMonth(2, $date)));
 
         $emps = $this->employees_model->get_list(array('where' => array('type' => 1)));
 
@@ -37,15 +38,15 @@ Class Service_money extends MY_Controller
             $txtDatetags0 = str_replace('/', '-', $txtDatetags[0]);
             $txtDatetags1 = str_replace('/', '-', $txtDatetags[1]);
 
-            $first = date('Y-m-d', strtotime($txtDatetags0));
-            $last = date('Y-m-d', strtotime($txtDatetags1));
+            $firstday = date('Y-m-d', strtotime($txtDatetags0));
+            $lastday = date('Y-m-d', strtotime($txtDatetags1));
 
             $make_money_by = $this->input->post('make_money_by');
             $check_money = $this->input->post('check_money');
             $input = [];
             $input['where'] = array(
-                'created_at >=' => $first,
-                'created_at <=' => $last
+                'created_at >=' => $firstday,
+                'created_at <=' => $lastday
             );
 
             $input['order'] = array('id', 'desc');
@@ -103,8 +104,8 @@ Class Service_money extends MY_Controller
             $this->data['ads'] = $ads_end;
         }
 
-        $this->data['first'] = $first;
-        $this->data['last'] = $last;
+        $this->data['firstday'] = $firstday;
+        $this->data['lastday'] = $lastday;
 
         $this->data['_uid'] = $this->_uid;
         $this->data['emps'] = $emps;

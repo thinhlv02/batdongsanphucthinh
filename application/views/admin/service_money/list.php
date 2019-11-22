@@ -7,7 +7,7 @@
                 <form id="formAddProduct" data-parsley-validate class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
-                            <input type="text" id="txtDate" name="daterange" value="<?php echo date('d/m/Y', strtotime($first)); ?> - <?php echo date('d/m/Y', strtotime($last)); ?>" class="form-control col-md-7 col-xs-12 text-center"/>
+                            <input type="text" id="txtDate" name="daterange" value="<?php echo date('d/m/Y', strtotime($firstday)); ?> - <?php echo date('d/m/Y', strtotime($lastday)); ?>" class="form-control col-md-7 col-xs-12 text-center"/>
                         </div>
 
                         <div class="col-md-2 col-sm-2 col-xs-12">

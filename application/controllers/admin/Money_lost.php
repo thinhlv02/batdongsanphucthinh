@@ -1,4 +1,5 @@
 <?php
+if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 Class Money_lost extends MY_Controller
 {
@@ -10,12 +11,14 @@ Class Money_lost extends MY_Controller
 
     function index()
     {
-        $first = date('d-m-Y', strtotime(getFirstLastMonth(1))) ;
-        $last = date('d-m-Y', strtotime(getFirstLastMonth(2))) ;
+        $date = date('Y-m-d');
+        $first = date('d-m-Y', strtotime(getFirstLastMonth(1, $date)));
+        $last = date('d-m-Y', strtotime(getFirstLastMonth(2, $date)));
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
-        if ($this->input->post('btnAddSearch')) {
+        if ($this->input->post('btnAddSearch'))
+        {
             $from = date('Y-m-d', strtotime($this->input->post('txtFrom')));
             $to = date('Y-m-d', strtotime($this->input->post('txtTo')));
             $input = [];
@@ -43,7 +46,8 @@ Class Money_lost extends MY_Controller
     {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if ($this->input->post('btnAdd')) {
+        if ($this->input->post('btnAdd'))
+        {
             $created_at = $this->input->post('created_at');
             $created_at = date('Y-m-d', strtotime($created_at));
 
@@ -57,10 +61,13 @@ Class Money_lost extends MY_Controller
                 'created_at' => $created_at,
                 'created_by' => $this->_uid
             );
-            if ($this->money_lost_model->create($data)) {
+            if ($this->money_lost_model->create($data))
+            {
                 $this->session->set_flashdata('message', 'Thêm thành công');
                 redirect(base_url('admin/money_lost'));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
 
@@ -78,11 +85,13 @@ Class Money_lost extends MY_Controller
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
         $money_lost = $this->money_lost_model->get_info($id);
-        if (!$money_lost) {
+        if (!$money_lost)
+        {
             redirect(base_url('admin/money_lost'));
         }
 
-        if ($this->input->post('btnEdit')) {
+        if ($this->input->post('btnEdit'))
+        {
             $created_at = $this->input->post('created_at');
             $created_at = date('Y-m-d', strtotime($created_at));
             $price = str_replace(',', '', $this->input->post('txtPrice'));
@@ -94,10 +103,13 @@ Class Money_lost extends MY_Controller
                 'description' => $this->input->post('txtDes'),
             );
 
-            if ($this->money_lost_model->update($id, $data)) {
+            if ($this->money_lost_model->update($id, $data))
+            {
                 $this->session->set_flashdata('message', 'Cập nhật thành công');
                 redirect(base_url('admin/money_lost'));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
@@ -114,7 +126,8 @@ Class Money_lost extends MY_Controller
     {
         $id = $this->uri->segment(4);
         $money_lost = $this->money_lost_model->get_info($id);
-        if ($money_lost) {
+        if ($money_lost)
+        {
             $this->money_lost_model->delete($id);
         }
         redirect(base_url('admin/money_lost'));
