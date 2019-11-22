@@ -1,5 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
-if (!function_exists('active_link')) {
+if (!function_exists('active_link'))
+{
     function activate_menu($controller)
     {
         // Getting CI class instance.
