@@ -11,8 +11,7 @@
                             <input type="text" id="txtDate" name="daterange" value="<?php echo date('d/m/Y', strtotime($first)); ?> - <?php echo date('d/m/Y', strtotime($last)); ?>" class="form-control col-md-7 col-xs-12"/>
                         </div>
 
-                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Nhân sự<span
-                                    class="required">*</span></label>
+                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Nhân sự<span class="required">*</span></label>
                         <div class="col-md-1 col-sm-2 col-xs-12">
                             <select class="select2_group form-control" name="make_money_by">
                                 <option value="99">-- All --</option>
@@ -25,8 +24,7 @@
                             </select>
                         </div>
 
-                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Trạng thái<span
-                                    class="required">*</span></label>
+                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Trạng thái<span class="required">*</span></label>
                         <div class="col-md-2 col-sm-2 col-xs-12">
                             <select class="select2_group form-control" name="check_money">
                                 <option value="-1" <?php if (isset($_POST['check_money']) && $_POST['check_money'] == -1) echo 'selected' ?>>-- All --</option>
@@ -36,14 +34,10 @@
                         </div>
 
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-0" style="width: 70px">
-                            <input type="submit" id="btnAddEvent" name="btnAddSearch" class="btn btn-success"
-                                   value="Tìm">
+                            <input type="submit" id="btnAddEvent" name="btnAddSearch" class="btn btn-success" value="Tìm">
                         </div>
                     </div>
 
-                    <div class="form-group">
-
-                    </div>
                 </form>
             </div>
         </div>
@@ -59,10 +53,8 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Settings 1</a>
-                    </li>
-                    <li><a href="#">Settings 2</a>
-                    </li>
+                    <li><a href="#">Settings 1</a></li>
+                    <li><a href="#">Settings 2</a></li>
                 </ul>
             </li>
             <li><a class="close-link"><i class="fa fa-close"></i></a></li>
@@ -76,8 +68,6 @@
                 <th>Mã tin</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
-                <!--                <th>Giá</th>-->
-                <!--                <th>Diện tích</th>-->
                 <th>Khu vực</th>
                 <th>Ngày Tạo</th>
                 <th>service_money</th>
@@ -96,21 +86,15 @@
                     $sum += $row->service_money;
                     ?>
                     <tr>
-                        <!--                    <td>--><?php //echo $row->id
-                        ?><!--</td>-->
                         <td><?php echo $row->id ?></td>
                         <td>
                             <img src="<?php echo base_url('public/images/ads/' . $row->img) ?>" alt="<?php echo $row->img ?>" style="max-width: 80px">
                         </td>
                         <td>
                             <a href="<?php echo base_url('rao-vat/' . create_slug($row->title) . '-' . $row->id) ?>" target="_blank">
-                            <?php echo $row->title ?></td>
-                        </a>
+                                <?php echo $row->title ?></a>
+                        </td>
 
-                        <!--                    <td>--><?php //echo $row->price
-                        ?><!--</td>-->
-                        <!--                    <td>--><?php //echo $row->acreage
-                        ?><!--</td>-->
                         <td><?php echo $row->area ?></td>
                         <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                         <td><?php echo $row->service_money > 0 ? number_format($row->service_money) : '' ?></td>
@@ -119,7 +103,6 @@
                         <td>
                             <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/service_money/edit/' . $row->id) ?>">Sửa</a>
                         </td>
-
                     </tr>
 
                 <?php }
