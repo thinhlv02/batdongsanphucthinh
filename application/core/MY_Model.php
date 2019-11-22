@@ -21,9 +21,12 @@ class MY_Model extends CI_Model
      */
     function create($data = array())
     {
-        if ($this->db->insert($this->table, $data)) {
+        if ($this->db->insert($this->table, $data))
+        {
             return $this->db->insert_id();
-        } else {
+        }
+        else
+        {
             return 0;
         }
     }
@@ -35,7 +38,8 @@ class MY_Model extends CI_Model
      */
     function update($id, $data)
     {
-        if (!$id) {
+        if (!$id)
+        {
             return FALSE;
         }
 
@@ -53,7 +57,8 @@ class MY_Model extends CI_Model
      */
     function update_rule($where, $data)
     {
-        if (!$where) {
+        if (!$where)
+        {
             return FALSE;
         }
 
@@ -69,13 +74,17 @@ class MY_Model extends CI_Model
      */
     function delete($id)
     {
-        if (!$id) {
+        if (!$id)
+        {
             return FALSE;
         }
         //neu la so
-        if (is_numeric($id)) {
+        if (is_numeric($id))
+        {
             $where = array($this->key => $id);
-        } else {
+        }
+        else
+        {
             //$id = 1,2,3...
             $where = $this->key . " IN (" . $id . ") ";
         }
@@ -90,7 +99,8 @@ class MY_Model extends CI_Model
      */
     function del_rule($where)
     {
-        if (!$where) {
+        if (!$where)
+        {
             return FALSE;
         }
 
@@ -117,7 +127,8 @@ class MY_Model extends CI_Model
      */
     function get_info($id, $field = '')
     {
-        if (!$id) {
+        if (!$id)
+        {
             return FALSE;
         }
 
@@ -134,12 +145,14 @@ class MY_Model extends CI_Model
      */
     function get_info_rule($where = array(), $field = '')
     {
-        if ($field) {
+        if ($field)
+        {
             $this->db->select($field);
         }
         $this->db->where($where);
         $query = $this->db->get($this->table);
-        if ($query->num_rows()) {
+        if ($query->num_rows())
+        {
             return $query->row();
         }
 
@@ -169,7 +182,8 @@ class MY_Model extends CI_Model
         $this->db->from($this->table);
 
         $row = $this->db->get()->row();
-        foreach ($row as $f => $v) {
+        foreach ($row as $f => $v)
+        {
             $sum = $v;
         }
         return $sum;
@@ -253,44 +267,54 @@ class MY_Model extends CI_Model
     function check_dad($id)
     {
         $c = $this->get_column('tbl_hogiadinh', 'huongtu_idcha', $where = array('huongtu_id' => $id));
-        if ($c[0]->huongtu_idcha == NULL) {
+        if ($c[0]->huongtu_idcha == NULL)
+        {
             return false;
-        } else return $c[0]->huongtu_idcha;
+        }
+        else return $c[0]->huongtu_idcha;
     }
 
     function check_mom($id)
     {
         $c = $this->get_column('tbl_hogiadinh', 'huongtu_idme', $where = array('huongtu_id' => $id));
-        if ($c[0]->huongtu_idme == null) {
+        if ($c[0]->huongtu_idme == null)
+        {
             return false;
-        } else return $c[0]->huongtu_idme;
+        }
+        else return $c[0]->huongtu_idme;
 
     }
 
     function check_vs($id)
     {
         $c = $this->get_column('tbl_hogiadinh', 'huongtu_idvs', $where = array('huongtu_id' => $id));
-        if ($c[0]->huongtu_idvs == null) {
+        if ($c[0]->huongtu_idvs == null)
+        {
             return false;
-        } else return $c[0]->huongtu_idvs;
+        }
+        else return $c[0]->huongtu_idvs;
 
     }
 
     function ttvo($id)
     {
         $i = $this->check_vs($id);
-        if ($i != false) {
+        if ($i != false)
+        {
             $tv = $this->get_columns('tbl_huongtu', $where = array('huongtu_id' => $i));
             return $tv[0];
-        } else return null;
+        }
+        else return null;
     }
 
     function check_children($id)
     {
         $c = $this->get_columns('tbl_hogiadinh', $where = array('huongtu_idcha' => $id));
-        if (!$c) {
+        if (!$c)
+        {
             return false;
-        } else return $c;
+        }
+        else return $c;
 
 
     }
@@ -313,31 +337,39 @@ class MY_Model extends CI_Model
 
         // Thêm điều kiện cho câu truy vấn truyền qua biến $input['where']
         //(vi du: $input['where'] = array('email' => 'hocphp@gmail.com'))
-        if ((isset($input['where'])) && $input['where']) {
+        if ((isset($input['where'])) && $input['where'])
+        {
             $this->db->where($input['where']);
         }
-        if (isset($input['where_in'][0]) && isset($input['where_in'][1])) {
+        if (isset($input['where_in'][0]) && isset($input['where_in'][1]))
+        {
             $this->db->where_in($input['where_in'][0], $input['where_in'][1]);
         }
-        if ((isset($input['or_where'])) && $input['or_where']) {
+        if ((isset($input['or_where'])) && $input['or_where'])
+        {
             $this->db->or_where($input['or_where']);
         }
         //tim kiem like
         // $input['like'] = array('name' , 'abc');
-        if ((isset($input['like'])) && $input['like']) {
+        if ((isset($input['like'])) && $input['like'])
+        {
             $this->db->like($input['like'][0], $input['like'][1]);
         }
 
         // or like
-        if ((isset($input['or_like'])) && $input['or_like']) {
+        if ((isset($input['or_like'])) && $input['or_like'])
+        {
             $this->db->or_like($input['or_like'][0], $input['or_like'][1]);
         }
 
         // Thêm sắp xếp dữ liệu thông qua biến $input['order']
         //(ví dụ $input['order'] = array('id','DESC'))
-        if (isset($input['order'][0]) && isset($input['order'][1])) {
+        if (isset($input['order'][0]) && isset($input['order'][1]))
+        {
             $this->db->order_by($input['order'][0], $input['order'][1]);
-        } else {
+        }
+        else
+        {
             //mặc định sẽ sắp xếp theo id giảm dần
             $order = ($this->order == '') ? array($this->table . '.' . $this->key, 'desc') : $this->order;
             $this->db->order_by($order[0], $order[1]);
@@ -345,7 +377,8 @@ class MY_Model extends CI_Model
 
         // Thêm điều kiện limit cho câu truy vấn thông qua biến $input['limit']
         //(ví dụ $input['limit'] = array('10' ,'0'))
-        if (isset($input['limit'][0]) && isset($input['limit'][1])) {
+        if (isset($input['limit'][0]) && isset($input['limit'][1]))
+        {
             $this->db->limit($input['limit'][0], $input['limit'][1]);
         }
 
@@ -361,9 +394,12 @@ class MY_Model extends CI_Model
         //thuc hien cau truy van lay du lieu
         $query = $this->db->get($this->table);
 
-        if ($query->num_rows() > 0) {
+        if ($query->num_rows() > 0)
+        {
             return TRUE;
-        } else {
+        }
+        else
+        {
             return FALSE;
         }
     }
