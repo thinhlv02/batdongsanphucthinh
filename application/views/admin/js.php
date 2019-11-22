@@ -64,7 +64,7 @@
 
         //Simple Date Range Picker With a Callback
         $('#txtDate').daterangepicker({
-            opens: 'center',
+            opens: 'right',
             locale: {
                 format: 'DD/MM/YYYY'
             }
@@ -78,8 +78,10 @@
 
     });
 
-    function readURL(input) {
-        if (input.files && input.files[0]) {
+    function readURL(input)
+    {
+        if (input.files && input.files[0])
+        {
             var reader = new FileReader();
             reader.onload = function (e) {
                 $('#pre_img').attr('src', e.target.result);
@@ -88,24 +90,30 @@
         }
     }
 
-    function showFormAdd() {
+    function showFormAdd()
+    {
         $(".add-folder").show();
     }
 
-    function hideFormAdd() {
+    function hideFormAdd()
+    {
         $(".add-folder").hide();
     }
 
-    function showFormUpload() {
+    function showFormUpload()
+    {
         $(".upload-image").show();
     }
 
-    function hideFormUpload() {
+    function hideFormUpload()
+    {
         $(".upload-image").hide();
     }
 
-    function confirmDelImage(link) {
-        if (confirm("Xác nhận xóa hình ảnh?")) {
+    function confirmDelImage(link)
+    {
+        if (confirm("Xác nhận xóa hình ảnh?"))
+        {
             $.ajax({
                 url: "<?php echo admin_url(); ?>" + "file/delImage/",
                 type: "post",
@@ -120,8 +128,10 @@
         }
     }
 
-    function confirmDelFolder(name) {
-        if (confirm("Xác nhận xóa thư mục '" + name + "'?")) {
+    function confirmDelFolder(name)
+    {
+        if (confirm("Xác nhận xóa thư mục '" + name + "'?"))
+        {
             $.ajax({
                 url: "<?php echo admin_url(); ?>" + "file/delFolder/",
                 type: "post",
