@@ -104,7 +104,8 @@ function getCurrentURL()
     $currentURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
     $currentURL .= $_SERVER["SERVER_NAME"];
 
-    if ($_SERVER["SERVER_PORT"] != "80" && $_SERVER["SERVER_PORT"] != "443") {
+    if ($_SERVER["SERVER_PORT"] != "80" && $_SERVER["SERVER_PORT"] != "443")
+    {
         $currentURL .= ":" . $_SERVER["SERVER_PORT"];
     }
 
@@ -125,7 +126,8 @@ function generateRandomString($length)
     $characters = '0123456789';
     $charactersLength = strlen($characters);
     $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
+    for ($i = 0; $i < $length; $i++)
+    {
         $randomString .= $characters[rand(0, $charactersLength - 1)];
     }
     return $randomString;
@@ -141,11 +143,14 @@ function getFirstLastMonth($type)
 // Last day of the month.
     $last = date('Y-m-t', strtotime($query_date));
 
-    if ($type == 1) {
+    if ($type == 1)
+    {
 
         return $first;
 
-    } else if ($type == 2) {
+    }
+    else if ($type == 2)
+    {
 
         return $last;
     }
@@ -189,7 +194,8 @@ function str_valid_phone($strNumber)
 
             ($len == 10 && substr($strNumber, 0, 3) == '059'))
         && !preg_match("/[^0-9]/", $strNumber)
-    ) {
+    )
+    {
         $chk = TRUE;
     }
 
@@ -260,20 +266,24 @@ function realEmail($email)
 {
     $chk = false;
     $email = trim($email);
-    if ($email == '') {
+    if ($email == '')
+    {
         return $chk;
     }
-    if (!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $email)) {
+    if (!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $email))
+    {
         return $chk;
     }
 
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL))
+    {
         return $chk;
     }
 
     list($userName, $mailDomain) = explode("@", $email);
     $mailDomain = trim($mailDomain);
-    if (!checkdnsrr($mailDomain, "MX")) {
+    if (!checkdnsrr($mailDomain, "MX"))
+    {
         return $chk;
     }
     /*
@@ -307,7 +317,8 @@ function sendmail($data, $langcode = '')
     */
 
     $langcode = trim($langcode);
-    if ($langcode == '') {
+    if ($langcode == '')
+    {
 //        $langcode = get_langcode();
     }
     $config = array();
@@ -328,16 +339,21 @@ function sendmail($data, $langcode = '')
     //Check if email is list
     $result = true;
 
-    if (strpos($data['to'], ',')) {
+    if (strpos($data['to'], ','))
+    {
 //        echo 1;
         $emailList = explode(',', $data['to']);
-        foreach ($emailList as $eL) {
-            if (($eL != '') && !(realEmail($eL))) {
+        foreach ($emailList as $eL)
+        {
+            if (($eL != '') && !(realEmail($eL)))
+            {
                 $result = false;
                 exit;
             }
         }
-    } else {
+    }
+    else
+    {
 //        echo 2;
         $result = realEmail($data['to']);
     }
@@ -346,7 +362,8 @@ function sendmail($data, $langcode = '')
 
 //    var_dump($result);
 
-    if ($result) {
+    if ($result)
+    {
 //        echo 'dcm';
         $ci->email->to($data['to']);
         var_dump($data['to']);
@@ -354,12 +371,16 @@ function sendmail($data, $langcode = '')
         if (array_key_exists('bcc', $data)) $ci->email->bcc($data['bcc']);
         $ci->email->subject($data['subject']);
         $ci->email->message($data['body']);
-        if (SENDMAIL) {
-            if ($ci->email->send()) {
+        if (SENDMAIL)
+        {
+            if ($ci->email->send())
+            {
                 $ci->email->clear();
                 echo 'true';
                 return true;
-            } else {
+            }
+            else
+            {
                 echo 'false222222222';
                 return false;
             }
