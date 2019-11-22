@@ -4,11 +4,10 @@
         <div class="x_panel">
             <div class="x_content">
                 <br/>
-                <form id="formAddProduct" data-parsley-validate class="form-horizontal form-label-left" method="post"
-                      enctype="multipart/form-data">
+                <form id="formAddProduct" data-parsley-validate class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
-                            <input type="text" id="txtDate" name="daterange" value="<?php echo date('d/m/Y', strtotime($first)); ?> - <?php echo date('d/m/Y', strtotime($last)); ?>" class="form-control col-md-7 col-xs-12"/>
+                            <input type="text" id="txtDate" name="daterange" value="<?php echo date('d/m/Y', strtotime($first)); ?> - <?php echo date('d/m/Y', strtotime($last)); ?>" class="form-control col-md-7 col-xs-12 text-center"/>
                         </div>
 
                         <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Nhân sự<span class="required">*</span></label>
@@ -125,10 +124,10 @@
     </div>
 </div>
 <script>
-    // $(document).ready(function () {
-    //     $('#datatable-news').dataTable({
-    //         "ordering": false
-    //     });
-    // });
+    $(document).ready(function () {
+        $('#datatable-news').dataTable({
+            // "ordering": false
+        });
+    });
 
 </script>
