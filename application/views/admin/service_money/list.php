@@ -125,9 +125,7 @@
 </div>
 <script>
     $(document).ready(function () {
-        $('#datatable-news').dataTable({
-            // "ordering": false
-        });
+
     });
 
 </script>
