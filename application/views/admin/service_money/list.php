@@ -10,10 +10,9 @@
                             <input type="text" id="txtDate" name="daterange" value="<?php echo date('d/m/Y', strtotime($first)); ?> - <?php echo date('d/m/Y', strtotime($last)); ?>" class="form-control col-md-7 col-xs-12 text-center"/>
                         </div>
 
-                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Nhân sự<span class="required">*</span></label>
-                        <div class="col-md-1 col-sm-2 col-xs-12">
+                        <div class="col-md-2 col-sm-2 col-xs-12">
                             <select class="select2_group form-control" name="make_money_by">
-                                <option value="99">-- All --</option>
+                                <option value="99">-- Nhân sự --</option>
                                 <?php foreach ($emps as $key => $value) { ?>
                                     <option value="<?= $value->id ?>" <?php if (isset($_POST['make_money_by']) && $_POST['make_money_by'] == $value->id) echo 'selected' ?>>
                                         <?php echo $value->name ?>
@@ -23,10 +22,9 @@
                             </select>
                         </div>
 
-                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Trạng thái<span class="required">*</span></label>
                         <div class="col-md-2 col-sm-2 col-xs-12">
                             <select class="select2_group form-control" name="check_money">
-                                <option value="-1" <?php if (isset($_POST['check_money']) && $_POST['check_money'] == -1) echo 'selected' ?>>-- All --</option>
+                                <option value="-1" <?php if (isset($_POST['check_money']) && $_POST['check_money'] == -1) echo 'selected' ?>>-- Trạng thái --</option>
                                 <option value="1" <?php if (isset($_POST['check_money']) && $_POST['check_money'] == 1) echo 'selected' ?>>Nạp tiền</option>
                                 <option value="0" <?php if (isset($_POST['check_money']) && $_POST['check_money'] == 0) echo 'selected' ?>>Trống</option>
                             </select>
@@ -127,5 +125,4 @@
     $(document).ready(function () {
 
     });
-
 </script>
