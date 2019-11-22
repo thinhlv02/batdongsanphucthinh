@@ -7,38 +7,25 @@
                 <form id="formAddProduct" data-parsley-validate class="form-horizontal form-label-left" method="post"
                       enctype="multipart/form-data">
                     <div class="form-group">
-
-                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Bắt đầu<span
-                                    class="required">*</span></label>
+                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">Bắt đầu<span class="required">*</span></label>
                         <div class="col-md-2 col-sm-2 col-xs-12">
                             <!--                <span style="float: left;margin-top: 7px">Từ ngày: </span>-->
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <input type="text" id="txtFrom" name="txtFrom" required
-                                       class="form-control col-md-7 col-xs-12"
-                                       value="<?php if (isset($_POST['txtFrom'])) echo $_POST['txtFrom'] ;else echo $first; ?>">
+                                <input type="text" id="txtFrom" name="txtFrom" required class="form-control col-md-7 col-xs-12" value="<?php if (isset($_POST['txtFrom'])) echo $_POST['txtFrom']; else echo $firstday; ?>">
                             </div>
                         </div>
 
-                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">kết thúc<span
-                                    class="required">*</span></label>
+                        <label class="control-label col-md-1 col-sm-1 col-xs-2" for="first-name">kết thúc<span class="required">*</span></label>
                         <div class="col-md-2 col-sm-2 col-xs-12">
                             <!--                <span style="float: left;margin-top: 7px">Từ ngày: </span>-->
-
-                            <input type="text" id="txtTo" name="txtTo" required
-                                   class="form-control col-md-7 col-xs-12"
-                                   value="<?php if (isset($_POST['txtTo'])) echo $_POST['txtTo']; else echo $last; ?>">
-
+                            <input type="text" id="txtTo" name="txtTo" required class="form-control col-md-7 col-xs-12" value="<?php if (isset($_POST['txtTo'])) echo $_POST['txtTo']; else echo $lastday; ?>">
                         </div>
 
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-0" style="width: 70px">
-                            <input type="submit" id="btnAddEvent" name="btnAddSearch" class="btn btn-success"
-                                   value="Tìm">
+                            <input type="submit" id="btnAddEvent" name="btnAddSearch" class="btn btn-success" value="Tìm">
                         </div>
                     </div>
 
-                    <div class="form-group">
-
-                    </div>
                 </form>
             </div>
         </div>
@@ -79,9 +66,11 @@
             </thead>
             <tbody>
             <?php
-            if (!empty($money_lost)) {
+            if (!empty($money_lost))
+            {
                 $sum = 0;
-                foreach ($money_lost as $row) {
+                foreach ($money_lost as $row)
+                {
                     $sum += $row->price;
                     ?>
                     <tr>
@@ -122,11 +111,12 @@
         });
     });
 
-    function confirmDel(id) {
-        if (confirm('Bạn có chắc chắn muốn xóa?')) {
+    function confirmDel(id)
+    {
+        if (confirm('Bạn có chắc chắn muốn xóa?'))
+        {
             window.location.href = '<?php echo base_url('admin/money_lost/del/')?>' + id;
         }
     }
-
 
 </script>

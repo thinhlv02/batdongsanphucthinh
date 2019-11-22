@@ -12,8 +12,8 @@ Class Money_lost extends MY_Controller
     function index()
     {
         $date = date('Y-m-d');
-        $first = date('d-m-Y', strtotime(getFirstLastMonth(1, $date)));
-        $last = date('d-m-Y', strtotime(getFirstLastMonth(2, $date)));
+        $firstday = date('d-m-Y', strtotime(getFirstLastMonth(1, $date)));
+        $lastday = date('d-m-Y', strtotime(getFirstLastMonth(2, $date)));
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
@@ -34,8 +34,8 @@ Class Money_lost extends MY_Controller
             $this->data['money_lost'] = $money_lost_end;
         }
 
-        $this->data['first'] = $first;
-        $this->data['last'] = $last;
+        $this->data['firstday'] = $firstday;
+        $this->data['lastday'] = $lastday;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/money_lost/index';
         $this->data['view'] = 'admin/money_lost/list';
