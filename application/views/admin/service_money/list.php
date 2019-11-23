@@ -31,7 +31,7 @@
                         </div>
 
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-0" style="width: 70px">
-                            <input type="submit" id="btnAddEvent" name="btnAddSearch" class="btn btn-success" value="Tìm">
+                            <input type="submit" id="btnAddEvent" name="btnAddSearch" class="btn btn-warning" value="Tìm">
                         </div>
                     </div>
 
@@ -62,15 +62,15 @@
         <table id="datatable-news" class="table table-striped table-bordered bulk_action">
             <thead>
             <tr>
-                <th>Mã tin</th>
-                <th>Ảnh minh họa</th>
-                <th>Tiêu đề</th>
-                <th>Khu vực</th>
-                <th>Ngày Tạo</th>
+                <th>ID</th>
+                <th>Images</th>
+                <th>Title</th>
+                <th>Address</th>
+                <th>Date create</th>
                 <th>service_money</th>
                 <th>make_money_by</th>
                 <th>pay time</th>
-                <th>Hành động</th>
+                <th></th>
             </tr>
             </thead>
             <tbody>
@@ -98,7 +98,7 @@
                         <td><?php echo $row->name_emp ?></td>
                         <td><?php echo $row->pay_time ?></td>
                         <td>
-                            <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/service_money/edit/' . $row->id) ?>">Sửa</a>
+                            <a class="btn btn-xs btn-outline-danger" href="<?php echo base_url('admin/service_money/edit/' . $row->id) ?>"><i class="fa fa-pencil-square-o"></i></a>
                         </td>
                     </tr>
 
