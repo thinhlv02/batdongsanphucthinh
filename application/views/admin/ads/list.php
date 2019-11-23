@@ -69,7 +69,7 @@
 
             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
                 <div class="form-group">
-                    <button type="button" onclick="loadpage(1);" class="btn btn-info">Tìm</button>
+                    <button type="button" onclick="loadpage(1);" class="btn btn-warning">Tìm</button>
                 </div>
             </div>
         </div>

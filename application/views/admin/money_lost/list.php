@@ -48,7 +48,7 @@
                 <th>ID</th>
                 <th>Tên thiết bị</th>
                 <th>Mô tả</th>
-                <th>Giá tiền</th>
+                <th>Tiền</th>
                 <th>Người tạo</th>
                 <th>Ngày Tạo</th>
                 <th></th>

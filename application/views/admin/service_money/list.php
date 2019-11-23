@@ -67,9 +67,9 @@
                 <th>Title</th>
                 <th>Address</th>
                 <th>Date create</th>
-                <th>service_money</th>
-                <th>make_money_by</th>
-                <th>pay time</th>
+                <th>Money</th>
+                <th>Make by</th>
+                <th>Pay time</th>
                 <th></th>
             </tr>
             </thead>
