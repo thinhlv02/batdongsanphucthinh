@@ -12,7 +12,7 @@
                         </div>
 
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-0" style="width: 70px">
-                            <input type="submit" id="btnAddEvent" name="btnAddSearch" class="btn btn-success" value="Tìm">
+                            <input type="submit" id="btnAddEvent" name="btnAddSearch" class="btn btn-warning" value="Tìm">
                         </div>
                     </div>
 
@@ -45,13 +45,13 @@
         <table id="datatable-product" class="table table-striped table-bordered bulk_action">
             <thead>
             <tr>
-                <th>Mã số</th>
+                <th>ID</th>
                 <th>Tên thiết bị</th>
                 <th>Mô tả</th>
                 <th>Giá tiền</th>
                 <th>Người tạo</th>
                 <th>Ngày Tạo</th>
-                <th>Hành động</th>
+                <th></th>
             </tr>
             </thead>
             <tbody>
@@ -72,8 +72,8 @@
                         <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
 
                         <td>
-                            <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/money_lost/edit/' . $row->id) ?>">Sửa</a>
-                            <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
+                            <a class="btn btn-xs btn-outline-danger" href="<?php echo base_url('admin/money_lost/edit/' . $row->id) ?>"><i class="fa fa-pencil-square-o"></i></a>
+                            <a class="btn btn-xs btn-outline-danger" onclick="confirmDel(<?php echo $row->id ?>)"><i class="fa fa-trash-o"></i></a>
                         </td>
                     </tr>
                 <?php }
