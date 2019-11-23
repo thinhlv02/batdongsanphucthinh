@@ -36,23 +36,23 @@
 }
 
 /*paging*/
-.pagination > li > a:hover:not(.active) {
+.pagination_cus > li > a:hover:not(.active) {
     background-color: #ddd;
     border-radius: 5px;
 }
 
-.pagination > li > a {
+.pagination_cus > li > a {
     color: #337ab7 !important;
     border: none !important;
     font-weight: 600;
 }
 
-.pagination > .active > a {
+.pagination_cus > .active > a {
     background-color: transparent !important;
     color: #ff9600 !important;
 }
 
-ul.pagination {
+ul.pagination_cus {
     margin-top: 2px;
     margin-bottom: 2px;
 }
