@@ -20,12 +20,12 @@ Class Service_money extends MY_Controller
 
         $i = 0;
         $emps_arr = [];
-        foreach ($emps as $key => $val)
+        foreach ($emps as $key => $value)
         {
             $i++;
-            $emps_arr[$val->id] = new stdClass();
-            $emps_arr[$val->id]->id = $val->id;
-            $emps_arr[$val->id]->name = $val->name;
+            $emps_arr[$value->id] = new stdClass();
+            $emps_arr[$value->id]->id = $value->id;
+            $emps_arr[$value->id]->name = $value->name;
         }
 //        pre($emps_arr);
         $message = $this->session->flashdata('message');
@@ -72,25 +72,25 @@ Class Service_money extends MY_Controller
 
             $ads_end = [];
             $index = 0;
-            foreach ($ads as $key => $val)
+            foreach ($ads as $key => $value)
             {
                 $index++;
                 $ads_end[$index] = new stdClass();
-                $ads_end[$index]->id = $val->id;
-                $ads_end[$index]->code = $val->code;
-                $ads_end[$index]->img = $val->img;
-                $ads_end[$index]->title = $val->title;
-                $ads_end[$index]->price = $val->price;
-                $ads_end[$index]->acreage = $val->acreage;
-                $ads_end[$index]->area = $val->area;
-                $ads_end[$index]->service_money = $val->service_money;
-                $ads_end[$index]->make_money_by = $val->make_money_by;
-                $ads_end[$index]->pay_time = $val->pay_time;
-                $ads_end[$index]->created_at = $val->created_at;
+                $ads_end[$index]->id = $value->id;
+                $ads_end[$index]->code = $value->code;
+                $ads_end[$index]->img = $value->img;
+                $ads_end[$index]->title = $value->title;
+                $ads_end[$index]->price = $value->price;
+                $ads_end[$index]->acreage = $value->acreage;
+                $ads_end[$index]->area = $value->area;
+                $ads_end[$index]->service_money = $value->service_money;
+                $ads_end[$index]->make_money_by = $value->make_money_by;
+                $ads_end[$index]->pay_time = $value->pay_time != '0000-00-00' ? date('d/m/Y', strtotime($value->pay_time)) : '';
+                $ads_end[$index]->created_at = $value->created_at;
 
-                if ($val->make_money_by > 0)
+                if ($value->make_money_by > 0)
                 {
-                    $ads_end[$index]->name_emp = isset($emps_arr[$val->make_money_by]) ? $emps_arr[$val->make_money_by]->name : 'dcm111111111';
+                    $ads_end[$index]->name_emp = isset($emps_arr[$value->make_money_by]) ? $emps_arr[$value->make_money_by]->name : 'dcm111111111';
                 }
                 else
                 {
