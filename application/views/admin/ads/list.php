@@ -18,14 +18,11 @@
     </div>
     <div class="x_content">
         <!--        form search-->
-        <!--        form search-->
-        <!--        form search-->
-        <!--        form search-->
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
                 <div class="form-group">
                     <select class="form-control" id="ads_type">
-                        <option value="-1" <?php echo $ads_type == -1 ? 'selected' : '' ?>>Phân Loại12</option>
+                        <option value="-1" <?php echo $ads_type == -1 ? 'selected' : '' ?>>Phân Loại</option>
                         <?php foreach ($lstAdsType as $k => $v) { ?>
                             <option value="<?php echo $k ?>" <?php echo $ads_type == $k ? 'selected' : '' ?>> <?php echo $v; ?></option>
                         <?php } ?>
