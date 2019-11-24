@@ -77,7 +77,7 @@
         <table id="datatable-news" class="table table-striped table-bordered bulk_action">
             <thead>
             <tr>
-                <th>Mã tin</th>
+                <th class="text-center">#</th>
                 <th>SĐT</th>
                 <th>Ảnh minh họa</th>
                 <th>Tiêu đề</th>
@@ -99,7 +99,7 @@
                     <td class="text-center">
                         <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
 
-                        <a class="btn btn-xs btn-success btn-xs" href="<?php echo base_url('admin/ads/edit/' . $row->id) ?>">Sửa</a>
+                        <a class="btn btn-xs btn-outline-success btn-xs" href="<?php echo base_url('admin/ads/edit/' . $row->id) ?>"><i class="fa fa-pencil-square-o" title="Sửa bài"></i></a>
                         <?php if ($_uid == 1) { ?>
                             <a class="btn btn-xs btn-outline-danger" onclick="confirmDel(<?php echo $row->id ?>)"><i class="fa fa-trash-o"></i></a>
                             <!--                            //update link-->
