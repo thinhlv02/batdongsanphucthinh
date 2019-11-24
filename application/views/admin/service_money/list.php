@@ -44,7 +44,7 @@
 
 <div class="x_panel">
     <div class="x_title">
-        <h2>Danh sách</h2>
+        <h2>Danh sách(<?php echo isset($ads) ? count($ads) : '0'; ?>)</h2>
         <ul class="nav navbar-right panel_toolbox">
             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
             <li class="dropdown">
@@ -69,7 +69,7 @@
                 <th>Ngày tạo</th>
                 <th>Số tiền</th>
                 <th>Tạo bởi</th>
-                <th>Thời gian trả</th>
+                <th>TG trả</th>
                 <th></th>
             </tr>
             </thead>
@@ -93,10 +93,10 @@
                         </td>
 
                         <td><?php echo $row->area ?></td>
-                        <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
+                        <td class="text-nowrap"><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                         <td><?php echo $row->service_money > 0 ? number_format($row->service_money) : '' ?></td>
                         <td><?php echo $row->name_emp ?></td>
-                        <td><?php echo $row->pay_time ?></td>
+                        <td class="text-nowrap"><?php echo date('d/m/Y', strtotime($row->pay_time)); ?></td>
                         <td>
                             <a class="btn btn-xs btn-outline-danger" href="<?php echo base_url('admin/service_money/edit/' . $row->id) ?>"><i class="fa fa-pencil-square-o"></i></a>
                         </td>
