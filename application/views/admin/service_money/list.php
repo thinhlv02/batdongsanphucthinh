@@ -63,13 +63,13 @@
             <thead>
             <tr>
                 <th>ID</th>
-                <th>Images</th>
-                <th>Title</th>
-                <th>Address</th>
-                <th>Date create</th>
-                <th>Money</th>
-                <th>Make by</th>
-                <th>Pay time</th>
+                <th>Ảnh</th>
+                <th>Tiêu đề</th>
+                <th>Địa chỉ</th>
+                <th>Ngày tạo</th>
+                <th>Số tiền</th>
+                <th>Tạo bởi</th>
+                <th>Thời gian trả</th>
                 <th></th>
             </tr>
             </thead>

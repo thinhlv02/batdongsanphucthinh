@@ -1,12 +1,13 @@
 <div class="page-title" style="height: auto">
     <div class="title_left">
-        <h3>Quản lý nạp tiền của khách hàng</h3>
+        <h3>Tiền khách hàng nạp đẩy tin</h3>
     </div>
     <div class="clearfix"></div>
 
 </div>
 
-<?php if (isset($message)) {
+<?php if (isset($message))
+{
     $this->load->view('admin/message', $this->data);
 } ?>
 
