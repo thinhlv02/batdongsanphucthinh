@@ -84,7 +84,7 @@
                 <th>Giá / Diện tích</th>
                 <th>Trái</th>
                 <th>Phải</th>
-                <th>Giữa</th>12
+                <th>Giữa</th>
                 <th>Layer trái</th>
                 <th>Layer vip</th>
                 <th>Layer phải</th>
