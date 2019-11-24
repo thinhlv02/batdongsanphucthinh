@@ -99,11 +99,12 @@
                     <td class="text-center">
                         <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
 
-                        <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/ads/edit/' . $row->id) ?>">Sửa</a>
+                        <a class="btn btn-xs btn-success btn-xs" href="<?php echo base_url('admin/ads/edit/' . $row->id) ?>">Sửa</a>
                         <?php if ($_uid == 1) { ?>
-                            <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
+                            <a class="btn btn-xs btn-outline-danger" onclick="confirmDel(<?php echo $row->id ?>)"><i class="fa fa-trash-o"></i></a>
                             <!--                            //update link-->
-                            <a class="btn btn-xs btn-success btn-xs" href="<?php echo base_url('admin/ads/ads_link/' . $row->id) ?>">Update link</a>
+                            <a class="btn btn-xs btn-outline-warning btn-xs" href="<?php echo base_url('admin/ads/ads_link/' . $row->id) ?>">
+                                <i class="fa fa-link"></i></a>
                         <?php } ?>
 
                         <p><?php echo $row->created_name; ?></p>
