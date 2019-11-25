@@ -23,7 +23,7 @@ $id_ads = $this->uri->segment(4);
         <table id="datatable-news" class="table table-striped table-bordered bulk_action">
             <thead>
             <tr>
-                <th>Mã tin</th>
+                <th>ID_link</th>
                 <th>Ngày</th>
                 <th>Link web</th>
                 <th>Link facebook</th>
@@ -31,12 +31,13 @@ $id_ads = $this->uri->segment(4);
             </thead>
             <tbody>
             <?php
-            foreach ($ads as $row) { ?>
+            foreach ($ads as $row)
+            { ?>
                 <tr title="" class="">
                     <td class="text-center">
                         <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
-                        <a class="btn btn-xs btn-primary btn-xs" href="<?php echo base_url('admin/ads/edit_link/' . $row->id . '/' . $id_ads) ?>">Sửa</a>
-                        <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>, <?php echo $id_ads; ?>)">Xóa</a>
+                        <a class="btn btn-xs btn-outline-success btn-xs" href="<?php echo base_url('admin/ads/edit_link/' . $row->id . '/' . $id_ads) ?>"><i class="fa fa-pencil-square-o"></i></a>
+                        <a class="btn btn-xs btn-outline-danger" onclick="confirmDel(<?php echo $row->id ?>, <?php echo $id_ads; ?>)"><i class="fa fa-trash-o"></i></a>
                     </td>
                     <td><?php echo date('d/m/Y H:i:s', strtotime($row->created_at)); ?></td>
                     <td><?php echo $row->link_web ?></td>
@@ -49,8 +50,10 @@ $id_ads = $this->uri->segment(4);
     </div>
 </div>
 <script>
-    function confirmDel(id, id_ads) {
-        if (confirm('Bạn có chắc chắn muốn xóa?')) {
+    function confirmDel(id, id_ads)
+    {
+        if (confirm('Bạn có chắc chắn muốn xóa?'))
+        {
             window.location.href = '<?php echo base_url('admin/ads/del_link/')?>' + id + '/' + id_ads;
         }
     }
