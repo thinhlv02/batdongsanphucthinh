@@ -590,6 +590,7 @@ Class Ads extends MY_Controller
             }
         }
         $this->data['id'] = $id;
+        $this->data['id_ads'] = $id_ads;
         $this->data['tab'] = 3;
         $this->data['ads'] = $ads;
         $this->data['temp'] = 'admin/ads_link/index';
@@ -675,7 +676,7 @@ Class Ads extends MY_Controller
 
         $this->data['count'] = $count;
         $this->data['ads'] = $ads_end;
-        $this->data['id'] = $id;
+        $this->data['id_ads'] = $id;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/ads_link/index';
         $this->data['view'] = 'admin/ads_link/list';
@@ -722,7 +723,7 @@ Class Ads extends MY_Controller
 
         }
         $this->data['tab'] = 2;
-        $this->data['id'] = $id;
+        $this->data['id_ads'] = $id;
         $this->data['temp'] = 'admin/ads_link/index';
         $this->data['view'] = 'admin/ads_link/add';
         $this->load->view('admin/layout', $this->data);

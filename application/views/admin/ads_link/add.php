@@ -24,12 +24,11 @@
 
 
         <div class="row">
-            <form id="formAddCatalog" data-parsley-validate class="form-horizontal form-label-left" method="post"
-                  enctype="multipart/form-data">
+            <form id="formAddCatalog" data-parsley-validate class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Link web <span
-                                class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Link web
+                        <span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <textarea name="txtLinkWeb" class="form-control" style="height: 120px"></textarea>
                         <script type="text/javascript">CKEDITOR.replace('txtLinkWeb', {height: '300px'}); </script>
@@ -39,8 +38,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Link facebook <span
-                                class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Link facebook
+                        <span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <textarea name="txtLinkFacebook" class="form-control" style="height: 120px"></textarea>
                         <script type="text/javascript">CKEDITOR.replace('txtLinkFacebook', {height: '300px'}); </script>
@@ -51,15 +50,10 @@
 
                 <div class="form-group" style="margin-top: 30px">
                     <div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-2" style="width: 70px">
-                        <input type="submit" id="btnAddProduct" name="btnAdd"
-                               class="btn btn-primary" value="Thêm">
+                        <input type="submit" id="btnAddProduct" name="btnAdd" class="btn btn-warning" value="Thêm">
                     </div>
                 </div>
             </form>
         </div>
     </div>
 </div>
-
-<script>
-
-</script>
