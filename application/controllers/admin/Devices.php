@@ -1,4 +1,5 @@
 <?php
+if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 Class Devices extends MY_Controller
 {
@@ -20,7 +21,8 @@ Class Devices extends MY_Controller
 
         $devices_end = [];
         $index = 0;
-        foreach ($devices as $key => $val) {
+        foreach ($devices as $key => $val)
+        {
             $index++;
             $devices_end[$index] = new stdClass();
             $devices_end[$index]->id = $val->id;
@@ -28,7 +30,7 @@ Class Devices extends MY_Controller
             $devices_end[$index]->name = $val->name;
             $devices_end[$index]->imei = $val->imei;
             $devices_end[$index]->type = $val->type;
-            $devices_end[$index]->type_name = isset($this->_device_type[$val->type]) ? $this->_device_type[$val->type]: 'dcm';
+            $devices_end[$index]->type_name = isset($this->_device_type[$val->type]) ? $this->_device_type[$val->type] : 'dcm';
             $devices_end[$index]->price = $val->price;
             $devices_end[$index]->description = $val->description;
             $devices_end[$index]->created_by = $val->created_by;
@@ -49,11 +51,13 @@ Class Devices extends MY_Controller
     {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if ($this->input->post('btnAdd')) {
+        if ($this->input->post('btnAdd'))
+        {
             $config['upload_path'] = './public/images/devices';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $this->load->library("upload", $config);
-            if ($this->upload->do_upload('img_news')) {
+            if ($this->upload->do_upload('img_news'))
+            {
                 $file_data = $this->upload->data();
                 $data = array(
                     'name' => $this->input->post('txtName'),
@@ -64,13 +68,18 @@ Class Devices extends MY_Controller
                     'created_by' => $this->_uid,
                     'img' => $file_data['file_name'],
                 );
-                if ($this->devices_model->create($data)) {
+                if ($this->devices_model->create($data))
+                {
                     $this->session->set_flashdata('message', 'Thêm thành công');
                     redirect(base_url('admin/devices'));
-                } else {
+                }
+                else
+                {
                     $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
                 }
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
         }
@@ -87,11 +96,13 @@ Class Devices extends MY_Controller
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
         $devices = $this->devices_model->get_info($id);
-        if (!$devices) {
+        if (!$devices)
+        {
             redirect(base_url('admin/devices'));
         }
 
-        if ($this->input->post('btnEdit')) {
+        if ($this->input->post('btnEdit'))
+        {
             $data = array(
                 'name' => $this->input->post('txtName'),
                 'imei' => $this->input->post('imei'),
@@ -103,17 +114,23 @@ Class Devices extends MY_Controller
             $config['upload_path'] = './public/images/devices';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $this->load->library("upload", $config);
-            if ($this->upload->do_upload('img_news')) {
+            if ($this->upload->do_upload('img_news'))
+            {
                 $file_data = $this->upload->data();
                 $data['img'] = $file_data['file_name'];
                 unlink('./public/images/devices/' . $devices->img);
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
-            if ($this->devices_model->update($id, $data)) {
+            if ($this->devices_model->update($id, $data))
+            {
                 $this->session->set_flashdata('message', 'Cập nhật thành công');
                 redirect(base_url('admin/devices'));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
@@ -130,7 +147,8 @@ Class Devices extends MY_Controller
     {
         $id = $this->uri->segment(4);
         $devices = $this->devices_model->get_info($id);
-        if ($devices) {
+        if ($devices)
+        {
             $this->devices_model->delete($id);
             unlink('./public/images/devices/' . $devices->img);
         }

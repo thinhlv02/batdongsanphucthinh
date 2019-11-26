@@ -36,31 +36,25 @@
                         <textarea name="txtDes" class="form-control" style="height: 120px"></textarea>
                         <script type="text/javascript">CKEDITOR.replace('txtDes', {height: '100px'}); </script>
                     </div>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Số tiền
-                        <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Số tiền<span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <input type="text" name="txtPrice" id="txtPrice" class="form-control col-md-7 col-xs-12" placeholder="Giá tiền">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">TG<span
-                                class="required"></span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">TG<span class="required"></span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
-                        <input type="text" id="txtFrom" name="created_at" required
-                               value="<?php echo date('d-m-Y') ?>"
-                               class="form-control col-md-7 col-xs-12"/>
+                        <input type="text" id="txtFrom" name="created_at" required value="<?php echo date('d-m-Y') ?>" class="form-control col-md-7 col-xs-12"/>
                     </div>
                 </div>
 
                 <div class="form-group" style="margin-top: 30px">
                     <div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-2" style="width: 70px">
-                        <input type="submit" id="btnAddProduct" name="btnAdd" required="required" class="btn btn-primary" value="Thêm">
+                        <input type="submit" id="btnAddProduct" name="btnAdd" required="required" class="btn btn-warning" value="Thêm">
                     </div>
                 </div>
             </form>
@@ -69,8 +63,13 @@
 </div>
 
 <script>
-    $(document).ready(function()
-    {
-        $('#txtPrice').setMask({mask : '999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999', type : 'reverse', defaultValue: '0',textAlign:'false', textAlign: false});
+    $(document).ready(function () {
+        $('#txtPrice').setMask({
+            mask: '999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999',
+            type: 'reverse',
+            defaultValue: '0',
+            textAlign: 'false',
+            textAlign: false
+        });
     });
 </script>
