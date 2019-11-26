@@ -413,3 +413,9 @@ function getListAdmin()
     return $admin_arr;
 
 }
+
+//get list employee
+function getListEmp()
+{
+    //code here
+}
