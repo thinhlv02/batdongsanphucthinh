@@ -41,6 +41,7 @@ Class Money_lost extends MY_Controller
         $this->data['firstday'] = $firstday;
         $this->data['lastday'] = $lastday;
         $this->data['tab'] = 1;
+        $this->data['lstAdmin'] = getListAdmin();
         $this->data['temp'] = 'admin/money_lost/index';
         $this->data['view'] = 'admin/money_lost/list';
         $this->load->view('admin/layout', $this->data);

@@ -68,7 +68,11 @@
                         <td><?php echo $row->name ?></td>
                         <td><?php echo $row->description ?></td>
                         <td><?php echo $row->price ? number_format($row->price) : ''; ?></td>
-                        <td><?php echo $row->created_by ?></td>
+                        <td>
+                            <?php
+                            echo isset($lstAdmin[$row->created_by]) ? $lstAdmin[$row->created_by]->name : 'N/A';
+                            ?>
+                        </td>
                         <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
 
                         <td>
