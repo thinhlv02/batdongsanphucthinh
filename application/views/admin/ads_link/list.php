@@ -23,7 +23,7 @@ $id_ads = $this->uri->segment(4);
         <table id="datatable-news" class="table table-striped table-bordered bulk_action">
             <thead>
             <tr>
-                <th>ID_link</th>
+                <th>ID</th>
                 <th>Ngày</th>
                 <th>Link web</th>
                 <th>Link facebook</th>
