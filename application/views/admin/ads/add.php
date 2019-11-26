@@ -24,14 +24,14 @@
         <div class="row">
             <form id="formAddCatalog" data-parsley-validate class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tiêu đề<span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="text" id="txtName" name="txtName" class="form-control col-md-7 col-xs-12" placeholder="Tiêu đề">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Phân loại <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Phân loại<span class="required">*</span></label>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <select class="form-control" id="slType" name="slType">
                             <?php foreach ($ads_type as $k => $v) { ?>
@@ -42,25 +42,26 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn<span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <textarea name="txtIntro" rows="3" class="form-control"></textarea>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh<span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="file" class="form-control" name="img_news">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh Slide <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh Slide
+                        <span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="file" class="form-control" name="files[]" multiple>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Nội dung <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Nội dung<span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <textarea name="txtContent" class="form-control" style="height: 120px"></textarea>
                         <script type="text/javascript">CKEDITOR.replace('txtContent', {height: '300px'}); </script>
@@ -68,7 +69,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền<span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="text" name="price" class="form-control col-md-7 col-xs-12" placeholder="ví dụ : 1,2 tỷ / nền">
                     </div>
@@ -141,7 +142,6 @@
                         <select class="select2_group form-control" name="district">
                             <option value="0">Quận/huyện</option>
                         </select>
-
                     </div>
 
                     <label class="control-label col-md-2 col-sm-2 col-xs-12 " for="first-name">Xã/phường<span class="required">*</span></label>
@@ -162,8 +162,7 @@
                         </select>
                     </div>
 
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ngày đăng<span
-                                class="required"></span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ngày đăng<span class="required"></span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <input type="text" id="txtFrom" name="created_at" required value="" class="form-control col-md-7 col-xs-12"/>
                     </div>
@@ -202,7 +201,6 @@
                 'id': id
             };
 
-            // console.log(params);
             var _onSuccess = function (data) {
                 // console.log(data);
                 if (data == 'NOT_LOGIN')
@@ -215,7 +213,6 @@
                 }
                 else
                 {
-                    // console.log(data);
                     $("#divDistrict").html(data);
                 }
             };//
@@ -245,7 +242,7 @@
             $('#txtAddress').val($('#hddtxtDistrict').val() + ', ' + $('#hddtxtProvince').val());
 
             var _onSuccess = function (data) {
-                // console.log(data);
+
                 if (data == 'NOT_LOGIN')
                 {
 
@@ -274,7 +271,6 @@
         }
         else
         {
-            // ajax
             var params = {
                 'id': id
             };
@@ -284,9 +280,7 @@
 
             $('#txtAddress').val($('#hddtxtWard').val() + ', ' + $('#hddtxtDistrict').val() + ', ' + $('#hddtxtProvince').val());
 
-            // console.log(params);
             var _onSuccess = function (data) {
-                // console.log(data);
                 if (data == 'NOT_LOGIN')
                 {
 
@@ -297,7 +291,6 @@
                 }
                 else
                 {
-                    // console.log(data);
                     $("#divStreet").html(data);
                 }
             };
@@ -318,7 +311,6 @@
         }
         else
         {
-
             var _txtStreet = $.trim($("#selectStreet option:selected").text());
             $('#hddtxtStreet').val(_txtStreet);
 
