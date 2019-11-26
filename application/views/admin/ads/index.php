@@ -17,7 +17,8 @@
     </div>
 </div>
 
-<?php if (isset($message)) {
+<?php if (isset($message))
+{
     $this->load->view('admin/message', $this->data);
 } ?>
 
