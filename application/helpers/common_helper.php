@@ -389,3 +389,27 @@ function pre($data)
 {
     echo '<pre>', print_r($data, 1), '</pre>';
 }
+
+function getListAdmin()
+{
+    // Get a reference to the controller object
+    $CI = get_instance();
+
+    // You may need to load the model if it hasn't been pre-loaded
+    $CI->load->model('Admin_model');
+//    $this->load->Admin_model();
+    $data = $CI->Admin_model->get_list();
+
+    $i = 0;
+    $admin_arr = [];
+    foreach ($data as $key => $value)
+    {
+        $i++;
+        $admin_arr[$value->id] = new stdClass();
+        $admin_arr[$value->id]->id = $value->id;
+        $admin_arr[$value->id]->name = $value->fullname;
+    }
+
+    return $admin_arr;
+
+}

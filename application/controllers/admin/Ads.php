@@ -12,7 +12,6 @@ Class Ads extends MY_Controller
         $this->load->model('District_model');
         $this->load->model('Ward_model');
         $this->load->model('Street_model');
-        $this->load->model('admin_model');
     }
 
     function index()
@@ -102,17 +101,7 @@ Class Ads extends MY_Controller
         $count = count($ads);
         $count = $count > 0 ? $count : 0;
 
-        $emps = $this->admin_model->get_list();
-
-        $i = 0;
-        $admin_arr = [];
-        foreach ($emps as $key => $val)
-        {
-            $i++;
-            $admin_arr[$val->id] = new stdClass();
-            $admin_arr[$val->id]->id = $val->id;
-            $admin_arr[$val->id]->name = $val->fullname;
-        }
+        $lstAdmin = getListAdmin();
 
         $ads_end = [];
         $index = 0;
@@ -143,12 +132,12 @@ Class Ads extends MY_Controller
             $ads_end[$index]->icon_hot = $val->icon_hot;
             $ads_end[$index]->view = $val->view;
             $ads_end[$index]->note = $val->note;
-            $ads_end[$index]->created_name = isset($admin_arr[$val->created_by]) ? $admin_arr[$val->created_by]->name : 'dcm111111111';
+            $ads_end[$index]->created_name = isset($lstAdmin[$val->created_by]) ? $lstAdmin[$val->created_by]->name : 'dcm111111111';
         }
 
 
         $this->data['lstAdsType'] = $this->_func_ads_type();
-        $this->data['lstAdmin'] = $admin_arr;
+        $this->data['lstAdmin'] = $lstAdmin;
         $this->data['count'] = $count;
         $this->data['ads'] = $ads_end;
         $this->data['_uid'] = $this->_uid;
