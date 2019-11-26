@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh minh họa <span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh <span class="required">*</span></label>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <img src="<?php echo public_url('images/products/'.$product->img)?>" width="200px">
                         <input type="file" class="form-control" name="img_product" id="img_news" style="margin-top: 10px">

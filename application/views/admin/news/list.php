@@ -22,7 +22,7 @@
             <thead>
             <tr>
                 <th>Mã số</th>
-                <th>Ảnh minh họa</th>
+                <th>Ảnh</th>
                 <th>Tiêu đề</th>
                 <th>Giới thiệu</th>
                 <th>Ngày Tạo</th>

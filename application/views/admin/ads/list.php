@@ -79,7 +79,7 @@
             <tr>
                 <th class="text-center">#</th>
                 <th>SĐT</th>
-                <th>Ảnh minh họa</th>
+                <th>Ảnh</th>
                 <th>Tiêu đề</th>
                 <th>Giá / Diện tích</th>
                 <th>Trái</th>

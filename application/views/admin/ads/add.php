@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh minh họa <span
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh <span
                                 class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <input type="file" class="form-control" name="img_news">

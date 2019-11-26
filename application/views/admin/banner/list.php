@@ -21,7 +21,7 @@
             <thead>
             <tr>
                 <th>Mã số</th>
-                <th>Ảnh minh họa</th>
+                <th>Ảnh</th>
                 <th>ID rao vặt</th>
                 <th>rao vặt</th>
                 <th>Loại</th>

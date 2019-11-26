@@ -180,7 +180,7 @@
                                 <tr role="row">
                                     <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 42px;">Mã tin</th>
                                     <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79px;">SĐT</th>
-                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79px;">Ảnh minh họa
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79px;">Ảnh
                                     </th>
                                     <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 86px;">Tiêu đề</th>
                                     <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 258px;">Giá / Diện
