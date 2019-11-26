@@ -21,7 +21,7 @@
             <thead>
             <tr>
                 <th>Mã số</th>
-                <th>Ảnh minh họa</th>
+                <th>Ảnh</th>
                 <th>Tên thiết bị</th>
                 <th>IMEI</th>
                 <th>Loại</th>
