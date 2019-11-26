@@ -183,7 +183,7 @@
                         ></i> Hot
                     </td>
                     <td><?php echo $row->view ?></td>
-                    <td><?php echo date('d/m/Y H:i:s', strtotime($row->created_at)); ?></td>
+                    <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
                 </tr>
 
             <?php } ?>
