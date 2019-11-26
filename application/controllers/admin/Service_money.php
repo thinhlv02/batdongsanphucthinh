@@ -7,7 +7,6 @@ Class Service_money extends MY_Controller
     {
         parent::__construct();
         $this->load->model('ads_model');
-        $this->load->model('employees_model');
     }
 
     function index()
@@ -16,18 +15,8 @@ Class Service_money extends MY_Controller
         $firstday = date('d-m-Y', strtotime(getFirstLastMonth(1, $date)));
         $lastday = date('d-m-Y', strtotime(getFirstLastMonth(2, $date)));
 
-        $emps = $this->employees_model->get_list(array('where' => array('type' => 1)));
-
-        $i = 0;
-        $emps_arr = [];
-        foreach ($emps as $key => $value)
-        {
-            $i++;
-            $emps_arr[$value->id] = new stdClass();
-            $emps_arr[$value->id]->id = $value->id;
-            $emps_arr[$value->id]->name = $value->name;
-        }
-//        pre($emps_arr);
+        $lstEmps = getListEmp(1);
+//        pre($lstEmps);
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
 
@@ -90,7 +79,7 @@ Class Service_money extends MY_Controller
 
                 if ($value->make_money_by > 0)
                 {
-                    $ads_end[$index]->name_emp = isset($emps_arr[$value->make_money_by]) ? $emps_arr[$value->make_money_by]->name : 'dcm111111111';
+                    $ads_end[$index]->name_emp = isset($lstEmps[$value->make_money_by]) ? $lstEmps[$value->make_money_by]->name : 'dcm111111111';
                 }
                 else
                 {
@@ -106,7 +95,7 @@ Class Service_money extends MY_Controller
         $this->data['lastday'] = $lastday;
 
         $this->data['_uid'] = $this->_uid;
-        $this->data['emps'] = $emps;
+        $this->data['lstEmps'] = $lstEmps;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/service_money/index';
         $this->data['view'] = 'admin/service_money/list';
@@ -115,8 +104,7 @@ Class Service_money extends MY_Controller
 
     function edit()
     {
-        $emps = $this->employees_model->get_list(array('where' => array('type' => 1)));
-        $this->data['emps'] = $emps;
+        $this->data['lstEmps'] = getListEmp(1);
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);

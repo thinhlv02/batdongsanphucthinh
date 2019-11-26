@@ -415,7 +415,26 @@ function getListAdmin()
 }
 
 //get list employee
-function getListEmp()
+function getListEmp($type)
 {
     //code here
+    // Get a reference to the controller object
+    $CI = get_instance();
+
+    // You may need to load the model if it hasn't been pre-loaded
+    $CI->load->model('employees_model');
+//    $this->load->Admin_model();
+    $data = $CI->employees_model->get_list(array('where' => array('type' => $type)));
+
+    $i = 0;
+    $admin_arr = [];
+    foreach ($data as $key => $value)
+    {
+        $i++;
+        $admin_arr[$value->id] = new stdClass();
+        $admin_arr[$value->id]->id = $value->id;
+        $admin_arr[$value->id]->name = $value->name;
+    }
+
+    return $admin_arr;
 }

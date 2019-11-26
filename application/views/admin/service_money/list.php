@@ -13,7 +13,7 @@
                         <div class="col-md-2 col-sm-2 col-xs-12">
                             <select class="select2_group form-control" name="make_money_by">
                                 <option value="99">-- Nhân sự --</option>
-                                <?php foreach ($emps as $key => $value) { ?>
+                                <?php foreach ($lstEmps as $key => $value) { ?>
                                     <option value="<?= $value->id ?>" <?php if (isset($_POST['make_money_by']) && $_POST['make_money_by'] == $value->id) echo 'selected' ?>>
                                         <?php echo $value->name ?>
                                     </option>
