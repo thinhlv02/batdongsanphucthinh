@@ -168,7 +168,7 @@
                             </div>
                             <div class="row12">
                                 <div class="col-xs-12 pland"><strong>Email :</strong>
-                                    <a href="javascript:void(0)"><?php echo $ads->email; ?></a></div>
+                                    <a href="javascript:void(0)"><?php echo $ads->email != '' ? $ads->email : 'noemail@gmail.com'; ?></a></div>
                             </div>
                         </div>
 
