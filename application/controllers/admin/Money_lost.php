@@ -6,7 +6,7 @@ Class Money_lost extends MY_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('money_lost_model');
+        $this->load->model('money_model');
     }
 
     function index()
@@ -33,7 +33,7 @@ Class Money_lost extends MY_Controller
 
             $input['order'] = array('id', 'desc');
 
-            $money_lost_end = $this->money_lost_model->get_list($input);
+            $money_lost_end = $this->money_model->get_list($input);
 
             $this->data['money_lost'] = $money_lost_end;
         }
@@ -66,7 +66,7 @@ Class Money_lost extends MY_Controller
                 'created_at' => $created_at,
                 'created_by' => $this->_uid
             );
-            if ($this->money_lost_model->create($data))
+            if ($this->money_model->create($data))
             {
                 $this->session->set_flashdata('message', 'Thêm thành công');
                 redirect(base_url('admin/money_lost'));
@@ -89,7 +89,7 @@ Class Money_lost extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
-        $money_lost = $this->money_lost_model->get_info($id);
+        $money_lost = $this->money_model->get_info($id);
         if (!$money_lost)
         {
             redirect(base_url('admin/money_lost'));
@@ -108,7 +108,7 @@ Class Money_lost extends MY_Controller
                 'description' => $this->input->post('txtDes'),
             );
 
-            if ($this->money_lost_model->update($id, $data))
+            if ($this->money_model->update($id, $data))
             {
                 $this->session->set_flashdata('message', 'Cập nhật thành công');
                 redirect(base_url('admin/money_lost'));
@@ -130,10 +130,10 @@ Class Money_lost extends MY_Controller
     function del()
     {
         $id = $this->uri->segment(4);
-        $money_lost = $this->money_lost_model->get_info($id);
+        $money_lost = $this->money_model->get_info($id);
         if ($money_lost)
         {
-            $this->money_lost_model->delete($id);
+            $this->money_model->delete($id);
         }
         redirect(base_url('admin/money_lost'));
     }
