@@ -1,6 +1,6 @@
 <div class="page-title" style="height: auto">
     <div class="title_left">
-        <h3>Tiền khách hàng nạp đẩy tin</h3>
+        <h3>Giao dịch</h3>
     </div>
     <div class="clearfix"></div>
 

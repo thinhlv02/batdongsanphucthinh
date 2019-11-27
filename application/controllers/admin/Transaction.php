@@ -1,7 +1,7 @@
 <?php
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-Class Service_money extends MY_Controller
+Class Transaction extends MY_Controller
 {
     function __construct()
     {
