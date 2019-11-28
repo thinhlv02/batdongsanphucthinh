@@ -23,7 +23,7 @@ Class Login extends MY_Controller
             }
         }
 
-        $this->load->view('admin/login');
+        $this->load->view('admin/login_v2');
     }
 
     /*
