@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>PhucthinhCorp! | </title>
 
     <!-- Bootstrap -->
     <link href="<?php echo admin_theme(''); ?>/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -40,13 +40,24 @@
                         <input type="password" name="password" class="form-control" placeholder="Password" required=""/>
                     </div>
                     <div>
-                        <button type="submit">Log in</button>
+                        <button type="submit" class="btn-warning">Log in</button>
                         <a class="reset_pass" href="javascript:void(0)">Lost your password?</a>
                     </div>
 
                     <div class="clearfix"></div>
 
                     <div class="separator">
+                        <p class="change_link">New to site?
+                            <a href="javascript:void(0)" class="to_register"> Create Account </a>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <br/>
+
+                        <div>
+                            <h1><i class="fa fa-paw"></i> PhucthinhCorp!</h1>
+                            <p>©2014 All Rights Reserved. PhucthinhCorp! is a Bootstrap 3 template. Privacy and Terms</p>
+                        </div>
                     </div>
                 </form>
             </section>
