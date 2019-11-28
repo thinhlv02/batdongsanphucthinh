@@ -2,8 +2,7 @@
     <div class="left_col scroll-view">
 
         <div class="navbar nav_title" style="border: 0;">
-            <a href="<?php echo admin_url('dashboard') ?>" class="site_title"><i class="fa fa-paw"></i>
-                <span>Trang chủ</span></a>
+            <a href="<?php echo admin_url('dashboard') ?>" class="site_title"><i class="fa fa-paw"></i><span>Trang chủ</span></a>
         </div>
 
         <div class="clearfix"></div>
@@ -11,8 +10,7 @@
         <!-- menu profile quick info -->
         <div class="profile clearfix">
             <div class="profile_pic">
-                <img src="<?php echo public_url() ?>images/favicon.png" alt="..."
-                     class="img-circle profile_img">
+                <img src="<?php echo public_url() ?>images/favicon.png" alt="..." class="img-circle profile_img">
             </div>
             <div class="profile_info">
                 <span>Xin chào,</span>
@@ -36,8 +34,8 @@
                         </ul>
                     </li>
 
-<!--                    //only admin view-->
-                    <?php if($admin->id == 1) { ?>
+                    <!--                    //only admin view-->
+                    <?php if ($admin->id == 1) { ?>
                         <li><a><i class="fa fa-book"></i>Quản lý chung<span class="fa fa-chevron-down"></span></a>
                             <ul class="nav child_menu">
                                 <li><a href="<?php echo admin_url('devices') ?>">Thiết bị sử dụng</a></li>
@@ -45,7 +43,7 @@
                                 <li><a href="<?php echo admin_url('user') ?>">Khách hàng đăng ký website</a></li>
                                 <li><a href="<?php echo admin_url('transaction') ?>">Giao dịch</a></li>
                                 <li><a href="<?php echo admin_url('money_lost') ?>">Tiền tiêu hao</a></li>
-<!--                                <li><a href="--><?php //echo admin_url('Upload_Files') ?><!--">Upload_Files</a></li>-->
+                                <!--                                <li><a href="--><?php //echo admin_url('Upload_Files') ?><!--">Upload_Files</a></li>-->
 
                                 <li><a href="<?php echo admin_url('product') ?>">Dịch vụ</a></li>
                                 <li><a href="<?php echo admin_url('price') ?>">Bảng giá quảng cáo</a></li>
@@ -62,7 +60,7 @@
                             </ul>
                         </li>
                     <?php } ?>
-<!--                    //only admin view-->
+                    <!--                    //only admin view-->
                 </ul>
             </div>
 
@@ -71,8 +69,7 @@
 
         <!-- /menu footer buttons -->
         <div class="sidebar-footer hidden-small">
-            <a data-toggle="tooltip" data-placement="top" title="Settings">
-                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            <a data-toggle="tooltip" data-placement="top" title="Settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
             </a>
             <a data-toggle="tooltip" data-placement="top" title="FullScreen">
                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
