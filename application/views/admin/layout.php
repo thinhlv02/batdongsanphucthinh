@@ -51,8 +51,6 @@
     <div class="clearfix"></div>
 </footer>
 <!-- /footer content -->
-</div>
-</div>
 
 <?php $this->load->view('admin/js') ?>
 
