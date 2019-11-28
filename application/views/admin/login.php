@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Trang quản lý</title>
+    <title>Gentelella Alela! | </title>
 
     <!-- Bootstrap -->
     <link href="<?php echo admin_theme(''); ?>/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -31,8 +31,8 @@
         <div class="animate form login_form">
             <section class="login_content">
                 <form method="post" action="">
-                    <h1>Đăng nhập</h1>
-                    <!-- <p><?php //echo validation_errors(); ?><p> -->
+                    <h1>Login Form</h1>
+                    <p><?php echo validation_errors(); ?><p>
                     <div>
                         <input type="text" name="username" class="form-control" placeholder="Username" required=""/>
                     </div>
@@ -40,8 +40,8 @@
                         <input type="password" name="password" class="form-control" placeholder="Password" required=""/>
                     </div>
                     <div>
-                        <button type="submit">Đăng nhập</button>
-                        <a class="reset_pass" href="#">Quên mật khẩu?</a>
+                        <button type="submit">Log in</button>
+                        <a class="reset_pass" href="javascript:void(0)">Lost your password?</a>
                     </div>
 
                     <div class="clearfix"></div>

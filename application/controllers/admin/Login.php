@@ -50,7 +50,7 @@ Class Login extends MY_Controller
             //pre($admin);
             return true;
         }
-        $this->form_validation->set_message(__FUNCTION__, 'Không đăng nhập thành công');
+        $this->form_validation->set_message(__FUNCTION__, 'Login failed');
         return false;
     }
 }
