@@ -1,6 +1,6 @@
 <div class="page-title" style="height: auto">
     <div class="title_left">
-        <h3>Quản lý bài đăng nhà đất</h3>
+        <h3>Quản lý quảng cáo</h3>
     </div>
     <div class="clearfix"></div>
     <div class="row">
