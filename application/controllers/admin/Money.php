@@ -1,7 +1,7 @@
 <?php
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-Class Money_lost extends MY_Controller
+Class Money extends MY_Controller
 {
     function __construct()
     {
@@ -42,8 +42,8 @@ Class Money_lost extends MY_Controller
         $this->data['lastday'] = $lastday;
         $this->data['tab'] = 1;
         $this->data['lstAdmin'] = getListAdmin();
-        $this->data['temp'] = 'admin/money_lost/index';
-        $this->data['view'] = 'admin/money_lost/list';
+        $this->data['temp'] = 'admin/money/index';
+        $this->data['view'] = 'admin/money/list';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -69,7 +69,7 @@ Class Money_lost extends MY_Controller
             if ($this->money_model->create($data))
             {
                 $this->session->set_flashdata('message', 'Thêm thành công');
-                redirect(base_url('admin/money_lost'));
+                redirect(base_url('admin/money'));
             }
             else
             {
@@ -79,8 +79,8 @@ Class Money_lost extends MY_Controller
         }
         $this->data['tab'] = 2;
         $this->data['device_type'] = $this->_device_type;
-        $this->data['temp'] = 'admin/money_lost/index';
-        $this->data['view'] = 'admin/money_lost/add';
+        $this->data['temp'] = 'admin/money/index';
+        $this->data['view'] = 'admin/money/add';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -92,7 +92,7 @@ Class Money_lost extends MY_Controller
         $money_lost = $this->money_model->get_info($id);
         if (!$money_lost)
         {
-            redirect(base_url('admin/money_lost'));
+            redirect(base_url('admin/money'));
         }
 
         if ($this->input->post('btnEdit'))
@@ -111,7 +111,7 @@ Class Money_lost extends MY_Controller
             if ($this->money_model->update($id, $data))
             {
                 $this->session->set_flashdata('message', 'Cập nhật thành công');
-                redirect(base_url('admin/money_lost'));
+                redirect(base_url('admin/money'));
             }
             else
             {
@@ -122,8 +122,8 @@ Class Money_lost extends MY_Controller
         $this->data['money_lost'] = $money_lost;
 //        var_dump($money_lost);
         $this->data['device_type'] = $this->_device_type;
-        $this->data['temp'] = 'admin/money_lost/index';
-        $this->data['view'] = 'admin/money_lost/edit';
+        $this->data['temp'] = 'admin/money/index';
+        $this->data['view'] = 'admin/money/edit';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -135,7 +135,7 @@ Class Money_lost extends MY_Controller
         {
             $this->money_model->delete($id);
         }
-        redirect(base_url('admin/money_lost'));
+        redirect(base_url('admin/money'));
     }
 
 }

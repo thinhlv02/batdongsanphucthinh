@@ -76,7 +76,7 @@
                         <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
 
                         <td>
-                            <a class="btn btn-xs btn-outline-success" href="<?php echo base_url('admin/money_lost/edit/' . $row->id) ?>"><i class="fa fa-pencil-square-o"></i></a>
+                            <a class="btn btn-xs btn-outline-success" href="<?php echo base_url('admin/money/edit/' . $row->id) ?>"><i class="fa fa-pencil-square-o"></i></a>
                             <a class="btn btn-xs btn-outline-danger" onclick="confirmDel(<?php echo $row->id ?>)"><i class="fa fa-trash-o"></i></a>
                         </td>
                     </tr>
@@ -109,7 +109,7 @@
     {
         if (confirm('Bạn có chắc chắn muốn xóa?'))
         {
-            window.location.href = '<?php echo base_url('admin/money_lost/del/')?>' + id;
+            window.location.href = '<?php echo base_url('admin/money/del/')?>' + id;
         }
     }
 
