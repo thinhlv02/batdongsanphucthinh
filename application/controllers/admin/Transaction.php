@@ -12,8 +12,8 @@ Class Transaction extends MY_Controller
     function index()
     {
         $date = date('Y-m-d');
-        $firstday = date('d-m-Y', strtotime(getFirstLastMonth(1, $date)));
-        $lastday = date('d-m-Y', strtotime(getFirstLastMonth(2, $date)));
+        $firstday = date('Y-m-d', strtotime(getFirstLastMonth(1, $date)));
+        $lastday = date('Y-m-d', strtotime(getFirstLastMonth(2, $date)));
 
         $lstEmps = getListEmp(1);
 //        pre($lstEmps);
@@ -30,13 +30,7 @@ Class Transaction extends MY_Controller
 
             $make_money_by = $this->input->post('make_money_by');
             $check_money = $this->input->post('check_money');
-            $input = [];
-            $input['where'] = array(
-                'created_at >=' => $firstday,
-                'created_at <=' => $lastday
-            );
 
-            $input['order'] = array('id', 'desc');
 
             if ($make_money_by != 99)
             {
@@ -57,39 +51,50 @@ Class Transaction extends MY_Controller
 
             }
 
-            $ads = $this->ads_model->get_list($input);
 
-            $ads_end = [];
-            $index = 0;
-            foreach ($ads as $key => $value)
+        }
+
+        $input = [];
+        $input['where'] = array(
+            'created_at >=' => $firstday,
+            'created_at <=' => $lastday
+        );
+
+        $input['order'] = array('id', 'desc');
+
+        $ads = $this->ads_model->get_list($input);
+//        pre($input);
+
+        $ads_end = [];
+        $index = 0;
+        foreach ($ads as $key => $value)
+        {
+            $index++;
+            $ads_end[$index] = new stdClass();
+            $ads_end[$index]->id = $value->id;
+            $ads_end[$index]->code = $value->code;
+            $ads_end[$index]->img = $value->img;
+            $ads_end[$index]->title = $value->title;
+            $ads_end[$index]->price = $value->price;
+            $ads_end[$index]->acreage = $value->acreage;
+            $ads_end[$index]->area = $value->area;
+            $ads_end[$index]->service_money = $value->service_money;
+            $ads_end[$index]->make_money_by = $value->make_money_by;
+            $ads_end[$index]->pay_time = $value->pay_time != '0000-00-00' ? date('d/m/Y', strtotime($value->pay_time)) : '';
+            $ads_end[$index]->created_at = $value->created_at;
+
+            if ($value->make_money_by > 0)
             {
-                $index++;
-                $ads_end[$index] = new stdClass();
-                $ads_end[$index]->id = $value->id;
-                $ads_end[$index]->code = $value->code;
-                $ads_end[$index]->img = $value->img;
-                $ads_end[$index]->title = $value->title;
-                $ads_end[$index]->price = $value->price;
-                $ads_end[$index]->acreage = $value->acreage;
-                $ads_end[$index]->area = $value->area;
-                $ads_end[$index]->service_money = $value->service_money;
-                $ads_end[$index]->make_money_by = $value->make_money_by;
-                $ads_end[$index]->pay_time = $value->pay_time != '0000-00-00' ? date('d/m/Y', strtotime($value->pay_time)) : '';
-                $ads_end[$index]->created_at = $value->created_at;
-
-                if ($value->make_money_by > 0)
-                {
-                    $ads_end[$index]->name_emp = isset($lstEmps[$value->make_money_by]) ? $lstEmps[$value->make_money_by]->name : 'dcm111111111';
-                }
-                else
-                {
-                    $ads_end[$index]->name_emp = '';
-                }
-
+                $ads_end[$index]->name_emp = isset($lstEmps[$value->make_money_by]) ? $lstEmps[$value->make_money_by]->name : 'dcm111111111';
+            }
+            else
+            {
+                $ads_end[$index]->name_emp = '';
             }
 
-            $this->data['ads'] = $ads_end;
         }
+
+        $this->data['ads'] = $ads_end;
 
         $this->data['firstday'] = $firstday;
         $this->data['lastday'] = $lastday;
@@ -121,7 +126,7 @@ Class Transaction extends MY_Controller
 
         if (!$ads)
         {
-            redirect(base_url('admin/service_money'));
+            redirect(base_url('admin/transaction'));
         }
 
         $date = $this->input->post('date');
@@ -141,7 +146,7 @@ Class Transaction extends MY_Controller
             if ($this->ads_model->update($id, $data))
             {
                 $this->session->set_flashdata('message', 'Cập nhật  thành công');
-                redirect(base_url('admin/service_money'));
+                redirect(base_url('admin/transaction'));
             }
             else
             {

@@ -98,7 +98,7 @@
                         <td><?php echo $row->name_emp ?></td>
                         <td class="text-nowrap"><?php echo $row->pay_time; ?></td>
                         <td>
-                            <a class="btn btn-xs btn-outline-success" href="<?php echo base_url('admin/service_money/edit/' . $row->id) ?>"><i class="fa fa-pencil-square-o"></i></a>
+                            <a class="btn btn-xs btn-outline-success" href="<?php echo base_url('admin/transaction/edit/' . $row->id) ?>"><i class="fa fa-pencil-square-o"></i></a>
                         </td>
                     </tr>
 
@@ -118,7 +118,6 @@
             <?php } ?>
 
         </table>
-        <!-- <a href="#" class="btn btn-danger">Xóa đã chọn </a> -->
     </div>
 </div>
 <script>
