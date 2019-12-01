@@ -12,10 +12,11 @@ Class Money extends MY_Controller
     function index()
     {
         $date = date('Y-m-d');
-        $firstday = date('d-m-Y', strtotime(getFirstLastMonth(1, $date)));
-        $lastday = date('d-m-Y', strtotime(getFirstLastMonth(2, $date)));
+        $firstday = date('Y-m-d', strtotime(getFirstLastMonth(1, $date)));
+        $lastday = date('Y-m-d', strtotime(getFirstLastMonth(2, $date)));
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
+        $input['where'] = [];
 
         if ($this->input->post('btnAddSearch'))
         {
@@ -25,18 +26,17 @@ Class Money extends MY_Controller
             $firstday = date('Y-m-d', strtotime(str_replace('/', '-', $txtDateExp[0])));
             $lastday = date('Y-m-d', strtotime(str_replace('/', '-', $txtDateExp[1])));
 
-            $input = [];
-            $input['where'] = array(
-                'created_at >=' => $firstday,
-                'created_at <=' => $lastday
-            );
-
-            $input['order'] = array('id', 'desc');
-
-            $money_lost_end = $this->money_model->get_list($input);
-
-            $this->data['money_lost'] = $money_lost_end;
         }
+
+        $input['where'] = array(
+            'created_at >=' => $firstday,
+            'created_at <=' => $lastday
+        );
+
+        $input['order'] = array('id', 'desc');
+        $money_lost_end = $this->money_model->get_list($input);
+
+        $this->data['money_lost'] = $money_lost_end;
 
         $this->data['firstday'] = $firstday;
         $this->data['lastday'] = $lastday;
