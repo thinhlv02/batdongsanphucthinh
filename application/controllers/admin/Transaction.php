@@ -19,6 +19,7 @@ Class Transaction extends MY_Controller
 //        pre($lstEmps);
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
+        $input['where'] = array();
 
         if ($this->input->post('btnAddSearch'))
         {
@@ -29,12 +30,12 @@ Class Transaction extends MY_Controller
             $lastday = date('Y-m-d', strtotime(str_replace('/', '-', $txtDateExp[1])));
 
             $make_money_by = $this->input->post('make_money_by');
+//            var_dump($make_money_by);
             $check_money = $this->input->post('check_money');
-
 
             if ($make_money_by != 99)
             {
-                $input['where']['make_money_by'] = $make_money_by;
+                $input['where'] += array('make_money_by' => $make_money_by);// $make_money_by;
             }
 
             if ($check_money != -1)
@@ -54,8 +55,7 @@ Class Transaction extends MY_Controller
 
         }
 
-        $input = [];
-        $input['where'] = array(
+        $input['where'] += array(
             'created_at >=' => $firstday,
             'created_at <=' => $lastday
         );
