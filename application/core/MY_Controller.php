@@ -36,7 +36,8 @@ Class MY_Controller extends CI_Controller
         $this->_template_f = TEMPLATE_FOLDER;
 
 //        var_dump($new_url);
-        switch ($new_url) {
+        switch ($new_url)
+        {
             case 'admin' :
             {
 //                pre('abc');
@@ -65,14 +66,18 @@ Class MY_Controller extends CI_Controller
                 //fix sgc
 
                 $language = $this->session->userdata('language');
-                if (!$language) {
+                if (!$language)
+                {
                     $this->session->set_userdata('language', 'vn');
                     $language = 'vn';
                 }
 //                var_dump($language);
-                if ($language == 'vn') {
+                if ($language == 'vn')
+                {
                     $this->_langcode = 'vietnamese';
-                } else {
+                }
+                else
+                {
                     $this->_langcode = 'english';
                 }
                 $this->data['language'] = $language;
@@ -115,11 +120,13 @@ Class MY_Controller extends CI_Controller
 
         $login = $this->session->userdata('login');
         //neu ma chua dang nhap,ma truy cap 1 controller khac login
-        if (!$login && $controller != 'login') {
+        if (!$login && $controller != 'login')
+        {
             redirect(base_url('admin/login'));
         }
         //neu ma admin da dang nhap thi khong cho phep vao trang login nua.
-        if ($login && $controller == 'login') {
+        if ($login && $controller == 'login')
+        {
             redirect(base_url('admin/ads'));
         }
     }
@@ -149,7 +156,8 @@ Class MY_Controller extends CI_Controller
 
     protected function _session_uid()
     {
-        if ($this->session->userdata('admin')) {
+        if ($this->session->userdata('admin'))
+        {
             $_data = trim($this->session->userdata('admin')->id);
             return $_data;
         }
@@ -157,7 +165,8 @@ Class MY_Controller extends CI_Controller
 
     protected function _session_uname()
     {
-        if ($this->session->userdata('admin')) {
+        if ($this->session->userdata('admin'))
+        {
             $_uid = trim($this->session->userdata('admin')->username);
             return $_uid;
         }

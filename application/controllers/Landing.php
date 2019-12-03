@@ -107,15 +107,20 @@ Class Landing extends MY_Controller
     function introduce($slug = '', $id = 0)
     {
         $this->data['li_2'] = 1;
-        if (strlen($slug) > 0 && $id > 0) {
+        if (strlen($slug) > 0 && $id > 0)
+        {
             $product = $this->product_model->get_info($id);
-            if (!$product || create_slug($product->name) != $slug) {
+            if (!$product || create_slug($product->name) != $slug)
+            {
                 redirect(base_url('gioi-thieu-dich-vu.html'));
             }
             $this->data['product'] = $product;
-        } else {
+        }
+        else
+        {
             $product = $this->product_model->get_list(array('order' => array('id', 'asc'), 'limit' => array(1, 0)));
-            if (sizeof($product)) {
+            if (sizeof($product))
+            {
                 $this->data['product'] = $product[0];
             }
         }
@@ -129,11 +134,16 @@ Class Landing extends MY_Controller
     {
         $this->data['li_3'] = 1;
 
-        if ($type == "ky-thuat-vien" || $type == "ky-thuat-vien.html") {
+        if ($type == "ky-thuat-vien" || $type == "ky-thuat-vien.html")
+        {
             $type = 2;
-        } else if ($type == "cong-tac-vien" || $type == "cong-tac-vien.html") {
+        }
+        else if ($type == "cong-tac-vien" || $type == "cong-tac-vien.html")
+        {
             $type = 3;
-        } else if ($type != 1) {
+        }
+        else if ($type != 1)
+        {
             redirect(base_url('ho-tro.html'));
         }
         $categories = $this->questions_model->get_list(array('where' => array('parent_id' => 0, 'type' => $type), 'order' => array('id', 'asc')));
@@ -148,9 +158,11 @@ Class Landing extends MY_Controller
     {
         $this->data['active'] = $id;
         $this->data['li_3'] = 1;
-        if (strlen($slug) > 0 && $id > 0) {
+        if (strlen($slug) > 0 && $id > 0)
+        {
             $question = $this->questions_model->get_info($id);
-            if (!$question || create_slug($question->name) != $slug) {
+            if (!$question || create_slug($question->name) != $slug)
+            {
                 redirect(base_url('ho-tro.html'));
             }
             $categories = $this->questions_model->get_list(array('where' => array('parent_id' => 0, 'type' => $question->type)));
@@ -158,17 +170,22 @@ Class Landing extends MY_Controller
             $this->data['type'] = $question->type;
 //            pre($question->type);
 
-            if ($question->level == 1) {
+            if ($question->level == 1)
+            {
                 $questions = $this->questions_model->get_list(array('where' => array('parent_id' => $question->id), 'order' => array('id', 'asc')));
                 $this->data['questions'] = $questions;
 //                $this->data['active'] = $id;
                 $this->data['temp'] = $this->_template_f . 'pages/support_level_2';
-            } else {
+            }
+            else
+            {
                 $this->data['question'] = $question;
 //                $this->data['active'] = $id;
                 $this->data['temp'] = $this->_template_f . 'pages/support_level_3';
             }
-        } else {
+        }
+        else
+        {
             redirect(base_url('ho-tro.html'));
         }
 
@@ -222,7 +239,8 @@ Class Landing extends MY_Controller
         $total_rows = $this->news_model->get_total($input);
         $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('tin-tuc'));
 
-        if ($offset >= 1) {
+        if ($offset >= 1)
+        {
             $offset -= 1;
             $offset = $offset * $per_page;
         }
@@ -246,7 +264,8 @@ Class Landing extends MY_Controller
     function news_detail($slug, $id)
     {
         $news = $this->news_model->get_info($id);
-        if (!$news || create_slug($news->name) != $slug) {
+        if (!$news || create_slug($news->name) != $slug)
+        {
             redirect(base_url('tin-tuc'));
         }
         $this->data['news'] = $news;
@@ -278,7 +297,8 @@ Class Landing extends MY_Controller
         $total_rows = $this->ads_model->get_total($input);
         $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('rao-vat'));
 
-        if ($offset >= 1) {
+        if ($offset >= 1)
+        {
             $offset -= 1;
             $offset = $offset * $per_page;
         }
@@ -302,7 +322,8 @@ Class Landing extends MY_Controller
     function ads_detail($slug, $id)
     {
         $ads = $this->ads_model->get_info($id);
-        if (!$ads || create_slug($ads->title) != $slug) {
+        if (!$ads || create_slug($ads->title) != $slug)
+        {
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $ads;
@@ -350,16 +371,24 @@ Class Landing extends MY_Controller
         $uri2 = $this->uri->segment(2);
         $uri3 = $this->uri->segment(3);
 //        pre($uri2.'-'.$uri3);
-        if ($language == 'vn') {
+        if ($language == 'vn')
+        {
             $this->session->set_userdata('language', 'vn');
-        } else if ($language == 'en') {
+        }
+        else if ($language == 'en')
+        {
             $this->session->set_userdata('language', 'en');
         }
-        if ($uri3) {
+        if ($uri3)
+        {
             redirect(base_url($uri2 . '/' . $uri3));
-        } else if ($uri2) {
+        }
+        else if ($uri2)
+        {
             redirect(base_url($uri2));
-        } else {
+        }
+        else
+        {
             redirect(base_url());
         }
     }
@@ -388,14 +417,17 @@ Class Landing extends MY_Controller
         $view_old = $ads->view;
         $view_new = $view_old + 14;
 
-        if ($ads) {
+        if ($ads)
+        {
             $dataSubmit = array();
             $dataSubmit['view'] = $view_new;
 //            var_dump($id. '-----');
 //            var_dump($dataSubmit);
             $this->ads_model->update($id, $dataSubmit);
             echo $id . '=>' . $view_new;
-        } else {
+        }
+        else
+        {
             echo 'not update';
         }
 
@@ -423,7 +455,8 @@ Class Landing extends MY_Controller
 //        die;
 
         $lst_district_end = [];
-        foreach ($lst_district as $k => $value) {
+        foreach ($lst_district as $k => $value)
+        {
             $lst_district_end[$value->id]['id'] = $value->id;
             $lst_district_end[$value->id]['_name'] = $value->_name;
         }
@@ -449,7 +482,8 @@ Class Landing extends MY_Controller
 //        die;
 
         $lst_ward_end = [];
-        foreach ($lst_ward as $k => $value) {
+        foreach ($lst_ward as $k => $value)
+        {
             $lst_ward_end[$value->id]['id'] = $value->id . '|' . $value->_district_id;
             $lst_ward_end[$value->id]['_name'] = $value->_name;
         }
@@ -561,24 +595,30 @@ Class Landing extends MY_Controller
 
         $this->data['err_phone'] = '';
         $this->data['exits_phone'] = '';
-        if (!str_valid_phone($phone)) {
+        if (!str_valid_phone($phone))
+        {
             $this->data['err_phone'] = 'true';
         }
 
         $user_info = $this->user_model->get_list(array('where' => array('phone' => $phone)));
-        if (!empty($user_info)) {
+        if (!empty($user_info))
+        {
             $this->data['exits_phone'] = 'true';
         }
 
-        if ($this->data['err_phone'] != 'true' && $this->data['exits_phone'] != 'true') {
+        if ($this->data['err_phone'] != 'true' && $this->data['exits_phone'] != 'true')
+        {
 
-            if ($this->user_model->create($data)) {
+            if ($this->user_model->create($data))
+            {
                 $input = array();
                 $input['where']['phone'] = $phone;
                 $admin = $this->user_model->get_list($input);
                 $this->session->set_userdata('user', $admin[0]);
                 $this->data['ok'] = 'ok';
-            } else {
+            }
+            else
+            {
                 $this->data['failed'] = 'failed';
             }
         }
@@ -596,14 +636,16 @@ Class Landing extends MY_Controller
 
         $where = array('username' => $username, 'password' => $password);
 
-        if ($this->user_model->check_exists($where)) {
+        if ($this->user_model->check_exists($where))
+        {
 
             $input = array();
             $input['where']['username'] = $username;
             $admin = $this->user_model->get_list($input);
             $this->session->set_userdata('user', $admin[0]);
             echo 'ok';
-        } else echo 'failed';
+        }
+        else echo 'failed';
     }
 
     function logout()

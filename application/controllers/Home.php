@@ -35,12 +35,14 @@ Class Home extends MY_Controller
 
         //load banner list show
         $banner_left = $this->banner_model->get_list(array('where' => array('highlight' => 1, 'ads_left' => 1, 'bsizeid' => 5), 'limit' => array('1', '0')));
-        if ($banner_left) {
+        if ($banner_left)
+        {
             $banner_left[0]->{'title'} = $this->ads_model->get_info($banner_left[0]->id_ads)->title;
         }
         $banner_right = $this->banner_model->get_list(array('where' => array('highlight' => 1, 'ads_right' => 1, 'bsizeid' => 5), 'limit' => array('1', '0')));
 
-        if ($banner_right) {
+        if ($banner_right)
+        {
             $banner_right[0]->{'title'} = $this->ads_model->get_info($banner_right[0]->id_ads)->title;
         }
 
@@ -102,15 +104,20 @@ Class Home extends MY_Controller
     {
         $this->load->language('introduce/introduce', $this->_langcode);
         $this->data['introduce_lang'] = $this->lang->line('introduce_lang');
-        if (strlen($slug) > 0 && $id > 0) {
+        if (strlen($slug) > 0 && $id > 0)
+        {
             $product = $this->product_model->get_info($id);
-            if (!$product || create_slug($product->name) != $slug) {
+            if (!$product || create_slug($product->name) != $slug)
+            {
                 redirect(base_url('gioi-thieu-dich-vu.html'));
             }
             $this->data['product'] = $product;
-        } else {
+        }
+        else
+        {
             $product = $this->product_model->get_list(array('order' => array('id', 'asc'), 'limit' => array(1, 0)));
-            if (sizeof($product)) {
+            if (sizeof($product))
+            {
                 $this->data['product'] = $product[0];
             }
         }
@@ -133,11 +140,16 @@ Class Home extends MY_Controller
         $this->load->language('support/support', $this->_langcode);
         $this->data['support_lang'] = $this->lang->line('support_lang');
 
-        if ($type == "ky-thuat-vien" || $type == "ky-thuat-vien.html") {
+        if ($type == "ky-thuat-vien" || $type == "ky-thuat-vien.html")
+        {
             $type = 2;
-        } else if ($type == "cong-tac-vien" || $type == "cong-tac-vien.html") {
+        }
+        else if ($type == "cong-tac-vien" || $type == "cong-tac-vien.html")
+        {
             $type = 3;
-        } else if ($type != 1) {
+        }
+        else if ($type != 1)
+        {
             redirect(base_url('ho-tro.html'));
         }
         $categories = $this->questions_model->get_list(array('where' => array('parent_id' => 0, 'type' => $type), 'order' => array('id', 'asc')));
@@ -158,9 +170,11 @@ Class Home extends MY_Controller
     function detail_support($slug = "", $id = 0)
     {
         $this->data['active'] = $id;
-        if (strlen($slug) > 0 && $id > 0) {
+        if (strlen($slug) > 0 && $id > 0)
+        {
             $question = $this->questions_model->get_info($id);
-            if (!$question || create_slug($question->name) != $slug) {
+            if (!$question || create_slug($question->name) != $slug)
+            {
                 redirect(base_url('ho-tro.html'));
             }
             $categories = $this->questions_model->get_list(array('where' => array('parent_id' => 0, 'type' => $question->type)));
@@ -173,19 +187,24 @@ Class Home extends MY_Controller
 
             $this->_loadHeader($header);
 
-            if ($question->level == 1) {
+            if ($question->level == 1)
+            {
                 $questions = $this->questions_model->get_list(array('where' => array('parent_id' => $question->id), 'order' => array('id', 'asc')));
                 $this->data['questions'] = $questions;
 //                $this->data['active'] = $id;
                 $this->load->view($this->_template_f . 'support/support_level_2', $this->data);
 
-            } else {
+            }
+            else
+            {
                 $this->data['question'] = $question;
 //                $this->data['active'] = $id;
                 $this->load->view($this->_template_f . 'support/support_level_3', $this->data);
 
             }
-        } else {
+        }
+        else
+        {
             redirect(base_url('ho-tro.html'));
         }
 
@@ -265,7 +284,8 @@ Class Home extends MY_Controller
         $total_rows = $this->news_model->get_total($input);
         $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('tin-tuc'));
 
-        if ($offset >= 1) {
+        if ($offset >= 1)
+        {
             $offset -= 1;
             $offset = $offset * $per_page;
         }
@@ -294,7 +314,8 @@ Class Home extends MY_Controller
     function news_detail($slug, $id)
     {
         $news = $this->news_model->get_info($id);
-        if (!$news || create_slug($news->name) != $slug) {
+        if (!$news || create_slug($news->name) != $slug)
+        {
             redirect(base_url('tin-tuc'));
         }
         $this->data['news'] = $news;
@@ -330,7 +351,8 @@ Class Home extends MY_Controller
         $total_rows = $this->ads_model->get_total($input);
         $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('rao-vat'));
 
-        if ($offset >= 1) {
+        if ($offset >= 1)
+        {
             $offset -= 1;
             $offset = $offset * $per_page;
         }
@@ -359,7 +381,8 @@ Class Home extends MY_Controller
     function product_detail($slug, $id)
     {
         $ads = $this->ads_model->get_info($id);
-        if (!$ads || create_slug($ads->title) != $slug) {
+        if (!$ads || create_slug($ads->title) != $slug)
+        {
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $ads;
@@ -399,7 +422,8 @@ Class Home extends MY_Controller
     function ads_detail_link($slug, $id)
     {
         $ads = $this->ads_model->get_info($id);
-        if (!$ads || create_slug($ads->title) != $slug) {
+        if (!$ads || create_slug($ads->title) != $slug)
+        {
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $this->ads_model->get_info($id);
@@ -408,7 +432,8 @@ Class Home extends MY_Controller
 
         $ads_end = [];
         $index = 0;
-        foreach ($ads_link as $key => $val) {
+        foreach ($ads_link as $key => $val)
+        {
             $index++;
             $ads_end[$index] = new stdClass();
             $ads_end[$index]->id = $val->id;
@@ -446,16 +471,24 @@ Class Home extends MY_Controller
         $uri2 = $this->uri->segment(2);
         $uri3 = $this->uri->segment(3);
 //        pre($uri2.'-'.$uri3);
-        if ($language == 'vn') {
+        if ($language == 'vn')
+        {
             $this->session->set_userdata('language', 'vn');
-        } else if ($language == 'en') {
+        }
+        else if ($language == 'en')
+        {
             $this->session->set_userdata('language', 'en');
         }
-        if ($uri3) {
+        if ($uri3)
+        {
             redirect(base_url($uri2 . '/' . $uri3));
-        } else if ($uri2) {
+        }
+        else if ($uri2)
+        {
             redirect(base_url($uri2));
-        } else {
+        }
+        else
+        {
             redirect(base_url());
         }
     }
@@ -483,7 +516,8 @@ Class Home extends MY_Controller
     function broker_detail($slug, $id)
     {
         $ads = $this->ads_model->get_info($id);
-        if (!$ads || create_slug($ads->title) != $slug) {
+        if (!$ads || create_slug($ads->title) != $slug)
+        {
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $ads;
@@ -538,14 +572,17 @@ Class Home extends MY_Controller
         $view_old = $ads->view;
         $view_new = $view_old + 14;
 
-        if ($ads) {
+        if ($ads)
+        {
             $dataSubmit = array();
             $dataSubmit['view'] = $view_new;
 //            var_dump($id. '-----');
 //            var_dump($dataSubmit);
             $this->ads_model->update($id, $dataSubmit);
             echo $id . '=>' . $view_new;
-        } else {
+        }
+        else
+        {
             echo 'not update';
         }
 
@@ -558,7 +595,8 @@ Class Home extends MY_Controller
         $lst_district = $this->district_model->get_list(array('where' => array('_province_id' => $id)));
 
         $lst_district_end = [];
-        foreach ($lst_district as $k => $value) {
+        foreach ($lst_district as $k => $value)
+        {
             $lst_district_end[$value->id]['id'] = $value->id;
             $lst_district_end[$value->id]['_name'] = $value->_name;
         }
@@ -575,7 +613,8 @@ Class Home extends MY_Controller
         $lst_ward = $this->Ward_model->get_list(array('where' => array('_district_id' => $id)));
 
         $lst_ward_end = [];
-        foreach ($lst_ward as $k => $value) {
+        foreach ($lst_ward as $k => $value)
+        {
             $lst_ward_end[$value->id]['id'] = $value->id . '|' . $value->_district_id;
             $lst_ward_end[$value->id]['_name'] = $value->_name;
         }
@@ -642,24 +681,30 @@ Class Home extends MY_Controller
 
         $this->data['err_phone'] = '';
         $this->data['exits_phone'] = '';
-        if (!str_valid_phone($phone)) {
+        if (!str_valid_phone($phone))
+        {
             $this->data['err_phone'] = 'true';
         }
 
         $user_info = $this->user_model->get_list(array('where' => array('phone' => $phone)));
-        if (!empty($user_info)) {
+        if (!empty($user_info))
+        {
             $this->data['exits_phone'] = 'true';
         }
 
-        if ($this->data['err_phone'] != 'true' && $this->data['exits_phone'] != 'true') {
+        if ($this->data['err_phone'] != 'true' && $this->data['exits_phone'] != 'true')
+        {
 
-            if ($this->user_model->create($data)) {
+            if ($this->user_model->create($data))
+            {
                 $input = array();
                 $input['where']['phone'] = $phone;
                 $admin = $this->user_model->get_list($input);
                 $this->session->set_userdata('user_login', $admin[0]);
                 $this->data['ok'] = 'ok';
-            } else {
+            }
+            else
+            {
                 $this->data['failed'] = 'failed';
             }
         }
@@ -677,14 +722,16 @@ Class Home extends MY_Controller
 
         $where = array('username' => $username, 'password' => $password);
 
-        if ($this->user_model->check_exists($where)) {
+        if ($this->user_model->check_exists($where))
+        {
 
             $input = array();
             $input['where']['username'] = $username;
             $admin = $this->user_model->get_list($input);
             $this->session->set_userdata('user_login', $admin[0]);
             echo 'ok';
-        } else echo 'failed';
+        }
+        else echo 'failed';
     }
 
     function logout()
@@ -714,7 +761,8 @@ Class Home extends MY_Controller
     function user_page_detail($slug, $id)
     {
         $ads = $this->ads_model->get_info($id);
-        if (!$ads || create_slug($ads->title) != $slug) {
+        if (!$ads || create_slug($ads->title) != $slug)
+        {
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $ads;
@@ -745,15 +793,20 @@ Class Home extends MY_Controller
 //        die('aaaaaaa');
         $this->load->language('price/price', $this->_langcode);
         $this->data['price_lang'] = $this->lang->line('price_lang');
-        if (strlen($slug) > 0 && $id > 0) {
+        if (strlen($slug) > 0 && $id > 0)
+        {
             $price = $this->price_model->get_info($id);
-            if (!$price || create_slug($price->name) != $slug) {
+            if (!$price || create_slug($price->name) != $slug)
+            {
                 redirect(base_url('bang-gia.html'));
             }
             $this->data['price'] = $price;
-        } else {
+        }
+        else
+        {
             $price = $this->price_model->get_list(array('order' => array('id', 'asc'), 'limit' => array(1, 0)));
-            if (sizeof($price)) {
+            if (sizeof($price))
+            {
                 $this->data['price'] = $price[0];
             }
         }
@@ -795,7 +848,8 @@ Class Home extends MY_Controller
         $total_rows = $this->ads_model->get_total($input);
         $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('can-ban'));
 
-        if ($offset >= 1) {
+        if ($offset >= 1)
+        {
             $offset -= 1;
             $offset = $offset * $per_page;
         }
@@ -827,7 +881,8 @@ Class Home extends MY_Controller
         $total_rows = $this->ads_model->get_total($input);
         $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('cho-thue'));
 
-        if ($offset >= 1) {
+        if ($offset >= 1)
+        {
             $offset -= 1;
             $offset = $offset * $per_page;
         }
@@ -859,7 +914,8 @@ Class Home extends MY_Controller
         $total_rows = $this->ads_model->get_total($input);
         $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('can-mua'));
 
-        if ($offset >= 1) {
+        if ($offset >= 1)
+        {
             $offset -= 1;
             $offset = $offset * $per_page;
         }
@@ -890,7 +946,8 @@ Class Home extends MY_Controller
         $total_rows = $this->ads_model->get_total($input);
         $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('can-thue'));
 
-        if ($offset >= 1) {
+        if ($offset >= 1)
+        {
             $offset -= 1;
             $offset = $offset * $per_page;
         }
@@ -916,7 +973,8 @@ Class Home extends MY_Controller
         $name = $this->input->post('name');
         $email = $this->input->post('email');
         $message = $this->input->post('message');
-        if ($name && $email && $message) {
+        if ($name && $email && $message)
+        {
 
             $feedback = array(
                 'name' => $name,
@@ -927,12 +985,17 @@ Class Home extends MY_Controller
 
             $check = $this->feedback_model->create($feedback);
 
-            if ($check) {
+            if ($check)
+            {
                 echo true;
-            } else {
+            }
+            else
+            {
                 echo false;
             }
-        } else {
+        }
+        else
+        {
             echo false;
         }
     }
@@ -941,17 +1004,25 @@ Class Home extends MY_Controller
     {
         $input = array();
         $type = $this->uri->segment(2);
-        if ($type) {
+        if ($type)
+        {
             $arr = array();
-            if ($type == 'ky-thuat.html') {
+            if ($type == 'ky-thuat.html')
+            {
                 $arr = array(1, 2, 3, 4, 5, 6);//php, .net, js, mobile, ios, android
-            } else if ($type == 'van-hanh-kiem-thu.html') {
+            }
+            else if ($type == 'van-hanh-kiem-thu.html')
+            {
                 $arr = array(7, 8);
-            } else if ($type == 'kinh-doanh.html') {
+            }
+            else if ($type == 'kinh-doanh.html')
+            {
                 $arr = array(9);
             }
             $recruitment = $this->recruitment_model->get_list_by_department($arr);
-        } else {
+        }
+        else
+        {
             $recruitment = $this->recruitment_model->get_list();
         }
 
@@ -995,9 +1066,12 @@ Class Home extends MY_Controller
     public function detailRecruit($slug = '', $id = -1)
     {
         $detail = $this->recruitment_model->get_info($id);
-        if ($detail) {
+        if ($detail)
+        {
             $this->data['detail'] = $detail;
-        } else {
+        }
+        else
+        {
             redirect(base_url('tuyen-dung.html'));
         }
         $this->data['li_recruitment'] = 1;
