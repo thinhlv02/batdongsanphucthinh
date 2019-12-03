@@ -36,7 +36,7 @@ $id_ads = $this->uri->segment(4);
                 <tr title="" class="">
                     <td class="text-center">
                         <button class="btn btn-default btn-xs"><?php echo $row->id ?></button>
-                        <a class="btn btn-xs btn-outline-success btn-xs" href="<?php echo base_url('admin/ads/edit_link/' . $row->id . '/' . $id_ads) ?>"><i class="fa fa-pencil-square-o"></i></a>
+                        <a class="btn btn-xs btn-outline-success" href="<?php echo base_url('admin/ads/edit_link/' . $row->id . '/' . $id_ads) ?>"><i class="fa fa-pencil-square-o"></i></a>
                         <a class="btn btn-xs btn-outline-danger" onclick="confirmDel(<?php echo $row->id ?>, <?php echo $id_ads; ?>)"><i class="fa fa-trash-o"></i></a>
                     </td>
                     <td><?php echo date('d/m/Y H:i:s', strtotime($row->created_at)); ?></td>
