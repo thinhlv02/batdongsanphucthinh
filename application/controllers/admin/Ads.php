@@ -408,6 +408,7 @@ Class Ads extends MY_Controller
 
             $data = array(
                 'title' => $title,
+                'ads_type' => $this->input->post('slType'),
                 'content' => $this->input->post('txtContent'),
                 'area' => $this->input->post('area'),
                 'contact_name' => $this->input->post('txtContactName'),
@@ -536,6 +537,7 @@ Class Ads extends MY_Controller
         }
         $this->data['tab'] = 3;
         $this->data['ads'] = $ads;
+        $this->data['ads_type'] = $this->_ads_type;
         $this->data['province_id'] = $ads->province_id;
         $this->data['district_id'] = $ads->district_id;
         $this->data['ward_id'] = $ads->ward_id;

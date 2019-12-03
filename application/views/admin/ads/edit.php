@@ -34,6 +34,16 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Phân loại<span class="required">*</span></label>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <select class="form-control" id="slType" name="slType">
+                            <?php foreach ($ads_type as $k => $v) { ?>
+                                <option value="<?php echo $k ?>" <?php echo $k==$ads->ads_type ? 'selected=selected' : ''; ?>> <?php echo $v; ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn<span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
                         <textarea name="txtIntro" rows="3" class="form-control"><?php echo str_replace('<br />', '&#13;', $ads->intro) ?></textarea>
