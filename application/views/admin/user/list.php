@@ -44,7 +44,7 @@
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
 
                     <td>
-                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/user/edit/' . $row->id) ?>">Sửa</a>
+                        <a class="btn btn-xs btn-success" href="<?php echo base_url('admin/user/edit/' . $row->id) ?>">Sửa</a>
                         <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
                     </td>
                 </tr>

@@ -48,7 +48,7 @@
                     <td><?php echo $row->title?></td>
                     <td><?php echo $row->content?></td>
                     <td>
-                        <a class="btn btn-xs btn-primary" href="<?php echo base_url('admin/content/edit_service/'.$row->id)?>">Sửa</a>
+                        <a class="btn btn-xs btn-success" href="<?php echo base_url('admin/content/edit_service/'.$row->id)?>">Sửa</a>
 
                     </td>
                 </tr>
