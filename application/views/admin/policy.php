@@ -40,7 +40,7 @@
                 </div>
                 <div class="form-group" style="margin-top: 30px">
                     <div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-2" style="width: 70px">
-                        <input type="submit" id="btnUpdate" name="btnUpdate" required="required" class="btn btn-primary" value="Cập nhật">
+                        <input type="submit" id="btnUpdate" name="btnUpdate" required="required" class="btn btn-warning" value="Cập nhật">
                     </div>
                 </div>
             </form>
