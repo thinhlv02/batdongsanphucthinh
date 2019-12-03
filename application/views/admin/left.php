@@ -27,7 +27,7 @@
                 <h3>Menu</h3>
                 <ul class="nav side-menu">
 
-                    <li><a><i class="fa fa-tint"></i>Quản lý tin<span class="fa fa-chevron-down"></span></a>
+                    <li><a><i class="fa fa-tasks"></i>Quản lý tin<span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="<?php echo admin_url('news') ?>">Tin Tức </a></li>
                             <li><a href="<?php echo admin_url('ads') ?>">Tin quảng cáo</a></li>
