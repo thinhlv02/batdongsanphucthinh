@@ -146,9 +146,17 @@
 
                         <div class="clearfix"></div>
 
-                        <div class="title_land_box text-center bg-warning" style="border-radius: 5px;">
-                            <a style="color: #fff;" href="<?php echo base_url('rao-vat-link/' . create_slug($ads->title) . '-' . $ads->id) ?>" class="text-uppercase">Click vào đây để chuyển sang trang chi tiết link đẩy tin </a>
-                        </div>
+                        <?php
+                        if ($show_ads_link)
+                        {
+                            ?>
+                            <div class="title_land_box text-center bg-warning" style="border-radius: 5px;">
+                                <a style="color: #fff;" href="<?php echo base_url('rao-vat-link/' . create_slug($ads->title) . '-' . $ads->id) ?>" class="text-uppercase">Click vào đây để chuyển sang trang chi tiết link đẩy tin </a>
+                            </div>
+                            <?php
+                        }
+                        ?>
+
 
                         <div class="title_land_box">Thông tin liên hệ:</div>
                         <div class="pack_land_box">
