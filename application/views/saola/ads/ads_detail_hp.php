@@ -20,7 +20,8 @@
                                     <?php
                                     $lightSlider_str = $ads->lightSlider != '' ? $ads->img . '#' . $ads->lightSlider : $ads->img;
                                     $tags = explode('#', $lightSlider_str);
-                                    foreach ($tags as $k => $val) { ?>
+                                    foreach ($tags as $k => $val)
+                                    { ?>
                                         <li data-thumb="<?php echo public_url('images/ads/' . $val) ?>">
                                             <img style="" alt="<?= $val ?>" src="<?php echo public_url('images/ads/' . $val) ?>"/>
                                         </li>
@@ -176,7 +177,8 @@
                             </div>
                             <div class="row12">
                                 <div class="col-xs-12 pland"><strong>Email :</strong>
-                                    <a href="javascript:void(0)"><?php echo $ads->email != '' ? $ads->email : 'noemail@gmail.com'; ?></a></div>
+                                    <a href="javascript:void(0)"><?php echo $ads->email != '' ? $ads->email : 'noemail@gmail.com'; ?></a>
+                                </div>
                             </div>
                         </div>
 
@@ -222,8 +224,10 @@
                     <p class="title_box1"><strong>CÁC TIN CÙNG TIÊU CHÍ TÌM KIẾM</strong></p>
                     <div>
                         <div class="body_top2_box">
-                            <?php foreach ($lstDataRelated as $key => $value) {
-                                if ($ads->id != $value->id) { ?>
+                            <?php foreach ($lstDataRelated as $key => $value)
+                            {
+                                if ($ads->id != $value->id)
+                                { ?>
                                     <div class="col-xs-6 top2 top2_up">
                                         <div class="row _pt_vip_hot">
                                             <div class="col-xs-5 ltop2">
@@ -442,7 +446,8 @@
     };
 
     //close img modal
-    function closeImgModal() {
+    function closeImgModal()
+    {
         modal.style.display = "none";
     }
 
