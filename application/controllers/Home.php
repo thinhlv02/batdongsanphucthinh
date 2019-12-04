@@ -386,6 +386,14 @@ Class Home extends MY_Controller
             redirect(base_url('tin-tuc'));
         }
         $this->data['ads'] = $ads;
+        //check link post ads in table ads_link
+        $checkLink = $this->ads_link_model->get_info_rule(array('id_ads' => $id));
+        $show_ads_link = false;
+        if ($checkLink)
+        {
+            $show_ads_link = true;
+        }
+        $this->data['show_ads_link'] = $show_ads_link;
         $ads_type_item = $ads->ads_type;
 
         $lstDataRelated = $this->ads_model->get_list(array('where' => array('ads_type' => $ads_type_item), 'limit' => array('10', '0')));
