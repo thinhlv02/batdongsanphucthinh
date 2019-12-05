@@ -41,8 +41,8 @@ Class Ads extends MY_Controller
         $this->data['todate'] = date('d/m/Y', $todate);
         $this->data['fromdate'] = date('d/m/Y', $fromdate);
 
-        $input = array();
-        $input['where'] = array('created_at >=' => '' . date('Y-m-d', $fromdate) . ' ');
+        $input['where'] = array();
+        $input['where'] += array('created_at >=' => '' . date('Y-m-d', $fromdate) . ' ');
         $input['where'] += array('created_at <=' => '' . date('Y-m-d', $todate) . ' ');
         if ($ads_type == '-1')
         {
@@ -50,7 +50,7 @@ Class Ads extends MY_Controller
         }
         else
         {
-            $input['where'] = array('ads_type' => $ads_type);
+            $input['where'] += array('ads_type' => $ads_type);
         }
 
         if ($created_by != '-1')
