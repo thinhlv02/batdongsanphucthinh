@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
                 <div class="form-group">
-                    <select class="form-control" id="ads_type">
+                    <select class="form-control" id="ads_type" onchange="loadPage()">
                         <option value="-1" <?php echo $ads_type == -1 ? 'selected' : '' ?>>Phân Loại</option>
                         <?php foreach ($lstAdsType as $k => $v) { ?>
                             <option value="<?php echo $k ?>" <?php echo $ads_type == $k ? 'selected' : '' ?>> <?php echo $v; ?></option>
@@ -31,7 +31,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
                 <div class="form-group">
-                    <select class="form-control" id="created_by">
+                    <select class="form-control" id="created_by" onchange="loadPage()">
                         <option value="-1" <?php echo $created_by == -1 ? 'selected' : '' ?>>Người tạo</option>
                         <?php foreach ($lstAdmin as $k => $v) { ?>
                             <option value="<?php echo $v->id ?>" <?php echo $created_by == $v->id ? 'selected' : '' ?>> <?php echo $v->name; ?></option>
@@ -45,7 +45,7 @@
             </div>
 
             <div class="col-md-2 col-sm-2 col-xs-12">
-                <select class="select2_group form-control" id="province" name="province">
+                <select class="select2_group form-control" id="province" name="province" onchange="loadPage()">
                     <option value="0">-- Tỉnh/thành phố --</option>
                     <?php foreach ($lstProvince as $key => $value) { ?>
                         <option value="<?= $value->id ?>" <?php if (isset($_GET['province']) && $_GET['province'] == $value->id) echo 'selected' ?>>
@@ -56,7 +56,7 @@
             </div>
 
             <div class="col-md-2 col-sm-2 col-xs-12">
-                <select class="select2_group form-control" id="location" name="location">
+                <select class="select2_group form-control" id="location" name="location" onchange="loadPage()">
                     <option value="-1">-- Chọn vị trí --</option>
                     <option value="ads_left" <?php if (isset($_GET['location']) && $_GET['location'] == 'ads_left') echo 'selected' ?> > Ads left</option>
                     <option value="ads_right" <?php if (isset($_GET['location']) && $_GET['location'] == 'ads_right') echo 'selected' ?> > ads_right</option>
@@ -69,7 +69,7 @@
 
             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
                 <div class="form-group">
-                    <button type="button" onclick="loadpage(1);" class="btn btn-warning">Tìm</button>
+                    <button type="button" onclick="loadPage();" class="btn btn-warning">Tìm</button>
                 </div>
             </div>
         </div>
@@ -199,7 +199,7 @@
     //     });
     // });
 
-    function loadpage(page)
+    function loadPage()
     {
 
         var ads_type = $("#ads_type").val();
