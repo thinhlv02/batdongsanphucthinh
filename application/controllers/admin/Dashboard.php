@@ -12,11 +12,11 @@ Class Dashboard extends MY_Controller
 
     function index()
     {
-        $lstData= $this->gmail_model->get_list();
+        $lstData = $this->gmail_model->get_list();
         $this->data['lstData'] = $lstData;
 
         //bank
-        $lstbank = $this->bank_model->get_list(array('where' => array('id < ' => '5'),'order' => array('id','asc')));
+        $lstbank = $this->bank_model->get_list(array('where' => array('id < ' => '5'), 'order' => array('id', 'asc')));
         $this->data['lstBank'] = $lstbank;
         //bank
 
