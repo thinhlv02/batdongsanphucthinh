@@ -1,7 +1,9 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Upload_Files extends MY_Controller {
-    function  __construct() {
+class Upload_Files extends MY_Controller
+{
+    function __construct()
+    {
         parent::__construct();
         // Load session library
         $this->load->library('session');
@@ -10,18 +12,21 @@ class Upload_Files extends MY_Controller {
         $this->load->model('file_model');
     }
 
-    function index(){
+    function index()
+    {
         $data = array();
         // If file upload form submitted
-        if($this->input->post('fileSubmit') && !empty($_FILES['files']['name'])){
+        if ($this->input->post('fileSubmit') && !empty($_FILES['files']['name']))
+        {
             $filesCount = count($_FILES['files']['name']);
             var_dump($filesCount);
-            for($i = 0; $i < $filesCount; $i++){
-                $_FILES['file']['name']     = $_FILES['files']['name'][$i];
-                $_FILES['file']['type']     = $_FILES['files']['type'][$i];
+            for ($i = 0; $i < $filesCount; $i++)
+            {
+                $_FILES['file']['name'] = $_FILES['files']['name'][$i];
+                $_FILES['file']['type'] = $_FILES['files']['type'][$i];
                 $_FILES['file']['tmp_name'] = $_FILES['files']['tmp_name'][$i];
-                $_FILES['file']['error']     = $_FILES['files']['error'][$i];
-                $_FILES['file']['size']     = $_FILES['files']['size'][$i];
+                $_FILES['file']['error'] = $_FILES['files']['error'][$i];
+                $_FILES['file']['size'] = $_FILES['files']['size'][$i];
 
                 // File upload configuration
                 $uploadPath = 'uploads/files/';
@@ -33,7 +38,8 @@ class Upload_Files extends MY_Controller {
                 $this->upload->initialize($config);
 
                 // Upload file to server
-                if($this->upload->do_upload('file')){
+                if ($this->upload->do_upload('file'))
+                {
                     // Uploaded file data
                     $fileData = $this->upload->data();
                     $uploadData[$i]['file_name'] = $fileData['file_name'];
@@ -41,14 +47,15 @@ class Upload_Files extends MY_Controller {
                 }
             }
 
-            if(!empty($uploadData)){
+            if (!empty($uploadData))
+            {
                 // Insert files data into the database
                 $insert = $this->file->insert($uploadData);
 
 
                 // Upload status message
-                $statusMsg = $insert?'Files uploaded successfully.':'Some problem occurred, please try again.';
-                $this->session->set_flashdata('statusMsg',$statusMsg);
+                $statusMsg = $insert ? 'Files uploaded successfully.' : 'Some problem occurred, please try again.';
+                $this->session->set_flashdata('statusMsg', $statusMsg);
             }
         }
         else echo 'fuck';
