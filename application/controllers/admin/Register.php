@@ -1,8 +1,10 @@
 <?php
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-Class Register extends MY_Controller {
-    function __construct() {
+Class Register extends MY_Controller
+{
+    function __construct()
+    {
         parent::__construct();
         $this->load->model('recruitment_model');
     }
@@ -11,15 +13,18 @@ Class Register extends MY_Controller {
     {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if($this->input->post('btnUpdateRecruitment')){
+        if ($this->input->post('btnUpdateRecruitment'))
+        {
             $google_form = $this->input->post('txtGoogleForm');
             $data_submit = array(
                 'google_form' => $google_form,
             );
-            if($this->recruitment_model->update(1, $data_submit)){
+            if ($this->recruitment_model->update(1, $data_submit))
+            {
                 $this->session->set_flashdata('message', 'Chỉnh sửa thành công!');
             }
-            else{
+            else
+            {
                 $this->session->set_flashdata('message', 'Có lỗi xảy ra, vui lòng thử lại!');
             }
         }
