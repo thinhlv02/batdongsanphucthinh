@@ -1,8 +1,10 @@
 <?php
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-Class Content extends MY_Controller {
-    function __construct() {
+Class Content extends MY_Controller
+{
+    function __construct()
+    {
         parent::__construct();
         $this->load->model('content_model');
     }
@@ -14,23 +16,28 @@ Class Content extends MY_Controller {
         $content = $this->content_model->get_info(1);
         $this->data['banner'] = $content->banner;
 
-        if($this->input->post('btnUpdateBanner')){
+        if ($this->input->post('btnUpdateBanner'))
+        {
             $config['upload_path'] = './public/images';
             $config['allowed_types'] = 'jpg|png|jpeg|JPEG';
             $this->load->library("upload", $config);
-            if ($this->upload->do_upload('img')) {
+            if ($this->upload->do_upload('img'))
+            {
                 $file_data = $this->upload->data();
                 $data['banner'] = $file_data['file_name'];
-                if($this->content_model->update(1, $data)){
+                if ($this->content_model->update(1, $data))
+                {
                     $this->session->set_flashdata('message', 'Cập nhật thành công');
-                    unlink('./public/images/'.$content->banner);
+                    unlink('./public/images/' . $content->banner);
                     redirect(base_url('admin/content'));
                 }
-                else{
+                else
+                {
                     $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
                 }
             }
-            else{
+            else
+            {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
         }
