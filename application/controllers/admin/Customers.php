@@ -35,7 +35,8 @@ Class Customers extends MY_Controller
     {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if ($this->input->post('btnAdd')) {
+        if ($this->input->post('btnAdd'))
+        {
 
             $data = array(
                 'name' => $this->input->post('txtName'),
@@ -43,10 +44,13 @@ Class Customers extends MY_Controller
                 'address' => $this->input->post('txtAddress'),
                 'created_by' => $this->_uid,
             );
-            if ($this->customers_model->create($data)) {
+            if ($this->customers_model->create($data))
+            {
                 $this->session->set_flashdata('message', 'Thêm thành công');
                 redirect(base_url('admin/customers'));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
 
@@ -64,21 +68,26 @@ Class Customers extends MY_Controller
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
         $devices = $this->customers_model->get_info($id);
-        if (!$devices) {
+        if (!$devices)
+        {
             redirect(base_url('admin/customers'));
         }
 
-        if ($this->input->post('btnEdit')) {
+        if ($this->input->post('btnEdit'))
+        {
             $data = array(
                 'name' => $this->input->post('txtName'),
                 'phone' => $this->input->post('txtPhone'),
                 'address' => $this->input->post('txtAddress')
             );
 
-            if ($this->customers_model->update($id, $data)) {
+            if ($this->customers_model->update($id, $data))
+            {
                 $this->session->set_flashdata('message', 'Cập nhật thành công');
                 redirect(base_url('admin/customers'));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
@@ -95,7 +104,8 @@ Class Customers extends MY_Controller
     {
         $id = $this->uri->segment(4);
         $devices = $this->customers_model->get_info($id);
-        if ($devices) {
+        if ($devices)
+        {
             $this->customers_model->delete($id);
             unlink('./public/images/devices/' . $devices->img);
         }
