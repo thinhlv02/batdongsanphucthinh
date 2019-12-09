@@ -30,7 +30,8 @@ Class User extends MY_Controller
     {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if ($this->input->post('btnAdd')) {
+        if ($this->input->post('btnAdd'))
+        {
 
             $data = array(
                 'username' => $this->input->post('txtName'),
@@ -40,10 +41,13 @@ Class User extends MY_Controller
                 'password_txt' => $this->input->post('txtPassword')
             );
 
-            if ($this->user_model->create($data)) {
+            if ($this->user_model->create($data))
+            {
                 $this->session->set_flashdata('message', 'Thêm thành công');
                 redirect(base_url('admin/user'));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
 
@@ -61,11 +65,13 @@ Class User extends MY_Controller
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
         $devices = $this->user_model->get_info($id);
-        if (!$devices) {
+        if (!$devices)
+        {
             redirect(base_url('admin/user'));
         }
 
-        if ($this->input->post('btnEdit')) {
+        if ($this->input->post('btnEdit'))
+        {
             $data = array(
                 'username' => $this->input->post('txtName'),
                 'fullname' => $this->input->post('txtFullName'),
@@ -74,10 +80,13 @@ Class User extends MY_Controller
                 'password_txt' => $this->input->post('txtPassword')
             );
 
-            if ($this->user_model->update($id, $data)) {
+            if ($this->user_model->update($id, $data))
+            {
                 $this->session->set_flashdata('message', 'Cập nhật thành công');
                 redirect(base_url('admin/user'));
-            } else {
+            }
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
@@ -94,7 +103,8 @@ Class User extends MY_Controller
     {
         $id = $this->uri->segment(4);
         $devices = $this->user_model->get_info($id);
-        if ($devices) {
+        if ($devices)
+        {
             $this->user_model->delete($id);
         }
         redirect(base_url('admin/user'));
