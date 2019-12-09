@@ -1,8 +1,10 @@
 <?php
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-Class Broker extends MY_Controller {
-    function __construct() {
+Class Broker extends MY_Controller
+{
+    function __construct()
+    {
         parent::__construct();
         $this->load->model('broker_model');
     }
@@ -20,10 +22,12 @@ Class Broker extends MY_Controller {
         $this->load->view('admin/layout', $this->data);
     }
 
-    function add(){
+    function add()
+    {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if($this->input->post('btnAdd')){
+        if ($this->input->post('btnAdd'))
+        {
             $data = array(
                 'name' => $this->input->post('txtName'),
                 'phone' => $this->input->post('txtPhone'),
@@ -32,11 +36,13 @@ Class Broker extends MY_Controller {
                 'address' => $this->input->post('txtAddress'),
                 'intro' => $this->input->post('txtIntro'),
             );
-            if($this->broker_model->create($data)){
+            if ($this->broker_model->create($data))
+            {
                 $this->session->set_flashdata('message', 'Thêm thành công');
                 redirect(base_url('admin/broker'));
             }
-            else{
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
@@ -46,16 +52,19 @@ Class Broker extends MY_Controller {
         $this->load->view('admin/layout', $this->data);
     }
 
-    function edit(){
+    function edit()
+    {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
         $agency = $this->broker_model->get_info($id);
-        if(!$agency){
+        if (!$agency)
+        {
             redirect(base_url('admin/broker'));
         }
 
-        if($this->input->post('btnEdit')){
+        if ($this->input->post('btnEdit'))
+        {
             $data = array(
                 'name' => $this->input->post('txtName'),
                 'phone' => $this->input->post('txtPhone'),
@@ -64,11 +73,13 @@ Class Broker extends MY_Controller {
                 'address' => $this->input->post('txtAddress'),
                 'intro' => $this->input->post('txtIntro'),
             );
-            if($this->broker_model->update($id, $data)){
+            if ($this->broker_model->update($id, $data))
+            {
                 $this->session->set_flashdata('message', 'Cập nhật thành công');
                 redirect(base_url('admin/broker'));
             }
-            else{
+            else
+            {
                 $this->session->set_flashdata('message', 'Lỗi thao tác cơ sở dữ liệu');
             }
         }
@@ -79,10 +90,12 @@ Class Broker extends MY_Controller {
         $this->load->view('admin/layout', $this->data);
     }
 
-    function del(){
+    function del()
+    {
         $id = $this->uri->segment(4);
         $agency = $this->broker_model->get_info($id);
-        if($agency){
+        if ($agency)
+        {
             $this->broker_model->delete($id);
             $this->session->set_flashdata('message', 'Xoá thành công');
         }
