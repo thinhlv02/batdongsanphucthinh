@@ -1,8 +1,10 @@
 <?php
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-Class Policy extends MY_Controller {
-    function __construct() {
+Class Policy extends MY_Controller
+{
+    function __construct()
+    {
         parent::__construct();
         $this->load->model('contact_model');
     }
@@ -11,12 +13,13 @@ Class Policy extends MY_Controller {
     {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if($this->input->post('btnUpdate')){
+        if ($this->input->post('btnUpdate'))
+        {
             $policy = $this->input->post('txtPolicy');
             $privacy = $this->input->post('txtPrivacy');
             $contact_submit = array(
                 'policy' => $policy,
-                'privacy'=> $privacy,
+                'privacy' => $privacy,
             );
             $this->contact_model->update(1, $contact_submit);
             $this->session->set_flashdata('message', 'Cập nhật thông tin thành công!');
