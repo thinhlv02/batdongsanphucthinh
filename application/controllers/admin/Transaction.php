@@ -96,8 +96,8 @@ Class Transaction extends MY_Controller
         $this->data['_uid'] = $this->_uid;
         $this->data['lstEmps'] = $lstEmps;
         $this->data['tab'] = 1;
-        $this->data['temp'] = 'admin/service_money/index';
-        $this->data['view'] = 'admin/service_money/list';
+        $this->data['temp'] = 'admin/transaction/index';
+        $this->data['view'] = 'admin/transaction/list';
         $this->load->view('admin/layout', $this->data);
     }
 
@@ -150,8 +150,8 @@ Class Transaction extends MY_Controller
         $this->data['tab'] = 3;
         $this->data['pay_time'] = $pay_time;
         $this->data['ads'] = $ads;
-        $this->data['temp'] = 'admin/service_money/index';
-        $this->data['view'] = 'admin/service_money/edit';
+        $this->data['temp'] = 'admin/transaction/index';
+        $this->data['view'] = 'admin/transaction/edit';
         $this->load->view('admin/layout', $this->data);
     }
 }

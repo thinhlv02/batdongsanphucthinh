@@ -110,8 +110,8 @@
                 <tfoot>
                 <tr class="bg-primary">
                     <td colspan="5">Tổng tiền</td>
-                    <td><?php echo($sum > 0 ? number_format($sum) : '') ?></td>
-                    <td><?php echo($sum > 0 ? number_format($sum * 0.15) : '') ?></td>
+                    <td><?php echo($sum > 0 ? number_format($sum) : 0) ?></td>
+                    <td><?php echo($sum > 0 ? number_format($sum * 0.15) : 0) ?></td>
                     <td colspan="2"></td>
                 </tr>
                 </tfoot>
