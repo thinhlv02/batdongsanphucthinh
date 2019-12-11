@@ -124,7 +124,9 @@ Class MY_Controller extends CI_Controller
         //neu ma chua dang nhap,ma truy cap 1 controller khac login
         if (!$login && $controller != 'login')
         {
+            dbClose();
             redirect(admin_url('login?url=' . urlencode($currUrl)));
+            die();
         }
         //neu ma admin da dang nhap thi khong cho phep vao trang login nua.
         if ($login && $controller == 'login')
