@@ -14,7 +14,8 @@ Class Contact extends MY_Controller
     {
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        if ($this->input->post('btnUpdateContact')) {
+        if ($this->input->post('btnUpdateContact'))
+        {
             $company = $this->input->post('txtCompany');
             $phone = $this->input->post('txtPhone');
             $address = $this->input->post('txtAddress');
@@ -22,7 +23,8 @@ Class Contact extends MY_Controller
             $slogan_en = $this->input->post('txtSloganEn');
 //            $zalo = $this->input->post('txtZalo');
             $email = $this->input->post('txtEmail');
-            if ($phone && $address) {
+            if ($phone && $address)
+            {
                 $contact_submit = array(
                     'company' => $company,
                     'phone' => $phone,
