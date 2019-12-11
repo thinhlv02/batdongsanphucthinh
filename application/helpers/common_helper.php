@@ -115,6 +115,25 @@ function getCurrentURL()
     return $currentURL;
 }
 
+function isUrl($url)
+{
+    return (preg_match('/^(http|https):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i',
+        $url)) ? TRUE : FALSE;
+}
+
+// define common function
+function getDomainFromUrl($strUrl)
+{
+    $parse = parse_url($strUrl);
+    $domain = isset($parse['host']) ? $parse['host'] : '';
+    $domain = mb_strtolower($domain, 'UTF-8');
+    if (preg_match('/^www\./i', $domain))
+    {
+        $domain = substr($domain, 4);
+    }
+    return $domain;
+}
+
 function getLastUri()
 {
     $url = getCurrentURL();

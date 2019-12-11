@@ -119,10 +119,12 @@ Class MY_Controller extends CI_Controller
         $controller = strtolower($controller);
 
         $login = $this->session->userdata('login');
+        $currUrl = getCurrentUrl();
+
         //neu ma chua dang nhap,ma truy cap 1 controller khac login
         if (!$login && $controller != 'login')
         {
-            redirect(base_url('admin/login'));
+            redirect(admin_url('login?url=' . urlencode($currUrl)));
         }
         //neu ma admin da dang nhap thi khong cho phep vao trang login nua.
         if ($login && $controller == 'login')

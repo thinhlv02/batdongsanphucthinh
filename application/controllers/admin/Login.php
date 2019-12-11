@@ -10,6 +10,29 @@ Class Login extends MY_Controller
 
     function index()
     {
+        //begin admarket2020.code
+
+        $currUrl = removeAllTags($this->input->get('url'));
+        // validate current url for redirect
+        if ($currUrl != '')
+        {
+            // check is url
+            if (isUrl($currUrl))
+            {
+                // check domain of url
+                $currUrl = strtolower(getDomainFromUrl($currUrl)) == strtolower($_SERVER['HTTP_HOST']) ? $currUrl : '';
+
+            }
+            else
+            {
+                $currUrl = '';
+            }
+        }
+        $currUrl = $currUrl != '' ? $currUrl : base_url('admin/dashboard');
+
+        //End admarket2020.code
+
+
         $this->load->library('form_validation');
         $this->load->helper('form');
         if ($this->input->post())
@@ -19,7 +42,8 @@ Class Login extends MY_Controller
             {
                 $this->session->set_userdata('login', true);
 
-                redirect(base_url('admin/dashboard'));
+                redirect($currUrl);
+
             }
         }
 
