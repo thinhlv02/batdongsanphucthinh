@@ -29,7 +29,7 @@
 
                     <li><a><i class="fa fa-thumb-tack"></i>Bài viết<span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="<?php echo admin_url('ads') ?>">Tin nhà đất</a></li>
+                            <li><a href="<?php echo admin_url('ads') ?>">Tin quảng cáo</a></li>
                         </ul>
                     </li>
 
