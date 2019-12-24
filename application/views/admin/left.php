@@ -34,6 +34,8 @@
                     </li>
 
                     <!--                    //only admin view-->
+                    <!--                    //only admin view-->
+                    <!--                    //only admin view-->
                     <?php if ($admin->id == 1) { ?>
                         <li><a><i class="fa fa-book"></i>Quản lý chung<span class="fa fa-chevron-down"></span></a>
                             <ul class="nav child_menu">
