@@ -2,7 +2,7 @@
     <div class="left_col scroll-view">
 
         <div class="navbar nav_title" style="border: 0;">
-            <a href="<?php echo admin_url('dashboard') ?>" class="site_title"><i class="fa fa-paw"></i><span>Trang chủ</span></a>
+            <a href="<?php echo admin_url('dashboard') ?>" class="site_title"><i class="fa fa-paw"></i><span> Trang chủ</span></a>
         </div>
 
         <div class="clearfix"></div>
@@ -27,10 +27,9 @@
                 <h3>Menu</h3>
                 <ul class="nav side-menu">
 
-                    <li><a><i class="fa fa-tasks"></i>Quản lý tin<span class="fa fa-chevron-down"></span></a>
+                    <li><a><i class="fa fa-thumb-tack"></i>Bài viết<span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="<?php echo admin_url('news') ?>">Tin Tức </a></li>
-                            <li><a href="<?php echo admin_url('ads') ?>">Tin quảng cáo</a></li>
+                            <li><a href="<?php echo admin_url('ads') ?>">Tin nhà đất</a></li>
                         </ul>
                     </li>
 
@@ -38,6 +37,7 @@
                     <?php if ($admin->id == 1) { ?>
                         <li><a><i class="fa fa-book"></i>Quản lý chung<span class="fa fa-chevron-down"></span></a>
                             <ul class="nav child_menu">
+                                <li><a href="<?php echo admin_url('news') ?>">Tin Tức </a></li>
                                 <li><a href="<?php echo admin_url('devices') ?>">Thiết bị sử dụng</a></li>
                                 <li><a href="<?php echo admin_url('customers') ?>">Khách hàng việc làm</a></li>
                                 <li><a href="<?php echo admin_url('user') ?>">Khách hàng đăng ký website</a></li>
