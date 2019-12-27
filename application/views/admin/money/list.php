@@ -100,9 +100,9 @@
 </div>
 <script>
     $(document).ready(function () {
-        $('#datatable-news').dataTable({
-            "ordering": false
-        });
+        // $('#datatable-news').dataTable({
+        //     "ordering": false
+        // });
     });
 
     function confirmDel(id)
