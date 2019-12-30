@@ -30,8 +30,8 @@
                 <th>Nổi bật</th>
                 <th>Trái</th>
                 <th>Phải</th>
-                <th>TOP</th>
-                <th>Hành động</th>
+                <th>Top</th>
+                <th></th>
             </tr>
             </thead>
             <tbody>
