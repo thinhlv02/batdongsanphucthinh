@@ -36,7 +36,8 @@
             </thead>
             <tbody>
             <?php
-            foreach ($devices as $row) {
+            foreach ($devices as $row)
+            {
                 ?>
                 <tr>
                     <td><?php echo $row->id ?></td>
@@ -76,8 +77,8 @@
                         ></i>
                     </td>
                     <td>
-                        <a class="btn btn-xs btn-success" href="<?php echo base_url('admin/banner/edit/' . $row->id) ?>">Sửa</a>
-                        <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id ?>)">Xóa</a>
+                        <a class="btn btn-xs btn-outline-success" href="<?php echo base_url('admin/banner/edit/' . $row->id) ?>"><i class="fa fa-pencil-square-o"></i></a>
+                        <a class="btn btn-xs btn-outline-danger" onclick="confirmDel(<?php echo $row->id ?>)"><i class="fa fa-trash-o"></i></a>
                     </td>
                 </tr>
             <?php } ?>
@@ -93,13 +94,16 @@
         });
     });
 
-    function confirmDel(id) {
-        if (confirm('Bạn có chắc chắn muốn xóa?')) {
+    function confirmDel(id)
+    {
+        if (confirm('Bạn có chắc chắn muốn xóa?'))
+        {
             window.location.href = '<?php echo base_url('admin/banner/del/')?>' + id;
         }
     }
 
-    function highlight(id) {
+    function highlight(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('banner/highlight')?>",
             type: "post",
@@ -109,7 +113,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#highlight-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -120,7 +125,8 @@
     }
 
 
-    function ads_left(id) {
+    function ads_left(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('banner/ads_left')?>",
             type: "post",
@@ -130,7 +136,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#ads_left-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -140,7 +147,8 @@
         })
     }
 
-    function ads_right(id) {
+    function ads_right(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('banner/ads_right')?>",
             type: "post",
@@ -150,7 +158,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#ads_right-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
@@ -160,7 +169,8 @@
         })
     }
 
-    function ads_top(id) {
+    function ads_top(id)
+    {
         $.ajax({
             url: "<?php echo admin_url('banner/ads_top')?>",
             type: "post",
@@ -170,7 +180,8 @@
             success: function (msg) {
                 msg = JSON.parse(msg);
                 console.log(msg);
-                if (msg.status) {
+                if (msg.status)
+                {
                     $('#ads_center-' + id).removeClass("fa-toggle-off fa-toggle-on").addClass(msg.class);
                 }
             },
