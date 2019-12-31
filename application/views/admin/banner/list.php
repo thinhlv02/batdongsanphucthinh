@@ -20,10 +20,9 @@
         <table id="datatable-product" class="table table-striped table-bordered bulk_action">
             <thead>
             <tr>
-                <th>Mã số</th>
+                <th>ID_ADS</th>
                 <th>Ảnh</th>
-                <th>ID rao vặt</th>
-                <th>rao vặt</th>
+                <th>Tên</th>
                 <th>Loại</th>
                 <th>Người tạo</th>
                 <th>Ngày Tạo</th>
@@ -40,11 +39,12 @@
             {
                 ?>
                 <tr>
-                    <td><?php echo $row->id ?></td>
+                    <td>
+                        <button class="btn btn-primary btn-xs"><?php echo $row->id_ads ?></button>
+                    </td>
                     <td>
                         <img src="<?php echo base_url('public/images/banner/' . $row->img) ?>" style="max-width: 60px">
                     </td>
-                    <td><?php echo $row->id_ads; ?></td>
                     <td><?php echo $row->title; ?></td>
                     <td><?php echo $row->type_name ?></td>
                     <td><?php echo $row->created_by ?></td>
