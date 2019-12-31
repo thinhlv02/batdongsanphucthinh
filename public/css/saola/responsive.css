@@ -58,7 +58,7 @@
         display: inline-block;
     }
 
-    #SiteLeft, #SiteRight {
+    #SiteLeft, #SiteRight, #SiteTop {
         display: none;
     }
 }
@@ -116,9 +116,15 @@
     }
 }
 
-/*//thinhlv custom*/
+/*thinhlv add*/
 @media (min-width: 1200px) {
     .container {
         width: 1000px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px !important;
     }
 }
