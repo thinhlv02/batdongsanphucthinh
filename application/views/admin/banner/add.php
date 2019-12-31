@@ -31,7 +31,7 @@
 
                             <?php foreach ($lstAds as $key => $value) { ?>
                                 <option value="<?= $value->id; ?>" <?php if (isset($_POST['txtAds']) && $_POST['txtAds'] == $value->id) echo 'selected' ?>>
-                                    <?php echo $value->id. ' => '. $value->title; ?>
+                                    <?php echo $value->id. ' | '. $value->title; ?>
                                 </option>
                             <?php } ?>
 

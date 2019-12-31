@@ -31,7 +31,7 @@
 
                             <?php foreach ($lstAds as $key => $value) { ?>
                                 <option value="<?= $value->id; ?>" <?php if ($devices->id_ads == $value->id) echo 'selected' ?>>
-                                    <?php echo $value->id. ' => '. $value->title; ?>
+                                    <?php echo $value->id. ' | '. $value->title; ?>
                                 </option>
                             <?php } ?>
 
