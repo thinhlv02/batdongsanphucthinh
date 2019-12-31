@@ -142,6 +142,7 @@ Class MY_Controller extends CI_Controller
         $header['function'] = $this->_function;
         $header['title'] = isset($data['title']) ? $data['title'] : '';
         $header['image'] = isset($data['image']) ? $data['image'] : '';
+        $header['banner_top'] = isset($data['banner_top']) ? $data['banner_top'] : '';
 //        $header['metaTitle'] = isset($data['metaTitle']) ? $data['metaTitle'] : '';
 //        $header['metaKeyword'] = isset($data['metaKeyword']) ? $data['metaKeyword'] : '';
 //        $header['metaDesc'] = isset($data['metaDesc']) ? $data['metaDesc'] : '';

@@ -16,5 +16,9 @@
             <!--        <a href="--><?php //echo base_url('gioi-thieu-dich-vu.html')?><!--"-->
             <!--           class="btn btn-primary animated bounceIn delay-1s" style="margin: 2px 0px;padding: 3px;" >TÌM HIỂU THÊM</a>-->
         </div>
+
+        <!--        load banner top view-->
+        <?php $this->load->view($this->_template_f . 'banner/topbanner') ?>
+
     </div>
 </section>

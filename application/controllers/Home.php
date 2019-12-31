@@ -96,6 +96,7 @@ Class Home extends MY_Controller
 
         // load header
         $header = array();
+        $header['banner_top'] = $banner_top;
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'home/home', $this->data);
