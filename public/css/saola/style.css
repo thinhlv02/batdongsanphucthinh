@@ -1064,15 +1064,13 @@ span.item-date {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    /*height: 400px;*/
-    height: 91px;
+    height: 97px;
 }
 
 .caption-banner {
     color: #fff;
     font-size: 19px;
     font-weight: bold;
-    /*text-align: center;*/
     animation-name: example;
     animation-duration: 4s;
 }
@@ -1081,7 +1079,6 @@ span.item-date {
     color: #fff;
     font-size: 24px;
     font-weight: 200;
-    /*text-align: center;*/
 }
 
 .hotline {
@@ -1091,7 +1088,6 @@ span.item-date {
     margin-top: 30px;
     text-align: center;
 }
-
 
 #menuToggle {
     display: block;
