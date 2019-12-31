@@ -18,7 +18,7 @@
         </div>
 
         <!--        load banner top view-->
-        <?php $this->load->view($this->_template_f . 'banner/topbanner') ?>
+        <?php $this->load->view($this->_template_f . 'banner/banner_top') ?>
 
     </div>
 </section>
