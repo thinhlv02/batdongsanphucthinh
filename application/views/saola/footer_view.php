@@ -117,7 +117,7 @@
                                     <strong><a href="<?php echo base_url('dai-ly#' . create_slug($value->name)) ?>"><?php echo $value->name ?></a></strong>
                                 </div>
                                 <div>
-                                    <i class="mdi mdi-map-marker-circle text-danger"></i>
+                                    <i class="mdi mdi-map-marker text-danger"></i>
                                     <span><?php echo $value->address ?></span>
                                 </div>
                                 <div style="margin-top: 10px">
@@ -140,7 +140,8 @@
 </button>
 
 <script>
-    function updateView(id) {
+    function updateView(id)
+    {
         var _onSuccess = function (data) {
 
         };
@@ -153,28 +154,37 @@
         scrollFunction()
     };
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    function scrollFunction()
+    {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+        {
             document.getElementById("myPageup").style.display = "block";
-        } else {
+        }
+        else
+        {
             document.getElementById("myPageup").style.display = "none";
         }
     }
 
     // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
+    function topFunction()
+    {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
 
-    function get_district(sel) {
+    function get_district(sel)
+    {
         var id = sel.value;
         console.log(id);
-        if (id == 0) {
+        if (id == 0)
+        {
             $('#selectDistrict').empty();
             $('#selectWard').empty();
             $('#selectStreet').empty();
-        } else {
+        }
+        else
+        {
             // ajax
             var params = {
                 'id': id
@@ -183,11 +193,16 @@
             // console.log(params);
             var _onSuccess = function (data) {
                 // console.log(data);
-                if (data == 'NOT_LOGIN') {
+                if (data == 'NOT_LOGIN')
+                {
                     window.location.reload(true);
-                } else if (data === 'false') {
+                }
+                else if (data === 'false')
+                {
 
-                } else {
+                }
+                else
+                {
                     // console.log(data);
                     $("#divDistrict").html(data);
                 }
@@ -197,24 +212,33 @@
         }
     }
 
-    function get_ward(sel) {
+    function get_ward(sel)
+    {
         var id = sel.value;
         // console.log(id);
-        if (id == 0) {
+        if (id == 0)
+        {
             $('#selectWard').empty();
             $('#selectStreet').empty();
-        } else {
+        }
+        else
+        {
             var params = {
                 'id': id
             };
 
             var _onSuccess = function (data) {
                 // console.log(data);
-                if (data == 'NOT_LOGIN') {
+                if (data == 'NOT_LOGIN')
+                {
 
-                } else if (data === 'false') {
+                }
+                else if (data === 'false')
+                {
 
-                } else {
+                }
+                else
+                {
                     $("#divWard").html(data);
                 }
             };
