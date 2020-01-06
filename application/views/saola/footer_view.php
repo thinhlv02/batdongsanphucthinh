@@ -172,7 +172,7 @@
     function get_district(sel)
     {
         var id = sel.value;
-        console.log(id);
+
         if (id == 0)
         {
             $('#selectDistrict').empty();
@@ -186,9 +186,8 @@
                 'id': id
             };
 
-            // console.log(params);
             var _onSuccess = function (data) {
-                // console.log(data);
+
                 if (data == 'NOT_LOGIN')
                 {
                     window.location.reload(true);
@@ -199,7 +198,7 @@
                 }
                 else
                 {
-                    // console.log(data);
+
                     $("#divDistrict").html(data);
                 }
             };//
@@ -211,7 +210,7 @@
     function get_ward(sel)
     {
         var id = sel.value;
-        // console.log(id);
+
         if (id == 0)
         {
             $('#selectWard').empty();
@@ -224,7 +223,7 @@
             };
 
             var _onSuccess = function (data) {
-                // console.log(data);
+
                 if (data == 'NOT_LOGIN')
                 {
 
