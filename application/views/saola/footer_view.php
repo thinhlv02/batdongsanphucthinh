@@ -4,7 +4,7 @@
     <div class="container">
         <div style="min-height: 200px">
             <div class="row">
-                <div class="card mb-5">
+                <div class="card mb-5" style="border: none !important;">
                     <div class="card-body line-height-2" style="background-color: #EDEDED">
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                             <div class="footer-bottom-end-row12" style="padding-bottom: 10px; color: #000;">
@@ -16,7 +16,7 @@
                             </div>
 
                             <div class="footer-bottom-end-row12" style="color: #616161">
-                                Copyright © 2015 - 2019 Batdongsanphucthinh.vn.
+                                Copyright © 2015 - 2019 Batdongsanphucthinh.vn
                             </div>
 
                             <div class="footer-bottom-end-row12" style="color: #616161">
@@ -51,30 +51,31 @@
                         <div class="col-md-4 col-sm-12 col-xs-12 mt-2">
                             <div class="footer-title"><strong>THÔNG TIN LIÊN HỆ</strong></div>
                             <div>
-                                <i class="mdi mdi-map-marker-circle text-danger"></i>
+                                <i class="mdi mdi-map-marker text-danger12"></i>
                                 <span><?php echo $contact->address ?></span>
                             </div>
-                            <div style="margin-top: 10px">
-                                <span><i class="mdi mdi-phone text-danger"></i> <?php echo $contact->phone ?></span>
+                            <div style="">
+                                <span><i class="mdi mdi-phone text-danger12"></i> <?php echo $contact->phone ?></span>
                             </div>
-                            <div style="margin-top: 10px">
-                                <span><i class="mdi mdi-email-outline text-danger"></i> <?php echo $contact->email ?></span>
+                            <div style="">
+                                <span><i class="mdi mdi-email-outline text-danger12"></i> <?php echo $contact->email ?></span>
                             </div>
                         </div>
                         <div class="col-md-2  col-sm-12 col-xs-12 mt-2">
                             <div class="footer-title"><strong>LIÊN KẾT</strong></div>
                             <ul>
                                 <li><a href="<?php echo base_url('gioi-thieu-dich-vu') ?>"><i
-                                                class="mdi mdi-information-outline text-danger"></i> Giới thiệu</a></li>
+                                                class="mdi mdi-information-outline text-danger12"></i> Giới thiệu</a>
+                                </li>
                                 <li><a href="<?php echo base_url('ho-tro') ?>"><i
-                                                class="mdi mdi-key-outline text-danger"></i> Hỗ trợ</a></li>
+                                                class="mdi mdi-key-outline text-danger12"></i> Hỗ trợ</a></li>
                                 <li><a href="<?php echo base_url('dieu-khoan-su-dung') ?>"><i
-                                                class="mdi mdi-settings-outline text-danger"></i> Chính sách và điều
+                                                class="mdi mdi-settings-outline text-danger12"></i> Chính sách và điều
                                         khoản</a></li>
                                 <li><a href="<?php echo base_url('bang-gia') ?>"><i
-                                                class="mdi mdi-cash-usd text-danger"></i> Bảng giá</a></li>
+                                                class="mdi mdi-cash-usd text-danger12"></i> Bảng giá</a></li>
                                 <li><a href="<?php echo base_url('lien-he') ?>"><i
-                                                class="mdi mdi-contacts text-danger"></i> Liên hệ</a></li>
+                                                class="mdi mdi-contacts text-danger12"></i> Liên hệ</a></li>
                             </ul>
                         </div>
 
@@ -99,17 +100,15 @@
             <div class="row">
                 <div class="card">
                     <div class="card-body line-height-2" style="background-color: #EDEDED">
-                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                            <div class="footer-bottom-end-row12" style="padding-bottom: 10px; color: #000;">
-                                <strong style="font-size: 1.2em;">Đại lý</strong>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="footer-bottom-end-row12" style="padding-bottom: 10px; color: #000;text-transform: uppercase">
+                                <strong style="font-size: 1.2em;">Các nhà chuyên viên tư vấn xuất sắc</strong>
                             </div>
-                            <div class="footer-bottom-end-row12" style="padding: 10px 0 10px;">
-                                <img src="<?php echo public_url('images/line-footer12.png') ?>" alt="" noloaderror="true">
-                            </div>
+
                         </div>
 
                         <?php foreach ($agencies as $key => $value) { ?>
-                            <div class="col-md-4 col-sm-12 col-xs-12 mt-2">
+                            <div class="col-md-4 col-sm-12 col-xs-12 mt-5">
                                 <div class="footer-title pl-3">
                                     <strong><a href="<?php echo base_url('dai-ly#' . create_slug($value->name)) ?>"><?php echo $value->name ?></a></strong>
                                 </div>
@@ -117,7 +116,7 @@
                                     <i class="mdi mdi-map-marker text-danger12"></i>
                                     <span><?php echo $value->address ?></span>
                                 </div>
-                                <div style="margin-top: 10px">
+                                <div>
                                     <span><i class="mdi mdi-phone text-danger12"></i> <?php echo $value->phone ?></span>
                                 </div>
                             </div>
