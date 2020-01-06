@@ -32,21 +32,19 @@
                                 14/11/2015.
                             </div>
                             <div class="footer-bottom-end-row12" style="color: #616161; position: relative;">
-                                Phát triển bởi PhucthinhCorp <a style="color: #616161"
-                                                                href="javascript:void(0)" target="_blank">http:batdongsanphucthinh.vn</a>
+                                Phát triển bởi PhucthinhCorp
+                                <a style="color: #616161" href="javascript:void(0)" target="_blank">http:batdongsanphucthinh.vn</a>
 
                             </div>
                             <div class="footer-bottom-end-row12" style="padding: 10px 0 10px;">
-                                <img src="<?php echo public_url('images/line-footer12.png') ?>" alt=""
-                                     noloaderror="true">
+                                <img src="<?php echo public_url('images/line-footer12.png') ?>" alt="" noloaderror="true">
                             </div>
                         </div>
 
                         <div class="col-md-2 col-sm-12 col-xs-12 text-center">
 
                             <a href="<?php echo base_url() ?>">
-                                <img src="<?php echo public_url('images/logo.png') ?>"
-                                     style="margin-top: 30px">
+                                <img src="<?php echo public_url('images/logo.png') ?>" style="margin-top: 30px">
                             </a>
 
                         </div>
@@ -106,8 +104,7 @@
                                 <strong style="font-size: 1.2em;">Đại lý</strong>
                             </div>
                             <div class="footer-bottom-end-row12" style="padding: 10px 0 10px;">
-                                <img src="<?php echo public_url('images/line-footer12.png') ?>" alt=""
-                                     noloaderror="true">
+                                <img src="<?php echo public_url('images/line-footer12.png') ?>" alt="" noloaderror="true">
                             </div>
                         </div>
 
