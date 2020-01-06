@@ -110,15 +110,15 @@
 
                         <?php foreach ($agencies as $key => $value) { ?>
                             <div class="col-md-4 col-sm-12 col-xs-12 mt-2">
-                                <div class="footer-title">
+                                <div class="footer-title pl-3">
                                     <strong><a href="<?php echo base_url('dai-ly#' . create_slug($value->name)) ?>"><?php echo $value->name ?></a></strong>
                                 </div>
                                 <div>
-                                    <i class="mdi mdi-map-marker text-danger"></i>
+                                    <i class="mdi mdi-map-marker text-danger12"></i>
                                     <span><?php echo $value->address ?></span>
                                 </div>
                                 <div style="margin-top: 10px">
-                                    <span><i class="mdi mdi-phone text-danger"></i> <?php echo $value->phone ?></span>
+                                    <span><i class="mdi mdi-phone text-danger12"></i> <?php echo $value->phone ?></span>
                                 </div>
                             </div>
                         <?php } ?>
