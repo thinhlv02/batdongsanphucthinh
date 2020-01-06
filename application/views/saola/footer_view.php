@@ -132,7 +132,7 @@
 </section>
 
 <button onclick="topFunction()" id="myPageup" title="Go to top">
-    <i class="mdi mdi-arrow-up-bold-circle-outline text-primary mdi-24px"></i>
+    <i class="mdi mdi-arrow-up-bold-circle-outline text-primary12 mdi-24px"></i>
 </button>
 
 <script>
