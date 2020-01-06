@@ -37,12 +37,14 @@ Class Home extends MY_Controller
         $banner_left = $this->banner_model->get_list(array('where' => array('highlight' => 1, 'ads_left' => 1, 'bsizeid' => 5), 'limit' => array('1', '0')));
         if ($banner_left)
         {
+            $banner_left[0]->{'id'} = $this->ads_model->get_info($banner_left[0]->id_ads)->id;
             $banner_left[0]->{'title'} = $this->ads_model->get_info($banner_left[0]->id_ads)->title;
         }
         $banner_right = $this->banner_model->get_list(array('where' => array('highlight' => 1, 'ads_right' => 1, 'bsizeid' => 5), 'limit' => array('1', '0')));
 
         if ($banner_right)
         {
+            $banner_right[0]->{'id'} = $this->ads_model->get_info($banner_right[0]->id_ads)->id;
             $banner_right[0]->{'title'} = $this->ads_model->get_info($banner_right[0]->id_ads)->title;
         }
 
