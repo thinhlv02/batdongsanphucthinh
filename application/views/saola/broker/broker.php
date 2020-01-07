@@ -32,18 +32,20 @@
                                                 <div class="col-md-3 col-sm-3 col-xs-3">
                                                     <div class="card">
                                                         <div class="card-body">
-                                                            <h4><?php echo $v->name; ?></h4>
+                                                            <h4 class="font-weight-600"><?php echo $v->name; ?></h4>
                                                             <p class="broker-area">
-                                                                <i class="mdi mdi-map-marker-circle text-danger"></i> <?php echo $v->area; ?>
+                                                                <i class="mdi mdi-map-marker"></i> <?php echo $v->area; ?>
                                                             </p>
                                                             <p>
-                                                                <i class="mdi mdi-cellphone-android text-danger"></i> <?php echo $v->phone; ?>
+                                                                <i class="mdi mdi-phone text-danger12"></i> <?php echo $v->phone; ?>
                                                             </p>
                                                             <p>
-                                                                <i class="mdi mdi-email-outline text-danger"></i> <?php echo $v->email; ?>
+                                                                <i class="mdi mdi-email-outline"></i> <?php echo $v->email; ?>
                                                             </p>
                                                             <p>
-                                                                <button class="btn btn-outline-primary btn-xs"> <i class="mdi mdi-more"></i> Đọc thêm</button>
+                                                                <button class="btn btn-primary btn-xs">
+                                                                    <i class="mdi mdi-more"></i> Đọc thêm
+                                                                </button>
                                                             </p>
                                                         </div>
                                                     </div>
