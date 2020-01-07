@@ -101,9 +101,12 @@
                 <div class="card">
                     <div class="card-body line-height-2" style="background-color: #EDEDED">
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="footer-bottom-end-row12" style="padding-bottom: 10px; color: #000;text-transform: uppercase">
-                                <strong style="font-size: 1.2em;">Các đại lý ủy quyền hợp tác với chúng tôi!</strong>
-                            </div>
+                            <h2 class="icon-title mb-2" id="">
+                                <strong class="bg">
+                                    <i class="mdi mdi-monitor-multiple"></i>
+                                </strong>
+                                <span class="font-weight-600" style="font-size: 14px !important;">CÁC ĐẠI LÝ ỦY QUYỀN HỢP TÁC VỚI CHÚNG TÔI!</span>
+                            </h2>
 
                         </div>
 
@@ -286,3 +289,23 @@
 </body>
 
 </html>
+
+<style>
+    .icon-title {
+        border-bottom: 1px solid #fbaf19;
+        margin-top: 0px;
+    }
+
+    .icon-title .bg {
+        color: #fff;
+        font-size: 14px;
+        display: inline-block;
+        padding: 12px 25px 10px 14px;
+        line-height: 7px;
+        /*width: 55px;*/
+        height: 28px;
+        background-color: #fbaf19;
+        -webkit-clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+        clip-path: polygon(0% 100%, 100% 100%, 0% -300%);
+    }
+</style>
