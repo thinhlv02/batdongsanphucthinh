@@ -1,5 +1,3 @@
-
-
 <div class="x_panel">
     <div class="x_title">
         <h2>Danh sách đại lý</h2>
@@ -27,22 +25,22 @@
                     <th>Tên</th>
                     <th>Số điện thoại</th>
                     <th>Địa chỉ</th>
-                    <th>Hành động</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
-                <?php foreach ($agencies as $row){ ?>
+                <?php foreach ($agencies as $row) { ?>
                     <tr>
-                        <td><?php echo $row->id?></td>
-                        <td><?php echo $row->name?></td>
-                        <td><?php echo $row->phone?></td>
-                        <td><?php echo $row->address?></td>
+                        <td><?php echo $row->id ?></td>
+                        <td><?php echo $row->name ?></td>
+                        <td><?php echo $row->phone ?></td>
+                        <td><?php echo $row->address ?></td>
                         <td>
-                            <a class="btn btn-xs btn-success" href="<?php echo base_url('admin/agency/edit/'.$row->id)?>">Sửa</a>
-                            <a class="btn btn-xs btn-danger" onclick="confirmDel(<?php echo $row->id?>)">Xóa</a>
+                            <a class="btn btn-xs btn-outline-success" href="<?php echo base_url('admin/agency/edit/' . $row->id) ?>"><i class="fa fa-pencil-square-o"></i></a>
+                            <a class="btn btn-xs btn-outline-danger" onclick="confirmDel(<?php echo $row->id ?>)"><i class="fa fa-trash-o"></i></a>
                         </td>
                     </tr>
-                <?php }?>
+                <?php } ?>
                 </tbody>
             </table>
         </div>
@@ -53,8 +51,10 @@
         $('#datatable-agency').dataTable({"pageLength": 100});
     });
 
-    function confirmDel(id) {
-        if(confirm('Bạn có chắc chắn muốn xóa?')){
+    function confirmDel(id)
+    {
+        if (confirm('Bạn có chắc chắn muốn xóa?'))
+        {
             window.location.href = '<?php echo base_url('admin/agency/del/')?>' + id;
         }
     }
