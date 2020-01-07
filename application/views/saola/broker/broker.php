@@ -33,17 +33,17 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <h4 class="font-weight-600"><?php echo $v->name; ?></h4>
-                                                            <p class="broker-area">
+                                                            <p class="broker-area mb-0">
                                                                 <i class="mdi mdi-map-marker"></i> <?php echo $v->area; ?>
                                                             </p>
-                                                            <p>
+                                                            <p class="mb-0">
                                                                 <i class="mdi mdi-phone text-danger12"></i> <?php echo $v->phone; ?>
                                                             </p>
-                                                            <p>
+                                                            <p class="">
                                                                 <i class="mdi mdi-email-outline"></i> <?php echo $v->email; ?>
                                                             </p>
                                                             <p>
-                                                                <button class="btn btn-primary btn-xs">
+                                                                <button class="btn btn-primary btn-xs font-weight-600">
                                                                     <i class="mdi mdi-more"></i> Đọc thêm
                                                                 </button>
                                                             </p>
