@@ -44,7 +44,7 @@
                                                             </p>
                                                             <p>
                                                                 <button class="btn btn-primary btn-xs font-weight-600">
-                                                                    <i class="mdi mdi-more"></i> Đọc thêm
+                                                                    <i class="mdi mdi-more"></i> Đọc Thêm
                                                                 </button>
                                                             </p>
                                                         </div>
