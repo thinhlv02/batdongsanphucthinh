@@ -102,7 +102,7 @@
                     <div class="card-body line-height-2" style="background-color: #EDEDED">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="footer-bottom-end-row12" style="padding-bottom: 10px; color: #000;text-transform: uppercase">
-                                <strong style="font-size: 1.2em;">Các nhà chuyên viên tư vấn xuất sắc</strong>
+                                <strong style="font-size: 1.2em;">Các đại lý ủy quyền hợp tác với chúng tôi!</strong>
                             </div>
 
                         </div>
