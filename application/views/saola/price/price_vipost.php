@@ -7,7 +7,7 @@
 <!--                start price-->
                 <div class="div-price" style="min-width:1200px">
                     <div style="height:600px;width:1100px;margin:auto;">
-                        <div class="div009"><span style="font-family:'Open Sans';font-size:24px;">BẢNG GIÁ CÁC GÓI ĐĂNG TIN</span></div>
+                        <div class="div009"><span style="font-family:'Open Sans';font-size:24px;">BÁO GIÁ CÁC GÓI ĐĂNG TIN</span></div>
                         <div>
                             <table style="width:1100px;" cellpadding="0" cellspacing="0" class="div221">
                                 <tbody><tr>

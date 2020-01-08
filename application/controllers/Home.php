@@ -795,7 +795,7 @@ Class Home extends MY_Controller
 //        echo 'bang gia';
         // load header
         $header = array();
-        $header['title'] = 'Bảng giá';
+        $header['title'] = 'Báo Giá';
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'price/price_vipost', $this->data);
