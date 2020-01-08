@@ -6,7 +6,7 @@ Class Price extends MY_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('');
+        $this->load->model('price_model');
     }
 
     function index()
