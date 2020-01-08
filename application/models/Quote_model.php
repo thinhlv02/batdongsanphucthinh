@@ -1,7 +1,7 @@
 <?php
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-Class Price_model extends MY_Model
+Class Quote_model extends MY_Model
 {
-    var $table = 'price';
+    var $table = 'quote';
 }

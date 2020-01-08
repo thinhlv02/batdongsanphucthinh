@@ -6,12 +6,12 @@ Class Price extends MY_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('price_model');
+        $this->load->model('quote_model');
     }
 
     function index()
     {
-        $product = $this->price_model->get_list();
+        $product = $this->quote_model->get_list();
         $this->data['tab'] = 1;
         $this->data['product'] = $product;
         $this->data['temp'] = 'admin/price/index';
@@ -33,7 +33,7 @@ Class Price extends MY_Controller
                 'content' => $this->input->post('txtContent'),
                 'intro' => $this->input->post('txtIntro'),
             );
-            if ($this->price_model->create($data_submit))
+            if ($this->quote_model->create($data_submit))
             {
                 $this->session->set_flashdata('message', 'Đăng bài thành công!');
                 redirect(base_url('admin/price/add'));
@@ -55,7 +55,7 @@ Class Price extends MY_Controller
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $id = $this->uri->segment(4);
-        $product = $this->price_model->get_info($id);
+        $product = $this->quote_model->get_info($id);
         if (!$product)
         {
             echo 'Đường dẫn không đúng!';
@@ -81,7 +81,7 @@ Class Price extends MY_Controller
             {
                 $this->session->set_flashdata('message', $this->upload->display_errors('', ''));
             }
-            if ($this->price_model->update($id, $data_submit))
+            if ($this->quote_model->update($id, $data_submit))
             {
                 $this->session->set_flashdata('message', 'Cập nhật thành công!');
                 redirect(base_url('admin/price/edit/' . $id));
@@ -102,9 +102,9 @@ Class Price extends MY_Controller
     function del()
     {
         $id = $this->uri->segment(4);
-        if ($this->price_model->get_info($id))
+        if ($this->quote_model->get_info($id))
         {
-            $this->price_model->delete($id);
+            $this->quote_model->delete($id);
             redirect(base_url('admin/price'));
         }
         else
