@@ -7,7 +7,7 @@
                     <div class="left-title">Báo giá quảng cáo</div>
                     <ul>
                         <?php foreach ($prices as $k => $p) { ?>
-                            <li class="<?php if ($p->id == $active || ($k == 0 && $active == 0)) echo 'active'; ?>" onclick="showTitlePrice('<?php echo $p->id; ?>')">
+                            <li class="m-1 <?php if ($p->id == $active || ($k == 0 && $active == 0)) echo 'active'; ?>" onclick="showTitlePrice('<?php echo $p->id; ?>')">
                                 <a href="<?php echo base_url('bao-gia/' . create_slug($p->name) . '-' . $p->id . '.html#' . $p->id) ?>">
                                     <?php echo $p->name ?>
                                 </a>

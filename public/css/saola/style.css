@@ -977,9 +977,7 @@ span.item-date {
 .left-menu ul li {
     list-style: none;
     transition: ease all 600ms;
-    margin: 15px 0px;
     border-bottom: 1px solid #ededed;
-    padding: 5px 0px;
 }
 
 .left-menu li a {
