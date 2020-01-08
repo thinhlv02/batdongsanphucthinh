@@ -957,12 +957,9 @@ span.item-date {
 
 .left-title {
     font-size: 16px;
-    /* background-color: #4dbb6d; */
-    /* color: #fff; */
-    /* padding: 10px; */
-    border-left: 5px solid #4dbb6d;
     text-transform: uppercase;
     padding: 5px 10px;
+    padding-left: 0;
     font-weight: bold;
 }
 
@@ -974,7 +971,7 @@ span.item-date {
 }
 
 .left-menu {
-    /*border: 1px solid #4dbb6d;*/
+
 }
 
 .left-menu ul li {
@@ -992,9 +989,15 @@ span.item-date {
     /*transition: ease all 300ms;*/
 }
 
-.left-menu li:hover, .left-menu .active {
-    padding-left: 10px;
-    border-left: 5px solid #ccc;
+.left-menu li:hover {
+    padding-left: 19px;
+    border-left: 1px solid #5cb85c;
+}
+
+.left-menu .active {
+    padding-left: 18px;
+    border-left: 2px solid #5cb85c;
+    font-weight: 700;
 }
 
 .left-menu li:hover a, .left-menu .active a {
@@ -1023,7 +1026,6 @@ span.item-date {
 .title-form {
     font-size: 16px;
     padding: 15px;
-    /*padding-top: 20px;*/
 }
 
 .wrap-form-comment .btn {
