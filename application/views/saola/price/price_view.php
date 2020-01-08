@@ -46,7 +46,7 @@
 
                         </div>
                         <div id="price2" style="display: none;" class="priceTitle">
-                            <div style="text-align: center; color: #055699; font-size: 18px; margin-top: 20px; margin-bottom: 5px; font-family: 'times new roman'; font-weight: bold;">
+                            <div style="text-align: center; color: #055699; font-size: 18px; margin-top: 20px; margin-bottom: 5px;  font-weight: bold;">
                                 PHƯƠNG THỨC ĐĂNG TIN BĐS
                             </div>
                             <div style="text-align: center; margin-bottom: 30px;">(Áp dụng từ 01/04/2019)</div>
@@ -56,7 +56,7 @@
                         </div>
 
                         <div id="price3" style="display: none;" class="priceTitle">
-                            <div style="text-align: center; color: #055699; font-size: 18px; margin-top: 20px; margin-bottom: 5px; font-family: 'times new roman'; font-weight: bold;">
+                            <div style="text-align: center; color: #055699; font-size: 18px; margin-top: 20px; margin-bottom: 5px;  font-weight: bold;">
                                 BÁO GIÁ BANNER PHIÊN BẢN DESKTOP && PC
                             </div>
                             <div style="text-align: center; margin-bottom: 30px;"></div>
