@@ -22,17 +22,17 @@
                         <div id="price1" class="priceTitle" style="display: block;">
                             <div style="color: #055699; font-weight: bold;">
                                 <div style="width: 350px; float: left; margin: 80px 0 0 60px;">
-                                    <div style="width: 80px; float: left; font-size: 30px; line-height: 35px; font-family: times new roman;">
+                                    <div style="width: 80px; float: left; font-size: 30px; line-height: 35px; font-family: Tahoma;">
                                         VỀ
                                     </div>
-                                    <div style="width: 65px; float: left; font-size: 80px; line-height: 60px; font-family: times new roman;">
+                                    <div style="width: 65px; float: left; font-size: 80px; line-height: 60px; font-family: Tahoma;">
                                         C
                                     </div>
                                     <div style="width: 200px; float: left;">
-                                        <div style="font-size: 30px; line-height: 35px; font-family: times new roman;">
+                                        <div style="font-size: 30px; line-height: 35px; font-family: Tahoma;">
                                             HÚNG
                                         </div>
-                                        <div style="font-size: 30px; line-height: 35px; font-family: times new roman;color: #1E9FF2;">
+                                        <div style="font-size: 30px; line-height: 35px; font-family: Tahoma;color: #1E9FF2;">
                                             TÔI
                                         </div>
                                     </div>

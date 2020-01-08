@@ -22,17 +22,17 @@
                         <div id="price1" class="priceTitle" style="display: block;">
                             <div style="color: #055699; font-weight: bold;">
                                 <div style="width: 350px; float: left; margin: 80px 0 0 60px;">
-                                    <div style="width: 80px; float: left; font-size: 30px; line-height: 35px; font-family: times new roman;">
+                                    <div style="width: 80px; float: left; font-size: 30px; line-height: 35px; font-family: Tahoma;">
                                         HIỆU
                                     </div>
-                                    <div style="width: 65px; float: left; font-size: 80px; line-height: 60px; font-family: times new roman;">
+                                    <div style="width: 65px; float: left; font-size: 80px; line-height: 60px; font-family: Tahoma;">
                                         Q
                                     </div>
                                     <div style="width: 200px; float: left;">
-                                        <div style="font-size: 30px; line-height: 35px; font-family: times new roman;">
+                                        <div style="font-size: 30px; line-height: 35px; font-family: Tahoma;">
                                             UẢ
                                         </div>
-                                        <div style="font-size: 30px; line-height: 35px; font-family: times new roman;">
+                                        <div style="font-size: 30px; line-height: 35px; font-family: Tahoma;">
                                             UẢNG CÁO
                                         </div>
                                     </div>
@@ -65,8 +65,8 @@
 
                         <div id="price4" style="display: none;" class="priceTitle">
                             <h2 style="text-align: center; color: #055699; padding: 20px 0 7px 0;">
-                                <span style="font-size: 50px; font-family: times new roman; text-transform: uppercase;">Báo giá</span>
-                                <span style="font-size: 25px; font-family: times new roman; text-transform: uppercase;">tin rao theo từng gói</span>
+                                <span style="font-size: 50px; font-family: Tahoma; text-transform: uppercase;">Báo giá</span>
+                                <span style="font-size: 25px; font-family: Tahoma; text-transform: uppercase;">tin rao theo từng gói</span>
                             </h2>
                             <div style="text-align: center; padding: 0 0 20px 0;">(Áp dụng kể từ ngày 01/04/2019 - Giá đã bao gồm VAT)</div>
                             <div style="text-align: center;">
