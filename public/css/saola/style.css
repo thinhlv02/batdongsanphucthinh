@@ -1,3 +1,7 @@
+:root {
+    --blue-color: #1E9FF2;
+}
+
 html, body {
     font-family: Tahoma;
     font-size: 12px;
@@ -23,7 +27,7 @@ a:hover {
     top: 0;
     z-index: 100;
     /*background-color: #ddd;*/
-    background-color: #1E9FF2;
+    background-color: var(--blue-color);
     text-align: center;
     /*display: none;*/
     width: 100%;
@@ -280,12 +284,7 @@ section {
     color: #333;
 }
 
-.footer-title {
-    /*margin: 10px 0px;*/
-}
-
 .intro_home {
-    /*background: url("../images/bgIntro.jpg") no-repeat center center;*/
     background: url("../../images/contact-background.jpg") no-repeat center center;
     background-attachment: fixed;
     color: #ffffff;
@@ -333,7 +332,6 @@ section {
 /*}*/
 .title-section h2 {
     color: #2e353e;
-    /*color: #00b14f;*/
     font-size: 32px;
     font-weight: 700;
     display: inline-block;
@@ -704,7 +702,7 @@ blockquote span {
     position: absolute;
     bottom: 0;
     /*background-color: rgba(0, 0, 0, 0.8);*/
-    background-color: #1E9FF2;
+    background-color: var(--blue-color);
     width: 100%;
     opacity: 1;
     padding: 2px;
@@ -718,7 +716,7 @@ blockquote span {
     width: 100%;
     height: 100%;
     /*background: rgba(0,0,0,0.8);*/
-    background: #1E9FF2;
+    background: var(--blue-color);
     /* position: absolute; */
     /* top: 0; */
     /* left: 0; */
@@ -1307,7 +1305,7 @@ span.item-date {
 
     left: 0% !important;
     right: 0% !important;
-    background: #1E9FF2 !important;
+    background: var(--blue-color) !important;
     bottom: 0%;
     text-align: left;
     padding-bottom: 0px !important;
