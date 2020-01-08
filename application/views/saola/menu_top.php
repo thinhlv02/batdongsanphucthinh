@@ -36,7 +36,7 @@
         <!--        <li class="--><?php //echo activate_menu('land_canmua') ; ?><!--" title="--><?php //echo $common_lang['lmenu_canmua']; ?><!--"><a href="--><?php //echo base_url('can-mua')?><!--"> --><?php //echo $common_lang['lmenu_canmua']; ?><!--</a></li>-->
         <!--        <li class="--><?php //echo activate_menu('land_canthue') ; ?><!--" title="--><?php //echo $common_lang['lmenu_canthue']; ?><!--"><a href="--><?php //echo base_url('can-thue')?><!--"> --><?php //echo $common_lang['lmenu_canthue']; ?><!--</a></li>-->
         <li class="<?php echo activate_menu('price'); ?>" title="<?php echo $common_lang['lmenu_price']; ?>">
-            <a href="<?php echo base_url('bang-gia') ?>"> <?php echo $common_lang['lmenu_price']; ?></a></li>
+            <a href="<?php echo base_url('bao-gia') ?>"> <?php echo $common_lang['lmenu_price']; ?></a></li>
         <li class="dropdown <?php echo ''; ?>" title="<?php echo $common_lang['lmenu_phonebook']; ?>">
             <a href="javascript:void(0)"> <?php echo $common_lang['lmenu_phonebook']; ?>
                 <i class="mdi mdi-menu-down"></i></a>

@@ -3,7 +3,7 @@
         <div class="col-sm-12 col-md-12">
             <div class="left-menu">
 
-                <div class="left-title">Bảng giá quảng cáo</div>
+                <div class="left-title">Báo giá quảng cáo</div>
 <!--                start price-->
                 <div class="div-price" style="min-width:1200px">
                     <div style="height:600px;width:1100px;margin:auto;">

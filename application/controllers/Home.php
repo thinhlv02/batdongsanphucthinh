@@ -813,7 +813,7 @@ Class Home extends MY_Controller
             $price = $this->price_model->get_info($id);
             if (!$price || create_slug($price->name) != $slug)
             {
-                redirect(base_url('bang-gia.html'));
+                redirect(base_url('bao-gia.html'));
             }
             $this->data['price'] = $price;
         }

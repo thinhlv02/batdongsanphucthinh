@@ -72,7 +72,7 @@
                                 <li><a href="<?php echo base_url('dieu-khoan-su-dung') ?>"><i
                                                 class="mdi mdi-settings-outline text-danger12"></i> Chính sách và điều
                                         khoản</a></li>
-                                <li><a href="<?php echo base_url('bang-gia') ?>"><i
+                                <li><a href="<?php echo base_url('bao-gia') ?>"><i
                                                 class="mdi mdi-cash-usd text-danger12"></i> Bảng giá</a></li>
                                 <li><a href="<?php echo base_url('lien-he') ?>"><i
                                                 class="mdi mdi-contacts text-danger12"></i> Liên hệ</a></li>
