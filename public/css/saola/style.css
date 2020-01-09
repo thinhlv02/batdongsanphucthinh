@@ -1437,13 +1437,14 @@ button#myPageup {
 .icon-title .bg {
     color: #fff;
     font-size: 14px;
-    display: inline-block;
-    padding: 12px 25px 10px 14px;
-    line-height: 7px;
-    /*width: 55px;*/
-    height: 28px;
+    display: initial;
+    padding: 10px 30px 2px 17px;
+    line-height: 5px;
+    width: 53px;
+    /* height: 37px; */
     background-color: var(--blue-color);
     -webkit-clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
-    clip-path: polygon(0% 100%, 100% 100%, 0% -300%);
+    clip-path: polygon(0% 100%, 100% 169%, -10% -378%);
+
 }
 /*css footer*/
