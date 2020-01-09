@@ -30,7 +30,7 @@
     <!--thinhlv add css-->
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'font.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'vendors.css'; ?>">
-    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'app.css'; ?>">
+    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'base.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'sweetalert.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'common.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'custom.css'; ?>">
