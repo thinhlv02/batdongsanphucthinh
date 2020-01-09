@@ -291,21 +291,5 @@
 </html>
 
 <style>
-    .icon-title {
-        border-bottom: 1px solid #fbaf19;
-        margin-top: 0px;
-    }
 
-    .icon-title .bg {
-        color: #fff;
-        font-size: 14px;
-        display: inline-block;
-        padding: 12px 25px 10px 14px;
-        line-height: 7px;
-        /*width: 55px;*/
-        height: 28px;
-        background-color: #fbaf19;
-        -webkit-clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
-        clip-path: polygon(0% 100%, 100% 100%, 0% -300%);
-    }
 </style>
