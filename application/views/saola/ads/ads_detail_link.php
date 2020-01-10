@@ -32,11 +32,15 @@
                                     <div style="clear: both;"></div>
 
                                     <?php
-                                    if (empty($ads_end)) { ?>
+                                    if (empty($ads_end))
+                                    { ?>
                                         <div class="text-danger"><?php echo $common_lang['data_not_found']; ?></div>
-                                    <?php } else {
+                                    <?php }
+                                    else
+                                    {
 
-                                        foreach ($ads_end as $k1 => $v1) { ?>
+                                        foreach ($ads_end as $k1 => $v1)
+                                        { ?>
                                             <div class="pack_land_box">
                                                 <div class="row">
                                                     <div class="col-xs-12 pland">
@@ -53,10 +57,12 @@
                                                                 <tbody>
                                                                 <?php
                                                                 $index_2 = -1;
-                                                                foreach ($tags_link as $key => $value) {
+                                                                foreach ($tags_link as $key => $value)
+                                                                {
                                                                     $index_2++;
                                                                     $link = $value;
-                                                                    if ($key != 0) {
+                                                                    if ($key != 0)
+                                                                    {
                                                                         $value = explode('">', $value);
                                                                         $value = $value[0];
                                                                         ?>
@@ -93,18 +99,23 @@
                                     <div style="clear: both;"></div>
 
                                     <?php
-                                    if (empty($ads_end)) { ?>
+                                    if (empty($ads_end))
+                                    { ?>
                                         <div class="text-danger"><?php echo $common_lang['data_not_found']; ?></div>
-                                    <?php } else {
+                                    <?php }
+                                    else
+                                    {
 
-                                        foreach ($ads_end as $k1 => $v1) { ?>
+                                        foreach ($ads_end as $k1 => $v1)
+                                        { ?>
                                             <div class="pack_land_box" style="border: 0;">
                                                 <div class="row">
                                                     <div class="col-xs-12 pland" style="border: 0;">
                                                         <div class="ads_link">
                                                             <?php
                                                             $tags_link = explode('a href="', trim($v1->link_facebook));
-                                                            if (!empty($tags_link[0])) { ?>
+                                                            if (!empty($tags_link[0]))
+                                                            { ?>
                                                                 <h5 class="text-uppercase">Ngày đẩy tin: <?php echo $v1->created_at; ?></h5>
                                                                 <table class="table table-bordered">
                                                                     <thead>
@@ -116,10 +127,12 @@
                                                                     <tbody>
                                                                     <?php
                                                                     $index_2 = -1;
-                                                                    foreach ($tags_link as $key => $value) {
+                                                                    foreach ($tags_link as $key => $value)
+                                                                    {
                                                                         $index_2++;
                                                                         $link = $value;
-                                                                        if ($key != 0) {
+                                                                        if ($key != 0)
+                                                                        {
                                                                             $value = explode('">', $value);
                                                                             $value = $value[0];
                                                                             ?>
