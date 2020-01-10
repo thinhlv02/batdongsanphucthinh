@@ -521,10 +521,6 @@
         width: 110px;
     }
 
-    .land_page .poster_land_box .pic_poster_land_box {
-        padding-right: 30px;
-    }
-
     .land_page .poster_land_box .detail_poster_land_box p:first-child {
         border-top: 0;
     }

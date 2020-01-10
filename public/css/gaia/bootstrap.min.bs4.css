@@ -3,6 +3,7 @@
  */
 
 /*start*/
+
 .m-0 {
     margin: 0 !important
 }
@@ -363,7 +364,12 @@
     margin-left: auto !important
 }
 
+
 /*END*/
+
+.mt-10 {
+    margin-top: 10px;
+}
 
 
 .box-module {
@@ -376,17 +382,17 @@
 }
 
 .bg-modul {
-    /*background: #FF4961;*/
+    /*background: #FF4961; *!*/
     background: #2199e8;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 2px 20px 0px 12px;
+    padding: 6px 5px 0px 5px;
     display: inline-block;
     -ms-border-top-right-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-right-radius: 6px;
     -ms-border-top-left-radius: 4px;
-    border-top-left-radius: 4px;
+    border-top-left-radius: 6px;
 }
 
 .card {
