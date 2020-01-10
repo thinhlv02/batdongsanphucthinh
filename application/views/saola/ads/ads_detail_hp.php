@@ -51,7 +51,7 @@
                         <!--Begin brief_land_box-->
                         <div class="brief_land_box row12">
                             <div class="col-xs-8">
-                                <div class="row">
+                                <div class="row m-0">
                                     <div class="col-xs-6 ibrief"><strong>- Mã số tin:</strong>
                                         PT-<?php echo $ads->id . substr($ads->code, 0, 3) ?></div>
                                     <div class="col-xs-6 ibrief"><strong>- Ngày cập nhật:</strong>
@@ -59,7 +59,7 @@
                                     </div>
                                 </div>
 
-                                <div class="row">
+                                <div class="row m-0">
                                     <div class="col-xs-6 ibrief"><strong>- Lượt xem:</strong> <?php echo $ads->view ?>
                                     </div>
                                     <div class="col-xs-6 ibrief" style="display: none"><strong>- Ngày hết hạn:</strong>
@@ -69,14 +69,14 @@
 
                                 </div>
 
-                                <div class="row">
+                                <div class="row m-0">
                                     <div class="col-xs-6 ibrief"><strong>- DTMB:</strong> <?php echo $ads->acreage ?>
                                         m<sup>2</sup></div>
                                     <div class="col-xs-6 ibrief"><strong>- DTSD:</strong> <?php echo $ads->useacreage ?>
                                         m<sup>2</sup></div>
                                 </div>
 
-                                <div class="row">
+                                <div class="row m-0">
                                     <div class="col-xs-6 ibrief"><strong>- Danh mục:</strong>
                                         <a href="javascript:void(0)">Cần bán</a></div>
                                     <div class="col-xs-6 ibrief"><strong>- Loại BĐS:</strong>
@@ -84,7 +84,7 @@
                                             <?php echo $ads->productcat != '' ? $ads->productcat : 'KXD' ?></a></div>
                                 </div>
 
-                                <div class="row">
+                                <div class="row m-0">
                                     <div class="col-xs-12 ibrief">
                                         <strong>- Địa chỉ:</strong> <?php echo $ads->area ?>
                                     </div>
@@ -192,7 +192,7 @@
                             </div>
                         </div>
 
-                        <div class="title1_land_box"><strong>Thông tin người đăng</strong></div>
+                        <div class="title1_land_box mt-1 mb-1"><strong>Thông tin người đăng</strong></div>
                         <!--Begin brief_land_box-->
                         <div class="row pack_land_box poster_land_box" style="border: 0;padding-left:10px;">
                             <div class="col-xs-3 pic_poster_land_box" style="padding-right: 30px !important;">
@@ -542,11 +542,6 @@
         font-weight: 600;
         line-height: 20px;
         font-size: 16px;
-    }
-
-    .land_page .title1_land_box {
-        border-bottom: 1px solid #ddd;
-        margin: 10px 0 20px 0;
     }
 
     p.title_box1 strong {
