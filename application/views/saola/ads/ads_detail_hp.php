@@ -221,7 +221,7 @@
                 <!--Begin two_cols-->
 
                 <div class="left_box top3_box">
-                    <p class="title_box1"><strong>CÁC TIN CÙNG TIÊU CHÍ TÌM KIẾM</strong></p>
+                    <p class="title_box1 mb-0"><strong>CÁC TIN CÙNG TIÊU CHÍ TÌM KIẾM</strong></p>
                     <div>
                         <div class="body_top2_box">
                             <?php foreach ($lstDataRelated as $key => $value)
@@ -284,7 +284,7 @@
                 <!--Begin two_cols-->
                 <div class="clearfix"></div>
                 <div class="left_box top3_box">
-                    <p class="title_box1"><strong>CÁC TIN LIÊN QUAN</strong></p>
+                    <p class="title_box1 mb-0"><strong>CÁC TIN LIÊN QUAN</strong></p>
                     <div>
                         <div class="body_top2_box">
                             <?php foreach ($ads_left as $key => $value) { ?>
@@ -542,7 +542,6 @@
         display: inline-block;
         font-size: 16px;
         line-height: 50px;
-        font-weight: 600;
         padding-left: 10px;
         border-left: 5px solid #4dbb6d;
     }
