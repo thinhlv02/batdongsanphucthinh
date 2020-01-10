@@ -32,7 +32,7 @@
 
                         </div>
                         <div class="col-md-2 col-sm-2">
-                            <div class="title_land_box">Ảnh đại diện(click để phóng to):</div>
+                            <div class="title_land_box p-3">Ảnh đại diện(click để phóng to):</div>
                             <img id="myImg" alt="<?php echo $ads->title; ?>" src="<?php echo public_url('images/ads/' . $ads->img) ?>" style="width:100%;">
 
                             <!-- The Modal -->
@@ -104,7 +104,7 @@
                         <!--End brief_land_box-->
                         <div style="clear: both;"></div>
 
-                        <div class="title_land_box">Mô tả chi tiết:</div>
+                        <div class="title_land_box p-3">Mô tả chi tiết:</div>
 
                         <div class="pack_land_box">
                             <div class="row12">
@@ -151,7 +151,7 @@
                         if ($show_ads_link)
                         {
                             ?>
-                            <div class="title_land_box text-center bg-warning" style="border-radius: 5px;">
+                            <div class="title_land_box text-center bg-warning p-3" style="border-radius: 5px;">
                                 <a style="color: #fff;" href="<?php echo base_url('rao-vat-link/' . create_slug($ads->title) . '-' . $ads->id) ?>" class="text-uppercase">Click vào đây để chuyển sang trang chi tiết link đẩy tin </a>
                             </div>
                             <?php
@@ -159,7 +159,7 @@
                         ?>
 
 
-                        <div class="title_land_box">Thông tin liên hệ:</div>
+                        <div class="title_land_box p-3">Thông tin liên hệ:</div>
                         <div class="pack_land_box">
                             <div class="row12">
                                 <div class="col-xs-12 pland"><strong>Tên liên lạc :</strong>
@@ -184,7 +184,7 @@
 
                         <div class="clearfix"></div>
 
-                        <div class="title_land_box">Bản đồ vị trí:</div>
+                        <div class="title_land_box p-3">Bản đồ vị trí:</div>
                         <div class="pack_land_box" style="border: 0;">
                             <div class="row">
                                 <div class="col-xs-12 pland" style="border: 0;">
@@ -488,8 +488,6 @@
         color: #e40b00;
         font-size: 17px;
         font-weight: 600;
-        padding: 10px;
-        margin: 15px 0 5px 0;
     }
 
     .land_page .pack_land_box .pland {
