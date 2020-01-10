@@ -3,7 +3,7 @@
         <div class="row subpage">
 
             <!--Begin left-->
-            <div class="col-xs-9 left land_page">
+            <div class="col-xs-9 left land_page mt-0">
 
                 <!--Begin land_box-->
                 <div class="_box">
