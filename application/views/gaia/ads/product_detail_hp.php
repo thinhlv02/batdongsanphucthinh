@@ -10,7 +10,7 @@
                     <p class="title_box" style="color: #055699"><strong>Cần bán
                             <i class="fa fa-angle-right"></i> <?php echo $ads->title ?></strong>
                     </p>
-                    <div class="land_box">
+                    <div class="land_box p-1">
 
                         <!--Begin imgs_land_box-->
                         <div class="content-news-1 col-md-10 col-sm-12">
@@ -557,7 +557,6 @@
         font-size: 20px;
         text-transform: uppercase;
         font-weight: 600;
-        margin-bottom: 10px;
     }
 
     .land_page .poster_land_box .pic_poster_land_box p {
