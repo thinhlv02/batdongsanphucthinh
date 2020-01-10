@@ -1,13 +1,13 @@
+/*!
+*add any class from bootstrap 4 by thinhlv
+ */
+
 .mt-10 {
     margin-top: 10px;
 }
 
-.m-0 {
+m-0 {
     margin: 0px !important;
-}
-
-.m-1 {
-    margin: .25rem !important;
 }
 
 .mt-0 {
@@ -84,10 +84,6 @@
 
 .p-0 {
     padding: 0px !important;
-}
-
-.p-1 {
-    padding: 1px !important;
 }
 
 .p-2 {
@@ -204,17 +200,17 @@
 }
 
 .bg-modul {
-    /*background: #FF4961; *!*/
+    /*background: #FF4961;*/
     background: #2199e8;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 6px 5px 0px 5px;
+    padding: 2px 20px 0px 12px;
     display: inline-block;
     -ms-border-top-right-radius: 4px;
-    border-top-right-radius: 6px;
+    border-top-right-radius: 4px;
     -ms-border-top-left-radius: 4px;
-    border-top-left-radius: 6px;
+    border-top-left-radius: 4px;
 }
 
 .card {
