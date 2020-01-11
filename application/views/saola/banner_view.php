@@ -1,6 +1,3 @@
-<!--<section class="news">-->
-<!--    <div class="container">-->
-
 
 <section class="pb-0">
     <div class="container banner" style="background-image: url(<?php echo public_url('images/' . $content->banner) ?>);background-size: 100%;">
