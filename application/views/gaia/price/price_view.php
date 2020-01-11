@@ -80,22 +80,22 @@
                                     </thead>
                                     <tbody>
 
-<!--                                    <tr>-->
-<!--                                        <td></td>-->
-<!--                                        <td></td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="success">-->
-<!--                                        <td></td>-->
-<!--                                        <td></td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="danger">-->
-<!--                                        <td></td>-->
-<!--                                        <td></td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="info">-->
-<!--                                        <td></td>-->
-<!--                                        <td></td>-->
-<!--                                    </tr>-->
+                                    <!--                                    <tr>-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                    </tr>-->
+                                    <!--                                    <tr class="success">-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                    </tr>-->
+                                    <!--                                    <tr class="danger">-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                    </tr>-->
+                                    <!--                                    <tr class="info">-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                    </tr>-->
                                     <tr class="warning">
                                         <td>Vip ưu đãi</td>
                                         <td>500k</td>
@@ -109,7 +109,7 @@
                                 </table>
 
                                 <h2>Mô tả các gói</h2>
-                                <p>Các gói khác nhau sẽ ở các vị trí khác nhau , và màu chữ tiêu đề... sẽ khác nhau.</p>
+                                <p class="mb-0">Các gói khác nhau sẽ ở các vị trí khác nhau , và màu chữ tiêu đề... sẽ khác nhau.</p>
 
                                 <table class="table">
                                     <thead>
@@ -120,22 +120,22 @@
                                     </thead>
                                     <tbody>
 
-<!--                                    <tr>-->
-<!--                                        <td></td>-->
-<!--                                        <td></td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="success">-->
-<!--                                        <td></td>-->
-<!--                                        <td></td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="danger">-->
-<!--                                        <td></td>-->
-<!--                                        <td></td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="info">-->
-<!--                                        <td></td>-->
-<!--                                        <td></td>-->
-<!--                                    </tr>-->
+                                    <!--                                    <tr>-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                    </tr>-->
+                                    <!--                                    <tr class="success">-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                    </tr>-->
+                                    <!--                                    <tr class="danger">-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                    </tr>-->
+                                    <!--                                    <tr class="info">-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                        <td></td>-->
+                                    <!--                                    </tr>-->
                                     <tr class="warning">
                                         <td>Vip ưu đãi</td>
                                         <td></td>
@@ -170,15 +170,19 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        if (window.location.hash) {
+        if (window.location.hash)
+        {
             var hash = window.location.hash.substring(1, 2);
             if ($.isNumeric(hash)) showTitlePrice(hash);
-        } else {
+        }
+        else
+        {
             showTitlePrice(1);
         }
     });
 
-    function showTitlePrice(id) {
+    function showTitlePrice(id)
+    {
         $(".priceTitle").each(function () {
             $(this).css("display", "none");
         });
