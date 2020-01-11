@@ -36,7 +36,7 @@
                                 <a style="color: #616161" href="javascript:void(0)" target="_blank">http:batdongsanphucthinh.vn</a>
 
                             </div>
-                            <div class="footer-bottom-end-row12" style="padding: 10px 0 10px;">
+                            <div class="footer-bottom-end-row12">
                                 <img src="<?php echo public_url('images/line-footer12.png') ?>" alt="" noloaderror="true">
                             </div>
                         </div>
@@ -111,8 +111,8 @@
                         </div>
 
                         <?php foreach ($agencies as $key => $value) { ?>
-                            <div class="col-md-4 col-sm-12 col-xs-12 mt-5">
-                                <div class="footer-title pl-3">
+                            <div class="col-md-4 col-sm-12 col-xs-12 mt-1">
+                                <div class="footer-title pl-1">
                                     <strong><a href="<?php echo base_url('dai-ly#' . create_slug($value->name)) ?>"><?php echo $value->name ?></a></strong>
                                 </div>
                                 <div>
