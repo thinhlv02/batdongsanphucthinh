@@ -98,8 +98,8 @@
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
-.bx-wrapper .bx-prev {right: 30px; background: rgba(0, 0, 0, .2) url(../../images/controls.png) no-repeat 0 -32px;}
-.bx-wrapper .bx-next {right: -5px; background: rgba(0, 0, 0, .2) url(../../images/controls.png) no-repeat -43px -32px;}
+.bx-wrapper .bx-prev {right: 30px; background: rgba(0, 0, 0, .2) url(images/controls.png) no-repeat 0 -32px;}
+.bx-wrapper .bx-next {right: -5px; background: rgba(0, 0, 0, .2) url(images/controls.png) no-repeat -43px -32px;}
 .bx-wrapper .bx-prev:hover {background-position: 0 0;}
 .bx-wrapper .bx-next:hover {background-position: -43px 0;}
 .bx-wrapper .bx-controls-direction a {
@@ -125,8 +125,8 @@
 
 
 
-.imgs_land_box .bx-wrapper .bx-prev {left: 10px; background: rgba(0,0,0,.2) url(../../images/controls.png) no-repeat 0 -32px;}
-.imgs_land_box .bx-wrapper .bx-next {right: 10px; background: rgba(0,0,0,.2) url(../../images/controls.png) no-repeat -43px -32px;}
+.imgs_land_box .bx-wrapper .bx-prev {left: 10px; background: rgba(0,0,0,.2) url(images/controls.png) no-repeat 0 -32px;}
+.imgs_land_box .bx-wrapper .bx-next {right: 10px; background: rgba(0,0,0,.2) url(images/controls.png) no-repeat -43px -32px;}
 .imgs_land_box .bx-wrapper .bx-prev:hover {background-color: rgba(0,0,0,.4);}
 .imgs_land_box .bx-wrapper .bx-next:hover {background-color: rgba(0,0,0,.4);}
 .imgs_land_box .bx-wrapper .bx-controls-direction a {
