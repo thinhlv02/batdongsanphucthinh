@@ -15,20 +15,15 @@ class Webconfig
         $config->config['isTablet'] = $mobileDetect->isTablet();
 
         $config->config['template_folder_root'] = '';
+//        pc or mobile
         if ($config->config['isMobile'] || $config->config['isTablet'])
         {
             $config->config['template_folder_root'] .= 'pc/';
-//            $config->config['template_folder_root'] = 'mobile/';
         }
         else
         {
             $config->config['template_folder_root'] = 'pc/';
         }
 
-//        pre( $config);
-//        echo '<pre>', print_r($config, 1), '</pre>';
-
-        // fix admin chay pc
-        //$config->config['admin_template_folder_path'] = TEMPLATE_ADMIN_FOLDER . 'pc/';
     }
 }
