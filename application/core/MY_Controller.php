@@ -114,6 +114,8 @@ Class MY_Controller extends CI_Controller
         $preHeader['products'] = $this->_products;
         // assign all common param to view
 //        die('116');
+//        die('116');
+//        die('116');
         $this->load->view($this->_template_f . 'preheader_view', $preHeader);
     }
 
