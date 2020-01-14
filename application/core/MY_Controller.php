@@ -37,6 +37,7 @@ Class MY_Controller extends CI_Controller
         $this->_province = $this->_func_province();
 
         $this->_template_f = TEMPLATE_FOLDER . $this->config->item('template_folder_root');
+        var_dump($this->_template_f);
 
         switch ($new_url)
         {
