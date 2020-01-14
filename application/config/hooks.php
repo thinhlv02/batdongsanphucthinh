@@ -14,9 +14,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /** add by thinhlv */
 
 $hook['pre_controller'] = array(
-    'class' => 'MyClass',
-    'function' => 'Myfunction',
-    'filename' => 'Myclass.php',
+    'class' => 'Webconfig',
+    'function' => 'init',
+    'filename' => 'Webconfig.php',
     'filepath' => 'hooks',
     'params' => array('beer', 'wine', 'snacks')
 );
