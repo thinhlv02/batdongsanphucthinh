@@ -17,7 +17,7 @@ class Webconfig
         $config->config['template_folder_root'] = '';
         if ($config->config['isMobile'] || $config->config['isTablet'])
         {
-            $config->config['template_folder_path'] .= 'pc/';
+            $config->config['template_folder_root'] .= 'pc/';
 //            $config->config['template_folder_root'] = 'mobile/';
         }
         else
