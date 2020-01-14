@@ -42,7 +42,6 @@ Class MY_Controller extends CI_Controller
         {
             case 'admin' :
             {
-//                pre('abc');
                 $this->_check_login();
                 $this->data['admin'] = $this->session->userdata('admin');
                 break;
