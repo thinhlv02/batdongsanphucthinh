@@ -34,7 +34,7 @@ Class MY_Controller extends CI_Controller
         $this->_uname = $this->_session_uname();
         $this->_device_type = $this->_func_device_type();
         $this->_province = $this->_func_province();
-        $this->_template_f = TEMPLATE_FOLDER;
+        $this->_template_f = TEMPLATE_FOLDER . $this->config->item('template_folder_root');
 
 //        var_dump($new_url);
         switch ($new_url)
