@@ -8,10 +8,7 @@ class Webconfig
 
     function init()
     {
-//        die('core 1212');
         $config = &load_class('Config', 'core1212');
-//        echo '<pre>', print_r($config, 1), '</pre>';
-//        die('test');
 
         $mobileDetect = &load_class('MobileDetect', 'libraries');
         $config->config['isMobile'] = $mobileDetect->isMobile();
