@@ -17,9 +17,8 @@ class Webconfig
         $config->config['template_folder_root'] = '';
         if ($config->config['isMobile'] || $config->config['isTablet'])
         {
-            // giao dien don gian nen fix luon luon la pc
-//            $config->config['template_folder_path'] .= 'pc/';
-            $config->config['template_folder_root'] = 'mobile/';
+            $config->config['template_folder_path'] .= 'pc/';
+//            $config->config['template_folder_root'] = 'mobile/';
         }
         else
         {
