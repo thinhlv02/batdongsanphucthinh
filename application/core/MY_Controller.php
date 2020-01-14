@@ -38,6 +38,9 @@ Class MY_Controller extends CI_Controller
         $this->_template_f = TEMPLATE_FOLDER . $this->config->item('template_folder_root');
 
 //        var_dump($new_url);
+//        var_dump($new_url);
+//        var_dump($new_url);
+//        var_dump($new_url);
         switch ($new_url)
         {
             case 'admin' :
