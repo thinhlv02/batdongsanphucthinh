@@ -8,7 +8,7 @@ class MyClass
 
     function Myfunction()
     {
-        die('core 1212');
+//        die('core 1212');
         $config = &load_class('Config', 'core1212');
         echo '<pre>', print_r($config, 1), '</pre>';
         die('test');
