@@ -1,6 +1,6 @@
 <?php
 //echo '';
-//die();
+die('error');
 // custom define
 require_once('cf/cf.php');
 /**
