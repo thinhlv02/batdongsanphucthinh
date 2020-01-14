@@ -37,13 +37,7 @@ Class MY_Controller extends CI_Controller
         $this->_province = $this->_func_province();
 
         $this->_template_f = TEMPLATE_FOLDER . $this->config->item('template_folder_root');
-        var_dump($this->_template_f . 'preheader_view');
-        die();
 
-//        var_dump($new_url);
-//        var_dump($new_url);
-//        var_dump($new_url);
-//        var_dump($new_url);
         switch ($new_url)
         {
             case 'admin' :
@@ -79,7 +73,7 @@ Class MY_Controller extends CI_Controller
                     $this->session->set_userdata('language', 'vn');
                     $language = 'vn';
                 }
-//                var_dump($language);
+
                 if ($language == 'vn')
                 {
                     $this->_langcode = 'vietnamese';
@@ -101,7 +95,7 @@ Class MY_Controller extends CI_Controller
                 $this->_login_lang = $this->lang->line('login_lang');
 
                 $this->data['user'] = $this->session->userdata('user');
-//                var_dump($this->data['user']);
+
             }
         }
 
@@ -118,7 +112,6 @@ Class MY_Controller extends CI_Controller
         $preHeader['prices'] = $this->_prices;
         $preHeader['products'] = $this->_products;
         // assign all common param to view
-        var_dump($this->_template_f . 'preheader_view');
         $this->load->view($this->_template_f . 'preheader_view', $preHeader);
     }
 
