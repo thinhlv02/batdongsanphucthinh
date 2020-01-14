@@ -12,7 +12,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 /** add by thinhlv */
-/** add by thinhlv */
 
 $hook['pre_controller'] = array(
     'class' => 'MyClass',
