@@ -1,13 +1,13 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class MyClass
+class Webconfig
 {
     function __construct()
     {
     }
 
-    function Myfunction()
+    function init()
     {
-        var_dump('Myfunction');
+//        var_dump('init');
     }
 }
