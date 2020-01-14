@@ -12,9 +12,7 @@ Class MY_Controller extends CI_Controller
     var $_device_type = '';
     var $_province = '';
     protected $_langcode = '';
-    // common lang
-    // common lang
-    // common lang
+
     // common lang
     protected $_common_lang = NULL;
     protected $_login_lang = NULL;
