@@ -28,58 +28,58 @@
         <li class="li-contact" title="Liên hệ"><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
     </ul>
 </div>
-<section class="first-section">
-    <div class="container">
-        <div class="header">
-            <!--<div class="logo">SDC Media</div>-->
-            <ul>
-                <li class="li-home">Trang chủ</li>
-                <li class="li-intro">Giới thiệu</li>
-                <li class="li-product">Sản phẩm</li>
-                <li class="li-recruitment">Tuyển dụng</li>
-                <li class="li-contact">Liên hệ</li>
-            </ul>
-        </div>
+<!--Add Captions to Slides-->
+<div id="demo" class="carousel slide" data-ride="carousel">
 
-        <!--<div class="header-sm">-->
-        <!--<div class="icon-menu-sm"><i class="fa fa-bars" aria-hidden="true"></i></div>-->
-        <!--<ul>-->
-        <!--<li class="li-home">Trang chủ</li>-->
-        <!--<li class="li-intro">Giới thiệu</li>-->
-        <!--<li class="li-product">Sản phẩm</li>-->
-        <!--<li class="li-recruitment">Tuyển dụng</li>-->
-        <!--<li class="li-contact">Liên hệ</li>-->
-        <!--</ul>-->
-        <!--</div>-->
+    <div class="header">
+        <!--<div class="logo">SDC Media</div>-->
+        <ul>
+            <li class="li-home">Trang chủ</li>
+            <li class="li-intro">Giới thiệu</li>
+            <li class="li-product">Sản phẩm</li>
+            <li class="li-recruitment">Tuyển dụng</li>
+            <li class="li-contact">Liên hệ</li>
+        </ul>
+    </div>
 
-        <div class="slogan">
-            <h1>SDC Media ., JSC</h1>
-            <h3>Không ngừng sáng tạo</h3>
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/la.jpg" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+            </div>
         </div>
-        <div class="first-intro">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 left">
-                    <span>- Mục tiêu chiến lược</span>
-                    <span>“Uy tín tạo niềm tin - Chất lượng tạo hiệu quả”</span>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <!--<div class="item-contact">-->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-6 item-contact">
-                            <div class="title-contact">Hotline</div>
-                            <div class="content-contact">02462 532 635</div>
-                        </div>
-                        <!--<div class="item-contact">-->
-                        <div class="col-xs-12 col-sm-6 col-md-6 item-contact">
-                            <div class="title-contact">Email</div>
-                            <div class="content-contact">cskh@sdcmedia.com.vn</div>
-                        </div>
-                    </div>
-                </div>
+        <div class="carousel-item">
+            <img src="images/chicago.jpg" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/ny.jpg" alt="New York" width="1100" height="500">
+            <div class="carousel-caption">
+                <h3>New York</h3>
+                <p>We love the Big Apple!</p>
             </div>
         </div>
     </div>
-</section>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<!--Add Captions to Slides-->
+
+
 <section class="intro">
     <div class="container">
         <div class="row">
@@ -535,3 +535,11 @@
 </section>
 </body>
 </html>
+
+<style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
