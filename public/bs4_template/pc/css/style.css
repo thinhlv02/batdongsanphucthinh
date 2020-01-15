@@ -27,9 +27,16 @@ html, body {
 }
 
 .header {
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    display: inline-block;
+}
+
+.full-menu {
     max-width: 100%;
     margin: 0 auto;
-    /*background: #FFF;*/
+    background: #FFF;
     position: relative;
     -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
