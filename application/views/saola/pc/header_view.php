@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'vendors.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'base.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'sweetalert.css'; ?>">
-    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'bootstrap.min.bs4.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'custom.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'lightslider.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'jquery.bxslider.css'; ?>">
