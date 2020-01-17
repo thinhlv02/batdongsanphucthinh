@@ -20,11 +20,10 @@
     <meta property="og:image:height" content="200"/>
     <meta property="og:type" content="website"/>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'bootstrap.min.css'; ?>">
     <!--    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">-->
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'style.css'; ?>">
     <link href="<?php echo base_url() . 'public/css/' . $template_f . 'responsive.css'; ?>" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <!--thinhlv add css-->
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'font.css'; ?>">
