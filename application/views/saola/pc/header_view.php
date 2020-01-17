@@ -20,10 +20,6 @@
     <meta property="og:image:height" content="200"/>
     <meta property="og:type" content="website"/>
 
-    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'bootstrap.min.css'; ?>">
-    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'style.css'; ?>">
-    <link href="<?php echo base_url() . 'public/css/' . $template_f . 'responsive.css'; ?>" rel="stylesheet">
-
     <!--thinhlv add css-->
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'font.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'vendors.css'; ?>">
