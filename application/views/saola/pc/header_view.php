@@ -39,8 +39,7 @@
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'hp.css'; ?>">
     <!--End thinhlv add css-->
 
-    <!--<script src="--><?php //echo public_url('js/jquery.min.js')?><!--"></script>-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="<?php echo public_url() . 'js/' . $template_f . 'jquery.js' ?>"></script>
     <script src="<?php echo public_url() . 'js/' . $template_f . 'bootstrap.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'public/js/' . $template_f . 'common.js'; ?>"></script>
     <script src="<?php echo base_url() . 'public/js/' . $template_f . 'lightslider.js'; ?>"></script>
