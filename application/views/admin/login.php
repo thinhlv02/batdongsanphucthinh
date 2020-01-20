@@ -56,7 +56,7 @@
 
                         <div>
                             <h1><i class="fa fa-paw"></i> PhucthinhCorp!</h1>
-                            <p>©2014 All Rights Reserved. PhucthinhCorp! is a Bootstrap 3 template. Privacy and Terms</p>
+                            <p>©2014 All Rights Reserved. Privacy and Terms!</p>
                         </div>
                     </div>
                 </form>
