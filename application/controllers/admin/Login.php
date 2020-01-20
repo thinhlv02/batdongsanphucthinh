@@ -32,7 +32,6 @@ Class Login extends MY_Controller
 
         //End admarket2020.code
 
-
         $this->load->library('form_validation');
         $this->load->helper('form');
         if ($this->input->post())
@@ -67,13 +66,13 @@ Class Login extends MY_Controller
             $input = array();
             $input['where']['username'] = $username;
             $admin = $this->admin_model->get_list($input);
-            //pre($admin);
-            //$admin = $admin[]
             $this->session->set_userdata('admin', $admin[0]);
-            //pre($admin);
             return true;
+
         }
-        $this->form_validation->set_message(__FUNCTION__, 'Login failed');
+
+        $this->form_validation->set_message(__FUNCTION__, ' <p style="color:red"> Login Failed. Please try again. </p>');
+
         return false;
     }
 }
