@@ -82,14 +82,10 @@
                 <th>Ảnh</th>
                 <th>Tiêu đề</th>
                 <th>Giá / Diện tích</th>
-                <th>Trái</th>
-                <th>Phải</th>
-                <th>Giữa</th>
-                <th>Layer trái</th>
-                <th>Layer vip</th>
-                <th>Layer phải</th>
+                <th>Banner</th>
+                <th>Layer</th>
                 <th>Trạng thái</th>
-                <th>Lượt xem</th>
+                <th>Xem</th>
                 <th>Ngày Tạo</th>
             </tr>
             </thead>
@@ -125,62 +121,58 @@
                     </td>
 
                     <td>
-                        <i id="ads_left-<?php echo $row->id ?>"
-                           class="fa fa-2x <?php echo $row->ads_left ? 'fa-toggle-on' : 'fa-toggle-off' ?> primary"
-                           onclick="ads_left(<?php echo $row->id ?>)"
-                        ></i>banner trái
+                        <p>
+                            <i id="ads_left-<?php echo $row->id ?>"
+                               class="fa fa-lg <?php echo $row->ads_left ? 'fa-toggle-on' : 'fa-toggle-off' ?> primary"
+                               onclick="ads_left(<?php echo $row->id ?>)"></i> banner trái
+                        </p>
+
+                        <p>
+                            <i id="ads_right-<?php echo $row->id ?>"
+                               class="fa fa-lg <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off' ?> secondary"
+                               onclick="ads_right(<?php echo $row->id ?>)"></i> banner phải
+                        </p>
+
+                        <p>
+                            <i id="ads_center-<?php echo $row->id ?>"
+                               class="fa fa-lg <?php echo $row->ads_center ? 'fa-toggle-on' : 'fa-toggle-off' ?> success"
+                               onclick="ads_center(<?php echo $row->id ?>)"></i> banner giữa
+                        </p>
+
                     </td>
 
                     <td>
-                        <i id="ads_right-<?php echo $row->id ?>"
-                           class="fa fa-2x <?php echo $row->ads_right ? 'fa-toggle-on' : 'fa-toggle-off' ?> secondary"
-                           onclick="ads_right(<?php echo $row->id ?>)"
-                        ></i>banner phải
-                    </td>
+                        <p>
+                            <i id="layer_left-<?php echo $row->id ?>"
+                               class="fa fa-lg <?php echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off' ?> danger"
+                               onclick="layer_left(<?php echo $row->id ?>)"></i> layer trái
+                        </p>
+                        <p>
+                            <i id="layer_vip-<?php echo $row->id ?>"
+                               class="fa fa-lg <?php echo $row->layer_vip ? 'fa-toggle-on' : 'fa-toggle-off' ?> warning"
+                               onclick="layer_vip(<?php echo $row->id ?>)"></i> layer vip
+                        </p>
+                        <p>
+                            <i id="layer_right-<?php echo $row->id ?>"
+                               class="fa fa-lg <?php echo $row->layer_right ? 'fa-toggle-on' : 'fa-toggle-off' ?> info"
+                               onclick="layer_right(<?php echo $row->id ?>)"></i> layer phải
+                        </p>
 
-                    <td>
-                        <i id="ads_center-<?php echo $row->id ?>"
-                           class="fa fa-2x <?php echo $row->ads_center ? 'fa-toggle-on' : 'fa-toggle-off' ?> success"
-                           onclick="ads_center(<?php echo $row->id ?>)"
-
-                        ></i>banner giữa
-                    </td>
-
-                    <td>
-                        <i id="layer_left-<?php echo $row->id ?>"
-                           class="fa fa-2x <?php echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off' ?> danger"
-                           onclick="layer_left(<?php echo $row->id ?>)"
-                        ></i>layer trái
-                    </td>
-
-                    <td>
-                        <i id="layer_vip-<?php echo $row->id ?>"
-                           class="fa fa-2x <?php echo $row->layer_vip ? 'fa-toggle-on' : 'fa-toggle-off' ?> warning"
-                           onclick="layer_vip(<?php echo $row->id ?>)"
-                        ></i>layer vip
-                    </td>
-
-                    <td>
-                        <i id="layer_right-<?php echo $row->id ?>"
-                           class="fa fa-2x <?php echo $row->layer_right ? 'fa-toggle-on' : 'fa-toggle-off' ?> info"
-                           onclick="layer_right(<?php echo $row->id ?>)"
-                        ></i>layer phải
                     </td>
 
                     <td style="display: grid ">
-                        <i id="icon_new-<?php echo $row->id ?>"
-                           class="fa fa-2x <?php echo $row->icon_new ? 'fa-toggle-on' : 'fa-toggle-off' ?> primary"
-                           onclick="icon_new(<?php echo $row->id ?>)"
-                        ></i> Mới
-                        <i id="icon_vip-<?php echo $row->id ?>"
-                           class="fa fa-2x <?php echo $row->icon_vip ? 'fa-toggle-on' : 'fa-toggle-off' ?> info"
-                           onclick="icon_vip(<?php echo $row->id ?>)"
-                        ></i> Vip
-
-                        <i id="icon_hot-<?php echo $row->id ?>"
-                           class="fa fa-2x <?php echo $row->icon_hot ? 'fa-toggle-on' : 'fa-toggle-off' ?> success"
-                           onclick="icon_hot(<?php echo $row->id ?>)"
-                        ></i> Hot
+                        <p>
+                            <i id="icon_new-<?php echo $row->id ?>"
+                               class="fa fa-lg <?php echo $row->icon_new ? 'fa-toggle-on' : 'fa-toggle-off' ?> primary"
+                               onclick="icon_new(<?php echo $row->id ?>)"></i> Mới </p>
+                        <p>
+                            <i id="icon_vip-<?php echo $row->id ?>"
+                               class="fa fa-lg <?php echo $row->icon_vip ? 'fa-toggle-on' : 'fa-toggle-off' ?> info"
+                               onclick="icon_vip(<?php echo $row->id ?>)"></i> Vip </p>
+                        <p>
+                            <i id="icon_hot-<?php echo $row->id ?>"
+                               class="fa fa-lg <?php echo $row->icon_hot ? 'fa-toggle-on' : 'fa-toggle-off' ?> success"
+                               onclick="icon_hot(<?php echo $row->id ?>)"></i> Hot </p>
                     </td>
                     <td><?php echo $row->view ?></td>
                     <td><?php echo date('d/m/Y', strtotime($row->created_at)); ?></td>
