@@ -114,7 +114,7 @@
                     <td><?php echo $row->phone; ?></td>
                     <td><img src="<?php echo base_url('public/images/ads/' . $row->img) ?>" style="max-width: 80px">
                     </td>
-                    <td>
+                    <td style="max-width: 150px !important;">
                         <a href="<?php echo base_url('rao-vat/' . create_slug($row->title) . '-' . $row->id) ?>" target="_blank">
                         <?php echo $row->title ?></td>
                     </a>
