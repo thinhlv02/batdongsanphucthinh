@@ -107,7 +107,7 @@
 
                     </td>
 
-                    <td><?php echo $row->phone != '' ? $row->phone : '<span style="font-weight: bold;">Vui lòng nhập đầy đủ</span>'; ?></td>
+                    <td><?php echo $row->phone != '' ? $row->phone : '<span class="text-danger">Chưa Nhập!</span>'; ?></td>
                     <td><img src="<?php echo base_url('public/images/ads/' . $row->img) ?>" style="max-width: 80px">
                     </td>
                     <td style="max-width: 150px !important;">
@@ -115,9 +115,9 @@
                         <?php echo $row->title ?></td>
                     </a>
                     <td>
-                        <p class="btn btn-outline-danger btn-xs"><?php echo $row->price != '' ? $row->price : '<span style="font-weight: bold;">Vui lòng nhập đầy đủ</span>' ?> </p>
+                        <p class=""><?php echo $row->price != '' ? $row->price : '<span class="text-danger">Chưa Nhập!</span>' ?> </p>
                         <br/>
-                        <p class="btn btn-outline-cyan btx-xs"><?php echo $row->acreage != '' ? $row->acreage : '<span style="font-weight: bold;">Vui lòng nhập đầy đủ</span>' ?> m<sup>2</sup>
+                        <p class=""><?php echo $row->acreage != '' ? $row->acreage . 'm<sup>2</sup>' : '<span class="text-danger">Chưa Nhập!</span>' ?>
                         </p>
 
                     </td>
