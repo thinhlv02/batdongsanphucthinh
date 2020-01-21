@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'sweetalert.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'custom.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'lightslider.css'; ?>">
-    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'jquery.bxslider.css'; ?>">
-    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'hp.css'; ?>">
+    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'bxslider/css/jquery.bxslider.css'; ?>">
+    <link rel="stylesheet" href="<?php echo base_url() . 'public/css/' . $template_f . 'hp/hp.css'; ?>">
     <!--End thinhlv add css-->
 
     <script src="<?php echo public_url() . 'js/' . $template_f . 'jquery.js' ?>"></script>

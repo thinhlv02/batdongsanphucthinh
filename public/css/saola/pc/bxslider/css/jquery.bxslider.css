@@ -118,8 +118,8 @@
 	width: 24px;
 	height: 24px;
 }
-.vip_box .bx-wrapper .bx-prev {right: 30px; background: rgba(0, 0, 0, .1) url(../../images/controls_bx.png) no-repeat -4px -36px;}
-.vip_box .bx-wrapper .bx-next {right: 0px; background: rgba(0, 0, 0, .1) url(../../images/controls_bx.png) no-repeat -47px -36px;}
+.vip_box .bx-wrapper .bx-prev {right: 30px; background: rgba(0, 0, 0, .1) url(images/controls_bx.png) no-repeat -4px -36px;}
+.vip_box .bx-wrapper .bx-next {right: 0px; background: rgba(0, 0, 0, .1) url(images/controls_bx.png) no-repeat -47px -36px;}
 .vip_box .bx-wrapper .bx-prev:hover {background-color: rgba(0, 0, 0, .2);}
 .vip_box .bx-wrapper .bx-next:hover {background-color: rgba(0, 0, 0, .2);}
 
