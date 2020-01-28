@@ -99,7 +99,7 @@
 
             <div class="row">
                 <div class="card">
-                    <div class="card-body line-height-2 pt-0" style="background-color: #EDEDED">
+                    <div class="card-body line-height-2 pt-0 p-1" style="background-color: #EDEDED">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <h2 class="icon-title mb-2" id="">
                                 <strong class="bg">
