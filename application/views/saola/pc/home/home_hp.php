@@ -64,7 +64,9 @@
                 <div class="col-xs-3 right">
                     <!--Begin slide top-->
                     <div class="right_box vip_box">
-                        <p class="title_box"><a href=""><strong>TIN VIP</strong></a></p>
+                        <p class="title_box">
+                            <strong>TIN VIP</strong>
+                        </p>
                         <div>
                             <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
                                 <ul class="pt_slider"
