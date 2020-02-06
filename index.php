@@ -1,5 +1,5 @@
 <?php
-echo '';
+echo 'Sorry for the inconvenience. To improve our services, we have momentarily shutdown our site.';
 die();
 // custom define
 require_once('cf/cf.php');
