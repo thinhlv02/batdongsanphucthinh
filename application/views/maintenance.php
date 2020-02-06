@@ -6,7 +6,7 @@
     <title>Site Under Maintenance</title>
 </head>
 <body class="bg">
-<h1 class="head text-center">Site Under Maintenance</h1>
+<h1 class="head text-center">Site Under Maintenance12</h1>
 <div class="container">
     <div class="content1">
         <p class="text-center">Sorry for the inconvenience. To improve our services, we have momentarily shutdown our site.</p>
