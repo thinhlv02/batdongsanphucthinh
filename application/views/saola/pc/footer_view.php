@@ -105,7 +105,7 @@
                                 <strong class="bg">
                                     <i class="mdi mdi-monitor-multiple"></i>
                                 </strong>
-                                <span class="font-weight-600" style="font-size: 14px !important;">CÁC ĐẠI LÝ ỦY QUYỀN HỢP TÁC VỚI CHÚNG TÔI!</span>
+                                <span class="font-weight-600" style="font-size: 14px !important;">CÁC ĐẠI LÝ ỦY QUYỀN HỢP TÁC VỚI CHÚNG TÔI1212!</span>
                             </h2>
 
                         </div>
