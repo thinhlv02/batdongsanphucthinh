@@ -67,4 +67,4 @@ $config['serving_email_name'] = array('vietnamese' => 'Admarket', 'english' => '
 | $config['maintenance_mode'] = TRUE; // site is offline
 | $config['maintenance_mode'] = FALSE; // site is online
 */
-$config['maintenance_mode'] = true;
+$config['maintenance_mode'] = false;
