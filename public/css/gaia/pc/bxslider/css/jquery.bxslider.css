@@ -98,8 +98,8 @@
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
-.bx-wrapper .bx-prev {right: 30px; background: rgba(0, 0, 0, .2) url(../images/controls_bx.png) no-repeat 0 -32px;}
-.bx-wrapper .bx-next {right: -5px; background: rgba(0, 0, 0, .2) url(../images/controls_bx.png) no-repeat -43px -32px;}
+.bx-wrapper .bx-prev {right: 30px; background: rgba(0, 0, 0, .2) url(images/controls_bx.png) no-repeat 0 -32px;}
+.bx-wrapper .bx-next {right: -5px; background: rgba(0, 0, 0, .2) url(images/controls_bx.png) no-repeat -43px -32px;}
 .bx-wrapper .bx-prev:hover {background-position: 0 0;}
 .bx-wrapper .bx-next:hover {background-position: -43px 0;}
 .bx-wrapper .bx-controls-direction a {
@@ -118,15 +118,15 @@
 	width: 24px;
 	height: 24px;
 }
-.vip_box .bx-wrapper .bx-prev {right: 30px; background: rgba(0, 0, 0, .1) url(../images/controls_bx.png) no-repeat -4px -36px;}
-.vip_box .bx-wrapper .bx-next {right: 0px; background: rgba(0, 0, 0, .1) url(../images/controls_bx.png) no-repeat -47px -36px;}
+.vip_box .bx-wrapper .bx-prev {right: 30px; background: rgba(0, 0, 0, .1) url(images/controls_bx.png) no-repeat -4px -36px;}
+.vip_box .bx-wrapper .bx-next {right: 0px; background: rgba(0, 0, 0, .1) url(images/controls_bx.png) no-repeat -47px -36px;}
 .vip_box .bx-wrapper .bx-prev:hover {background-color: rgba(0, 0, 0, .2);}
 .vip_box .bx-wrapper .bx-next:hover {background-color: rgba(0, 0, 0, .2);}
 
 
 
-.imgs_land_box .bx-wrapper .bx-prev {left: 10px; background: rgba(0,0,0,.2) url(../images/controls_bx.png) no-repeat 0 -32px;}
-.imgs_land_box .bx-wrapper .bx-next {right: 10px; background: rgba(0,0,0,.2) url(../images/controls_bx.png) no-repeat -43px -32px;}
+.imgs_land_box .bx-wrapper .bx-prev {left: 10px; background: rgba(0,0,0,.2) url(images/controls_bx.png) no-repeat 0 -32px;}
+.imgs_land_box .bx-wrapper .bx-next {right: 10px; background: rgba(0,0,0,.2) url(images/controls_bx.png) no-repeat -43px -32px;}
 .imgs_land_box .bx-wrapper .bx-prev:hover {background-color: rgba(0,0,0,.4);}
 .imgs_land_box .bx-wrapper .bx-next:hover {background-color: rgba(0,0,0,.4);}
 .imgs_land_box .bx-wrapper .bx-controls-direction a {
@@ -156,7 +156,7 @@
 	width: 10px;
 	height: 11px;
 	outline: 0;
-	background: url(../images/controls_bx.png) -86px -11px no-repeat;
+	background: url(images/controls_bx.png) -86px -11px no-repeat;
 	margin: 0 3px;
 }
 
@@ -171,7 +171,7 @@
 	width: 9px;
 	height: 11px;
 	outline: 0;
-	background: url(../images/controls_bx.png) -86px -44px no-repeat;
+	background: url(images/controls_bx.png) -86px -44px no-repeat;
 	margin: 0 3px;
 }
 
