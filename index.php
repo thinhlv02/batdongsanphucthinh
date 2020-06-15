@@ -1,6 +1,6 @@
 <?php
-//echo '<p style="text-align: center">Sorry for the inconvenience. To improve our services, we have momentarily shutdown our site12.</p>';
-//die();
+echo '<p style="text-align: center">Sorry for the inconvenience. To improve our services, we have momentarily shutdown our site12.</p>';
+die();
 // custom define
 require_once('cf/cf.php');
 /**
